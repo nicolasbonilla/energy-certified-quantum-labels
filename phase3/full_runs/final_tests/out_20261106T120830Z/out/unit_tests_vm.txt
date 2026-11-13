@@ -1,0 +1,15 @@
+test_exact_rq (__main__.Light.test_exact_rq) ... ok
+test_features (__main__.Light.test_features) ... ok
+test_interval_reproduces_rigor_v2 (__main__.Light.test_interval_reproduces_rigor_v2) ... ok
+test_model (__main__.Light.test_model) ... ok
+test_patch_whole_is_exact (__main__.Light.test_patch_whole_is_exact) ... ok
+test_sector_vs_bruteforce (__main__.Light.test_sector_vs_bruteforce) ... ok
+test_subh (__main__.Light.test_subh) ... ok
+test_truncation_family (__main__.Light.test_truncation_family) ... ok
+test_dmrg_vs_ed (__main__.Full.test_dmrg_vs_ed) ... ok
+test_krylov_vs_exact (__main__.Full.test_krylov_vs_exact) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 26.531s
+
+OK

@@ -1,0 +1,80 @@
+[
+ {
+  "name": "v2_n115_vball2_m_s_m4.0_l0.144973",
+  "cert_sha256": "25b3eb727afc361938d8daeaa366b30827edcd96f5652d85a4dea4002806caa1",
+  "sha_equal": true,
+  "all_cluster_inequalities_proved": true,
+  "identity_holds": true,
+  "E_matches_cert_claim": true,
+  "E_LB_exact": "-262152969779/2147483648",
+  "n_blocks": 854,
+  "max_block": 35,
+  "time_s": 2.7,
+  "also_in_the_196_reproved": true
+ },
+ {
+  "name": "v2_n115_vball2_m_s_p4.0_l0.272766",
+  "cert_sha256": "43cb5bf701c5d11a1501434dce70753bd8d8dc52bec5a489e5541b8e2be386b7",
+  "sha_equal": true,
+  "all_cluster_inequalities_proved": true,
+  "identity_holds": true,
+  "E_matches_cert_claim": true,
+  "E_LB_exact": "-22591599745/134217728",
+  "n_blocks": 854,
+  "max_block": 35,
+  "time_s": 2.9,
+  "also_in_the_196_reproved": true
+ },
+ {
+  "name": "v2_n57_eball2_m_s_m3.4_l0.125924",
+  "cert_sha256": "b1883808fcac63a6918a46f49c07b7e04ba0d30b612169b8088959860975e577",
+  "sha_equal": true,
+  "all_cluster_inequalities_proved": true,
+  "identity_holds": true,
+  "E_matches_cert_claim": true,
+  "E_LB_exact": "-110037501071/2147483648",
+  "n_blocks": 568,
+  "max_block": 126,
+  "time_s": 30.7,
+  "also_in_the_196_reproved": true
+ },
+ {
+  "name": "v2_n57_eball2_m_s_m3.6_l0.123765",
+  "cert_sha256": "4d6536a1a0599ce02e45aca6d0a26f4dfbb0c1ce6e3bf3bf92ebb80a95ef0d3a",
+  "sha_equal": true,
+  "all_cluster_inequalities_proved": true,
+  "identity_holds": true,
+  "E_matches_cert_claim": true,
+  "E_LB_exact": "-58303768431/1073741824",
+  "n_blocks": 568,
+  "max_block": 126,
+  "time_s": 31.1,
+  "also_in_the_196_reproved": true
+ },
+ {
+  "name": "v2_n57_eball2_m_s_p3.4_l0.305157",
+  "cert_sha256": "bc391b67dee0b479bd0eb94fbb0d78776b135a56235e60f90724b8272eea3585",
+  "sha_equal": true,
+  "all_cluster_inequalities_proved": true,
+  "identity_holds": true,
+  "E_matches_cert_claim": true,
+  "E_LB_exact": "-320151821549/4294967296",
+  "n_blocks": 568,
+  "max_block": 126,
+  "time_s": 33.1,
+  "also_in_the_196_reproved": true
+ },
+ {
+  "name": "v2_n57_eball2_m_s_p3.6_l0.304711",
+  "cert_sha256": "6bcc21f4fa28e22ac0940205ee78c714be5b8a4c015c512f73fe9438ca7c2182",
+  "sha_equal": true,
+  "all_cluster_inequalities_proved": true,
+  "identity_holds": true,
+  "E_matches_cert_claim": true,
+  "E_LB_exact": "-333288485039/4294967296",
+  "n_blocks": 568,
+  "max_block": 126,
+  "time_s": 36.8,
+  "also_in_the_196_reproved": true
+ }
+]

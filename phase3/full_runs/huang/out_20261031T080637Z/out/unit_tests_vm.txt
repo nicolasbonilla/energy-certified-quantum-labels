@@ -1,0 +1,84 @@
+test_sector_equals_global (__main__.T1Sector.test_sector_equals_global) ... ok
+test_eval (__main__.T3Evaluator.test_eval) ... ok
+test_end_to_end (__main__.T4EndToEnd.test_end_to_end) ... edref L=2 k=1 E0=-24.224410656528 E1=-22.087917 2E_file=-24.2244106565 max|dC|=7.77e-16 t=0s
+R1 chi64 L=2 k=1 E=-24.224410656528 sweeps=13 t=4s
+R1 chi384 L=2 k=1 E=-24.224410656528 sweeps=5 t=1s
+edlab L=2 k=1 Cnn o0=-0.516918 chi=0.028927 eps_tau in/out=0.37051796121492053/0.37000250096368426 law=0.3595263597352497 pts={'+': 11, '-': 12} t=0s
+lab L=2 k=1 Cnn+ lam=0.005000 eps=4.7155e-06 o=-0.516773 sweeps=4 t=1s [lam0]
+lab L=2 k=1 Cnn- lam=0.005000 eps=4.68578e-06 o=-0.517062 sweeps=4 t=1s [lam0]
+lab L=2 k=1 Cnn+ lam=0.230253 eps=0.0115626 o=-0.509467 sweeps=4 t=1s [target]
+lab L=2 k=1 Cnn+ lam=0.214420 eps=0.00992367 o=-0.510034 sweeps=4 t=1s [target]
+lab L=2 k=1 Cnn+ lam=0.629383 eps=0.112728 o=-0.491885 sweeps=4 t=1s [target]
+lab L=2 k=1 Cnn+ lam=0.596951 eps=0.0992253 o=-0.493578 sweeps=4 t=1s [target]
+lab L=2 k=1 Cnn+ lam=1.018072 eps=0.380598 o=-0.467200 sweeps=4 t=1s [target]
+lab L=2 k=1 Cnn- lam=0.230983 eps=0.00869497 o=-0.522925 sweeps=4 t=1s [target]
+lab L=2 k=1 Cnn- lam=0.248033 eps=0.00992324 o=-0.523319 sweeps=4 t=1s [target]
+lab L=2 k=1 Cnn- lam=0.861599 eps=0.084623 o=-0.534205 sweeps=4 t=1s [target]
+lab L=2 k=1 Cnn- lam=0.949364 eps=0.0981245 o=-0.535352 sweeps=4 t=1s [target]
+lab L=2 k=1 Cnn- lam=2.223224 eps=0.301442 o=-0.545826 sweeps=4 t=1s [target]
+lab L=2 k=1 Cnn- lam=2.540995 eps=0.348132 o=-0.547337 sweeps=4 t=1s [target]
+lab L=2 k=1 Cnn+ lam=0.991327 eps=0.354831 o=-0.469173 sweeps=4 t=1s [tau]
+lab L=2 k=1 Cnn- lam=2.845203 eps=0.390429 o=-0.548547 sweeps=4 t=1s [tau]
+{"label": "Cnn", "chi_two": 0.028926947130292202, "eps_tau_in": 0.37046135248909984, "eps_tau_out": 0.3700562760792092, "eps_tau_law": 0.35952635973497377, "n_points": {"+": 7, "-": 8}, "time_s": 17.73214364051819}
+edlab L=2 k=1 Ccent o0=-0.319094 chi=0.12694 eps_tau in/out=0.006307402718784162/0.006307121901107493 law=0.006302404194989712 pts={'+': 10, '-': 10} t=0s
+lab L=2 k=1 Ccent+ lam=0.100000 eps=0.000634027 o=-0.306409 sweeps=4 t=1s [lam0]
+lab L=2 k=1 Ccent- lam=0.100000 eps=0.00063521 o=-0.331796 sweeps=4 t=1s [lam0]
+lab L=2 k=1 Ccent+ lam=0.315282 eps=0.00627391 o=-0.279228 sweeps=4 t=1s [target]
+lab L=2 k=1 Ccent+ lam=0.398227 eps=0.00998487 o=-0.268826 sweeps=4 t=1s [target]
+lab L=2 k=1 Ccent+ lam=1.267891 eps=0.0965268 o=-0.164116 sweeps=4 t=1s [target]
+lab L=2 k=1 Ccent- lam=0.314988 eps=0.00629907 o=-0.359098 sweeps=4 t=1s [target]
+lab L=2 k=1 Ccent- lam=0.396899 eps=0.00999215 o=-0.369473 sweeps=4 t=1s [target]
+lab L=2 k=1 Ccent- lam=1.258395 eps=0.0973077 o=-0.475591 sweeps=4 t=1s [target]
+lab L=2 k=1 Ccent+ lam=0.324003 eps=0.0066242 o=-0.278133 sweeps=4 t=1s [tau]
+lab L=2 k=1 Ccent- lam=0.323024 eps=0.00662407 o=-0.360116 sweeps=4 t=1s [tau]
+{"label": "Ccent", "chi_two": 0.12693568600946392, "eps_tau_in": 0.006307402718773503, "eps_tau_out": 0.006307121901153679, "eps_tau_law": 0.0063024041949901665, "n_points": {"+": 5, "-": 5}, "time_s": 10.85531497001648}
+edlab L=2 k=1 Cfar o0=-0.319094 chi=0.12694 eps_tau in/out=0.006307402718784162/0.006307121901107493 law=0.006302404194989712 pts={'+': 10, '-': 10} t=0s
+lab L=2 k=1 Cfar+ lam=0.100000 eps=0.000634027 o=-0.306409 sweeps=4 t=1s [lam0]
+lab L=2 k=1 Cfar- lam=0.100000 eps=0.00063521 o=-0.331796 sweeps=4 t=1s [lam0]
+lab L=2 k=1 Cfar+ lam=0.315282 eps=0.00627391 o=-0.279228 sweeps=4 t=1s [target]
+lab L=2 k=1 Cfar+ lam=0.398227 eps=0.00998487 o=-0.268826 sweeps=4 t=1s [target]
+lab L=2 k=1 Cfar+ lam=1.267891 eps=0.0965268 o=-0.164116 sweeps=4 t=1s [target]
+lab L=2 k=1 Cfar- lam=0.314988 eps=0.00629907 o=-0.359098 sweeps=4 t=1s [target]
+lab L=2 k=1 Cfar- lam=0.396899 eps=0.00999215 o=-0.369473 sweeps=4 t=1s [target]
+lab L=2 k=1 Cfar- lam=1.258395 eps=0.0973077 o=-0.475591 sweeps=4 t=1s [target]
+lab L=2 k=1 Cfar+ lam=0.324003 eps=0.0066242 o=-0.278133 sweeps=4 t=1s [tau]
+lab L=2 k=1 Cfar- lam=0.323024 eps=0.00662407 o=-0.360116 sweeps=4 t=1s [tau]
+{"label": "Cfar", "chi_two": 0.12693568600946392, "eps_tau_in": 0.006307402718773503, "eps_tau_out": 0.006307121901153679, "eps_tau_law": 0.0063024041949901665, "n_points": {"+": 5, "-": 5}, "time_s": 10.384969472885132}
+edlab L=2 k=1 P_0_5 o0=-0.677669 chi=0.060403 eps_tau in/out=0.0132617065118108/0.013260453685566276 law=0.013244399090434284 pts={'+': 6, '-': 6} t=0s
+edlab L=2 k=1 P_0_1 o0=-0.650280 chi=0.062426 eps_tau in/out=0.012830886258052844/0.012829986112498304 law=0.012815105951424485 pts={'+': 6, '-': 6} t=0s
+edlab L=2 k=1 P_1_6 o0=-0.658498 chi=0.059728 eps_tau in/out=0.01341123593773297/0.013410073821619408 law=0.013394080255538511 pts={'+': 6, '-': 6} t=0s
+edlab L=2 k=1 P_1_2 o0=-0.111761 chi=0.060231 eps_tau in/out=0.01329591999142288/0.013295303243024748 law=0.013282127817117923 pts={'+': 6, '-': 6} t=0s
+edlab L=2 k=1 P_2_7 o0=-0.319094 chi=0.12694 eps_tau in/out=0.006307402718784162/0.006307121901107493 law=0.006302404194989712 pts={'+': 6, '-': 6} t=0s
+edlab L=2 k=1 P_2_3 o0=-0.827404 chi=0.046253 eps_tau in/out=0.017329335202349586/0.017327559546929553 law=0.017296359617740727 pts={'+': 7, '-': 7} t=0s
+edlab L=2 k=1 P_3_8 o0=-0.228106 chi=0.08645 eps_tau in/out=0.00926279504703409/0.009261240687107986 law=0.009253927102577745 pts={'+': 5, '-': 5} t=0s
+edlab L=2 k=1 P_3_4 o0=-0.405425 chi=0.085986 eps_tau in/out=0.00931232703884355/0.009311495373763634 law=0.009303865047660415 pts={'+': 5, '-': 5} t=0s
+edlab L=2 k=1 P_4_9 o0=-0.835502 chi=0.046591 eps_tau in/out=0.017202951928583236/0.017201092668420515 law=0.017170873317794075 pts={'+': 7, '-': 8} t=0s
+edlab L=2 k=1 P_5_6 o0=-0.632221 chi=0.064071 eps_tau in/out=0.012500937669736702/0.012500235074783818 law=0.012486227117337862 pts={'+': 6, '-': 6} t=0s
+edlab L=2 k=1 P_6_7 o0=-0.200966 chi=0.10876 eps_tau in/out=0.007363365171849879/0.0073612828155429355 law=0.007355610799172817 pts={'+': 6, '-': 6} t=0s
+edlab L=2 k=1 P_7_8 o0=-0.850409 chi=0.06073 eps_tau in/out=0.013209974818314763/0.01320851384445554 law=0.01317304044920396 pts={'+': 7, '-': 8} t=0s
+edlab L=2 k=1 P_8_9 o0=-0.322599 chi=0.14375 eps_tau in/out=0.005569309641041188/0.005569075356808284 law=0.005565249354630873 pts={'+': 6, '-': 6} t=0s
+edlab L=2 k=1 P_0_2 o0=0.075167 chi=0.043433 eps_tau in/out=0.018451666936689648/0.018445299888865563 law=0.01841915221844853 pts={'+': 6, '-': 6} t=0s
+edlab L=2 k=1 P_0_3 o0=-0.061656 chi=0.049734 eps_tau in/out=0.016104636426286238/0.016102952092490245 law=0.0160854372872877 pts={'+': 6, '-': 6} t=0s
+edlab L=2 k=1 P_0_4 o0=0.041295 chi=0.042745 eps_tau in/out=0.01874548795420772/0.018740232390454636 law=0.018715644965050585 pts={'+': 6, '-': 6} t=0s
+chk L=2 k=1 Ccent+ lam=0.315282 dG=0.000e+00
+cold L=2 k=1 Ccent- lam=0.314988 dF=7.105e-15
+scan L=2 k=1 P_0_5 chi=0.060403
+scan L=2 k=1 P_0_1 chi=0.062426
+scan L=2 k=1 P_1_6 chi=0.059728
+scan L=2 k=1 P_1_2 chi=0.060231
+scan L=2 k=1 P_2_7 chi=0.12694
+scan L=2 k=1 P_2_3 chi=0.046253
+scan L=2 k=1 P_3_8 chi=0.08645
+scan L=2 k=1 P_3_4 chi=0.085986
+scan L=2 k=1 P_4_9 chi=0.046591
+scan L=2 k=1 P_5_6 chi=0.064071
+scan L=2 k=1 P_6_7 chi=0.10876
+scan L=2 k=1 P_7_8 chi=0.06073
+scan L=2 k=1 P_8_9 chi=0.14375
+ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 111.841s
+
+OK
+84 tasks

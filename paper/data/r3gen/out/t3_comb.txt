@@ -1,0 +1,29 @@
+comb         n= 6 m_s   de=1.0e-04 eps/gap=   0.00 | exact w=0.02608 (u+=0.01284, u-=0.01324) | 2sqrt(2chi0 de)=0.02605 | sandwich lo=0.02331 hi=0.03153 [True] | Manchanda: radius exact=0.01324, Eq.10 upper=0.01337, Thm2 lower=0.01304 (applies: eps<=Dbar/2=0.9521? True)
+comb         n= 6 m_s   de=1.0e-03 eps/gap=   0.00 | exact w=0.08244 (u+=0.03919, u-=0.04324) | 2sqrt(2chi0 de)=0.08238 | sandwich lo=0.07372 hi=0.09969 [True] | Manchanda: radius exact=0.04324, Eq.10 upper=0.04446, Thm2 lower=0.04117 (applies: eps<=Dbar/2=0.9521? True)
+comb         n= 6 m_s   de=1.0e-02 eps/gap=   0.04 | exact w=0.25998 (u+=0.10989, u-=0.15009) | 2sqrt(2chi0 de)=0.26051 | sandwich lo=0.20671 hi=0.31525 [True] | Manchanda: radius exact=0.15009, Eq.10 upper=0.16134, Thm2 lower=0.12832 (applies: eps<=Dbar/2=0.9521? True)
+comb         n= 6 m_s   de=3.0e-02 eps/gap=   0.11 | exact w=0.44767 (u+=0.16451, u-=0.28316) | 2sqrt(2chi0 de)=0.45122 | sandwich lo=0.20671 hi=0.54603 [True] | Manchanda: radius exact=0.28316, Eq.10 upper=0.31477, Thm2 lower=0.21490 (applies: eps<=Dbar/2=0.9521? True)
+comb         n= 6 m_s   de=1.0e-01 eps/gap=   0.35 | exact w=0.79971 (u+=0.21225, u-=0.58746) | 2sqrt(2chi0 de)=0.82380 | sandwich lo=0.20671 hi=1.05060 [True] | Manchanda: radius exact=0.58746, Eq.10 upper=0.68930, Thm2 lower=0.34123 (applies: eps<=Dbar/2=0.9521? True)
+comb         n= 6 m_s   de=3.0e-01 eps/gap=   1.05 | exact w=1.28938 (u+=0.21299, u-=1.07639) | 2sqrt(2chi0 de)=1.42687 | sandwich lo=0.20671 hi=2.38393 [True] | Manchanda: radius exact=1.07639, Eq.10 upper=1.35942, Thm2 lower=nan (applies: eps<=Dbar/2=0.9521? False)
+   n=6: chi0 (finite diff)=0.84831; Manchanda chi_O*n=0.85003; sum-rule bound 2v^2/s1=0.82310 [True]; gap=1.7092
+comb         n= 9 m_s   de=1.0e-04 eps/gap=   0.00 | exact w=0.02371 (u+=0.01165, u-=0.01206) | 2sqrt(2chi0 de)=0.02369 | sandwich lo=0.02127 hi=0.02985 [True] | Manchanda: radius exact=0.01206, Eq.10 upper=0.01224, Thm2 lower=0.01185 (applies: eps<=Dbar/2=0.9917? True)
+comb         n= 9 m_s   de=1.0e-03 eps/gap=   0.01 | exact w=0.07501 (u+=0.03549, u-=0.03952) | 2sqrt(2chi0 de)=0.07491 | sandwich lo=0.06726 hi=0.09440 [True] | Manchanda: radius exact=0.03952, Eq.10 upper=0.04128, Thm2 lower=0.03741 (applies: eps<=Dbar/2=0.9917? True)
+comb         n= 9 m_s   de=1.0e-02 eps/gap=   0.05 | exact w=0.23771 (u+=0.09883, u-=0.13889) | 2sqrt(2chi0 de)=0.23689 | sandwich lo=0.17195 hi=0.29851 [True] | Manchanda: radius exact=0.13889, Eq.10 upper=0.15471, Thm2 lower=0.11584 (applies: eps<=Dbar/2=0.9917? True)
+comb         n= 9 m_s   de=3.0e-02 eps/gap=   0.16 | exact w=0.41336 (u+=0.14740, u-=0.26596) | 2sqrt(2chi0 de)=0.41031 | sandwich lo=0.17195 hi=0.51704 [True] | Manchanda: radius exact=0.26596, Eq.10 upper=0.30892, Thm2 lower=0.19087 (applies: eps<=Dbar/2=0.9917? True)
+comb         n= 9 m_s   de=1.0e-01 eps/gap=   0.53 | exact w=0.75861 (u+=0.18878, u-=0.56983) | 2sqrt(2chi0 de)=0.74911 | sandwich lo=0.17195 hi=1.01507 [True] | Manchanda: radius exact=0.56983, Eq.10 upper=0.67039, Thm2 lower=0.27711 (applies: eps<=Dbar/2=0.9917? True)
+comb         n= 9 m_s   de=3.0e-01 eps/gap=   1.59 | exact w=1.29330 (u+=0.18908, u-=1.10421) | 2sqrt(2chi0 de)=1.29750 | sandwich lo=0.17195 hi=2.34840 [True] | Manchanda: radius exact=1.10421, Eq.10 upper=1.42722, Thm2 lower=nan (applies: eps<=Dbar/2=0.9917? False)
+   n=9: chi0 (finite diff)=0.70146; Manchanda chi_O*n=0.70288; sum-rule bound 2v^2/s1=0.66700 [True]; gap=1.6940
+comb         n=12 m_s   de=1.0e-04 eps/gap=   0.00 | exact w=0.02326 (u+=0.01143, u-=0.01183) | 2sqrt(2chi0 de)=0.02324 | sandwich lo=0.02092 hi=0.02931 [True] | Manchanda: radius exact=0.01183, Eq.10 upper=0.01204, Thm2 lower=0.01163 (applies: eps<=Dbar/2=1.0038? True)
+comb         n=12 m_s   de=1.0e-03 eps/gap=   0.01 | exact w=0.07358 (u+=0.03483, u-=0.03875) | 2sqrt(2chi0 de)=0.07349 | sandwich lo=0.06614 hi=0.09269 [True] | Manchanda: radius exact=0.03875, Eq.10 upper=0.04076, Thm2 lower=0.03667 (applies: eps<=Dbar/2=1.0038? True)
+comb         n=12 m_s   de=1.0e-02 eps/gap=   0.07 | exact w=0.23332 (u+=0.09715, u-=0.13617) | 2sqrt(2chi0 de)=0.23239 | sandwich lo=0.16615 hi=0.29311 [True] | Manchanda: radius exact=0.13617, Eq.10 upper=0.15385, Thm2 lower=0.11278 (applies: eps<=Dbar/2=1.0038? True)
+comb         n=12 m_s   de=3.0e-02 eps/gap=   0.21 | exact w=0.40611 (u+=0.14512, u-=0.26099) | 2sqrt(2chi0 de)=0.40251 | sandwich lo=0.16615 hi=0.50768 [True] | Manchanda: radius exact=0.26099, Eq.10 upper=0.30816, Thm2 lower=0.18250 (applies: eps<=Dbar/2=1.0038? True)
+comb         n=12 m_s   de=1.0e-01 eps/gap=   0.71 | exact w=0.74741 (u+=0.18601, u-=0.56139) | 2sqrt(2chi0 de)=0.73487 | sandwich lo=0.16615 hi=1.00267 [True] | Manchanda: radius exact=0.56139, Eq.10 upper=0.65092, Thm2 lower=nan (applies: eps<=Dbar/2=1.0038? False)
+comb         n=12 m_s   de=3.0e-01 eps/gap=   2.14 | exact w=1.29360 (u+=0.18629, u-=1.10731) | 2sqrt(2chi0 de)=1.27284 | sandwich lo=0.16615 hi=2.33600 [True] | Manchanda: radius exact=1.10731, Eq.10 upper=1.38931, Thm2 lower=nan (applies: eps<=Dbar/2=1.0038? False)
+   n=12: chi0 (finite diff)=0.67505; Manchanda chi_O*n=0.67637; sum-rule bound 2v^2/s1=0.64139 [True]; gap=1.6818
+intensivity: w(n)/w(n_max) at fixed de:
+  de=1.0e-04: 0.0261, 0.0237, 0.0233
+  de=1.0e-03: 0.0824, 0.0750, 0.0736
+  de=1.0e-02: 0.2600, 0.2377, 0.2333
+  de=3.0e-02: 0.4477, 0.4134, 0.4061
+  de=1.0e-01: 0.7997, 0.7586, 0.7474
+  de=3.0e-01: 1.2894, 1.2933, 1.2936
+time 3.6 s

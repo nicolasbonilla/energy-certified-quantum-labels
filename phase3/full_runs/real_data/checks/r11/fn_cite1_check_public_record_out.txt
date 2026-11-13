@@ -1,0 +1,76 @@
+================================================================================================
+n = 57 ; couplings in skqd_random_flip: 50 (1.1 ... 6.0); in dmrg: 51
+fields of one dataset file: ['2_nn_corr_funcs_zz_basis_opt', '2_nn_corr_pairs_zz_basis_opt', 'energy_vopt', 'final_global_energy', 'ground_state_energy', 'jz', 'z_basis_opt', 'z_loop', 'z_loop_sites']
+
+A. mean_i |Z_data - Z_dmrg| / |Z_dmrg|  (percent; in brackets the paper's literal Eq. 15 with a signed denominator)
+   Jz = 1.1 :  31.47 %   [  -4.10 %]   (std of the per-site values 12.64)
+   Jz = 1.2 :  25.92 %   [  -2.78 %]   (std of the per-site values 11.16)
+   Jz = 1.3 :  21.72 %   [  -1.96 %]   (std of the per-site values  9.42)
+   Jz = 1.4 :  16.74 %   [  -1.35 %]   (std of the per-site values  6.58)
+   Jz = 1.5 :  12.42 %   [  -0.92 %]   (std of the per-site values  4.98)
+
+B. energy error over the gap: final (final_global_energy) | before the last step (ground_state_energy)
+   Jz = 1.6 : final 1.3446 | before 6.7879 | gap 0.48133
+   Jz = 1.8 : final 0.8140 | before 4.4707 | gap 0.62136
+   Jz = 2.1 : final 0.5199 | before 2.9376 | gap 0.81521
+   Jz = 2.5 : final 0.2308 | before 1.5214 | gap 1.05715
+   Jz = 4.0 : final 0.0519 | before 0.3510 | gap 1.88738
+   smallest Jz from which the final error stays below the gap for all larger Jz: last coupling with error >= gap: 1.7
+   couplings at which the energy BEFORE the last step is below the gap: 31 of 50
+
+C. energy error per site before / after the last step, and their ratio
+   Jz = 1.6 : before 0.05732 | after 0.01135 | factor 5.048
+   factor over the 50 couplings: min 2.805 | median 6.671 | max 8.930
+   factor over the 45 training couplings only: min 2.805 | median 6.721 | max 8.930
+
+D. sum of the published site magnetizations minus M0 = 9
+   negative at 50 of 50 couplings ; min -0.23420 ; max -0.00037
+================================================================================================
+n = 115 ; couplings in skqd_random_flip: 50 (1.1 ... 6.0); in dmrg: 51
+fields of one dataset file: ['2_nn_corr_funcs_zz_basis_opt', '2_nn_corr_pairs_zz_basis_opt', 'energy_vopt', 'final_global_energy', 'ground_state_energy', 'jz', 'z_basis_opt', 'z_loop', 'z_loop_sites']
+
+A. mean_i |Z_data - Z_dmrg| / |Z_dmrg|  (percent; in brackets the paper's literal Eq. 15 with a signed denominator)
+   Jz = 1.1 :  29.80 %   [  -3.70 %]   (std of the per-site values 13.53)
+   Jz = 1.2 :  22.91 %   [  -2.45 %]   (std of the per-site values 10.07)
+   Jz = 1.3 :  18.48 %   [  -1.72 %]   (std of the per-site values  8.08)
+   Jz = 1.4 :  14.77 %   [  -1.21 %]   (std of the per-site values  6.47)
+   Jz = 1.5 :  11.83 %   [  -0.75 %]   (std of the per-site values  6.01)
+
+B. energy error over the gap: final (final_global_energy) | before the last step (ground_state_energy)
+   Jz = 1.6 : final 2.7297 | before 27.3154 | gap 0.49208
+   Jz = 1.8 : final 1.7684 | before 17.8441 | gap 0.62574
+   Jz = 2.1 : final 0.9962 | before 11.3929 | gap 0.81639
+   Jz = 2.5 : final 0.4626 | before 11.1671 | gap 1.05740
+   Jz = 4.0 : final 0.0761 | before 3.0151 | gap 1.88738
+   smallest Jz from which the final error stays below the gap for all larger Jz: last coupling with error >= gap: 2.0
+   couplings at which the energy BEFORE the last step is below the gap: 0 of 50
+
+C. energy error per site before / after the last step, and their ratio
+   Jz = 1.6 : before 0.11688 | after 0.01168 | factor 10.007
+   factor over the 50 couplings: min 6.587 | median 29.612 | max 175.405
+   factor over the 45 training couplings only: min 10.007 | median 33.335 | max 175.405
+
+D. sum of the published site magnetizations minus M0 = 19
+   negative at 50 of 50 couplings ; min -0.43520 ; max -0.00268
+================================================================================================
+E. mean relative error of the pair correlations (first and second neighbours) and of the loops, percent
+   (validation of the definition: the dataset paper's text gives the medians over the phase, 1.36 % and 1.22 %
+    for C_zz and 1.57 % and 1.27 % for the loops, at n = 57 and 115)
+   n =  57 : median over the 45 training couplings: C_zz 0.99 % | loops 1.18 %
+             C_zz at Jz = 2.5: 3.28 % ; at Jz = 4.0: 0.91 %
+   n = 115 : median over the 45 training couplings: C_zz 0.62 % | loops 0.75 %
+             C_zz at Jz = 2.5: 2.59 % ; at Jz = 4.0: 0.49 %
+
+F. energy error over the gap before the last step at Jz = 2.5, both variants of the record
+   n =  57 : random flip 1.5214 | post-selection 1.6653
+   n = 115 : random flip 11.1671 | post-selection 11.1671
+
+G. mean unsigned relative site error at Jz = 1.1, 1.2, 1.3 (Supp. Fig. 11 of the dataset paper, left panel)
+   n =  57 : 31.47, 25.92, 21.72 percent
+   n = 115 : 29.80, 22.91, 18.48 percent
+   over both sizes: min 18.48, max 31.47 percent; rounded outward: 18-32 percent
+   at n = 57 alone: 21.72 to 31.47 percent, rounded outward 21-32 percent (the range '20-32' of main.tex:217 fits this size only)
+
+H. median over all 50 couplings of the mean relative error of the pair correlations (paper: 1.36 % and 1.22 %)
+   n =  57 : 1.38 %
+   n = 115 : 0.81 %

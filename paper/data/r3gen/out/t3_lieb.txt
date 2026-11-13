@@ -1,0 +1,15 @@
+lieb         n=12 m_s   de=1.0e-04 eps/gap=   0.00 | exact w=0.01752 (u+=0.00859, u-=0.00893) | 2sqrt(2chi0 de)=0.01750 | sandwich lo=0.01593 hi=0.02162 [True] | Manchanda: radius exact=0.00893, Eq.10 upper=0.00905, Thm2 lower=0.00876 (applies: eps<=Dbar/2=1.3731? True)
+lieb         n=12 m_s   de=1.0e-03 eps/gap=   0.00 | exact w=0.05545 (u+=0.02599, u-=0.02946) | 2sqrt(2chi0 de)=0.05536 | sandwich lo=0.05037 hi=0.06837 [True] | Manchanda: radius exact=0.02946, Eq.10 upper=0.03056, Thm2 lower=0.02764 (applies: eps<=Dbar/2=1.3731? True)
+lieb         n=12 m_s   de=1.0e-02 eps/gap=   0.05 | exact w=0.17671 (u+=0.07117, u-=0.10554) | 2sqrt(2chi0 de)=0.17505 | sandwich lo=0.09611 hi=0.21619 [True] | Manchanda: radius exact=0.10554, Eq.10 upper=0.11489, Thm2 lower=0.08567 (applies: eps<=Dbar/2=1.3731? True)
+lieb         n=12 m_s   de=3.0e-02 eps/gap=   0.14 | exact w=0.31048 (u+=0.10448, u-=0.20599) | 2sqrt(2chi0 de)=0.30319 | sandwich lo=0.09611 hi=0.38032 [True] | Manchanda: radius exact=0.20599, Eq.10 upper=0.23011, Thm2 lower=0.14143 (applies: eps<=Dbar/2=1.3731? True)
+lieb         n=12 m_s   de=1.0e-01 eps/gap=   0.45 | exact w=0.58411 (u+=0.13012, u-=0.45398) | 2sqrt(2chi0 de)=0.55356 | sandwich lo=0.09611 hi=0.84829 [True] | Manchanda: radius exact=0.45398, Eq.10 upper=0.50320, Thm2 lower=0.20786 (applies: eps<=Dbar/2=1.3731? True)
+lieb         n=12 m_s   de=3.0e-01 eps/gap=   1.35 | exact w=1.05868 (u+=0.13013, u-=0.92855) | 2sqrt(2chi0 de)=0.95879 | sandwich lo=0.09611 hi=2.18162 [True] | Manchanda: radius exact=0.92855, Eq.10 upper=1.08611, Thm2 lower=nan (applies: eps<=Dbar/2=1.3731? False)
+   n=12: chi0 (finite diff)=0.38303; Manchanda chi_O*n=0.38369; sum-rule bound 2v^2/s1=0.37072 [True]; gap=2.6656
+intensivity: w(n)/w(n_max) at fixed de:
+  de=1.0e-04: 0.0175
+  de=1.0e-03: 0.0555
+  de=1.0e-02: 0.1767
+  de=3.0e-02: 0.3105
+  de=1.0e-01: 0.5841
+  de=3.0e-01: 1.0587
+time 2.8 s

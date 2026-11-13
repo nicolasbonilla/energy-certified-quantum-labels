@@ -1,0 +1,35 @@
+n=57  rule (c) with Prop. 2(b) intervals answers 0 of 14 queries []
+  Jz    range       W_lo     W_hi    2q_lo    2q_hi     miss  rule(c) / band(a)
+  1.6   train      24.12    32.07    16.55    17.00     3.05  ABSTAIN / NOT_PINNED  (indicative upper)
+  1.8   train       7.00     9.17    22.36    22.97     2.10  ABSTAIN / NOT_PINNED  (indicative upper)
+  2.0   train       4.49     7.06    21.20    21.79     1.50  ABSTAIN / NOT_PINNED  (indicative upper)
+  2.2   train       6.97     7.65    20.62    21.19     1.09  ABSTAIN / NOT_PINNED  (indicative upper)
+  2.5   train       3.83     5.55    19.92    20.48     0.69  ABSTAIN / NOT_PINNED  (indicative upper)
+  3.0   train       1.51     2.57    19.30    19.83     0.34  ABSTAIN / NOT_PINNED  (indicative upper)
+  3.5   train       3.37     3.76    18.91    19.44     0.16  ABSTAIN / NOT_PINNED  (indicative upper)
+  4.0   train       3.17     3.87    18.65    19.17     0.07  ABSTAIN / NOT_PINNED  (indicative upper)
+  5.0   train       1.15     1.56    18.38    18.89     0.02  ABSTAIN / NOT_PINNED  (indicative upper)
+  6.0   train       7.19     8.04    18.18    18.69     0.06  ABSTAIN / NOT_PINNED  (indicative upper)
+  1.1   test      249.42   309.86    30.07    30.90     8.78  ABSTAIN / NOT_PINNED  (indicative upper)
+  1.2   test      139.37   172.60    27.95    28.73     6.91  ABSTAIN / NOT_PINNED  (indicative upper)
+  1.3   test       77.53    95.54    26.32    27.05     5.52  ABSTAIN / NOT_PINNED  (indicative upper)
+  1.4   test       41.93    51.21    25.05    25.75     4.46  ABSTAIN / NOT_PINNED  (indicative upper)
+  in sample (cubic on all of R): 1.6: 12.96-14.65, 1.8: 7.27-8.99, 2.0: 4.86-6.71, 2.2: 4.93-6.68, 2.5: 3.47-4.86, 3.0: 1.45-2.22, 3.5: 2.32-2.84, 4.0: 2.43-2.93, 5.0: 0.88-1.16, 6.0: 2.11-2.36
+  label filter, interpolated threshold where no map row: {'2.2': {'eps_emu': 0.6383554060580607, 'eps_tau_out_interp': 0.04062968151246625, 'neighbours': [2.0, 2.5], 'certified_interp': False}, '3.5': {'eps_emu': 0.12558040709173213, 'eps_tau_out_interp': 0.19197957522354686, 'neighbours': [3.0, 4.0], 'certified_interp': True}}
+  sanity: label in outer True, truth in outer True
+n=115  rule (c) with Prop. 2(b) intervals answers 0 of 11 queries []
+  Jz    range       W_lo     W_hi    2q_lo    2q_hi     miss  rule(c) / band(a)
+  1.6   train      70.40    98.73    22.09    22.47     3.82  ABSTAIN / NOT_PINNED
+  2.0   train       8.02    13.05    32.57    33.09     2.22  ABSTAIN / NOT_PINNED
+  2.5   train       8.26     9.77    30.81    31.30     1.24  ABSTAIN / NOT_PINNED
+  3.0   train       2.69     4.44    29.88    30.36     0.74  ABSTAIN / NOT_PINNED
+  4.0   train       6.40     8.24    28.98    29.45     0.31  ABSTAIN / NOT_PINNED
+  5.0   train       2.60     3.03    28.56    29.02     0.14  ABSTAIN / NOT_PINNED
+  6.0   train       9.55    12.02    28.34    28.79     0.06  ABSTAIN / NOT_PINNED
+  1.1   test      399.65   475.12    44.94    45.66     8.91  ABSTAIN / NOT_PINNED
+  1.2   test      225.72   268.12    42.04    42.71     7.41  ABSTAIN / NOT_PINNED
+  1.3   test      127.05   150.62    39.79    40.43     6.22  ABSTAIN / NOT_PINNED
+  1.4   test       69.72    82.31    38.03    38.64     5.25  ABSTAIN / NOT_PINNED
+  in sample (cubic on all of R): 1.6: 17.41-19.91, 2.0: 9.04-11.54, 2.5: 6.04-8.25, 3.0: 2.64-4.07, 4.0: 4.17-5.25, 5.0: 1.92-2.22, 6.0: 2.65-3.31
+  label filter, interpolated threshold where no map row: {}
+  sanity: label in outer True, truth in outer True

@@ -1,0 +1,6 @@
+declaration 6dfbc5681a7b4708ba790e1dd3139d8efdcccb9ced24e5ab2ce4b5a7a209ffaa
+read  e1/map_e1/S_sets.json   e82b32a79abdc43c4cce0480e7d0e542cc0fc40e5fe5757c959acb10e433f97c
+read  e1/map_e1/map_rows.json 02d745598a23258bdbf262736d0b0bdd19ecf93c77d7b1ec7b1f6e486aae1968
+n = 57: exact intervals with E1 at 29 couplings (stored certificates alone: 27; changed by E1 where both exist: 0); secondary sets |S| = 26, |S_3/4| = 23, |S_1/2| = 18, S_p = S_1_2; declared sets |S| = 26, |S_3/4| = 23, |S_1/2| = 18, S_p = S_1_2
+n = 115: exact intervals with E1 at 28 couplings (stored certificates alone: 21; changed by E1 where both exist: 19); secondary sets |S| = 27, |S_3/4| = 25, |S_1/2| = 18, S_p = S_1_2; declared sets |S| = 21, |S_3/4| = 21, |S_1/2| = 10, S_p = S_3_4
+wrote S_sets_E1.json e62a4df738166d76998e5893473c24b50e6489946d36fb1cb3c4a8e9a46137e3 (and S_sets_E1.sha256)

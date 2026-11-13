@@ -1,0 +1,31 @@
+{"tasks": [
+ {"id": "g_ed", "script": "gates_w.py", "args": ["ed"], "deps": [], "prio": 0, "mem": 8},
+ {"id": "g_netket", "script": "gates_w.py", "args": ["netket"], "deps": [], "prio": 0, "mem": 3},
+ {"id": "g_krylov", "script": "gates_w.py", "args": ["krylov"], "deps": [], "prio": 0, "mem": 2},
+ {"id": "g_dmrg0", "script": "dmrg_w.py", "args": ["0", "16", "gate"], "deps": [], "prio": 0, "mem": 7},
+ {"id": "g_dmrg5", "script": "dmrg_w.py", "args": ["0.5", "16", "gate"], "deps": [], "prio": 0, "mem": 8},
+
+ {"id": "vit_0_S", "script": "vit_w.py", "args": ["0", "S", "1"], "deps": ["g_ed", "g_netket"], "prio": 1, "mem": 7},
+ {"id": "vit_0_M", "script": "vit_w.py", "args": ["0", "M", "1"], "deps": ["g_ed", "g_netket"], "prio": 1, "mem": 7},
+ {"id": "vit_0_L", "script": "vit_w.py", "args": ["0", "L", "1"], "deps": ["g_ed", "g_netket"], "prio": 1, "mem": 7},
+ {"id": "vit_5_M", "script": "vit_w.py", "args": ["0.5", "M", "1"], "deps": ["g_ed", "g_netket"], "prio": 1, "mem": 8},
+ {"id": "vit_5_L", "script": "vit_w.py", "args": ["0.5", "L", "1"], "deps": ["g_ed", "g_netket"], "prio": 1, "mem": 8},
+
+ {"id": "gs_0", "script": "ed_env.py", "args": ["gs", "0"], "deps": ["g_ed"], "prio": 2, "mem": 7},
+ {"id": "gs_5", "script": "ed_env.py", "args": ["gs", "0.5"], "deps": ["g_ed"], "prio": 2, "mem": 8},
+
+ {"id": "env_0_ms_p", "script": "ed_env.py", "args": ["env", "0", "ms", "1"], "deps": ["g_ed"], "prio": 3, "mem": 7},
+ {"id": "env_0_ms_m", "script": "ed_env.py", "args": ["env", "0", "ms", "-1"], "deps": ["g_ed"], "prio": 3, "mem": 7},
+ {"id": "dmrg_0_a", "script": "dmrg_w.py", "args": ["0", "2,3,4,5,6,7,8,10,12,14,16,20,24,28,32,40,48,56,64", "a"], "deps": ["g_dmrg0"], "prio": 3, "mem": 7},
+ {"id": "dmrg_0_b", "script": "dmrg_w.py", "args": ["0", "80,96,112,128,160,192,256", "b"], "deps": ["g_dmrg0"], "prio": 3, "mem": 8},
+ {"id": "env_5_ms_p", "script": "ed_env.py", "args": ["env", "0.5", "ms", "1"], "deps": ["g_ed"], "prio": 4, "mem": 8},
+ {"id": "env_5_ms_m", "script": "ed_env.py", "args": ["env", "0.5", "ms", "-1"], "deps": ["g_ed"], "prio": 4, "mem": 8},
+ {"id": "env_5_dim_p", "script": "ed_env.py", "args": ["env", "0.5", "dim", "1"], "deps": ["g_ed"], "prio": 4, "mem": 8},
+ {"id": "env_5_dim_m", "script": "ed_env.py", "args": ["env", "0.5", "dim", "-1"], "deps": ["g_ed"], "prio": 4, "mem": 8},
+ {"id": "dmrg_5_a", "script": "dmrg_w.py", "args": ["0.5", "2,3,4,5,6,7,8,10,12,14,16,20,24,28,32,40,48,56,64", "a"], "deps": ["g_dmrg5"], "prio": 4, "mem": 8},
+ {"id": "dmrg_5_b", "script": "dmrg_w.py", "args": ["0.5", "80,96,112,128,160,192,256", "b"], "deps": ["g_dmrg5"], "prio": 4, "mem": 9},
+ {"id": "kry_0", "script": "krylov_w.py", "args": ["0"], "deps": ["gs_0", "g_krylov"], "prio": 5, "mem": 7},
+ {"id": "kry_5", "script": "krylov_w.py", "args": ["0.5"], "deps": ["gs_5", "g_krylov"], "prio": 5, "mem": 8},
+
+ {"id": "analyze", "script": "analyze_w.py", "args": [], "deps": ["gs_0", "gs_5", "env_0_ms_p", "env_0_ms_m", "env_5_ms_p", "env_5_ms_m", "env_5_dim_p", "env_5_dim_m", "dmrg_0_a", "dmrg_0_b", "dmrg_5_a", "dmrg_5_b", "vit_0_S", "vit_0_M", "vit_0_L", "vit_5_M", "vit_5_L", "kry_0", "kry_5"], "prio": 9, "mem": 2}
+]}

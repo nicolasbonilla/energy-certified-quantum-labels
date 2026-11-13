@@ -1,0 +1,20 @@
+# connector of each row from 0 to its coverage
+cov row
+0.0 5
+0.9111111111111111 5
+nan nan
+0.0 4
+0.0 4
+nan nan
+0.0 3
+0.9111111111111111 3
+nan nan
+0.0 1.6
+0.0 1.6
+nan nan
+0.0 0.6
+0.0 0.6
+nan nan
+0.0 -0.4
+0.0 -0.4
+nan nan

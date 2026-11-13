@@ -1,0 +1,12 @@
+printed example (delta_0 = 0.05, tbar = 1/16)                  delta_0=0.05000 Phi*=272.89 mu0=4.580e-05 const(m_s)=4.246e+16 | Phi*'=136054.8 mu0'=9.187e-08 C1bar=1.3842e+27
+infimum over two-sided windows: delta_0 -> 3/104, c_0 -> 0     delta_0=0.02885 Phi*=197.22 mu0=3.657e-05 const(m_s)=9.321e+16 | Phi*'=83673.6 mu0'=8.619e-08 C1bar=1.7311e+27
+m_s, c_0 = 1/40: delta_0 <= gamma(-1/40)/2                     delta_0=0.00385 Phi*=227.49 mu0=4.227e-06 const(m_s)=1.755e+20 | Phi*'=104626.1 mu0'=9.190e-09 C1bar=4.3689e+30
+m_s, c_0 = 1/100: delta_0 <= gamma(-1/100)/2                   delta_0=0.01885 Phi*=209.32 mu0=2.251e-05 const(m_s)=5.075e+17 | Phi*'=92054.6 mu0'=5.118e-08 C1bar=1.0723e+28
+C_zz, c_0 = 1/100                                              delta_0=0.01269 Phi*=209.32 mu0=1.516e-05 const(m_s)=2.020e+18 | Phi*'=92054.6 mu0'=3.447e-08 C1bar=4.2771e+28
+C_2, c_0 = 1/200                                               delta_0=0.00885 Phi*=203.27 mu0=1.088e-05 const(m_s)=6.436e+18 | Phi*'=87864.1 mu0'=2.517e-08 C1bar=1.2854e+29
+
+delta_0 = 0.05, c_0 -> 0                                       Phi*'=83673.6 mu0'=1.494e-07 C1bar=2.5258e+26
+delta_0 = 0.05, c_0 -> 3/104 (largest two-sided window of m_s) Phi*'=107849.5 mu0'=1.159e-07 C1bar=6.1393e+26
+delta_0 = 0.05, c_0 -> 1/56 (C_zz)                             Phi*'=98639.7 mu0'=1.267e-07 C1bar=4.4923e+26
+delta_0 = 0.05, c_0 -> 3/416 (C_2)                             Phi*'=89717.6 mu0'=1.393e-07 C1bar=3.2239e+26
+formal supremum delta_0 -> 3/52, c_0 -> 0                      Phi*'=83673.6 mu0'=1.724e-07 C1bar=1.5308e+26

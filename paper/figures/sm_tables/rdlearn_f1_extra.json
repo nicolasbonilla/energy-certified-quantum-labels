@@ -1,0 +1,139 @@
+{
+ "115|mlp_pilot3|control|ind": {
+  "label_covered": 0,
+  "miss_tau": [
+   4.827020565076456e-06,
+   0.0631586523414822
+  ],
+  "n": 45,
+  "n_miss_above_tau": 0,
+  "site_label": 0.0,
+  "site_truth": 0.9172946859903381,
+  "site_width_tau_median": 0.011182765951492726,
+  "truth_covered": 43,
+  "width_tau": [
+   0.007963529082384433,
+   0.02142154620412909
+  ]
+ },
+ "115|mlp_pilot3|control|test": {
+  "label_covered": 0,
+  "miss_tau": [
+   0.2572805565109538,
+   2.2220215567654256
+  ],
+  "n": 4,
+  "n_miss_above_tau": 2,
+  "site_label": 0.0,
+  "site_truth": 0.0,
+  "site_width_tau_median": 0.01324129645803575,
+  "truth_covered": 0,
+  "width_tau": [
+   0.012915696431685756,
+   0.01526347676858031
+  ]
+ },
+ "115|mlp_pilot3|real|ind": {
+  "label_covered": 42,
+  "miss_tau": [
+   0.014715263955965367,
+   1.5319883641897374
+  ],
+  "n": 45,
+  "n_miss_above_tau": 3,
+  "site_label": 0.8997101449275362,
+  "site_truth": 0.44579710144927537,
+  "site_width_tau_median": 0.12698849167774542,
+  "truth_covered": 16,
+  "width_tau": [
+   0.05818148364792052,
+   0.16762368236899064
+  ]
+ },
+ "115|mlp_pilot3|real|test": {
+  "label_covered": 0,
+  "miss_tau": [
+   2.543469759146916,
+   5.810579634685803
+  ],
+  "n": 4,
+  "n_miss_above_tau": 4,
+  "site_label": 0.03695652173913044,
+  "site_truth": 0.0,
+  "site_width_tau_median": 0.1819768493446746,
+  "truth_covered": 0,
+  "width_tau": [
+   0.1299782865919332,
+   0.15360538770087095
+  ]
+ },
+ "57|ibm_arch1|control|test": {
+  "label_covered": 0,
+  "miss_tau": [
+   0.8544582513176893,
+   2.7325387824218756
+  ],
+  "n": 4,
+  "n_miss_above_tau": 3,
+  "site_label": 0.0,
+  "site_truth": 0.0,
+  "site_width_tau_median": 0.250615081907783,
+  "truth_covered": 0,
+  "width_tau": [
+   0.20050547934875532,
+   0.24063963886306358
+  ]
+ },
+ "57|ibm_arch1|real|test": {
+  "label_covered": 0,
+  "miss_tau": [
+   2.9233557955642717,
+   5.956102697990576
+  ],
+  "n": 4,
+  "n_miss_above_tau": 4,
+  "site_label": 0.13157894736842105,
+  "site_truth": 0.0,
+  "site_width_tau_median": 0.3145811010254501,
+  "truth_covered": 0,
+  "width_tau": [
+   0.2613509854453533,
+   0.3136642796912473
+  ]
+ },
+ "57|mlp_pilot3|control|ind": {
+  "label_covered": 0,
+  "miss_tau": [
+   1.0594730893683816e-05,
+   0.07175229672293676
+  ],
+  "n": 45,
+  "n_miss_above_tau": 0,
+  "site_label": 0.0,
+  "site_truth": 0.8573099415204679,
+  "site_width_tau_median": 0.010276986451319801,
+  "truth_covered": 39,
+  "width_tau": [
+   0.006518867117868712,
+   0.01945582719528367
+  ]
+ },
+ "57|mlp_pilot3|real|ind": {
+  "label_covered": 40,
+  "miss_tau": [
+   0.04384780130434395,
+   1.8587294133046677
+  ],
+  "n": 45,
+  "n_miss_above_tau": 3,
+  "site_label": 0.8927875243664718,
+  "site_truth": 0.4339181286549707,
+  "site_width_tau_median": 0.20002203464204765,
+  "truth_covered": 20,
+  "width_tau": [
+   0.11639374591887083,
+   0.23409372241870535
+  ]
+ },
+ "_source": "phase3/full_runs/real_data/f1_neural/out/results_mlp_pilot3_n57.json, _n115.json and results_ibm57.json, written by the sealed scripts started by f1_neural/run_f1_neural.py after the declaration; converted by phase3/full_runs/real_data/checks/r11/fl_neural_f1.py"
+}

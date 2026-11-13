@@ -1,0 +1,1 @@
+2026-11-12T19:43:00Z  E1_SPEC.md and E1_MANIFEST.sha256 fixed; the E1 scheduler has not been started yet

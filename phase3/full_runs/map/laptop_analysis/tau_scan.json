@@ -1,0 +1,115 @@
+{
+ "note": "post-hoc (R5 S6), not declared; tau = frac |O_GS|; reading 1; outer side (certified)",
+ "frac": {
+  "0.03": {
+   "57_m_s": {
+    "J_star_central": 4.2,
+    "J_star_strict": 4.3,
+    "n_certified_central": 19,
+    "n_certified_strict": 18
+   },
+   "115_m_s": {
+    "J_star_central": 3.9,
+    "J_star_strict": 4.0,
+    "n_certified_central": 22,
+    "n_certified_strict": 21
+   },
+   "57_Czz_bar": {
+    "J_star_central": 4.2,
+    "J_star_strict": 4.3,
+    "n_certified_central": 19,
+    "n_certified_strict": 18
+   },
+   "115_Czz_bar": {
+    "J_star_central": 4.0,
+    "J_star_strict": 4.3,
+    "n_certified_central": 21,
+    "n_certified_strict": 18
+   }
+  },
+  "0.06": {
+   "57_m_s": {
+    "J_star_central": 3.2,
+    "J_star_strict": 3.4,
+    "n_certified_central": 29,
+    "n_certified_strict": 27
+   },
+   "115_m_s": {
+    "J_star_central": 3.1,
+    "J_star_strict": 3.3,
+    "n_certified_central": 30,
+    "n_certified_strict": 28
+   },
+   "57_Czz_bar": {
+    "J_star_central": 3.2,
+    "J_star_strict": 3.4,
+    "n_certified_central": 29,
+    "n_certified_strict": 27
+   },
+   "115_Czz_bar": {
+    "J_star_central": 3.1,
+    "J_star_strict": 3.3,
+    "n_certified_central": 30,
+    "n_certified_strict": 28
+   }
+  },
+  "0.10": {
+   "57_m_s": {
+    "J_star_central": 2.7,
+    "J_star_strict": 2.9,
+    "n_certified_central": 34,
+    "n_certified_strict": 32
+   },
+   "115_m_s": {
+    "J_star_central": 2.6,
+    "J_star_strict": 2.7,
+    "n_certified_central": 35,
+    "n_certified_strict": 34
+   },
+   "57_Czz_bar": {
+    "J_star_central": 2.9,
+    "J_star_strict": 3.0,
+    "n_certified_central": 32,
+    "n_certified_strict": 31
+   },
+   "115_Czz_bar": {
+    "J_star_central": 2.7,
+    "J_star_strict": 3.0,
+    "n_certified_central": 34,
+    "n_certified_strict": 31
+   }
+  }
+ },
+ "check_6pct": {
+  "max_rel_dev_eps_tau_out": 0.0,
+  "same_none": true,
+  "n_rows": 52,
+  "jstar_equal_stored": true,
+  "stored": {
+   "57_m_s": {
+    "J_star_central": 3.2,
+    "J_star_strict": 3.4,
+    "n_certified_central": 29,
+    "n_certified_strict": 27
+   },
+   "115_m_s": {
+    "J_star_central": 3.1,
+    "J_star_strict": 3.3,
+    "n_certified_central": 30,
+    "n_certified_strict": 28
+   },
+   "57_Czz_bar": {
+    "J_star_central": 3.2,
+    "J_star_strict": 3.4,
+    "n_certified_central": 29,
+    "n_certified_strict": 27
+   },
+   "115_Czz_bar": {
+    "J_star_central": 3.1,
+    "J_star_strict": 3.3,
+    "n_certified_central": 30,
+    "n_certified_strict": 28
+   }
+  }
+ }
+}

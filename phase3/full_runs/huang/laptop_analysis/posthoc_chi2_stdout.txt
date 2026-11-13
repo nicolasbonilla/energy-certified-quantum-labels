@@ -1,0 +1,17 @@
+(4,1) Ccent DMRG lam2=(0.721,0.722) eps(lam0)=(2.81e-04,2.81e-04) chi_two=0.0547 chi_2=0.0546 de_law0=7.311e-04 de_law2=7.322e-04 band=[7.311e-04, 7.331e-04] inside=True law2/out=1.002
+(4,1) Cfar  DMRG lam2=(0.632,0.629) eps(lam0)=(3.20e-04,3.22e-04) chi_two=0.0627 chi_2=0.0626 de_law0=6.380e-04 de_law2=6.388e-04 band=[6.380e-04, 6.398e-04] inside=True law2/out=1.001
+(6,1) Ccent DMRG lam2=(0.541,0.542) eps(lam0)=(5.72e-04,5.70e-04) chi_two=0.0478 chi_2=0.0478 de_law0=5.582e-04 de_law2=5.585e-04 band=[5.476e-04, 5.930e-04] inside=True law2/out=1.020
+(6,1) Cfar  DMRG lam2=(0.369,0.371) eps(lam0)=(7.59e-04,7.53e-04) chi_two=0.0773 chi_2=0.0889 de_law0=3.449e-04 de_law2=3.000e-04 band=[2.968e-04, 3.412e-04] inside=True law2/out=1.011
+(6,1) Cfix  DMRG lam2=(0.445,0.446) eps(lam0)=(6.45e-04,6.44e-04) chi_two=0.0626 chi_2=0.0625 de_law0=4.263e-04 de_law2=4.266e-04 band=[4.156e-04, 4.603e-04] inside=True law2/out=1.027
+(9,1) Ccent DMRG lam2=(0.335,0.334) eps(lam0)=(1.23e-03,1.24e-03) chi_two=0.0579 chi_2=0.0578 de_law0=3.072e-04 de_law2=3.075e-04 band=[2.603e-04, 3.709e-04] inside=True law2/out=1.181
+(9,1) Cfar  DMRG lam2=(0.535,0.543) eps(lam0)=(1.13e-03,1.09e-03) chi_two=0.0248 chi_2=0.0462 de_law0=7.165e-04 de_law2=3.852e-04 band=[3.468e-04, 4.581e-04] inside=True law2/out=1.111
+(9,1) Cfix  DMRG lam2=(0.314,0.314) eps(lam0)=(1.27e-03,1.27e-03) chi_two=0.0640 chi_2=0.0640 de_law0=2.777e-04 de_law2=2.778e-04 band=[2.307e-04, 3.412e-04] inside=True law2/out=1.204
+(9,2) Ccent DMRG lam2=(0.241,0.242) eps(lam0)=(2.29e-03,2.27e-03) chi_two=0.0602 chi_2=0.0603 de_law0=2.951e-04 de_law2=2.950e-04 band=[2.512e-04, 4.302e-04] inside=True law2/out=1.174
+(9,2) Cfar  DMRG lam2=(0.444,0.446) eps(lam0)=(2.09e-03,2.07e-03) chi_two=0.0194 chi_2=0.0384 de_law0=9.157e-04 de_law2=4.628e-04 band=[4.061e-04, 5.823e-04] inside=True law2/out=1.140
+(9,2) Cfix  DMRG lam2=(0.238,0.239) eps(lam0)=(2.29e-03,2.28e-03) chi_two=0.0616 chi_2=0.0616 de_law0=2.887e-04 de_law2=2.887e-04 band=[2.449e-04, 4.219e-04] inside=True law2/out=1.179
+(4,1) Ccent ED   lam2=(0.710,0.732) eps(lam0)=(2.74e-04,2.73e-04) chi_two=0.0547 chi_2=0.0546 de_law0=7.310e-04 de_law2=7.324e-04 band=[7.316e-04, 7.318e-04] inside=False law2/out=1.001
+(4,1) Cfar  ED   lam2=(0.639,0.617) eps(lam0)=(3.13e-04,3.15e-04) chi_two=0.0627 chi_2=0.0626 de_law0=6.376e-04 de_law2=6.389e-04 band=[6.381e-04, 6.383e-04] inside=False law2/out=1.001
+(4,2) Ccent ED   lam2=(0.563,0.607) eps(lam0)=(3.38e-04,3.27e-04) chi_two=0.0665 chi_2=0.0662 de_law0=6.019e-04 de_law2=6.038e-04 band=[6.023e-04, 6.033e-04] inside=False law2/out=1.003
+(4,2) Cfar  ED   lam2=(0.676,0.649) eps(lam0)=(2.95e-04,2.98e-04) chi_two=0.0593 chi_2=0.0592 de_law0=6.745e-04 de_law2=6.760e-04 band=[6.750e-04, 6.754e-04] inside=False law2/out=1.002
+(4,3) Ccent ED   lam2=(0.713,0.736) eps(lam0)=(2.72e-04,2.71e-04) chi_two=0.0544 chi_2=0.0543 de_law0=7.356e-04 de_law2=7.370e-04 band=[7.362e-04, 7.363e-04] inside=False law2/out=1.001
+(4,3) Cfar  ED   lam2=(0.809,0.776) eps(lam0)=(2.47e-04,2.49e-04) chi_two=0.0495 chi_2=0.0494 de_law0=8.073e-04 de_law2=8.092e-04 band=[8.079e-04, 8.084e-04] inside=False law2/out=1.002

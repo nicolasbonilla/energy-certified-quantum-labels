@@ -1,0 +1,28 @@
+M1|gen5|SC|avg         width/tau 0.77
+M1|gen5|SC|nn          width/tau 7.96
+M1|gen5|SC|diag        width/tau 2.75
+M1|gen5|CSC|avg        width/tau 1.23
+M1|gen5|CSC|nn         width/tau 10.37
+M1|gen5|CSC|diag       width/tau 4.63
+M1|advL5|SC|avg        width/tau 0.82
+M1|advL5|SC|nn         width/tau 7.82
+M1|advL5|SC|diag       width/tau 3.29
+M1|advL5|CSC|avg       width/tau 1.50
+M1|advL5|CSC|nn        width/tau 12.11
+M1|advL5|CSC|diag      width/tau 4.48
+M2|gen5|SC|avg         width/tau 0.68
+M2|gen5|SC|nn          width/tau 3.72
+M2|gen5|SC|diag        width/tau 1.90
+M2|gen5|CSC|avg        width/tau 1.22
+M2|gen5|CSC|nn         width/tau 6.74
+M2|gen5|CSC|diag       width/tau 3.74
+M2|advL5|SC|avg        width/tau 0.70
+M2|advL5|SC|nn         width/tau 3.65
+M2|advL5|SC|diag       width/tau 2.24
+M2|advL5|CSC|avg       width/tau 1.53
+M2|advL5|CSC|nn        width/tau 8.96
+M2|advL5|CSC|diag      width/tau 4.80
+range SC avg: 0.68-0.82
+range SC nn: 3.65-7.96
+range CSC avg: 1.22-1.53
+range CSC nn: 6.74-12.11

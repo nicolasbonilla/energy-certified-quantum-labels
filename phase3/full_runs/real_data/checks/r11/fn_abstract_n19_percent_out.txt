@@ -1,0 +1,10 @@
+n = 57, declared certificates: 26 kept couplings (3.5 ... 6.0); tau/|O_GS| = [0.06]
+   max miss of the exact 19-site m_s over the kept couplings: 0.1344 tau (max_over_kept stored: 0.1344) at Jz = 3.5
+   = 0.806 % of the reference value
+n = 115, declared certificates: 21 kept couplings (4.0 ... 6.0); tau/|O_GS| = [0.06]
+   max miss of the exact 19-site m_s over the kept couplings: 0.1424 tau (max_over_kept stored: 0.1424) at Jz = 4.0
+   = 0.854 % of the reference value
+n = 115, with the certificates added after the declaration: 27 kept couplings (3.4 ... 6.0); tau/|O_GS| = [0.06]
+   max miss of the exact 19-site m_s over the kept couplings: 0.2032 tau (max_over_kept stored: 0.2032) at Jz = 3.4
+   = 1.219 % of the reference value
+largest over the three cases: 1.219 % ; rounded up to one decimal: 1.3 %

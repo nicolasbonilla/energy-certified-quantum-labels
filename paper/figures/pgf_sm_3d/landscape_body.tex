@@ -1,0 +1,121 @@
+% landscape_body.tex -- native PGFPlots version of figS_landscape_n<N> (fig_landscape.py). Input by
+% figS_landscape_n57_pgf.tex / figS_landscape_n115_pgf.tex, which set \N. Data: land<N>_*.dat and values<N>.tex,
+% written by export_sm3d.py from the loaders of ../fig_landscape.py and ../landscape_data.py. pdflatex.
+\documentclass[10pt,border=1pt]{standalone}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{amsmath}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\usepgfplotslibrary{fillbetween}
+\usetikzlibrary{calc,patterns}
+\input{values\N.tex}
+% colours of fig_landscape.py: green = certified, orange = emulated states, violet = estimates, black = dataset
+\definecolor{cCert}{HTML}{25A274}
+\definecolor{cCertD}{HTML}{145E43}
+\definecolor{cInk}{HTML}{0B0B0B}
+\definecolor{cMute}{HTML}{6E6E6A}
+\definecolor{cFloor}{HTML}{8A8A86}
+\definecolor{cEmu}{HTML}{E0622E}
+\definecolor{cEst}{HTML}{5B4BD0}
+\definecolor{cBand}{HTML}{2B3442}
+\pgfplotsset{
+  every axis/.append style={tick label style={font=\footnotesize}, label style={font=\small},
+                            axis line style={cMute}, tick style={cMute}},
+  edgemapaxis/.style={scale only axis, width=\Wm, height=\Hm, xmin=1.1, xmax=6.0, ymin=1e-4,
+    ymax=\LdeMax, enlargelimits=false, axis on top, xtick={1.2,2,3,4,5,6}, xticklabels={1.2,2,3,4,5,6},
+    ytick={1e-4,1e-3,1e-2}, minor ytick={2e-4,3e-4,4e-4,5e-4,6e-4,7e-4,8e-4,9e-4,2e-3,3e-3,4e-3,5e-3,6e-3,7e-3,8e-3,
+      9e-3,2e-2}, xlabel={coupling $J_z$}, xlabel style={yshift=2pt},
+    colormap name=edgemap, point meta min=\LzMin, point meta max=\LzMax,
+    after end axis/.append code={\foreach \j in \LJs {\draw[cMute, line width=0.5pt] (axis cs:\j,\LdeMax) --
+      ++(0,2.6pt);}}},
+}
+\newlength{\Wm}\setlength{\Wm}{6.82cm}
+\newlength{\Hm}\setlength{\Hm}{4.5cm}
+\newlength{\Hc}\setlength{\Hc}{4.4cm}
+\newcommand{\ttl}[2]{\small(#1)\hspace{0.45em}#2}
+% overlays common to (a) and (b): certified side hatched, threshold de*(J_z), the dataset's de (grey: floor)
+\newcommand{\overlays}{%
+  \addplot[draw=none, fill=cCert, fill opacity=0.16]% R7 (2026-11-09): light green tint under the hatching, so the region shows in viewers that skip patterns (MuPDF)
+    table[x=J, y=de] {land\N_thresh.dat} -- (axis cs:6.0,5e-5) -- (axis cs:1.1,5e-5) -- cycle;
+  \addplot[draw=none, pattern=north east lines, pattern color=cCertD]% classic pattern (patterns.meta did not render in MuPDF either)
+    table[x=J, y=de] {land\N_thresh.dat} -- (axis cs:6.0,5e-5) -- (axis cs:1.1,5e-5) -- cycle;
+  \addplot[white, line width=2.6pt] table[x=J, y=de] {land\N_thresh.dat};
+  \addplot[cCertD, line width=1.3pt] table[x=J, y=de] {land\N_thresh.dat};
+  \addplot[white, line width=2.6pt] table[x=J, y=de] {land\N_line_floor.dat};
+  \addplot[white, line width=2.6pt] table[x=J, y=de] {land\N_line_data.dat};
+  \addplot[cFloor, line width=1.2pt] table[x=J, y=de] {land\N_line_floor.dat};
+  \addplot[cInk, line width=1.2pt] table[x=J, y=de] {land\N_line_data.dat};}
+\begin{document}
+\begin{tikzpicture}
+% ------------------------------------------------------------------------------------------------- (a) upper edge
+\begin{axis}[name=A, edgemapaxis, ymode=log, at={(0,0)}, anchor=south west, ylabel={energy error per site, $\delta e$},
+  ylabel style={yshift=-2pt}]
+\addplot[surf, shader=interp, mesh/cols=\LrawCols, point meta=explicit] table[x=J, y=de, meta=up] {land\N_grid_raw.dat};
+\overlays
+\addplot[only marks, mark=diamond*, mark size=1.8pt, fill=cEst, draw=white, mark options={line width=0.35pt}]
+  table[x=J, y=de] {land\N_dz.dat};
+\addplot[only marks, mark=*, mark size=1.9pt, fill=cEmu, draw=white, mark options={line width=0.4pt}]
+  table[x=J, y=de] {land\N_emu.dat};
+\node[font=\footnotesize, text=cCertD, align=center, inner sep=1.5pt, fill=white, fill opacity=0.85, text opacity=1]
+  at (axis cs:\LcertJ,\LcertDe) {certified (width $\le\tau$)};
+\end{axis}
+% ------------------------------------------------------------------------------------------------- (b) lower edge
+\begin{axis}[name=B, edgemapaxis, ymode=log, at={($(A.south east)+(0.4cm,0)$)}, anchor=south west, yticklabels={},
+  colorbar, colorbar shift/.style={xshift=0.18cm}, colorbar style={width=0.22cm, tick align=outside,
+    ytick pos=right, ytick=\LzTicks, yticklabels/.expand once=\LzTickLabels, minor ytick={},
+    yticklabel style={font=\footnotesize}, ylabel={$m_s-m_s^{\rm GS}$ (inner edges)},
+    ylabel style={font=\small}, axis line style={cMute}, tick style={cMute},
+    after end axis/.append code={\draw[cInk, line width=0.6pt] (rel axis cs:-0.2,\LzZero) --
+      (rel axis cs:1.2,\LzZero);}}]
+\addplot[surf, shader=interp, mesh/cols=\LrawCols, point meta=explicit] table[x=J, y=de, meta=lo] {land\N_grid_raw.dat};
+\overlays
+\node[font=\footnotesize, text=cCertD, anchor=south east, inner sep=1.5pt, fill=white, fill opacity=0.85,
+  text opacity=1] (thr) at (axis cs:\LthrJ,\LthrDe) {threshold $\delta e^*$: width $=\tau$};
+\draw[cCertD, line width=0.5pt] (thr.south east) -- (axis cs:\LthrJx,\LthrDex);
+\node[font=\footnotesize, text=cInk, anchor=south east, inner sep=1.5pt, fill=white, fill opacity=0.85,
+  text opacity=1] at (axis cs:5.92,\LdsDe) {dataset's $\delta e$};
+\end{axis}
+\coordinate (L) at ($(A.north west)+(-1.5cm,0)$);
+\node[anchor=base west, inner sep=0pt] at ($(L)+(0,0.3cm)$)
+  {\ttl{a}{upper edge of the window, $m_s^{+}-m_s^{\rm GS}$}};
+\node[anchor=base west, inner sep=0pt] at ($(B.north west)+(0,0.3cm)$)
+  {\ttl{b}{lower edge, $m_s^{-}-m_s^{\rm GS}$}};
+% ------------------------------------------------------------------------------------------------- (c) values
+\begin{axis}[name=Cc, at={($(A.south west)+(0,-1.65cm)$)}, anchor=north west, scale only axis,
+  width=2\Wm+0.4cm, height=\Hc, xmin=1.0, xmax=6.2, ymin=-0.4, ymax=0.25,
+  xtick={1.2,2,3,4,5,6}, xticklabels={1.2,2,3,4,5,6}, ytick={-0.4,-0.3,-0.2,-0.1,0,0.1,0.2},
+  yticklabels={$-0.4$,$-0.3$,$-0.2$,$-0.1$,$0$,$+0.1$,$+0.2$},
+  xlabel={coupling $J_z$}, ylabel={$m_s-m_s^{\rm GS}$}, xlabel style={yshift=2pt}, ylabel style={yshift=-2pt},
+  legend style={at={(0.995,0.03)}, anchor=south east, font=\footnotesize, draw=none, fill=white, fill opacity=0.85,
+    text opacity=1, row sep=0pt, inner sep=2pt}, legend cell align=left,
+]
+\draw[cMute, line width=0.4pt] (axis cs:1.0,0) -- (axis cs:6.2,0);
+\addplot[name path=Uf, draw=none, forget plot] table[x=J, y=wup] {land\N_line_floor.dat};
+\addplot[name path=Lf, draw=none, forget plot] table[x=J, y=wlo] {land\N_line_floor.dat};
+\addplot[name path=Ud, draw=none, forget plot] table[x=J, y=wup] {land\N_line_data.dat};
+\addplot[name path=Ld, draw=none, forget plot] table[x=J, y=wlo] {land\N_line_data.dat};
+\addplot[cFloor, fill opacity=0.35, forget plot] fill between[of=Uf and Lf];
+\addplot[cBand, fill opacity=0.45, forget plot] fill between[of=Ud and Ld];
+\addplot[cFloor, line width=0.9pt, forget plot] table[x=J, y=wup] {land\N_line_floor.dat};
+\addplot[cFloor, line width=0.9pt, forget plot] table[x=J, y=wlo] {land\N_line_floor.dat};
+\addplot[cInk, line width=0.9pt, forget plot] table[x=J, y=wup] {land\N_line_data.dat};
+\addplot[cInk, line width=0.9pt, forget plot] table[x=J, y=wlo] {land\N_line_data.dat};
+\addplot[cFloor, line width=0.7pt, quiver={u=0, v=\thisrow{dw}}, forget plot] table[x=J, y=wlo] {land\N_bars_floor.dat};
+\addplot[cInk, line width=0.7pt, quiver={u=0, v=\thisrow{dw}}, forget plot] table[x=J, y=wlo] {land\N_bars_data.dat};
+\addlegendimage{area legend, fill=cBand, fill opacity=0.45, draw=cInk}
+\addlegendentry{window at the dataset's energy (grey: conditional floor)}
+\addplot[only marks, mark=diamond*, mark size=2.3pt, fill=cEst, draw=white, mark options={line width=0.4pt}]
+  table[x=J, y=dm] {land\N_dz.dat};
+\addlegendentry{estimate at the dataset's energy ($|\Delta Z|$, sign assumed from emulation)}
+\addplot[only marks, mark=*, mark size=1.9pt, fill=cEmu, draw=white, mark options={line width=0.4pt}]
+  table[x=J, y=dm] {land\N_emu.dat};
+\addlegendentry{emulated method, at its own energy}
+\addplot[only marks, mark=-, mark size=3.2pt, cEmu, mark options={line width=1.0pt}] table[x=J, y=up_own] {land\N_emu.dat};
+\addlegendentry{upper edge at that energy}
+\end{axis}
+\node[anchor=base west, inner sep=0pt] at ($(L |- Cc.north)+(0,0.3cm)$)
+  {\ttl{c}{the window at the dataset's energy, and the emulated states}};
+\node[anchor=base east, inner sep=0pt, font=\small] at ($(Cc.north east |- L)+(0,0.3cm)$) {$n=\N$};
+\end{tikzpicture}
+\end{document}

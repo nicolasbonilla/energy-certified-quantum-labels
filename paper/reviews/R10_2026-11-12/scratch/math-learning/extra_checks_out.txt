@@ -1,0 +1,135 @@
+====================================================================================================
+A. Band (a) of the cubic, by training label.  Lower version (inner widths; 0 at 2.2 and 3.5), units of tau(x).
+   Columns: share of W_lo(x) carried by the labels at 1.6-2.5 (uncertified, miss > tau/2), by 3.0-3.5, by 4.0-6.0.
+   Jz=1.6  W_lo=  24.116 | 1.6-2.5:   23.333 ( 96.8 %) | 3.0-3.5:  0.127 | 4.0-6.0:  0.655 (upper  0.666)
+   Jz=1.8  W_lo=   6.996 | 1.6-2.5:    6.791 ( 97.1 %) | 3.0-3.5:  0.090 | 4.0-6.0:  0.114 (upper  0.117)
+   Jz=2.0  W_lo=   4.488 | 1.6-2.5:    4.331 ( 96.5 %) | 3.0-3.5:  0.049 | 4.0-6.0:  0.109 (upper  0.110)
+   Jz=2.2  W_lo=   6.972 | 1.6-2.5:    6.736 ( 96.6 %) | 3.0-3.5:  0.205 | 4.0-6.0:  0.031 (upper  0.031)
+   Jz=2.5  W_lo=   3.830 | 1.6-2.5:    3.381 ( 88.3 %) | 3.0-3.5:  0.365 | 4.0-6.0:  0.084 (upper  0.085)
+   Jz=3.0  W_lo=   1.509 | 1.6-2.5:    1.299 ( 86.1 %) | 3.0-3.5:  0.000 | 4.0-6.0:  0.210 (upper  0.213)
+   Jz=3.5  W_lo=   3.374 | 1.6-2.5:    2.582 ( 76.5 %) | 3.0-3.5:  0.526 | 4.0-6.0:  0.265 (upper  0.267)
+   Jz=4.0  W_lo=   3.169 | 1.6-2.5:    2.688 ( 84.8 %) | 3.0-3.5:  0.400 | 4.0-6.0:  0.081 (upper  0.083)
+   Jz=5.0  W_lo=   1.153 | 1.6-2.5:    0.835 ( 72.5 %) | 3.0-3.5:  0.103 | 4.0-6.0:  0.215 (upper  0.222)
+   Jz=6.0  W_lo=   7.188 | 1.6-2.5:    6.153 ( 85.6 %) | 3.0-3.5:  0.574 | 4.0-6.0:  0.461 (upper  0.463)
+   Jz=1.1  W_lo= 249.418 | 1.6-2.5:  238.400 ( 95.6 %) | 3.0-3.5:  5.957 | 4.0-6.0:  5.061 (upper  5.174)
+   Jz=1.2  W_lo= 139.366 | 1.6-2.5:  133.781 ( 96.0 %) | 3.0-3.5:  2.918 | 4.0-6.0:  2.667 (upper  2.724)
+   Jz=1.3  W_lo=  77.534 | 1.6-2.5:   74.808 ( 96.5 %) | 3.0-3.5:  1.355 | 4.0-6.0:  1.371 (upper  1.400)
+   Jz=1.4  W_lo=  41.930 | 1.6-2.5:   40.714 ( 97.1 %) | 3.0-3.5:  0.555 | 4.0-6.0:  0.661 (upper  0.674)
+====================================================================================================
+B. Label sensitivity of the cubic.  W_all_at_tau(x) = sum_j |a_j(x)| tau_j / tau(x): the band if every training
+   label were certified exactly at its own tolerance (w_j = tau_j).  > 1 means: certified labels are not enough.
+   Jz=1.6 (held out)  |a|_1 =   6.792  sum a = 1.000000  W_all_at_tau =   7.794 tau  -> labels would have to be certified at tau/7.79
+   Jz=1.8 (held out)  |a|_1 =   1.738  sum a = 1.000000  W_all_at_tau =   1.863 tau  -> labels would have to be certified at tau/1.86
+   Jz=2.0 (held out)  |a|_1 =   1.629  sum a = 1.000000  W_all_at_tau =   1.698 tau  -> labels would have to be certified at tau/1.70
+   Jz=2.2 (held out)  |a|_1 =   1.443  sum a = 1.000000  W_all_at_tau =   1.427 tau  -> labels would have to be certified at tau/1.43
+   Jz=2.5 (held out)  |a|_1 =   1.488  sum a = 1.000000  W_all_at_tau =   1.474 tau  -> labels would have to be certified at tau/1.47
+   Jz=3.0 (held out)  |a|_1 =   1.494  sum a = 1.000000  W_all_at_tau =   1.497 tau  -> labels would have to be certified at tau/1.50
+   Jz=3.5 (held out)  |a|_1 =   1.639  sum a = 1.000000  W_all_at_tau =   1.588 tau  -> labels would have to be certified at tau/1.59
+   Jz=4.0 (held out)  |a|_1 =   1.564  sum a = 1.000000  W_all_at_tau =   1.490 tau  -> labels would have to be certified at tau/1.49
+   Jz=5.0 (held out)  |a|_1 =   1.269  sum a = 1.000000  W_all_at_tau =   1.235 tau  -> labels would have to be certified at tau/1.24
+   Jz=6.0 (held out)  |a|_1 =   3.452  sum a = 1.000000  W_all_at_tau =   3.231 tau  -> labels would have to be certified at tau/3.23
+   Jz=1.1 (test)  |a|_1 =  44.208  sum a = 1.000001  W_all_at_tau =  65.094 tau  -> labels would have to be certified at tau/65.09
+   Jz=1.2 (test)  |a|_1 =  25.666  sum a = 1.000000  W_all_at_tau =  35.022 tau  -> labels would have to be certified at tau/35.02
+   Jz=1.3 (test)  |a|_1 =  14.457  sum a = 1.000000  W_all_at_tau =  18.502 tau  -> labels would have to be certified at tau/18.50
+   Jz=1.4 (test)  |a|_1 =   7.646  sum a = 1.000000  W_all_at_tau =   9.254 tau  -> labels would have to be certified at tau/9.25
+   in sample (cubic on all ten labels):
+   Jz=1.6  |a|_1 = 1.587  W_all_at_tau = 1.688 tau
+   Jz=1.8  |a|_1 = 1.495  W_all_at_tau = 1.579 tau
+   Jz=2.0  |a|_1 = 1.413  W_all_at_tau = 1.459 tau
+   Jz=2.2  |a|_1 = 1.313  W_all_at_tau = 1.302 tau
+   Jz=2.5  |a|_1 = 1.371  W_all_at_tau = 1.361 tau
+   Jz=3.0  |a|_1 = 1.354  W_all_at_tau = 1.356 tau
+   Jz=3.5  |a|_1 = 1.440  W_all_at_tau = 1.405 tau
+   Jz=4.0  |a|_1 = 1.407  W_all_at_tau = 1.353 tau
+   Jz=5.0  |a|_1 = 1.188  W_all_at_tau = 1.164 tau
+   Jz=6.0  |a|_1 = 1.684  W_all_at_tau = 1.622 tau
+====================================================================================================
+C. Local learners trained on ALL ten emulated labels (the uncertified ones included).
+   learner: piecewise-linear in 1/Jz
+     held out  Jz=3.0  trained on  9 labels, uses [2.5, 3.5]   W(x) = 0.943-1.558 tau (interp. width) -> not pinned | |f-f*| = 0.369 tau | miss of truth 0.339 tau (same learner on exact labels: 0.030 tau)
+     held out  Jz=3.5  trained on  9 labels, uses [3.0, 4.0]   W(x) = 0.840-0.852 tau -> PINNED within tau | |f-f*| = 0.184 tau | miss of truth 0.167 tau (same learner on exact labels: 0.017 tau)
+     held out  Jz=4.0  trained on  9 labels, uses [3.5, 5.0]   W(x) = 0.107-0.576 tau (interp. width) -> not pinned | |f-f*| = 0.109 tau | miss of truth 0.090 tau (same learner on exact labels: 0.019 tau)
+     held out  Jz=5.0  trained on  9 labels, uses [4.0, 6.0]   W(x) = 0.282-0.290 tau -> PINNED within tau | |f-f*| = 0.048 tau | miss of truth 0.030 tau (same learner on exact labels: 0.018 tau)
+     held out  Jz=6.0  trained on  9 labels, uses [5.0]        W(x) = 0.251-0.252 tau -> PINNED within tau | |f-f*| = 0.037 tau | miss of truth 0.101 tau (same learner on exact labels: 0.138 tau)
+     in sample Jz=3.0  trained on 10 labels, uses [3.0]        W(x) = 1.319-1.346 tau -> not pinned | |f-f*| = 0.316 tau | miss of truth 0.316 tau (same learner on exact labels: 0.000 tau)
+     in sample Jz=3.5  trained on 10 labels, uses [3.5]        W(x) = 0.000-0.813 tau (interp. width) -> not pinned | |f-f*| = 0.162 tau | miss of truth 0.162 tau (same learner on exact labels: 0.000 tau)
+     in sample Jz=4.0  trained on 10 labels, uses [4.0]        W(x) = 0.494-0.494 tau -> PINNED within tau | |f-f*| = 0.089 tau | miss of truth 0.089 tau (same learner on exact labels: 0.000 tau)
+     in sample Jz=5.0  trained on 10 labels, uses [5.0]        W(x) = 0.253-0.254 tau -> PINNED within tau | |f-f*| = 0.037 tau | miss of truth 0.037 tau (same learner on exact labels: 0.000 tau)
+     in sample Jz=6.0  trained on 10 labels, uses [6.0]        W(x) = 0.145-0.158 tau -> PINNED within tau | |f-f*| = 0.021 tau | miss of truth 0.021 tau (same learner on exact labels: 0.000 tau)
+   learner: nearest neighbour
+     held out  Jz=3.0  trained on  9 labels, uses [2.5]        W(x) = 2.264-2.577 tau -> not pinned | |f-f*| = 0.654 tau | miss of truth 0.110 tau (same learner on exact labels: 0.543 tau)
+     held out  Jz=3.5  trained on  9 labels, uses [3.0]        W(x) = 1.293-1.319 tau -> not pinned | |f-f*| = 0.310 tau | miss of truth 0.020 tau (same learner on exact labels: 0.330 tau)
+     held out  Jz=4.0  trained on  9 labels, uses [3.5]        W(x) = 0.000-0.802 tau (interp. width) -> not pinned | |f-f*| = 0.160 tau | miss of truth 0.055 tau (same learner on exact labels: 0.215 tau)
+     held out  Jz=5.0  trained on  9 labels, uses [4.0]        W(x) = 0.487-0.487 tau -> PINNED within tau | |f-f*| = 0.087 tau | miss of truth 0.165 tau (same learner on exact labels: 0.253 tau)
+     held out  Jz=6.0  trained on  9 labels, uses [5.0]        W(x) = 0.251-0.252 tau -> PINNED within tau | |f-f*| = 0.037 tau | miss of truth 0.101 tau (same learner on exact labels: 0.138 tau)
+     in sample Jz=3.0  trained on 10 labels, uses [3.0]        W(x) = 1.319-1.346 tau -> not pinned | |f-f*| = 0.316 tau | miss of truth 0.316 tau (same learner on exact labels: 0.000 tau)
+     in sample Jz=3.5  trained on 10 labels, uses [3.5]        W(x) = 0.000-0.813 tau (interp. width) -> not pinned | |f-f*| = 0.162 tau | miss of truth 0.162 tau (same learner on exact labels: 0.000 tau)
+     in sample Jz=4.0  trained on 10 labels, uses [4.0]        W(x) = 0.494-0.494 tau -> PINNED within tau | |f-f*| = 0.089 tau | miss of truth 0.089 tau (same learner on exact labels: 0.000 tau)
+     in sample Jz=5.0  trained on 10 labels, uses [5.0]        W(x) = 0.253-0.254 tau -> PINNED within tau | |f-f*| = 0.037 tau | miss of truth 0.037 tau (same learner on exact labels: 0.000 tau)
+     in sample Jz=6.0  trained on 10 labels, uses [6.0]        W(x) = 0.145-0.158 tau -> PINNED within tau | |f-f*| = 0.021 tau | miss of truth 0.021 tau (same learner on exact labels: 0.000 tau)
+====================================================================================================
+D. Learners trained on the three certified labels only (Jz = 4, 5, 6).  Truth at 4.5 and 5.5: the map's DMRG
+   reference m_s_GS (thr files; no emulated label exists there).
+   learner: line in 1/Jz (least squares), trained on [4.0, 5.0, 6.0]
+     Jz=4.0 (in sample)            |a|_1 =    1.316  W(x) =    0.533-   0.536 tau  |f-f*| =   0.086 tau  miss of truth =   0.091 tau  (exact-label learner: 0.005 tau)  bound W + model error = 0.541 tau
+     Jz=4.5 (new coupling)         |a|_1 =    1.000  W(x) =    0.367-   0.369 tau  |f-f*| =   0.062 tau  miss of truth =   0.051 tau  (exact-label learner: 0.011 tau)  bound W + model error = 0.380 tau
+     Jz=5.0 (in sample)            |a|_1 =    1.000  W(x) =    0.272-   0.278 tau  |f-f*| =   0.044 tau  miss of truth =   0.032 tau  (exact-label learner: 0.012 tau)  bound W + model error = 0.290 tau
+     Jz=5.5 (new coupling)         |a|_1 =    1.000  W(x) =    0.196-   0.205 tau  |f-f*| =   0.029 tau  miss of truth =   0.025 tau  (exact-label learner: 0.004 tau)  bound W + model error = 0.209 tau
+     Jz=6.0 (in sample)            |a|_1 =    1.316  W(x) =    0.286-   0.296 tau  |f-f*| =   0.017 tau  miss of truth =   0.024 tau  (exact-label learner: 0.007 tau)  bound W + model error = 0.303 tau
+     Jz=1.1 (test range)           |a|_1 =   17.440  W(x) =    9.440-   9.602 tau  |f-f*| =   1.014 tau  miss of truth =   6.101 tau  (exact-label learner: 5.088 tau)  bound W + model error = 14.689 tau
+     Jz=1.2 (test range)           |a|_1 =   15.526  W(x) =    7.835-   7.968 tau  |f-f*| =   0.849 tau  miss of truth =   4.948 tau  (exact-label learner: 4.099 tau)  bound W + model error = 12.068 tau
+     Jz=1.3 (test range)           |a|_1 =   13.907  W(x) =    6.630-   6.742 tau  |f-f*| =   0.725 tau  miss of truth =   4.049 tau  (exact-label learner: 3.325 tau)  bound W + model error = 10.067 tau
+     Jz=1.4 (test range)           |a|_1 =   12.519  W(x) =    5.699-   5.795 tau  |f-f*| =   0.629 tau  miss of truth =   3.343 tau  (exact-label learner: 2.714 tau)  bound W + model error = 8.509 tau
+     leave-one-out (line through the other two) Jz=4.0: |a|_1 = 4.000  W = 0.888 tau  miss = 0.108 tau
+     leave-one-out (line through the other two) Jz=5.0: |a|_1 = 1.000  W = 0.290 tau  miss = 0.030 tau
+     leave-one-out (line through the other two) Jz=6.0: |a|_1 = 2.333  W = 0.742 tau  miss = 0.033 tau
+   learner: parabola in 1/Jz (interpolation), trained on [4.0, 5.0, 6.0]
+     Jz=4.0 (in sample)            |a|_1 =    1.000  W(x) =    0.494-   0.494 tau  |f-f*| =   0.089 tau  miss of truth =   0.089 tau  (exact-label learner: 0.000 tau)  bound W + model error = 0.494 tau
+     Jz=4.5 (new coupling)         |a|_1 =    1.444  W(x) =    0.414-   0.418 tau  |f-f*| =   0.056 tau  miss of truth =   0.056 tau  (exact-label learner: 0.000 tau)  bound W + model error = 0.418 tau
+     Jz=5.0 (in sample)            |a|_1 =    1.000  W(x) =    0.253-   0.254 tau  |f-f*| =   0.037 tau  miss of truth =   0.037 tau  (exact-label learner: 0.000 tau)  bound W + model error = 0.254 tau
+     Jz=5.5 (new coupling)         |a|_1 =    1.132  W(x) =    0.253-   0.260 tau  |f-f*| =   0.026 tau  miss of truth =   0.026 tau  (exact-label learner: 0.000 tau)  bound W + model error = 0.260 tau
+     Jz=6.0 (in sample)            |a|_1 =    1.000  W(x) =    0.145-   0.158 tau  |f-f*| =   0.021 tau  miss of truth =   0.021 tau  (exact-label learner: 0.000 tau)  bound W + model error = 0.158 tau
+     Jz=1.1 (test range)           |a|_1 =  588.190  W(x) =  262.352- 266.518 tau  |f-f*| =   5.978 tau  miss of truth =   2.517 tau  (exact-label learner: 3.461 tau)  bound W + model error = 269.979 tau
+     Jz=1.2 (test range)           |a|_1 =  467.667  W(x) =  194.340- 197.404 tau  |f-f*| =   4.515 tau  miss of truth =   2.300 tau  (exact-label learner: 2.215 tau)  bound W + model error = 199.618 tau
+     Jz=1.3 (test range)           |a|_1 =  376.444  W(x) =  147.683- 149.994 tau  |f-f*| =   3.503 tau  miss of truth =   2.044 tau  (exact-label learner: 1.459 tau)  bound W + model error = 151.453 tau
+     Jz=1.4 (test range)           |a|_1 =  306.102  W(x) =  114.587- 116.365 tau  |f-f*| =   2.777 tau  miss of truth =   1.792 tau  (exact-label learner: 0.985 tau)  bound W + model error = 117.350 tau
+     leave-one-out (line through the other two) Jz=4.0: |a|_1 = 4.000  W = 0.888 tau  miss = 0.108 tau
+     leave-one-out (line through the other two) Jz=5.0: |a|_1 = 1.000  W = 0.290 tau  miss = 0.030 tau
+     leave-one-out (line through the other two) Jz=6.0: |a|_1 = 2.333  W = 0.742 tau  miss = 0.033 tau
+====================================================================================================
+E. Learner-independent floor of the width of (b): s_j = max_{y in I_j} |f(x_j) - y| >= w_j / 2 for ANY f, so
+   2q >= the k-th smallest label-interval width of the calibration set (k = ceil((N+1)(1-alpha)), or N).
+   Jz=1.6  N= 9 k= 9  floor of 2q =   8.25 tau(x)   (calibration labels with inner width > own tau: 4 of 9)
+   Jz=1.8  N= 9 k= 9  floor of 2q =  11.09 tau(x)   (calibration labels with inner width > own tau: 4 of 9)
+   Jz=2.0  N= 9 k= 9  floor of 2q =  10.67 tau(x)   (calibration labels with inner width > own tau: 4 of 9)
+   Jz=2.2  N= 9 k= 9  floor of 2q =  10.37 tau(x)   (calibration labels with inner width > own tau: 5 of 9)
+   Jz=2.5  N= 9 k= 9  floor of 2q =  10.04 tau(x)   (calibration labels with inner width > own tau: 4 of 9)
+   Jz=3.0  N= 9 k= 9  floor of 2q =   9.72 tau(x)   (calibration labels with inner width > own tau: 4 of 9)
+   Jz=3.5  N= 9 k= 9  floor of 2q =   9.52 tau(x)   (calibration labels with inner width > own tau: 5 of 9)
+   Jz=4.0  N= 9 k= 9  floor of 2q =   9.40 tau(x)   (calibration labels with inner width > own tau: 5 of 9)
+   Jz=5.0  N= 9 k= 9  floor of 2q =   9.26 tau(x)   (calibration labels with inner width > own tau: 5 of 9)
+   Jz=6.0  N= 9 k= 9  floor of 2q =   9.18 tau(x)   (calibration labels with inner width > own tau: 5 of 9)
+   Jz=1.1  N=10 k=10  floor of 2q =  15.14 tau(x)   (calibration labels with inner width > own tau: 5 of 10)
+   Jz=1.2  N=10 k=10  floor of 2q =  14.07 tau(x)   (calibration labels with inner width > own tau: 5 of 10)
+   Jz=1.3  N=10 k=10  floor of 2q =  13.25 tau(x)   (calibration labels with inner width > own tau: 5 of 10)
+   Jz=1.4  N=10 k=10  floor of 2q =  12.61 tau(x)   (calibration labels with inner width > own tau: 5 of 10)
+   -> range over the training couplings 8.25-11.09 tau, over the test couplings 12.61-15.14 tau
+   how many calibration labels may be wider than tau before rule (c) is excluded: N - k = 0 for N = 9, 10 at alpha = 0.1; for the dataset's 45 training points k = 42, so at most 3.
+====================================================================================================
+F. Label filter at the labels' own energies (own windows).  w_out <= tau: certified.
+   Jz=1.1  w_in 21.363  w_out 35.619 tau  not certified (inner > tau)  label error 8.422 tau  (guaranteed <= 32.711 tau)
+   Jz=1.2  w_in 19.833  w_out 28.778 tau  not certified (inner > tau)  label error 6.730 tau  (guaranteed <= 26.439 tau)
+   Jz=1.3  w_in 19.019  w_out 23.216 tau  not certified (inner > tau)  label error 5.445 tau  (guaranteed <= 21.529 tau)
+   Jz=1.4  w_in 16.867  w_out 18.884 tau  not certified (inner > tau)  label error 4.429 tau  (guaranteed <= 17.652 tau)
+   Jz=1.6  w_in 11.700  w_out 12.682 tau  not certified (inner > tau)  label error 3.010 tau  (guaranteed <= 11.900 tau)
+   Jz=1.8  w_in 7.826  w_out 8.624 tau  not certified (inner > tau)  label error 2.104 tau  (guaranteed <= 7.992 tau)
+   Jz=2.0  w_in 5.565  w_out 6.035 tau  not certified (inner > tau)  label error 1.508 tau  (guaranteed <= 5.524 tau)
+   Jz=2.2  no map row                      label error 1.096 tau
+   Jz=2.5  w_in 2.340  w_out 2.664 tau  not certified (inner > tau)  label error 0.676 tau  (guaranteed <= 2.316 tau)
+   Jz=3.0  w_in 1.319  w_out 1.346 tau  not certified (inner > tau)  label error 0.316 tau  (guaranteed <= 1.102 tau)
+   Jz=3.5  no map row                      label error 0.162 tau
+   Jz=4.0  w_in 0.494  w_out 0.494 tau  CERTIFIED (kept)             label error 0.089 tau  (guaranteed <= 0.361 tau)
+   Jz=5.0  w_in 0.253  w_out 0.254 tau  CERTIFIED (kept)             label error 0.037 tau  (guaranteed <= 0.174 tau)
+   Jz=6.0  w_in 0.145  w_out 0.158 tau  CERTIFIED (kept)             label error 0.021 tau  (guaranteed <= 0.106 tau)
+   kept 3 of 14: [4.0, 5.0, 6.0] ; max label error kept 0.089 tau ; max guaranteed distance kept 0.361 tau
+   dropped with label error > tau/2: [1.1, 1.2, 1.3, 1.4, 1.6, 1.8, 2.0, 2.2, 2.5] ; dropped with label error <= tau/2: [3.0, 3.5] ; dropped with error <= tau: [2.5, 3.0, 3.5]

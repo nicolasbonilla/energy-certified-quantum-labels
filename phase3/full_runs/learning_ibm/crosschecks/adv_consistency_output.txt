@@ -1,0 +1,10 @@
+de = 0.001  (reported excess eps = n*de = 0.02)
+  exact: implied (E - E0)/eps  min    -0.000  median    -0.000  max     0.000
+  gen  : implied (E - E0)/eps  min     1.000  median     1.000  max     1.000
+  less : implied (E - E0)/eps  min   206.571  median   247.573  max   287.249
+  more : implied (E - E0)/eps  min  -280.456  median  -238.808  max  -196.990
+de = 0.005  (reported excess eps = n*de = 0.1)
+  exact: implied (E - E0)/eps  min    -0.000  median    -0.000  max     0.000
+  gen  : implied (E - E0)/eps  min     0.999  median     1.000  max     1.000
+  less : implied (E - E0)/eps  min    94.805  median   114.190  max   133.375
+  more : implied (E - E0)/eps  min  -122.028  median  -102.550  max   -82.965

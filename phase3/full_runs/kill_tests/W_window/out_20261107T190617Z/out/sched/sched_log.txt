@@ -1,0 +1,52 @@
+2026-11-07T20:11:22Z scheduler start pid=13985 tasks=25
+2026-11-07T20:11:22Z start g_ed threads=1 mem=8 pid=13986
+2026-11-07T20:11:22Z start g_netket threads=1 mem=3 pid=13987
+2026-11-07T20:11:22Z start g_krylov threads=1 mem=2 pid=13988
+2026-11-07T20:11:22Z start g_dmrg0 threads=1 mem=7 pid=13989
+2026-11-07T20:11:22Z start g_dmrg5 threads=1 mem=8 pid=13990
+2026-11-07T20:11:32Z end g_krylov rc=0 10s
+2026-11-07T20:12:22Z end g_netket rc=0 60s
+2026-11-07T20:12:22Z end g_dmrg0 rc=1 60s
+2026-11-07T20:12:42Z end g_ed rc=0 80s
+2026-11-07T20:12:42Z end g_dmrg5 rc=1 80s
+2026-11-07T20:12:42Z start vit_0_S threads=1 mem=7 pid=14076
+2026-11-07T20:12:42Z start vit_0_M threads=1 mem=7 pid=14077
+2026-11-07T20:12:42Z start vit_0_L threads=1 mem=7 pid=14078
+2026-11-07T20:12:42Z start vit_5_M threads=1 mem=8 pid=14079
+2026-11-07T20:12:42Z start vit_5_L threads=1 mem=8 pid=14080
+2026-11-07T20:12:42Z start gs_0 threads=1 mem=7 pid=14081
+2026-11-07T20:12:42Z start gs_5 threads=1 mem=8 pid=14082
+2026-11-07T20:14:52Z end gs_0 rc=0 130s
+2026-11-07T20:14:52Z start env_0_ms_p threads=1 mem=7 pid=14399
+2026-11-07T20:16:32Z end gs_5 rc=0 230s
+2026-11-07T20:16:32Z start g_dmrg0 threads=1 mem=7 pid=14610
+2026-11-07T20:16:32Z start env_0_ms_m threads=1 mem=7 pid=14611
+2026-11-07T20:19:02Z end g_dmrg0 rc=0 150s
+2026-11-07T20:19:02Z start dmrg_0_a threads=1 mem=7 pid=15144
+2026-11-07T20:22:52Z end dmrg_0_a rc=-15 230s
+2026-11-07T20:22:52Z start kry_0 threads=1 mem=7 pid=15380
+2026-11-07T20:36:52Z end kry_0 rc=0 840s
+2026-11-07T20:36:52Z start dmrg_0_a threads=1 mem=7 pid=16452
+2026-11-07T21:06:22Z end dmrg_0_a rc=0 1770s
+2026-11-07T21:21:43Z end env_0_ms_p rc=0 4011s
+2026-11-07T21:33:23Z end vit_0_S rc=0 4841s
+2026-11-07T21:33:43Z end vit_0_M rc=0 4861s
+2026-11-07T21:33:43Z end vit_5_M rc=0 4861s
+2026-11-07T21:33:43Z start g_dmrg5 threads=1 mem=8 pid=21968
+2026-11-07T21:33:43Z start env_5_ms_p threads=1 mem=8 pid=21969
+2026-11-07T21:34:03Z end vit_0_L rc=0 4881s
+2026-11-07T21:34:03Z end vit_5_L rc=0 4881s
+2026-11-07T21:34:03Z start env_5_ms_m threads=1 mem=8 pid=21981
+2026-11-07T21:34:03Z start env_5_dim_p threads=1 mem=8 pid=21982
+2026-11-07T21:35:03Z end g_dmrg5 rc=0 80s
+2026-11-07T21:35:03Z start env_5_dim_m threads=1 mem=8 pid=22006
+2026-11-07T21:44:13Z start dmrg_5_a threads=1 mem=8 pid=22910
+2026-11-07T21:44:13Z start kry_5 threads=1 mem=8 pid=22911
+2026-11-07T21:59:43Z end kry_5 rc=0 930s
+2026-11-07T22:00:43Z end dmrg_5_a rc=0 990s
+2026-11-07T22:11:53Z end env_0_ms_m rc=0 6921s
+2026-11-07T22:15:13Z end env_5_ms_p rc=0 2490s
+2026-11-07T22:21:23Z end env_5_dim_p rc=0 2840s
+2026-11-07T22:38:13Z end env_5_ms_m rc=0 3850s
+2026-11-07T22:52:43Z end env_5_dim_m rc=0 4660s
+2026-11-07T22:52:43Z scheduler exit: done=22 failed=0 blocked=3 pending=0

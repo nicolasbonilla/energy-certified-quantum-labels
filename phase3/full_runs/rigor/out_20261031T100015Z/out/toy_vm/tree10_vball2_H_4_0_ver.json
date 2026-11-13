@@ -1,0 +1,24 @@
+{
+ "ok": true,
+ "E_LB_exact": "-41539933085/4294967296",
+ "E_LB_float_floor": -9.671769357528897,
+ "n_clusters": 3,
+ "n_blocks": 24,
+ "max_block": 70,
+ "denominator_bits": 32,
+ "twoS": 0,
+ "task": {
+  "kind": "H",
+  "Jz": "4",
+  "clusters": "vball2",
+  "K": 32,
+  "maxiter": 200,
+  "betas": [
+   10,
+   100,
+   1000
+  ]
+ },
+ "cert_sha256": "a97646231dd5214670ee359176fd9cfb30925b3e31fccb3bc6674d0c1c323b9b",
+ "time_s": 0.32122254371643066
+}

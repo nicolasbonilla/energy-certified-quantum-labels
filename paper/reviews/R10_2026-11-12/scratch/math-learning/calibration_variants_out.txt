@@ -1,0 +1,31 @@
+1. m_s, cubic, emulated labels: intervals at the held-out coupling t from the other nine (N = 9, alpha = 0.1)
+   Jz   | jackknife  w/tau  emu truth  | jackknife+ w/tau  emu truth  | minmax     w/tau  emu truth 
+   1.6  |      0.145    True False     |      0.330    True False     |      0.350    True False    
+   1.8  |      0.402    True False     |      0.402    True False     |      0.482    True False    
+   2.0  |      0.094    True False     |      0.094    True False     |      0.108    True False    
+   2.2  |      0.107    True False     |      0.109    True False     |      0.121    True False    
+   2.5  |      0.085    True False     |      0.085    True False     |      0.097    True False    
+   3.0  |      0.078    True False     |      0.078    True False     |      0.091    True False    
+   3.5  |      0.091    True False     |      0.091    True False     |      0.108    True False    
+   4.0  |      0.081    True False     |      0.081    True False     |      0.092    True False    
+   5.0  |      0.180    True  True     |      0.180    True  True     |      0.237    True  True    
+   6.0  |      0.068   False False     |      0.098   False False     |      0.120   False False    
+   plain jackknife (no guarantee)                          covers new emulated m_s at 9 of 10, the true m_s at 1 of 10; median width 0.093 tau (range 0.068-0.402)
+   jackknife+ (1 - 2 alpha = 0.8 under exchangeability)    covers new emulated m_s at 9 of 10, the true m_s at 1 of 10; median width 0.096 tau (range 0.078-0.402)
+   jackknife-minmax (1 - alpha = 0.9 under exchangeability) covers new emulated m_s at 9 of 10, the true m_s at 1 of 10; median width 0.114 tau (range 0.091-0.482)
+
+2. single split, 3 calibration couplings, all C(10,3) = 120 choices, per-site labels, test range (paper: 0.22 / 0)
+   coverage of new emulated site labels 0.2171, of the true ones 0.0000; quantile index (k, N) = [(155, 171)]
+
+3. plain jackknife, per-site labels pooled: coverage of the new emulated site labels by held-out coupling
+   Jz=1.6  0.789   (true site labels: 0.000)
+   Jz=1.8  1.000   (true site labels: 0.000)
+   Jz=2.0  1.000   (true site labels: 0.000)
+   Jz=2.2  1.000   (true site labels: 0.000)
+   Jz=2.5  0.965   (true site labels: 0.000)
+   Jz=3.0  0.982   (true site labels: 0.000)
+   Jz=3.5  1.000   (true site labels: 0.000)
+   Jz=4.0  1.000   (true site labels: 0.000)
+   Jz=5.0  1.000   (true site labels: 1.000)
+   Jz=6.0  0.298   (true site labels: 0.000)
+   mean 0.9035; interior couplings (1.8-5.0) mean 0.9934; the two end couplings 0.789 and 0.298

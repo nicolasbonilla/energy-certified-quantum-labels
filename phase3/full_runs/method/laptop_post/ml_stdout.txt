@@ -1,0 +1,16 @@
+n=57 poly3_invJ   Jz=1.2: vs same-method 0.77%  vs DMRG 41.46%
+n=57 mlp_pilot3   Jz=1.2: vs same-method 0.16%  vs DMRG 40.61%
+n=57 ibm_arch1    Jz=1.2: vs same-method 0.73%  vs DMRG 39.36%
+n=57 null_const   Jz=1.2: vs same-method 4.87%  vs DMRG 47.21%
+n=57 null_nn      Jz=1.2: vs same-method 1.15%  vs DMRG 42.00%
+n=57 readings {'same_method_test_blind': True, 'blind_models': ['mlp_pilot3', 'ibm_arch1'], 'test_uninformative': True}; abstention J*: {'poly3_invJ': (0.2857142857142857, np.float64(0.9512841132372631)), 'mlp_pilot3': (0.2857142857142857, np.float64(0.9700844026735227)), 'ibm_arch1': (0.2857142857142857, np.float64(1.0226653996507378))}; spread abstains at OOD: [1.1, 1.2]
+n=115 poly3_invJ   Jz=1.2: vs same-method 0.64%  vs DMRG 44.49%
+n=115 mlp_pilot3   Jz=1.2: vs same-method 0.02%  vs DMRG 45.39%
+n=115 ibm_arch1    Jz=1.2: vs same-method 0.24%  vs DMRG 45.07%
+n=115 null_const   Jz=1.2: vs same-method 1.23%  vs DMRG 47.21%
+n=115 null_nn      Jz=1.2: vs same-method 0.24%  vs DMRG 45.76%
+n=115 readings {'same_method_test_blind': True, 'blind_models': ['mlp_pilot3', 'ibm_arch1'], 'test_uninformative': True}; abstention J*: {'poly3_invJ': (0.2727272727272727, np.float64(1.8344072065218546)), 'mlp_pilot3': (0.2727272727272727, np.float64(1.8151038336682923)), 'ibm_arch1': (0.2727272727272727, np.float64(1.9127491225194981))}; spread abstains at OOD: [1.1, 1.2]
+
+real	34m15.864s
+user	0m0.030s
+sys	0m0.015s

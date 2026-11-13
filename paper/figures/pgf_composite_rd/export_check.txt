@@ -1,0 +1,40 @@
+export_composite_rd.py -- data of main Fig. 2 on the public data (n = 57; nothing recomputed)
+
+[0] files of the model map and of the device panels, copied unchanged from ../pgf_composite/
+PASS  a_map.dat copied, SHA-256 c91de35a002b52d7
+PASS  a_contour_tau.dat copied, SHA-256 dab1b61a4dea1c7c
+PASS  cd_nodes.dat copied, SHA-256 7c09e052d33ecae7
+PASS  cd_edges.dat copied, SHA-256 1770ac0acadff83e
+PASS  cd_routed.dat copied, SHA-256 a6fed607dacbf388
+PASS  printed device numbers read from ../pgf_composite/composite_values.tex: {'DmsDev': '+0.310', 'MinDev': '+0.202', 'DmsCtl': '+0.253', 'MinCtl': '+0.160', 'NRouted': '4', 'MapCols': '99'}
+
+PASS  50 rows of m_s at n = 57 in both map files
+PASS  the E1 file repeats out/map_rows.json in status, de_real, exact width and explicit-state distance
+
+[1] panel (a): the published energy error per site, de_real = (E_pub - E_0)/n
+PASS  the line lies inside the map: de from 0.000821 (Jz = 5.6) to 0.021400 (Jz = 1.1); map range 0.0001-0.02313
+  de_real at Jz = 1.1, 1.2, 1.3, 1.4: 0.02140, 0.01976, 0.01802, 0.01542; at 6.0: 0.00088
+
+[2] panel (b): width of m_s at the published energy, status coding of Fig. 3
+PASS  one grey bar, at Jz = 3.4 (from 0.8442 to 1.0042 tau)
+PASS  certified: 26 couplings, Jz = 3.5-6.0 (all training)
+PASS  not certified: Jz = 1.1-3.1 (21 couplings)
+PASS  undecided: Jz = 3.2, 3.3, 3.4 (shaded, hatched, in (a) and (b))
+PASS  the undecided run lies between the last not-certified coupling (3.1) and the first certified one (3.5)
+  explicit states at the test couplings Jz = 1.1-1.4: 18.825, 16.011, 13.555, 11.184 tau apart (rounded down: 11.1-18.8)
+PASS  caption: the explicit states are 11.1-18.8 tau apart at the test couplings
+  exact interval width / tau: 0.9104 at Jz = 3.5 (rounded up 0.92), 0.2178 at 6.0 (rounded up 0.22); largest over the certified rows 0.9104, smallest 0.2178
+PASS  caption: exact intervals 0.92 tau (Jz = 3.5) to 0.22 tau (6.0) wide
+PASS  Jz = 3.4: exact interval 1.0043 tau wide, undecided
+
+[3] panel (b): the exact 19-site value against the reference of n = 57
+PASS  50 couplings, same grid
+PASS  n19_minus_truth_tau = |m_s(19 sites) - reference| / tau with the reference and tau of the map row (50 rows)
+PASS  largest distance over the 26 certified couplings: 0.1344 tau (stored max_over_kept), rounded up 0.135
+PASS  caption: at most 0.135 tau at the certified couplings
+PASS  caption: 1.05-1.47 tau at the four test couplings (1.4716, 1.3389, 1.1937, 1.0524)
+PASS  colour range of (a) = 0.03-30 tau, its end ticks; the map spans 0.0358-20.951 tau (no cell outside the range)
+PASS  panel (b): every drawn value inside the axis range 0.03-30 (min 0.0418, max 18.8254)
+
+wrote a_line_pub.dat, b_ms.dat, b_ubar.dat, b_n19.dat, composite_rd_values.tex; copied a_map.dat, a_contour_tau.dat, cd_nodes.dat, cd_edges.dat, cd_routed.dat
+ALL CHECKS PASSED

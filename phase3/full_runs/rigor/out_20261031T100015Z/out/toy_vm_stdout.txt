@@ -1,0 +1,11 @@
+hh_d3_piece12_vball2_H_4_0                       E0  -11.764673  Anderson  -12.240639  certified  -11.801445  slack 3.68e-02 (0.313%) OK
+hh_d3_piece12_vball2_m_s_4_0.22                  E0  -14.224438  Anderson  -14.502217  certified  -14.230629  slack 6.19e-03 (0.044%) OK
+hh_d3_piece12_vball2_Czz_bar_4_0.25              E0   -9.270452  Anderson   -9.797716  certified   -9.320225  slack 4.98e-02 (0.537%) OK
+ring12_vball2_H_4_0                              E0  -12.743672  Anderson  -13.089839  certified  -12.886515  slack 1.43e-01 (1.121%) OK
+ring12_vball2_m_s_4_0.22                         E0  -15.244529  Anderson  -15.489810  certified  -15.246858  slack 2.33e-03 (0.015%) OK
+ring12_vball2_Czz_bar_4_0.25                     E0   -9.989173  Anderson  -10.407604  certified  -10.190695  slack 2.02e-01 (2.017%) OK
+tree10_vball2_H_4_0                              E0   -9.660269  Anderson  -10.066567  certified   -9.671769  slack 1.15e-02 (0.119%) OK
+tree10_vball2_m_s_4_0.22                         E0  -11.689923  Anderson  -11.948581  certified  -11.695109  slack 5.19e-03 (0.044%) OK
+tree10_vball2_Czz_bar_4_0.25                     E0   -7.633780  Anderson   -8.063520  certified   -7.646445  slack 1.27e-02 (0.166%) OK
+tampered certificate rejected: True
+ALL OK

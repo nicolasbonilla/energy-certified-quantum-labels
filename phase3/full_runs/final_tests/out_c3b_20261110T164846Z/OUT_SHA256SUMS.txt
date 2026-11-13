@@ -1,0 +1,8 @@
+e947e6c8b05c1a2fbc609e2bb16c053cff3b022386726b9f0b27c1a0b9f2a1e7  ./c/rq_C_J6.0_ps.json
+bfa59f9bb622bee05d4e9bec49d3ece61ecf9c0dc3570308c86d3167e8f6c1b9  ./c/rq_C_J6.0_rec.json
+51244e5e47ac9b6576419e640f00d1461c2028f59fb11cab97e15fc15e4c258b  ./calib/calib_n115.json
+5820cc03469966f4324251d16cfbcd61ceca44b061ea9b6ec64a8d5f18d1f1e7  ./calib/calib_n57.json
+4a540fc52f45f8c2550e442f58bdee7d9b485cf48ba9a65117180f85de483f08  ./expected_check.txt
+743f4276cb58e59b277fe7627e30ea0f41c2da96de1f0075271088f468f92ead  ./logs/manual_crq_C_6.0_ps.log
+48a2dd82bb95482b65282e288fbe51a4f60fb077411dbcd92b620ed3e917d0ff  ./logs/manual_crq_C_6.0_rec.log
+b140eb13861ccf6e8442553d0a65254ac30c4a74d0708a73b20df318baabec29  ./versions.txt

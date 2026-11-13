@@ -1,0 +1,33 @@
+== figS_learning: figS_learning.main() run unchanged (savefig neutralised: 2 calls caught); 46 data calls
+(a, b) 40 plotted coverage/width values equal learn_M{1,2}_D_O.json coverage[set][SC|CSC][avg|nn].{wid_id, covT_id} exactly; arrows run SC -> CSC; reference lines at 0.9 and tau = 0.08
+(c, d) gen5: 5 risk-coverage curves (20 points each) equal abstention['gen5|all|id|0.08'].ex exactly; max spread among CB, BAND, NC = 0.016 (fraction of answers); at full coverage 0.681
+(c, d) advL5: 5 risk-coverage curves (20 points each) equal abstention['advL5|all|id|0.08'].ex exactly; max spread among CB, BAND, NC = 0.017 (fraction of answers); at full coverage 0.790
+wrote 14 files: lr_M1_exact_avg.dat lr_M1_avg_gen5.dat lr_M1_avg_advL5.dat lr_M1_exact_nn.dat lr_M1_nn_gen5.dat lr_M1_nn_advL5.dat lr_M2_exact_avg.dat lr_M2_avg_gen5.dat lr_M2_avg_advL5.dat lr_M2_exact_nn.dat lr_M2_nn_gen5.dat lr_M2_nn_advL5.dat lr_risk_gen5.dat lr_risk_advL5.dat
+caption checks (supplement.tex Fig. S learnS):
+  delta e = 5e-3: label sets gen5/advL5 (RESULTS.md: 'delta e = 5e-3', label_stats keys '|0.005')
+  100 instances at n = 20 (meta.n_id = 100), 200 splits (meta.R = 200, both learners), tau = 0.08 (meta.taus[0]), nominal level 1 - alpha = 0.90
+  body text read off the figure: D1 M1 SC nn gen5 0.920       = 0.9195 -> 0.920
+  body text read off the figure: D2 M1 SC avg gen5 0.909      = 0.9090 -> 0.909
+  body text read off the figure: D3 M1 SC nn advL5 0.821      = 0.8214 -> 0.821
+  body text read off the figure: D3' M2 SC nn advL5 0.599     = 0.5985 -> 0.599
+  body text read off the figure: D5 avg CSC/SC width 1.60     = 1.5980 -> 1.60
+  body text read off the figure: D5 nn CSC/SC width 1.30      = 1.3018 -> 1.30
+  note: body-text AUCs 0.0827/0.0817/0.0817/0.0815, random 0.139, oracle 0.049 are aurc[CB, BAND, NC, ENS, random, oracle] = 0.0827/0.0817/0.0817/0.0815, 0.1389, 0.0491 (areas of the 'rm' risk, not of the plotted 'ex' curves)
+
+== figS_huang: figS_huang.main() run unchanged (savefig neutralised: 2 calls caught); 49 data calls
+(a) n = 20 instance (4,1) ED: labels ['Cnn', 'Cd2', 'Ccent', 'Cfar']; width/tau on the grid [0.001, 0.0015, 0.002, 0.003, 0.005, 0.007, 0.01] equals summary_huang.json tau.widths exactly
+(b) n = 45 instance (9,1) DMRG: labels ['Cnn', 'Cd2', 'Ccent', 'Cfar', 'Cfix']; width/tau on the grid [0.001, 0.0015, 0.002, 0.003, 0.005, 0.007, 0.01] equals summary_huang.json tau.widths exactly
+(c) markers (x = n + offset), rule values and bars equal tau.{de_out, de_law, de_in} of every selected row
+    Cnn    n = [20, 30, 45]: median de_out(n=45) / median de_out(smallest n) = 1.28
+    Cd2    n = [20, 30, 45]: median de_out(n=45) / median de_out(smallest n) = 0.88
+    Ccent  n = [20, 30, 45]: median de_out(n=45) / median de_out(smallest n) = 0.35
+    Cfar   n = [20, 30, 45]: median de_out(n=45) / median de_out(smallest n) = 0.56
+    Cfix   n = [30, 45]: median de_out(n=45) / median de_out(smallest n) = 0.57
+    -> caption 'the single pairs fall with n; the averages do not' holds (single pairs < 0.7, averages > 0.7)
+(d) histogram: 29 bins (edges as plotted), counts equal np.histogram of pairs[*].tau.de_out by class: [('nn', 93), ('diag', 72), ('r<=3', 243), ('r>3', 162)]; total 570 = 3 instances x 190 pairs
+caption checks (supplement.tex Fig. S huang): n = 20 instance (4,1) exact (ED); n = 45 instance (9,1) (DMRG); 570 pair correlators at n = 20; shaded delta e in [1e-3, 1e-2] (all four spans); tau = 0.08
+
+nothing written outside this folder: savefig calls caught 4 (figS_learning.pdf, figS_learning.png, figS_huang.pdf, figS_huang.png); __pycache__ of figures/ and of learning/code/, learning/analysis/ and learning/code/ unchanged; figS_*.pdf/png untouched
+wrote 38 data files
+
+ALL ASSERTIONS PASSED

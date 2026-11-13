@@ -1,0 +1,36 @@
+== (a) public energy against the window assumed by the figures-based map (per stored coupling) ==
+ n=57: 18 stored couplings, public energy inside [eps_lo, eps_up] at 14 (outside at ['1.1', '1.2', '1.3', '1.4']); eps_real/eps_dig 0.967-1.783 (training couplings 0.967-1.038); test couplings ['1.1', '1.2', '1.3', '1.4'] with ratios {'1.1': 1.783, '1.2': 1.647, '1.3': 1.501, '1.4': 1.285}
+   rows 116; predicted decisive 106; of these, status at the public energy implied by the window alone: 78; not implied: 28
+ n=115: 16 stored couplings, public energy inside [eps_lo, eps_up] at 12 (outside at ['1.1', '1.2', '1.3', '1.4']); eps_real/eps_dig 0.986-1.894 (training couplings 0.986-1.011); test couplings ['1.1', '1.2', '1.3', '1.4'] with ratios {'1.1': 1.894, '1.2': 1.64, '1.3': 1.431, '1.4': 1.285}
+   rows 49; predicted decisive 46; of these, status at the public energy implied by the window alone: 34; not implied: 12
+
+== (b) archive members against the hashes recorded in converted/*.json; (c) static token comparison ==
+ members named in converted/*.json: 302; found in the pinned archive: 302; SHA-256 and size equal: 302
+   dmrg              2_nn_corr_funcs_zz               bit-for-bit equal in 102 of 102 members
+   dmrg              2_nn_corr_pairs (integers)       bit-for-bit equal in 102 of 102 members
+   dmrg              e1                               bit-for-bit equal in 102 of 102 members
+   dmrg              ground_state_energy              bit-for-bit equal in 102 of 102 members
+   dmrg              jz                               bit-for-bit equal in 102 of 102 members
+   dmrg              z                                bit-for-bit equal in 102 of 102 members
+   dmrg              z_loop                           bit-for-bit equal in 102 of 102 members
+   dmrg              z_loop_sites (integers)          bit-for-bit equal in 102 of 102 members
+   skqd_post_select  2_nn_corr_funcs_zz_basis_opt     bit-for-bit equal in 50 of 50 members
+   skqd_post_select  2_nn_corr_pairs_zz_basis_opt (integers) bit-for-bit equal in 50 of 50 members
+   skqd_post_select  energy_vopt                      bit-for-bit equal in 100 of 100 members
+   skqd_post_select  final_global_energy              bit-for-bit equal in 100 of 100 members
+   skqd_post_select  ground_state_energy              bit-for-bit equal in 100 of 100 members
+   skqd_post_select  jz                               bit-for-bit equal in 100 of 100 members
+   skqd_post_select  z_basis_opt                      bit-for-bit equal in 50 of 50 members
+   skqd_post_select  z_loop                           bit-for-bit equal in 50 of 50 members
+   skqd_post_select  z_loop_sites (integers)          bit-for-bit equal in 50 of 50 members
+   skqd_random_flip  2_nn_corr_funcs_zz_basis_opt     bit-for-bit equal in 100 of 100 members
+   skqd_random_flip  2_nn_corr_pairs_zz_basis_opt (integers) bit-for-bit equal in 100 of 100 members
+   skqd_random_flip  energy_vopt                      bit-for-bit equal in 100 of 100 members
+   skqd_random_flip  final_global_energy              bit-for-bit equal in 100 of 100 members
+   skqd_random_flip  ground_state_energy              bit-for-bit equal in 100 of 100 members
+   skqd_random_flip  jz                               bit-for-bit equal in 100 of 100 members
+   skqd_random_flip  z_basis_opt                      bit-for-bit equal in 100 of 100 members
+   skqd_random_flip  z_loop                           bit-for-bit equal in 100 of 100 members
+   skqd_random_flip  z_loop_sites (integers)          bit-for-bit equal in 100 of 100 members
+ problems: 0 []
+written C:/Users/Nicolas/Downloads/Proyecto_SQD_ML/P5_energy_certified_labels/work/phase3/full_runs/real_data/checks/rd_audit_integrity.json

@@ -1,0 +1,29 @@
+n = 57: 14 couplings
+   Jz = 1.1  emulated 0.049540  published 0.021400  ratio 2.3149
+   Jz = 1.2  emulated 0.043277  published 0.019759  ratio 2.1902
+   Jz = 1.3  emulated 0.037921  published 0.018017  ratio 2.1048
+   Jz = 1.4  emulated 0.032812  published 0.015424  ratio 2.1273
+   Jz = 1.6  emulated 0.024758  published 0.011355  ratio 2.1804
+   Jz = 1.8  emulated 0.018796  published 0.008873  ratio 2.1182
+   Jz = 2.0  emulated 0.014514  published 0.007507  ratio 1.9334
+   Jz = 2.2  emulated 0.011199  published 0.006835  ratio 1.6386
+   Jz = 2.5  emulated 0.007330  published 0.004281  ratio 1.7121
+   Jz = 3.0  emulated 0.003791  published 0.002810  ratio 1.3493
+   Jz = 3.5  emulated 0.002203  published 0.002208  ratio 0.9978
+   Jz = 4.0  emulated 0.001374  published 0.001717  ratio 0.7999
+   Jz = 5.0  emulated 0.000748  published 0.001006  ratio 0.7435
+   Jz = 6.0  emulated 0.000507  published 0.000878  ratio 0.5775
+   ratio from 0.5775 (Jz = 6.0) to 2.3149 (Jz = 1.1)
+n = 115: 11 couplings
+   Jz = 1.1  emulated 0.086938  published 0.022729  ratio 3.8250
+   Jz = 1.2  emulated 0.078651  published 0.019683  ratio 3.9959
+   Jz = 1.3  emulated 0.071243  published 0.017174  ratio 4.1483
+   Jz = 1.4  emulated 0.064612  published 0.015418  ratio 4.1908
+   Jz = 1.6  emulated 0.053211  published 0.011680  ratio 4.5557
+   Jz = 2.0  emulated 0.036897  published 0.007292  ratio 5.0599
+   Jz = 2.5  emulated 0.023924  published 0.004254  ratio 5.6241
+   Jz = 3.0  emulated 0.015887  published 0.002940  ratio 5.4040
+   Jz = 4.0  emulated 0.007411  published 0.001248  ratio 5.9369
+   Jz = 5.0  emulated 0.003713  published 0.000857  ratio 4.3335
+   Jz = 6.0  emulated 0.001970  published 0.000398  ratio 4.9448
+   ratio from 3.8250 (Jz = 1.1) to 5.9369 (Jz = 4.0)

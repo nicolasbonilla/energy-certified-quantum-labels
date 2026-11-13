@@ -1,0 +1,26 @@
+stored states with tensors on the laptop: 6
+   n57_J1.6_m_s_m_l0.066484  n = 57  Jz = 1.6  E = -32.090136961  slope = -10.920296358
+   n57_J1.6_m_s_m_l0.074994  n = 57  Jz = 1.6  E = -31.742397771  slope = -10.467861948
+   n57_J1.6_minchi32_m_s_p_l0.194440  n = 57  Jz = 1.6  E = -32.037247202  slope = -13.980728953
+   n57_J1.6_minchi64_m_s_m_l0.068745  n = 57  Jz = 1.6  E = -32.041720511  slope = -10.853699662
+   n57_J1.6_minchi64_m_s_p_l0.194440  n = 57  Jz = 1.6  E = -32.039447527  slope = -13.979367068
+   n57_J1.6_minchi64_m_s_p_l0.196557  n = 57  Jz = 1.6  E = -32.032134091  slope = -13.989637065
+Part A: NOT CERTIFIED rows 439; components checked 4; components without tensors 1986; max |dE| = 1.4921397450962104e-13; all within 1e-8: True
+   n = 57  Jz = 1.5  m_s        n57_J1.6_m_s_m_l0.074994 (stored at 1.6): tensors -30.6956115762  linear -30.6956115762  |dE| = 1.49e-13
+   n = 57  Jz = 1.6  m_s        n57_J1.6_m_s_m_l0.066484 (stored at 1.6): tensors -32.0901369613  linear -32.0901369613  |dE| = 1.35e-13
+   n = 57  Jz = 1.6  m_s        n57_J1.6_m_s_m_l0.074994 (stored at 1.6): tensors -31.7423977711  linear -31.7423977711  |dE| = 1.49e-13
+   n = 57  Jz = 1.7  m_s        n57_J1.6_m_s_m_l0.066484 (stored at 1.6): tensors -33.1821665971  linear -33.1821665971  |dE| = 1.21e-13
+Part B: 12 (state, coupling) pairs; max |dE| = 1.5631940186722204e-13; all within 1e-8: True
+   n57_J1.6_m_s_m_l0.066484 at Jz = 1.5 (stored at 1.6): tensors -30.9981073255  linear -30.9981073255  |dE| = 1.39e-13
+   n57_J1.6_m_s_m_l0.066484 at Jz = 1.7 (stored at 1.6): tensors -33.1821665971  linear -33.1821665971  |dE| = 1.21e-13
+   n57_J1.6_m_s_m_l0.074994 at Jz = 1.5 (stored at 1.6): tensors -30.6956115762  linear -30.6956115762  |dE| = 1.49e-13
+   n57_J1.6_m_s_m_l0.074994 at Jz = 1.7 (stored at 1.6): tensors -32.7891839659  linear -32.7891839659  |dE| = 1.56e-13
+   n57_J1.6_minchi32_m_s_p_l0.194440 at Jz = 1.5 (stored at 1.6): tensors -30.6391743070  linear -30.6391743070  |dE| = 2.13e-14
+   n57_J1.6_minchi32_m_s_p_l0.194440 at Jz = 1.7 (stored at 1.6): tensors -33.4353200976  linear -33.4353200976  |dE| = 2.13e-14
+   n57_J1.6_minchi64_m_s_m_l0.068745 at Jz = 1.5 (stored at 1.6): tensors -30.9563505444  linear -30.9563505444  |dE| = 7.11e-14
+   n57_J1.6_minchi64_m_s_m_l0.068745 at Jz = 1.7 (stored at 1.6): tensors -33.1270904767  linear -33.1270904767  |dE| = 8.53e-14
+   n57_J1.6_minchi64_m_s_p_l0.194440 at Jz = 1.5 (stored at 1.6): tensors -30.6415108198  linear -30.6415108198  |dE| = 7.11e-14
+   n57_J1.6_minchi64_m_s_p_l0.194440 at Jz = 1.7 (stored at 1.6): tensors -33.4373842334  linear -33.4373842334  |dE| = 5.68e-14
+   n57_J1.6_minchi64_m_s_p_l0.196557 at Jz = 1.5 (stored at 1.6): tensors -30.6331703843  linear -30.6331703843  |dE| = 8.17e-14
+   n57_J1.6_minchi64_m_s_p_l0.196557 at Jz = 1.7 (stored at 1.6): tensors -33.4310977972  linear -33.4310977972  |dE| = 7.11e-14
+exit 0

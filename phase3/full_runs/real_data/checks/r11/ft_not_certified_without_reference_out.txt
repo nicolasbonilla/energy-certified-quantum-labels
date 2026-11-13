@@ -1,0 +1,21 @@
+not certified with the reference tolerance: 439 of 700 rows
+of these, two explicit states at least 0.06 apart (no reference needed, |O| <= 1): 427
+rows that would become undecided (12):
+   n=57 C2_bar     Jz=3.8  distance 0.05639 = 1.0250 tau
+   n=57 C2_bar     Jz=3.9  distance 0.05642 = 1.0209 tau
+   n=57 Czz_bar    Jz=3.0  distance 0.05952 = 1.0756 tau
+   n=57 Czz_bar    Jz=3.1  distance 0.05586 = 1.0046 tau
+   n=57 m_s        Jz=3.1  distance 0.05750 = 1.0285 tau
+   n=115 C2_bar     Jz=3.6  distance 0.05678 = 1.0367 tau
+   n=115 C2_bar     Jz=3.7  distance 0.05519 = 1.0029 tau
+   n=115 Czz_bar    Jz=3.0  distance 0.05878 = 1.0592 tau
+   n=115 Czz_edge   Jz=2.9  distance 0.05908 = 1.0625 tau
+   n=115 Z_bulk     Jz=3.0  distance 0.05924 = 1.0630 tau
+   n=115 Z_loop     Jz=4.3  distance 0.05951 = 1.0652 tau
+   n=115 m_s        Jz=3.0  distance 0.05807 = 1.0386 tau
+rows at Jz <= 1.5: 70 of 70 not certified; all at least 0.06 apart: True; smallest distance 0.2632
+rows at the test couplings 1.1-1.4: 56 not certified; smallest distance 0.2632 = 5.57 tau
+   n=57 m_s      training couplings not certified without a reference: 15 (with the reference: 16)
+   n=57 Czz_bar  training couplings not certified without a reference: 14 (with the reference: 16)
+   n=115 m_s      training couplings not certified without a reference: 14 (with the reference: 15)
+   n=115 Czz_bar  training couplings not certified without a reference: 14 (with the reference: 15)

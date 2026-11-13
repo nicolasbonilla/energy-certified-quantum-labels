@@ -1,0 +1,36 @@
+test_graph_json (__main__.T1Graphs.test_graph_json) ... /mnt/cj/sandbox/map_20261030T022613Z/code/tests/test_witness.py:94: ResourceWarning: unclosed file <_io.TextIOWrapper name='/mnt/cj/sandbox/map_20261030T022613Z/code/graphs/hh_d3.json' mode='r' encoding='UTF-8'>
+  G = json.load(open(os.path.join(GRAPHS, "hh_d%d.json" % d)))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/mnt/cj/sandbox/map_20261030T022613Z/code/tests/test_witness.py:94: ResourceWarning: unclosed file <_io.TextIOWrapper name='/mnt/cj/sandbox/map_20261030T022613Z/code/graphs/hh_d5.json' mode='r' encoding='UTF-8'>
+  G = json.load(open(os.path.join(GRAPHS, "hh_d%d.json" % d)))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/mnt/cj/sandbox/map_20261030T022613Z/code/tests/test_witness.py:94: ResourceWarning: unclosed file <_io.TextIOWrapper name='/mnt/cj/sandbox/map_20261030T022613Z/code/graphs/hh_d7.json' mode='r' encoding='UTF-8'>
+  G = json.load(open(os.path.join(GRAPHS, "hh_d%d.json" % d)))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/mnt/cj/sandbox/map_20261030T022613Z/code/tests/test_witness.py:104: ResourceWarning: unclosed file <_io.TextIOWrapper name='/mnt/cj/sandbox/map_20261030T022613Z/code/graphs/hh_d5.json' mode='r' encoding='UTF-8'>
+  self.assertEqual(json.load(open(os.path.join(GRAPHS, "hh_d5.json")))["n_czz_outputs"], 151)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/mnt/cj/sandbox/map_20261030T022613Z/code/tests/test_witness.py:105: ResourceWarning: unclosed file <_io.TextIOWrapper name='/mnt/cj/sandbox/map_20261030T022613Z/code/graphs/hh_d7.json' mode='r' encoding='UTF-8'>
+  self.assertEqual(json.load(open(os.path.join(GRAPHS, "hh_d7.json")))["n_czz_outputs"], 317)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/mnt/cj/sandbox/map_20261030T022613Z/code/tests/test_witness.py:106: ResourceWarning: unclosed file <_io.TextIOWrapper name='/mnt/cj/sandbox/map_20261030T022613Z/code/graphs/hh_d5.json' mode='r' encoding='UTF-8'>
+  self.assertEqual(json.load(open(os.path.join(GRAPHS, "hh_d5.json")))["max_crossing_bfs_root0"], 7)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/mnt/cj/sandbox/map_20261030T022613Z/code/tests/test_witness.py:107: ResourceWarning: unclosed file <_io.TextIOWrapper name='/mnt/cj/sandbox/map_20261030T022613Z/code/graphs/hh_d7.json' mode='r' encoding='UTF-8'>
+  self.assertEqual(json.load(open(os.path.join(GRAPHS, "hh_d7.json")))["max_crossing_bfs_root0"], 11)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_product_and_gs (__main__.T2Energies.test_product_and_gs) ... /mnt/cj/sandbox/map_20261030T022613Z/code/tests/toygraphs.py:125: ResourceWarning: unclosed file <_io.TextIOWrapper name='/mnt/cj/sandbox/map_20261030T022613Z/code/graphs/hh_d3.json' mode='r' encoding='UTF-8'>
+  G = json.load(open(os.path.join(CODE, "graphs", "hh_d3.json")))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_fields (__main__.T3Witness.test_fields) ... ok
+test_random_noncanonical (__main__.T4Indep.test_random_noncanonical) ... ok
+test_tenpy_states (__main__.T4Indep.test_tenpy_states) ... ok
+test_dense (__main__.T5ED.test_dense) ... ok
+test_search_and_hull (__main__.T6Hull.test_search_and_hull) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 69.676s
+
+OK

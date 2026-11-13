@@ -1,0 +1,156 @@
+{
+ "A1_formula_equals_generator_d3_41": true,
+ "A2_cycle_lengths": {
+  "3": {
+   "10": 2
+  },
+  "5": {
+   "10": 4,
+   "12": 4
+  },
+  "7": {
+   "10": 6,
+   "12": 12
+  },
+  "9": {
+   "10": 8,
+   "12": 24
+  }
+ },
+ "A3_embedding_ok": true,
+ "A3_nested": true,
+ "A4_ball_growth_ok": true,
+ "A4_max_ball_over_m2": "4",
+ "A5_types_from_signature": true,
+ "A5_ntypes": {
+  "3": 9,
+  "5": 12,
+  "7": 12,
+  "9": 12,
+  "11": 12,
+  "13": 12,
+  "15": 12,
+  "17": 12,
+  "19": 12,
+  "21": 12,
+  "23": 12,
+  "25": 12
+ },
+ "A6_pairs": {
+  "3": {
+   "n": 19,
+   "edges": 20,
+   "pairs2": 25,
+   "max_pairs_per_site": 4,
+   "same_sublattice": true,
+   "n_over_E": "19/20",
+   "n_over_P2": "19/25"
+  },
+  "5": {
+   "n": 57,
+   "edges": 64,
+   "pairs2": 87,
+   "max_pairs_per_site": 4,
+   "same_sublattice": true,
+   "n_over_E": "57/64",
+   "n_over_P2": "19/29"
+  },
+  "7": {
+   "n": 115,
+   "edges": 132,
+   "pairs2": 185,
+   "max_pairs_per_site": 4,
+   "same_sublattice": true,
+   "n_over_E": "115/132",
+   "n_over_P2": "23/37"
+  },
+  "9": {
+   "n": 193,
+   "edges": 224,
+   "pairs2": 319,
+   "max_pairs_per_site": 4,
+   "same_sublattice": true,
+   "n_over_E": "193/224",
+   "n_over_P2": "193/319"
+  },
+  "11": {
+   "n": 291,
+   "edges": 340,
+   "pairs2": 489,
+   "max_pairs_per_site": 4,
+   "same_sublattice": true,
+   "n_over_E": "291/340",
+   "n_over_P2": "97/163"
+  }
+ },
+ "B1_ok": true,
+ "B2_ok": true,
+ "B3_rows": [
+  [
+   "m_s",
+   "0",
+   "1/12",
+   "3/52"
+  ],
+  [
+   "m_s",
+   "1/100",
+   "31/300",
+   "101/1300"
+  ],
+  [
+   "m_s",
+   "-1/100",
+   "19/300",
+   "49/1300"
+  ],
+  [
+   "m_s",
+   "-1/40",
+   "1/30",
+   "1/130"
+  ],
+  [
+   "C_zz",
+   "1/100",
+   "7/100",
+   "33/1300"
+  ],
+  [
+   "C_zz",
+   "1/60",
+   "11/180",
+   "1/260"
+  ],
+  [
+   "C_zz",
+   "-1/20",
+   "39/340",
+   "3/52"
+  ],
+  [
+   "C_2",
+   "1/200",
+   "29/300",
+   "3/52"
+  ],
+  [
+   "C_2",
+   "-1/200",
+   "7/100",
+   "23/1300"
+  ],
+  [
+   "C_2",
+   "-1/150",
+   "59/900",
+   "17/3900"
+  ]
+ ],
+ "B3_classical_windows_n19": {
+  "ms_lower": "-1/24",
+  "zz_upper": "1/16",
+  "c2_lower": "-1/32"
+ },
+ "B3_identity_ok": true
+}

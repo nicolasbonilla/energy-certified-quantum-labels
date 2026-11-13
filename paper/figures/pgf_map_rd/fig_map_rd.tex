@@ -1,0 +1,248 @@
+% fig_map_rd.tex -- main Fig. 3 on the PUBLIC data (2026-11-12): the certification map at the published energies.
+% Data: dat/*.dat, written by export_map_rd.py from phase3/full_runs/real_data (out/map_rows.json,
+% e1/map_e1/map_rows.json) and the stored emulation outputs. Compile in paper/figures/pgf_map_rd/ with pdflatex
+% (build_rd.py). Earlier version: ../_rd_v1_before_F2/pgf_map_rd/fig_map_rd.tex.
+% 2026-11-13 (F2, editor-C-12/13): one status code shared with Figs. 1(c) and 2(b) -- certified = the teal of Fig. 1
+% (dark rim), not certified = dark grey, undecided = light grey with a grey rim (hatched cells), certified only with
+% the extension E1 = light teal with a dot; colour marks the status only, the label is marked by symbol shape and
+% line style; the third average and the four local labels are drawn in greys; strip rows named in words at the size of
+% the tick labels; undecided bars drawn up to at most 3 tau (an arrow marks a longer bar, dat/ucap_*.dat).
+\documentclass[10pt,border=1pt]{standalone}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{amsmath}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\usepgfplotslibrary{groupplots,fillbetween}
+\usetikzlibrary{calc}
+% status colours (shared with fig_overview_rd.tex and fig_composite_rd.tex)
+\definecolor{cCert}{HTML}{169B88}% certified (teal of Fig. 1)
+\definecolor{cCertDk}{HTML}{0B5F53}% its rim
+\definecolor{cCertE}{HTML}{7FC8BE}% certified only with E1 (cCert!55!white)
+\definecolor{cNot}{HTML}{55554F}% not certified
+\definecolor{cUnd}{HTML}{DAD9D3}% undecided (fill)
+\definecolor{cUndRim}{HTML}{8E8D88}% undecided (rim, hatch, bar)
+% labels with no certificate: greys
+\definecolor{cAvg}{HTML}{6E6E69}% the third average
+\definecolor{cLoc}{HTML}{8A8A85}% the four local labels
+\definecolor{cInk}{HTML}{0B0B0B}
+\definecolor{cMuted}{HTML}{52514E}
+\definecolor{cOOD}{HTML}{E9E8E3}
+\definecolor{cBand}{HTML}{CFE0F4}
+\definecolor{cEmu}{HTML}{C0392B}
+% cells of the status strip (3.5pt x 9.4pt; the pitch is 3.85pt x 10.55pt); undecided cells carry two hatch strokes
+\pgfdeclareplotmark{cell}{\pgfpathrectangle{\pgfpoint{-1.75pt}{-4.7pt}}{\pgfpoint{3.5pt}{9.4pt}}\pgfusepathqfill}
+\pgfdeclareplotmark{ucell}{%
+  \pgfsetfillcolor{cUnd}\pgfpathrectangle{\pgfpoint{-1.75pt}{-4.7pt}}{\pgfpoint{3.5pt}{9.4pt}}\pgfusepathqfill
+  \pgfsetstrokecolor{cUndRim}\pgfsetlinewidth{0.5pt}\pgfsetbuttcap
+  \pgfpathmoveto{\pgfpoint{-1.75pt}{-4.7pt}}\pgfpathlineto{\pgfpoint{1.75pt}{0pt}}%
+  \pgfpathmoveto{\pgfpoint{-1.75pt}{0pt}}\pgfpathlineto{\pgfpoint{1.75pt}{4.7pt}}\pgfusepathqstroke}
+\tikzset{
+  % line of each label: m_s and Czz_bar take the colour of their status (cNot or cCert); the others are grey
+  lMs/.style={line width=1.2pt},
+  lCzz/.style={line width=0.75pt},
+  lCtwo/.style={cAvg, line width=0.85pt},
+  lZbulk/.style={cLoc, line width=0.85pt, dash pattern=on 3.2pt off 1.6pt},
+  lZbdry/.style={cLoc, line width=0.85pt, dash pattern=on 3.2pt off 1.3pt on 0.9pt off 1.3pt},
+  lCedge/.style={cLoc, line width=1.1pt, line cap=round, dash pattern=on 0pt off 2.1pt},
+  lZloop/.style={cLoc, line width=0.85pt, dash pattern=on 5pt off 1.8pt},
+  % marker of each label; m_s and Czz_bar: #1 = rim, #2 = fill (white: not certified; teal: certified)
+  mMs/.style 2 args={only marks, mark=*, mark size=1.25pt, mark options={solid, draw=#1, fill=#2, line width=0.55pt}},
+  mCzz/.style 2 args={only marks, mark=square*, mark size=1.5pt, mark options={solid, draw=#1, fill=#2, line width=0.55pt}},
+  mCtwo/.style={only marks, mark=diamond*, mark size=1.9pt, mark options={solid, draw=cAvg, fill=white, line width=0.6pt}},
+  mZbulk/.style={only marks, mark=triangle*, mark size=2.0pt, mark options={solid, rotate=180, draw=cLoc, fill=white, line width=0.6pt}},
+  mZbdry/.style={only marks, mark=triangle*, mark size=2.0pt, mark options={solid, draw=cLoc, fill=white, line width=0.6pt}},
+  mCedge/.style={only marks, mark=x, mark size=1.9pt, mark options={solid, draw=cLoc, line width=0.75pt}},
+  mZloop/.style={only marks, mark=pentagon*, mark size=1.7pt, mark options={solid, draw=cLoc, fill=white, line width=0.6pt}},
+}
+% #1 = n, #2 = file key, #3 = line style, #4 = marker style. The line joins neighbouring not-certified couplings
+% (column N); the markers are those of column Nm (every coupling for m_s and Czz_bar; for the other labels every
+% third coupling, staggered between labels, and every not-certified point without a not-certified neighbour)
+\newcommand{\notcert}[4]{%
+  \addplot[#3, forget plot] table[x=J, y=N] {dat/w_n#1_#2.dat};
+  \addplot[#4, forget plot] table[x=J, y=Nm] {dat/w_n#1_#2.dat};}
+\newcommand{\cert}[4]{% #1 = n, #2 = key, #3 = line, #4 = marker
+  \addplot[#3, forget plot] table[x=J, y=C] {dat/w_n#1_#2.dat};
+  \addplot[#4, forget plot] table[x=J, y=C] {dat/w_n#1_#2.dat};}
+\newcommand{\undec}[3]{% #1 = n, #2 = key, #3 = mark shape; bars end at 3 tau at most (arrow: dat/ucap_*.dat)
+  \addplot[cUndRim, line width=0.6pt, forget plot] table[x=J, y=w] {dat/ubar_n#1_#2.dat};
+  \addplot[only marks, mark=triangle*, mark size=1.7pt, mark options={solid, draw=cUndRim, fill=cUndRim}, forget plot]
+    table[x=J, y=w] {dat/ucap_n#1_#2.dat};
+  \addplot[only marks, mark=#3, mark size=1.3pt, mark options={solid, draw=cUndRim, fill=cUnd, line width=0.5pt}, forget plot]
+    table[x=J, y=Ul] {dat/w_n#1_#2.dat};
+  \addplot[only marks, mark=-, mark size=1.6pt, mark options={solid, draw=cUndRim, line width=0.6pt}, forget plot]
+    table[x=J, y=Uud] {dat/w_n#1_#2.dat};}
+\newcommand{\extE}[3]{% #1 = n, #2 = key, #3 = mark shape: the layer of the extension E1
+  \addplot[cCert, line width=0.5pt, densely dashed, forget plot] table[x=J, y=E1] {dat/w_n#1_#2.dat};
+  \addplot[only marks, mark=#3, mark size=1.5pt, mark options={solid, draw=cCert, fill=cCertE, line width=0.55pt}, forget plot]
+    table[x=J, y=E1] {dat/w_n#1_#2.dat};}
+\newcommand{\topdeco}{%
+  \begin{pgfonlayer}{axis background}
+  \fill[cOOD] (axis cs:1.05,0.08) rectangle (axis cs:1.45,200);
+  \end{pgfonlayer}
+  \draw[cInk, line width=0.6pt] (axis cs:1.0,1) -- (axis cs:6.2,1);
+  \node[font=\scriptsize, cMuted, anchor=south, inner sep=0pt, align=center] at (axis cs:1.25,0.101) {test};}
+\newcommand{\strip}[1]{% #1 = n
+  \begin{pgfonlayer}{axis background}
+  \fill[cOOD] (axis cs:1.05,-0.5) rectangle (axis cs:1.45,6.5);
+  \end{pgfonlayer}
+  \addplot[only marks, scatter, scatter src=explicit symbolic,
+    scatter/classes={0={mark=cell, cNot}, 1={mark=ucell}, 2={mark=cell, cCert}, 3={mark=cell, cCertE}}]
+    table[x=J, y=row, meta=code] {dat/strip_n#1.dat};
+  \addplot[only marks, mark=*, mark size=0.75pt, cCertDk] table[x=J, y=row] {dat/strip_e1_n#1.dat};}
+\newcommand{\bottom}[1]{% #1 = n
+  \begin{pgfonlayer}{axis background}
+  \fill[cOOD] (axis cs:1.05,-2.36) rectangle (axis cs:1.45,2.2);
+  \end{pgfonlayer}
+  \addplot[name path=wl#1, draw=none, forget plot] table[x=J, y=swl] {dat/ms_n#1.dat};
+  \addplot[name path=wu#1, draw=none, forget plot] table[x=J, y=swu] {dat/ms_n#1.dat};
+  \addplot[cBand, forget plot] fill between[of=wl#1 and wu#1];
+  \addplot[cInk, line width=0.5pt, forget plot] coordinates {(1.0,0) (6.2,0)};
+  \addplot[cInk, line width=0.7pt, densely dotted, forget plot] coordinates {(1.0,0.5) (6.2,0.5)};
+  \addplot[cInk, line width=0.7pt, densely dotted, forget plot] coordinates {(1.0,-0.5) (6.2,-0.5)};
+  \addplot[cCert, line width=0.5pt, densely dashed, forget plot] table[x=J, y=sel] {dat/ms_n#1.dat};
+  \addplot[cCert, line width=0.5pt, densely dashed, forget plot] table[x=J, y=seu] {dat/ms_n#1.dat};
+  \addplot[cCert, line width=0.9pt, forget plot] table[x=J, y=sxl] {dat/ms_n#1.dat};
+  \addplot[cCert, line width=0.9pt, forget plot] table[x=J, y=sxu] {dat/ms_n#1.dat};
+  \addplot[only marks, mark=o, mark size=1.9pt, cEmu, mark options={line width=0.8pt}, forget plot]
+    table[x=J, y=sdms] {dat/emu_n#1.dat};
+  \addplot[only marks, mark=*, mark size=1.05pt, cInk, forget plot] table[x=J, y=slab] {dat/ms_n#1.dat};}
+% tag of a bottom panel with the key of the two symbols, and the direct labels of the dotted lines
+\newcommand{\panelkey}[1]{%
+  \node[font=\small, anchor=north east, inner sep=1pt] at (axis cs:6.15,2.13) {#1};
+  \node[font=\footnotesize, anchor=east, inner sep=1pt] (kA) at (axis cs:6.15,1.47) {public labels};
+  \fill[cInk] ($(kA.west)+(-0.14cm,0.01cm)$) circle (1.05pt);
+  \node[font=\footnotesize, anchor=east, inner sep=1pt] (kB) at (axis cs:6.15,1.15) {emulated first stage};
+  \draw[cEmu, line width=0.8pt] ($(kB.west)+(-0.14cm,0.01cm)$) circle (1.9pt);
+  \node[font=\scriptsize, cInk, anchor=south east, inner sep=1pt] at (axis cs:6.15,0.52) {$+\tau/2$};
+  \node[font=\scriptsize, cInk, anchor=north east, inner sep=1pt] at (axis cs:6.15,-0.52) {$-\tau/2$};}
+% key of the band and of the lines (right-aligned, in the free corner below the band)
+\newcommand{\bandkey}{%
+  \node[font=\footnotesize, anchor=east, inner sep=1pt] (kC) at (axis cs:6.15,-1.30) {exact interval, extension E1};
+  \draw[cCert, line width=0.5pt, densely dashed] ($(kC.west)+(-0.62cm,0.01cm)$) -- ($(kC.west)+(-0.1cm,0.01cm)$);
+  \node[font=\footnotesize, anchor=east, inner sep=1pt] (kD) at (axis cs:6.15,-1.64) {exact interval (window at most this wide)};
+  \draw[cCert, line width=0.9pt] ($(kD.west)+(-0.62cm,0.01cm)$) -- ($(kD.west)+(-0.1cm,0.01cm)$);
+  \node[font=\footnotesize, anchor=east, inner sep=1pt] (kE) at (axis cs:6.15,-1.98) {explicit states (window at least this wide)};
+  \fill[cBand] ($(kE.west)+(-0.62cm,-0.08cm)$) rectangle ($(kE.west)+(-0.1cm,0.1cm)$);}
+% swatch of a strip cell in a legend: #1 = colour
+\newcommand{\swatch}[1]{\fill[#1] (0cm,-0.09cm) rectangle (0.14cm,0.13cm);}
+\newcommand{\Wax}{7.035cm}% width of each column (7.3cm before F2; the strip labels in words need 0.53cm more on the left)
+\begin{document}
+\begin{tikzpicture}
+\begin{groupplot}[
+  group style={group size=2 by 3, horizontal sep=1.3cm, vertical sep=0.12cm,
+    xticklabels at=edge bottom, xlabels at=edge bottom},
+  scale only axis, width=\Wax,
+  set layers, clip mode=individual,
+  xmin=1.0, xmax=6.2, xtick={1.2,1.6,2,3,4,5,6}, xticklabels={1.2,1.6,2,3,4,5,6},
+  tick label style={font=\footnotesize}, label style={font=\small},
+  axis line style={cMuted, line width=0.5pt}, tick style={cMuted, line width=0.5pt},
+  ytick align=outside,
+  unbounded coords=jump, filter discard warning=false,
+  every axis plot/.append style={line join=round},
+  ylabel style={at={(axis description cs:-0.128,0.5)}, anchor=south},
+  legend cell align=left,
+  legend style={font=\footnotesize, draw=none, fill=white, fill opacity=0.88, text opacity=1, inner sep=2pt,
+    row sep=0pt, column sep=2pt},
+]
+% ---------------- (a) n = 57 ----------------
+\nextgroupplot[
+  height=4.4cm, ymode=log, ymin=0.08, ymax=200, log ticks with fixed point, ytick={0.1,1,10,100},
+  ylabel={width$/\tau$ at the published energy},
+  title={\small (a) $n=57$}, title style={yshift=-3pt},
+  legend columns=5, transpose legend, legend style={at={(0.985,0.985)}, anchor=north east, fill=none},
+]
+\topdeco
+\notcert{57}{Z_loop}{lZloop}{mZloop}
+\notcert{57}{Z_boundary}{lZbdry}{mZbdry}
+\notcert{57}{Z_bulk}{lZbulk}{mZbulk}
+\notcert{57}{Czz_edge}{lCedge}{mCedge}
+\notcert{57}{C2_bar}{lCtwo}{mCtwo}
+\notcert{57}{Czz_bar}{lCzz, cNot}{mCzz={cNot}{white}}
+\notcert{57}{m_s}{lMs, cNot}{mMs={cNot}{white}}
+\undec{57}{Czz_bar}{square*}\undec{57}{m_s}{*}
+\extE{57}{m_s}{*}
+\cert{57}{Czz_bar}{lCzz, cCert}{mCzz={cCertDk}{cCert}}
+\cert{57}{m_s}{lMs, cCert}{mMs={cCertDk}{cCert}}
+\node[font=\footnotesize, cInk, anchor=north west, inner sep=2.5pt] at (axis cs:1.5,0.97) {width $=\tau$};
+% legend of the labels (line and symbol of each; colour shows the status, see (b))
+\addlegendimage{empty legend}\addlegendentry{\hspace{-0.72cm}\textit{averages}}
+\addlegendimage{legend image code/.code={\draw[lCtwo] (0cm,0cm) -- (0.64cm,0cm); \draw[mCtwo] plot coordinates {(0.32cm,0cm)};}}\addlegendentry{$\bar C_{2}$}
+\addlegendimage{legend image code/.code={\draw[lCzz, cNot] (0cm,0cm) -- (0.64cm,0cm); \draw[mCzz={cNot}{white}] plot coordinates {(0.32cm,0cm)};}}\addlegendentry{$\bar C_{zz}$}
+\addlegendimage{legend image code/.code={\draw[lMs, cNot] (0cm,0cm) -- (0.64cm,0cm); \draw[mMs={cNot}{white}] plot coordinates {(0.32cm,0cm)};}}\addlegendentry{$m_s$}
+\addlegendimage{empty legend}\addlegendentry{}
+\addlegendimage{empty legend}\addlegendentry{\hspace{-0.72cm}\textit{local labels}}
+\addlegendimage{legend image code/.code={\draw[lZloop] (0cm,0cm) -- (0.64cm,0cm); \draw[mZloop] plot coordinates {(0.32cm,0cm)};}}\addlegendentry{loop}
+\addlegendimage{legend image code/.code={\draw[lZbdry] (0cm,0cm) -- (0.64cm,0cm); \draw[mZbdry] plot coordinates {(0.32cm,0cm)};}}\addlegendentry{boundary site}
+\addlegendimage{legend image code/.code={\draw[lZbulk] (0cm,0cm) -- (0.64cm,0cm); \draw[mZbulk] plot coordinates {(0.32cm,0cm)};}}\addlegendentry{bulk site}
+\addlegendimage{legend image code/.code={\draw[lCedge] (0cm,0cm) -- (0.64cm,0cm); \draw[mCedge] plot coordinates {(0.32cm,0cm)};}}\addlegendentry{bond}
+% ---------------- (b) n = 115 ----------------
+\nextgroupplot[
+  height=4.4cm, ymode=log, ymin=0.08, ymax=200, log ticks with fixed point, ytick={0.1,1,10,100},
+  title={\small (b) $n=115$}, title style={yshift=-3pt},
+  legend style={at={(0.985,0.985)}, anchor=north east, row sep=0.5pt, fill=none},
+]
+\topdeco
+\notcert{115}{Z_loop}{lZloop}{mZloop}
+\notcert{115}{Z_boundary}{lZbdry}{mZbdry}
+\notcert{115}{Z_bulk}{lZbulk}{mZbulk}
+\notcert{115}{Czz_edge}{lCedge}{mCedge}
+\notcert{115}{C2_bar}{lCtwo}{mCtwo}
+\notcert{115}{Czz_bar}{lCzz, cNot}{mCzz={cNot}{white}}
+\notcert{115}{m_s}{lMs, cNot}{mMs={cNot}{white}}
+\undec{115}{Czz_bar}{square*}\undec{115}{m_s}{*}
+\extE{115}{Czz_bar}{square*}
+\extE{115}{m_s}{*}
+\cert{115}{Czz_bar}{lCzz, cCert}{mCzz={cCertDk}{cCert}}
+\cert{115}{m_s}{lMs, cCert}{mMs={cCertDk}{cCert}}
+% legend of the statuses: strip cell, then the symbols of m_s and Czz_bar
+\addlegendimage{legend image code/.code={\swatch{cCert}
+  \draw[mMs={cCertDk}{cCert}] plot coordinates {(0.36cm,0.02cm)}; \draw[mCzz={cCertDk}{cCert}] plot coordinates {(0.58cm,0.02cm)};}}
+\addlegendentry{certified (exact interval $\le\tau$)}
+\addlegendimage{legend image code/.code={\swatch{cCertE} \fill[cCertDk] (0.07cm,0.02cm) circle (0.75pt);
+  \draw[only marks, mark=*, mark size=1.5pt, mark options={solid, draw=cCert, fill=cCertE, line width=0.55pt}] plot coordinates {(0.36cm,0.02cm)};
+  \draw[only marks, mark=square*, mark size=1.5pt, mark options={solid, draw=cCert, fill=cCertE, line width=0.55pt}] plot coordinates {(0.58cm,0.02cm)};}}
+\addlegendentry{the same with extension E1}
+\addlegendimage{legend image code/.code={\swatch{cNot}
+  \draw[mMs={cNot}{white}] plot coordinates {(0.36cm,0.02cm)}; \draw[mCzz={cNot}{white}] plot coordinates {(0.58cm,0.02cm)};}}
+\addlegendentry{not certified (explicit states)}
+\addlegendimage{legend image code/.code={\swatch{cUnd}
+  \draw[cUndRim, line width=0.5pt, line cap=butt] (0cm,-0.09cm) -- (0.14cm,0.02cm) (0cm,0.02cm) -- (0.14cm,0.13cm);
+  \draw[only marks, mark=*, mark size=1.3pt, mark options={solid, draw=cUndRim, fill=cUnd, line width=0.5pt}] plot coordinates {(0.36cm,0.02cm)};
+  \draw[only marks, mark=square*, mark size=1.3pt, mark options={solid, draw=cUndRim, fill=cUnd, line width=0.5pt}] plot coordinates {(0.58cm,0.02cm)};}}
+\addlegendentry{undecided}
+% ---------------- status strips ----------------
+\nextgroupplot[
+  height=2.6cm, ymin=-0.5, ymax=6.5, y dir=reverse, ytick={0,1,2,3,4,5,6},
+  yticklabels={$m_s$,$\bar C_{zz}$,$\bar C_{2}$,loop,boundary site,bulk site,bond},
+  yticklabel style={font=\footnotesize, inner xsep=1.5pt}, ytick style={draw=none}, xtick style={draw=none},
+  axis line style={draw=none},
+]
+\strip{57}
+\nextgroupplot[
+  height=2.6cm, ymin=-0.5, ymax=6.5, y dir=reverse, ytick=\empty, xtick style={draw=none},
+  axis line style={draw=none},
+]
+\strip{115}
+% ---------------- (c) n = 57 ----------------
+\nextgroupplot[
+  height=4.2cm, ymin=-2.36, ymax=2.2,
+  ytick={-2,-1.4771,-1,-0.5,0,0.5,1,1.4771,2}, yticklabels={$-10$,$-3$,$-1$,$-0.5$,$0$,$0.5$,$1$,$3$,$10$},
+  minor ytick={-2.301,-1.699,-1.301,1.301,1.699},
+  ylabel={$(m_s-m_s^{\rm ref})/\tau$}, xlabel={coupling $J_z$},
+]
+\bottom{57}
+\panelkey{(c) $n=57$}
+\bandkey
+% ---------------- (d) n = 115 ----------------
+\nextgroupplot[
+  height=4.2cm, ymin=-2.36, ymax=2.2,
+  ytick={-2,-1.4771,-1,-0.5,0,0.5,1,1.4771,2}, yticklabels={$-10$,$-3$,$-1$,$-0.5$,$0$,$0.5$,$1$,$3$,$10$},
+  minor ytick={-2.301,-1.699,-1.301,1.301,1.699},
+  xlabel={coupling $J_z$},
+]
+\bottom{115}
+\panelkey{(d) $n=115$}
+\end{groupplot}
+\end{tikzpicture}
+\end{document}

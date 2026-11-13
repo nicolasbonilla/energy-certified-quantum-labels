@@ -1,0 +1,36 @@
+PART A  geometry
+A1 explicit formula == rustworkx heavy_hex_graph(d), same numbering and same majority colouring, d = 3..41: True
+   stored graph of the paper hh_d3.json == formula: True
+   stored graph of the paper hh_d5.json == formula: True
+   stored graph of the paper hh_d7.json == formula: True
+A2 lengths of a minimum cycle basis {length: count}: {3: {10: 2}, 5: {10: 4, 12: 4}, 7: {10: 6, 12: 12}, 9: {10: 8, 12: 24}}   (infinite heavy-hex lattice: all 12)
+A3 embedding in the infinite lattice (bulk induced, caps = contracted F-S-F paths), d = 3..23: True;  nested images: True
+A4 coordinate map 1-Lipschitz, <= 3 sites per cell, |b_x(m)| <= 3(2m+1)^2 (d = 3..15): True;  observed max |b_x(m)|/m^2 = 4 ~ 4.000
+A5 for d >= 11 the local type is a function of the signature and every signature occurs at d = 11 (d = 11..25): True
+   number of site types: d=3: 9, d=5: 12, d=7: 12, d=9: 12, d=11: 12, d=25: 12;  types(d) == types(5) for d = 5..25: True;  types(3) subset of types(5)? True (|types(3) minus types(5)| = 0)
+A6 second-neighbour pairs: {3: {'n': 19, 'edges': 20, 'pairs2': 25, 'max_pairs_per_site': 4, 'same_sublattice': True, 'n_over_E': '19/20', 'n_over_P2': '19/25'}, 5: {'n': 57, 'edges': 64, 'pairs2': 87, 'max_pairs_per_site': 4, 'same_sublattice': True, 'n_over_E': '57/64', 'n_over_P2': '19/29'}, 7: {'n': 115, 'edges': 132, 'pairs2': 185, 'max_pairs_per_site': 4, 'same_sublattice': True, 'n_over_E': '115/132', 'n_over_P2': '23/37'}, 9: {'n': 193, 'edges': 224, 'pairs2': 319, 'max_pairs_per_site': 4, 'same_sublattice': True, 'n_over_E': '193/224', 'n_over_P2': '193/319'}, 11: {'n': 291, 'edges': 340, 'pairs2': 489, 'max_pairs_per_site': 4, 'same_sublattice': True, 'n_over_E': '291/340', 'n_over_P2': '97/163'}}
+
+PART B  classical part (units Jz = 1, B = 3/8)
+B1 rule |g_e| <= 1/2 and site gaps s_i >= 3/52 on d = 3..21, 25, 31, 41: True;  min_i s_i = ['3/52']
+   bulk type (torus, infinite lattice): g = 9/26; majority s = 2B - 2g = 3/52; minority s = 3g - 2B = 15/52
+B2 tilted certificates: C_zz, t in ['1/100', '1/60']: min_i s_i(t) >= 3/52 - (42/13) t ; C_2, t = -['1/200', '1/150']: min_i s_i(t) >= 3/52 - 8|t| : True
+   exact min_i s_i(t) at d = 5: zz t=1/100: 33/1300 (bound 33/1300), zz t=1/60: 1/260 (bound 1/260), c2 t=1/200: 23/1300 (bound 23/1300), c2 t=1/150: 17/3900 (bound 17/3900)
+B3 n = 19, all 2^19 sets D: exact site-wise Peierls constant  min_D cost(D)/|D|  against the certificate bound
+   m_s   t =      0: exact      1/12 ~ +0.08333   certificate bound      3/52 ~ +0.05769
+   m_s   t =  1/100: exact    31/300 ~ +0.10333   certificate bound  101/1300 ~ +0.07769
+   m_s   t = -1/100: exact    19/300 ~ +0.06333   certificate bound   49/1300 ~ +0.03769
+   m_s   t =  -1/40: exact      1/30 ~ +0.03333   certificate bound     1/130 ~ +0.00769
+   C_zz  t =  1/100: exact     7/100 ~ +0.07000   certificate bound   33/1300 ~ +0.02538
+   C_zz  t =   1/60: exact    11/180 ~ +0.06111   certificate bound     1/260 ~ +0.00385
+   C_zz  t =  -1/20: exact    39/340 ~ +0.11471   certificate bound      3/52 ~ +0.05769
+   C_2   t =  1/200: exact    29/300 ~ +0.09667   certificate bound      3/52 ~ +0.05769
+   C_2   t = -1/200: exact     7/100 ~ +0.07000   certificate bound   23/1300 ~ +0.01769
+   C_2   t = -1/150: exact    59/900 ~ +0.06556   certificate bound   17/3900 ~ +0.00436
+   exact classical windows at n = 19 (B = 3/8): m_s: t > -1/24 ; C_zz: t < 1/16 ; C_2: t > -1/32   [certificate windows: t > -3/104 ; t < 1/56 ; t > -3/416]
+   identity m_s   t = -1/100: max |lhs - rhs| = 5.3e-15, min t_e = 0.000, min_i s_i = 49/1300
+   identity C_zz  t =  1/100: max |lhs - rhs| = 7.1e-15, min t_e = 0.000, min_i s_i = 33/1300
+   identity C_zz  t =  -1/20: max |lhs - rhs| = 5.3e-15, min t_e = 0.000, min_i s_i = 3/52
+   identity C_2   t =  1/200: max |lhs - rhs| = 5.3e-15, min t_e = 0.000, min_i s_i = 3/52
+   identity C_2   t = -1/200: max |lhs - rhs| = 7.1e-15, min t_e = 0.000, min_i s_i = 23/1300
+
+all checks passed: True

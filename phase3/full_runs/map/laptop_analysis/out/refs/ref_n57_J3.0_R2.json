@@ -1,0 +1,24 @@
+{
+ "n": 57,
+ "Jz": 3.0,
+ "kind": "R2",
+ "stages": [
+  {
+   "tag": "R2",
+   "E": -49.559578764829844,
+   "dmrg": {
+    "E_dmrg": -49.559578764829745,
+    "sweeps": 19,
+    "time_s": 180.8202977180481,
+    "dE_last": -7.834444204490865e-11,
+    "max_trunc_err": 1.52246500826583e-05,
+    "last_trunc_err": 3.389442803060915e-10,
+    "chi_max_reached": 200,
+    "norm_test_before": 1.276761864069631e-14,
+    "canonicalized": false,
+    "warnings": []
+   },
+   "sid": "n57_J3.0_R2_E1"
+  }
+ ]
+}

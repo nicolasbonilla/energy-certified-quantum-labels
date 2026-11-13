@@ -1,0 +1,9 @@
+pdflatex return code: 0
+errors (lines starting with !): 0
+overfull boxes: 0
+underfull boxes: 0
+missing characters: 0
+warnings: 0
+page size: 463.2 x 174.4 bp = 16.34 x 6.15 cm
+fonts: GBQLJL+LMMathSymbols8-Regular, HOUYYA+LMMathItalic6-Regular, KBDDHN+LMRoman9-Regular, MIFTDY+LMMathItalic9-Regular, NBUPRP+LMMathItalic8-Regular, ONAHZY+LMMathSymbols6-Regular, TVJRCA+LMRoman8-Regular, UTLOTY+LMRoman6-Regular
+previews: fig_bias_law_rd_300dpi.png, fig_bias_law_rd_150dpi.png (pdftoppm)

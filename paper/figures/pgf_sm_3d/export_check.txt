@@ -1,0 +1,136 @@
+export_sm3d.py -- data of the 3-D Supplemental figures (inputs via ../fig_landscape.py, ../landscape_data.py, ../common.py; ROOT = C:\Users\Nicolas\Downloads\Proyecto_SQD_ML\Quantum_for_AI\J_next_paper)
+PASS  landscape_data.check_inner(57): inner hull = summary_map.json at E_lo, E_dig, E_up of every m_s row (max |diff| = 0.0e+00)
+PASS  landscape_data.check_inner(115): inner hull = summary_map.json at E_lo, E_dig, E_up of every m_s row (max |diff| = 0.0e+00)
+====================================================================================================
+[figS_landscape_n57]
+PASS  fig_landscape.data(57): edges valid on the whole grid (assert ok.all() inside)
+grid: 16 computed couplings x 150 de (0.0001 .. 0.024, log-spaced); up in [0.0010, 0.2241], lo in [-0.5366, -0.0011]
+PASS  caption: the de range stops at 0.024 (largest stored energy common to all couplings 0.02416, at J_z = 1.1)
+PASS  upper edge >= m_s,GS >= lower edge everywhere (the ground state is in every window)
+PASS  upper minus lower edge = the width of main Fig. 2(a) on the same grid (max |diff| of log10 w/tau = 0.0e+00)
+PASS  straight interpolation between computed couplings = fig_landscape.refine
+drawn maps: the full grid, 16 couplings x 150 de = 2400 points per map, Gouraud-shaded (no downsampling)
+threshold de*: inside the plotted de range for J_z in [1.31, 6.00]
+  J=1.1  de*=0.000049 de_dig=0.012000  
+  J=1.2  de*=0.000071 de_dig=0.012000  
+  J=1.3  de*=0.000098 de_dig=0.012000  
+  J=1.4  de*=0.000131 de_dig=0.012000  
+  J=1.6  de*=0.000222 de_dig=0.010943  
+  J=1.8  de*=0.000349 de_dig=0.009000  
+  J=2    de*=0.000518 de_dig=0.007627  
+  J=2.5  de*=0.001152 de_dig=0.004372  
+  J=3    de*=0.002143 de_dig=0.002829  
+  J=3.3  de*=0.002933 de_dig=0.002689  certified (de_dig <= de*)
+  J=3.6  de*=0.003876 de_dig=0.002137  certified (de_dig <= de*)
+  J=4    de*=0.005293 de_dig=0.001728  certified (de_dig <= de*)
+  J=4.5  de*=0.007231 de_dig=0.001353  certified (de_dig <= de*)
+  J=5    de*=0.008858 de_dig=0.001008  certified (de_dig <= de*)
+  J=5.5  de*=0.010841 de_dig=0.000924  certified (de_dig <= de*)
+  J=6    de*=0.012636 de_dig=0.000907  certified (de_dig <= de*)
+PASS  ood rows are the first 4 couplings
+PASS  window at the dataset's energy straddles m_s,GS at every coupling
+PASS  the window at the dataset's energy lies on the drawn edges (max |diff| between the hull at de_dig and the grid read at de_dig = 3.2e-05)
+PASS  caption: orange only for J_z >= 1.8 (inside the plotted range: [1.8, 2.0, 2.2, 2.5, 3.0, 3.5, 4.0, 5.0, 6.0])
+  orange J=1.8  de=0.01880 dm_s=+0.1025; upper edge at its own energy 0.1049, ratio 0.98 (hull at that energy: 0.1049)
+  orange J=2    de=0.01451 dm_s=+0.0764; upper edge at its own energy 0.0841, ratio 0.91 (hull at that energy: 0.0841)
+  orange J=2.2  de=0.01120 dm_s=+0.0572; upper edge at its own energy 0.0696, ratio 0.82
+  orange J=2.5  de=0.00733 dm_s=+0.0364; upper edge at its own energy 0.0478, ratio 0.76 (hull at that energy: 0.0478)
+  orange J=3    de=0.00379 dm_s=+0.0176; upper edge at its own energy 0.0300, ratio 0.59 (hull at that energy: 0.0300)
+  orange J=3.5  de=0.00220 dm_s=+0.0092; upper edge at its own energy 0.0194, ratio 0.48
+  orange J=4    de=0.00137 dm_s=+0.0051; upper edge at its own energy 0.0128, ratio 0.40 (hull at that energy: 0.0128)
+  orange J=5    de=0.00075 dm_s=+0.0022; upper edge at its own energy 0.0068, ratio 0.32 (hull at that energy: 0.0068)
+  orange J=6    de=0.00051 dm_s=+0.0012; upper edge at its own energy 0.0042, ratio 0.29 (hull at that energy: 0.0042)
+  violet J=1.1  de_dig=0.01200 dm_s=+0.1776; upper edge at the dataset's energy 0.2073, ratio 0.86
+  violet J=1.2  de_dig=0.01200 dm_s=+0.1589; upper edge at the dataset's energy 0.1878, ratio 0.85
+  violet J=1.3  de_dig=0.01200 dm_s=+0.1425; upper edge at the dataset's energy 0.1701, ratio 0.84
+  violet J=1.4  de_dig=0.01200 dm_s=+0.1167; upper edge at the dataset's energy 0.1545, ratio 0.76
+  violet J=1.6  de_dig=0.01094 dm_s=+0.0797; upper edge at the dataset's energy 0.1245, ratio 0.64
+  violet J=2.5  de_dig=0.00437 dm_s=+0.0195; upper edge at the dataset's energy 0.0438, ratio 0.45
+  violet J=4    de_dig=0.00173 dm_s=+0.0048; upper edge at the dataset's energy 0.0141, ratio 0.34
+PASS  caption: orange and violet all on the '+' side (dm_s > 0)
+PASS  every marker lies below the drawn upper edge at its own energy
+  'close to the top surface': orange dm/upper edge in [0.29, 0.98], violet in [0.34, 0.86]
+colour range of the edge maps: [-0.6, 0.3] (the z range of fig_landscape)
+====================================================================================================
+[figS_landscape_n115]
+PASS  fig_landscape.data(115): edges valid on the whole grid (assert ok.all() inside)
+grid: 16 computed couplings x 150 de (0.0001 .. 0.016, log-spaced); up in [0.0013, 0.2158], lo in [-0.3830, -0.0013]
+PASS  caption: the de range stops at 0.016 (largest stored energy common to all couplings 0.01663, at J_z = 2.5)
+PASS  caption: that limit is set by J_z = 2.5
+PASS  upper edge >= m_s,GS >= lower edge everywhere (the ground state is in every window)
+PASS  straight interpolation between computed couplings = fig_landscape.refine
+drawn maps: the full grid, 16 couplings x 150 de = 2400 points per map, Gouraud-shaded (no downsampling)
+threshold de*: inside the plotted de range for J_z in [1.36, 6.00]
+  J=1.1  de*=0.000000 de_dig=0.012000  
+  J=1.2  de*=0.000017 de_dig=0.012000  
+  J=1.3  de*=0.000071 de_dig=0.012000  
+  J=1.4  de*=0.000127 de_dig=0.012000  
+  J=1.6  de*=0.000252 de_dig=0.011637  
+  J=1.8  de*=0.000408 de_dig=0.009620  
+  J=2    de*=0.000607 de_dig=0.007317  
+  J=2.5  de*=0.001335 de_dig=0.004278  
+  J=3    de*=0.002454 de_dig=0.002938  
+  J=3.3  de*=0.003322 de_dig=0.002465  certified (de_dig <= de*)
+  J=3.6  de*=0.004349 de_dig=0.001689  certified (de_dig <= de*)
+  J=4    de*=0.005727 de_dig=0.001253  certified (de_dig <= de*)
+  J=4.5  de*=0.007723 de_dig=0.000912  certified (de_dig <= de*)
+  J=5    de*=0.009696 de_dig=0.000848  certified (de_dig <= de*)
+  J=5.5  de*=0.010848 de_dig=0.000519  certified (de_dig <= de*)
+  J=6    de*=0.013027 de_dig=0.000397  certified (de_dig <= de*)
+PASS  ood rows are the first 4 couplings
+PASS  window at the dataset's energy straddles m_s,GS at every coupling
+PASS  the window at the dataset's energy lies on the drawn edges (max |diff| between the hull at de_dig and the grid read at de_dig = 3.4e-05)
+PASS  caption: orange only for J_z >= 3 (inside the plotted range: [3.0, 4.0, 5.0, 6.0])
+  orange J=3    de=0.01589 dm_s=+0.0417; upper edge at its own energy 0.0287, ratio 1.45 (hull at that energy: 0.0287)
+  orange J=4    de=0.00741 dm_s=+0.0175; upper edge at its own energy 0.0229, ratio 0.76 (hull at that energy: 0.0229)
+  orange J=5    de=0.00371 dm_s=+0.0080; upper edge at its own energy 0.0128, ratio 0.62 (hull at that energy: 0.0128)
+  orange J=6    de=0.00197 dm_s=+0.0039; upper edge at its own energy 0.0063, ratio 0.62 (hull at that energy: 0.0063)
+  violet J=1.1  de_dig=0.01200 dm_s=+0.1749; upper edge at the dataset's energy 0.1935, ratio 0.90
+  violet J=1.2  de_dig=0.01200 dm_s=+0.1458; upper edge at the dataset's energy 0.1761, ratio 0.83
+  violet J=1.3  de_dig=0.01200 dm_s=+0.1248; upper edge at the dataset's energy 0.1594, ratio 0.78
+  violet J=1.4  de_dig=0.01200 dm_s=+0.1050; upper edge at the dataset's energy 0.1448, ratio 0.73
+  violet J=1.6  de_dig=0.01164 dm_s=+0.0767; upper edge at the dataset's energy 0.1187, ratio 0.65
+  violet J=2.5  de_dig=0.00428 dm_s=+0.0179; upper edge at the dataset's energy 0.0407, ratio 0.44
+  violet J=4    de_dig=0.00125 dm_s=+0.0038; upper edge at the dataset's energy 0.0115, ratio 0.33
+PASS  caption: orange and violet all on the '+' side (dm_s > 0)
+NOTE  markers above the drawn (inner) upper edge at their own energy: [(3.0, 0.0417, 0.0287)] -- not an error: the inner edge is the hull of the stored states, a lower bound on the true upper edge; the data are drawn as they are
+  'close to the top surface': orange dm/upper edge in [0.62, 1.45], violet in [0.33, 0.90]
+colour range of the edge maps: [-0.4, 0.3] (the z range of fig_landscape)
+====================================================================================================
+[figS_lattice]
+PASS  landscape_data.site_freedom(57, 1.2): site average = m_s width of the witnesses (assert inside)
+PASS  landscape_data.layout(57): unit edge lengths (assert inside)
+PASS  (a) per-site value = eta_i(<Z_i>_emulated - <Z_i>_DMRG), max |diff| = 0.0e+00
+PASS  (a) site average = stored m_s bias 0.258595
+PASS  caption: (a) positive at every site (57 of 57)
+PASS  (b) site average = m_s width of summary_map.json at E_lo (0.461701)
+PASS  SM text: +0.2586 at J_z = 1.2 (n = 57)
+PASS  caption: emulated state at de = 0.043 (0.04328)
+PASS  caption: witnesses at de = 0.0096 (E_lo = 0.0096 n)
+PASS  all values inside the colour scale 0..0.8
+      (a) mean 0.2586 min 0.1651 max 0.3885; (b) mean 0.4617 min 0.2644 max 0.7538; colour scale 0..0.8
+PASS  printed in the current figure: amean = 0.259
+PASS  printed in the current figure: amin = 0.165
+PASS  printed in the current figure: bmean = 0.462
+PASS  printed in the current figure: bmin = 0.264
+      57 sites, 64 edges, drawing 8 x 8 bonds
+====================================================================================================
+[figS_lattice_n115]
+PASS  landscape_data.site_freedom(115, 1.2): site average = m_s width of the witnesses (assert inside)
+PASS  landscape_data.layout(115): unit edge lengths (assert inside)
+PASS  (a) per-site value = eta_i(<Z_i>_emulated - <Z_i>_DMRG), max |diff| = 0.0e+00
+PASS  (a) site average = stored m_s bias 0.300810
+PASS  caption: (a) positive at every site (115 of 115)
+PASS  (b) site average = m_s width of summary_map.json at E_lo (0.422204)
+PASS  caption: emulated state at de = 0.079 (0.07865)
+PASS  caption: witnesses at de = 0.0096 (E_lo = 0.0096 n)
+PASS  all values inside the colour scale 0..0.9
+PASS  caption: the 8 largest values of (b) lie within 3.5 bonds of the top-left or bottom-right corner (distances [1.0, 1.0, 1.0, 1.0, 3.0, 3.0, 2.0, 2.0])
+      (a) mean 0.3008 min 0.2058 max 0.4664; (b) mean 0.4222 min 0.1949 max 0.8769; colour scale 0..0.9
+PASS  printed in the current figure: amean = 0.301
+PASS  printed in the current figure: amin = 0.206
+PASS  printed in the current figure: bmean = 0.422
+PASS  printed in the current figure: bmin = 0.195
+      115 sites, 132 edges, drawing 12 x 12 bonds
+====================================================================================================
+ALL CHECKS PASSED

@@ -1,0 +1,33 @@
+square XXZ Jz=1.2 C_zz: sizes ['12', '16', '20']  truth -0.6000 -0.6011 -0.6103
+   from   12 to 20: rows 14  raw mean   6.54 max   9.90 | corrected mean  1.08 max  1.98 | small-truth baseline  0.28
+   from   16 to 20: rows 14  raw mean   5.87 max   9.66 | corrected mean  0.35 max  0.69 | small-truth baseline  0.25
+square XXZ Jz=1.2 m_s^2: sizes ['12', '16', '20']  truth 0.4552 0.4275 0.4252
+   from   12 to 20: rows 14  raw mean  13.62 max  21.02 | corrected mean  3.60 max  5.99 | small-truth baseline  1.18
+   from   16 to 20: rows 15  raw mean  12.76 max  21.02 | corrected mean  1.22 max  2.26 | small-truth baseline  0.09
+square XXZ Jz=2.0 C_zz: sizes ['12', '16', '20']  truth -0.8451 -0.8671 -0.8785
+   from   12 to 20: rows  9  raw mean   1.09 max   1.94 | corrected mean  0.23 max  0.44 | small-truth baseline  0.63
+   from   16 to 20: rows  9  raw mean   1.09 max   1.94 | corrected mean  0.09 max  0.16 | small-truth baseline  0.22
+square XXZ Jz=2.0 m_s^2: sizes ['12', '16', '20']  truth 0.7879 0.8113 0.8250
+   from   12 to 20: rows 10  raw mean   1.50 max   2.82 | corrected mean  0.24 max  0.54 | small-truth baseline  0.75
+   from   16 to 20: rows 11  raw mean   1.64 max   3.05 | corrected mean  0.12 max  0.22 | small-truth baseline  0.28
+square XXZ Jz=4.0 C_zz: sizes ['12', '16', '20']  truth -0.9661 -0.9690 -0.9704
+   from   12 to 20: rows  2  raw mean   0.34 max   0.38 | corrected mean  0.04 max  0.04 | small-truth baseline  0.07
+   from   16 to 20: rows  3  raw mean   0.37 max   0.42 | corrected mean  0.01 max  0.02 | small-truth baseline  0.02
+square XXZ Jz=4.0 m_s^2: sizes ['12', '16', '20']  truth 0.9545 0.9568 0.9580
+   from   12 to 20: rows  4  raw mean   0.42 max   0.57 | corrected mean  0.03 max  0.04 | small-truth baseline  0.06
+   from   16 to 20: rows  4  raw mean   0.42 max   0.57 | corrected mean  0.01 max  0.02 | small-truth baseline  0.02
+frustrated J1-J2 Heisenberg J2=0.3 C_zz: sizes ['12', '16', '20']  truth -0.5219 -0.5072 -0.4975
+   from   12 to 20: rows 14  raw mean   9.88 max  15.53 | corrected mean  2.09 max  3.72 | small-truth baseline  0.82
+   from   16 to 20: rows 14  raw mean   8.79 max  14.97 | corrected mean  0.81 max  1.56 | small-truth baseline  0.33
+frustrated J1-J2 Heisenberg J2=0.5 C_zz: sizes ['12', '16', '20']  truth -0.5128 -0.4972 -0.4859
+   from   12 to 20: rows 12  raw mean   8.30 max  15.00 | corrected mean  2.18 max  4.98 | small-truth baseline  0.92
+   from   16 to 20: rows 14  raw mean   9.64 max  17.64 | corrected mean  0.70 max  1.64 | small-truth baseline  0.39
+random Heisenberg (Huang-type) seed=1 C_zz: sizes ['12', '16', '20']  truth -0.4883 -0.4747 -0.4464
+   from   12 to 20: rows 14  raw mean   9.32 max  18.27 | corrected mean  3.58 max  6.55 | small-truth baseline  1.56
+   from   16 to 20: rows 14  raw mean   9.32 max  18.27 | corrected mean  0.65 max  1.56 | small-truth baseline  1.06
+random Heisenberg (Huang-type) seed=2 C_zz: sizes ['12', '16', '20']  truth -0.4687 -0.4905 -0.4727
+   from   12 to 20: rows 12  raw mean   8.98 max  15.81 | corrected mean  1.63 max  2.92 | small-truth baseline  0.14
+   from   16 to 20: rows 12  raw mean   8.98 max  15.81 | corrected mean  0.72 max  1.33 | small-truth baseline  0.63
+random Heisenberg (Huang-type) seed=3 C_zz: sizes ['12', '16', '20']  truth -0.5005 -0.4633 -0.4726
+   from   12 to 20: rows 14  raw mean   9.69 max  16.36 | corrected mean  2.14 max  3.51 | small-truth baseline  0.98
+   from   16 to 20: rows 15  raw mean  10.17 max  16.93 | corrected mean  3.50 max  6.03 | small-truth baseline  0.33

@@ -1,0 +1,46 @@
+============================== n = 57
+sign sites  : 2850 of 2850 pairs with t>0 (F=1.000000); Spearman(D, Jz) = -0.98022
+sign edges  : 3198 of 3200 pairs with t>0 (F=0.999375); Spearman(D, Jz) = -0.97263
+sign second : 4350 of 4350 pairs with t>0 (F=1.000000); Spearman(D, Jz) = -0.97589
+sign loops  : 200 of 200 pairs with t>0 (F=1.000000); Spearman(D, Jz) = -0.97196
+   exception: n=57 Jz=1.9 edges (24, 56) t=-0.0074 |err|/tau=0.031 pub=-0.7963 ref=-0.7978
+   exception: n=57 Jz=1.9 edges (19, 36) t=-0.0164 |err|/tau=0.049 pub=-0.8442 ref=-0.8468
+sum of published site magnetizations below M0=9 at 50 of 50 couplings; deficit 0.0004 to 0.2342
+energy error per site, first stage over final: 2.80 to 8.93 (median 6.67)
+dataset paper Eq.(15) Delta Z (%) at Jz=1.1..1.5: [31.5, 25.9, 21.7, 16.7, 12.4] ; at 1.6, 2.5, 4.0: [10.31, 2.49, 0.66]
+dataset paper energy ratio (E-E0)/(E1-E0) at Jz=1.6, 2.5, 4.0: [1.3446, 0.2308, 0.0519] ; below 1 from Jz >= 1.8 ; at 1.1-1.4: [15.46, 6.98, 4.19, 2.69]
+median over 1.6-6.0 of mean rel. error: Czz 0.99 % ; Zloop 1.18 % ; Z 0.73 %
+curve: mean raw miss 0.6226 ; mean corrected 0.1110 ; chord 0.0584 ; n19 value 0.2938 tau
+curve: 22 deciding couplings (1.1-3.3); ratios 0.8029-1.0455, median 0.851; outside band at 0: [] ; all read inside curve range: True
+curve: ratio at Jz=1.2, 1.6, 2.5, 4.0: [0.8558, 0.8081, 0.8212, 1.1502]
+n19 value at test couplings: [1.472, 1.339, 1.194, 1.052]
+energy error per site at Jz=1.1-1.6: [0.0214, 0.01976, 0.01802, 0.01542, 0.01261, 0.01135]
+============================== n = 115
+sign sites  : 5748 of 5750 pairs with t>0 (F=0.999652); Spearman(D, Jz) = -0.99549
+sign edges  : 6597 of 6600 pairs with t>0 (F=0.999545); Spearman(D, Jz) = -0.99241
+sign second : 9243 of 9250 pairs with t>0 (F=0.999243); Spearman(D, Jz) = -0.99289
+sign loops  : 599 of 600 pairs with t>0 (F=0.998333); Spearman(D, Jz) = -0.99433
+   exception: n=115 Jz=1.5 site 19 t=-1.6901 |err|/tau=6.076 pub=0.5227 ref=0.8226
+   exception: n=115 Jz=1.5 site 89 t=-0.8974 |err|/tau=5.077 pub=-0.5192 ref=-0.7466
+   exception: n=115 Jz=1.5 second (19, 20) t=-0.5872 |err|/tau=5.561 pub=0.4249 ref=0.6377
+   exception: n=115 Jz=1.5 second (83, 89) t=-0.3896 |err|/tau=4.767 pub=0.4118 ref=0.5767
+   exception: n=115 Jz=1.5 second (19, 55) t=-0.7789 |err|/tau=5.769 pub=0.4527 ref=0.6923
+   exception: n=115 Jz=1.5 edges (19, 90) t=-1.5057 |err|/tau=7.375 pub=-0.4309 ref=-0.7729
+   exception: n=115 Jz=1.5 edges (18, 89) t=-1.3715 |err|/tau=6.600 pub=-0.4687 ref=-0.7760
+   exception: n=115 Jz=1.5 second (89, 90) t=-0.3552 |err|/tau=4.468 pub=0.4171 ref=0.5699
+   exception: n=115 Jz=1.5 edges (55, 89) t=-1.3457 |err|/tau=6.472 pub=-0.4747 ref=-0.7761
+   exception: n=115 Jz=1.5 second (88, 89) t=-0.3984 |err|/tau=4.835 pub=0.4108 ref=0.5787
+   exception: n=115 Jz=1.5 second (19, 60) t=-0.7515 |err|/tau=5.880 pub=0.4404 ref=0.6805
+   exception: n=115 Jz=1.5 second (18, 19) t=-0.6968 |err|/tau=5.146 pub=0.4790 ref=0.6929
+   exception: n=115 Jz=1.5 loop 3 t=-0.4731 |err|/tau=5.633 pub=0.3862 ref=0.5833
+sum of published site magnetizations below M0=19 at 50 of 50 couplings; deficit 0.0027 to 0.4352
+energy error per site, first stage over final: 6.59 to 175.41 (median 29.61)
+dataset paper Eq.(15) Delta Z (%) at Jz=1.1..1.5: [29.8, 22.9, 18.5, 14.8, 11.8] ; at 1.6, 2.5, 4.0: [9.53, 2.09, 0.39]
+dataset paper energy ratio (E-E0)/(E1-E0) at Jz=1.6, 2.5, 4.0: [2.7297, 0.4626, 0.0761] ; below 1 from Jz >= 2.1 ; at 1.1-1.4: [25.69, 11.93, 7.26, 5.07]
+median over 1.6-6.0 of mean rel. error: Czz 0.62 % ; Zloop 0.75 % ; Z 0.48 %
+curve: mean raw miss 0.5299 ; mean corrected 0.1676 ; chord 0.0937 ; n19 value 0.4069 tau
+curve: 19 deciding couplings (1.1-2.9); ratios 0.6087-0.8122, median 0.741; outside band at 12: [1.5, 1.6, 1.7, 1.9, 2.0, 2.2, 2.3, 2.4, 2.5, 2.6, 2.7, 2.9] ; all read inside curve range: True
+curve: ratio at Jz=1.2, 1.6, 2.5, 4.0: [0.7856, 0.7484, 0.6962, 0.8079]
+n19 value at test couplings: [2.067, 1.847, 1.63, 1.431]
+energy error per site at Jz=1.1-1.6: [0.02273, 0.01968, 0.01717, 0.01542, 0.01571, 0.01168]
+TOTAL sign: 32785 of 32800

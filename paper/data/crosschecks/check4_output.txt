@@ -1,0 +1,47 @@
+comb: n=12, majority 8, minority 4, edges 11
+
+(a) window of m_s and C_zz with and without the sector restriction
+  Jz=1.6 sector n_up=8   lowest levels above E0: [0.      1.18382 1.5257 ]
+     de=1e-03  m_s window [+0.7310, +0.8155] (width 0.0845)   C_zz window [-0.8126, -0.7357] (width 0.0769)
+     de=1e-02  m_s window [+0.6231, +0.8891] (width 0.2661)   C_zz window [-0.8833, -0.6422] (width 0.2411)
+  Jz=1.6 no sector       lowest levels above E0: [0.      0.      0.24804]
+     de=1e-03  m_s window [-0.8155, +0.8155] (width 1.6310)   C_zz window [-0.8126, -0.7357] (width 0.0769)
+     de=1e-02  m_s window [-0.8891, +0.8891] (width 1.7783)   C_zz window [-0.8833, -0.6422] (width 0.2411)
+  Jz=4.0 sector n_up=8   lowest levels above E0: [0.      2.21419 3.53637]
+     de=1e-03  m_s window [+0.9298, +0.9613] (width 0.0315)   C_zz window [-0.9602, -0.9311] (width 0.0291)
+     de=1e-02  m_s window [+0.8835, +0.9842] (width 0.1006)   C_zz window [-0.9829, -0.8911] (width 0.0918)
+  Jz=4.0 no sector       lowest levels above E0: [0.      0.      1.35122]
+     de=1e-03  m_s window [-0.9613, +0.9613] (width 1.9226)   C_zz window [-0.9602, -0.9311] (width 0.0291)
+     de=1e-02  m_s window [-0.9842, +0.9842] (width 1.9683)   C_zz window [-0.9829, -0.8911] (width 0.0918)
+
+(b) truncation bias in the sector (signed m_s error; + = over-ordered)
+  Jz=1.2  dim=495  m_s(GS)=0.6929
+     top- 10  captured weight 0.724  support-only +0.1432  Rayleigh-Ritz +0.2030  (RR eps/gap 0.66)
+     top- 30  captured weight 0.889  support-only +0.0644  Rayleigh-Ritz +0.1193  (RR eps/gap 0.30)
+     top- 60  captured weight 0.957  support-only +0.0298  Rayleigh-Ritz +0.0773  (RR eps/gap 0.13)
+     top-120  captured weight 0.992  support-only +0.0057  Rayleigh-Ritz +0.0244  (RR eps/gap 0.03)
+     top-240  captured weight 1.000  support-only +0.0002  Rayleigh-Ritz +0.0014  (RR eps/gap 0.00)
+     M=  30 shots (30 repetitions): D= 14.3  support-only +0.1378  RR +0.1820 (min +0.1325, frac>0 1.00)  sample mean -0.0104 +- 0.0130
+     M= 100 shots (30 repetitions): D= 29.7  support-only +0.0860  RR +0.1477 (min +0.1236, frac>0 1.00)  sample mean +0.0037 +- 0.0049
+     M= 300 shots (30 repetitions): D= 52.8  support-only +0.0483  RR +0.1020 (min +0.0901, frac>0 1.00)  sample mean -0.0045 +- 0.0025
+     M=1000 shots (30 repetitions): D= 88.3  support-only +0.0205  RR +0.0580 (min +0.0444, frac>0 1.00)  sample mean +0.0002 +- 0.0017
+  Jz=1.6  dim=495  m_s(GS)=0.7752
+     top- 10  captured weight 0.823  support-only +0.0907  Rayleigh-Ritz +0.1364  (RR eps/gap 0.41)
+     top- 30  captured weight 0.942  support-only +0.0356  Rayleigh-Ritz +0.0726  (RR eps/gap 0.16)
+     top- 60  captured weight 0.981  support-only +0.0144  Rayleigh-Ritz +0.0426  (RR eps/gap 0.06)
+     top-120  captured weight 0.997  support-only +0.0021  Rayleigh-Ritz +0.0103  (RR eps/gap 0.01)
+     top-240  captured weight 1.000  support-only +0.0000  Rayleigh-Ritz +0.0004  (RR eps/gap 0.00)
+     M=  30 shots (30 repetitions): D= 11.1  support-only +0.1027  RR +0.1341 (min +0.1173, frac>0 1.00)  sample mean +0.0029 +- 0.0094
+     M= 100 shots (30 repetitions): D= 23.5  support-only +0.0613  RR +0.1036 (min +0.0859, frac>0 1.00)  sample mean +0.0025 +- 0.0045
+     M= 300 shots (30 repetitions): D= 38.8  support-only +0.0361  RR +0.0752 (min +0.0643, frac>0 1.00)  sample mean +0.0013 +- 0.0021
+     M=1000 shots (30 repetitions): D= 67.9  support-only +0.0166  RR +0.0450 (min +0.0389, frac>0 1.00)  sample mean +0.0010 +- 0.0013
+  Jz=4.0  dim=495  m_s(GS)=0.9469
+     top- 10  captured weight 0.978  support-only +0.0100  Rayleigh-Ritz +0.0175  (RR eps/gap 0.06)
+     top- 30  captured weight 0.997  support-only +0.0019  Rayleigh-Ritz +0.0052  (RR eps/gap 0.01)
+     top- 60  captured weight 1.000  support-only +0.0003  Rayleigh-Ritz +0.0013  (RR eps/gap 0.00)
+     top-120  captured weight 1.000  support-only +0.0000  Rayleigh-Ritz +0.0001  (RR eps/gap 0.00)
+     top-240  captured weight 1.000  support-only +0.0000  Rayleigh-Ritz +0.0000  (RR eps/gap 0.00)
+     M=  30 shots (30 repetitions): D=  4.6  support-only +0.0309  RR +0.0321 (min +0.0236, frac>0 1.00)  sample mean -0.0006 +- 0.0038
+     M= 100 shots (30 repetitions): D=  8.6  support-only +0.0167  RR +0.0215 (min +0.0165, frac>0 1.00)  sample mean -0.0003 +- 0.0028
+     M= 300 shots (30 repetitions): D= 14.3  support-only +0.0071  RR +0.0146 (min +0.0121, frac>0 1.00)  sample mean -0.0019 +- 0.0010
+     M=1000 shots (30 repetitions): D= 20.3  support-only +0.0044  RR +0.0110 (min +0.0086, frac>0 1.00)  sample mean +0.0007 +- 0.0008

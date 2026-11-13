@@ -1,0 +1,41 @@
+﻿row | side | mu | sum_k t_k | E_LB | DMRG upper reference F | sum_k t_k <= F ? | slack/|F| in %
+n= 57 Jz=4.0 m_s      +  mu -0.01691  sum t -84.5100  E_LB -84.3579  F -84.3567  yes  0.0014
+n= 57 Jz=4.0 m_s      -  mu -1.10117  sum t -68.6977  E_LB -58.7872  F -58.7675  yes  0.0334
+n= 57 Jz=4.0 Czz_bar  +  mu -0.68594  sum t -63.0224  E_LB -56.8490  F -56.8342  yes  0.0260
+n= 57 Jz=4.0 Czz_bar  -  mu -1.12717  sum t -93.1808  E_LB -83.0363  F -83.0339  yes  0.0029
+n= 57 Jz=6.0 m_s      +  mu +0.09376  sum t -119.9901  E_LB -120.8340  F -120.8325  NO   0.0012
+n= 57 Jz=6.0 m_s      -  mu -1.82345  sum t -99.8343  E_LB -83.4232  F -83.4171  yes  0.0074
+n= 57 Jz=6.0 Czz_bar  +  mu -1.12974  sum t -93.6897  E_LB -83.5221  F -83.5197  yes  0.0028
+n= 57 Jz=6.0 Czz_bar  -  mu -1.35329  sum t -130.9564  E_LB -118.7768  F -118.7759  yes  0.0008
+n= 57 Jz=3.4 m_s      +  mu +0.01487  sum t -74.4073  E_LB -74.5412  F -74.5395  NO   0.0022
+n= 57 Jz=3.4 m_s      -  mu -0.89745  sum t -59.3172  E_LB -51.2402  F -51.2011  yes  0.0763
+n= 57 Jz=3.4 Czz_bar  +  mu -0.48395  sum t -52.4401  E_LB -48.0846  F -48.0615  yes  0.0480
+n= 57 Jz=3.4 Czz_bar  -  mu -0.92910  sum t -81.7503  E_LB -73.3884  F -73.3854  yes  0.0041
+n= 57 Jz=3.6 m_s      +  mu +0.01931  sum t -77.4260  E_LB -77.5998  F -77.5984  NO   0.0018
+n= 57 Jz=3.6 m_s      -  mu -0.92934  sum t -62.6637  E_LB -54.2996  F -54.2730  yes  0.0491
+n= 57 Jz=3.6 Czz_bar  +  mu -0.54487  sum t -56.2134  E_LB -51.3096  F -51.2931  yes  0.0321
+n= 57 Jz=3.6 Czz_bar  -  mu -0.97181  sum t -85.1533  E_LB -76.4070  F -76.4045  yes  0.0034
+n= 57 Jz=4.5 m_s      +  mu +0.00040  sum t -92.8337  E_LB -92.8372  F -92.8363  NO   0.0010
+n= 57 Jz=4.5 m_s      -  mu -1.28980  sum t -77.1807  E_LB -65.5726  F -65.5516  yes  0.0320
+n= 57 Jz=4.5 Czz_bar  +  mu -0.85135  sum t -71.5854  E_LB -63.9233  F -63.9150  yes  0.0130
+n= 57 Jz=4.5 Czz_bar  -  mu -1.21467  sum t -102.3066  E_LB -91.3745  F -91.3728  yes  0.0019
+n= 57 Jz=5.0 m_s      +  mu +0.01235  sum t -100.3262  E_LB -100.4374  F -100.4367  NO   0.0007
+n= 57 Jz=5.0 m_s      -  mu -1.43486  sum t -85.2845  E_LB -72.3708  F -72.3577  yes  0.0182
+n= 57 Jz=5.0 Czz_bar  +  mu -0.96974  sum t -79.4624  E_LB -70.7347  F -70.7296  yes  0.0072
+n= 57 Jz=5.0 Czz_bar  -  mu -1.25536  sum t -110.2412  E_LB -98.9430  F -98.9416  yes  0.0014
+n= 57 Jz=5.5 m_s      +  mu +0.05506  sum t -109.6129  E_LB -110.1084  F -110.1066  NO   0.0016
+n= 57 Jz=5.5 m_s      -  mu -1.59174  sum t -93.3062  E_LB -78.9806  F -78.9709  yes  0.0122
+n= 57 Jz=5.5 Czz_bar  +  mu -1.05618  sum t -86.8442  E_LB -77.3386  F -77.3352  yes  0.0043
+n= 57 Jz=5.5 Czz_bar  -  mu -1.32298  sum t -120.2908  E_LB -108.3841  F -108.3819  yes  0.0020
+n=115 Jz=4.0 m_s      +  mu -0.03879  sum t -169.0575  E_LB -168.3205  F -168.3177  yes  0.0017
+n=115 Jz=4.0 m_s      -  mu -1.07025  sum t -142.4093  E_LB -122.0745  F -122.0218  yes  0.0432
+n=115 Jz=4.0 Czz_bar  +  mu -0.73554  sum t -132.6481  E_LB -118.6727  F -118.6472  yes  0.0215
+n=115 Jz=4.0 Czz_bar  -  mu -1.08519  sum t -186.0059  E_LB -165.3873  F -165.3819  yes  0.0033
+n=115 Jz=6.0 m_s      +  mu +0.02590  sum t -231.3422  E_LB -231.8343  F -231.8306  NO   0.0016
+n=115 Jz=6.0 m_s      -  mu -1.70836  sum t -211.7767  E_LB -179.3178  F -179.3083  yes  0.0053
+n=115 Jz=6.0 Czz_bar  +  mu -1.16780  sum t -203.1845  E_LB -180.9963  F -180.9924  yes  0.0021
+n=115 Jz=6.0 Czz_bar  -  mu -1.27570  sum t -252.8916  E_LB -228.6532  F -228.6510  yes  0.0010
+certificates where the bare sum of the cluster bounds lies ABOVE the DMRG sector energy: 7 of 36
+largest |sum_k t_k - E_LB|: 16.41 (n = 57), 32.46 (n = 115)
+largest relative slacks: [('0.0763%', 57, 3.4, 'm_s', '-', 0.0391), ('0.0491%', 57, 3.6, 'm_s', '-', 0.0266), ('0.0480%', 57, 3.4, 'Czz_bar', '+', 0.0231), ('0.0432%', 115, 4.0, 'm_s', '-', 0.0527)]
+max over '+' sides and Czz sides: 0.0480 % ; max over m_s '-' sides: 0.0763 %

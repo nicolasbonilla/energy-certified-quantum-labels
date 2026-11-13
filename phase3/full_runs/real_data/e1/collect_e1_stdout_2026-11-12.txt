@@ -1,0 +1,57 @@
+STATUS.json: finished = True, stop reason = all tasks finished, updated 2026-11-12T21:56:33Z, elapsed 2.225 h
+certificates in out/jobs: 48; accepted (stored verifier AND independent verifier): 48; not accepted: 0
+Search summary (in-sector form; NOT the declared E1 column):
+  n =  57  Jz = 3.3:  9 certificates; in-sector interval at E_real + 1e-6: [0.90127, 0.96299], width 1.0948 tau (WIDER than tau); best '+' e1_n57_eball2_m_s_p3.3_l0.275529 (eball2), best '-' e1_n57_eball2_m_s_m3.3_l0.128218 (eball2)
+  n =  57  Jz = 3.2: 10 certificates; in-sector interval at E_real + 1e-6: [0.89645, 0.95981], width 1.1284 tau (WIDER than tau); best '+' e1_n57_eball2_m_s_p3.2_l0.245619 (eball2), best '-' e1_n57_eball2_m_s_m3.2_l0.114824 (eball2)
+  n = 115  Jz = 5.0:  7 certificates; in-sector interval at E_real + 1e-6: [0.96565, 0.98184], width 0.2768 tau (within tau); best '+' e1_n115_vball2_m_s_p5.0_l0.244833 (vball2), best '-' e1_n115_vball2_m_s_m5.0_l0.172003 (vball2)
+  n = 115  Jz = 3.6: 11 certificates; in-sector interval at E_real + 1e-6: [0.92683, 0.96792], width 0.7193 tau (within tau); best '+' e1_n115_vball2_m_s_p3.6_l0.219256 (vball2), best '-' e1_n115_vball2_m_s_m3.6_l0.124125 (vball2)
+  n = 115  Jz = 3.3: 11 certificates; in-sector interval at E_real + 1e-6: [0.90547, 0.96465], width 1.0458 tau (WIDER than tau); best '+' e1_n115_vball2_m_s_p3.3_l0.240914 (vball2), best '-' e1_n115_vball2_m_s_m3.3_l0.113202 (vball2)
+couplings with at least one accepted certificate: n=57 Jz=3.2, n=57 Jz=3.3, n=115 Jz=3.6, n=115 Jz=3.3, n=115 Jz=5.0
+copied 48 certificates to C:\Users\Nicolas\Downloads\Proyecto_SQD_ML\P5_energy_certified_labels\work\phase3\full_runs\real_data\e1\certs (manifest E1_CERTS.json, SHA256SUMS.txt)
+running the declared map code with the E1 column: run_map.py --out C:\Users\Nicolas\Downloads\Proyecto_SQD_ML\P5_energy_certified_labels\work\phase3\full_runs\real_data\e1\map_e1 (a few minutes) ...
+declaration SHA-256 6dfbc5681a7b4708ba790e1dd3139d8efdcccb9ced24e5ab2ce4b5a7a209ffaa: hash file present and matching
+G1: {'gate': 'G1', 'hashes_ok': True, 'rerun': None, 'complete': False, 'pass': True}
+certificates: 220 files, 214 distinct by SHA-256, 140 used (n = 57: 120, n = 115: 20)
+n = 57: G2 True, G3 True, G4 True; building rows
+n = 57: 350 rows, 0 without decision
+n = 115: G2 True, G3 True, G4 True; building rows
+n = 115: 350 rows, 0 without decision
+S_sets.json written, SHA-256 e82b32a79abdc43c4cce0480e7d0e542cc0fc40e5fe5757c959acb10e433f97c
+G5: re-proving 17 deciding certificates with the independent verifier
+gates: {'G1': 'pass on what could be checked; not complete', 'G2_57': True, 'G3_57': True, 'G4_57': True, 'G2_115': True, 'G3_115': True, 'G4_115': True, 'G5a': True, 'G5b': True, 'G6a': 'pass on what could be checked; not complete', 'G6b': True, 'G7': True}
+written to C:\Users\Nicolas\Downloads\Proyecto_SQD_ML\P5_energy_certified_labels\work\phase3\full_runs\real_data\e1\map_e1
+
+E1 certificates used by the map code: 48
+E1 column, m_s, dataset rows where it differs from the column of the stored certificates:
+  n =  57  Jz = 3.2: stored: no interval | with E1: [0.89506, 0.95982], width 1.1532 tau (reference-free 1.2059), status GRAY / GRAY
+  n =  57  Jz = 3.3: stored: no interval | with E1: [0.90016, 0.96299], width 1.1144 tau (reference-free 1.1633), status GRAY / GRAY
+  n = 115  Jz = 3.3: stored: no interval | with E1: [0.90418, 0.96471], width 1.0695 tau (reference-free 1.1157), status GRAY / GRAY
+  n = 115  Jz = 3.4: stored: no interval | with E1: [0.91379, 0.96497], width 0.9013 tau (reference-free 0.9335), status CERTIFIED_EXACT / CERTIFIED_EXACT
+  n = 115  Jz = 3.5: stored: no interval | with E1: [0.91895, 0.96717], width 0.8466 tau (reference-free 0.8746), status CERTIFIED_EXACT / CERTIFIED_EXACT
+  n = 115  Jz = 3.6: stored: no interval | with E1: [0.92572, 0.96800], width 0.7400 tau (reference-free 0.7611), status CERTIFIED_EXACT / CERTIFIED_EXACT
+  n = 115  Jz = 3.7: stored: no interval | with E1: [0.92909, 0.97044], width 0.7221 tau (reference-free 0.7419), status CERTIFIED_EXACT / CERTIFIED_EXACT
+  n = 115  Jz = 3.8: stored: no interval | with E1: [0.93423, 0.97130], width 0.6456 tau (reference-free 0.6613), status CERTIFIED_EXACT / CERTIFIED_EXACT
+  n = 115  Jz = 3.9: stored: no interval | with E1: [0.93826, 0.97244], width 0.5940 tau (reference-free 0.6071), status CERTIFIED_EXACT / CERTIFIED_EXACT
+  n = 115  Jz = 4.1: stored: width 0.5695 tau, CERTIFIED_EXACT | with E1: [0.94436, 0.97468], width 0.5248 tau (reference-free 0.5351), status CERTIFIED_EXACT / CERTIFIED_EXACT
+  n = 115  Jz = 4.2: stored: width 0.6068 tau, CERTIFIED_EXACT | with E1: [0.94624, 0.97632], width 0.5199 tau (reference-free 0.5299), status CERTIFIED_EXACT / CERTIFIED_EXACT
+  n = 115  Jz = 4.3: stored: width 0.6198 tau, CERTIFIED_EXACT | with E1: [0.94878, 0.97749], width 0.4952 tau (reference-free 0.5043), status CERTIFIED_EXACT / CERTIFIED_EXACT
+  n = 115  Jz = 4.4: stored: width 0.5937 tau, CERTIFIED_EXACT | with E1: [0.95237, 0.97783], width 0.4386 tau (reference-free 0.4457), status CERTIFIED_EXACT / CERTIFIED_EXACT
+  n = 115  Jz = 4.5: stored: width 0.5870 tau, CERTIFIED_EXACT | with E1: [0.95475, 0.97858], width 0.4099 tau (reference-free 0.4160), status CERTIFIED_EXACT / CERTIFIED_EXACT
+  n = 115  Jz = 4.6: stored: width 0.6005 tau, CERTIFIED_EXACT | with E1: [0.95626, 0.97978], width 0.4040 tau (reference-free 0.4099), status CERTIFIED_EXACT / CERTIFIED_EXACT
+  n = 115  Jz = 4.7: stored: width 0.5867 tau, CERTIFIED_EXACT | with E1: [0.95864, 0.98041], width 0.3735 tau (reference-free 0.3786), status CERTIFIED_EXACT / CERTIFIED_EXACT
+  n = 115  Jz = 4.8: stored: width 0.6649 tau, CERTIFIED_EXACT | with E1: [0.95806, 0.98309], width 0.4288 tau (reference-free 0.4354), status CERTIFIED_EXACT / CERTIFIED_EXACT
+  n = 115  Jz = 4.9: stored: width 0.5295 tau, CERTIFIED_EXACT | with E1: [0.96371, 0.98094], width 0.2950 tau (reference-free 0.2981), status CERTIFIED_EXACT / CERTIFIED_EXACT
+  n = 115  Jz = 5.0: stored: width 0.5313 tau, CERTIFIED_EXACT | with E1: [0.96532, 0.98185], width 0.2825 tau (reference-free 0.2853), status CERTIFIED_EXACT / CERTIFIED_EXACT
+  n = 115  Jz = 5.1: stored: width 0.4675 tau, CERTIFIED_EXACT | with E1: [0.96730, 0.98198], width 0.2507 tau (reference-free 0.2529), status CERTIFIED_EXACT / CERTIFIED_EXACT
+  n = 115  Jz = 5.2: stored: width 0.4821 tau, CERTIFIED_EXACT | with E1: [0.96656, 0.98392], width 0.2961 tau (reference-free 0.2992), status CERTIFIED_EXACT / CERTIFIED_EXACT
+  n = 115  Jz = 5.3: stored: width 0.4087 tau, CERTIFIED_EXACT | with E1: [0.96912, 0.98366], width 0.2479 tau (reference-free 0.2501), status CERTIFIED_EXACT / CERTIFIED_EXACT
+  n = 115  Jz = 5.4: stored: width 0.3950 tau, CERTIFIED_EXACT | with E1: [0.96948, 0.98480], width 0.2608 tau (reference-free 0.2632), status CERTIFIED_EXACT / CERTIFIED_EXACT
+  n = 115  Jz = 5.5: stored: width 0.3407 tau, CERTIFIED_EXACT | with E1: [0.97133, 0.98487], width 0.2304 tau (reference-free 0.2323), status CERTIFIED_EXACT / CERTIFIED_EXACT
+  n = 115  Jz = 5.6: stored: width 0.3013 tau, CERTIFIED_EXACT | with E1: [0.97264, 0.98525], width 0.2146 tau (reference-free 0.2162), status CERTIFIED_EXACT / CERTIFIED_EXACT
+  n = 115  Jz = 5.7: stored: width 0.2747 tau, CERTIFIED_EXACT | with E1: [0.97349, 0.98590], width 0.2110 tau (reference-free 0.2125), status CERTIFIED_EXACT / CERTIFIED_EXACT
+  n = 115  Jz = 5.8: stored: width 0.2789 tau, CERTIFIED_EXACT | with E1: [0.97329, 0.98728], width 0.2376 tau (reference-free 0.2396), status CERTIFIED_EXACT / CERTIFIED_EXACT
+  n = 115  Jz = 5.9: stored: width 0.1844 tau, CERTIFIED_EXACT | with E1: [0.97646, 0.98611], width 0.1638 tau (reference-free 0.1647), status CERTIFIED_EXACT / CERTIFIED_EXACT
+  J*_exact, n = 57: stored certificates 3.5 (reference-free 3.5); with E1 3.5 (reference-free 3.5)
+  J*_exact, n = 115: stored certificates 4.0 (reference-free 4.0); with E1 3.4 (reference-free 3.4)
+gates: {'G1': 'pass on what could be checked; not complete', 'G2_115': True, 'G2_57': True, 'G3_115': True, 'G3_57': True, 'G4_115': True, 'G4_57': True, 'G5a': True, 'G5b': True, 'G6a': 'pass on what could be checked; not complete', 'G6b': True, 'G7': True}
+E1 column written to C:\Users\Nicolas\Downloads\Proyecto_SQD_ML\P5_energy_certified_labels\work\phase3\full_runs\real_data\e1\map_e1 (real_data/out/ was not touched)

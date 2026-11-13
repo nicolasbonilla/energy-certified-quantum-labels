@@ -1,0 +1,23 @@
+pair                                       normal   protan   deutan   tritan
+certified cell / not-certified cell          42.4     24.3     20.5     43.6
+certified cell / undecided cell              47.2     26.5     31.7     47.0
+certified cell / E1 cell                     22.5     18.2     18.9     17.9
+not-certified cell / undecided cell          50.7     50.6     50.7     50.7
+not-certified cell / E1 cell                 46.7     42.0     39.2     51.4
+undecided cell / E1 cell                     27.1      8.8     14.5     34.6
+undecided cell / white                       13.7     13.8     13.7     13.5
+undecided cell / test shading                 5.4      5.4      5.3      5.3
+certified symbol / E1 symbol                 22.5     18.2     18.9     17.9
+E1 symbol / white                            34.9     22.2     26.0     40.0
+E1 symbol / undecided symbol                 27.1      8.8     14.5     34.6
+certified symbol / not-certified line        42.4     24.3     20.5     43.6
+not-certified line / local label             21.4     21.4     21.4     21.4
+local label / white                          42.8     42.8     42.7     42.7
+band / white                                 16.5     15.4     17.2     15.4
+band / exact line                            49.1     33.6     33.8     40.2
+band / public label                          86.3     87.0     85.9     86.3
+band / emulation                             86.6     65.6     68.4     98.8
+public label / emulation                     77.9     44.1     63.4     88.3
+CIE76 Delta E; below about 10 two colours are hard to tell apart by colour alone.
+smallest: 5.3 for undecided cell / test shading (tritan)
+The E1 cells also carry a dot and the undecided cells a hatch; the E1 symbols sit on a dashed line; the undecided symbols have a grey rim. Labels differ by symbol shape and line style, not by colour.

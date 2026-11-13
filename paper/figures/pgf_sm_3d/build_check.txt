@@ -1,0 +1,34 @@
+[figS_landscape_n57_pgf] pdflatex exit code 0
+  errors:             0
+  overfull:           0
+  underfull:          0
+  missing characters: 0
+  warnings:           0
+  natural size 17.80 cm x 12.07 cm; PDF 150 kB
+  overlap check: 472 glyphs, 2230 stroked segments, 19 markers/nodes, 8 background fills ignored; text items touching something: 1
+      − |  −                                        text   at (22.4, 255.3) pt
+[figS_landscape_n115_pgf] pdflatex exit code 0
+  errors:             0
+  overfull:           0
+  underfull:          0
+  missing characters: 0
+  warnings:           0
+  natural size 17.80 cm x 12.07 cm; PDF 149 kB
+  overlap check: 469 glyphs, 2200 stroked segments, 9 markers/nodes, 8 background fills ignored; text items touching something: 1
+      − |  −                                        text   at (22.4, 255.3) pt
+[figS_lattice_pgf] pdflatex exit code 0
+  errors:             0
+  overfull:           0
+  underfull:          0
+  missing characters: 0
+  warnings:           0
+  natural size 17.71 cm x 11.53 cm; PDF 129 kB
+  overlap check: 247 glyphs, 137 stroked segments, 114 markers/nodes, 0 background fills ignored; text items touching something: 0
+[figS_lattice_n115_pgf] pdflatex exit code 0
+  errors:             0
+  overfull:           0
+  underfull:          0
+  missing characters: 0
+  warnings:           0
+  natural size 17.67 cm x 11.51 cm; PDF 140 kB
+  overlap check: 248 glyphs, 273 stroked segments, 230 markers/nodes, 0 background fills ignored; text items touching something: 0

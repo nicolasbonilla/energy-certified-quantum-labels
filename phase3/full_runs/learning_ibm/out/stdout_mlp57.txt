@@ -1,0 +1,3 @@
+n=57 mlp_pilot3  OOD: covZ truth 0.000 emu 0.338 | covM truth 0.00 emu 0.50 | wM/tau 0.04 | err vs truth 26.6-51.0% (control 1.5-13.9%) | 3603s
+        in-dist: covZ truth 0.200 emu 0.926 | covM truth 0.20 emu 1.00 | wM/tau 0.04
+done 3623 s

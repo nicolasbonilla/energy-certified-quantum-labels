@@ -1,0 +1,38 @@
+{
+ "G6_J2=0": {
+  "e_netket_fullsum": -0.5651616899604751,
+  "e_wlib": -0.5651616899604756,
+  "diff": 4.440892098500626e-16,
+  "sample_sz_max_abs": 0.0,
+  "sample_values": [
+   -1,
+   1
+  ],
+  "ok": true
+ },
+ "G6_J2=0.5": {
+  "e_netket_fullsum": -0.3142700909968448,
+  "e_wlib": -0.31427009099684483,
+  "diff": 5.551115123125783e-17,
+  "sample_sz_max_abs": 0.0,
+  "sample_values": [
+   -1,
+   1
+  ],
+  "ok": true
+ },
+ "driver": "VMC+SR",
+ "G6_vmc_smoke": {
+  "first": -0.5566737611470725,
+  "last": -0.6983173982940913,
+  "exact_4x4": -0.7017802,
+  "seconds": 36.07423710823059,
+  "ok": true
+ },
+ "versions": {
+  "jax": "0.8.1",
+  "netket": "3.21.0"
+ },
+ "all_ok": true,
+ "time": "2026-11-07T20:12:18Z"
+}

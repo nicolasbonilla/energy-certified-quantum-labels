@@ -1,0 +1,202 @@
+2026-10-30T00:35:25Z scheduler start pid=2556 tasks=100
+2026-10-30T00:35:25Z start ref_57_1.2 threads=1 mem=2 pid=2557
+2026-10-30T00:35:25Z start ref_57_2.5 threads=1 mem=2 pid=2558
+2026-10-30T00:35:25Z start ref_57_4.0 threads=1 mem=2 pid=2559
+2026-10-30T00:35:25Z start gap_57_2.5 threads=1 mem=2 pid=2560
+2026-10-30T00:36:35Z end ref_57_4.0 rc=0 70s
+2026-10-30T00:36:35Z start ref_115_1.2 threads=1 mem=5 pid=2639
+2026-10-30T00:37:25Z end ref_57_1.2 rc=0 120s
+2026-10-30T00:37:25Z start ref_115_2.5 threads=1 mem=5 pid=2665
+2026-10-30T00:37:35Z end ref_57_2.5 rc=0 130s
+2026-10-30T00:37:35Z end gap_57_2.5 rc=0 130s
+2026-10-30T00:37:35Z start ref_115_4.0 threads=1 mem=5 pid=2719
+2026-10-30T00:37:35Z start gap_115_2.5 threads=1 mem=4 pid=2720
+2026-10-30T00:44:15Z end gap_115_2.5 rc=0 400s
+2026-10-30T00:44:15Z start krylov_57_1.1 threads=1 mem=1 pid=3383
+2026-10-30T00:44:25Z end krylov_57_1.1 rc=0 10s
+2026-10-30T00:44:25Z start krylov_57_1.2 threads=1 mem=2 pid=3387
+2026-10-30T00:48:25Z end ref_115_1.2 rc=0 710s
+2026-10-30T00:48:25Z start krylov_57_1.3 threads=1 mem=1 pid=3519
+2026-10-30T00:48:35Z end krylov_57_1.3 rc=0 10s
+2026-10-30T00:48:35Z start krylov_57_1.4 threads=1 mem=1 pid=3523
+2026-10-30T00:48:45Z end krylov_57_1.4 rc=0 10s
+2026-10-30T00:48:45Z start krylov_57_1.6 threads=1 mem=1 pid=3527
+2026-10-30T00:48:55Z end krylov_57_1.6 rc=0 10s
+2026-10-30T00:48:55Z start krylov_57_1.8 threads=1 mem=1 pid=3531
+2026-10-30T00:49:05Z end krylov_57_1.8 rc=0 10s
+2026-10-30T00:49:05Z start krylov_57_2.0 threads=1 mem=1 pid=3538
+2026-10-30T00:49:15Z end krylov_57_2.0 rc=0 10s
+2026-10-30T00:49:15Z start krylov_57_2.2 threads=1 mem=1 pid=3544
+2026-10-30T00:49:25Z end krylov_57_2.2 rc=0 10s
+2026-10-30T00:49:25Z start krylov_57_2.5 threads=1 mem=2 pid=3548
+2026-10-30T00:49:35Z end ref_115_2.5 rc=0 730s
+2026-10-30T00:49:35Z start krylov_57_3.0 threads=1 mem=1 pid=3575
+2026-10-30T00:49:45Z end ref_115_4.0 rc=0 730s
+2026-10-30T00:49:45Z end krylov_57_3.0 rc=0 10s
+2026-10-30T00:49:45Z start krylov_57_3.5 threads=1 mem=1 pid=3579
+2026-10-30T00:49:45Z start krylov_57_4.0 threads=1 mem=1 pid=3580
+2026-10-30T00:49:55Z end krylov_57_3.5 rc=0 10s
+2026-10-30T00:49:55Z end krylov_57_4.0 rc=0 10s
+2026-10-30T00:49:55Z start krylov_57_5.0 threads=1 mem=1 pid=3585
+2026-10-30T00:49:55Z start krylov_57_6.0 threads=1 mem=1 pid=3586
+2026-10-30T00:50:05Z end krylov_57_5.0 rc=0 10s
+2026-10-30T00:50:05Z end krylov_57_6.0 rc=0 10s
+2026-10-30T00:50:05Z start krylov_115_1.2 threads=1 mem=3 pid=3593
+2026-10-30T00:50:05Z start krylov_115_2.5 threads=1 mem=3 pid=3594
+2026-10-30T00:59:45Z end krylov_57_1.2 rc=0 920s
+2026-10-30T00:59:45Z start krylov_115_4.0 threads=1 mem=3 pid=4272
+2026-10-30T01:05:35Z end krylov_57_2.5 rc=0 970s
+2026-10-30T01:05:35Z start ref_57_1.1 threads=1 mem=2 pid=4880
+2026-10-30T01:07:55Z end ref_57_1.1 rc=0 140s
+2026-10-30T01:07:55Z start ref_57_1.3 threads=1 mem=2 pid=4990
+2026-10-30T01:10:16Z end ref_57_1.3 rc=0 140s
+2026-10-30T01:10:16Z start ref_57_1.4 threads=1 mem=2 pid=5067
+2026-10-30T01:12:36Z end ref_57_1.4 rc=0 140s
+2026-10-30T01:12:36Z start ref_57_1.6 threads=1 mem=2 pid=5438
+2026-10-30T01:14:56Z end ref_57_1.6 rc=0 140s
+2026-10-30T01:14:56Z start ref_57_1.8 threads=1 mem=2 pid=5512
+2026-10-30T01:17:06Z end ref_57_1.8 rc=0 130s
+2026-10-30T01:17:06Z start ref_57_2.0 threads=1 mem=2 pid=5573
+2026-10-30T01:19:16Z end ref_57_2.0 rc=0 130s
+2026-10-30T01:19:16Z start ref_57_2.2 threads=1 mem=2 pid=5658
+2026-10-30T01:21:36Z end ref_57_2.2 rc=0 140s
+2026-10-30T01:21:36Z start ref_57_3.0 threads=1 mem=2 pid=6088
+2026-10-30T01:23:36Z end ref_57_3.0 rc=0 120s
+2026-10-30T01:23:36Z start ref_57_3.5 threads=1 mem=2 pid=6173
+2026-10-30T01:24:56Z end ref_57_3.5 rc=0 80s
+2026-10-30T01:24:56Z start ref_57_5.0 threads=1 mem=2 pid=6209
+2026-10-30T01:26:06Z end ref_57_5.0 rc=0 70s
+2026-10-30T01:26:06Z start ref_57_6.0 threads=1 mem=2 pid=6261
+2026-10-30T01:27:06Z end ref_57_6.0 rc=0 60s
+2026-10-30T01:27:06Z start calib_57 threads=1 mem=3 pid=6289
+2026-10-30T01:29:16Z end calib_57 rc=0 130s
+2026-10-30T01:29:16Z start emu_57_2.5 threads=1 mem=4 pid=6373
+2026-10-30T01:30:56Z end emu_57_2.5 rc=0 100s
+2026-10-30T01:30:56Z start ref_115_1.1 threads=1 mem=5 pid=6428
+2026-10-30T01:42:56Z end ref_115_1.1 rc=0 720s
+2026-10-30T01:42:56Z start ref_115_1.4 threads=1 mem=5 pid=7559
+2026-10-30T01:55:16Z end ref_115_1.4 rc=0 740s
+2026-10-30T01:55:16Z start ref_115_1.6 threads=1 mem=5 pid=8454
+2026-10-30T02:05:56Z end krylov_115_1.2 rc=0 4551s
+2026-10-30T02:05:56Z start ref_115_2.0 threads=1 mem=5 pid=9086
+2026-10-30T02:06:36Z end krylov_115_2.5 rc=0 4591s
+2026-10-30T02:06:36Z start calib_115 threads=1 mem=6 pid=9107
+2026-10-30T02:07:36Z end ref_115_1.6 rc=0 740s
+2026-10-30T02:07:36Z start ref_115_3.0 threads=1 mem=5 pid=9148
+2026-10-30T02:11:16Z end krylov_115_4.0 rc=0 4291s
+2026-10-30T02:11:16Z start ref_115_6.0 threads=1 mem=5 pid=9332
+2026-10-30T02:17:56Z end calib_115 rc=0 680s
+2026-10-30T02:17:56Z start emu_115_2.5 threads=1 mem=7 pid=10066
+2026-10-30T02:18:16Z end ref_115_2.0 rc=0 740s
+2026-10-30T02:18:16Z start krylov_115_1.1 threads=1 mem=3 pid=10094
+2026-10-30T02:18:36Z end ref_115_6.0 rc=0 440s
+2026-10-30T02:18:36Z start krylov_115_1.4 threads=1 mem=3 pid=10106
+2026-10-30T02:20:26Z end ref_115_3.0 rc=0 770s
+2026-10-30T02:20:26Z start krylov_115_1.6 threads=1 mem=3 pid=10188
+2026-10-30T02:27:46Z end emu_115_2.5 rc=0 590s
+2026-10-30T02:27:46Z start gap_57_1.2 threads=1 mem=2 pid=10782
+2026-10-30T02:30:06Z end gap_57_1.2 rc=0 140s
+2026-10-30T02:30:06Z start emu_57_1.2 threads=1 mem=4 pid=10895
+2026-10-30T02:31:56Z end emu_57_1.2 rc=0 110s
+2026-10-30T02:31:56Z start gsscan_57_1.2 threads=1 mem=6 pid=10935
+2026-10-30T03:28:17Z end krylov_115_1.4 rc=0 4181s
+2026-10-30T03:28:17Z start gap_57_1.6 threads=1 mem=2 pid=15219
+2026-10-30T03:28:57Z end krylov_115_1.1 rc=0 4241s
+2026-10-30T03:28:57Z start gap_57_4.0 threads=1 mem=2 pid=15238
+2026-10-30T03:30:17Z end gap_57_4.0 rc=0 80s
+2026-10-30T03:30:17Z start emu_57_4.0 threads=1 mem=4 pid=15297
+2026-10-30T03:30:57Z end gap_57_1.6 rc=0 160s
+2026-10-30T03:30:57Z start gap_115_1.2 threads=1 mem=4 pid=15343
+2026-10-30T03:31:07Z end emu_57_4.0 rc=0 50s
+2026-10-30T03:31:07Z start gap_115_1.6 threads=1 mem=4 pid=15354
+2026-10-30T03:32:07Z end krylov_115_1.6 rc=0 4301s
+2026-10-30T03:32:07Z start gap_115_4.0 threads=1 mem=4 pid=15382
+2026-10-30T03:37:57Z end gap_115_1.2 rc=0 420s
+2026-10-30T03:37:57Z start emu_115_1.2 threads=1 mem=7 pid=15926
+2026-10-30T03:38:07Z end gap_115_1.6 rc=0 420s
+2026-10-30T03:38:07Z start gsscan_115_1.2 threads=1 mem=8 pid=15930
+2026-10-30T03:39:07Z end gap_115_4.0 rc=0 420s
+2026-10-30T03:39:07Z start krylov_115_2.0 threads=1 mem=3 pid=15958
+2026-10-30T03:49:27Z end emu_115_1.2 rc=0 690s
+2026-10-30T03:49:27Z start emu_115_4.0 threads=1 mem=7 pid=16809
+2026-10-30T03:51:27Z end emu_115_4.0 rc=0 120s
+2026-10-30T03:51:27Z start krylov_115_3.0 threads=1 mem=3 pid=16908
+2026-10-30T03:54:07Z end gsscan_57_1.2 rc=0 4931s
+2026-10-30T03:54:07Z start krylov_115_6.0 threads=1 mem=3 pid=16972
+2026-10-30T04:51:48Z end krylov_115_2.0 rc=0 4361s
+2026-10-30T04:51:48Z start emu_57_1.1 threads=1 mem=4 pid=21435
+2026-10-30T04:52:18Z end emu_57_1.1 rc=0 30s
+2026-10-30T04:52:18Z start emu_57_1.3 threads=1 mem=4 pid=21451
+2026-10-30T04:52:48Z end emu_57_1.3 rc=0 30s
+2026-10-30T04:52:48Z start emu_57_1.4 threads=1 mem=4 pid=21463
+2026-10-30T04:53:18Z end emu_57_1.4 rc=0 30s
+2026-10-30T04:53:18Z start emu_57_1.6 threads=1 mem=4 pid=21508
+2026-10-30T04:53:48Z end emu_57_1.6 rc=0 30s
+2026-10-30T04:53:48Z start emu_57_1.8 threads=1 mem=4 pid=21518
+2026-10-30T04:54:18Z end emu_57_1.8 rc=0 30s
+2026-10-30T04:54:18Z start emu_57_2.0 threads=1 mem=4 pid=21532
+2026-10-30T04:54:48Z end emu_57_2.0 rc=0 30s
+2026-10-30T04:54:48Z start emu_57_2.2 threads=1 mem=4 pid=21542
+2026-10-30T04:55:18Z end emu_57_2.2 rc=0 30s
+2026-10-30T04:55:18Z start emu_57_3.0 threads=1 mem=4 pid=21556
+2026-10-30T04:55:48Z end emu_57_3.0 rc=0 30s
+2026-10-30T04:55:48Z start emu_57_3.5 threads=1 mem=4 pid=21566
+2026-10-30T04:56:18Z end emu_57_3.5 rc=0 30s
+2026-10-30T04:56:18Z start emu_57_5.0 threads=1 mem=4 pid=22010
+2026-10-30T04:56:48Z end emu_57_5.0 rc=0 30s
+2026-10-30T04:56:48Z start emu_57_6.0 threads=1 mem=4 pid=22021
+2026-10-30T04:57:18Z end emu_57_6.0 rc=0 30s
+2026-10-30T04:57:18Z start gsscan_57_1.6 threads=1 mem=6 pid=22053
+2026-10-30T05:03:58Z end krylov_115_3.0 rc=0 4351s
+2026-10-30T05:03:58Z start gsscan_115_1.6 threads=1 mem=8 pid=22296
+2026-10-30T05:08:28Z end krylov_115_6.0 rc=0 4461s
+2026-10-30T05:08:28Z start wplus_57_1.2 threads=1 mem=2 pid=22809
+2026-10-30T05:17:58Z end gsscan_115_1.2 rc=0 5991s
+2026-10-30T05:17:58Z start emu_115_1.1 threads=1 mem=7 pid=23514
+2026-10-30T05:19:38Z end wplus_57_1.2 rc=0 670s
+2026-10-30T05:19:38Z start wplus_57_1.6 threads=1 mem=2 pid=23587
+2026-10-30T05:19:48Z end emu_115_1.1 rc=0 110s
+2026-10-30T05:19:48Z start emu_115_1.4 threads=1 mem=7 pid=23596
+2026-10-30T05:21:38Z end emu_115_1.4 rc=0 110s
+2026-10-30T05:21:38Z start emu_115_1.6 threads=1 mem=7 pid=23638
+2026-10-30T05:23:38Z end emu_115_1.6 rc=0 120s
+2026-10-30T05:23:38Z start emu_115_2.0 threads=1 mem=7 pid=23704
+2026-10-30T05:25:38Z end emu_115_2.0 rc=0 120s
+2026-10-30T05:25:39Z start emu_115_3.0 threads=1 mem=7 pid=23781
+2026-10-30T05:27:49Z end emu_115_3.0 rc=0 130s
+2026-10-30T05:27:49Z start emu_115_6.0 threads=1 mem=7 pid=24109
+2026-10-30T05:29:39Z end emu_115_6.0 rc=0 110s
+2026-10-30T05:29:39Z start gsscan_57_2.5 threads=1 mem=6 pid=24204
+2026-10-30T05:30:19Z end wplus_57_1.6 rc=0 640s
+2026-10-30T05:30:19Z start gsscan_57_4.0 threads=1 mem=6 pid=24228
+2026-10-30T05:36:19Z end gsscan_57_4.0 rc=0 360s
+2026-10-30T05:36:19Z start wplus_57_2.5 threads=1 mem=2 pid=24420
+2026-10-30T05:46:09Z end wplus_57_2.5 rc=0 590s
+2026-10-30T05:46:09Z start wplus_115_1.2 threads=1 mem=4 pid=25250
+2026-10-30T05:51:49Z end gsscan_57_2.5 rc=0 1330s
+2026-10-30T05:51:49Z start gsscan_115_2.5 threads=1 mem=8 pid=25779
+2026-10-30T06:19:29Z end gsscan_57_1.6 rc=0 4931s
+2026-10-30T06:19:29Z start bo_1.2_primary threads=1 mem=6 pid=27869
+2026-10-30T06:24:59Z end wplus_115_1.2 rc=0 2330s
+2026-10-30T06:24:59Z start krylov_115_1.3 threads=1 mem=3 pid=28085
+2026-10-30T06:26:59Z end bo_1.2_primary rc=0 450s
+2026-10-30T06:26:59Z start bo_2.5_primary threads=1 mem=6 pid=28174
+2026-10-30T06:33:29Z end bo_2.5_primary rc=0 390s
+2026-10-30T06:33:29Z start bo_2.5_dev_rec threads=1 mem=6 pid=28826
+2026-10-30T06:37:19Z end gsscan_115_1.6 rc=0 5601s
+2026-10-30T06:37:19Z start ref_115_1.3 threads=1 mem=5 pid=29068
+2026-10-30T06:49:39Z end ref_115_1.3 rc=0 740s
+2026-10-30T06:49:39Z start ref_115_5.0 threads=1 mem=5 pid=30162
+2026-10-30T06:55:59Z end bo_2.5_dev_rec rc=0 1350s
+2026-10-30T06:55:59Z start krylov_115_5.0 threads=1 mem=3 pid=30459
+2026-10-30T07:01:29Z end ref_115_5.0 rc=0 710s
+2026-10-30T07:01:29Z start wplus_115_1.6 threads=1 mem=4 pid=30999
+2026-10-30T07:31:20Z end gsscan_115_2.5 rc=0 5971s
+2026-10-30T07:33:40Z end krylov_115_1.3 rc=0 4121s
+2026-10-30T07:33:40Z start emu_115_1.3 threads=1 mem=7 pid=33198
+2026-10-30T07:35:40Z end emu_115_1.3 rc=0 120s
+2026-10-30T07:38:30Z end wplus_115_1.6 rc=0 2220s
+2026-10-30T07:52:40Z end krylov_115_5.0 rc=0 3401s
+2026-10-30T07:52:40Z start emu_115_5.0 threads=1 mem=7 pid=35375
+2026-10-30T07:54:00Z end emu_115_5.0 rc=0 80s
+2026-10-30T07:54:00Z scheduler exit: done=100 failed=0 blocked=0 pending=0

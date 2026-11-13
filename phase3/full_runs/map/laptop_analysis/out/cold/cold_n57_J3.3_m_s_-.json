@@ -1,0 +1,26 @@
+{
+ "n": 57,
+ "Jz": 3.3,
+ "label": "m_s",
+ "sign": "-",
+ "lam": 0.15730025239182108,
+ "F_warm": -48.103190178960006,
+ "F_cold": -48.10319017128123,
+ "dF": 7.678778501940542e-09,
+ "o_warm": 0.906744492323934,
+ "o_cold": 0.9067444808532579,
+ "flag_warm_stuck": false,
+ "sid": "n57_J3.3_cold_m_s_m",
+ "dmrg": {
+  "E_dmrg": -48.103190171280794,
+  "sweeps": 20,
+  "time_s": 133.81766891479492,
+  "dE_last": -5.409361847341643e-11,
+  "max_trunc_err": 4.253241280139508e-06,
+  "last_trunc_err": 1.9815192284602e-09,
+  "chi_max_reached": 160,
+  "norm_test_before": 9.596965570532966e-15,
+  "canonicalized": false,
+  "warnings": []
+ }
+}

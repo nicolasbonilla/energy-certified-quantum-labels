@@ -1,0 +1,12 @@
+n=57 poly3_invJ  OOD: covZ truth 0.000 emu 0.311 | covM truth 0.00 emu 0.25 | wM/tau 0.13 | err vs truth 26.8-52.7% (control 0.1-1.2%) | 0s
+        in-dist: covZ truth 0.100 emu 0.904 | covM truth 0.10 emu 0.90 | wM/tau 0.09
+n=57 null_nn     OOD: covZ truth 0.000 emu 0.785 | covM truth 0.00 emu 0.75 | wM/tau 0.60 | err vs truth 27.3-52.8% (control 7.8-29.4%) | 0s
+        in-dist: covZ truth 0.470 emu 0.911 | covM truth 0.50 emu 1.00 | wM/tau 0.47
+n=57 abstention: answers m_s at [4.0, 5.0, 6.0] (3/14), local at [6.0]; certified m_s width at OOD >= [11.328339477093893, 17.28105689648803] tau
+n=57 device: {'1.2': (0.9502, False, False), '1.6': (0.9658, False, False), '4.0': (0.9825, False, False)}
+n=115 poly3_invJ  OOD: covZ truth 0.000 emu 0.059 | covM truth 0.00 emu 0.00 | wM/tau 0.06 | err vs truth 31.5-53.5% (control 0.1-1.0%) | 0s
+        in-dist: covZ truth 0.000 emu 0.912 | covM truth 0.00 emu 0.86 | wM/tau 0.04
+n=115 null_nn     OOD: covZ truth 0.000 emu 0.998 | covM truth 0.00 emu 1.00 | wM/tau 0.25 | err vs truth 31.9-55.8% (control 7.2-26.6%) | 0s
+        in-dist: covZ truth 0.268 emu 0.860 | covM truth 0.29 emu 0.86 | wM/tau 0.20
+n=115 abstention: answers m_s at [5.0, 6.0] (2/11), local at []; certified m_s width at OOD >= [10.260065036542096, 15.279899953385563] tau
+done 1 s

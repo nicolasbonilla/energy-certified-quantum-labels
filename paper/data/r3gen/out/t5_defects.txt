@@ -1,0 +1,19 @@
+(a) u(eps) as a function of TOTAL eps
+  open-odd XXZ Jz=4 (pinned, cheap wall)
+    eps= 0.5: u_-(n) = 0.5554, 0.5593, 0.5591, 0.5594   (n=(5, 7, 9, 11))
+    eps= 1.0: u_-(n) = 0.9128, 0.9623, 1.0002, 1.0330   (n=(5, 7, 9, 11))
+    eps= 2.0: u_-(n) = 1.4285, 1.5520, 1.6264, 1.6748   (n=(5, 7, 9, 11))
+    eps= 4.0: u_-(n) = 1.4787, 1.6033, 1.6756, 1.7226   (n=(5, 7, 9, 11))
+  comb ferrimagnet Jz=1.6 (extensive pinning)
+    eps= 0.5: u_-(n) = 0.5253, 0.3904, 0.3199   (n=(6, 9, 12))
+    eps= 1.0: u_-(n) = 0.7998, 0.6104, 0.4982   (n=(6, 9, 12))
+    eps= 2.0: u_-(n) = 1.1063, 0.9524, 0.7875   (n=(6, 9, 12))
+    eps= 4.0: u_-(n) = 1.1203, 1.1442, 1.1358   (n=(6, 9, 12))
+(b) k well-separated resets, TFIM1D h=1.5 n=12, Zbar
+  k=1: reset energy=2.029410  k*eps_1=2.029410  [additive: True]  shift=0.0833 = k/n*(1-o0)=0.0833; exact u=0.8699 [>= shift: True]
+  k=2: reset energy=4.058820  k*eps_1=4.058820  [additive: True]  shift=0.1667 = k/n*(1-o0)=0.1667; exact u=0.9624 [>= shift: True]
+  k=3: reset energy=6.088230  k*eps_1=6.088230  [additive: True]  shift=0.2500 = k/n*(1-o0)=0.2500; exact u=0.9929 [>= shift: True]
+  k=4: reset energy=8.117641  k*eps_1=8.117641  [additive: True]  shift=0.3333 = k/n*(1-o0)=0.3333; exact u=1.0000 [>= shift: True]
+  k=5: reset energy=10.147051  k*eps_1=10.147051  [additive: True]  shift=0.4167 = k/n*(1-o0)=0.4167; exact u=1.0000 [>= shift: True]
+  k=6: reset energy=12.176461  k*eps_1=12.176461  [additive: True]  shift=0.5000 = k/n*(1-o0)=0.5000; exact u=1.0000 [>= shift: True]
+time 4.4 s

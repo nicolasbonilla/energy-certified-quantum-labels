@@ -1,0 +1,52 @@
+{
+ "D1": {
+  "value": 0.9195403225806449,
+  "verdict": "NULL"
+ },
+ "D2": {
+  "value": 0.9089999999999994,
+  "verdict": "NULL"
+ },
+ "D3": {
+  "value": 0.8213548387096773,
+  "verdict": "INTERMEDIATE"
+ },
+ "D5": {
+  "avg": {
+   "value": 1.5980214557355745,
+   "verdict": "MODERATE"
+  },
+  "nn": {
+   "value": 1.3018158310565189,
+   "verdict": "CHEAP"
+  }
+ },
+ "D6": {
+  "a_avg": 0.9983333333333333,
+  "a_nn": 0.0,
+  "verdict": "CONFIRMED"
+ },
+ "D7_note": "computed from the avg and nn groups pooled (query-weighted)",
+ "D7": {
+  "answer_rate": 0.06251470588235294,
+  "e_NC": 0.12185368148670901,
+  "verdict": "INTERMEDIATE"
+ },
+ "D3prime_M2": {
+  "value": 0.598516129032258,
+  "verdict": "STRONG"
+ },
+ "D4": {
+  "deterministic": true,
+  "band_checks": true,
+  "band_rule": true,
+  "worst_certified_coverage": [
+   "M1",
+   "advL1",
+   "CSC",
+   "nn",
+   0.9494919354838703
+  ],
+  "verdict": "PASS"
+ }
+}

@@ -1,0 +1,14 @@
+# No line-ending conversion anywhere in this repository.
+# The package holds thousands of files whose SHA-256 is recorded in a checksum list, a declaration, a certificate
+# or docs/MANIFEST.tsv (written protocols, converted data, certificates, outputs compared byte for byte by
+# run_checks.py). A checkout that rewrites line endings on Windows would break every one of those checks, so every
+# file is stored and checked out exactly as it is.
+* -text
+
+# binary formats (no text diff)
+*.npz binary
+*.qpy binary
+*.pdf binary
+*.png binary
+*.gz binary
+*.tar binary

@@ -1,0 +1,8 @@
+python 3.11.2 numpy 2.2.6 scipy 1.15.3 jax 0.8.1 netket 3.21.0 flax 0.12.2 optax 0.2.6 tenpy 1.1.0 numba 0.62.1 [CpuDevice(id=0)]
+CPU(s):                                  8
+Model name:                              Intel(R) Xeon(R) CPU @ 2.80GHz
+BIOS Model name:                           CPU @ 2.0GHz
+Thread(s) per core:                      2
+Core(s) per socket:                      4
+               total        used        free      shared  buff/cache   available
+Mem:              62           0          60           0           1          61

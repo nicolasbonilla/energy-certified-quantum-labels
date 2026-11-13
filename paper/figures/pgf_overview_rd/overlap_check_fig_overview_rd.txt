@@ -1,0 +1,5 @@
+fig_overview_rd.pdf: 137 text spans; clearance 0.8 bp; render 600 dpi
+TEXT/TEXT  ' W' (270.2, 25.5, 282.4, 34.4)  vs  'all states with energy' (203.9, 34.3, 283.2, 42.3)
+TEXT/TEXT  ' ≤' (283.2, 37.1, 292.6, 45.0)  vs  'it holds the generated state' (203.1, 43.8, 304.8, 51.7)
+text left after removal: 0 words
+text/text conflicts: 2; text boxes with ink or a colour edge behind them: 0

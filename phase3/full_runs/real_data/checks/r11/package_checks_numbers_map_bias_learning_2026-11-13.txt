@@ -1,0 +1,31 @@
+Record of `python run_checks.py numbers map bias learning --threads 4` run inside the built package on
+2026-11-13, after the duplicated output folders, the per-job logs and the empty marker files were left out.
+Machine paths replaced.
+
+package: <package>
+work folder: <tmp>
+python: python
+[PASS] numbers      supplement.tex: 4305 numbers, PATH 986, STRING 1933, CONTEXT 543, UNCHECKED 843, MISSING 0; counts as recorded when the package was built; report identical to the stored one (1 s)
+[PASS] numbers      main.tex: 908 numbers, PATH 265, STRING 409, CONTEXT 160, UNCHECKED 74, MISSING 0; counts as recorded when the package was built; report identical to the stored one (1 s)
+map: running the declared code (about 3 to 6 minutes); stored outputs to compare with: phase3/full_runs/real_data/e1/map_e1
+[PASS] map          run_map.py finished in 204 s; {'G1': 'pass on what could be checked; not complete', 'G2_57': True, 'G3_57': True, 'G4_57': True, 'G2_115': True, 'G3_115': True, 'G4_115': True, 'G5a': True, 'G5b': True, 'G6a': 'pass on what could be checked; not complete', 'G6b': True, 'G7': True}
+[PASS] map          S_sets.json: SHA-256 equal to the stored output (e82b32a79abdc43c)
+[PASS] map          map_rows.json: equal to the stored output once the folder of the package is written as <ROOT> (the file records the paths of the certificates it used)
+[PASS] map          map_summary.json: SHA-256 equal to the stored output (39982e97e3364c37)
+[PASS] map          map_secondary.json: equal to the stored output once the folder of the package is written as <ROOT> (the file records the paths of the certificates it used)
+[PASS] map          map_tables.md: SHA-256 equal to the stored output (6f48ec7c3e4f954b)
+[PASS] map          map_gates.json: equal to the stored output apart from recorded run times and the folder of the package
+[PASS] bias         run_predict.py finished in 1 s
+[PASS] bias         predict_results.json: SHA-256 equal to the stored output (04be4924ea62f10c)
+[PASS] learning     run_learn.py --stage=cheap finished in 29 s
+[PASS] learning     results_cheap.json: equal to the stored output apart from recorded run times and the folder of the package
+[PASS] learning     prop2_cubic.json: SHA-256 equal to the stored output (4aaaace255230d95)
+[PASS] learning     f2_floor.json: SHA-256 equal to the stored output (7755247d895068a2)
+[PASS] learning     f3_constructive.json: SHA-256 equal to the stored output (082e708acda651bc)
+[PASS] learning     f1_rules.json: SHA-256 equal to the stored output (81cbe7cf88eaa3aa)
+
+summary: 17 lines, 17 PASS, 0 FAIL
+  numbers      PASS (2 of 2)
+  map          PASS (7 of 7)
+  bias         PASS (2 of 2)
+  learning     PASS (6 of 6)

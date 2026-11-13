@@ -1,0 +1,2 @@
+2026-10-31T08:09:03Z added outputs/plan_explore.json c1f5de9b (exploratory, DEVIATIONS 1)
+2026-10-31T09:09:29Z stopped x_n57_eball2_m_s_m6.0_l0.21829 (redundant exploratory job, DEVIATIONS 2)

@@ -1,0 +1,3 @@
+declaration 6dfbc5681a7b4708ba790e1dd3139d8efdcccb9ced24e5ab2ce4b5a7a209ffaa | seed 1845216616 | stages ['f2']
+  f2 n = 57: floor w_(42) of 45 = 0.22959 = 5.36-6.43 tau at the test queries -> HOLDS (readings agree: True)
+  f2 n = 115: floor w_(42) of 45 = 0.20427 = 4.65-5.50 tau at the test queries -> HOLDS (readings agree: True)

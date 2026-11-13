@@ -1,0 +1,24 @@
+main.tex_line	printed	guardian_verdict	stored_file	key	context
+55	57	STRING	phase3/full_runs/real_data/DECLARATION.md	(the printed string occurs in the file)	57 - and 115 -qubit dataset we prove th
+55	115	STRING	phase3/full_runs/real_data/DECLARATION.md	(the printed string occurs in the file)	57 - and 115 -qubit dataset we prove the hypothesi
+57	6	STRING	phase3/full_runs/real_data/DECLARATION.md	(the printed string occurs in the file)	erence value, the order parameter to 6 % at 26 of
+57	26	PATH	phase3/full_runs/real_data/out/map_summary.json	jstar.57_m_s.sec2	lue, the order parameter to 6 % at 26 of
+58	45	CONTEXT		(a constant of the model: size, number of training couplings, or a coupling of the grid)	45 training couplings at 57 qubits an
+58	57	CONTEXT		(a constant of the model: size, number of training couplings, or a coupling of the grid)	45 training couplings at 57 qubits and 21 at 115 ( 27 with
+58	21	PATH	phase3/full_runs/real_data/out/map_summary.json	jstar.115_m_s.sec2	raining couplings at 57 qubits and 21 at 115 ( 27 with certificates add
+58	115	CONTEXT		(a constant of the model: size, number of training couplings, or a coupling of the grid)	couplings at 57 qubits and 21 at 115 ( 27 with certificates added afterw
+58	27	PATH	phase3/full_runs/real_data/e1/map_e1/map_summary.json	jstar.115_m_s.sec2_e1	gs at 57 qubits and 21 at 115 ( 27 with certificates added afterwards),
+59	19	STRING	phase3/full_runs/real_data/checks/r11/fn_abstract_n19_percent_out.txt	(the printed string occurs in the file)	19 -site calculation is within 1.3 % o
+59	1.3	STRING	phase3/full_runs/real_data/checks/r11/fn_abstract_n19_percent_out.txt	(the printed string occurs in the file)	19 -site calculation is within 1.3 % of the reference. Near the
+60	110	PATH	phase3/full_runs/real_data/out/map_summary.json	accuracy_factors.57.m_s.headline_F_A	eter needs an energy error more than 110 times
+61	57	CONTEXT		(a constant of the model: size, number of training couplings, or a coupling of the grid)	smaller at 57 qubits ( 79 at 115 ); explicit sta
+61	79	PATH	phase3/full_runs/real_data/out/map_summary.json	accuracy_factors.115.m_s.headline_F_A	smaller at 57 qubits ( 79 at 115 ); explicit states show that
+61	115	CONTEXT		(a constant of the model: size, number of training couplings, or a coupling of the grid)	smaller at 57 qubits ( 79 at 115 ); explicit states show that no analy
+62	57	STRING	phase3/full_runs/real_data/DECLARATION.md	(the printed string occurs in the file)	labels are over-ordered there; at 57 qubits a cubic model trained on them
+63	41	PATH	phase3/full_runs/real_data/out/learn_real.json	summary.57.models.poly3_invJ.real.ind.label_covered	prediction intervals contain 41 of 45 held-out labels but the auth
+63	45	CONTEXT		(a constant of the model: size, number of training couplings, or a coupling of the grid)	prediction intervals contain 41 of 45 held-out labels but the authors' ref
+63	11	PATH	phase3/full_runs/real_data/out/learn_real.json	summary.115.models.poly3_invJ.real.ind.truth_covered	he authors' reference value at none ( 11 of 45
+63	45	CONTEXT		(a constant of the model: size, number of training couplings, or a coupling of the grid)	prediction intervals contain 41 of 45 held-out labels but the authors' ref
+64	115	STRING	phase3/full_runs/real_data/DECLARATION.md	(the printed string occurs in the file)	at 115 ). Intervals calibrated on the 18 l
+64	18	PATH	phase3/full_runs/real_data/out/learn_real.json	summary.57.f3.sets.S_1_2.size	115 ). Intervals calibrated on the 18 labels certified to half the toleran
+65	200	PATH	phase3/full_runs/real_data/out/learn_real.json	summary.57.f3.sets.S_1_2.models.M1.n_splits_W	e, which varies little there, in all 200 splits, also for a control trained o

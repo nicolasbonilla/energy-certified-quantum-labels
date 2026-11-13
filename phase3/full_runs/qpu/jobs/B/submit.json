@@ -1,0 +1,39 @@
+{
+ "job": "B",
+ "job_id": "dbir29ohoj4c73b6qa10",
+ "submitted": "2026-10-31T09:13:11Z",
+ "backend": "ibm_kingston",
+ "account_before": {
+  "time": "2026-10-31T09:13:04Z",
+  "instances": [
+   {
+    "name": "open-instance",
+    "plan": "open",
+    "pricing_type": "free",
+    "crn_tag": "574123eca6"
+   }
+  ],
+  "consumed_s": 285,
+  "limit_s": 600,
+  "remaining_s": 315,
+  "period": {
+   "start_time": "2026-10-03T09:13:04.077Z",
+   "end_time": "2026-10-31T09:13:04.077Z"
+  },
+  "limit_reached": false,
+  "free_ok": true
+ },
+ "max_execution_time": 185,
+ "options": {
+  "dd": true,
+  "twirling_gates": true,
+  "twirling_measure": false,
+  "randomizations": "auto",
+  "shots_per_randomization": "auto"
+ },
+ "n_pubs": 22,
+ "total_shots": 480000,
+ "usage_estimation": {
+  "quantum_seconds": null
+ }
+}

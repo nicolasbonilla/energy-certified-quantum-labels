@@ -1,0 +1,50 @@
+TFIM1D n=8 h=1.5           X_0   sgn=+1 eps= 0.01 u=0.038325 dual(lam*)-u=-3.2e-15 gridDual-u=+2.79e-04 lam*=0.5714 interior
+TFIM1D n=8 h=1.5           X_0   sgn=+1 eps= 0.10 u=0.098220 dual(lam*)-u=-3.4e-15 gridDual-u=+1.37e-05 lam*=3.113 interior
+TFIM1D n=8 h=1.5           X_0   sgn=+1 eps= 0.50 u=0.127486 dual(lam*)-u=+nan gridDual-u=+2.57e-03 lam*=64 saturated
+TFIM1D n=8 h=1.5           X_0   sgn=+1 eps= 2.00 u=0.127486 dual(lam*)-u=+nan gridDual-u=+2.60e-02 lam*=64 saturated
+TFIM1D n=8 h=1.5           X_0   sgn=-1 eps= 0.01 u=0.044896 dual(lam*)-u=-7.0e-15 gridDual-u=+1.65e-04 lam*=0.4154 interior
+TFIM1D n=8 h=1.5           X_0   sgn=-1 eps= 0.10 u=0.163882 dual(lam*)-u=-5.9e-15 gridDual-u=+5.31e-04 lam*=1.023 interior
+TFIM1D n=8 h=1.5           X_0   sgn=-1 eps= 0.50 u=0.456983 dual(lam*)-u=+2.8e-10 gridDual-u=+8.42e-03 lam*=1.5 interior
+TFIM1D n=8 h=1.5           X_0   sgn=-1 eps= 2.00 u=1.454591 dual(lam*)-u=-5.6e-15 gridDual-u=+1.74e-02 lam*=1.623 interior
+TFIM1D n=8 h=1.5           Zbar  sgn=+1 eps= 0.01 u=0.110720 dual(lam*)-u=-2.6e-14 gridDual-u=+1.05e-03 lam*=0.1818 interior
+TFIM1D n=8 h=1.5           Zbar  sgn=+1 eps= 0.10 u=0.340064 dual(lam*)-u=-2.7e-14 gridDual-u=+2.38e-04 lam*=0.6293 interior
+TFIM1D n=8 h=1.5           Zbar  sgn=+1 eps= 0.50 u=0.666787 dual(lam*)-u=-1.2e-15 gridDual-u=+4.86e-04 lam*=2.205 interior
+TFIM1D n=8 h=1.5           Zbar  sgn=+1 eps= 2.00 u=0.927190 dual(lam*)-u=-3.2e-15 gridDual-u=+3.56e-04 lam*=15.29 interior
+TFIM1D n=8 h=1.5           Zbar  sgn=-1 eps= 0.01 u=0.110720 dual(lam*)-u=-1.7e-14 gridDual-u=+1.05e-03 lam*=0.1818 interior
+TFIM1D n=8 h=1.5           Zbar  sgn=-1 eps= 0.10 u=0.340064 dual(lam*)-u=-1.5e-14 gridDual-u=+2.38e-04 lam*=0.6293 interior
+TFIM1D n=8 h=1.5           Zbar  sgn=-1 eps= 0.50 u=0.666787 dual(lam*)-u=-1.9e-15 gridDual-u=+4.86e-04 lam*=2.205 interior
+TFIM1D n=8 h=1.5           Zbar  sgn=-1 eps= 2.00 u=0.927190 dual(lam*)-u=-2.2e-16 gridDual-u=+3.56e-04 lam*=15.29 interior
+XXZ1D n=10 Jz=1.6 Sz=0     Z_0   sgn=+1 eps= 0.01 u=0.290837 dual(lam*)-u=-1.1e-14 gridDual-u=+5.53e-04 lam*=0.07103 interior
+XXZ1D n=10 Jz=1.6 Sz=0     Z_0   sgn=+1 eps= 0.10 u=0.787834 dual(lam*)-u=-1.0e-14 gridDual-u=+1.47e-03 lam*=0.3958 interior
+XXZ1D n=10 Jz=1.6 Sz=0     Z_0   sgn=+1 eps= 0.50 u=0.999945 dual(lam*)-u=+nan gridDual-u=+1.76e-03 lam*=64 saturated
+XXZ1D n=10 Jz=1.6 Sz=0     Z_0   sgn=+1 eps= 2.00 u=0.999945 dual(lam*)-u=+nan gridDual-u=+2.52e-02 lam*=64 saturated
+XXZ1D n=10 Jz=1.6 Sz=0     Z_0   sgn=-1 eps= 0.01 u=0.290837 dual(lam*)-u=-2.0e-14 gridDual-u=+5.53e-04 lam*=0.07103 interior
+XXZ1D n=10 Jz=1.6 Sz=0     Z_0   sgn=-1 eps= 0.10 u=0.787834 dual(lam*)-u=-1.4e-14 gridDual-u=+1.47e-03 lam*=0.3958 interior
+XXZ1D n=10 Jz=1.6 Sz=0     Z_0   sgn=-1 eps= 0.50 u=0.999945 dual(lam*)-u=+nan gridDual-u=+1.76e-03 lam*=64 saturated
+XXZ1D n=10 Jz=1.6 Sz=0     Z_0   sgn=-1 eps= 2.00 u=0.999945 dual(lam*)-u=+nan gridDual-u=+2.52e-02 lam*=64 saturated
+XXZ1D n=10 Jz=1.6 Sz=0     m_s   sgn=+1 eps= 0.01 u=0.270983 dual(lam*)-u=-7.3e-14 gridDual-u=+2.37e-03 lam*=0.0766 interior
+XXZ1D n=10 Jz=1.6 Sz=0     m_s   sgn=+1 eps= 0.10 u=0.712494 dual(lam*)-u=-5.6e-15 gridDual-u=+8.61e-04 lam*=0.5003 interior
+XXZ1D n=10 Jz=1.6 Sz=0     m_s   sgn=+1 eps= 0.50 u=0.932859 dual(lam*)-u=-1.9e-15 gridDual-u=+7.59e-04 lam*=5.106 interior
+XXZ1D n=10 Jz=1.6 Sz=0     m_s   sgn=+1 eps= 2.00 u=0.998652 dual(lam*)-u=+nan gridDual-u=+1.06e-02 lam*=64 saturated
+XXZ1D n=10 Jz=1.6 Sz=0     m_s   sgn=-1 eps= 0.01 u=0.270983 dual(lam*)-u=-5.7e-14 gridDual-u=+2.37e-03 lam*=0.0766 interior
+XXZ1D n=10 Jz=1.6 Sz=0     m_s   sgn=-1 eps= 0.10 u=0.712494 dual(lam*)-u=-4.4e-15 gridDual-u=+8.61e-04 lam*=0.5003 interior
+XXZ1D n=10 Jz=1.6 Sz=0     m_s   sgn=-1 eps= 0.50 u=0.932859 dual(lam*)-u=-1.0e-15 gridDual-u=+7.59e-04 lam*=5.106 interior
+XXZ1D n=10 Jz=1.6 Sz=0     m_s   sgn=-1 eps= 2.00 u=0.998652 dual(lam*)-u=+nan gridDual-u=+1.06e-02 lam*=64 saturated
+TFIM2D 3x4 h=3.5           Zbar  sgn=+1 eps= 0.01 u=0.064039 dual(lam*)-u=+4.2e-17 gridDual-u=+1.62e-05 lam*=0.3132 interior
+TFIM2D 3x4 h=3.5           Zbar  sgn=+1 eps= 0.10 u=0.199992 dual(lam*)-u=-4.6e-15 gridDual-u=+4.06e-04 lam*=1.029 interior
+TFIM2D 3x4 h=3.5           Zbar  sgn=+1 eps= 0.50 u=0.422781 dual(lam*)-u=-7.7e-15 gridDual-u=+1.06e-03 lam*=2.752 interior
+TFIM2D 3x4 h=3.5           Zbar  sgn=+1 eps= 2.00 u=0.698881 dual(lam*)-u=-7.8e-16 gridDual-u=+3.93e-04 lam*=10.15 interior
+TFIM2D 3x4 h=3.5           Zbar  sgn=-1 eps= 0.01 u=0.064039 dual(lam*)-u=-9.5e-14 gridDual-u=+1.62e-05 lam*=0.3132 interior
+TFIM2D 3x4 h=3.5           Zbar  sgn=-1 eps= 0.10 u=0.199992 dual(lam*)-u=-8.9e-15 gridDual-u=+4.06e-04 lam*=1.029 interior
+TFIM2D 3x4 h=3.5           Zbar  sgn=-1 eps= 0.50 u=0.422781 dual(lam*)-u=-1.8e-15 gridDual-u=+1.06e-03 lam*=2.752 interior
+TFIM2D 3x4 h=3.5           Zbar  sgn=-1 eps= 2.00 u=0.698881 dual(lam*)-u=-1.6e-15 gridDual-u=+3.93e-04 lam*=10.15 interior
+XXZ2D 3x4 Jz=1.6 Sz=0      m_s   sgn=+1 eps= 0.01 u=0.133019 dual(lam*)-u=-1.6e-14 gridDual-u=+2.43e-04 lam*=0.1518 interior
+XXZ2D 3x4 Jz=1.6 Sz=0      m_s   sgn=+1 eps= 0.10 u=0.403326 dual(lam*)-u=-7.9e-15 gridDual-u=+4.52e-03 lam*=0.5467 interior
+XXZ2D 3x4 Jz=1.6 Sz=0      m_s   sgn=+1 eps= 0.50 u=0.761407 dual(lam*)-u=-1.8e-15 gridDual-u=+3.80e-05 lam*=2.103 interior
+XXZ2D 3x4 Jz=1.6 Sz=0      m_s   sgn=+1 eps= 2.00 u=0.992658 dual(lam*)-u=-3.3e-16 gridDual-u=+1.73e-04 lam*=36.38 interior
+XXZ2D 3x4 Jz=1.6 Sz=0      m_s   sgn=-1 eps= 0.01 u=0.133019 dual(lam*)-u=-2.0e-14 gridDual-u=+2.43e-04 lam*=0.1518 interior
+XXZ2D 3x4 Jz=1.6 Sz=0      m_s   sgn=-1 eps= 0.10 u=0.403326 dual(lam*)-u=+2.8e-16 gridDual-u=+4.52e-03 lam*=0.5467 interior
+XXZ2D 3x4 Jz=1.6 Sz=0      m_s   sgn=-1 eps= 0.50 u=0.761407 dual(lam*)-u=-3.0e-15 gridDual-u=+3.80e-05 lam*=2.103 interior
+XXZ2D 3x4 Jz=1.6 Sz=0      m_s   sgn=-1 eps= 2.00 u=0.992658 dual(lam*)-u=-1.0e-15 gridDual-u=+1.73e-04 lam*=36.38 interior
+max |dual(lam*) - primal| = 2.75e-10;  max (primal - grid dual) = 0.00e+00 (must be <= ~1e-10)
+time 19.2 s

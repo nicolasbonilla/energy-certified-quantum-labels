@@ -1,0 +1,69 @@
+% fig_bias_law.tex -- native PGFPlots figure. Data: figures/data_biaslaw/*.dat, written by
+% phase3/full_runs/bias_law/code/bias_law.py from stored outputs. Compile in paper/figures/ with pdflatex.
+\documentclass[10pt,border=1pt]{standalone}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{amsmath}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\usepgfplotslibrary{groupplots}
+\usetikzlibrary{calc}
+\definecolor{cA}{HTML}{B5451B}
+\definecolor{cB}{HTML}{E08E0B}
+\definecolor{cC}{HTML}{1B8A8F}
+\definecolor{cD}{HTML}{2B3A67}
+\definecolor{cGrey}{HTML}{8C8C8C}
+\newcommand{\curve}[2]{\addplot[#1, line width=1.1pt, no markers] table[x=de,y=dm] {data_biaslaw/curve19_J#2.dat};}
+\newcommand{\sA}[2]{\addplot[only marks, mark=o, mark size=1.5pt, #1, mark options={line width=0.5pt}] table[x=de,y=dm] {data_biaslaw/states_n57_J#2.dat};}
+\newcommand{\sB}[2]{\addplot[only marks, mark=square, mark size=1.4pt, #1, mark options={line width=0.5pt}] table[x=de,y=dm] {data_biaslaw/states_n115_J#2.dat};}
+\begin{document}
+\begin{tikzpicture}
+\begin{groupplot}[
+  group style={group size=2 by 1, horizontal sep=1.55cm},
+  width=8.05cm, height=6.0cm,
+  tick label style={font=\footnotesize}, label style={font=\small},
+  unbounded coords=discard, filter discard warning=false,
+  every axis plot/.append style={line join=round},
+]
+\nextgroupplot[
+  xmode=log, ymode=log, xmin=4e-4, xmax=0.2, ymin=1.5e-4, ymax=0.6,
+  xlabel={energy error per site $\delta e$},
+  ylabel={bias $\Delta m_s$ of the label},
+  title={\small (a) one curve per coupling, from exact $n=19$}, title style={yshift=-3pt},
+  legend pos=south east, legend cell align=left,
+  legend style={font=\footnotesize, draw=none, fill=none, row sep=-1pt},
+]
+\curve{cA}{1.2}\addlegendentry{exact $n=19$, truncated}
+\sA{cA}{1.2}\addlegendentry{$n=57$ emulated}
+\sB{cA}{1.2}\addlegendentry{$n=115$ emulated}
+\curve{cB,forget plot}{1.6}\sA{cB,forget plot}{1.6}\sB{cB,forget plot}{1.6}
+\curve{cC,forget plot}{2.5}\sA{cC,forget plot}{2.5}\sB{cC,forget plot}{2.5}
+\curve{cD,forget plot}{4.0}\sA{cD,forget plot}{4.0}\sB{cD,forget plot}{4.0}
+\addplot[cA, densely dashed, thin] table[x=de,y=dm] {data_biaslaw/chord_J1.2.dat};\addlegendentry{chord to N\'eel}
+\addplot[cB, densely dashed, thin, forget plot] table[x=de,y=dm] {data_biaslaw/chord_J1.6.dat};
+\addplot[cC, densely dashed, thin, forget plot] table[x=de,y=dm] {data_biaslaw/chord_J2.5.dat};
+\addplot[cD, densely dashed, thin, forget plot] table[x=de,y=dm] {data_biaslaw/chord_J4.0.dat};
+\addplot[only marks, mark=star, mark size=3.0pt, black, mark options={line width=0.9pt}] table[x=de,y=dm] {data_biaslaw/device.dat};
+\addlegendentry{$n=57$ processor}
+\node[font=\footnotesize, anchor=north west, align=left] at (axis cs:5e-4,0.5) {$J_z$:\ \textcolor{cA}{$1.2$}\ \phantom{$J_z$:}\ \textcolor{cB}{$1.6$}\ \phantom{$J_z$:}\ \textcolor{cC}{$2.5$}\ \phantom{$J_z$:}\ \textcolor{cD}{$4.0$}};
+\nextgroupplot[
+  ymode=log, xmin=1.0, xmax=6.2, ymin=8e-5, ymax=30000,
+  xlabel={coupling $J_z$},
+  ylabel={miss of $m_s$ at $n=115$, in units of $\tau$},
+  title={\small (b) the correction against classical extrapolations}, title style={yshift=-3pt},
+  legend pos=north east, legend cell align=left,
+  legend style={font=\footnotesize, draw=none, fill=none, row sep=-1pt},
+]
+\addplot[cGrey, line width=1.0pt, mark=triangle*, mark size=1.9pt] table[x=J,y=raw] {data_biaslaw/tie115.dat};
+\addlegendentry{label as generated}
+\addplot[cC, line width=1.0pt, mark=*, mark size=1.5pt] table[x=J,y=corr] {data_biaslaw/tie115.dat};
+\addlegendentry{label corrected with the $n=57$ curve}
+\addplot[black, densely dashed, line width=1.0pt, mark=diamond, mark size=2.0pt, mark options={solid}] table[x=J,y=extrap] {data_biaslaw/tie115.dat};
+\addlegendentry{classical $a+b/n$ from $n=19,57$}
+\addplot[black, line width=1.0pt, mark=square*, mark size=1.3pt] table[x=J,y=sqrtn] {data_biaslaw/tie115.dat};
+\addlegendentry{classical $a+b/\sqrt{n}$ from $n=19,57$}
+\addplot[black, thin, densely dotted, domain=1:6.2, samples=2] {1};
+\node[font=\footnotesize, anchor=north east] at (axis cs:6.1,0.95) {tolerance $\tau$};
+\end{groupplot}
+\end{tikzpicture}
+\end{document}

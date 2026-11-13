@@ -1,0 +1,387 @@
+##### test_gate.py  exit 0  4 s
+== test_gate
+  [ok] no DECLARATION.sha256: refused
+  [ok] a recorded hash that is not the file's: refused
+  [ok] matching hash: the gate opens (argument compared without regard to case)
+  [ok] a hash argument that is not the declaration's: refused
+  [ok] a declaration edited after the hash: refused
+  [ok] the reader of converted/ needs a gate object
+  [ok] a bare hash string is not a gate object
+  [ok] a refusal ends the process with exit code 3
+  [ok] run_predict.py --hash=0000000000000000000000000000000000000000000000000000000000000000 -> exit 3, REFUSED: C:\Users\Nicolas\Downloads\Proyecto_SQD_ML\P5_energy_certified_labels\work\phase3
+  [ok] run_predict.py  -> exit 3, REFUSED: --hash=<SHA-256 of the hashed declaration> is required.
+  [ok] run_learn.py --hash=0000000000000000000000000000000000000000000000000000000000000000 --stage=cheap -> exit 3, REFUSED: C:\Users\Nicolas\Downloads\Proyecto_SQD_ML\P5_energy_certified_labels\work\phase3
+  [ok] run_learn.py --stage=f3 -> exit 3, REFUSED: --hash=<SHA-256 of the hashed declaration> and --stage=<stage> are required.
+  [ok] rd_learn_ibm.py --hash=0000000000000000000000000000000000000000000000000000000000000000 --models=poly3_invJ -> exit 3, REFUSED: C:\Users\Nicolas\Downloads\Proyecto_SQD_ML\P5_energy_certified_labels\work\phase3
+  [ok] rd_learn_ibm.py --models=poly3_invJ -> exit 3, REFUSED: --hash=<SHA-256 of the hashed declaration> is required to read the real data.
+  [ok] rd_prop2_cubic.py --hash=0000000000000000000000000000000000000000000000000000000000000000 -> exit 3, REFUSED: C:\Users\Nicolas\Downloads\Proyecto_SQD_ML\P5_energy_certified_labels\work\phase3
+  [ok] rd_prop2_cubic.py  -> exit 3, REFUSED: --hash=<SHA-256 of the hashed declaration> is required to read the real data.
+  [ok] the refused runs wrote nothing
+  [ok] only rd_common.py names the converted data files in its code
+  [ok] no script imports pickle, dill or the downloaded package
+  [ok] the converted files are opened in one place, behind the gate
+test_gate: 20 checks, 0 failed
+
+--- stderr ---
+REFUSED: C:\Users\Nicolas\AppData\Local\Temp\rd_gate_1p0z0w0f\DECLARATION.sha256 does not exist: the declaration is not hashed, so converted/ is not read.
+REFUSED: DECLARATION.sha256 (000000000000...) does not match DECLARATION.md (29041880cbe1...).
+REFUSED: the hash passed as an argument (111111111111...) is not the hash of the declaration (29041880cbe1...).
+REFUSED: DECLARATION.sha256 (29041880cbe1...) does not match DECLARATION.md (4a3e84a718bb...).
+REFUSED: read_converted was called without a checked declaration hash.
+REFUSED: read_converted was called without a checked declaration hash.
+REFUSED: DECLARATION.sha256 (29041880cbe1...) does not match DECLARATION.md (4a3e84a718bb...).
+
+##### test_predict.py  exit 0  3 s
+== test_predict
+  [ok] Spearman, closed form without ties (1 - 6*4/120) (0.8 against 0.8)
+  [ok] Spearman of a strictly decreasing sequence is -1 (-1 against -1)
+  [ok] Spearman with ties equals scipy.stats.spearmanr on 200 random cases (largest difference 1.1e-16)
+  [ok] Spearman of a constant sequence is undefined (nan)
+  [ok] t_x = (o_real - o_GS)/(o_Neel - o_GS) on four hand cases
+  [ok] t_x undefined when the Neel value equals the truth
+  [ok] F = 19/20 = 0.95 holds (the rule is F >= 0.95)
+  [ok] F = 18/20 does not hold; t = 0 is not > 0
+  [ok] F, fraction t <= 1, fraction 0 < t <= 1 and undefined count over two couplings
+  [ok] F per coupling
+  [ok] D = mean |o_real - o_GS| / (0.06 |o_GS|) = 1 on a hand case (1 against 1)
+  [ok] P4 holds for a strictly decreasing error (Spearman -1)
+  [ok] P4 Spearman equals scipy on a non-monotone case (0.122304921969 against 0.122304921969)
+  [ok] P4 does not hold when Spearman is 0.122 (> -0.9)
+  [ok] curve_value equals n19b.f on the stored curves, also outside their range (held end values)
+  [ok] the new n = 19 curves reproduce the 14 stored ones (gate G-A2 tolerances): |dE0| 2.8e-14, |dm_s| 3.3e-11, curve 1.2e-08
+  [ok] n = 19 curves exist at the 50 couplings, 26 levels each
+  [ok] n = 19 labels: m_s = eta.Z/19, sum Z = 3 (sector 11 up / 8 down), residual < 1e-8, E0 below the Neel energy, at all 50
+  [ok] the chord at the Neel energy error equals 1 - m_s(19) (0.0832023777489 against 0.0832023777489)
+  [ok] the chord scales as sqrt(de) (0.0416011888744 against 0.0416011888744)
+  [ok] synthetic curve: curve(de) = 2 sqrt(de) (0.2 against 0.2)
+  [ok] P5 passes when every label sits on the curve
+  [ok] P5 fails on one ratio of 1.31 although the mean miss is small
+  [ok] ratios of exactly 1.3 and 0.75 are inside (closed interval)
+  [ok] a ratio of 1.3000001 is outside
+  [ok] an undefined ratio at a deciding coupling counts as outside
+  [ok] construction: mean miss of 0.2 tau
+  [ok] mean miss 0.21 tau: above the limit at n = 57 (0.2), below it at n = 115 (0.6)
+  [ok] the rule uses 0.2 at n = 57 and 0.6 at n = 115
+  [ok] a ratio of 3 where the raw miss is below 0.2 tau does not decide
+  [ok] flag for an energy error outside the curve
+  [ok] pairs and loops are matched by their sites although the files list them in other orders
+  [ok] 50 label couplings, 51 DMRG couplings
+  [ok] de_real = (E_real - E0)/n (0.01 against 0.01)
+  [ok] m_s of the label from the site labels (0.905953930213 against 0.905953930213)
+  [ok] a repeated pair in a file is refused
+  [ok] a coupling field that contradicts the file name is refused
+  [ok] a missing pair is refused
+  [ok] truth rule of Sec. 0: this project's reference where stored, the authors' DMRG otherwise; Sec. 7 truth is the authors'
+  [ok] local labels use site 46 (bulk), site 4 (boundary), edge (11, 46) at n = 57
+  [ok] n = 57, F of sites (1 against 1)
+  [ok] n = 57, F of edges (0.9375 against 0.9375)
+  [ok] n = 57, F of second_neighbours (0.950114942529 against 0.950114942529)
+  [ok] n = 57, F of loops (1 against 1)
+  [ok] n = 57: F rule per family (edges fail at 57 by construction)
+  [ok] n = 57, loops between the ground and Neel states at 41 of 50 couplings (0.82 against 0.82)
+  [ok] n = 57, P4 Spearman of the sites (-1 against -1)
+  [ok] n = 57, D of the sites at Jz = 2.0 (1.30080139242 against 1.30080139242)
+  [ok] n = 57: labels built on the curve give ratio 1 and miss 0
+  [ok] n = 57: 50 couplings decide, 45 reported
+  [ok] n = 57: n = 19 against the truth at Jz = 2.0 (0.411442499458 against 0.411442499458)
+  [ok] n = 115, F of sites (1 against 1)
+  [ok] n = 115, F of edges (0.954545454545 against 0.954545454545)
+  [ok] n = 115, F of second_neighbours (0.989189189189 against 0.989189189189)
+  [ok] n = 115, F of loops (1 against 1)
+  [ok] n = 115: F rule per family (edges fail at 57 by construction)
+  [ok] n = 115, loops between the ground and Neel states at 41 of 50 couplings (0.82 against 0.82)
+  [ok] n = 115, P4 Spearman of the sites (-1 against -1)
+  [ok] n = 115, D of the sites at Jz = 2.0 (1.30155374328 against 1.30155374328)
+  [ok] n = 115: labels built on the curve give ratio 1 and miss 0
+  [ok] n = 115: 50 couplings decide, 45 reported
+  [ok] n = 115: n = 19 against the truth at Jz = 2.0 (0.401947542751 against 0.401947542751)
+  [ok] run_predict refuses a hash that is not the declaration's
+  [ok] nothing is written after a refusal
+n = 57 (50 couplings; orientation +1 everywhere: True)
+  P1-P3 sites              F = 1.0000 over 2850 pairs -> HOLDS | t <= 1: 0.9979 | undefined: 0
+  P1-P3 edges              F = 0.9375 over 3200 pairs -> DOES NOT HOLD | t <= 1: 1.0000 | undefined: 0
+  P1-P3 second_neighbours  F = 0.9501 over 4350 pairs -> HOLDS | t <= 1: 1.0000 | undefined: 0
+  P1-P3 loops              F = 1.0000 over 200 pairs -> HOLDS | t <= 1: 0.8200 | undefined: 0
+  P4    sites              Spearman(D, Jz) = -0.9999 -> HOLDS | D from 0.083 to 6.326
+  P4    edges              Spearman(D, Jz) = -0.9965 -> HOLDS | D from 0.083 to 1.370
+  P4    second_neighbours  Spearman(D, Jz) = -0.9964 -> HOLDS | D from 0.189 to 4.246
+  P4    loops              Spearman(D, Jz) = -1.0000 -> HOLDS | D from 0.616 to 63.492
+  P4    m_s                Spearman(D, Jz) = -0.9999 -> HOLDS | D from 0.083 to 6.288
+  P5 all         mean miss 0.042 tau (limit 0.2; raw 0.827, chord 0.172, n = 19 truth 0.281) | ratios at 30 deciding couplings: [0.999999999999984, 1.5], outside [0.75, 1.3] at [1.2]
+  P5 training_45 mean miss 0.000 tau (limit 0.2; raw 0.468, chord 0.066, n = 19 truth 0.116) | ratios at 25 deciding couplings: [0.999999999999984, 1.0000000000000244], outside [0.75, 1.3] at []
+  n = 19 against the truth, in tau: test couplings {'1.1': 2.511, '1.2': 2.082, '1.3': 1.709, '1.4': 1.395} | largest over all 2.511 | over the kept labels: 0.027555468273058402
+n = 115 (50 couplings; orientation +1 everywhere: True)
+  P1-P3 sites              F = 1.0000 over 5750 pairs -> HOLDS | t <= 1: 1.0000 | undefined: 0
+  P1-P3 edges              F = 0.9545 over 6600 pairs -> HOLDS | t <= 1: 1.0000 | undefined: 0
+  P1-P3 second_neighbours  F = 0.9892 over 9250 pairs -> HOLDS | t <= 1: 1.0000 | undefined: 0
+  P1-P3 loops              F = 1.0000 over 600 pairs -> HOLDS | t <= 1: 0.8200 | undefined: 0
+  P4    sites              Spearman(D, Jz) = -1.0000 -> HOLDS | D from 0.083 to 5.092
+  P4    edges              Spearman(D, Jz) = -0.9976 -> HOLDS | D from 0.083 to 1.459
+  P4    second_neighbours  Spearman(D, Jz) = -0.9999 -> HOLDS | D from 0.189 to 6.328
+  P4    loops              Spearman(D, Jz) = -1.0000 -> HOLDS | D from 0.718 to 203.607
+  P4    m_s                Spearman(D, Jz) = -1.0000 -> HOLDS | D from 0.083 to 5.051
+  P5 all         mean miss 0.000 tau (limit 0.6; raw 0.786, chord 0.130, n = 19 truth 0.276) | ratios at 30 deciding couplings: [0.9999999999999744, 1.0000000000000318], outside [0.75, 1.3] at []
+  P5 training_45 mean miss 0.000 tau (limit 0.6; raw 0.468, chord 0.066, n = 19 truth 0.113) | ratios at 25 deciding couplings: [0.9999999999999744, 1.0000000000000318], outside [0.75, 1.3] at []
+  n = 19 against the truth, in tau: test couplings {'1.1': 2.486, '1.2': 2.06, '1.3': 1.69, '1.4': 1.378} | largest over all 2.486 | over the kept labels: 0.024084513169881586
+P5 rule (50 couplings of each size): FAIL
+P5 rule on the 45 training couplings (reported, does not decide): PASS
+  [ok] end to end: one ratio of 1.5 at (57, Jz = 1.2) makes P5 fail and is named
+  [ok] end to end: kept set read from the sets file
+  [ok] end to end: the comparison variant at n = 115 leaves out the four couplings of gate G2
+  [ok] end to end: the kept set starts at 3.4 in the synthetic sets file
+  [ok] a converted file whose SHA-256 is not the pinned one is refused
+  [ok] run_predict refuses when DECLARATION.sha256 does not exist
+test_predict: 70 checks, 0 failed
+
+--- stderr ---
+REFUSED: the hash passed as an argument (000000000000...) is not the hash of the declaration (c4f0d47c7845...).
+REFUSED: C:\Users\Nicolas\AppData\Local\Temp\rd_predict_vlyckxuq\converted\real_n57.json does not have the SHA-256 pinned in the declaration.
+REFUSED: C:\Users\Nicolas\AppData\Local\Temp\rd_predict_vlyckxuq\DECLARATION.sha256 does not exist: the declaration is not hashed, so converted/ is not read.
+
+##### test_learn.py  exit 0  34 s
+== test_learn
+  [ok] k = ceil((m+1)(1-alpha)): 42 for m = 45, 41 for 44, 12 for 12, 9 for 9, 18 for 19, 9 for 8
+  [ok] the exact index equals the floating-point formula of the stored scripts for m < 500
+  [ok] seed = integer of the first eight hex digits
+  [ok] a string that is not a SHA-256 gives no seed
+  [ok] split sizes: 6/12 from 20 couplings, 4/9 from 15 to 19, not run below 15
+  [ok] S_p is the most stringent nested set with at least 15 couplings; none if S has fewer
+  [ok] 200 splits, each a partition into 6 / 12 / 9 couplings
+  [ok] the splits are fixed by (seed, size, set) and change with each of them
+  [ok] 14 couplings: no split; 17 couplings: 4 / 9 / 4
+  [ok] floor: 2q >= w_(k) in 2000 random cases (any predictions), with equality for predictions at the midpoints
+  [ok] floor of the widths 1..45 is the 42nd narrowest, 42; it exceeds tau = 41.5
+  [ok] held out: 41st narrowest of the other 44 (42 if a narrow label is removed, 41 if a wide one); the readings are reported separately
+  [ok] a floor equal to tau does not exceed it
+  [ok] M1 reproduces a line in 1/Jz (0.448936170213 against 0.448936170213)
+  [ok] M2 reproduces 1 - a/Jz^2 - b/Jz^4 (0.951697052708 against 0.951697052708)
+  [ok] M2 predicts 1 for labels equal to 1 (its constant term) (1 against 1)
+  [ok] M0 equals ml2.fit_poly (cubic in 1/Jz, ridge 1e-8) on m_s (-3.63003249435 against -3.63003249435)
+  [ok] log-linear width model: 2 between 1 and 4, continued beyond the ends
+  [ok] perfect model, labels certified at 0.97 tau: 2q equals the widest calibration interval in every split
+  [ok] perfect model: (W) holds exactly in the splits where the widest calibration interval is below every query's tau (0.22 against 0.22)
+  [ok] so the test FAILS on (W) with a perfect model and full coverage (fraction of splits 0.220), as the floor says
+  [ok] 2q >= w_(k) in every split, for M1, M2 and M0
+  [ok] the same model with labels certified at 0.45 tau PASSES: 2q/tau at most 0.468
+  [ok] Proposition 2(a): exact band for M1 and M2 (training labels certified); not available for M0 (uncertified training labels)
+  [ok] W(x) = sum_j |a_j(x)| width(I_j) on one split (0.557407441959 against 0.557407441959)
+  [ok] a truth outside the label intervals: (C) fails and every coupling is listed as an inconsistency (gate G7)
+  [ok] a set with 14 couplings is not run
+  [ok] secondary scores on the perfect model: label-only score gives width 0; worst-case score over I_j gives about 0.45 tau
+  [ok] run_f3: decision on the primary set; the other nested sets are run or reported as not run
+  [ok] sets file: 27 / 21 / 11 couplings, primary set S_3/4
+  [ok] a sets file written under another declaration is refused
+  [ok] a primary set that is not the declared one is refused
+  [ok] sets that are not nested are refused
+  [ok] a member of S without an exact interval is refused
+  [ok] a member of S_1/2 with an interval wider than tau/2 is refused
+  [ok] a certified coupling left out of S is reported as a warning
+  [ok] upper intervals: exact where they exist, otherwise flagged as indicative
+  [ok] indicative width: log-linear in Jz between the neighbours (0.172355165199 against 0.172355165199)
+  [ok] indicative score equals |f - y| + w, as in the stored script (0.316355165199 against 0.316355165199)
+  [ok] lower version: the width given by the sets file (0.15174 against 0.15174)
+  [ok] label and truth inside the exact interval (gate G7) in the synthetic case
+n=57 poly3_invJ  OOD: covZ truth 0.000 emu 0.000 | covM truth 0.00 emu 0.00 | wM/tau 0.07 | err vs truth 18.2-31.8% (control 0.2-2.3%) | 1s
+        in-dist: covZ truth 0.000 emu 0.889 | covM truth 0.00 emu 0.91 | wM/tau 0.05
+n=57 null_nn     OOD: covZ truth 0.000 emu 0.000 | covM truth 0.00 emu 0.00 | wM/tau 0.34 | err vs truth 20.2-37.4% (control 6.2-21.4%) | 0s
+        in-dist: covZ truth 0.069 emu 0.892 | covM truth 0.20 emu 0.91 | wM/tau 0.25
+n=57 abstention: answers m_s at [4.0, 4.5, 5.0, 5.5, 6.0] (5/50), local at []; certified m_s width at OOD >= [10.196881212812295, 17.28105689648803] tau
+n=57 device: {'1.2': (0.9828, False, False), '1.6': (0.9714, False, False), '4.0': (0.977, False, False)}
+n=115 poly3_invJ  OOD: covZ truth 0.000 emu 0.000 | covM truth 0.00 emu 0.00 | wM/tau 0.07 | err vs truth 18.2-31.8% (control 0.2-2.3%) | 1s
+        in-dist: covZ truth 0.000 emu 0.889 | covM truth 0.00 emu 0.91 | wM/tau 0.05
+n=115 null_nn     OOD: covZ truth 0.000 emu 0.000 | covM truth 0.00 emu 0.00 | wM/tau 0.34 | err vs truth 20.2-37.5% (control 6.2-21.5%) | 0s
+        in-dist: covZ truth 0.069 emu 0.891 | covM truth 0.20 emu 0.91 | wM/tau 0.25
+n=115 abstention: answers m_s at [4.0, 4.5, 5.0, 5.5, 6.0] (5/50), local at []; certified m_s width at OOD >= [9.215765693601291, 15.279899953385563] tau
+done 15 s
+  [ok] derived realistic test on the real-data branch: 45 training couplings, 4 test couplings, 50 in all
+  [ok] its miss at Jz = 1.1 equals a direct computation (labels = z_basis_opt, truth = the DMRG group) (5.29666141913 against 5.29666141913)
+  [ok] the label of the row is the label of the data file (0.832261976481 against 0.832261976481)
+  [ok] in distribution over 45 held-out couplings; control on DMRG labels present
+n=57  rule (c) with Prop. 2(b) intervals answers 0 of 49 queries []
+  Jz    range       W_lo     W_hi    2q_lo    2q_hi     miss  rule(c) / band(a)
+  1.6   train      11.22    15.66     6.00     9.18     2.26  ABSTAIN / NOT_PINNED  (indicative upper)
+  1.7   train       3.64     5.02     5.86     8.97     1.91  ABSTAIN / NOT_PINNED  (indicative upper)
+  1.8   train       3.90     5.39     5.73     8.78     1.66  ABSTAIN / NOT_PINNED  (indicative upper)
+  1.9   train       4.06     5.61     5.62     8.62     1.45  ABSTAIN / NOT_PINNED  (indicative upper)
+  2.0   train       3.98     5.51     5.79     8.48     1.27  ABSTAIN / NOT_PINNED  (indicative upper)
+  2.1   train       3.98     5.54     5.71     8.36     1.12  ABSTAIN / NOT_PINNED  (indicative upper)
+  2.2   train       3.76     5.29     5.64     8.26     0.99  ABSTAIN / NOT_PINNED  (indicative upper)
+  2.3   train       3.45     4.92     5.58     8.17     0.88  ABSTAIN / NOT_PINNED  (indicative upper)
+  2.4   train       3.11     4.53     5.53     8.09     0.79  ABSTAIN / NOT_PINNED  (indicative upper)
+  2.5   train       2.81     4.20     5.48     8.02     0.71  ABSTAIN / NOT_PINNED  (indicative upper)
+  2.6   train       2.54     3.91     5.43     7.87     0.64  ABSTAIN / NOT_PINNED  (indicative upper)
+  2.7   train       2.26     3.61     5.39     7.82     0.57  ABSTAIN / NOT_PINNED  (indicative upper)
+  2.8   train       2.00     3.31     5.36     7.77     0.52  ABSTAIN / NOT_PINNED  (indicative upper)
+  2.9   train       1.74     3.00     5.33     7.72     0.47  ABSTAIN / NOT_PINNED  (indicative upper)
+  3.0   train       1.69     2.74     5.30     7.75     0.43  ABSTAIN / NOT_PINNED  (indicative upper)
+  3.1   train       1.50     2.59     5.27     7.71     0.39  ABSTAIN / NOT_PINNED  (indicative upper)
+  3.2   train       1.39     2.50     5.25     7.68     0.36  ABSTAIN / NOT_PINNED  (indicative upper)
+  3.3   train       1.33     2.47     5.22     7.64     0.33  ABSTAIN / NOT_PINNED  (indicative upper)
+  3.4   train       1.30     2.45     5.20     7.61     0.30  ABSTAIN / NOT_PINNED  (indicative upper)
+  3.5   train       1.27     2.40     5.19     7.59     0.28  ABSTAIN / NOT_PINNED  (indicative upper)
+  3.6   train       1.24     2.35     5.17     7.56     0.26  ABSTAIN / NOT_PINNED  (indicative upper)
+  3.7   train       1.21     2.28     5.15     7.54     0.24  ABSTAIN / NOT_PINNED  (indicative upper)
+  3.8   train       1.18     2.21     5.14     7.52     0.22  ABSTAIN / NOT_PINNED  (indicative upper)
+  3.9   train       1.14     2.13     5.13     7.50     0.21  ABSTAIN / NOT_PINNED  (indicative upper)
+  4.0   train       1.09     2.05     5.11     7.48     0.20  ABSTAIN / NOT_PINNED  (indicative upper)
+  4.1   train       1.05     1.95     5.10     7.46     0.18  ABSTAIN / NOT_PINNED  (indicative upper)
+  4.2   train       1.00     1.85     5.09     7.45     0.17  ABSTAIN / UNDECIDED  (indicative upper)
+  4.3   train       0.95     1.74     5.08     7.43     0.17  ABSTAIN / UNDECIDED  (indicative upper)
+  4.4   train       0.89     1.62     5.07     7.42     0.16  ABSTAIN / UNDECIDED  (indicative upper)
+  4.5   train       0.83     1.50     5.06     7.41     0.15  ABSTAIN / UNDECIDED  (indicative upper)
+  4.6   train       0.77     1.38     5.06     7.40     0.14  ABSTAIN / UNDECIDED  (indicative upper)
+  4.7   train       0.70     1.24     5.05     7.39     0.14  ABSTAIN / UNDECIDED  (indicative upper)
+  4.8   train       0.63     1.10     5.04     7.38     0.13  ABSTAIN / UNDECIDED  (indicative upper)
+  4.9   train       0.56     0.96     5.03     7.37     0.13  ABSTAIN / UNDECIDED  (indicative upper)
+  5.0   train       0.50     0.84     5.03     7.36     0.12  ABSTAIN / UNDECIDED  (indicative upper)
+  5.1   train       0.46     0.74     5.02     7.35     0.12  ABSTAIN / UNDECIDED  (indicative upper)
+  5.2   train       0.47     0.73     5.02     7.34     0.12  ABSTAIN / UNDECIDED  (indicative upper)
+  5.3   train       0.53     0.84     5.01     7.33     0.12  ABSTAIN / UNDECIDED  (indicative upper)
+  5.4   train       0.63     1.00     5.01     7.32     0.11  ABSTAIN / UNDECIDED  (indicative upper)
+  5.5   train       0.74     1.18     5.00     7.32     0.11  ABSTAIN / UNDECIDED  (indicative upper)
+  5.6   train       0.87     1.38     5.00     7.31     0.11  ABSTAIN / UNDECIDED  (indicative upper)
+  5.7   train       0.99     1.60     4.99     7.30     0.11  ABSTAIN / UNDECIDED  (indicative upper)
+  5.8   train       1.13     1.83     4.99     7.30     0.11  ABSTAIN / NOT_PINNED  (indicative upper)
+  5.9   train       1.28     2.08     4.99     7.29     0.11  ABSTAIN / NOT_PINNED  (indicative upper)
+  6.0   train       1.44     2.34     4.98     7.29     0.11  ABSTAIN / NOT_PINNED  (indicative upper)
+  1.1   test      119.09   172.69     7.63    11.16     5.30  ABSTAIN / NOT_PINNED  (indicative upper)
+  1.2   test       68.33    98.30     7.24    10.60     4.34  ABSTAIN / NOT_PINNED  (indicative upper)
+  1.3   test       39.44    56.16     6.93    10.14     3.61  ABSTAIN / NOT_PINNED  (indicative upper)
+  1.4   test       22.25    31.27     6.67     9.76     3.04  ABSTAIN / NOT_PINNED  (indicative upper)
+  in sample (cubic on all of R): 1.6: 5.89-8.10, 1.7: 3.48-4.75, 1.8: 3.76-5.17, 1.9: 3.91-5.38, 2.0: 3.84-5.30, 2.1: 3.85-5.33, 2.2: 3.67-5.13, 2.3: 3.40-4.82, 2.4: 3.10-4.48, 2.5: 2.82-4.18, 2.6: 2.57-3.91, 2.7: 2.31-3.63, 2.8: 2.06-3.35, 2.9: 1.81-3.06, 3.0: 1.60-2.81, 3.1: 1.43-2.60, 3.2: 1.32-2.46, 3.3: 1.27-2.40, 3.4: 1.24-2.35, 3.5: 1.21-2.31, 3.6: 1.19-2.26, 3.7: 1.16-2.20, 3.8: 1.13-2.14, 3.9: 1.10-2.07, 4.0: 1.05-1.97, 4.1: 1.01-1.89, 4.2: 0.97-1.79, 4.3: 0.92-1.69, 4.4: 0.87-1.58, 4.5: 0.81-1.47, 4.6: 0.75-1.35, 4.7: 0.69-1.22, 4.8: 0.62-1.08, 4.9: 0.55-0.95, 5.0: 0.49-0.82, 5.1: 0.45-0.72, 5.2: 0.46-0.72, 5.3: 0.52-0.82, 5.4: 0.61-0.96, 5.5: 0.71-1.12, 5.6: 0.82-1.30, 5.7: 0.93-1.49, 5.8: 1.04-1.68, 5.9: 1.16-1.88, 6.0: 1.28-2.08
+  label filter, interpolated threshold where no map row: {'1.5': {'eps_emu': 0.759999999999998, 'eps_tau_out_interp': 0.009740188123830752, 'neighbours': [1.4, 1.6], 'certified_interp': False}, '1.7': {'eps_emu': 0.6705882352941188, 'eps_tau_out_interp': 0.0158767763153904, 'neighbours': [1.6, 1.8], 'certified_interp': False}, '1.9': {'eps_emu': 0.6000000000000014, 'eps_tau_out_interp': 0.024234516439221625, 'neighbours': [1.8, 2.0], 'certified_interp': False}, '2.1': {'eps_emu': 0.5428571428571445, 'eps_tau_out_interp': 0.03462532145374835, 'neighbours': [2.0, 2.5], 'certified_interp': False}, '2.2': {'eps_emu': 0.5181818181818159, 'eps_tau_out_interp': 0.04062968151246625, 'neighbours': [2.0, 2.5], 'certified_interp': False}, '2.3': {'eps_emu': 0.4956521739130437, 'eps_tau_out_interp': 0.04767525471234975, 'neighbours': [2.0, 2.5], 'certified_interp': False}, '2.4': {'eps_emu': 0.4750000000000014, 'eps_tau_out_interp': 0.055942597314971164, 'neighbours': [2.0, 2.5], 'certified_interp': False}, '2.6': {'eps_emu': 0.4384615384615387, 'eps_tau_out_interp': 0.07432676756976477, 'neighbours': [2.5, 3.0], 'certified_interp': False}, '2.7': {'eps_emu': 0.4222222222222243, 'eps_tau_out_interp': 0.08415855342792113, 'neighbours': [2.5, 3.0], 'certified_interp': False}, '2.8': {'eps_emu': 0.40714285714285836, 'eps_tau_out_interp': 0.09529086689303828, 'neighbours': [2.5, 3.0], 'certified_interp': False}, '2.9': {'eps_emu': 0.3931034482758662, 'eps_tau_out_interp': 0.10789573897564371, 'neighbours': [2.5, 3.0], 'certified_interp': False}, '3.1': {'eps_emu': 0.36774193548387757, 'eps_tau_out_interp': 0.13591202565541521, 'neighbours': [3.0, 3.2], 'certified_interp': False}, '3.5': {'eps_emu': 0.32571428571428385, 'eps_tau_out_interp': 0.2016710163840136, 'neighbours': [3.4, 3.6], 'certified_interp': False}, '3.7': {'eps_emu': 0.3081081081081152, 'eps_tau_out_interp': 0.2388319592423723, 'neighbours': [3.6, 4.0], 'certified_interp': False}, '3.8': {'eps_emu': 0.29999999999999716, 'eps_tau_out_interp': 0.25817402282750285, 'neighbours': [3.6, 4.0], 'certified_interp': False}, '3.9': {'eps_emu': 0.2923076923076877, 'eps_tau_out_interp': 0.2790825242751289, 'neighbours': [3.6, 4.0], 'certified_interp': False}, '4.1': {'eps_emu': 0.2780487804878078, 'eps_tau_out_interp': 0.3211108297448791, 'neighbours': [4.0, 4.5], 'certified_interp': True}, '4.2': {'eps_emu': 0.27142857142857224, 'eps_tau_out_interp': 0.34178827680152607, 'neighbours': [4.0, 4.5], 'certified_interp': True}, '4.3': {'eps_emu': 0.26511627906977253, 'eps_tau_out_interp': 0.36379721684182625, 'neighbours': [4.0, 4.5], 'certified_interp': True}, '4.4': {'eps_emu': 0.25909090909091503, 'eps_tau_out_interp': 0.3872233893461261, 'neighbours': [4.0, 4.5], 'certified_interp': True}, '4.6': {'eps_emu': 0.24782608695652186, 'eps_tau_out_interp': 0.4292299906528389, 'neighbours': [4.5, 5.0], 'certified_interp': True}, '4.7': {'eps_emu': 0.24255319148936394, 'eps_tau_out_interp': 0.44700906048965877, 'neighbours': [4.5, 5.0], 'certified_interp': True}, '4.8': {'eps_emu': 0.23749999999999716, 'eps_tau_out_interp': 0.46552455446073276, 'neighbours': [4.5, 5.0], 'certified_interp': True}, '4.9': {'eps_emu': 0.23265306122449658, 'eps_tau_out_interp': 0.4848069758775669, 'neighbours': [4.5, 5.0], 'certified_interp': True}, '5.1': {'eps_emu': 0.22352941176470154, 'eps_tau_out_interp': 0.5257063069048936, 'neighbours': [5.0, 5.5], 'certified_interp': True}, '5.2': {'eps_emu': 0.21923076923076223, 'eps_tau_out_interp': 0.5473829265511174, 'neighbours': [5.0, 5.5], 'certified_interp': True}, '5.3': {'eps_emu': 0.21509433962263813, 'eps_tau_out_interp': 0.569953345326466, 'neighbours': [5.0, 5.5], 'certified_interp': True}, '5.4': {'eps_emu': 0.21111111111110858, 'eps_tau_out_interp': 0.593454417542002, 'neighbours': [5.0, 5.5], 'certified_interp': True}, '5.6': {'eps_emu': 0.20357142857142208, 'eps_tau_out_interp': 0.6371558581962058, 'neighbours': [5.5, 6.0], 'certified_interp': True}, '5.7': {'eps_emu': 0.19999999999998863, 'eps_tau_out_interp': 0.6569857262117688, 'neighbours': [5.5, 6.0], 'certified_interp': True}, '5.8': {'eps_emu': 0.19655172413791888, 'eps_tau_out_interp': 0.6774327488221709, 'neighbours': [5.5, 6.0], 'certified_interp': True}, '5.9': {'eps_emu': 0.19322033898305335, 'eps_tau_out_interp': 0.6985161334065859, 'neighbours': [5.5, 6.0], 'certified_interp': True}}
+  sanity: label in outer False, truth in outer False
+n=115  rule (c) with Prop. 2(b) intervals answers 0 of 49 queries []
+  Jz    range       W_lo     W_hi    2q_lo    2q_hi     miss  rule(c) / band(a)
+  1.6   train      11.22    15.67     6.00     9.19     2.26  ABSTAIN / NOT_PINNED  (indicative upper)
+  1.7   train       3.64     5.02     5.86     8.97     1.91  ABSTAIN / NOT_PINNED  (indicative upper)
+  1.8   train       3.90     5.39     5.73     8.79     1.66  ABSTAIN / NOT_PINNED  (indicative upper)
+  1.9   train       4.07     5.61     5.62     8.62     1.45  ABSTAIN / NOT_PINNED  (indicative upper)
+  2.0   train       3.98     5.51     5.79     8.48     1.27  ABSTAIN / NOT_PINNED  (indicative upper)
+  2.1   train       3.98     5.54     5.71     8.36     1.12  ABSTAIN / NOT_PINNED  (indicative upper)
+  2.2   train       3.76     5.29     5.64     8.26     0.99  ABSTAIN / NOT_PINNED  (indicative upper)
+  2.3   train       3.45     4.92     5.58     8.17     0.89  ABSTAIN / NOT_PINNED  (indicative upper)
+  2.4   train       3.11     4.53     5.53     8.09     0.79  ABSTAIN / NOT_PINNED  (indicative upper)
+  2.5   train       2.81     4.20     5.48     8.02     0.71  ABSTAIN / NOT_PINNED  (indicative upper)
+  2.6   train       2.54     3.91     5.43     7.87     0.64  ABSTAIN / NOT_PINNED  (indicative upper)
+  2.7   train       2.26     3.61     5.39     7.82     0.57  ABSTAIN / NOT_PINNED  (indicative upper)
+  2.8   train       2.00     3.31     5.36     7.76     0.52  ABSTAIN / NOT_PINNED  (indicative upper)
+  2.9   train       1.74     3.00     5.33     7.72     0.47  ABSTAIN / NOT_PINNED  (indicative upper)
+  3.0   train       1.69     2.74     5.30     7.75     0.43  ABSTAIN / NOT_PINNED  (indicative upper)
+  3.1   train       1.50     2.59     5.27     7.71     0.39  ABSTAIN / NOT_PINNED  (indicative upper)
+  3.2   train       1.39     2.50     5.25     7.68     0.36  ABSTAIN / NOT_PINNED  (indicative upper)
+  3.3   train       1.33     2.47     5.22     7.64     0.33  ABSTAIN / NOT_PINNED  (indicative upper)
+  3.4   train       1.30     2.44     5.20     7.61     0.30  ABSTAIN / NOT_PINNED  (indicative upper)
+  3.5   train       1.27     2.40     5.19     7.59     0.28  ABSTAIN / NOT_PINNED  (indicative upper)
+  3.6   train       1.24     2.35     5.17     7.56     0.26  ABSTAIN / NOT_PINNED  (indicative upper)
+  3.7   train       1.21     2.28     5.15     7.54     0.24  ABSTAIN / NOT_PINNED  (indicative upper)
+  3.8   train       1.18     2.21     5.14     7.52     0.22  ABSTAIN / NOT_PINNED  (indicative upper)
+  3.9   train       1.14     2.13     5.13     7.50     0.21  ABSTAIN / NOT_PINNED  (indicative upper)
+  4.0   train       1.09     2.05     5.11     7.48     0.20  ABSTAIN / NOT_PINNED  (indicative upper)
+  4.1   train       1.05     1.95     5.10     7.46     0.18  ABSTAIN / NOT_PINNED  (indicative upper)
+  4.2   train       1.00     1.85     5.09     7.45     0.17  ABSTAIN / UNDECIDED  (indicative upper)
+  4.3   train       0.95     1.74     5.08     7.43     0.17  ABSTAIN / UNDECIDED  (indicative upper)
+  4.4   train       0.89     1.62     5.07     7.42     0.16  ABSTAIN / UNDECIDED  (indicative upper)
+  4.5   train       0.83     1.50     5.06     7.41     0.15  ABSTAIN / UNDECIDED  (indicative upper)
+  4.6   train       0.77     1.38     5.06     7.40     0.14  ABSTAIN / UNDECIDED  (indicative upper)
+  4.7   train       0.70     1.24     5.05     7.38     0.14  ABSTAIN / UNDECIDED  (indicative upper)
+  4.8   train       0.63     1.10     5.04     7.37     0.13  ABSTAIN / UNDECIDED  (indicative upper)
+  4.9   train       0.56     0.96     5.03     7.36     0.13  ABSTAIN / UNDECIDED  (indicative upper)
+  5.0   train       0.50     0.84     5.03     7.35     0.12  ABSTAIN / UNDECIDED  (indicative upper)
+  5.1   train       0.46     0.74     5.02     7.35     0.12  ABSTAIN / UNDECIDED  (indicative upper)
+  5.2   train       0.46     0.73     5.02     7.34     0.12  ABSTAIN / UNDECIDED  (indicative upper)
+  5.3   train       0.53     0.84     5.01     7.33     0.12  ABSTAIN / UNDECIDED  (indicative upper)
+  5.4   train       0.63     1.00     5.00     7.32     0.11  ABSTAIN / UNDECIDED  (indicative upper)
+  5.5   train       0.74     1.18     5.00     7.32     0.11  ABSTAIN / UNDECIDED  (indicative upper)
+  5.6   train       0.86     1.38     5.00     7.31     0.11  ABSTAIN / UNDECIDED  (indicative upper)
+  5.7   train       0.99     1.60     4.99     7.30     0.11  ABSTAIN / UNDECIDED  (indicative upper)
+  5.8   train       1.13     1.83     4.99     7.30     0.11  ABSTAIN / NOT_PINNED  (indicative upper)
+  5.9   train       1.28     2.08     4.99     7.29     0.11  ABSTAIN / NOT_PINNED  (indicative upper)
+  6.0   train       1.44     2.34     4.98     7.28     0.11  ABSTAIN / NOT_PINNED  (indicative upper)
+  1.1   test      119.23   172.89     7.64    11.18     5.31  ABSTAIN / NOT_PINNED  (indicative upper)
+  1.2   test       68.39    98.40     7.25    10.61     4.34  ABSTAIN / NOT_PINNED  (indicative upper)
+  1.3   test       39.47    56.20     6.94    10.15     3.61  ABSTAIN / NOT_PINNED  (indicative upper)
+  1.4   test       22.26    31.29     6.68     9.77     3.04  ABSTAIN / NOT_PINNED  (indicative upper)
+  in sample (cubic on all of R): 1.6: 5.89-8.10, 1.7: 3.48-4.75, 1.8: 3.76-5.17, 1.9: 3.91-5.38, 2.0: 3.84-5.30, 2.1: 3.85-5.33, 2.2: 3.67-5.13, 2.3: 3.40-4.82, 2.4: 3.10-4.48, 2.5: 2.82-4.18, 2.6: 2.57-3.91, 2.7: 2.31-3.63, 2.8: 2.06-3.35, 2.9: 1.81-3.06, 3.0: 1.60-2.81, 3.1: 1.43-2.60, 3.2: 1.32-2.46, 3.3: 1.27-2.40, 3.4: 1.24-2.35, 3.5: 1.21-2.31, 3.6: 1.19-2.26, 3.7: 1.16-2.20, 3.8: 1.13-2.14, 3.9: 1.10-2.06, 4.0: 1.05-1.97, 4.1: 1.01-1.89, 4.2: 0.97-1.79, 4.3: 0.92-1.69, 4.4: 0.87-1.58, 4.5: 0.81-1.47, 4.6: 0.75-1.35, 4.7: 0.69-1.21, 4.8: 0.62-1.08, 4.9: 0.55-0.95, 5.0: 0.49-0.82, 5.1: 0.45-0.72, 5.2: 0.46-0.72, 5.3: 0.52-0.82, 5.4: 0.61-0.96, 5.5: 0.71-1.12, 5.6: 0.82-1.30, 5.7: 0.93-1.49, 5.8: 1.04-1.68, 5.9: 1.16-1.88, 6.0: 1.28-2.08
+  label filter, interpolated threshold where no map row: {'1.5': {'eps_emu': 1.5333333333333314, 'eps_tau_out_interp': 0.02056325333270954, 'neighbours': [1.4, 1.6], 'certified_interp': False}, '1.7': {'eps_emu': 1.352941176470594, 'eps_tau_out_interp': 0.03688106577523515, 'neighbours': [1.6, 1.8], 'certified_interp': False}, '1.9': {'eps_emu': 1.2105263157894797, 'eps_tau_out_interp': 0.0572083900908742, 'neighbours': [1.8, 2.0], 'certified_interp': False}, '2.1': {'eps_emu': 1.095238095238102, 'eps_tau_out_interp': 0.08169351487857959, 'neighbours': [2.0, 2.5], 'certified_interp': False}, '2.2': {'eps_emu': 1.0454545454545467, 'eps_tau_out_interp': 0.09564678830220183, 'neighbours': [2.0, 2.5], 'certified_interp': False}, '2.3': {'eps_emu': 1.0, 'eps_tau_out_interp': 0.11198328442745142, 'neighbours': [2.0, 2.5], 'certified_interp': False}, '2.4': {'eps_emu': 0.9583333333333286, 'eps_tau_out_interp': 0.1311100583067963, 'neighbours': [2.0, 2.5], 'certified_interp': False}, '2.6': {'eps_emu': 0.8846153846153868, 'eps_tau_out_interp': 0.1733771455567968, 'neighbours': [2.5, 3.0], 'certified_interp': False}, '2.7': {'eps_emu': 0.8518518518518476, 'eps_tau_out_interp': 0.19582353089818688, 'neighbours': [2.5, 3.0], 'certified_interp': False}, '2.8': {'eps_emu': 0.8214285714285694, 'eps_tau_out_interp': 0.22117595217226044, 'neighbours': [2.5, 3.0], 'certified_interp': False}, '2.9': {'eps_emu': 0.7931034482758719, 'eps_tau_out_interp': 0.2498106412182919, 'neighbours': [2.5, 3.0], 'certified_interp': False}, '3.1': {'eps_emu': 0.7419354838709751, 'eps_tau_out_interp': 0.31213260249723024, 'neighbours': [3.0, 3.3], 'certified_interp': False}, '3.2': {'eps_emu': 0.71875, 'eps_tau_out_interp': 0.3452981918758947, 'neighbours': [3.0, 3.3], 'certified_interp': False}, '3.4': {'eps_emu': 0.6764705882353041, 'eps_tau_out_interp': 0.4178816349497962, 'neighbours': [3.3, 3.6], 'certified_interp': False}, '3.5': {'eps_emu': 0.6571428571428442, 'eps_tau_out_interp': 0.4571482856067446, 'neighbours': [3.3, 3.6], 'certified_interp': False}, '3.7': {'eps_emu': 0.6216216216216139, 'eps_tau_out_interp': 0.535726666742971, 'neighbours': [3.6, 4.0], 'certified_interp': False}, '3.8': {'eps_emu': 0.6052631578947398, 'eps_tau_out_interp': 0.5738859914277503, 'neighbours': [3.6, 4.0], 'certified_interp': False}, '3.9': {'eps_emu': 0.5897435897435912, 'eps_tau_out_interp': 0.614763370207636, 'neighbours': [3.6, 4.0], 'certified_interp': True}, '4.1': {'eps_emu': 0.560975609756099, 'eps_tau_out_interp': 0.6991446197561333, 'neighbours': [4.0, 4.5], 'certified_interp': True}, '4.2': {'eps_emu': 0.5476190476190368, 'eps_tau_out_interp': 0.7422388767919827, 'neighbours': [4.0, 4.5], 'certified_interp': True}, '4.3': {'eps_emu': 0.5348837209302246, 'eps_tau_out_interp': 0.7879894011250324, 'neighbours': [4.0, 4.5], 'certified_interp': True}, '4.4': {'eps_emu': 0.5227272727272805, 'eps_tau_out_interp': 0.8365599212063454, 'neighbours': [4.0, 4.5], 'certified_interp': True}, '4.6': {'eps_emu': 0.5, 'eps_tau_out_interp': 0.9294690253877643, 'neighbours': [4.5, 5.0], 'certified_interp': True}, '4.7': {'eps_emu': 0.48936170212766683, 'eps_tau_out_interp': 0.972738512531857, 'neighbours': [4.5, 5.0], 'certified_interp': True}, '4.8': {'eps_emu': 0.4791666666666572, 'eps_tau_out_interp': 1.0180223201821452, 'neighbours': [4.5, 5.0], 'certified_interp': True}, '4.9': {'eps_emu': 0.4693877551020478, 'eps_tau_out_interp': 1.065414220818257, 'neighbours': [4.5, 5.0], 'certified_interp': True}, '5.1': {'eps_emu': 0.4509803921568505, 'eps_tau_out_interp': 1.14033988806905, 'neighbours': [5.0, 5.5], 'certified_interp': True}, '5.2': {'eps_emu': 0.4423076923076792, 'eps_tau_out_interp': 1.1662427394971635, 'neighbours': [5.0, 5.5], 'certified_interp': True}, '5.3': {'eps_emu': 0.4339622641509493, 'eps_tau_out_interp': 1.1927339748966936, 'neighbours': [5.0, 5.5], 'certified_interp': True}, '5.4': {'eps_emu': 0.4259259259259238, 'eps_tau_out_interp': 1.2198269594254796, 'neighbours': [5.0, 5.5], 'certified_interp': True}, '5.6': {'eps_emu': 0.4107142857142776, 'eps_tau_out_interp': 1.2940397358870352, 'neighbours': [5.5, 6.0], 'certified_interp': True}, '5.7': {'eps_emu': 0.4035087719298076, 'eps_tau_out_interp': 1.3422776534338066, 'neighbours': [5.5, 6.0], 'certified_interp': True}, '5.8': {'eps_emu': 0.3965517241379075, 'eps_tau_out_interp': 1.3923137357700488, 'neighbours': [5.5, 6.0], 'certified_interp': True}, '5.9': {'eps_emu': 0.38983050847457434, 'eps_tau_out_interp': 1.4442150130822748, 'neighbours': [5.5, 6.0], 'certified_interp': True}}
+  sanity: label in outer False, truth in outer False
+  [ok] derived Proposition 2 on the real-data branch: 45 + 4 queries; upper intervals exact, like-for-like or interpolated
+  [ok] an indicative upper interval can neither answer (rule c) nor pin (band a)
+  [ok] coefficient form equals ml2.fit_poly; like-for-like filter interpolated at the 32 couplings without a stored row
+declaration c4f0d47c78459cd0c29e63ca40055f8e77f146e0b5940ab0cb14800f01cfa241 | seed 3304117372 | stages ['f2']
+  f2 n = 57: floor w_(42) of 45 = 0.16149 = 3.68-4.21 tau at the test queries -> HOLDS (readings agree: True)
+  f2 n = 115: floor w_(42) of 45 = 0.16144 = 3.69-4.22 tau at the test queries -> HOLDS (readings agree: True)
+declaration c4f0d47c78459cd0c29e63ca40055f8e77f146e0b5940ab0cb14800f01cfa241 | seed 3304117372 | stages ['f3']
+  f3 n = 57: |S| = 27, |S_3/4| = 21, |S_1/2| = 11, primary S_3_4 -> FAIL
+     S      M1: (W) 0.000 of splits, (C) 1.000 of pairs, 2q/tau 0.969-1.646, largest miss 0.349 tau
+     S      M2: (W) 0.000 of splits, (C) 1.000 of pairs, 2q/tau 0.970-1.541, largest miss 0.301 tau
+     S      M0: (W) 0.015 of splits, (C) 1.000 of pairs, 2q/tau 0.932-1.481, largest miss 0.292 tau
+     S_3_4  M1: (W) 0.310 of splits, (C) 1.000 of pairs, 2q/tau 0.896-1.097, largest miss 0.246 tau
+     S_3_4  M2: (W) 0.415 of splits, (C) 1.000 of pairs, 2q/tau 0.903-1.074, largest miss 0.228 tau
+     S_3_4  M0: (W) 1.000 of splits, (C) 1.000 of pairs, 2q/tau 0.895-0.984, largest miss 0.196 tau
+     S_1_2  NOT RUN (fewer than 15 couplings)
+  f3 n = 115: |S| = 27, |S_3/4| = 21, |S_1/2| = 11, primary S_3_4 -> FAIL
+     S      M1: (W) 0.005 of splits, (C) 1.000 of pairs, 2q/tau 0.949-1.658, largest miss 0.380 tau
+     S      M2: (W) 0.000 of splits, (C) 1.000 of pairs, 2q/tau 0.970-1.550, largest miss 0.344 tau
+     S      M0: (W) 0.005 of splits, (C) 1.000 of pairs, 2q/tau 0.930-1.482, largest miss 0.293 tau
+     S_3_4  M1: (W) 0.310 of splits, (C) 1.000 of pairs, 2q/tau 0.898-1.164, largest miss 0.250 tau
+     S_3_4  M2: (W) 0.455 of splits, (C) 1.000 of pairs, 2q/tau 0.902-1.196, largest miss 0.246 tau
+     S_3_4  M0: (W) 1.000 of splits, (C) 1.000 of pairs, 2q/tau 0.893-0.987, largest miss 0.195 tau
+     S_1_2  NOT RUN (fewer than 15 couplings)
+declaration c4f0d47c78459cd0c29e63ca40055f8e77f146e0b5940ab0cb14800f01cfa241 | seed 3304117372 | stages ['rules']
+  n = 57: L1 HOLDS {'1.1': 5.3, '1.2': 4.34, '1.3': 3.61, '1.4': 3.04} | L2 HOLDS | L3 HOLDS (2q_lo = 4.98-7.63 tau)
+  n = 115: L1 HOLDS {'1.1': 5.31, '1.2': 4.34, '1.3': 3.61, '1.4': 3.04} | L2 HOLDS | L3 HOLDS (2q_lo = 4.98-7.64 tau)
+  [ok] run_learn f2: the floor is the 42nd narrowest of the 45 lower widths of the sets file (0.161492132393 against 0.161492132393)
+  [ok] run_learn f3: seed from the hash, primary set S_3/4, 200 splits, decision FAIL
+declaration c4f0d47c78459cd0c29e63ca40055f8e77f146e0b5940ab0cb14800f01cfa241 | seed 3304117372 | stages ['f3']
+  f3 n = 57: |S| = 27, |S_3/4| = 21, |S_1/2| = 11, primary S_3_4 -> FAIL
+     S      M1: (W) 0.000 of splits, (C) 1.000 of pairs, 2q/tau 0.969-1.646, largest miss 0.349 tau
+     S      M2: (W) 0.000 of splits, (C) 1.000 of pairs, 2q/tau 0.970-1.541, largest miss 0.301 tau
+     S      M0: (W) 0.015 of splits, (C) 1.000 of pairs, 2q/tau 0.932-1.481, largest miss 0.292 tau
+     S_3_4  M1: (W) 0.310 of splits, (C) 1.000 of pairs, 2q/tau 0.896-1.097, largest miss 0.246 tau
+     S_3_4  M2: (W) 0.415 of splits, (C) 1.000 of pairs, 2q/tau 0.903-1.074, largest miss 0.228 tau
+     S_3_4  M0: (W) 1.000 of splits, (C) 1.000 of pairs, 2q/tau 0.895-0.984, largest miss 0.196 tau
+     S_1_2  NOT RUN (fewer than 15 couplings)
+  f3 n = 115: |S| = 27, |S_3/4| = 21, |S_1/2| = 11, primary S_3_4 -> FAIL
+     S      M1: (W) 0.005 of splits, (C) 1.000 of pairs, 2q/tau 0.949-1.658, largest miss 0.380 tau
+     S      M2: (W) 0.000 of splits, (C) 1.000 of pairs, 2q/tau 0.970-1.550, largest miss 0.344 tau
+     S      M0: (W) 0.005 of splits, (C) 1.000 of pairs, 2q/tau 0.930-1.482, largest miss 0.293 tau
+     S_3_4  M1: (W) 0.310 of splits, (C) 1.000 of pairs, 2q/tau 0.898-1.164, largest miss 0.250 tau
+     S_3_4  M2: (W) 0.455 of splits, (C) 1.000 of pairs, 2q/tau 0.902-1.196, largest miss 0.246 tau
+     S_3_4  M0: (W) 1.000 of splits, (C) 1.000 of pairs, 2q/tau 0.893-0.987, largest miss 0.195 tau
+     S_1_2  NOT RUN (fewer than 15 couplings)
+  [ok] run_learn f3 is reproducible (same seed, same numbers)
+  [ok] run_learn rules: L1, L2, L3 and the coupling 1.5 on its own line
+declaration c4f0d47c78459cd0c29e63ca40055f8e77f146e0b5940ab0cb14800f01cfa241 | seed 3304117372 | stages ['f3']
+  [ok] a sets file that no longer matches its SHA-256 is refused
+  [ok] run_learn refuses a hash that is not the declaration's
+test_learn: 54 checks, 0 failed
+
+--- stderr ---
+REFUSED: C:\Users\Nicolas\AppData\Local\Temp\rd_learn_aplkaf2f\out\S_sets.sha256 does not match C:\Users\Nicolas\AppData\Local\Temp\rd_learn_aplkaf2f\out\S_sets.json.
+REFUSED: the hash passed as an argument (111111111111...) is not the hash of the declaration (c4f0d47c7845...).
+
+##### test_port_learning.py  exit 0  7 s
+== test_port_learning
+  [ok] learn_ibm.py: every stored line is in the derived file, in order, except the def lines of the renamed loaders ['def load(n):']
+  [ok] learn_ibm.py: all 11 stored functions have the same syntax tree in the derived file (loaders under their new names)
+  [ok] learn_ibm.py: constants unchanged {'ALPHA': 0.1, 'OOD': [1.1, 1.2, 1.3, 1.4], 'TRAIN_MIN': 1.6, 'TAU_REL': 0.06}
+  [ok] learn_ibm.py: every added code line carries the mark '# RD' []
+  [ok] prop2_cubic.py: every stored line is in the derived file, in order, except the def lines of the renamed loaders ['def load(n):', 'def intervals(n, D, Dmap, MR):']
+  [ok] prop2_cubic.py: all 12 stored functions have the same syntax tree in the derived file (loaders under their new names)
+  [ok] prop2_cubic.py: constants unchanged {'ALPHA': 0.1, 'OOD': [1.1, 1.2, 1.3, 1.4], 'TRAIN_MIN': 1.6, 'TAU_REL': 0.06, 'RIDGE': 1e-08}
+  [ok] prop2_cubic.py: every added code line carries the mark '# RD' []
+  [ok] the derived scripts run on the stored emulated labels (--data=emulated needs no declaration hash)
+  [ok] results_cheap.json: every number equals the stored one (timings apart) []
+  [ok] prop2_cubic.json: every number equals the stored one []
+  [ok] prop2_cubic stdout is identical to the stored one
+  [ok] the miss of the cubic in the training range, up to 3.0511 tau (stored text: 3.05)
+  [ok] the narrowest energy-calibrated interval, 16.5494 tau (stored text: 16.55)
+  [ok] rule (c) answers 0 of 14 couplings (stored text: 0 of 14)
+  [ok] n = 57, emulated labels: L1 (miss 4.46-8.78 tau), L2 (no test coupling covered), L3 (2q >= 18.24 tau at 14 couplings) hold
+  [ok] n = 115, emulated labels: L1 (miss 5.25-8.91 tau), L2 (no test coupling covered), L3 (2q >= 28.34 tau at 11 couplings) hold
+  [ok] poly3_invJ in three pieces plus the test range, assembled: every number equals the stored single run []
+  [ok] null_nn in three pieces plus the test range, assembled: every number equals the stored single run []
+  [ok] rd_learn_parts.py on the real data without a hash is refused (exit 3)
+test_port_learning: 20 checks, 0 failed
+

@@ -1,0 +1,6 @@
+held out 2.0 done
+held out 2.8 done
+held out 3.6 done
+held out 4.4 done
+held out 5.2 done
+held out 6.0 done

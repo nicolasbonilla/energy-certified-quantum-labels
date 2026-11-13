@@ -1,0 +1,67 @@
+This repository is dual-licensed: code under the MIT License, everything else authored here under
+CC BY 4.0. Third-party files keep their own terms (last section, and the file NOTICE).
+
+================================================================================
+CODE  (all *.py, *.sh, *.ps1 and Makefile written for this work)  —  MIT License
+================================================================================
+
+Copyright (c) 2026 Nicolás Bonilla Vargas
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+================================================================================
+PAPER, DATA AND DOCUMENTATION  —  CC BY 4.0
+================================================================================
+
+Copyright (c) 2026 Nicolás Bonilla Vargas
+
+The following are licensed under the Creative Commons Attribution 4.0
+International License (CC BY 4.0), https://creativecommons.org/licenses/by/4.0/ :
+
+  - paper/: the manuscript text, its figures, figure data and tables, and the
+    outputs of the numerical checks of the proofs;
+  - phase3/: every data file, output, record and written protocol produced by
+    this work (declarations, results, certificates, stored states, the records
+    and counts of the author's own processor runs), except the third-party
+    files listed below;
+  - docs/, the README files, CITATION.cff and .zenodo.json.
+
+You are free to share and adapt the material for any purpose, provided you give
+appropriate credit (cite the work; see CITATION.cff) and indicate if changes
+were made.
+
+================================================================================
+THIRD-PARTY FILES  —  not covered by the licences above
+================================================================================
+
+The file NOTICE lists them with their origin and what was derived from them:
+
+  - phase3/full_runs/real_data/source/: the archive of the public repository of
+    the dataset studied (arXiv:2606.15983) at one commit, text copies of its
+    code files and its licence text, under the Apache License 2.0
+    (phase3/full_runs/real_data/source/LICENSE_upstream.txt). The files of
+    phase3/full_runs/real_data/converted/ are a format conversion of its data
+    files and are distributed under the same Apache License 2.0, with the
+    changes stated in NOTICE.
+  - phase3/full_runs/huang/data_huang/ and phase3/full_runs/learning/data_huang20/:
+    data files of Huang et al., Science 377, eabk3333 (2022), under the MIT
+    License of their repository (LICENSE_upstream.md in each folder).
+  - calibration_snapshot.json under phase3/full_runs/qpu/jobs/ and
+    phase3/full_runs/final_tests/jobs/: calibration data of the processor as
+    returned by IBM Quantum services, kept as the record of the author's runs.

@@ -1,0 +1,115 @@
+==============================================================================================================
+A. coordinate definition HH_d against the generator (rustworkx 0.14.2), as labelled graphs
+  labelled edge sets equal for every odd d in 3..41: True
+  stored map/code/graphs/hh_d3.json: n = 19, edges equal: True, eta = +1 exactly on D and S: True
+  stored method/code/graphs/hh_d3.json: n = 19, edges equal: True, eta = +1 exactly on D and S: True
+  stored map/code/graphs/hh_d5.json: n = 57, edges equal: True, eta = +1 exactly on D and S: True
+  stored method/code/graphs/hh_d5.json: n = 57, edges equal: True, eta = +1 exactly on D and S: True
+  stored map/code/graphs/hh_d7.json: n = 115, edges equal: True, eta = +1 exactly on D and S: True
+  stored method/code/graphs/hh_d7.json: n = 115, edges equal: True, eta = +1 exactly on D and S: True
+==============================================================================================================
+B. structural facts used in the proof, checked on every site
+   (S1) bipartite between maj = D u S and min = F u T; majority degrees in {1,2}; minority degrees in {2,3}
+   (S2) every minority site has a degree-2 majority neighbour whose other neighbour has degree 3
+  d= 3 n=   19 maj/min=11/8 bipartite=True counts=True S1=True dangling=True deg-2 minority sites as predicted=True S2=True | neighbourhood types: 7
+  d= 5 n=   57 maj/min=33/24 bipartite=True counts=True S1=True dangling=True deg-2 minority sites as predicted=True S2=True | neighbourhood types: 10
+  d= 7 n=  115 maj/min=67/48 bipartite=True counts=True S1=True dangling=True deg-2 minority sites as predicted=True S2=True | neighbourhood types: 10
+  d= 9 n=  193 maj/min=113/80 bipartite=True counts=True S1=True dangling=True deg-2 minority sites as predicted=True S2=True | neighbourhood types: 10
+  d=41 n= 4161 maj/min=2481/1680 bipartite=True counts=True S1=True dangling=True deg-2 minority sites as predicted=True S2=True | neighbourhood types: 10
+  all of the above for every odd d in 3..41: True
+  list of neighbourhood types (colour, degree, degrees seen through each neighbour) identical for all d >= 5: True; d = 3 has a subset: True (missing: [('minority', 2, ('3', '3')), ('minority', 3, ('2', '2', '3')), ('minority', 3, ('3', '3', '3'))])
+  the 10 types (d >= 5):
+      ('majority', 1, ('3',))
+      ('majority', 2, ('2', '2'))
+      ('majority', 2, ('2', '3'))
+      ('majority', 2, ('3', '3'))
+      ('minority', 2, ('2', '3'))
+      ('minority', 2, ('3', '3'))
+      ('minority', 3, ('2', '2', '3'))
+      ('minority', 3, ('2', '3', '3'))
+      ('minority', 3, ('2', '3', 'dangling'))
+      ('minority', 3, ('3', '3', '3'))
+==============================================================================================================
+C. certificate g(a->b) = x + y (deg b' - deg b) for a of degree 2 (b' = other neighbour of a), g = t for a dangling;
+   gamma(B) = min(2B/13, (1-2B)/3), x = B - gamma/2, y = 2 gamma, t = min(1/2, 2B - gamma)   [units Jz = 1]
+  all site inequalities and |g| <= 1/2 hold, d = 3..41, 58 values of B in (0, 1/2) for d <= 21 and 5 values above: True
+  table at B = 3/8 (gamma = 3/52):
+     x = 9/26, y = 3/26, t = 1/2; values: equal degrees 9/26, towards degree 2 from degree 3 6/13, towards degree 3 from degree 2 3/13, dangling 1/2
+     majority budget 2B - gamma = 9/13, minority demand 2B + gamma = 21/26
+     d=7 B= 1/100: gamma=  1/650 ok=True min slack maj=0 min=0 max|g|=6/325
+     d=7 B=   1/8: gamma=   1/52 ok=True min slack maj=0 min=0 max|g|=3/13
+     d=7 B=   1/4: gamma=   1/26 ok=True min slack maj=0 min=0 max|g|=6/13
+     d=7 B= 13/48: gamma=   1/24 ok=True min slack maj=0 min=0 max|g|=1/2
+     d=7 B=  5/16: gamma=  5/104 ok=True min slack maj=0 min=0 max|g|=1/2
+     d=7 B=   3/8: gamma=   3/52 ok=True min slack maj=0 min=0 max|g|=1/2
+     d=7 B= 13/32: gamma=   1/16 ok=True min slack maj=0 min=0 max|g|=1/2
+     d=7 B=  9/20: gamma=   1/30 ok=True min slack maj=0 min=0 max|g|=1/2
+     d=7 B=49/100: gamma=  1/150 ok=True min slack maj=0 min=0 max|g|=1/2
+  the same form with gamma(B) + 1e-6 violates an inequality or the range at 4 of 4 tested B (d = 7): True
+==============================================================================================================
+D. brute force over all non-empty D, d = 3 (n = 19, 524287 sets); exact integers
+   B= 1/100: min over D of cost - gamma_loc|D| = 2/65 (>= 0: True); exact min cost/|D| = 3/950; gamma_loc = 1/650; sets with cost <= 0: 0
+   B=   1/8: min over D of cost - gamma_loc|D| = 5/13 (>= 0: True); exact min cost/|D| = 3/76; gamma_loc = 1/52; sets with cost <= 0: 0
+   B=   1/4: min over D of cost - gamma_loc|D| = 5/13 (>= 0: True); exact min cost/|D| = 3/38; gamma_loc = 1/26; sets with cost <= 0: 0
+   B=  7/20: min over D of cost - gamma_loc|D| = 9/65 (>= 0: True); exact min cost/|D| = 1/10; gamma_loc = 7/130; sets with cost <= 0: 0
+   B=   3/8: min over D of cost - gamma_loc|D| = 1/13 (>= 0: True); exact min cost/|D| = 1/12; gamma_loc = 3/52; sets with cost <= 0: 0
+   B= 13/32: min over D of cost - gamma_loc|D| = 0 (>= 0: True); exact min cost/|D| = 1/16; gamma_loc = 1/16; sets with cost <= 0: 0
+   B=  9/20: min over D of cost - gamma_loc|D| = 0 (>= 0: True); exact min cost/|D| = 1/30; gamma_loc = 1/30; sets with cost <= 0: 0
+   B=49/100: min over D of cost - gamma_loc|D| = 0 (>= 0: True); exact min cost/|D| = 1/150; gamma_loc = 1/150; sets with cost <= 0: 0
+   B=0: sets with cost <= 0: 1 (the window 0 < B < 1/2 is exact: at its ends a set costs nothing)
+   B=1/2: sets with cost <= 0: 24 (the window 0 < B < 1/2 is exact: at its ends a set costs nothing)
+  brute force agrees with the lemma at d = 3: True
+==============================================================================================================
+E. exact min over D of cost(D)/|D| (Dinkelbach on integer minimum cuts) against the certified gamma_loc(B)
+   d    n     B   gamma_exact  gamma_loc  ratio loc/exact  |D*|
+   3   19  1/100       3/950     1/650   0.4872        19
+   3   19    1/8        3/76      1/52   0.4872        19
+   3   19    1/4        3/38      1/26   0.4872        19
+   3   19   5/16      13/136     5/104   0.5030        17
+   3   19    3/8        1/12      3/52   0.6923        6
+   3   19  13/32        1/16      1/16   1.0000        6
+   3   19   9/20        1/30      1/30   1.0000        6
+   3   19 49/100       1/150     1/150   1.0000        6
+   5   57  1/100       3/950     1/650   0.4872        57
+   5   57    1/8        3/76      1/52   0.4872        57
+   5   57    1/4        3/38      1/26   0.4872        57
+   5   57   5/16      43/440     5/104   0.4919        55
+   5   57    3/8        1/12      3/52   0.6923        6
+   5   57  13/32        1/16      1/16   1.0000        6
+   5   57   9/20        1/30      1/30   1.0000        6
+   5   57 49/100       1/150     1/150   1.0000        6
+   7  115  1/100     19/5750     1/650   0.4656        115
+   7  115    1/8      19/460      1/52   0.4656        115
+   7  115    1/4      19/230      1/26   0.4656        115
+   7  115   5/16      93/904     5/104   0.4673        113
+   7  115    3/8        1/12      3/52   0.6923        6
+   7  115  13/32        1/16      1/16   1.0000        6
+   7  115   9/20        1/30      1/30   1.0000        6
+   7  115 49/100       1/150     1/150   1.0000        6
+   9  193  1/100     33/9650     1/650   0.4499        193
+   9  193    1/8      33/772      1/52   0.4499        193
+   9  193    1/4      33/386      1/26   0.4499        193
+   9  193   5/16    163/1528     5/104   0.4507        191
+   9  193    3/8        1/12      3/52   0.6923        6
+   9  193  13/32        1/16      1/16   1.0000        6
+   9  193   9/20        1/30      1/30   1.0000        6
+   9  193 49/100       1/150     1/150   1.0000        6
+  11  291    1/8      17/388      1/52   0.4389        291
+  11  291    3/8        1/12      3/52   0.6923        6
+  11  291  13/32        1/16      1/16   1.0000        6
+  11  291   9/20        1/30      1/30   1.0000        6
+  13  409    1/8     73/1636      1/52   0.4310        409
+  13  409    3/8        1/12      3/52   0.6923        6
+  13  409  13/32        1/16      1/16   1.0000        6
+  13  409   9/20        1/30      1/30   1.0000        6
+  gamma_exact >= gamma_loc > 0 in every row: True
+  cross-check d=3 B=7/20: exact 1/10, quoted 1/10, equal: True
+  cross-check d=5 B=13/38: exact 2/19, quoted 2/19, equal: True
+  cross-check d=7 B=55/164: exact 9/82, quoted 9/82, equal: True
+  cross-check d=3 B=3/8: exact 1/12, quoted 1/12, equal: True
+  cross-check d=5 B=3/8: exact 1/12, quoted 1/12, equal: True
+  cross-check d=7 B=3/8: exact 1/12, quoted 1/12, equal: True
+  d = 3, B = 3/8: minimum cut gives 1/12; brute force gave the value printed in part D
+  decomposition H_cl - E_Neel = sum_i s_i n_i + sum_e t_e with s_i >= gamma + 2 mu, t_e >= 0, and the bound cost >= (gamma + 2 mu)|D|: exact on 1080 random configurations (d = 3, 5, 7): True
+==============================================================================================================
+ALL PARTS PASS: True    (12.1 s)

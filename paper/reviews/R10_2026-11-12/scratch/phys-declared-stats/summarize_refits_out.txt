@@ -1,0 +1,18 @@
+=== (a) replication of the stored predictions ===
+Jz 1.6 site reg   declared cross-validation re-run: same selection True ; max |prediction - stored| 1.2e-13
+Jz 1.6 site q_top fit at the stored hyperparameters, declared seed: max |prediction - stored| 1.4e-12
+Jz 1.6 site q_kry fit at the stored hyperparameters, declared seed: max |prediction - stored| 1.9e-12
+Jz 1.6 bond reg   declared cross-validation re-run: same selection True ; max |prediction - stored| 1.4e-14
+Jz 1.6 bond q_top fit at the stored hyperparameters, declared seed: max |prediction - stored| 5.5e-13
+Jz 1.6 bond q_kry fit at the stored hyperparameters, declared seed: max |prediction - stored| 3.8e-13
+
+=== (b) seed spread and lengths beyond the declared grid (all 121 labels, mean over six instances) ===
+Jz 1.6 q_top stored 0.7420 ; five other seeds 0.7236-0.7361 (mean 0.7299) ; oracle beyond the grid 0.6749 (-9.0 %; sites length 64 penalty 0.001, bonds length 32 penalty 1e-06)
+          ratio to the 19-site embedded cluster: stored 9.06 ; seeds 8.83-8.99 ; oracle 8.24 ; oracle better than emb19 in 0 of 6 instances
+Jz 1.6 q_kry stored 0.4331 ; five other seeds 0.4186-0.4356 (mean 0.4262) ; oracle beyond the grid 0.4099 (-5.3 %; sites length 16 penalty 1e-07, bonds length 16 penalty 1e-05)
+          ratio to the 19-site embedded cluster: stored 5.29 ; seeds 5.11-5.32 ; oracle 5.00 ; oracle better than emb19 in 0 of 6 instances
+Jz 2.5 q_top: not finished (site False, bond False)
+Jz 2.5 q_kry: not finished (site False, bond False)
+
+=== (c) exploratory combination: label + 13-site clusters against the stored stack (no label) ===
+Jz 1.6 family top site: combined 0.3242, stack 0.2967 (+9.3 %), combined better in 1/6 ; cv_mae combined 0.02289

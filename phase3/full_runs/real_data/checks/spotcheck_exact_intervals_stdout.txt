@@ -1,0 +1,48 @@
+n = 57: 126 certificate files, 120 distinct; m_s certificates at [3.4, 3.6, 4.0, 4.5, 5.0, 5.5, 6.0]
+  SPOT n=57 Jz=3.4 m_s: E_real=-57.763244012 M_real-M_0=-0.008297  10 bounds
+     I = [0.907761027, 0.964583222]  width/tau = 1.004239  width/tau_rf = 1.043266  certified = False / False  (sealed: [0.907761027, 0.964583222], False / False)
+     both ends equal to the sealed output as exact rationals: True;  real label 0.953217128 inside: True;  truth 0.943039472 inside: True
+     lower end from M_real, upper end from M_0
+     at M_real: [0.907761027, 0.964576131]  lower: direct v2_n57_eball2_m_s_m3.4_l0.125924 | upper: direct v2_n57_eball2_m_s_p3.4_l0.305157
+     at M_0   : [0.908798533, 0.964583222]  lower: direct v2_n57_eball2_m_s_m3.4_l0.125924 | upper: direct v2_n57_eball2_m_s_p3.4_l0.305157
+  SPOT n=57 Jz=3.5 m_s: E_real=-59.282080272 M_real-M_0=-0.007170  436 bounds
+     I = [0.914207730, 0.965891383]  width/tau = 0.910404  width/tau_rf = 0.942230  certified = True / True  (sealed: [0.914207730, 0.965891383], True / True)
+     both ends equal to the sealed output as exact rationals: True;  real label 0.955447861 inside: True;  truth 0.946166892 inside: True
+     lower end from M_real, upper end from M_0
+     at M_real: [0.914207730, 0.965884334]  lower: pair t=1/2 v2_n57_eball2_m_s_m3.4_l0.125924 + v2_n57_eball2_m_s_m3.6_l0.123765 | upper: pair t=1/2 v2_n57_eball2_m_s_p3.4_l0.305157 + v2_n57_eball2_m_s_p3.6_l0.304711
+     at M_0   : [0.915128208, 0.965891383]  lower: pair t=1/2 v2_n57_eball2_m_s_m3.4_l0.125924 + v2_n57_eball2_m_s_m3.6_l0.123765 | upper: pair t=1/2 v2_n57_eball2_m_s_p3.4_l0.305157 + v2_n57_eball2_m_s_p3.6_l0.304711
+  SPOT n=57 Jz=5.0 Czz_bar: E_real=-82.352457399 M_real-M_0=-0.001848  45 bounds
+     I = [-0.979059652, -0.960086807]  width/tau = 0.325838  width/tau_rf = 0.329360  certified = True / True  (sealed: [-0.979059652, -0.960086807], True / True)
+     both ends equal to the sealed output as exact rationals: True;  real label -0.973363688 inside: True;  truth -0.970463355 inside: True
+     lower end from M_real, upper end from M_real
+     at M_real: [-0.979059652, -0.960086807]  lower: J'=6.0 n57_eball2_H_6.0 | upper: J'=4.243818306254979 v2_n57_vball2_Czz_bar_p5.0_l0.189045
+     at M_0   : [-0.978924583, -0.960234989]  lower: J'=6.0 n57_eball2_H_6.0 | upper: J'=4.243818306254979 v2_n57_vball2_Czz_bar_p5.0_l0.189045
+  n = 57 m_s      tau   : CERTIFIED (exact) at 26 of 45 training couplings, J*_exact = 3.5
+  n = 57 m_s      tau_rf: CERTIFIED (exact) at 26 of 45 training couplings, J*_exact = 3.5
+  n = 57 Czz_bar  tau   : CERTIFIED (exact) at 27 of 45 training couplings, J*_exact = 3.4
+  n = 57 Czz_bar  tau_rf: CERTIFIED (exact) at 27 of 45 training couplings, J*_exact = 3.4
+n = 115: 20 certificate files, 20 distinct; m_s certificates at [4.0, 6.0]
+  SPOT n=115 Jz=4.0 m_s: E_real=-137.808900676 M_real-M_0=-0.011457  10 bounds
+     I = [0.943030372, 0.972709797]  width/tau = 0.514724  width/tau_rf = 0.524540  certified = True / True  (sealed: [0.943030372, 0.972709797], True / True)
+     both ends equal to the sealed output as exact rationals: True;  real label 0.964699401 inside: True;  truth 0.961015076 inside: True
+     lower end from M_real, upper end from M_real
+     at M_real: [0.943030372, 0.972709797]  lower: direct v2_n115_vball2_m_s_m4.0_l0.144973 | upper: direct v2_n115_vball2_m_s_p4.0_l0.272766
+     at M_0   : [0.943765886, 0.972695629]  lower: direct v2_n115_vball2_m_s_m4.0_l0.144973 | upper: direct v2_n115_vball2_m_s_p4.0_l0.272766
+  SPOT n=115 Jz=4.0 Czz_bar: E_real=-137.808900676 M_real-M_0=-0.011457  8 bounds
+     I = [-0.969401305, -0.940003572]  width/tau = 0.512383  width/tau_rf = 0.521234  certified = True / True  (sealed: [-0.969401305, -0.940003572], True / True)
+     both ends equal to the sealed output as exact rationals: True;  real label -0.959275164 inside: True;  truth -0.956241784 inside: True
+     lower end from M_real, upper end from M_real
+     at M_real: [-0.969401305, -0.940003572]  lower: J'=4.862476279282979 v2_n115_vball2_Czz_bar_m4.0_l0.215619 | upper: J'=3.4285355437265888 v2_n115_vball2_Czz_bar_p4.0_l0.142866
+     at M_0   : [-0.968964451, -0.940460814]  lower: J'=4.862476279282979 v2_n115_vball2_Czz_bar_m4.0_l0.215619 | upper: J'=3.4285355437265888 v2_n115_vball2_Czz_bar_p4.0_l0.142866
+  SPOT n=115 Jz=5.0 m_s: E_real=-169.688924834 M_real-M_0=-0.004743  10 bounds
+     I = [0.954550080, 0.985628695]  width/tau = 0.531328  width/tau_rf = 0.542640  certified = True / True  (sealed: [0.954550080, 0.985628695], True / True)
+     both ends equal to the sealed output as exact rationals: True;  real label 0.976833932 inside: True;  truth 0.974871617 inside: True
+     lower end from M_real, upper end from M_real
+     at M_real: [0.954550080, 0.985628695]  lower: pair t=1/2 v2_n115_vball2_m_s_m4.0_l0.106701 + v2_n115_vball2_m_s_m6.0_l0.201289 | upper: pair t=1/2 v2_n115_vball2_m_s_p4.0_l0.272766 + v2_n115_vball2_m_s_p6.0_l0.263435
+     at M_0   : [0.954913231, 0.985627703]  lower: pair t=1/2 v2_n115_vball2_m_s_m4.0_l0.106701 + v2_n115_vball2_m_s_m6.0_l0.201289 | upper: pair t=1/2 v2_n115_vball2_m_s_p4.0_l0.272766 + v2_n115_vball2_m_s_p6.0_l0.263435
+  n = 115 m_s      tau   : CERTIFIED (exact) at 21 of 45 training couplings, J*_exact = 4.0
+  n = 115 m_s      tau_rf: CERTIFIED (exact) at 21 of 45 training couplings, J*_exact = 4.0
+  n = 115 Czz_bar  tau   : CERTIFIED (exact) at 21 of 45 training couplings, J*_exact = 4.0
+  n = 115 Czz_bar  tau_rf: CERTIFIED (exact) at 21 of 45 training couplings, J*_exact = 4.0
+rows compared with the sealed output: 200; identical (both ends as exact rationals and both flags): 200
+certified rows whose label or truth lies outside the interval: []

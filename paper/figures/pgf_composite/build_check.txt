@@ -1,0 +1,9 @@
+pdflatex exit code 0
+errors:             0
+overfull:           0
+underfull:          0
+missing characters: 0
+warnings:           0
+natural size 17.79 cm x 12.45 cm; PDF 314 kB
+rendered fig_composite_300dpi.png
+rendered fig_composite_150dpi.png

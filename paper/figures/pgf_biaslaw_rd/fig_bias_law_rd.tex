@@ -1,0 +1,87 @@
+% fig_bias_law_rd.tex -- main Fig. 4 with the PUBLIC labels added to panel (a) (2026-11-12); otherwise identical to
+% ../fig_bias_law.tex. Data: data_biaslaw/*.dat (copies of ../data_biaslaw/, written by
+% phase3/full_runs/bias_law/code/bias_law.py from stored outputs) and pub_n*_J*.dat (the public labels at their
+% published energies), both placed here by export_biaslaw_rd.py. Compile in this folder with pdflatex.
+% 2026-11-13 (F2, editor-C-14): legend symbols in black (colour marks only the coupling); the four curves of (a)
+% labelled in place with their coupling (x axis extended to 0.3 to make room); (b): vertical axis 3e-4 to 30, shorter
+% axis title, the four curves labelled in place instead of a legend. Earlier version: ../_rd_v1_before_F2/pgf_biaslaw_rd/fig_bias_law_rd.tex.
+\documentclass[10pt,border=1pt]{standalone}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{amsmath}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\usepgfplotslibrary{groupplots}
+\usetikzlibrary{calc}
+\definecolor{cA}{HTML}{B5451B}
+\definecolor{cB}{HTML}{E08E0B}
+\definecolor{cC}{HTML}{1B8A8F}
+\definecolor{cD}{HTML}{2B3A67}
+\definecolor{cGrey}{HTML}{8C8C8C}
+\newcommand{\curve}[2]{\addplot[#1, line width=1.1pt, no markers, forget plot] table[x=de,y=dm] {data_biaslaw/curve19_J#2.dat};}
+\newcommand{\sA}[2]{\addplot[only marks, mark=o, mark size=1.5pt, #1, mark options={line width=0.5pt}, forget plot] table[x=de,y=dm] {data_biaslaw/states_n57_J#2.dat};}
+\newcommand{\sB}[2]{\addplot[only marks, mark=square, mark size=1.4pt, #1, mark options={line width=0.5pt}, forget plot] table[x=de,y=dm] {data_biaslaw/states_n115_J#2.dat};}
+\newcommand{\chord}[2]{\addplot[#1, densely dashed, thin, forget plot] table[x=de,y=dm] {data_biaslaw/chord_J#2.dat};}
+% the public labels at their published energies: filled, with a black rim (circle: n = 57, square: n = 115)
+\newcommand{\pA}[2]{\addplot[only marks, mark=*, mark size=2.3pt, mark options={draw=black, fill=#1, line width=0.6pt}, forget plot] table[x=de,y=dm] {pub_n57_J#2.dat};}
+\newcommand{\pB}[2]{\addplot[only marks, mark=square*, mark size=2.1pt, mark options={draw=black, fill=#1, line width=0.6pt}, forget plot] table[x=de,y=dm] {pub_n115_J#2.dat};}
+\begin{document}
+\begin{tikzpicture}
+\begin{groupplot}[
+  group style={group size=2 by 1, horizontal sep=1.55cm},
+  width=8.05cm, height=6.0cm,
+  tick label style={font=\footnotesize}, label style={font=\small},
+  unbounded coords=discard, filter discard warning=false,
+  every axis plot/.append style={line join=round},
+]
+\nextgroupplot[
+  xmode=log, ymode=log, xmin=4e-4, xmax=0.3, ymin=1.5e-4, ymax=0.6,
+  xlabel={energy error per site $\delta e$},
+  ylabel={bias $\Delta m_s$ of the label},
+  title={\small (a) one curve per coupling, from exact $n=19$}, title style={yshift=-3pt},
+  legend pos=south east, legend cell align=left,
+  legend style={font=\footnotesize, draw=none, fill=none, row sep=-1pt},
+]
+\curve{cA}{1.2}\sA{cA}{1.2}\sB{cA}{1.2}
+\curve{cB}{1.6}\sA{cB}{1.6}\sB{cB}{1.6}
+\curve{cC}{2.5}\sA{cC}{2.5}\sB{cC}{2.5}
+\curve{cD}{4.0}\sA{cD}{4.0}\sB{cD}{4.0}
+\chord{cA}{1.2}\chord{cB}{1.6}\chord{cC}{2.5}\chord{cD}{4.0}
+\addplot[only marks, mark=star, mark size=3.0pt, black, mark options={line width=0.9pt}, forget plot] table[x=de,y=dm] {data_biaslaw/device.dat};
+\pA{cA}{1.2}\pA{cB}{1.6}\pA{cC}{2.5}\pA{cD}{4.0}
+\pB{cA}{1.2}\pB{cB}{1.6}\pB{cC}{2.5}\pB{cD}{4.0}
+% the coupling of each curve, written at its right end (right of the end of its chord), in the colour of the curve
+\node[font=\footnotesize, text=cA, anchor=west, inner sep=1pt] at (axis cs:0.162,0.425) {$1.2$};
+\node[font=\footnotesize, text=cB, anchor=west, inner sep=1pt] at (axis cs:0.130,0.232) {$1.6$};
+\node[font=\footnotesize, text=cC, anchor=west, inner sep=1pt] at (axis cs:0.089,0.112) {$2.5$};
+\node[font=\footnotesize, text=cD, anchor=west, inner sep=1pt] at (axis cs:0.058,0.045) {$J_z=4.0$};
+% key of the public labels (black symbols: colour marks only the coupling)
+\addplot[only marks, mark=*, mark size=2.3pt, mark options={draw=black, fill=black, line width=0.6pt}, forget plot] coordinates {(6.6e-4,0.30)};
+\addplot[only marks, mark=square*, mark size=2.1pt, mark options={draw=black, fill=black, line width=0.6pt}, forget plot] coordinates {(9.0e-4,0.30)};
+\node[font=\footnotesize, anchor=west, inner sep=2pt] at (axis cs:1.02e-3,0.30) {public labels};
+% legend: the kind of data, in black
+\addlegendimage{black, line width=1.1pt}\addlegendentry{exact $n=19$, truncated}
+\addlegendimage{only marks, mark=o, mark size=1.5pt, black, mark options={line width=0.5pt}}\addlegendentry{$n=57$ emulated}
+\addlegendimage{only marks, mark=square, mark size=1.4pt, black, mark options={line width=0.5pt}}\addlegendentry{$n=115$ emulated}
+\addlegendimage{black, densely dashed, thin}\addlegendentry{chord to N\'eel}
+\addlegendimage{only marks, mark=star, mark size=3.0pt, black, mark options={line width=0.9pt}}\addlegendentry{$n=57$ processor}
+\nextgroupplot[
+  ymode=log, xmin=1.0, xmax=6.2, ymin=3e-4, ymax=30,
+  xlabel={coupling $J_z$},
+  ylabel={miss$\,/\,\tau$ of $m_s$ at $n=115$},
+  title={\small (b) the correction against classical extrapolations}, title style={yshift=-3pt},
+]
+\addplot[cGrey, line width=1.0pt, mark=triangle*, mark size=1.9pt] table[x=J,y=raw] {data_biaslaw/tie115.dat};
+\addplot[cC, line width=1.0pt, mark=*, mark size=1.5pt] table[x=J,y=corr] {data_biaslaw/tie115.dat};
+\addplot[black, densely dashed, line width=1.0pt, mark=diamond, mark size=2.0pt, mark options={solid}] table[x=J,y=extrap] {data_biaslaw/tie115.dat};
+\addplot[black, line width=1.0pt, mark=square*, mark size=1.3pt] table[x=J,y=sqrtn] {data_biaslaw/tie115.dat};
+\addplot[black, thin, densely dotted, domain=1:6.2, samples=2] {1};
+\node[font=\footnotesize, anchor=north east] at (axis cs:6.1,0.95) {tolerance $\tau$};
+% each curve named in place, in its colour (dashed: a+b/n, above its curve; solid: a+b/sqrt(n), below its curve)
+\node[font=\footnotesize, text=cGrey!70!black, anchor=south west, inner sep=1pt] at (axis cs:3.05,1.35) {label as generated};
+\node[font=\footnotesize, text=black, anchor=south west, inner sep=1pt] at (axis cs:3.75,0.030) {classical $a+b/n$};
+\node[font=\footnotesize, text=cC!80!black, anchor=west, align=left, inner sep=1pt] at (axis cs:2.62,0.0063) {corrected\\($n=57$ curve)};
+\node[font=\footnotesize, text=black, anchor=north west, inner sep=1pt] at (axis cs:3.35,0.00125) {classical $a+b/\sqrt{n}$};
+\end{groupplot}
+\end{tikzpicture}
+\end{document}

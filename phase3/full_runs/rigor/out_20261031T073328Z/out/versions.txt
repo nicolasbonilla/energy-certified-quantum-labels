@@ -1,0 +1,7 @@
+python 3.11.2 numpy 2.2.6 scipy 1.13.1
+CPU(s):                                  8
+Model name:                              Intel(R) Xeon(R) CPU @ 2.80GHz
+BIOS Model name:                           CPU @ 2.0GHz
+               total        used        free      shared  buff/cache   available
+Mem:              62           0          61           0           0          61
+/dev/sda         30G   26G  3.7G  88% /mnt/cj

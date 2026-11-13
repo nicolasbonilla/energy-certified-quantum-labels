@@ -1,0 +1,14 @@
+start of collection 2026-11-12T21:59:55Z
+declaration SHA-256 6dfbc5681a7b4708ba790e1dd3139d8efdcccb9ced24e5ab2ce4b5a7a209ffaa: hash file present and matching
+G1: {'gate': 'G1', 'hashes_ok': True, 'rerun': None, 'complete': False, 'pass': True}
+certificates: 220 files, 214 distinct by SHA-256, 140 used (n = 57: 120, n = 115: 20)
+n = 57: G2 True, G3 True, G4 True; building rows
+n = 57: 350 rows, 0 without decision
+n = 115: G2 True, G3 True, G4 True; building rows
+n = 115: 350 rows, 0 without decision
+S_sets.json written, SHA-256 e82b32a79abdc43c4cce0480e7d0e542cc0fc40e5fe5757c959acb10e433f97c
+G5: re-proving 17 deciding certificates with the independent verifier
+gates: {'G1': 'pass on what could be checked; not complete', 'G2_57': True, 'G3_57': True, 'G4_57': True, 'G2_115': True, 'G3_115': True, 'G4_115': True, 'G5a': True, 'G5b': True, 'G6a': 'pass on what could be checked; not complete', 'G6b': True, 'G7': True}
+written to C:\Users\Nicolas\Downloads\Proyecto_SQD_ML\P5_energy_certified_labels\work\phase3\full_runs\real_data\e1\map_e1
+
+exit code 0

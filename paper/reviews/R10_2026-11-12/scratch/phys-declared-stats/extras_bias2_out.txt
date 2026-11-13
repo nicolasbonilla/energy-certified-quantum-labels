@@ -1,0 +1,61 @@
+=== cubic learner in 1/Jz trained on the training couplings (Jz >= 1.6), tested at Jz = 1.1-1.4 ===
+  n=57 trained on raw       labels (10 couplings): test misses [8.785, 6.911, 5.519, 4.465]
+      min                                        mine 4.4648 stored 4.4648 OK
+      max                                        mine 8.7847 stored 8.7847 OK
+  n=57 trained on corrected labels (10 couplings): test misses [1.175, 0.726, 0.456, 0.291]
+      min                                        mine 0.2907 stored 0.2907 OK
+      max                                        mine 1.1752 stored 1.1752 OK
+  n=57 trained on exact     labels (10 couplings): test misses [0.2, 0.104, 0.05, 0.022]
+      min                                        mine 0.0220 stored 0.0220 OK
+      max                                        mine 0.1997 stored 0.1997 OK
+  n=115 trained on raw       labels (7 couplings): test misses [8.913, 7.414, 6.216, 5.253]
+      min                                        mine 5.2534 stored 5.2534 OK
+      max                                        mine 8.9130 stored 8.9130 OK
+  n=115 trained on corrected labels (7 couplings): test misses [1.995, 1.432, 1.057, 0.799]
+      min                                        mine 0.7992 stored 0.7992 OK
+      max                                        mine 1.9948 stored 1.9948 OK
+  n=115 trained on exact     labels (7 couplings): test misses [0.167, 0.088, 0.043, 0.019]
+      min                                        mine 0.0186 stored 0.0186 OK
+      max                                        mine 0.1667 stored 0.1667 OK
+  note: a cubic has 4 parameters; n=57 uses 10 training couplings, n=115 uses 7
+
+=== ceiling, energy-reference nulls ===
+  bias / (1 - m_s^GS) at n=115, Jz <= 1.6 (5 couplings): [0.902, 0.891, 0.879, 0.867, 0.84]
+  the same at n=57: [0.743, 0.719, 0.694, 0.665, 0.606]
+  n=115, E0 from a n + b edges fit (mean)        mine 0.3895 stored 0.3895 OK
+     max 0.982
+  n=57, e0_57_per_bond (mean)                    mine 0.4807 stored 0.4807 OK
+     max 1.054
+  n=57, e0_57_per_site (mean)                    mine 1.0385 stored 1.0385 OK
+     max 3.010
+
+=== log-log slope of the n=19 curves (stored: {'1.2_high': 0.438, '2.5_low': 0.853, '2.5_high': 0.39, '4.0_low': 0.897, '4.0_high': 0.561}) ===
+  J=1.1  low: n/a (2 pts) ; high: 0.459 (14 pts)
+  J=1.2  low: n/a (2 pts) ; high: 0.438 (14 pts)
+  J=1.3  low: 0.854 (3 pts) ; high: 0.438 (13 pts)
+  J=1.4  low: n/a (2 pts) ; high: 0.433 (12 pts)
+  J=1.6  low: n/a (2 pts) ; high: 0.392 (13 pts)
+  J=1.8  low: 0.852 (3 pts) ; high: 0.393 (12 pts)
+  J=2.0  low: 0.815 (3 pts) ; high: 0.369 (10 pts)
+  J=2.2  low: 0.787 (3 pts) ; high: 0.393 (10 pts)
+  J=2.5  low: 0.853 (4 pts) ; high: 0.390 (9 pts)
+  J=3.0  low: 0.765 (3 pts) ; high: 0.348 (7 pts)
+  J=3.5  low: 0.748 (4 pts) ; high: 0.363 (5 pts)
+  J=4.0  low: 0.897 (4 pts) ; high: 0.561 (4 pts)
+  J=5.0  low: 0.783 (4 pts) ; high: 0.670 (4 pts)
+  J=6.0  low: n/a (2 pts) ; high: 0.984 (3 pts)
+
+=== internal checks on the biased family (n=57): slope of E(Jz) against the label ===
+  n=57 ratio |slope - truth| / |label - truth| per coupling: 1.1: 1.003, 1.2: 0.983, 1.3: 1.008, 1.4: 1.047, 1.6: 1.013, 1.8: 0.978, 2.0: 0.953, 2.2: 0.991, 2.5: 1.053, 3.0: 0.958, 3.5: 0.820, 4.0: 0.670, 5.0: 0.174, 6.0: 2.415
+       range for Jz <= 2.5: 0.953-1.053 ; over all couplings: 0.174-2.415 ; hull fraction max 0.0061
+  n=115 ratio |slope - truth| / |label - truth| per coupling: 1.1: 1.001, 1.2: 0.998, 1.3: 0.996, 1.4: 1.000, 1.6: 1.006, 2.0: 0.994, 2.5: 1.000, 3.0: 1.001, 4.0: 0.992, 5.0: 0.969, 6.0: 0.520
+       range for Jz <= 2.5: 0.994-1.006 ; over all couplings: 0.520-1.006 ; hull fraction max 0.0010
+
+=== stored spread numbers ===
+  ratio_to_curve_min = 0.8761
+  ratio_to_curve_max = 1.2432
+  spread_pct_low = 12.3946
+  spread_pct_high = 24.3235
+  ceiling_pct_min = 83.9592
+  ceiling_pct_max = 90.1594
+  published comparison: [(57, 1.6, 18.4), (57, 2.5, 39.4), (57, 4.0, 29.5), (115, 1.6, 27.2), (115, 2.5, 51.5)]

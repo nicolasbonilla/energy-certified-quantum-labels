@@ -1,0 +1,25 @@
+{
+ "n": 57,
+ "Jz": 6.0,
+ "kind": "R1b",
+ "stages": [
+  {
+   "tag": "chi480",
+   "E": -98.01412720041904,
+   "m_s": 0.9813960025124985,
+   "dmrg": {
+    "E_dmrg": -98.01412720041894,
+    "sweeps": 7,
+    "time_s": 250.47140860557556,
+    "dE_last": -3.126388037344441e-13,
+    "max_trunc_err": 1.084826770459369e-15,
+    "last_trunc_err": 6.69989691404955e-18,
+    "chi_max_reached": 480,
+    "norm_test_before": 3.941516769577129e-14,
+    "canonicalized": false,
+    "warnings": []
+   },
+   "sid": "n57_J6.0_R1_chi480"
+  }
+ ]
+}

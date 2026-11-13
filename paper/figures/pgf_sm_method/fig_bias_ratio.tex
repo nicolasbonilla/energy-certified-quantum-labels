@@ -1,0 +1,132 @@
+% fig_bias_ratio.tex -- native PGFPlots version of Supplemental Fig. S1 (was figS1_bias_vs_ratio.py).
+% Data: dat/fam_*.dat, written by export_sm_method.py. Compile here with pdflatex.
+\documentclass[10pt,border=1pt]{standalone}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{amsmath}
+\usepackage{pgfplots}
+\usepackage{pgfplotstable}
+\pgfplotsset{compat=1.18}
+\usepgfplotslibrary{groupplots}
+% J_z colours as in fig_bias_law.tex; magenta for the rotation variants (caption: "magenta circles")
+\definecolor{cA}{HTML}{B5451B}
+\definecolor{cB}{HTML}{E08E0B}
+\definecolor{cC}{HTML}{1B8A8F}
+\definecolor{cD}{HTML}{2B3A67}
+\definecolor{cMag}{HTML}{C0189C}
+\definecolor{cInk}{HTML}{0B0B0B}
+\definecolor{cMuted}{HTML}{52514E}
+\pgfdeclareplotmark{fstar}{%
+  \pgfpathmoveto{\pgfqpointpolar{90}{\pgfplotmarksize}}%
+  \pgfpathlineto{\pgfqpointpolar{126}{0.42\pgfplotmarksize}}\pgfpathlineto{\pgfqpointpolar{162}{\pgfplotmarksize}}%
+  \pgfpathlineto{\pgfqpointpolar{198}{0.42\pgfplotmarksize}}\pgfpathlineto{\pgfqpointpolar{234}{\pgfplotmarksize}}%
+  \pgfpathlineto{\pgfqpointpolar{270}{0.42\pgfplotmarksize}}\pgfpathlineto{\pgfqpointpolar{306}{\pgfplotmarksize}}%
+  \pgfpathlineto{\pgfqpointpolar{342}{0.42\pgfplotmarksize}}\pgfpathlineto{\pgfqpointpolar{18}{\pgfplotmarksize}}%
+  \pgfpathlineto{\pgfqpointpolar{54}{0.42\pgfplotmarksize}}\pgfpathclose\pgfusepathqfillstroke}
+% one marker per family, as in fig_mechanism.tex
+\pgfplotsset{
+  fRR/.style={#1, line width=0.8pt, mark=*, mark size=1.4pt, mark options={solid}},
+  fProj/.style={#1, line width=0.6pt, densely dotted, mark=x, mark size=1.9pt, mark options={solid, line width=0.6pt}},
+  fTop/.style={#1, line width=0.6pt, mark=pentagon, mark size=1.9pt, mark options={solid, fill=white, line width=0.6pt}},
+  fKi/.style={#1, line width=0.5pt, mark=square, mark size=1.4pt, mark options={solid, fill=white, line width=0.5pt}},
+  fKf/.style={#1, line width=0.5pt, mark=square*, mark size=1.4pt, mark options={solid}},
+  fPipe/.style={only marks, mark=fstar, mark size=3.1pt, mark options={draw=black, fill=#1, line width=0.3pt}},
+  fIbm/.style={only marks, mark=diamond*, mark size=2.6pt, mark options={draw=black, fill=black}},
+  fIbmX/.style={only marks, mark=diamond*, mark size=2.6pt, mark options={draw=black, fill=white, line width=0.7pt}},
+  fBo/.style={only marks, mark=o, mark size=2.3pt, mark options={draw=cMag, line width=0.8pt}},
+  fRep/.style={#1, line width=0.7pt, densely dotted},
+  ylab/.style={yticklabel style={/pgf/number format/fixed, /pgf/number format/precision=#1,
+    /pgf/number format/fixed zerofill}},
+}
+\newcommand{\F}[3]{\addplot[#1] table[x=ratio, y=dms] {dat/fam_#2_#3.dat};}
+\newcommand{\Bo}[1]{\addplot[fBo] table[x=ratio, y=dmsrot] {dat/fam_#1_bo.dat};}
+\newcommand{\Rep}[2]{\addplot[fRep=#2] coordinates {(#1,-1) (#1,1)};}
+\begin{document}
+\pgfplotstableread{dat/fam_n57_J1.6_ibm.dat}\tib\pgfplotstablegetelem{0}{ratio}\of\tib\let\rAb\pgfplotsretval
+\pgfplotstableread{dat/fam_n57_J2.5_ibm.dat}\tib\pgfplotstablegetelem{0}{ratio}\of\tib\let\rAc\pgfplotsretval
+\pgfplotstableread{dat/fam_n57_J4.0_ibm.dat}\tib\pgfplotstablegetelem{0}{ratio}\of\tib\let\rAd\pgfplotsretval
+\pgfplotstableread{dat/fam_n115_J1.6_ibm.dat}\tib\pgfplotstablegetelem{0}{ratio}\of\tib\let\rBb\pgfplotsretval
+\pgfplotstableread{dat/fam_n115_J2.5_ibm.dat}\tib\pgfplotstablegetelem{0}{ratio}\of\tib\let\rBc\pgfplotsretval
+\begin{tikzpicture}
+\begin{groupplot}[
+  group style={group size=4 by 2, horizontal sep=1.12cm, vertical sep=1.2cm, xlabels at=edge bottom,
+    ylabels at=edge left},
+  scale only axis, width=3.12cm, height=2.95cm,
+  xmode=log, log ticks with fixed point, scaled y ticks=false,
+  tick label style={font=\footnotesize}, label style={font=\small},
+  title style={font=\small, yshift=-3pt},
+  axis line style={cMuted, line width=0.5pt}, tick style={cMuted, line width=0.5pt},
+  xtick align=inside, ytick align=outside, ytick pos=left, xtick pos=bottom,
+  every axis plot/.append style={line join=round},
+  xlabel={$r=(E-E_0)/(E_1-E_0)$}, ylabel={$m_s-m_s^{\rm GS}$},
+  clip=true,
+]
+% ---------------- n = 57, J_z = 1.2 (no energy reported at the OOD point) ----------------
+\nextgroupplot[title={$n=57$, $J_z=1.2$}, xmin=2.5, xmax=40, xtick={3,5,10,20},
+  ymin=-0.012, ymax=0.35, ytick={0,0.1,0.2,0.3}, ylab=1]
+\addplot[cInk, line width=0.4pt] coordinates {(1e-3,0) (1e3,0)};
+\F{fProj=cA}{n57_J1.2}{gs_projected}\F{fRR=cA}{n57_J1.2}{gs_random}\F{fTop=cA}{n57_J1.2}{gs_top}
+\F{fKi=cA}{n57_J1.2}{kscan_ideal}\F{fKf=cA}{n57_J1.2}{kscan_floor}\F{fPipe=cA}{n57_J1.2}{pipe}\Bo{n57_J1.2}
+% ---------------- n = 57, J_z = 1.6 ----------------
+\nextgroupplot[title={$n=57$, $J_z=1.6$}, xmin=1.1, xmax=9.5, xtick={2,3,5},
+  ymin=-0.008, ymax=0.215, ytick={0,0.05,...,0.21}, ylab=2]
+\addplot[cInk, line width=0.4pt] coordinates {(1e-3,0) (1e3,0)};
+\Rep{\rAb}{cB}
+\F{fProj=cB}{n57_J1.6}{gs_projected}\F{fRR=cB}{n57_J1.6}{gs_random}\F{fTop=cB}{n57_J1.6}{gs_top}
+\F{fPipe=cB}{n57_J1.6}{pipe}\F{fIbmX}{n57_J1.6}{ibm}
+% ---------------- n = 57, J_z = 2.5 ----------------
+\nextgroupplot[title={$n=57$, $J_z=2.5$}, xmin=0.14, xmax=2.4, xtick={0.2,0.5,1,2},
+  ymin=-0.004, ymax=0.085, ytick={0,0.02,...,0.081}, ylab=2]
+\addplot[cInk, line width=0.4pt] coordinates {(1e-3,0) (1e3,0)};
+\Rep{\rAc}{cC}
+\F{fProj=cC}{n57_J2.5}{gs_projected}\F{fRR=cC}{n57_J2.5}{gs_random}\F{fTop=cC}{n57_J2.5}{gs_top}
+\F{fKi=cC}{n57_J2.5}{kscan_ideal}\F{fKf=cC}{n57_J2.5}{kscan_floor}\F{fPipe=cC}{n57_J2.5}{pipe}\Bo{n57_J2.5}
+\F{fIbm}{n57_J2.5}{ibm}
+% ---------------- n = 57, J_z = 4.0 ----------------
+\nextgroupplot[title={$n=57$, $J_z=4.0$}, xmin=0.02, xmax=0.55, xtick={0.05,0.1,0.2,0.5},
+  ymin=-0.001, ymax=0.0265, ytick={0,0.01,0.02}, ylab=2]
+\addplot[cInk, line width=0.4pt] coordinates {(1e-3,0) (1e3,0)};
+\Rep{\rAd}{cD}
+\F{fProj=cD}{n57_J4.0}{gs_projected}\F{fRR=cD}{n57_J4.0}{gs_random}\F{fPipe=cD}{n57_J4.0}{pipe}
+\F{fIbm}{n57_J4.0}{ibm}
+% ---------------- n = 115, J_z = 1.2 ----------------
+\nextgroupplot[title={$n=115$, $J_z=1.2$}, xmin=36, xmax=90, xtick={40,50,60,80},
+  ymin=-0.012, ymax=0.35, ytick={0,0.1,0.2,0.3}, ylab=1]
+\addplot[cInk, line width=0.4pt] coordinates {(1e-3,0) (1e3,0)};
+\F{fProj=cA}{n115_J1.2}{gs_projected}\F{fRR=cA}{n115_J1.2}{gs_random}\F{fTop=cA}{n115_J1.2}{gs_top}
+\F{fKi=cA}{n115_J1.2}{kscan_ideal}\F{fKf=cA}{n115_J1.2}{kscan_floor}\F{fPipe=cA}{n115_J1.2}{pipe}
+% ---------------- n = 115, J_z = 1.6 ----------------
+\nextgroupplot[title={$n=115$, $J_z=1.6$}, xmin=2.3, xmax=26, xtick={3,5,10,20},
+  ymin=-0.008, ymax=0.215, ytick={0,0.05,...,0.21}, ylab=2]
+\addplot[cInk, line width=0.4pt] coordinates {(1e-3,0) (1e3,0)};
+\Rep{\rBb}{cB}
+\F{fProj=cB}{n115_J1.6}{gs_projected}\F{fRR=cB}{n115_J1.6}{gs_random}\F{fTop=cB}{n115_J1.6}{gs_top}
+\F{fPipe=cB}{n115_J1.6}{pipe}\F{fIbmX}{n115_J1.6}{ibm}
+% ---------------- n = 115, J_z = 2.5 ----------------
+\nextgroupplot[title={$n=115$, $J_z=2.5$}, xmin=0.4, xmax=6.2, xtick={0.5,1,2,5},
+  ymin=-0.004, ymax=0.092, ytick={0,0.02,...,0.081}, ylab=2]
+\addplot[cInk, line width=0.4pt] coordinates {(1e-3,0) (1e3,0)};
+\Rep{\rBc}{cC}
+\F{fProj=cC}{n115_J2.5}{gs_projected}\F{fRR=cC}{n115_J2.5}{gs_random}\F{fTop=cC}{n115_J2.5}{gs_top}
+\F{fKi=cC}{n115_J2.5}{kscan_ideal}\F{fKf=cC}{n115_J2.5}{kscan_floor}\F{fPipe=cC}{n115_J2.5}{pipe}
+\F{fIbmX}{n115_J2.5}{ibm}
+% ---------------- key ----------------
+\nextgroupplot[hide axis, xmode=normal, xmin=0, xmax=1, ymin=0, ymax=1, xlabel={}, ylabel={},
+  legend cell align=left,
+  legend style={font=\footnotesize, draw=none, fill=none, at={(-0.20,1.0)}, anchor=north west, row sep=-0.5pt,
+    inner sep=0pt},
+  legend image code/.code={\draw[mark repeat=2, mark phase=2] plot coordinates {(0cm,0cm) (0.25cm,0cm) (0.5cm,0cm)};},
+]
+\addlegendimage{fRR=cMuted}\addlegendentry{perfect samples, RR}
+\addlegendimage{fTop=cMuted}\addlegendentry{most-probable subsets, RR}
+\addlegendimage{fProj=cMuted}\addlegendentry{support only}
+\addlegendimage{fKi=cMuted}\addlegendentry{Krylov, no noise}
+\addlegendimage{fKf=cMuted}\addlegendentry{Krylov, $1\%$ flips}
+\addlegendimage{fPipe=cMuted}\addlegendentry{pipeline variants}
+\addlegendimage{fRep=cMuted}\addlegendentry{reported $r$ of the dataset}
+\addlegendimage{fIbm}\addlegendentry{bias read there}
+\addlegendimage{fIbmX}\addlegendentry{the same, extrapolated}
+\addlegendimage{fBo}\addlegendentry{rotation variants}
+\end{groupplot}
+\end{tikzpicture}
+\end{document}

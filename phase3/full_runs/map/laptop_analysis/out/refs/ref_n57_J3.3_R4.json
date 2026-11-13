@@ -1,0 +1,24 @@
+{
+ "n": 57,
+ "Jz": 3.3,
+ "kind": "R4",
+ "stages": [
+  {
+   "tag": "R4",
+   "E": -53.689284302268476,
+   "dmrg": {
+    "E_dmrg": -53.68928430226896,
+    "sweeps": 18,
+    "time_s": 150.09362125396729,
+    "dE_last": -6.44959641249443e-11,
+    "max_trunc_err": 2.0221797459807684e-06,
+    "last_trunc_err": 2.1866983131227446e-11,
+    "chi_max_reached": 200,
+    "norm_test_before": 4.6477785688124924e-15,
+    "canonicalized": false,
+    "warnings": []
+   },
+   "sid": "n57_J3.3_R4_sz_plus"
+  }
+ ]
+}

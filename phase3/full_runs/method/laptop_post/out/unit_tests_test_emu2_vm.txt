@@ -1,0 +1,9 @@
+test_H_labels_two_words_vs_dense (__main__.TestEmu2.test_H_labels_two_words_vs_dense) ... ok
+test_cset_lookup_unique (__main__.TestEmu2.test_cset_lookup_unique) ... ok
+test_equal_to_pilot3_at_n57 (__main__.TestEmu2.test_equal_to_pilot3_at_n57) ... ok
+test_recover_noise_two_words (__main__.TestEmu2.test_recover_noise_two_words) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 15.626s
+
+OK

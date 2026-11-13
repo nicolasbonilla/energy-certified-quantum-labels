@@ -1,0 +1,57 @@
+pinned archive : quantum-groundstate-learning-6b8866b66d62aaf3ee815cd14fa58e9bf4629d66.tar.gz | sha256 13aa8e69c9bc614c72c5a415ecd889f113eabe95eec81e221174b3f14dedbb91 | bytes 778170
+   top folder  : quantum-groundstate-learning-6b8866b66d62aaf3ee815cd14fa58e9bf4629d66 | pax global header: {'comment': '6b8866b66d62aaf3ee815cd14fa58e9bf4629d66'}
+first-look arch: repo_main.tar.gz | sha256 9ff134ece3c804f36ed134118dbcfa00d2029b8d3f950997d3d2d959674dca52 | bytes 778499
+   top folder  : quantum-groundstate-learning-main | pax global header: {'comment': '6b8866b66d62aaf3ee815cd14fa58e9bf4629d66'}
+
+members: pinned 378 files / 419 entries; first-look 378 files / 419 entries
+non-regular members (links, devices ...): none
+files only in pinned: none
+files only in first-look: none
+files with different content: none
+ARCHIVES IDENTICAL IN CONTENT: True
+member names that are absolute or climb out of the folder: none
+
+API tree: sha 6b8866b66d62aaf3ee815cd14fa58e9bf4629d66 | truncated: False | entries 419
+files in the archive missing from the API tree: none
+blobs of the API tree missing from the archive: none
+git blob SHA-1 mismatches: none | size mismatches: none
+EVERY FILE EQUALS THE GIT BLOB OF THE COMMIT TREE: True (378 files)
+git modes in the tree: {'100644': 378, '040000': 41}
+
+licence file: LICENSE | bytes 11357 | sha256 c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4
+   first line: Apache License
+text copies written to code_as_text/: 76
+
+files by folder and extension (count, bytes):
+   .                                                    (none)      2     12022
+   .                                                    .md         1      7267
+   .                                                    .txt        1      1491
+   .                                                    .yml        1      1481
+   cmaps                                                .txt        2      1180
+   data/spins_115/dmrg                                  .pkl       51    531012
+   data/spins_115/skqd                                  .pkl      100    705280
+   data/spins_57/dmrg                                   .pkl       51    264078
+   data/spins_57/skqd                                   .pkl      100    188050
+   data/spins_57/skqd                                   .py         2     10865
+   data_generation/basis_optimization                   .py         2     33934
+   data_generation/classical_simulation                 .py         1      8908
+   data_generation/dmrg                                 .py         1      4902
+   data_generation/observables                          .py         1      8293
+   data_generation/qpu                                  .py         3     10276
+   figures/fig1_overview                                .py         1      7684
+   figures/fig2_data_accuracy                           .py         3     50896
+   figures/fig3_in_distribution_ml                      .py         1     16007
+   figures/fig4_phase_boundary_ml                       .py         4     65888
+   figures/supplementary                                .py         4     58897
+   ml_training                                          .py         6     66792
+   qaml/analysis                                        .py         3     11415
+   qaml/diagonalisation                                 .py         3      7876
+   qaml/graph                                           .py         3      4164
+   qaml/ml                                              .py        12     58191
+   qaml/observables                                     .py         5     12737
+   qaml/skqd                                            .py         6     45458
+   qaml/trotter_circuits                                .py         2      3399
+   qaml/visualisation                                   .py         2     10450
+   utils                                                .py         4     84529
+
+files that are neither data pickles nor text (not copied as text):

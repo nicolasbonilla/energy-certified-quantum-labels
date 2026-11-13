@@ -1,0 +1,12 @@
+(a) checked states of the emulation: pipeline states 103 + subsets of perfect samples 44 = 147 (103 + 44 = 147 expected)
+    by size: {57: 87, 115: 60} ; states with a site, a nearest-neighbour correlation or a loop NOT more ordered than the reference: 0
+
+(b) Jz 1.6 site q_top selected: kind rff, length 8, penalty 1e-05 ; lengths of the grid ['2', '4', '8']
+(b) Jz 1.6 site q_kry selected: kind rff, length 8, penalty 1e-05 ; lengths of the grid ['2', '4', '8']
+(b) Jz 1.6 bond q_top selected: kind rff, length 8, penalty 1e-05 ; lengths of the grid ['2', '4', '8']
+(b) Jz 1.6 bond q_kry selected: kind rff, length 8, penalty 1e-05 ; lengths of the grid ['2', '4', '8']
+(b) Jz 2.5 site q_top selected: kind rff, length 8, penalty 1e-05 ; lengths of the grid ['2', '4', '8']
+(b) Jz 2.5 site q_kry selected: kind rff, length 8, penalty 1e-05 ; lengths of the grid ['2', '4', '8']
+(b) Jz 2.5 bond q_top selected: kind rff, length 8, penalty 1e-05 ; lengths of the grid ['2', '4', '8']
+(b) Jz 2.5 bond q_kry selected: kind rff, length 8, penalty 1e-05 ; lengths of the grid ['2', '4', '8']
+(b) quantum-side fits: 8 ; fits that selected the greatest length of the declared grid {2, 4, 8}: 8 of 8

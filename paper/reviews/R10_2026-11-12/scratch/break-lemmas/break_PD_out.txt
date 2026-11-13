@@ -1,0 +1,60 @@
+PART A. the inequality on new regions and models
+open 3x4 square lattice, Jz = 1.0, staggered field on column 0: dim 924, sector gap 1.1524, m_s(GS) = +0.6788
+   columns 2,3; reflection x              |R|= 6 crossing=3 kappa= 3.000 H_R-invariance err 4e-16 swaps sublattices True | cost(U psi0)  1.5741  m_s +0.679->+0.155 (c_R 0.5234, check 1e-16)  max|dE| on 8 states  0.386  exact E*(-c_R) in [0.49673, 0.49673] = 0.166 of the bound  ok
+   columns 1,2 (interior); reflection x   |R|= 6 crossing=6 kappa= 6.000 H_R-invariance err 9e-16 swaps sublattices True | cost(U psi0)  3.2458  m_s +0.679->+0.049 (c_R 0.6303, check 3e-16)  max|dE| on 8 states  0.729  exact E*(-c_R) in [0.69786, 0.69786] = 0.116 of the bound  ok
+   2x2 corner block; reflection x         |R|= 4 crossing=4 kappa= 4.000 H_R-invariance err 4e-16 swaps sublattices True | cost(U psi0)  2.2388  m_s +0.679->+0.334 (c_R 0.3451, check 1e-16)  max|dE| on 8 states  0.475  exact E*(-c_R) in [0.23735, 0.23735] = 0.059 of the bound  ok
+   2x2 corner block; reflection y         |R|= 4 crossing=4 kappa= 4.000 H_R-invariance err 9e-16 swaps sublattices True | cost(U psi0)  2.2132  m_s +0.679->+0.334 (c_R 0.3451, check 2e-16)  max|dE| on 8 states  0.597  exact E*(-c_R) in [0.23735, 0.23735] = 0.059 of the bound  ok
+   single bond (3,0)-(3,1); swap          |R|= 2 crossing=3 kappa= 3.000 H_R-invariance err 0e+00 swaps sublattices True | cost(U psi0)  1.8755  m_s +0.679->+0.512 (c_R 0.1666, check 8e-17)  max|dE| on 8 states  0.383  exact E*(-c_R) in [0.06465, 0.06465] = 0.022 of the bound  ok
+   CONTROL columns 2,3; partial swap      |R|= 6 crossing=3 kappa= 3.000 H_R-invariance err 2e+00 swaps sublattices True | cost(U psi0)  1.7407  m_s +0.679->+0.155 (c_R 0.5234, check 1e-16)  max|dE| on 8 states  0.419   [CONTROL: hypothesis violated; |dE| within kappa]
+open 3x4 square lattice, Jz = 2.5, staggered field on column 0: dim 924, sector gap 2.9468, m_s(GS) = +0.9458
+   columns 2,3; reflection x              |R|= 6 crossing=3 kappa= 5.250 H_R-invariance err 9e-16 swaps sublattices True | cost(U psi0)  3.6749  m_s +0.946->+0.019 (c_R 0.9272, check 3e-16)  max|dE| on 8 states  0.935  exact E*(-c_R) in [2.47986, 2.47986] = 0.472 of the bound  ok
+   columns 1,2 (interior); reflection x   |R|= 6 crossing=6 kappa=10.500 H_R-invariance err 2e-15 swaps sublattices True | cost(U psi0)  7.5173  m_s +0.946->+0.003 (c_R 0.9428, check 0e+00)  max|dE| on 8 states  1.652  exact E*(-c_R) in [2.52435, 2.52435] = 0.240 of the bound  ok
+   2x2 corner block; reflection x         |R|= 4 crossing=4 kappa= 7.000 H_R-invariance err 9e-16 swaps sublattices True | cost(U psi0)  4.9238  m_s +0.946->+0.328 (c_R 0.6181, check 0e+00)  max|dE| on 8 states  1.206  exact E*(-c_R) in [1.60633, 1.60633] = 0.229 of the bound  ok
+   2x2 corner block; reflection y         |R|= 4 crossing=4 kappa= 7.000 H_R-invariance err 9e-16 swaps sublattices True | cost(U psi0)  4.9268  m_s +0.946->+0.328 (c_R 0.6181, check 0e+00)  max|dE| on 8 states  1.029  exact E*(-c_R) in [1.60633, 1.60633] = 0.229 of the bound  ok
+   single bond (3,0)-(3,1); swap          |R|= 2 crossing=3 kappa= 5.250 H_R-invariance err 0e+00 swaps sublattices True | cost(U psi0)  3.7548  m_s +0.946->+0.639 (c_R 0.3064, check 0e+00)  max|dE| on 8 states  0.939  exact E*(-c_R) in [0.74223, 0.74223] = 0.141 of the bound  ok
+   CONTROL columns 2,3; partial swap      |R|= 6 crossing=3 kappa= 5.250 H_R-invariance err 4e+00 swaps sublattices True | cost(U psi0)  3.7881  m_s +0.946->+0.019 (c_R 0.9272, check 3e-16)  max|dE| on 8 states  1.109   [CONTROL: hypothesis violated; |dE| within kappa]
+open 3x4 square lattice, Jz = 4.0, staggered field on column 0: dim 924, sector gap 5.2730, m_s(GS) = +0.9781
+   columns 2,3; reflection x              |R|= 6 crossing=3 kappa= 7.500 H_R-invariance err 9e-16 swaps sublattices True | cost(U psi0)  5.9388  m_s +0.978->+0.005 (c_R 0.9727, check 0e+00)  max|dE| on 8 states  1.240  exact E*(-c_R) in [2.88375, 2.88375] = 0.384 of the bound  ok
+   columns 1,2 (interior); reflection x   |R|= 6 crossing=6 kappa=15.000 H_R-invariance err 2e-15 swaps sublattices True | cost(U psi0) 11.9956  m_s +0.978->+0.000 (c_R 0.9778, check 0e+00)  max|dE| on 8 states  2.494  exact E*(-c_R) in [2.89892, 2.89892] = 0.193 of the bound  ok
+   2x2 corner block; reflection x         |R|= 4 crossing=4 kappa=10.000 H_R-invariance err 9e-16 swaps sublattices True | cost(U psi0)  7.9306  m_s +0.978->+0.330 (c_R 0.6486, check 1e-16)  max|dE| on 8 states  2.047  exact E*(-c_R) in [1.91811, 1.91811] = 0.192 of the bound  ok
+   2x2 corner block; reflection y         |R|= 4 crossing=4 kappa=10.000 H_R-invariance err 9e-16 swaps sublattices True | cost(U psi0)  7.9365  m_s +0.978->+0.330 (c_R 0.6486, check 2e-16)  max|dE| on 8 states  1.705  exact E*(-c_R) in [1.91811, 1.91811] = 0.192 of the bound  ok
+   single bond (3,0)-(3,1); swap          |R|= 2 crossing=3 kappa= 7.500 H_R-invariance err 0e+00 swaps sublattices True | cost(U psi0)  5.9826  m_s +0.978->+0.655 (c_R 0.3231, check 3e-16)  max|dE| on 8 states  1.245  exact E*(-c_R) in [0.94892, 0.94892] = 0.127 of the bound  ok
+   CONTROL columns 2,3; partial swap      |R|= 6 crossing=3 kappa= 7.500 H_R-invariance err 5e+00 swaps sublattices True | cost(U psi0)  6.0135  m_s +0.978->+0.005 (c_R 0.9727, check 0e+00)  max|dE| on 8 states  1.237   [CONTROL: hypothesis violated; |dE| within kappa]
+open J1-J2 XXZ chain N=14 (J2 = 0.3, Jz = 1.0), field on site 0: dim 3432, sector gap 0.2280, m_s(GS) = +0.3050
+   last 2 sites; reflection               |R|= 2 crossing=3 kappa= 1.600 H_R-invariance err 0e+00 swaps sublattices True | cost(U psi0)  0.1528  m_s +0.305->+0.282 (c_R 0.0234, check 1e-16)  max|dE| on 8 states  0.036  exact E*(-c_R) in [0.00046, 0.00046] = 0.000 of the bound  ok
+   last 4 sites; reflection               |R|= 4 crossing=3 kappa= 1.600 H_R-invariance err 4e-16 swaps sublattices True | cost(U psi0)  0.1859  m_s +0.305->+0.243 (c_R 0.0625, check 8e-17)  max|dE| on 8 states  0.063  exact E*(-c_R) in [0.00316, 0.00316] = 0.002 of the bound  ok
+   last 6 sites; reflection               |R|= 6 crossing=3 kappa= 1.600 H_R-invariance err 9e-16 swaps sublattices True | cost(U psi0)  0.2175  m_s +0.305->+0.190 (c_R 0.1147, check 1e-17)  max|dE| on 8 states  0.070  exact E*(-c_R) in [0.01022, 0.01022] = 0.006 of the bound  ok
+   last 8 sites; reflection               |R|= 8 crossing=3 kappa= 1.600 H_R-invariance err 9e-16 swaps sublattices True | cost(U psi0)  0.2500  m_s +0.305->+0.125 (c_R 0.1805, check 0e+00)  max|dE| on 8 states  0.066  exact E*(-c_R) in [0.02428, 0.02428] = 0.015 of the bound  ok
+   last 10 sites; reflection              |R|=10 crossing=3 kappa= 1.600 H_R-invariance err 2e-15 swaps sublattices True | cost(U psi0)  0.2872  m_s +0.305->+0.041 (c_R 0.2636, check 6e-17)  max|dE| on 8 states  0.057  exact E*(-c_R) in [0.04984, 0.04984] = 0.031 of the bound  ok
+open J1-J2 XXZ chain N=14 (J2 = 0.3, Jz = 4.0), field on site 0: dim 3432, sector gap 0.4016, m_s(GS) = +0.6767
+   last 2 sites; reflection               |R|= 2 crossing=3 kappa= 4.000 H_R-invariance err 0e+00 swaps sublattices True | cost(U psi0)  0.5361  m_s +0.677->+0.552 (c_R 0.1252, check 2e-16)  max|dE| on 8 states  0.110  exact E*(-c_R) in [0.01320, 0.01320] = 0.003 of the bound  ok
+   last 4 sites; reflection               |R|= 4 crossing=3 kappa= 4.000 H_R-invariance err 9e-16 swaps sublattices True | cost(U psi0)  0.6209  m_s +0.677->+0.388 (c_R 0.2884, check 2e-16)  max|dE| on 8 states  0.127  exact E*(-c_R) in [0.05233, 0.05233] = 0.013 of the bound  ok
+   last 6 sites; reflection               |R|= 6 crossing=3 kappa= 4.000 H_R-invariance err 9e-16 swaps sublattices True | cost(U psi0)  0.6706  m_s +0.677->+0.206 (c_R 0.4706, check 6e-17)  max|dE| on 8 states  0.198  exact E*(-c_R) in [0.11204, 0.11204] = 0.028 of the bound  ok
+   last 8 sites; reflection               |R|= 8 crossing=3 kappa= 4.000 H_R-invariance err 2e-15 swaps sublattices True | cost(U psi0)  0.6984  m_s +0.677->+0.011 (c_R 0.6653, check 2e-16)  max|dE| on 8 states  0.157  exact E*(-c_R) in [0.19066, 0.19066] = 0.048 of the bound  ok
+   last 10 sites; reflection              |R|=10 crossing=3 kappa= 4.000 H_R-invariance err 2e-15 swaps sublattices True | cost(U psi0)  0.7034  m_s +0.677->-0.194 (c_R 0.8705, check 3e-16)  max|dE| on 8 states  0.170  exact E*(-c_R) in [0.29253, 0.29253] = 0.073 of the bound  ok
+open chain N=13 in the sector S^z = 1/2 (no field), Jz = 2.5: dim 1716, sector gap 0.6515, m_s(GS) = +0.7553
+   interior sites 4..9; reflection        |R|= 6 crossing=2 kappa= 3.500 H_R-invariance err 9e-16 swaps sublattices True | cost(U psi0)  2.2311  m_s +0.755->+0.017 (c_R 0.7385, check 4e-16)  max|dE| on 8 states  0.506  exact E*(-c_R) in [0.35854, 0.35854] = 0.102 of the bound  ok
+   interior sites 5..6; swap              |R|= 2 crossing=2 kappa= 3.500 H_R-invariance err 0e+00 swaps sublattices True | cost(U psi0)  2.4009  m_s +0.755->+0.506 (c_R 0.2488, check 2e-16)  max|dE| on 8 states  0.483  exact E*(-c_R) in [0.07553, 0.07553] = 0.022 of the bound  ok
+   last 8 sites; reflection               |R|= 8 crossing=1 kappa= 1.750 H_R-invariance err 9e-16 swaps sublattices True | cost(U psi0)  1.0954  m_s +0.755->-0.186 (c_R 0.9410, check 1e-16)  max|dE| on 8 states  0.232  exact E*(-c_R) in [0.50356, 0.50356] = 0.288 of the bound  ok
+   violations in Part A: 0
+
+PART B1. d = 3: all balanced regions of the 19-site patch
+   balanced regions: 75581; with a sublattice-exchanging automorphism of the induced graph: 34317  [41 s]
+   |R| : fewest crossing bonds among admissible regions
+   2:2  4:2  6:2  8:3  10:3  12:4  14:4  16:4
+   minimum of crossing/|R| = 0.2500 at R = [0, 1, 3, 5, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
+   minimum of crossing - (|R|/2 - 2(d-1)) = 0.0 (the written bound holds iff >= 0)
+
+PART B2. d = 5, 7, 9: integer programme over a relaxation of the admissible regions
+   d=3: min crossing/|R| over the relaxation = 0.2500 (attained at |R| = 16, crossing = 4; status 0);  min [crossing - |R|/2] = -4.0 at |R| = 16 (written bound: >= -4; status 0)  [0 s]
+   d=5: min crossing/|R| over the relaxation = 0.2778 (attained at |R| = 36, crossing = 10; status 0);  min [crossing - |R|/2] = -8.0 at |R| = 48 (written bound: >= -8; status 0)  [1 s]
+   d=7: min crossing/|R| over the relaxation = 0.2857 (attained at |R| = 14, crossing = 4; status 0);  min [crossing - |R|/2] = -12.0 at |R| = 88 (written bound: >= -12; status 0)  [8 s]
+   d=9: min crossing/|R| over the relaxation = 0.2778 (attained at |R| = 36, crossing = 10; status 0);  min [crossing - |R|/2] = -16.0 at |R| = 144 (written bound: >= -16; status 0)  [59 s]
+
+PART B3. n = 19, Jz = 4: exact cost of lowering m_s in the Neel sector
+   m_s(GS) = 0.9528, sector gap 3.0618; spread of a bond term s = 2.5
+   c = 0.1: exact E*_n(-c) in [0.3378, 0.3378] = 0.1778 per site per unit c (classical in-sector Peierls value 3Jz/56 * 2 ... see report); smallest bound Proposition D can give: 0.594  (field mu* = 0.2089 = 0.0522 Jz)
+   c = 0.5: exact E*_n(-c) in [1.9310, 1.9310] = 0.2033 per site per unit c (classical in-sector Peierls value 3Jz/56 * 2 ... see report); smallest bound Proposition D can give: 2.969  (field mu* = 0.2099 = 0.0525 Jz)
+   c = 1.0: exact E*_n(-c) in [3.9275, 3.9275] = 0.2067 per site per unit c (classical in-sector Peierls value 3Jz/56 * 2 ... see report); smallest bound Proposition D can give: 5.938  (field mu* = 0.2104 = 0.0526 Jz)
+
+total violations: 0; total time 238 s

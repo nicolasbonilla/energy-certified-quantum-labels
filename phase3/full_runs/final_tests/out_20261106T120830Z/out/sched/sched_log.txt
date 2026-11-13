@@ -1,0 +1,258 @@
+2026-11-06T12:25:12Z scheduler start pid=4777 tasks=128
+2026-11-06T12:25:12Z start krylov_57_4.0 threads=1 mem=2 pid=4778
+2026-11-06T12:25:12Z start krylov_57_6.0 threads=1 mem=2 pid=4779
+2026-11-06T12:25:12Z start crq_B_rec threads=1 mem=3 pid=4780
+2026-11-06T12:25:12Z start crq_B_ps threads=1 mem=2 pid=4781
+2026-11-06T12:25:12Z start cert_0 threads=1 mem=3 pid=4782
+2026-11-06T12:25:12Z start cert_1 threads=1 mem=3 pid=4783
+2026-11-06T12:25:12Z start cert_2 threads=1 mem=3 pid=4784
+2026-11-06T12:25:12Z start cert_3 threads=1 mem=3 pid=4785
+2026-11-06T12:25:22Z end crq_B_rec rc=0 10s
+2026-11-06T12:25:22Z end crq_B_ps rc=0 10s
+2026-11-06T12:25:22Z start cert_4 threads=1 mem=3 pid=4807
+2026-11-06T12:25:22Z start cert_5 threads=1 mem=3 pid=4808
+2026-11-06T12:27:12Z end cert_3 rc=0 120s
+2026-11-06T12:27:12Z start n19_1.5 threads=1 mem=2 pid=4881
+2026-11-06T12:27:22Z end cert_4 rc=0 120s
+2026-11-06T12:27:22Z end cert_5 rc=0 120s
+2026-11-06T12:27:22Z end n19_1.5 rc=0 10s
+2026-11-06T12:27:22Z start n19_1.6 threads=1 mem=2 pid=4934
+2026-11-06T12:27:22Z start n19_1.7 threads=1 mem=2 pid=4935
+2026-11-06T12:27:22Z start n19_2.8 threads=1 mem=2 pid=4936
+2026-11-06T12:27:32Z end n19_1.6 rc=0 10s
+2026-11-06T12:27:32Z end n19_1.7 rc=0 10s
+2026-11-06T12:27:32Z end n19_2.8 rc=0 10s
+2026-11-06T12:27:32Z start n19_3.2 threads=1 mem=2 pid=4940
+2026-11-06T12:27:32Z start ref_115_1.5 threads=1 mem=5 pid=4941
+2026-11-06T12:27:32Z start krylov_115_1.5 threads=1 mem=3 pid=4942
+2026-11-06T12:27:42Z end n19_3.2 rc=0 10s
+2026-11-06T12:27:42Z start ref_115_1.7 threads=1 mem=5 pid=4986
+2026-11-06T12:39:12Z end krylov_57_4.0 rc=0 840s
+2026-11-06T12:39:12Z end krylov_57_6.0 rc=0 840s
+2026-11-06T12:39:12Z start csim threads=1 mem=6 pid=5713
+2026-11-06T12:39:12Z start krylov_115_1.7 threads=1 mem=3 pid=5714
+2026-11-06T12:40:02Z end csim rc=0 50s
+2026-11-06T12:40:02Z start ref_115_2.8 threads=1 mem=5 pid=5739
+2026-11-06T12:40:22Z end ref_115_1.5 rc=0 770s
+2026-11-06T12:40:22Z start krylov_115_2.8 threads=1 mem=3 pid=5754
+2026-11-06T12:40:32Z end ref_115_1.7 rc=0 770s
+2026-11-06T12:40:32Z start ref_57_1.5 threads=1 mem=2 pid=5764
+2026-11-06T12:42:52Z end ref_57_1.5 rc=0 140s
+2026-11-06T12:42:52Z start krylov_57_1.5 threads=1 mem=2 pid=5934
+2026-11-06T12:52:42Z end ref_115_2.8 rc=0 760s
+2026-11-06T12:52:42Z start ref_57_1.7 threads=1 mem=2 pid=6591
+2026-11-06T12:55:02Z end ref_57_1.7 rc=0 140s
+2026-11-06T12:55:02Z start krylov_57_1.7 threads=1 mem=2 pid=6733
+2026-11-06T12:57:12Z end krylov_57_1.5 rc=0 860s
+2026-11-06T12:57:12Z start emu_57_1.5 threads=1 mem=4 pid=7099
+2026-11-06T12:57:42Z end emu_57_1.5 rc=0 30s
+2026-11-06T12:57:42Z start ref_57_2.8 threads=1 mem=2 pid=7114
+2026-11-06T13:00:02Z end ref_57_2.8 rc=0 140s
+2026-11-06T13:00:02Z start krylov_57_2.8 threads=1 mem=2 pid=7276
+2026-11-06T13:09:22Z end krylov_57_1.7 rc=0 860s
+2026-11-06T13:09:22Z start emu_57_1.7 threads=1 mem=4 pid=7840
+2026-11-06T13:09:52Z end emu_57_1.7 rc=0 30s
+2026-11-06T13:09:52Z start ref_57_3.2 threads=1 mem=2 pid=7851
+2026-11-06T13:11:02Z end cert_2 rc=0 2751s
+2026-11-06T13:11:02Z start krylov_57_3.2 threads=1 mem=2 pid=7883
+2026-11-06T13:11:22Z end ref_57_3.2 rc=0 90s
+2026-11-06T13:11:22Z start ref_57_2.5 threads=1 mem=2 pid=7898
+2026-11-06T13:11:32Z end cert_0 rc=0 2781s
+2026-11-06T13:11:32Z end cert_1 rc=0 2781s
+2026-11-06T13:11:32Z start krylov_57_2.5 threads=1 mem=2 pid=7907
+2026-11-06T13:11:32Z start bref_1.6_0 threads=1 mem=4 pid=7908
+2026-11-06T13:13:43Z end ref_57_2.5 rc=0 140s
+2026-11-06T13:13:43Z start bkry_1.6_0 threads=1 mem=3 pid=7999
+2026-11-06T13:14:23Z end krylov_57_2.8 rc=0 860s
+2026-11-06T13:14:23Z start emu_57_2.8 threads=1 mem=4 pid=8025
+2026-11-06T13:14:53Z end emu_57_2.8 rc=0 30s
+2026-11-06T13:14:53Z start bpatch_1.6_0 threads=1 mem=2 pid=8116
+2026-11-06T13:18:13Z end bpatch_1.6_0 rc=0 200s
+2026-11-06T13:18:13Z start bref_1.6_1 threads=1 mem=4 pid=8509
+2026-11-06T13:20:03Z end bref_1.6_0 rc=0 510s
+2026-11-06T13:20:03Z start bkry_1.6_1 threads=1 mem=3 pid=8556
+2026-11-06T13:25:13Z end krylov_57_3.2 rc=0 850s
+2026-11-06T13:25:13Z start emu_57_3.2 threads=1 mem=4 pid=8769
+2026-11-06T13:25:43Z end emu_57_3.2 rc=0 30s
+2026-11-06T13:25:43Z start bpatch_1.6_1 threads=1 mem=2 pid=8784
+2026-11-06T13:26:53Z end bref_1.6_1 rc=0 520s
+2026-11-06T13:26:53Z start bref_1.6_2 threads=1 mem=4 pid=9111
+2026-11-06T13:28:43Z end krylov_57_2.5 rc=0 1030s
+2026-11-06T13:28:43Z start emu_57_2.5 threads=1 mem=4 pid=9193
+2026-11-06T13:29:03Z end bkry_1.6_0 rc=0 920s
+2026-11-06T13:29:03Z start bkry_1.6_2 threads=1 mem=3 pid=9201
+2026-11-06T13:29:23Z end bpatch_1.6_1 rc=0 220s
+2026-11-06T13:29:23Z start bpatch_1.6_2 threads=1 mem=2 pid=9216
+2026-11-06T13:30:43Z end emu_57_2.5 rc=0 120s
+2026-11-06T13:30:43Z start bref_1.6_3 threads=1 mem=4 pid=9322
+2026-11-06T13:33:13Z end bpatch_1.6_2 rc=0 230s
+2026-11-06T13:33:13Z start bkry_1.6_3 threads=1 mem=3 pid=9419
+2026-11-06T13:36:33Z end bref_1.6_2 rc=0 580s
+2026-11-06T13:36:33Z start bpatch_1.6_3 threads=1 mem=2 pid=10018
+2026-11-06T13:36:43Z end bkry_1.6_1 rc=0 1000s
+2026-11-06T13:36:43Z start bref_1.6_4 threads=1 mem=4 pid=10023
+2026-11-06T13:39:13Z end krylov_115_1.5 rc=0 4301s
+2026-11-06T13:39:13Z start emu_115_1.5 threads=1 mem=7 pid=10117
+2026-11-06T13:40:13Z end bref_1.6_3 rc=0 570s
+2026-11-06T13:40:13Z start bkry_1.6_4 threads=1 mem=3 pid=10140
+2026-11-06T13:40:23Z end bpatch_1.6_3 rc=0 230s
+2026-11-06T13:40:23Z start bpatch_1.6_4 threads=1 mem=2 pid=10152
+2026-11-06T13:41:43Z end emu_115_1.5 rc=0 150s
+2026-11-06T13:41:43Z start bref_1.6_5 threads=1 mem=4 pid=10182
+2026-11-06T13:44:03Z end bpatch_1.6_4 rc=0 220s
+2026-11-06T13:44:03Z start bkry_1.6_5 threads=1 mem=3 pid=10274
+2026-11-06T13:46:33Z end bref_1.6_4 rc=0 590s
+2026-11-06T13:46:33Z start bpatch_1.6_5 threads=1 mem=2 pid=10337
+2026-11-06T13:46:43Z end bkry_1.6_2 rc=0 1060s
+2026-11-06T13:46:43Z start btrain_1.6_000 threads=1 mem=2 pid=10341
+2026-11-06T13:48:43Z end btrain_1.6_000 rc=0 120s
+2026-11-06T13:48:43Z start btrain_1.6_001 threads=1 mem=2 pid=10755
+2026-11-06T13:50:03Z end bpatch_1.6_5 rc=0 210s
+2026-11-06T13:50:03Z start btrain_1.6_002 threads=1 mem=2 pid=10784
+2026-11-06T13:50:23Z end bkry_1.6_3 rc=0 1030s
+2026-11-06T13:50:23Z end btrain_1.6_001 rc=0 100s
+2026-11-06T13:50:23Z start btrain_1.6_003 threads=1 mem=2 pid=10795
+2026-11-06T13:50:23Z start btrain_1.6_004 threads=1 mem=2 pid=10796
+2026-11-06T13:51:03Z end bref_1.6_5 rc=0 560s
+2026-11-06T13:51:03Z start btrain_1.6_005 threads=1 mem=2 pid=10809
+2026-11-06T13:51:43Z end btrain_1.6_002 rc=0 100s
+2026-11-06T13:51:43Z start btrain_1.6_006 threads=1 mem=2 pid=10826
+2026-11-06T13:52:03Z end btrain_1.6_003 rc=0 100s
+2026-11-06T13:52:03Z end btrain_1.6_004 rc=0 100s
+2026-11-06T13:52:03Z start btrain_1.6_007 threads=1 mem=2 pid=10833
+2026-11-06T13:52:03Z start btrain_1.6_008 threads=1 mem=2 pid=10834
+2026-11-06T13:52:33Z end krylov_115_1.7 rc=0 4401s
+2026-11-06T13:52:33Z end btrain_1.6_005 rc=0 90s
+2026-11-06T13:52:33Z start emu_115_1.7 threads=1 mem=7 pid=10848
+2026-11-06T13:52:33Z start btrain_1.6_009 threads=1 mem=2 pid=10849
+2026-11-06T13:53:23Z end btrain_1.6_006 rc=0 100s
+2026-11-06T13:53:23Z start btrain_1.6_010 threads=1 mem=2 pid=10900
+2026-11-06T13:53:43Z end btrain_1.6_007 rc=0 100s
+2026-11-06T13:53:43Z end btrain_1.6_008 rc=0 100s
+2026-11-06T13:53:43Z start btrain_1.6_011 threads=1 mem=2 pid=10910
+2026-11-06T13:53:43Z start btrain_1.6_012 threads=1 mem=2 pid=10911
+2026-11-06T13:54:13Z end btrain_1.6_009 rc=0 100s
+2026-11-06T13:54:13Z start btrain_1.6_013 threads=1 mem=2 pid=10921
+2026-11-06T13:54:53Z end krylov_115_2.8 rc=0 4471s
+2026-11-06T13:54:53Z end emu_115_1.7 rc=0 140s
+2026-11-06T13:54:53Z start emu_115_2.8 threads=1 mem=7 pid=10939
+2026-11-06T13:54:53Z start btrain_1.6_014 threads=1 mem=2 pid=10940
+2026-11-06T13:55:03Z end btrain_1.6_010 rc=0 100s
+2026-11-06T13:55:03Z start btrain_1.6_015 threads=1 mem=2 pid=10944
+2026-11-06T13:55:13Z end btrain_1.6_011 rc=0 90s
+2026-11-06T13:55:13Z start btrain_1.6_016 threads=1 mem=2 pid=10948
+2026-11-06T13:55:23Z end btrain_1.6_012 rc=0 100s
+2026-11-06T13:55:23Z start btrain_1.6_017 threads=1 mem=2 pid=10955
+2026-11-06T13:55:53Z end btrain_1.6_013 rc=0 100s
+2026-11-06T13:55:53Z start btrain_1.6_018 threads=1 mem=2 pid=10996
+2026-11-06T13:56:23Z end bkry_1.6_4 rc=0 970s
+2026-11-06T13:56:23Z start btrain_1.6_019 threads=1 mem=2 pid=11064
+2026-11-06T13:56:43Z end btrain_1.6_014 rc=0 110s
+2026-11-06T13:56:43Z end btrain_1.6_015 rc=0 100s
+2026-11-06T13:56:43Z start btrain_1.6_020 threads=1 mem=2 pid=11071
+2026-11-06T13:56:43Z start btrain_1.6_021 threads=1 mem=2 pid=11072
+2026-11-06T13:56:53Z end btrain_1.6_016 rc=0 100s
+2026-11-06T13:56:53Z start btrain_1.6_022 threads=1 mem=2 pid=11192
+2026-11-06T13:57:03Z end emu_115_2.8 rc=0 130s
+2026-11-06T13:57:03Z end btrain_1.6_017 rc=0 100s
+2026-11-06T13:57:03Z start btrain_1.6_023 threads=1 mem=2 pid=11361
+2026-11-06T13:57:03Z start bref_2.5_0 threads=1 mem=4 pid=11362
+2026-11-06T13:57:33Z end btrain_1.6_018 rc=0 100s
+2026-11-06T13:57:33Z start bkry_2.5_0 threads=1 mem=3 pid=11381
+2026-11-06T13:58:13Z end btrain_1.6_019 rc=0 110s
+2026-11-06T13:58:13Z start bpatch_2.5_0 threads=1 mem=2 pid=11402
+2026-11-06T13:58:23Z end btrain_1.6_020 rc=0 100s
+2026-11-06T13:58:23Z end btrain_1.6_021 rc=0 100s
+2026-11-06T13:58:23Z start bref_2.5_1 threads=1 mem=4 pid=11440
+2026-11-06T13:58:23Z start bkry_2.5_1 threads=1 mem=3 pid=11441
+2026-11-06T13:58:33Z end btrain_1.6_022 rc=0 100s
+2026-11-06T13:58:33Z start bpatch_2.5_1 threads=1 mem=2 pid=11455
+2026-11-06T13:58:43Z end btrain_1.6_023 rc=0 100s
+2026-11-06T13:58:43Z start bref_2.5_2 threads=1 mem=4 pid=11459
+2026-11-06T14:00:13Z end bkry_1.6_5 rc=0 970s
+2026-11-06T14:00:13Z start bkry_2.5_2 threads=1 mem=3 pid=11498
+2026-11-06T14:01:24Z end bpatch_2.5_0 rc=0 190s
+2026-11-06T14:01:24Z start bpatch_2.5_2 threads=1 mem=2 pid=11533
+2026-11-06T14:01:54Z end bpatch_2.5_1 rc=0 200s
+2026-11-06T14:01:54Z start bref_2.5_3 threads=1 mem=4 pid=11543
+2026-11-06T14:03:44Z end bref_2.5_0 rc=0 400s
+2026-11-06T14:03:44Z start bkry_2.5_3 threads=1 mem=3 pid=11622
+2026-11-06T14:04:34Z end bpatch_2.5_2 rc=0 190s
+2026-11-06T14:04:34Z start bpatch_2.5_3 threads=1 mem=2 pid=11649
+2026-11-06T14:05:24Z end bref_2.5_1 rc=0 420s
+2026-11-06T14:05:24Z start bref_2.5_4 threads=1 mem=4 pid=11668
+2026-11-06T14:05:34Z end bref_2.5_2 rc=0 410s
+2026-11-06T14:05:34Z start bkry_2.5_4 threads=1 mem=3 pid=11679
+2026-11-06T14:07:44Z end bpatch_2.5_3 rc=0 190s
+2026-11-06T14:07:44Z start bpatch_2.5_4 threads=1 mem=2 pid=12012
+2026-11-06T14:09:44Z end bref_2.5_3 rc=0 470s
+2026-11-06T14:09:44Z start bref_2.5_5 threads=1 mem=4 pid=12090
+2026-11-06T14:10:54Z end bpatch_2.5_4 rc=0 190s
+2026-11-06T14:10:54Z start bkry_2.5_5 threads=1 mem=3 pid=12124
+2026-11-06T14:12:14Z end bref_2.5_4 rc=0 410s
+2026-11-06T14:12:14Z start bpatch_2.5_5 threads=1 mem=2 pid=12159
+2026-11-06T14:12:44Z end bkry_2.5_1 rc=0 860s
+2026-11-06T14:12:44Z start btrain_2.5_000 threads=1 mem=2 pid=12172
+2026-11-06T14:12:54Z end bkry_2.5_0 rc=0 920s
+2026-11-06T14:12:54Z start btrain_2.5_001 threads=1 mem=2 pid=12176
+2026-11-06T14:14:24Z end bkry_2.5_2 rc=0 850s
+2026-11-06T14:14:24Z end btrain_2.5_000 rc=0 100s
+2026-11-06T14:14:24Z start btrain_2.5_002 threads=1 mem=2 pid=12245
+2026-11-06T14:14:24Z start btrain_2.5_003 threads=1 mem=2 pid=12246
+2026-11-06T14:14:34Z end btrain_2.5_001 rc=0 100s
+2026-11-06T14:14:34Z start btrain_2.5_004 threads=1 mem=2 pid=12250
+2026-11-06T14:15:24Z end bpatch_2.5_5 rc=0 190s
+2026-11-06T14:15:24Z start btrain_2.5_005 threads=1 mem=2 pid=12270
+2026-11-06T14:16:04Z end btrain_2.5_003 rc=0 100s
+2026-11-06T14:16:04Z start btrain_2.5_006 threads=1 mem=2 pid=12283
+2026-11-06T14:16:14Z end btrain_2.5_002 rc=0 110s
+2026-11-06T14:16:14Z end btrain_2.5_004 rc=0 100s
+2026-11-06T14:16:14Z start btrain_2.5_007 threads=1 mem=2 pid=12287
+2026-11-06T14:16:14Z start btrain_2.5_008 threads=1 mem=2 pid=12288
+2026-11-06T14:17:04Z end bref_2.5_5 rc=0 440s
+2026-11-06T14:17:04Z end btrain_2.5_005 rc=0 100s
+2026-11-06T14:17:04Z start btrain_2.5_009 threads=1 mem=2 pid=12602
+2026-11-06T14:17:04Z start btrain_2.5_010 threads=1 mem=2 pid=12603
+2026-11-06T14:17:44Z end btrain_2.5_006 rc=0 100s
+2026-11-06T14:17:44Z end btrain_2.5_008 rc=0 90s
+2026-11-06T14:17:44Z start btrain_2.5_011 threads=1 mem=2 pid=12844
+2026-11-06T14:17:44Z start btrain_2.5_012 threads=1 mem=2 pid=12845
+2026-11-06T14:17:54Z end btrain_2.5_007 rc=0 100s
+2026-11-06T14:17:54Z start btrain_2.5_013 threads=1 mem=2 pid=12849
+2026-11-06T14:18:04Z end bkry_2.5_3 rc=0 860s
+2026-11-06T14:18:04Z start btrain_2.5_014 threads=1 mem=2 pid=12853
+2026-11-06T14:18:44Z end btrain_2.5_009 rc=0 100s
+2026-11-06T14:18:44Z end btrain_2.5_010 rc=0 100s
+2026-11-06T14:18:44Z start btrain_2.5_015 threads=1 mem=2 pid=12873
+2026-11-06T14:18:44Z start btrain_2.5_016 threads=1 mem=2 pid=12874
+2026-11-06T14:19:24Z end btrain_2.5_011 rc=0 100s
+2026-11-06T14:19:24Z end btrain_2.5_012 rc=0 100s
+2026-11-06T14:19:24Z start btrain_2.5_017 threads=1 mem=2 pid=12921
+2026-11-06T14:19:24Z start btrain_2.5_018 threads=1 mem=2 pid=12922
+2026-11-06T14:19:44Z end btrain_2.5_013 rc=0 110s
+2026-11-06T14:19:44Z start btrain_2.5_019 threads=1 mem=2 pid=12930
+2026-11-06T14:19:54Z end btrain_2.5_014 rc=0 110s
+2026-11-06T14:19:54Z start btrain_2.5_020 threads=1 mem=2 pid=12934
+2026-11-06T14:20:14Z end bkry_2.5_4 rc=0 880s
+2026-11-06T14:20:14Z start btrain_2.5_021 threads=1 mem=2 pid=12941
+2026-11-06T14:20:24Z end btrain_2.5_015 rc=0 100s
+2026-11-06T14:20:24Z end btrain_2.5_016 rc=0 100s
+2026-11-06T14:20:24Z start btrain_2.5_022 threads=1 mem=2 pid=12948
+2026-11-06T14:20:24Z start btrain_2.5_023 threads=1 mem=2 pid=12949
+2026-11-06T14:21:04Z end btrain_2.5_017 rc=0 100s
+2026-11-06T14:21:04Z end btrain_2.5_018 rc=0 100s
+2026-11-06T14:21:04Z start bmodel_1.6_site threads=1 mem=8 pid=12963
+2026-11-06T14:21:04Z start bmodel_1.6_bond threads=1 mem=8 pid=12964
+2026-11-06T14:21:14Z end btrain_2.5_019 rc=0 90s
+2026-11-06T14:21:34Z end btrain_2.5_020 rc=0 100s
+2026-11-06T14:21:44Z end btrain_2.5_022 rc=0 80s
+2026-11-06T14:21:54Z end btrain_2.5_021 rc=0 100s
+2026-11-06T14:21:54Z end btrain_2.5_023 rc=0 90s
+2026-11-06T14:23:54Z end bkry_2.5_5 rc=0 780s
+2026-11-06T14:23:54Z start bmodel_2.5_site threads=1 mem=8 pid=13064
+2026-11-06T14:23:54Z start bmodel_2.5_bond threads=1 mem=8 pid=13065
+2026-11-06T14:24:14Z end bmodel_1.6_site rc=0 190s
+2026-11-06T14:24:44Z end bmodel_1.6_bond rc=0 220s
+2026-11-06T14:27:04Z end bmodel_2.5_site rc=0 190s
+2026-11-06T14:27:14Z end bmodel_2.5_bond rc=0 200s
+2026-11-06T14:27:14Z scheduler exit: done=128 failed=0 blocked=0 pending=0

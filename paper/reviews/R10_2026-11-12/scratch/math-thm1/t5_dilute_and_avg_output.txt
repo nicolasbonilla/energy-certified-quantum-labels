@@ -1,0 +1,33 @@
+== part A: one-magnon sector of the XXZ ring, H = (1/4) sum (XX + YY + Jz ZZ), Jz = 1.6, label Z_0 ==
+  error per site de = 0.011
+    n= 20 eps= 0.220 o_GS=-0.9000 tau=0.0540 | exact width 1.2516 (  23.2 tau; NOT certified) | best Theorem 1(b) bound over all blocks 0.0217 ( 0.40 tau, block of 20 sites): proves nothing   [deg 1]
+    n= 50 eps= 0.550 o_GS=-0.9600 tau=0.0576 | exact width 1.7861 (  31.0 tau; NOT certified) | best Theorem 1(b) bound over all blocks 0.0222 ( 0.39 tau, block of 50 sites): proves nothing   [deg 1]
+    n=100 eps= 1.100 o_GS=-0.9800 tau=0.0588 | exact width 2.0000 (  34.0 tau; NOT certified) | best Theorem 1(b) bound over all blocks 0.0224 ( 0.38 tau, block of 100 sites): proves nothing   [deg 1]
+    n=200 eps= 2.200 o_GS=-0.9900 tau=0.0594 | exact width 2.0000 (  33.7 tau; NOT certified) | best Theorem 1(b) bound over all blocks 0.0225 ( 0.38 tau, block of 200 sites): proves nothing   [deg 1]
+    n=400 eps= 4.400 o_GS=-0.9950 tau=0.0597 | exact width 2.0000 (  33.5 tau; NOT certified) | best Theorem 1(b) bound over all blocks 0.0219 ( 0.37 tau, block of 400 sites): proves nothing   [deg 1]
+  error per site de = 0.002
+    n= 20 eps= 0.040 o_GS=-0.9000 tau=0.0540 | exact width 0.5632 (  10.4 tau; NOT certified) | best Theorem 1(b) bound over all blocks 0.0039 ( 0.07 tau, block of 20 sites): proves nothing   [deg 1]
+    n= 50 eps= 0.100 o_GS=-0.9600 tau=0.0576 | exact width 0.8718 (  15.1 tau; NOT certified) | best Theorem 1(b) bound over all blocks 0.0040 ( 0.07 tau, block of 50 sites): proves nothing   [deg 1]
+    n=100 eps= 0.200 o_GS=-0.9800 tau=0.0588 | exact width 1.2000 (  20.4 tau; NOT certified) | best Theorem 1(b) bound over all blocks 0.0041 ( 0.07 tau, block of 100 sites): proves nothing   [deg 1]
+    n=200 eps= 0.400 o_GS=-0.9900 tau=0.0594 | exact width 1.6000 (  26.9 tau; NOT certified) | best Theorem 1(b) bound over all blocks 0.0041 ( 0.07 tau, block of 200 sites): proves nothing   [deg 1]
+    n=400 eps= 0.800 o_GS=-0.9950 tau=0.0597 | exact width 1.9596 (  32.8 tau; NOT certified) | best Theorem 1(b) bound over all blocks 0.0041 ( 0.07 tau, block of 400 sites): proves nothing   [deg 1]
+
+== part B: Theorem 1(d) -- label = average of Z over b sites ==
+  TFIM ring n=10 h=1.5 (no sector): kappa_1 = 7.0
+    sites [0]                              b= 1: exact full-range energy  1.1338 <= joint reset cost  2.0317 <= kappa_B   7.0 <= b*kappa_1   7.0 ; sum of single-site reset costs  2.0317 (no shared term: costs add, diff 0.0e+00) ; min(exact - bound) = +0.000
+    sites [0, 1]                           b= 2: exact full-range energy  1.7990 <= joint reset cost  2.7040 <= kappa_B  12.0 <= b*kappa_1  14.0 ; sum of single-site reset costs  4.0635 (sites share a term) ; min(exact - bound) = +0.000
+    sites [0, 5]                           b= 2: exact full-range energy  2.0998 <= joint reset cost  4.0635 <= kappa_B  14.0 <= b*kappa_1  14.0 ; sum of single-site reset costs  4.0635 (no shared term: costs add, diff 2.0e-14) ; min(exact - bound) = +0.000
+    sites [0, 1, 2]                        b= 3: exact full-range energy  2.4610 <= joint reset cost  3.3763 <= kappa_B  17.0 <= b*kappa_1  21.0 ; sum of single-site reset costs  6.0952 (sites share a term) ; min(exact - bound) = +0.000
+    sites [0, 3, 6]                        b= 3: exact full-range energy  2.8909 <= joint reset cost  6.0952 <= kappa_B  21.0 <= b*kappa_1  21.0 ; sum of single-site reset costs  6.0952 (no shared term: costs add, diff 2.8e-14) ; min(exact - bound) = +0.000
+    sites [0, 1, 2, 3, 4]                  b= 5: exact full-range energy  3.7695 <= joint reset cost  4.7210 <= kappa_B  27.0 <= b*kappa_1  35.0 ; sum of single-site reset costs 10.1587 (sites share a term) ; min(exact - bound) = +0.000
+    sites [0, 2, 4, 6, 8]                  b= 5: exact full-range energy  4.2230 <= joint reset cost 10.1587 <= kappa_B  35.0 <= b*kappa_1  35.0 ; sum of single-site reset costs 10.1587 (no shared term: costs add, diff 5.5e-14) ; min(exact - bound) = +0.000
+    sites [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]   b=10: exact full-range energy  6.7230 <= joint reset cost  6.7230 <= kappa_B  50.0 <= b*kappa_1  70.0 ; sum of single-site reset costs 20.3174 (sites share a term) ; min(exact - bound) = +0.000
+  XXZ open chain n=10, Jz=1.6, sector nup=5: the same label inside a sector
+    sites [4]                          b= 1: at eps = b*kappa_1 =   2.6 the sector window is [-1.0000,+1.0000]; spectral range of the label in the sector [-1.0000,+1.0000]; without a sector it would be [-1,+1]
+    sites [4, 5]                       b= 2: at eps = b*kappa_1 =   5.2 the sector window is [-1.0000,+1.0000]; spectral range of the label in the sector [-1.0000,+1.0000]; without a sector it would be [-1,+1]
+    sites [4, 6]                       b= 2: at eps = b*kappa_1 =   5.2 the sector window is [-1.0000,+1.0000]; spectral range of the label in the sector [-1.0000,+1.0000]; without a sector it would be [-1,+1]
+    sites [3, 4, 5, 6]                 b= 4: at eps = b*kappa_1 =  10.4 the sector window is [-1.0000,+1.0000]; spectral range of the label in the sector [-1.0000,+1.0000]; without a sector it would be [-1,+1]
+    sites [0, 2, 4, 6, 8]              b= 5: at eps = b*kappa_1 =  13.0 the sector window is [-1.0000,+1.0000]; spectral range of the label in the sector [-1.0000,+1.0000]; without a sector it would be [-1,+1]
+    sites [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] b=10: at eps = b*kappa_1 =  26.0 the sector window is [+0.0000,+0.0000]; spectral range of the label in the sector [+0.0000,+0.0000]; without a sector it would be [-1,+1]
+total time 25 s
+EXIT 0

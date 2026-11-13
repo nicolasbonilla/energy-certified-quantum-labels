@@ -1,0 +1,77 @@
+F1-1. floors from the stored intervals (alpha = 0.1)
+ n = 57: training couplings [1.6, 1.8, 2.0, 2.2, 2.5, 3.0, 3.5, 4.0, 5.0, 6.0]; no map row at [2.2, 3.5]
+   inner widths in own tolerances: 1.6: 11.70, 1.8: 7.83, 2.0: 5.57, 2.2: 0.00, 2.5: 2.34, 3.0: 1.32, 3.5: 0.00, 4.0: 0.49, 5.0: 0.25, 6.0: 0.15
+   query   m   k=ceil((m+1)(1-a))   floor_k/tau     floor_max/tau   stored 2q_lo/tau   ratio to floor_max   q recomputed from stored scores
+    1.6    9     9                       8.254          8.254          16.549         2.005          2 s_(k)/tau =   16.549, 2 max s/tau =   16.549, #scores = 9
+    1.8    9     9                      11.093         11.093          22.356         2.015          2 s_(k)/tau =   22.356, 2 max s/tau =   22.356, #scores = 9
+    2.0    9     9                      10.671         10.671          21.198         1.987          2 s_(k)/tau =   21.198, 2 max s/tau =   21.198, #scores = 9
+    2.2    9     9                      10.366         10.366          20.621         1.989          2 s_(k)/tau =   20.621, 2 max s/tau =   20.621, #scores = 9
+    2.5    9     9                      10.045         10.045          19.923         1.983          2 s_(k)/tau =   19.923, 2 max s/tau =   19.923, #scores = 9
+    3.0    9     9                       9.718          9.718          19.296         1.986          2 s_(k)/tau =   19.296, 2 max s/tau =   19.296, #scores = 9
+    3.5    9     9                       9.525          9.525          18.915         1.986          2 s_(k)/tau =   18.915, 2 max s/tau =   18.915, #scores = 9
+    4.0    9     9                       9.402          9.402          18.652         1.984          2 s_(k)/tau =   18.652, 2 max s/tau =   18.652, #scores = 9
+    5.0    9     9                       9.259          9.259          18.380         1.985          2 s_(k)/tau =   18.380, 2 max s/tau =   18.380, #scores = 9
+    6.0    9     9                       9.183          9.183          18.184         1.980          2 s_(k)/tau =   18.184, 2 max s/tau =   18.184, #scores = 9
+    1.1   10    10                      15.139         15.139          30.065         1.986          2 s_(k)/tau =   30.065, 2 max s/tau =   30.065, #scores = 10
+    1.2   10    10                      14.073         14.073          27.948         1.986          2 s_(k)/tau =   27.948, 2 max s/tau =   27.948, #scores = 10
+    1.3   10    10                      13.254         13.254          26.322         1.986          2 s_(k)/tau =   26.322, 2 max s/tau =   26.322, #scores = 10
+    1.4   10    10                      12.615         12.615          25.053         1.986          2 s_(k)/tau =   25.053, 2 max s/tau =   25.053, #scores = 10
+   floor of the maximum score: training range 8.254 .. 11.093; test range 12.615 .. 15.139
+   stored s_lo reproduced from pred_loo and the inner interval (or its hull with the label): max deviation 0.0e+00
+ n = 115: training couplings [1.6, 2.0, 2.5, 3.0, 4.0, 5.0, 6.0]; no map row at []
+   inner widths in own tolerances: 1.6: 16.66, 2.0: 9.44, 2.5: 2.41, 3.0: 2.57, 4.0: 1.14, 5.0: 0.54, 6.0: 0.27
+   query   m   k=ceil((m+1)(1-a))   floor_k/tau     floor_max/tau   stored 2q_lo/tau   ratio to floor_max   q recomputed from stored scores
+    1.6    6     7 (> m: q = +inf)         inf         10.278          22.086         2.149          2 s_(k)/tau =      inf, 2 max s/tau =   22.086, #scores = 6
+    2.0    6     7 (> m: q = +inf)         inf         15.299          32.572         2.129          2 s_(k)/tau =      inf, 2 max s/tau =   32.572, #scores = 6
+    2.5    6     7 (> m: q = +inf)         inf         14.465          30.811         2.130          2 s_(k)/tau =      inf, 2 max s/tau =   30.811, #scores = 6
+    3.0    6     7 (> m: q = +inf)         inf         14.025          29.884         2.131          2 s_(k)/tau =      inf, 2 max s/tau =   29.884, #scores = 6
+    4.0    6     7 (> m: q = +inf)         inf         13.599          28.984         2.131          2 s_(k)/tau =      inf, 2 max s/tau =   28.984, #scores = 6
+    5.0    6     7 (> m: q = +inf)         inf         13.405          28.560         2.130          2 s_(k)/tau =      inf, 2 max s/tau =   28.560, #scores = 6
+    6.0    6     7 (> m: q = +inf)         inf         13.302          28.338         2.130          2 s_(k)/tau =      inf, 2 max s/tau =   28.338, #scores = 6
+    1.1    7     8 (> m: q = +inf)         inf         21.094          44.945         2.131          2 s_(k)/tau =      inf, 2 max s/tau =   44.945, #scores = 7
+    1.2    7     8 (> m: q = +inf)         inf         19.731          42.040         2.131          2 s_(k)/tau =      inf, 2 max s/tau =   42.040, #scores = 7
+    1.3    7     8 (> m: q = +inf)         inf         18.677          39.795         2.131          2 s_(k)/tau =      inf, 2 max s/tau =   39.795, #scores = 7
+    1.4    7     8 (> m: q = +inf)         inf         17.850          38.032         2.131          2 s_(k)/tau =      inf, 2 max s/tau =   38.032, #scores = 7
+   floor of the maximum score: training range 10.278 .. 15.299; test range 17.850 .. 21.094
+   stored s_lo reproduced from pred_loo and the inner interval (or its hull with the label): max deviation 0.0e+00
+
+F1-2. the dataset's 45 training points (k = 42 of m = 45 at alpha = 0.1)
+   k = 42; intervals allowed to be wider than 2q: 3
+   n = 57: 14 computed training-range rows of m_s (14 on the 0.1 grid); four widest inner widths at the lowest energy of the band: 0.30810 (Jz=1.6), 0.23224 (Jz=1.8), 0.18067 (Jz=2.0), 0.09507 (Jz=2.5)
+        w_(42) >= 0.09507; largest tolerance among the computed rows 0.05888 (Jz = 6.0; tau increasing in Jz: True); ratio 1.6146; eps_lo/eps_dig at that row = 0.797
+   n = 115: 12 computed training-range rows of m_s (12 on the 0.1 grid); four widest inner widths at the lowest energy of the band: 0.29584 (Jz=1.6), 0.22516 (Jz=1.8), 0.16481 (Jz=2.0), 0.08776 (Jz=2.5)
+        w_(42) >= 0.08776; largest tolerance among the computed rows 0.05895 (Jz = 6.0; tau increasing in Jz: True); ratio 1.4887; eps_lo/eps_dig at that row = 0.797
+
+F1-3. adversarial learners, constant-width score (n = 57 intervals)
+   m = 8, k = 8: floor w_(k) = 0.540730; smallest 2q over 400 000 prediction vectors = 0.540731; midpoints give 0.540730; below the floor: False
+
+F1-4. a width-normalized score inside the construction of Supplement (b) ('any score'), n = 57, 8 couplings with a row
+   sigma(x) = width of the energy interval at x (needs the energy at the query, as the filter does)
+      width/tau at each held-out coupling (* = does not contain the query's energy interval): 1.6: 11.70, 1.8: 7.83, 2.0: 5.57, 2.5: 2.34, 3.0: 1.32, 4.0: 0.49, 5.0: 0.25, 6.0: 0.15
+      contains the query's whole energy interval at 8 of 8 held-out couplings (level 7/8 requires >= 7); rule (c) answers at [4.0, 5.0, 6.0]; calibration-wide count of intervals narrower than their tau: 3 of 8 (k = 7 of m = 7 needed by (iv) for the constant-width score)
+   sigma(x) = A Jz^-p fitted to all 8 widths (symmetric in the 8 points; a function of x only)
+      width/tau at each held-out coupling (* = does not contain the query's energy interval): 1.6: 12.38, 1.8: 8.08, 2.0: 5.49*, 2.5: 2.58, 3.0: 1.40, 4.0: 0.54, 5.0: 0.26, 6.0: 0.15
+      contains the query's whole energy interval at 7 of 8 held-out couplings (level 7/8 requires >= 7); rule (c) answers at [4.0, 5.0, 6.0]; calibration-wide count of intervals narrower than their tau: 3 of 8 (k = 7 of m = 7 needed by (iv) for the constant-width score)
+
+F1-5. part (iii) by Monte Carlo: P(I(x) inside [f(x)-q, f(x)+q]) >= 1 - alpha, adversarial predictors
+   alpha = 0.1, m = 9, k = 9: frequency 0.9018 (bound 0.90; exact value for continuous scores k/(m+1) = 0.9000)
+   alpha = 0.1, m = 19, k = 18: frequency 0.8984 (bound 0.90; exact value for continuous scores k/(m+1) = 0.9000)
+   alpha = 0.2, m = 14, k = 12: frequency 0.7990 (bound 0.80; exact value for continuous scores k/(m+1) = 0.8000)
+
+F2-1. a non-interval procedure inside the class: part (c) with |C| = Lebesgue measure
+   C(x) = I(x) minus a cyclic arc of length eps*w at a uniform position, eps = alpha = 0.1: Lebesgue measure (1-eps) w = 0.90 w always;
+   coverage of 101 references: min 0.8985 (exact 1 - eps = 0.9); contains both ends with frequency 0.8998;
+   with tau = 0.9 w < w the rule 'answer iff Leb(C) <= tau' answers with probability 1 at an input whose energy interval is wider than tau (bound claimed: 2 alpha = 0.2). With |C| = sup C - inf C it answers with probability <= 0.1002.
+
+F2-2. attainment (exact): 'I w.p. 1-alpha, else empty' covers every reference w.p. 1-alpha and a fraction 1-alpha;
+      'I w.p. 1-2alpha, else I minus a piece at the upper / lower end (alpha each)' covers every reference w.p. >= 1-alpha and both ends w.p. 1-2alpha;
+      with pieces of length w - tau (tau < w <= 2 tau) the rule of (c) answers w.p. exactly 2 alpha: the constant of (c) is attained too.
+      The proof uses Definition E at the query only: the exchangeability hypothesis of the statement is not used.
+
+F2-3. two Hamiltonians with the same data: is the second truth the other end of the window without a symmetry O -> -O ?
+   Y piece (n = 10, Neel sector, Jz = 2.5), generator state = ground state of H - nu0 O, nu0 = 0.05: (y, E) = (0.842251, -6.605104)
+   ground state of H + nu0 O: label 0.755338, <H> = -6.599739  (energy differs from E by +0.005365)
+   lower end of the window of H at E: label 0.767217, reached at the field -0.040177 (not -nu0); <H> = -6.605104
+   -> 'the truths for nu = +-nu0 are the two ends of the window' needs the symmetry; in general the second field is nu' = 0.0402 != nu0
+
+total time 4 s

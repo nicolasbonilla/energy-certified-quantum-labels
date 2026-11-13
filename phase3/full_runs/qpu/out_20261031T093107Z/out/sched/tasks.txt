@@ -1,0 +1,6 @@
+control 1.2 100000
+control 1.6 23000
+control 4.0 23000
+device A 1.2
+device B 1.6
+device B 4.0

@@ -1,0 +1,15 @@
+n=19 |E|=20 |P2|=25  Neel sector: 11 up spins, M=3, dimension 75582
+built the 20 sector matrices in 0.7s; largest sector 92378
+
+lowest level of the other sectors minus lowest level of the Neel sector, for H - lambda*S*O - (3Jz/8) M, n = 19
+(positive: the global ground state is in the Neel sector; negative: part (a) of Theorem 4 fails at this Jz and n = 19)
+label  t        | Jz=1.6   Jz=2.0   Jz=2.5   Jz=3.0   Jz=3.5   Jz=4.0   Jz=4.5   Jz=5.0   Jz=5.5   | first grid value from which it holds up to 5.5
+ms   +0.00000 |  -0.0321  +0.0174  +0.0984  +0.1920  +0.2939  +0.4017  +0.5133  +0.6278  +0.7444 | 2.0
+ms   -0.01000 |  -0.0955  -0.0650  -0.0053  +0.0671  +0.1478  +0.2341  +0.3244  +0.4175  +0.5124 | 3.0
+ms   -0.02500 |  -0.2074  -0.2802  -0.2870  -0.2393  -0.1616  -0.0670  +0.0163  +0.0726  +0.1304 | 4.5
+czz  +0.01000 |  -0.0859  -0.0539  +0.0060  +0.0786  +0.1597  +0.2467  +0.3378  +0.4318  +0.5279 | 2.5
+czz  +0.01667 |  -0.1218  -0.1338  -0.0785  +0.0033  +0.0705  +0.1436  +0.2209  +0.3012  +0.3837 | 3.0
+c2   -0.00500 |  -0.0651  -0.0297  +0.0345  +0.1114  +0.1968  +0.2882  +0.3836  +0.4820  +0.5825 | 2.5
+c2   -0.00667 |  -0.0758  -0.0452  +0.0133  +0.0845  +0.1643  +0.2501  +0.3400  +0.4328  +0.5279 | 2.5
+
+total 158s

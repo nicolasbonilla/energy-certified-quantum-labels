@@ -1,0 +1,63 @@
+lattice: edges {57: 64, 115: 132} second neighbours {57: 87, 115: 185} M0 {57: 9, 115: 19} (repository lists = project graphs, eta equal)
+
+== B. departure from the sector: M_real - M_0 and q = (M_0 - M_real)/2 (own sums; exact rationals) ==
+ n=57  negative at 50 of 50; range [-0.234198, -0.000370]; within 0.05 at 40; q in [0.00018, 0.11710]; max |mine-stored| 4.4e-16
+   five couplings (M_real - M_0 | q): 1.1: -0.234198 | 0.117099; 1.6: -0.095047 | 0.047524; 3.4: -0.008297 | 0.004148; 4.0: -0.004367 | 0.002183; 6.0: -0.000729 | 0.000365
+ n=115  negative at 50 of 50; range [-0.435201, -0.002675]; within 0.05 at 34; q in [0.00134, 0.21760]; max |mine-stored| 8.9e-16
+   five couplings (M_real - M_0 | q): 1.1: -0.435201 | 0.217600; 1.6: -0.202599 | 0.101300; 3.4: -0.020793 | 0.010396; 4.0: -0.011457 | 0.005728; 6.0: -0.002675 | 0.001338
+
+== C. exact intervals from the stored certificates (fractions.Fraction) ==
+ files 220, distinct 214, used (n = 57, 115; kinds m_s, Czz_bar, H): 140 = 120 + 20; every one has a verification record with ok = true, the same SHA-256 and the same exact bound
+ rows with an interval on both sides: 108 compared with the stored output, 108 identical as exact rationals (both ends, both flags)
+ n=57 m_s, six couplings (lo, hi, width/tau, width/tau_rf, width/tau at M_0 alone, CERTIFIED, decisive M +/-):
+   Jz 3.4: [0.9077610, 0.9645832]  1.0042  1.0433  0.9859  False  M_0/M_real  label 0.953217 truth 0.943039 inside True
+   Jz 3.5: [0.9142077, 0.9658914]  0.9104  0.9422  0.8942  True  M_0/M_real  label 0.955448 truth 0.946167 inside True
+   Jz 3.6: [0.9199715, 0.9674916]  0.8345  0.8609  0.8190  True  M_0/M_real  label 0.957445 truth 0.949046 inside True
+   Jz 4.0: [0.9377609, 0.9727961]  0.6092  0.6227  0.5994  True  M_real/M_real  label 0.964851 truth 0.958546 inside True
+   Jz 5.0: [0.9623440, 0.9812122]  0.3231  0.3268  0.3186  True  M_0/M_real  label 0.976306 truth 0.973299 inside True
+   Jz 6.0: [0.9742156, 0.9870428]  0.2178  0.2194  0.2163  True  M_0/M_real  label 0.983597 truth 0.981396 inside True
+   Jz 3.3 (just below the certificate range): interval exists in mine: False
+ n=115 m_s, six couplings (lo, hi, width/tau, width/tau_rf, width/tau at M_0 alone, CERTIFIED, decisive M +/-):
+   Jz 4.0: [0.9430304, 0.9727098]  0.5147  0.5245  0.5017  True  M_real/M_real  label 0.964699 truth 0.961015 inside True
+   Jz 4.1: [0.9422068, 0.9751083]  0.5695  0.5820  0.5577  True  M_real/M_real  label 0.966516 truth 0.962858 inside True
+   Jz 4.5: [0.9464616, 0.9805945]  0.5870  0.6011  0.5772  True  M_real/M_real  label 0.971458 truth 0.969068 inside True
+   Jz 5.0: [0.9545501, 0.9856287]  0.5313  0.5426  0.5251  True  M_real/M_real  label 0.976834 truth 0.974872 inside True
+   Jz 5.5: [0.9666296, 0.9866465]  0.3407  0.3451  0.3360  True  M_0/M_real  label 0.980307 truth 0.979188 inside True
+   Jz 6.0: [0.9777411, 0.9862631]  0.1446  0.1453  0.1412  True  M_0/M_real  label 0.983287 truth 0.982484 inside True
+   Jz 3.9 (just below the certificate range): interval exists in mine: False
+
+== D. J*_exact and counts out of the 45 training couplings, both tolerances ==
+ n=57 m_s     J*_exact 3.5 (26 of 45); reference-free 3.5 (26 of 45); widths 0.2178-0.9104 tau; in range 27, not certified there ['3.4']; widening against M_0 alone at most 0.0183 tau; within tau outside the range at []
+ n=57 Czz_bar J*_exact 3.4 (27 of 45); reference-free 3.4 (27 of 45); widths 0.2282-0.9302 tau; in range 27, not certified there []; widening against M_0 alone at most 0.0160 tau; within tau outside the range at []
+ n=115 m_s     J*_exact 4.0 (21 of 45); reference-free 4.0 (21 of 45); widths 0.1446-0.6649 tau; in range 21, not certified there []; widening against M_0 alone at most 0.0130 tau; within tau outside the range at []
+ n=115 Czz_bar J*_exact 4.0 (21 of 45); reference-free 4.0 (21 of 45); widths 0.1546-0.5124 tau; in range 21, not certified there []; widening against M_0 alone at most 0.0156 tau; within tau outside the range at ['3.6', '3.7', '3.8', '3.9']
+
+== E. not-certified side from the stored explicit states (own hull; linear program as a second method) ==
+ m_s, 100 rows: largest |mine - stored| in E* 1.8e-13, hull ends 1.1e-13, lower width / tau 2.0e-12; flag or pool-size mismatches 0
+ n=57 Jz 1.1: q 0.117099, reference R3 of 1.1, E* -25.436998, pool 109 (stored chain ['1.1']), hull [0.057872, 0.819401] (LP [0.057872, 0.819401]), (1-q) width = 18.8254 tau -> NOT CERTIFIED True (stored 18.8254)
+ n=57 Jz 3.1: q 0.006084, reference R3 of 3.0, E* -53.280078, pool 198 (re-evaluated ['3.0', '3.3']), hull [0.899037, 0.956893] (LP [0.899037, 0.956893]), (1-q) width = 1.0285 tau -> NOT CERTIFIED True (stored 1.0285)
+ n=115 Jz 1.4: q 0.134436, reference R3 of 1.4, E* -59.586801, pool 56 (stored chain ['1.4']), hull [0.397020, 0.895752] (LP [0.397020, 0.895752]), (1-q) width = 9.8271 tau -> NOT CERTIFIED True (stored 9.8271)
+ n=115 Jz 3.0: q 0.015845, reference R3 of 3.0, E* -106.524151, pool 42 (stored chain ['3.0']), hull [0.898502, 0.957502] (LP [0.898502, 0.957502]), (1-q) width = 1.0386 tau -> NOT CERTIFIED True (stored 1.0386)
+ n=57 m_s: NOT CERTIFIED (explicit states) at 1.1..3.1 (21 couplings; 16 of the 45 training); GRAY at ['3.2', '3.3', '3.4']; rows resting on re-evaluated energies: 12
+ n=115 m_s: NOT CERTIFIED (explicit states) at 1.1..3.0 (20 couplings; 15 of the 45 training); GRAY at ['3.1', '3.2', '3.3', '3.4', '3.5', '3.6', '3.7', '3.8', '3.9']; rows resting on re-evaluated energies: 11
+ explicit witnesses inside the exact interval of the same row (m_s rows with both): violations 0
+
+== F. accuracy factor at the test couplings (own threshold from the in-sector pool, q = 0) ==
+ n=57 m_s     F_A (1.1-1.4 | 1.5) 396.22 268.83 180.69 116.47 | 61.09   headline: more than 110;   F_B 210.22 154.48 113.88 85.74 | 55.00   headline: more than 85
+ n=57 Czz_bar F_A (1.1-1.4 | 1.5) 134.37 104.36 79.90 57.33 | 39.36   headline: more than 57;   F_B 71.29 59.97 50.35 42.21 | 35.44   headline: more than 42
+ n=115 m_s     F_A (1.1-1.4 | 1.5) 143.07 124.58 100.56 79.43 | 59.86   headline: more than 79;   F_B 73.52 73.93 68.39 60.18 | 44.52   headline: more than 60
+ n=115 Czz_bar F_A (1.1-1.4 | 1.5) 86.25 74.50 61.06 49.20 | 46.20   headline: more than 49;   F_B 44.32 44.21 41.53 37.27 | 34.35   headline: more than 37
+ stored accuracy block (sealed run), verbatim keys: {"115": {"Czz_bar": {"de_real_at_1p6": 0.011680079198926987, "headline_F_A": 49.0, "headline_F_B": 37.0, "min_F_A": 49.198906543261174, "min_F_B": 37.27227585706171, "values": [{"F_A": 86.25308995561045, "F_B": 44.32487868291572, "Jz": 1.1, "de_real": 0.022728610923914518, "de_star_in": 0.0002635106862329412, "de_star_out": 5.693708634814737e-05, "flag": null, "source": "stored row (de_star_in)", "test_coupling": true}, {"F_A": 74.5030600470997, "F_B": 44.210442286024765, "Jz": 1.2, "de_real": 0.01968316978786739, "de_star_in": 0.0002641927697389072, "de_star_out": 0.00012202596696044651, "flag": null, "source": "stored row (de_star_in)", "test_coupling": true}, {"F_A": 61.05911417760048, "F_B": 41.52592158197122, "Jz": 1.3, "de_real": 0.017174219433105358, "de_star_in": 0.00028127200442429145, "de_star_out": 0.00018530270523920252, "flag": null, "source": "stored row (de_star_in)", "tes
+
+== I. the learner-independent floor of (f2): 42nd smallest of the 45 lower widths, in units of tau(x) ==
+ n=57 floor 0.229590 (label at Jz 1.9; the four widest: ['1.9', '1.8', '1.7', '1.6']); floor/tau at 1.1-1.4: 6.4284 5.9754 5.6277 5.3563 (stored 6.4284 5.9754 5.6277 5.3563); smallest over the 50 couplings 3.899; holds True
+ n=115 floor 0.204267 (label at Jz 1.9; the four widest: ['1.9', '1.8', '1.7', '1.6']); floor/tau at 1.1-1.4: 5.4953 5.1401 4.8656 4.6500 (stored 5.4953 5.1401 4.8656 4.6500); smallest over the 50 couplings 3.465; holds True
+
+== L. like-for-like statuses at E_real against the prediction (own outer and inner; rows of the stored map) ==
+ rows with data: 165; relation to the prediction: {'confirmed': 152, 'resolved': 13, 'opened': 0, 'contradicted': 0, 'unchanged': 0}; rows that differ from the stored output: 0
+ local rows CERTIFIED_s at E_real: n=57 Jz 6.0 Czz_edge (w_out 0.9736 tau, predicted GRAY); n=57 Jz 6.0 Z_bulk (w_out 0.9770 tau, predicted GRAY)
+ resolved rows: 57/3.2/Czz_bar->CERTIFIED; 57/3.2/m_s->CERTIFIED; 57/3.3/Czz_bar->CERTIFIED; 57/3.3/m_s->CERTIFIED; 57/4.0/C2_bar->CERTIFIED; 57/5.5/Czz_edge->NOT_CERTIFIED; 57/5.5/Z_bulk->NOT_CERTIFIED; 57/6.0/Czz_edge->CERTIFIED; 57/6.0/Z_boundary->NOT_CERTIFIED; 57/6.0/Z_bulk->CERTIFIED; 115/3.0/Czz_bar->NOT_CERTIFIED; 115/3.0/m_s->NOT_CERTIFIED; 115/3.6/C2_bar->NOT_CERTIFIED
+ stored counts of the sealed run: {"confirmed": 152, "no_real_data": 6, "resolved": 13} confirmed_by_the_data: True
+
+== disagreements with the stored outputs beyond rounding: 0 ==
+written C:/Users/Nicolas/Downloads/Proyecto_SQD_ML/P5_energy_certified_labels/work/phase3/full_runs/real_data/checks/rd_audit_map.json

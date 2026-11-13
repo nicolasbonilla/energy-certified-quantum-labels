@@ -1,0 +1,2 @@
+n=57 ibm_arch1   OOD: covZ truth 0.000 emu 0.132 | covM truth 0.00 emu 0.00 | wM/tau 0.28 | err vs truth 17.5-35.7% (control 5.1-16.4%) | 50339s
+done 50340 s

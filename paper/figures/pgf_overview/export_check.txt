@@ -1,0 +1,53 @@
+export_overview.py: arrays recorded from fig1_overview.law() and .learner() (54 data calls)
+inputs: phase3\full_runs\map\laptop_analysis\summary_map.json
+        phase3\full_runs\huang\laptop_analysis\summary_huang.json
+        phase3\full_runs\learning_ibm\out\results.json
+        phase3\full_runs\method\out_20261030T003230Z\out (emu, ref, n = 57)
+
+wrote b_hh_avg.dat             3 rows  (n de_out de_in)
+wrote b_hh_loc.dat             3 rows  (n de_out de_in)
+wrote b_bm_avg.dat             6 rows  (n de_out de_in)
+wrote b_bm_loc.dat             3 rows  (n de_out de_in)
+wrote b_hh_avg_bars.dat        9 rows  (n de)
+wrote b_hh_loc_bars.dat        9 rows  (n de)
+wrote b_bm_avg_bars.dat        9 rows  (n de)
+wrote b_bm_loc_bars.dat        6 rows  (n de)
+wrote b_guide_loc_hh.dat       2 rows  (n de)
+wrote b_guide_loc_bm.dat       2 rows  (n de)
+
+(b) 26 marker/bar values equal summary_map.json (rows n=19,57,115, Jz=4: de_star_out, de_star_in) and summary_huang.json (tau.de_out, tau.de_in) exactly
+    guides: 1.35 x and 1/1.35 x the smallest-size local value, slope -1 (styling, as in fig1_overview.py)
+    hh_avg: de_out(n_max)/de_out(n_min) = 1.250; n_min/n_max = 0.165
+    hh_loc: de_out(n_max)/de_out(n_min) = 0.174; n_min/n_max = 0.165
+    bm_loc: de_out(n_max)/de_out(n_min) = 0.315; n_min/n_max = 0.444
+wrote c_truth.dat             14 rows  (J ms)
+wrote c_labels_train.dat      10 rows  (J ms)
+wrote c_labels_test.dat        4 rows  (J ms)
+wrote c_model.dat            200 rows  (J lo pred hi)
+wrote c_bars_grey.dat         27 rows  (J ms)
+wrote c_bars_teal.dat          9 rows  (J ms)
+wrote c_bars_table.dat        12 rows  (J lo hi certified)
+wrote c_coverage.dat           2 rows  (row cov_truth cov_new)
+wrote c_coverage_seg.dat       6 rows  (cov row)
+
+(c) truth (14 couplings) equals results.json rows m_s_truth: max |diff| = 3.3e-16
+    emulated labels (10 training + 4 test) equal rows m_s_emu: max |diff| = 3.3e-16
+    band half-width q = 0.00248523 = ood_emulated rows[*].qM (all four equal) = device_illustration qM 0.00248523
+    drawn model (200-point grid, linear interpolation) vs stored ood m_s_pred: max |diff| = 2.3e-06
+    12 window bars equal the map rows (grey: inner bound at the last eps <= the label's eps, widened to the label; teal: outer at the first eps >= it)
+    grey widths / tau: 1.1:19.47, 1.2:16.39, 1.3:13.91, 1.4:11.89, 1.6:8.70, 1.8:6.03, 2.0:4.49, 2.5:2.20, 3.0:1.27  (all > 1: wider than tau, label dropped)
+    teal widths / tau: 4.0:0.496, 5.0:0.264, 6.0:0.188  (all <= 1: certified, kept)
+    no bar at Jz = [2.2, 3.5]: the map has no m_s row there (certification[J].m_s.row = false)
+    lowest grey-bar end 0.2008 (drawn axis in fig1_overview.py starts at 0.38: bars at the test couplings are clipped)
+    coverage indist_emulated  truth 0.1000, new labels 0.9035  (= summary covZ_truth, covZ_emu)
+    coverage ood_emulated     truth 0.0000, new labels 0.3114  (= summary covZ_truth, covZ_emu)
+
+caption checks (main.tex Fig. 1):
+  standard 90% interval: alpha = 0.1, levels [0.9], reference line at 0.9
+  m_s interval median width (training range) widthM_tau_median = 0.0926 -> '0.093', 'about 0.1 tau'
+  per-site Z median width, training range widthZ_tau_median = 0.0924 -> 0.092 (printed 0.09 tau)
+  per-site Z median width, test range     widthZ_tau_median = 0.1172 -> 0.117 (printed 0.12 tau)
+  drawn band 2q / tau(Jz) over the couplings with a map row: 0.084 .. 0.139 (about 0.1 tau, too narrow to see)
+  n = 57 qubits: results.json sizes['57']; tau_rel = 0.06
+
+ALL ASSERTIONS PASSED

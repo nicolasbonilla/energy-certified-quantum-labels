@@ -1,0 +1,293 @@
+test_czz_shift (__main__.T1Czz.test_czz_shift) ... ok
+test_predict (__main__.T2Predict.test_predict) ... ok
+test_lab_vs_exact (__main__.T3EndToEnd.test_lab_vs_exact) ... /mnt/cj/sandbox/map_20261030T022613Z/code/tests/test_map.py:143: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/maptest_9xza0jjk/code/graphs/hh_d5.json' mode='w' encoding='UTF-8'>
+  json.dump(G, open(os.path.join(root, "code", "graphs", "hh_d5.json"), "w"))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/mnt/cj/sandbox/map_20261030T022613Z/code/tests/test_map.py:148: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/maptest_9xza0jjk/code/readings_declared.json' mode='w' encoding='UTF-8'>
+  json.dump(RD, open(os.path.join(root, "code", "readings_declared.json"), "w"))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+R1 chi160 n=57 Jz=2.0 E=-7.2517317791 m_s=0.800332 sweeps=14 t=5s
+R1 chi320 n=57 Jz=2.0 E=-7.2517317791 m_s=0.800332 sweeps=7 t=2s
+R2 n=57 Jz=2.0 E=-6.1460732363 t=7s
+R3 n=57 Jz=2.0 E=-6.7517058497 t=5s
+R4 n=57 Jz=2.0 E=-5.9475639637 t=5s
+{"n": 57, "Jz": 2.0, "E0": -7.251731779141669, "gaps": {"in_sector": 1.1056585428229369, "sz_minus": 0.5000259293947584, "sz_plus": 1.3041678154632805}, "gap_ours": 0.5000259293947584, "gap_ibm1": 1.0, "r1": 0.05, "dchi": 3.552713678800501e-15, "eps_dig": 0.05, "eps_lo": 0.02000103717579034, "eps_up": 0.06000000000000355, "ood": false, "rule": "E_up = E0 + 1.2 r1 max(gaps) + dchi; E_lo = E0 + 0.8 r1 min(gaps); reading 1", "E_lo": -7.231730741965879, "E_up": -7.191731779141666, "E_dig": -7.201731779141669, "gs_sid": "n57_J2.0_R1_chi320", "m_s_GS": 0.800332418440752}
+lab n=57 Jz=2.0 m_s+ lam=0.005000 eps=0.000167733 o=0.805993 sweeps=4 t=1s [lam0]
+lab n=57 Jz=2.0 m_s- lam=0.005000 eps=0.000185573 o=0.794226 sweeps=4 t=1s [lam0]
+lab n=57 Jz=2.0 m_s+ lam=0.020931 eps=0.00254997 o=0.821638 sweeps=4 t=1s [target]
+lab n=57 Jz=2.0 m_s+ lam=0.022557 eps=0.00292201 o=0.823064 sweeps=4 t=1s [target]
+lab n=57 Jz=2.0 m_s+ lam=0.064872 eps=0.0179751 o=0.852756 sweeps=4 t=1s [target]
+lab n=57 Jz=2.0 m_s+ lam=0.069029 eps=0.0198545 o=0.855096 sweeps=4 t=1s [target]
+lab n=57 Jz=2.0 m_s+ lam=0.071492 eps=0.0209925 o=0.856446 sweeps=4 t=1s [target]
+lab n=57 Jz=2.0 m_s+ lam=0.141005 eps=0.0581361 o=0.886320 sweeps=4 t=1s [target]
+lab n=57 Jz=2.0 m_s- lam=0.019900 eps=0.00349237 o=0.772660 sweeps=4 t=1s [target]
+lab n=57 Jz=2.0 m_s- lam=0.018350 eps=0.00291255 o=0.775186 sweeps=4 t=1s [target]
+lab n=57 Jz=2.0 m_s- lam=0.043397 eps=0.0234293 o=0.721861 sweeps=4 t=1s [target]
+lab n=57 Jz=2.0 m_s- lam=0.040674 eps=0.0196659 o=0.729319 sweeps=4 t=1s [target]
+lab n=57 Jz=2.0 m_s- lam=0.041675 eps=0.0209898 o=0.726640 sweeps=4 t=1s [target]
+lab n=57 Jz=2.0 m_s- lam=0.062028 eps=0.0686407 o=0.651552 sweeps=4 t=1s [target]
+lab n=57 Jz=2.0 m_s- lam=0.059902 eps=0.0611496 o=0.661790 sweeps=4 t=1s [target]
+lab n=57 Jz=2.0 m_s+ lam=0.023270 eps=0.00309167 o=0.823681 sweeps=4 t=1s [tau]
+lab n=57 Jz=2.0 m_s- lam=0.018821 eps=0.00308208 o=0.774426 sweeps=4 t=1s [tau]
+{"n": 57, "Jz": 2.0, "label": "m_s", "S": 12.0, "E0": -7.251731779141669, "o_GS": 0.8003324184407513, "tau": 0.048019945106445076, "chi_two": 1.1766831507419417, "eps_tau_law": 0.002939510682937928, "eps_tau_in_task": 0.00293420958762658, "eps_tau_out_task": 0.0029339728248216628, "targets": [0.002939510682937928, 0.02000103717579034, 0.06000000000000355], "n_points": {"+": 8, "-": 9}, "saturated": {"+": false, "-": false}, "time_s": 23.50023603439331}
+lab n=57 Jz=2.0 Czz_bar+ lam=0.005000 eps=8.71304e-05 o=-0.815162 sweeps=4 t=1s [lam0]
+lab n=57 Jz=2.0 Czz_bar- lam=0.005000 eps=8.48493e-05 o=-0.820895 sweeps=4 t=1s [lam0]
+lab n=57 Jz=2.0 Czz_bar+ lam=0.042530 eps=0.00696095 o=-0.791515 sweeps=4 t=1s [target]
+lab n=57 Jz=2.0 Czz_bar+ lam=0.040519 eps=0.00628494 o=-0.792872 sweeps=4 t=1s [target]
+lab n=57 Jz=2.0 Czz_bar+ lam=0.070154 eps=0.0203469 o=-0.771800 sweeps=4 t=1s [target]
+lab n=57 Jz=2.0 Czz_bar+ lam=0.067949 eps=0.0189805 o=-0.773449 sweeps=4 t=1s [target]
+lab n=57 Jz=2.0 Czz_bar+ lam=0.116866 eps=0.0633664 o=-0.733713 sweeps=4 t=1s [target]
+lab n=57 Jz=2.0 Czz_bar- lam=0.043098 eps=0.00569981 o=-0.840751 sweeps=4 t=1s [target]
+lab n=57 Jz=2.0 Czz_bar- lam=0.081956 eps=0.0186249 o=-0.858116 sweeps=4 t=1s [target]
+lab n=57 Jz=2.0 Czz_bar- lam=0.087475 eps=0.0209183 o=-0.860373 sweeps=4 t=1s [target]
+lab n=57 Jz=2.0 Czz_bar- lam=0.160671 eps=0.0587285 o=-0.886125 sweeps=4 t=1s [target]
+lab n=57 Jz=2.0 Czz_bar- lam=0.045725 eps=0.00637168 o=-0.842012 sweeps=4 t=1s [tau]
+lab n=57 Jz=2.0 Czz_bar- lam=0.044439 eps=0.00603876 o=-0.841396 sweeps=4 t=1s [tau]
+{"n": 57, "Jz": 2.0, "label": "Czz_bar", "S": 12.0, "E0": -7.251731779141669, "o_GS": -0.8180569466892051, "tau": 0.04908341680135231, "chi_two": 0.5732488907288058, "eps_tau_law": 0.006304020410311662, "eps_tau_in_task": 0.006311894865384193, "eps_tau_out_task": 0.006311147395727358, "targets": [0.006304020410311662, 0.02000103717579034, 0.06000000000000355], "n_points": {"+": 6, "-": 7}, "saturated": {"+": false, "-": false}, "time_s": 17.871880054473877}
+lab n=57 Jz=2.0 C2_bar+ lam=0.005000 eps=0.00034968 o=0.692374 sweeps=4 t=1s [lam0]
+lab n=57 Jz=2.0 C2_bar- lam=0.005000 eps=0.000369228 o=0.671836 sweeps=4 t=1s [lam0]
+lab n=57 Jz=2.0 C2_bar+ lam=0.010104 eps=0.00138889 o=0.702227 sweeps=4 t=1s [target]
+lab n=57 Jz=2.0 C2_bar+ lam=0.039390 eps=0.0180143 o=0.751384 sweeps=4 t=1s [target]
+lab n=57 Jz=2.0 C2_bar+ lam=0.042733 eps=0.0208269 o=0.756277 sweeps=4 t=1s [target]
+lab n=57 Jz=2.0 C2_bar+ lam=0.078695 eps=0.0586228 o=0.801381 sweeps=4 t=1s [target]
+lab n=57 Jz=2.0 C2_bar- lam=0.009833 eps=0.00146591 o=0.661297 sweeps=4 t=1s [target]
+lab n=57 Jz=2.0 C2_bar- lam=0.035433 eps=0.0217691 o=0.598370 sweeps=4 t=1s [target]
+lab n=57 Jz=2.0 C2_bar- lam=0.033216 eps=0.0189169 o=0.604305 sweeps=4 t=1s [target]
+lab n=57 Jz=2.0 C2_bar- lam=0.057268 eps=0.0630329 o=0.535115 sweeps=4 t=1s [target]
+lab n=57 Jz=2.0 C2_bar+ lam=0.010565 eps=0.00151447 o=0.703095 sweeps=4 t=1s [tau]
+lab n=57 Jz=2.0 C2_bar- lam=0.009501 eps=0.00136594 o=0.662035 sweeps=4 t=1s [tau]
+{"n": 57, "Jz": 2.0, "label": "C2_bar", "S": 14.0, "E0": -7.251731779141669, "o_GS": 0.682314903525672, "tau": 0.04093889421154032, "chi_two": 2.053795440083861, "eps_tau_law": 0.0014280817828632908, "eps_tau_in_task": 0.0014293195274022175, "eps_tau_out_task": 0.00142855686811183, "targets": [0.0014280817828632908, 0.02000103717579034, 0.06000000000000355], "n_points": {"+": 6, "-": 6}, "saturated": {"+": false, "-": false}, "time_s": 18.417649745941162}
+lab n=57 Jz=2.0 Z_bulk+ lam=0.100000 eps=0.00198037 o=-0.740592 sweeps=4 t=1s [lam0]
+lab n=57 Jz=2.0 Z_bulk- lam=0.100000 eps=0.00146329 o=-0.809083 sweeps=4 t=1s [lam0]
+lab n=57 Jz=2.0 Z_bulk+ lam=0.063432 eps=0.000751456 o=-0.755582 sweeps=4 t=1s [target]
+lab n=57 Jz=2.0 Z_bulk+ lam=0.296331 eps=0.0245183 o=-0.631456 sweeps=4 t=1s [target]
+lab n=57 Jz=2.0 Z_bulk+ lam=0.271391 eps=0.0196312 o=-0.648664 sweeps=4 t=1s [target]
+lab n=57 Jz=2.0 Z_bulk+ lam=0.278728 eps=0.0209902 o=-0.643723 sweeps=4 t=1s [target]
+lab n=57 Jz=2.0 Z_bulk+ lam=0.426614 eps=0.065642 o=-0.518945 sweeps=4 t=1s [target]
+lab n=57 Jz=2.0 Z_bulk- lam=0.073793 eps=0.000827083 o=-0.801751 sweeps=4 t=1s [target]
+lab n=57 Jz=2.0 Z_bulk- lam=0.402681 eps=0.016099 o=-0.870919 sweeps=4 t=1s [target]
+lab n=57 Jz=2.0 Z_bulk- lam=0.456783 eps=0.0194662 o=-0.878762 sweeps=4 t=1s [target]
+lab n=57 Jz=2.0 Z_bulk- lam=0.480384 eps=0.0209656 o=-0.881962 sweeps=4 t=1s [target]
+lab n=57 Jz=2.0 Z_bulk- lam=1.000755 eps=0.054564 o=-0.929457 sweeps=4 t=1s [target]
+lab n=57 Jz=2.0 Z_bulk+ lam=0.067291 eps=0.000850861 o=-0.754061 sweeps=4 t=1s [tau]
+lab n=57 Jz=2.0 Z_bulk- lam=0.071246 eps=0.000773803 o=-0.801017 sweeps=4 t=1s [tau]
+{"n": 57, "Jz": 2.0, "label": "Z_bulk", "S": 1.0, "E0": -7.251731779141669, "o_GS": -0.7787089380687113, "tau": 0.04672253628412268, "chi_two": 0.342453493915858, "eps_tau_law": 0.0007968218442814054, "eps_tau_in_task": 0.0008063311118742257, "eps_tau_out_task": 0.0008054706158335813, "targets": [0.0007968218442814054, 0.02000103717579034, 0.06000000000000355], "n_points": {"+": 7, "-": 7}, "saturated": {"+": false, "-": false}, "time_s": 18.86085796356201}
+lab n=57 Jz=2.0 Z_boundary+ lam=0.100000 eps=0.00104236 o=0.899057 sweeps=4 t=1s [lam0]
+lab n=57 Jz=2.0 Z_boundary- lam=0.100000 eps=0.00157639 o=0.847227 sweeps=4 t=1s [lam0]
+lab n=57 Jz=2.0 Z_boundary+ lam=0.113210 eps=0.00130349 o=0.901508 sweeps=4 t=1s [target]
+lab n=57 Jz=2.0 Z_boundary+ lam=0.515342 eps=0.0143393 o=0.947619 sweeps=4 t=1s [target]
+lab n=57 Jz=2.0 Z_boundary+ lam=0.635974 eps=0.018674 o=0.955180 sweeps=4 t=1s [target]
+lab n=57 Jz=2.0 Z_boundary+ lam=0.698320 eps=0.0208604 o=0.958460 sweeps=4 t=1s [target]
+lab n=57 Jz=2.0 Z_boundary+ lam=1.747656 eps=0.0492106 o=0.984290 sweeps=4 t=1s [target]
+lab n=57 Jz=2.0 Z_boundary+ lam=2.194754 eps=0.0572421 o=0.988400 sweeps=4 t=1s [target]
+lab n=57 Jz=2.0 Z_boundary- lam=0.092058 eps=0.00131199 o=0.849980 sweeps=4 t=1s [target]
+lab n=57 Jz=2.0 Z_boundary- lam=0.314282 eps=0.0271105 o=0.732090 sweeps=4 t=1s [target]
+lab n=57 Jz=2.0 Z_boundary- lam=0.278068 eps=0.0191345 o=0.758978 sweeps=4 t=1s [target]
+lab n=57 Jz=2.0 Z_boundary- lam=0.287313 eps=0.0209667 o=0.752497 sweeps=4 t=1s [target]
+lab n=57 Jz=2.0 Z_boundary- lam=0.419039 eps=0.0666398 o=0.625464 sweeps=4 t=1s [target]
+lab n=57 Jz=2.0 Z_boundary- lam=0.409054 eps=0.0614775 o=0.637931 sweeps=4 t=1s [target]
+lab n=57 Jz=2.0 Z_boundary+ lam=0.120836 eps=0.00146428 o=0.902882 sweeps=4 t=1s [tau]
+lab n=57 Jz=2.0 Z_boundary- lam=0.096157 eps=0.00144482 o=0.848568 sweeps=4 t=1s [tau]
+{"n": 57, "Jz": 2.0, "label": "Z_boundary", "S": 1.0, "E0": -7.251731779141669, "o_GS": 0.8771336598227505, "tau": 0.05262801958936503, "chi_two": 0.2591521947853509, "eps_tau_law": 0.0013359468401341668, "eps_tau_in_task": 0.0013655728822645763, "eps_tau_out_task": 0.0013640237568615101, "targets": [0.0013359468401341668, 0.02000103717579034, 0.06000000000000355], "n_points": {"+": 8, "-": 8}, "saturated": {"+": false, "-": false}, "time_s": 20.86905598640442}
+lab n=57 Jz=2.0 Czz_edge+ lam=0.100000 eps=0.00170083 o=-0.767670 sweeps=4 t=1s [lam0]
+lab n=57 Jz=2.0 Czz_edge- lam=0.100000 eps=0.00127541 o=-0.826897 sweeps=4 t=1s [lam0]
+lab n=57 Jz=2.0 Czz_edge+ lam=0.075662 eps=0.000938179 o=-0.776342 sweeps=4 t=1s [target]
+lab n=57 Jz=2.0 Czz_edge+ lam=0.317533 eps=0.0246279 o=-0.662746 sweeps=4 t=1s [target]
+lab n=57 Jz=2.0 Czz_edge+ lam=0.290215 eps=0.0195966 o=-0.679294 sweeps=4 t=1s [target]
+lab n=57 Jz=2.0 Czz_edge+ lam=0.298232 eps=0.0209894 o=-0.674560 sweeps=4 t=1s [target]
+lab n=57 Jz=2.0 Czz_edge+ lam=0.455541 eps=0.0657399 o=-0.557572 sweeps=4 t=1s [target]
+lab n=57 Jz=2.0 Czz_edge- lam=0.087374 eps=0.000990444 o=-0.823854 sweeps=4 t=1s [target]
+lab n=57 Jz=2.0 Czz_edge- lam=0.434576 eps=0.0160107 o=-0.885786 sweeps=4 t=1s [target]
+lab n=57 Jz=2.0 Czz_edge- lam=0.494524 eps=0.0194196 o=-0.893132 sweeps=4 t=1s [target]
+lab n=57 Jz=2.0 Czz_edge- lam=0.521135 eps=0.0209621 o=-0.896170 sweeps=4 t=1s [target]
+lab n=57 Jz=2.0 Czz_edge- lam=1.093798 eps=0.0542588 o=-0.939444 sweeps=4 t=1s [target]
+lab n=57 Jz=2.0 Czz_edge+ lam=0.079229 eps=0.00103431 o=-0.775101 sweeps=4 t=1s [tau]
+lab n=57 Jz=2.0 Czz_edge- lam=0.084961 eps=0.000939564 o=-0.823264 sweeps=4 t=1s [tau]
+{"n": 57, "Jz": 2.0, "label": "Czz_edge", "S": 1.0, "E0": -7.251731779141669, "o_GS": -0.8004692317221547, "tau": 0.048028153903329276, "chi_two": 0.2961339675955482, "eps_tau_law": 0.0009736740039023136, "eps_tau_in_task": 0.0009839624966665463, "eps_tau_out_task": 0.0009833544880666347, "targets": [0.0009736740039023136, 0.02000103717579034, 0.06000000000000355], "n_points": {"+": 7, "-": 7}, "saturated": {"+": false, "-": false}, "time_s": 18.077680826187134}
+lab n=57 Jz=2.0 Z_loop+ lam=0.100000 eps=0.00251746 o=-0.719119 sweeps=4 t=1s [lam0]
+lab n=57 Jz=2.0 Z_loop- lam=0.100000 eps=0.00179528 o=-0.804823 sweeps=4 t=1s [lam0]
+lab n=57 Jz=2.0 Z_loop+ lam=0.049562 eps=0.000565665 o=-0.745026 sweeps=4 t=1s [target]
+lab n=57 Jz=2.0 Z_loop+ lam=0.264962 eps=0.0240517 o=-0.604976 sweeps=4 t=1s [target]
+lab n=57 Jz=2.0 Z_loop+ lam=0.244683 eps=0.0197251 o=-0.621949 sweeps=4 t=1s [target]
+lab n=57 Jz=2.0 Z_loop+ lam=0.250919 eps=0.0209935 o=-0.616831 sweeps=4 t=1s [target]
+lab n=57 Jz=2.0 Z_loop+ lam=0.386631 eps=0.0649654 o=-0.480676 sweeps=4 t=1s [target]
+lab n=57 Jz=2.0 Z_loop- lam=0.058690 eps=0.000660908 o=-0.790464 sweeps=4 t=1s [target]
+lab n=57 Jz=2.0 Z_loop- lam=0.361655 eps=0.0159938 o=-0.869901 sweeps=4 t=1s [target]
+lab n=57 Jz=2.0 Z_loop- lam=0.412449 eps=0.0194389 o=-0.878813 sweeps=4 t=1s [target]
+lab n=57 Jz=2.0 Z_loop- lam=0.434496 eps=0.0209603 o=-0.882406 sweeps=4 t=1s [target]
+lab n=57 Jz=2.0 Z_loop- lam=0.917260 eps=0.053844 o=-0.933599 sweeps=4 t=1s [target]
+lab n=57 Jz=2.0 Z_loop- lam=1.023042 eps=0.0603706 o=-0.940337 sweeps=4 t=1s [target]
+lab n=57 Jz=2.0 Z_loop+ lam=0.052380 eps=0.000634939 o=-0.743667 sweeps=4 t=1s [tau]
+lab n=57 Jz=2.0 Z_loop+ lam=0.053647 eps=0.000667493 o=-0.743053 sweeps=4 t=1s [tau]
+lab n=57 Jz=2.0 Z_loop- lam=0.056128 eps=0.000606999 o=-0.789525 sweeps=4 t=1s [tau]
+{"n": 57, "Jz": 2.0, "label": "Z_loop", "S": 1.0, "E0": -7.251731779141669, "o_GS": -0.7673781003935205, "tau": 0.04604268602361123, "chi_two": 0.42852063043769206, "eps_tau_law": 0.0006183859030612903, "eps_tau_in_task": 0.000626786067182028, "eps_tau_out_task": 0.0006264566982125963, "targets": [0.0006183859030612903, 0.02000103717579034, 0.06000000000000355], "n_points": {"+": 8, "-": 8}, "saturated": {"+": false, "-": false}, "time_s": 21.84406352043152}
+R1 chi160 n=57 Jz=1.2 E=-5.4668370209 m_s=0.555748 sweeps=14 t=4s
+R1 chi320 n=57 Jz=1.2 E=-5.4668370209 m_s=0.555748 sweeps=7 t=2s
+R2 n=57 Jz=1.2 E=-4.8180807872 t=6s
+R3 n=57 Jz=1.2 E=-5.3996310189 t=5s
+R4 n=57 Jz=1.2 E=-4.6905937876 t=5s
+{"n": 57, "Jz": 1.2, "E0": -5.466837020936469, "gaps": {"in_sector": 0.6487562337527306, "sz_minus": 0.06720600202970939, "sz_plus": 0.7762432333502876}, "gap_ours": 0.06720600202970939, "gap_ibm1": 0.2, "r1": null, "dchi": 2.6645352591003757e-15, "eps_dig": 0.14400000000000002, "eps_lo": 0.11520000000000002, "eps_up": 0.17280000000000267, "ood": true, "rule": "OOD conditional floor 0.012 per site, x0.8 / x1.2 (+dchi)", "E_lo": -5.35163702093647, "E_up": -5.294037020936467, "E_dig": -5.322837020936469, "gs_sid": "n57_J1.2_R1_chi320", "m_s_GS": 0.5557477409547995}
+lab n=57 Jz=1.2 m_s+ lam=0.005000 eps=0.000542728 o=0.574091 sweeps=4 t=1s [lam0]
+lab n=57 Jz=1.2 m_s- lam=0.005000 eps=0.000605942 o=0.535825 sweeps=4 t=1s [lam0]
+lab n=57 Jz=1.2 m_s+ lam=0.004481 eps=0.000438321 o=0.572255 sweeps=4 t=1s [target]
+lab n=57 Jz=1.2 m_s+ lam=0.078200 eps=0.0682509 o=0.732329 sweeps=4 t=1s [target]
+lab n=57 Jz=1.2 m_s+ lam=0.105323 eps=0.103001 o=0.764083 sweeps=4 t=1s [target]
+lab n=57 Jz=1.2 m_s+ lam=0.114208 eps=0.114654 o=0.772934 sweeps=4 t=1s [target]
+lab n=57 Jz=1.2 m_s+ lam=0.159226 eps=0.174359 o=0.809652 sweeps=4 t=1s [target]
+lab n=57 Jz=1.2 m_s- lam=0.004241 eps=0.000432188 o=0.538958 sweeps=4 t=1s [target]
+lab n=57 Jz=1.2 m_s- lam=0.064571 eps=0.168254 o=0.165111 sweeps=4 t=1s [target]
+lab n=57 Jz=1.2 m_s- lam=0.054354 eps=0.114142 o=0.240952 sweeps=4 t=1s [target]
+lab n=57 Jz=1.2 m_s- lam=0.055772 eps=0.121092 o=0.230434 sweeps=4 t=1s [target]
+lab n=57 Jz=1.2 m_s+ lam=0.004360 eps=0.000415513 o=0.571825 sweeps=4 t=1s [tau]
+lab n=57 Jz=1.2 m_s- lam=0.004365 eps=0.0004586 o=0.538446 sweeps=4 t=1s [tau]
+{"n": 57, "Jz": 1.2, "label": "m_s", "S": 12.0, "E0": -5.466837020936469, "o_GS": 0.5557477409548001, "tau": 0.033344864457288, "chi_two": 3.8266044789529663, "eps_tau_law": 0.0004358485408371003, "eps_tau_in_task": 0.00043646293079158127, "eps_tau_out_task": 0.00043641873735689174, "targets": [0.0004358485408371003, 0.11520000000000002, 0.17280000000000267], "n_points": {"+": 7, "-": 6}, "saturated": {"+": false, "-": false}, "time_s": 17.141297101974487}
+lab n=57 Jz=1.2 Czz_bar+ lam=0.005000 eps=0.000160389 o=-0.646822 sweeps=4 t=1s [lam0]
+lab n=57 Jz=1.2 Czz_bar- lam=0.005000 eps=0.000158938 o=-0.657467 sweeps=4 t=1s [lam0]
+lab n=57 Jz=1.2 Czz_bar+ lam=0.018339 eps=0.00217969 o=-0.632421 sweeps=4 t=1s [target]
+lab n=57 Jz=1.2 Czz_bar+ lam=0.132292 eps=0.113793 o=-0.508291 sweeps=4 t=1s [target]
+lab n=57 Jz=1.2 Czz_bar+ lam=0.136391 eps=0.120697 o=-0.504008 sweeps=4 t=1s [target]
+lab n=57 Jz=1.2 Czz_bar+ lam=0.166790 eps=0.177161 o=-0.472947 sweeps=4 t=1s [target]
+lab n=57 Jz=1.2 Czz_bar- lam=0.018422 eps=0.00212739 o=-0.671503 sweeps=4 t=1s [target]
+lab n=57 Jz=1.2 Czz_bar- lam=0.137043 eps=0.0963117 o=-0.777133 sweeps=4 t=1s [target]
+lab n=57 Jz=1.2 Czz_bar- lam=0.150588 eps=0.112976 o=-0.786793 sweeps=4 t=1s [target]
+lab n=57 Jz=1.2 Czz_bar- lam=0.156785 eps=0.120828 o=-0.791051 sweeps=4 t=1s [target]
+lab n=57 Jz=1.2 Czz_bar- lam=0.197822 eps=0.175449 o=-0.816803 sweeps=4 t=1s [target]
+lab n=57 Jz=1.2 Czz_bar+ lam=0.017831 eps=0.00205989 o=-0.632973 sweeps=4 t=1s [tau]
+lab n=57 Jz=1.2 Czz_bar- lam=0.019093 eps=0.00228344 o=-0.672197 sweeps=4 t=1s [tau]
+{"n": 57, "Jz": 1.2, "label": "Czz_bar", "S": 12.0, "E0": -5.466837020936469, "o_GS": -0.652162499306621, "tau": 0.039129749958397256, "chi_two": 1.0644731414818032, "eps_tau_law": 0.002157598823501454, "eps_tau_in_task": 0.002159282899221626, "eps_tau_out_task": 0.0021588547477517928, "targets": [0.002157598823501454, 0.11520000000000002, 0.17280000000000267], "n_points": {"+": 6, "-": 7}, "saturated": {"+": false, "-": false}, "time_s": 17.055858850479126}
+lab n=57 Jz=1.2 C2_bar+ lam=0.005000 eps=0.000601505 o=0.420784 sweeps=4 t=1s [lam0]
+lab n=57 Jz=1.2 C2_bar- lam=0.005000 eps=0.000603547 o=0.386343 sweeps=4 t=1s [lam0]
+lab n=57 Jz=1.2 C2_bar+ lam=0.003519 eps=0.000298234 o=0.415698 sweeps=4 t=1s [target]
+lab n=57 Jz=1.2 C2_bar+ lam=0.069442 eps=0.0984044 o=0.617321 sweeps=4 t=1s [target]
+lab n=57 Jz=1.2 C2_bar+ lam=0.075326 eps=0.113102 o=0.631828 sweeps=4 t=1s [target]
+lab n=57 Jz=1.2 C2_bar+ lam=0.078342 eps=0.120838 o=0.639020 sweeps=4 t=1s [target]
+lab n=57 Jz=1.2 C2_bar+ lam=0.098574 eps=0.175383 o=0.683198 sweeps=4 t=1s [target]
+lab n=57 Jz=1.2 C2_bar- lam=0.003513 eps=0.000297936 o=0.391472 sweeps=4 t=1s [target]
+lab n=57 Jz=1.2 C2_bar- lam=0.069065 eps=0.101279 o=0.184574 sweeps=4 t=1s [target]
+lab n=57 Jz=1.2 C2_bar- lam=0.073778 eps=0.113668 o=0.172181 sweeps=4 t=1s [target]
+lab n=57 Jz=1.2 C2_bar- lam=0.076449 eps=0.120877 o=0.165325 sweeps=4 t=1s [target]
+lab n=57 Jz=1.2 C2_bar- lam=0.095622 eps=0.175904 o=0.119532 sweeps=4 t=1s [target]
+lab n=57 Jz=1.2 C2_bar+ lam=0.003428 eps=0.000283009 o=0.415385 sweeps=4 t=1s [tau]
+lab n=57 Jz=1.2 C2_bar- lam=0.003424 eps=0.000282991 o=0.391780 sweeps=4 t=1s [tau]
+{"n": 57, "Jz": 1.2, "label": "C2_bar", "S": 14.0, "E0": -5.466837020936469, "o_GS": 0.40358539408755584, "tau": 0.02421512364525335, "chi_two": 3.4440267445377257, "eps_tau_law": 0.00029795104659061637, "eps_tau_in_task": 0.0002978215765740977, "eps_tau_out_task": 0.00029781813970464205, "targets": [0.00029795104659061637, 0.11520000000000002, 0.17280000000000267], "n_points": {"+": 7, "-": 7}, "saturated": {"+": false, "-": false}, "time_s": 20.32079291343689}
+lab n=57 Jz=1.2 Z_bulk+ lam=0.100000 eps=0.00525045 o=-0.411247 sweeps=4 t=1s [lam0]
+lab n=57 Jz=1.2 Z_bulk- lam=0.100000 eps=0.00392419 o=-0.594203 sweeps=4 t=1s [lam0]
+lab n=57 Jz=1.2 Z_bulk+ lam=0.015693 eps=0.00011457 o=-0.498161 sweeps=4 t=1s [target]
+lab n=57 Jz=1.2 Z_bulk+ lam=0.016639 eps=0.000128981 o=-0.497270 sweeps=4 t=1s [target]
+lab n=57 Jz=1.2 Z_bulk+ lam=0.445655 eps=0.148385 o=0.093027 sweeps=4 t=1s [target]
+lab n=57 Jz=1.2 Z_bulk+ lam=0.397954 eps=0.115307 o=0.014608 sweeps=4 t=1s [target]
+lab n=57 Jz=1.2 Z_bulk+ lam=0.388771 eps=0.109385 o=-0.000448 sweeps=4 t=1s [target]
+lab n=57 Jz=1.2 Z_bulk+ lam=0.483565 eps=0.177107 o=0.154854 sweeps=4 t=1s [target]
+lab n=57 Jz=1.2 Z_bulk- lam=0.018152 eps=0.000145874 o=-0.528861 sweeps=4 t=1s [target]
+lab n=57 Jz=1.2 Z_bulk- lam=0.017089 eps=0.000129499 o=-0.527931 sweeps=4 t=1s [target]
+lab n=57 Jz=1.2 Z_bulk- lam=0.576424 eps=0.0678179 o=-0.808557 sweeps=4 t=1s [target]
+lab n=57 Jz=1.2 Z_bulk- lam=0.798341 eps=0.100171 o=-0.856147 sweeps=4 t=1s [target]
+lab n=57 Jz=1.2 Z_bulk- lam=0.897184 eps=0.11357 o=-0.871978 sweeps=4 t=1s [target]
+lab n=57 Jz=1.2 Z_bulk- lam=1.362367 eps=0.167223 o=-0.920630 sweeps=4 t=1s [target]
+lab n=57 Jz=1.2 Z_bulk+ lam=0.017127 eps=0.000136754 o=-0.496809 sweeps=4 t=1s [tau]
+lab n=57 Jz=1.2 Z_bulk- lam=0.017579 eps=0.000136922 o=-0.528360 sweeps=4 t=1s [tau]
+{"n": 57, "Jz": 1.2, "label": "Z_bulk", "S": 1.0, "E0": -5.466837020936469, "o_GS": -0.5126799743255711, "tau": 0.030760798459534264, "chi_two": 0.9147832700571337, "eps_tau_law": 0.00012929657122623536, "eps_tau_in_task": 0.00013008465767549993, "eps_tau_out_task": 0.0001300724982056245, "targets": [0.00012929657122623536, 0.11520000000000002, 0.17280000000000267], "n_points": {"+": 8, "-": 8}, "saturated": {"+": false, "-": false}, "time_s": 20.75730061531067}
+lab n=57 Jz=1.2 Z_boundary+ lam=0.100000 eps=0.0032295 o=0.794064 sweeps=4 t=1s [lam0]
+lab n=57 Jz=1.2 Z_boundary- lam=0.100000 eps=0.0056901 o=0.618656 sweeps=4 t=1s [lam0]
+lab n=57 Jz=1.2 Z_boundary+ lam=0.028888 eps=0.000325997 o=0.747785 sweeps=4 t=1s [target]
+lab n=57 Jz=1.2 Z_boundary+ lam=0.026266 eps=0.000271471 o=0.745808 sweeps=4 t=1s [target]
+lab n=57 Jz=1.2 Z_boundary+ lam=0.692738 eps=0.0480443 o=0.938230 sweeps=4 t=1s [target]
+lab n=57 Jz=1.2 Z_boundary+ lam=1.296745 eps=0.078943 o=0.971176 sweeps=4 t=1s [target]
+lab n=57 Jz=1.2 Z_boundary+ lam=1.892316 eps=0.0977261 o=0.983261 sweeps=4 t=1s [target]
+lab n=57 Jz=1.2 Z_boundary+ lam=3.446388 eps=0.12348 o=0.993623 sweeps=4 t=1s [target]
+lab n=57 Jz=1.2 Z_boundary+ lam=4.967639 eps=0.135745 o=0.996624 sweeps=4 t=1s [target]
+lab n=57 Jz=1.2 Z_boundary- lam=0.021763 eps=0.000213557 o=0.705423 sweeps=4 t=1s [target]
+lab n=57 Jz=1.2 Z_boundary- lam=0.024248 eps=0.00026701 o=0.703100 sweeps=4 t=1s [target]
+lab n=57 Jz=1.2 Z_boundary- lam=0.402737 eps=0.200677 o=-0.095780 sweeps=4 t=1s [target]
+lab n=57 Jz=1.2 Z_boundary- lam=0.324171 eps=0.113567 o=0.143704 sweeps=4 t=1s [target]
+lab n=57 Jz=1.2 Z_boundary- lam=0.332059 eps=0.121214 o=0.120397 sweeps=4 t=1s [target]
+lab n=57 Jz=1.2 Z_boundary- lam=0.384656 eps=0.178755 o=-0.040098 sweeps=4 t=1s [target]
+lab n=57 Jz=1.2 Z_boundary+ lam=0.027480 eps=0.00029614 o=0.746726 sweeps=4 t=1s [tau]
+lab n=57 Jz=1.2 Z_boundary- lam=0.025438 eps=0.000294882 o=0.701978 sweeps=4 t=1s [tau]
+{"n": 57, "Jz": 1.2, "label": "Z_boundary", "S": 1.0, "E0": -5.466837020936469, "o_GS": 0.7247478661244254, "tau": 0.043484871967465526, "chi_two": 0.8770402084531581, "eps_tau_law": 0.0002695050454644951, "eps_tau_in_task": 0.0002791811305109526, "eps_tau_out_task": 0.0002789458939802536, "targets": [0.0002695050454644951, 0.11520000000000002, 0.17280000000000267], "n_points": {"+": 9, "-": 8}, "saturated": {"+": false, "-": false}, "time_s": 22.209161520004272}
+lab n=57 Jz=1.2 Czz_edge+ lam=0.100000 eps=0.00411016 o=-0.527211 sweeps=4 t=1s [lam0]
+lab n=57 Jz=1.2 Czz_edge- lam=0.100000 eps=0.00306479 o=-0.670175 sweeps=4 t=1s [lam0]
+lab n=57 Jz=1.2 Czz_edge+ lam=0.023737 eps=0.00020699 o=-0.589243 sweeps=4 t=1s [target]
+lab n=57 Jz=1.2 Czz_edge+ lam=0.025056 eps=0.000231065 o=-0.588256 sweeps=4 t=1s [target]
+lab n=57 Jz=1.2 Czz_edge+ lam=0.496645 eps=0.165543 o=-0.019771 sweeps=4 t=1s [target]
+lab n=57 Jz=1.2 Czz_edge+ lam=0.424387 eps=0.113265 o=-0.133221 sweeps=4 t=1s [target]
+lab n=57 Jz=1.2 Czz_edge+ lam=0.436103 eps=0.121007 o=-0.115227 sweeps=4 t=1s [target]
+lab n=57 Jz=1.2 Czz_edge- lam=0.027489 eps=0.000257432 o=-0.625453 sweeps=4 t=1s [target]
+lab n=57 Jz=1.2 Czz_edge- lam=0.026073 eps=0.000232074 o=-0.624507 sweeps=4 t=1s [target]
+lab n=57 Jz=1.2 Czz_edge- lam=0.662455 eps=0.0644823 o=-0.857233 sweeps=4 t=1s [target]
+lab n=57 Jz=1.2 Czz_edge- lam=0.949664 eps=0.097109 o=-0.898302 sweeps=4 t=1s [target]
+lab n=57 Jz=1.2 Czz_edge- lam=1.103651 eps=0.112756 o=-0.913587 sweeps=4 t=1s [target]
+lab n=57 Jz=1.2 Czz_edge- lam=1.742105 eps=0.164447 o=-0.951078 sweeps=4 t=1s [target]
+lab n=57 Jz=1.2 Czz_edge+ lam=0.025801 eps=0.000245291 o=-0.587697 sweeps=4 t=1s [tau]
+lab n=57 Jz=1.2 Czz_edge- lam=0.026837 eps=0.000245599 o=-0.625018 sweeps=4 t=1s [tau]
+{"n": 57, "Jz": 1.2, "label": "Czz_edge", "S": 1.0, "E0": -5.466837020936469, "o_GS": -0.6065320477198364, "tau": 0.03639192286319018, "chi_two": 0.714819248686584, "eps_tau_law": 0.00023159212138484632, "eps_tau_in_task": 0.00023339179173342828, "eps_tau_out_task": 0.00023336507244975382, "targets": [0.00023159212138484632, 0.11520000000000002, 0.17280000000000267], "n_points": {"+": 7, "-": 8}, "saturated": {"+": false, "-": false}, "time_s": 19.578023195266724}
+lab n=57 Jz=1.2 Z_loop+ lam=0.100000 eps=0.00655038 o=-0.381728 sweeps=4 t=1s [lam0]
+lab n=57 Jz=1.2 Z_loop- lam=0.100000 eps=0.0047057 o=-0.606203 sweeps=4 t=1s [lam0]
+lab n=57 Jz=1.2 Z_loop+ lam=0.012564 eps=8.99255e-05 o=-0.493585 sweeps=4 t=1s [target]
+lab n=57 Jz=1.2 Z_loop+ lam=0.013441 eps=0.000103077 o=-0.492574 sweeps=4 t=1s [target]
+lab n=57 Jz=1.2 Z_loop+ lam=0.399834 eps=0.139677 o=0.137380 sweeps=4 t=1s [target]
+lab n=57 Jz=1.2 Z_loop+ lam=0.366423 eps=0.116064 o=0.075742 sweeps=4 t=1s [target]
+lab n=57 Jz=1.2 Z_loop+ lam=0.356823 eps=0.109601 o=0.057870 sweeps=4 t=1s [target]
+lab n=57 Jz=1.2 Z_loop+ lam=0.448206 eps=0.176341 o=0.223887 sweeps=4 t=1s [target]
+lab n=57 Jz=1.2 Z_loop- lam=0.014823 eps=0.000119573 o=-0.524061 sweeps=4 t=1s [target]
+lab n=57 Jz=1.2 Z_loop- lam=0.013784 eps=0.000103577 o=-0.522943 sweeps=4 t=1s [target]
+lab n=57 Jz=1.2 Z_loop- lam=0.527108 eps=0.0653534 o=-0.826768 sweeps=4 t=1s [target]
+lab n=57 Jz=1.2 Z_loop- lam=0.754108 eps=0.0976393 o=-0.877919 sweeps=4 t=1s [target]
+lab n=57 Jz=1.2 Z_loop- lam=0.873992 eps=0.112737 o=-0.896519 sweeps=4 t=1s [target]
+lab n=57 Jz=1.2 Z_loop- lam=1.379823 eps=0.16277 o=-0.942380 sweeps=4 t=1s [target]
+lab n=57 Jz=1.2 Z_loop+ lam=0.013842 eps=0.000109392 o=-0.492111 sweeps=4 t=1s [tau]
+lab n=57 Jz=1.2 Z_loop- lam=0.014180 eps=0.000109542 o=-0.523369 sweeps=4 t=1s [tau]
+{"n": 57, "Jz": 1.2, "label": "Z_loop", "S": 1.0, "E0": -5.466837020936469, "o_GS": -0.5078262936187506, "tau": 0.030469577617125036, "chi_two": 1.1223767312501738, "eps_tau_law": 0.00010339611628573925, "eps_tau_in_task": 0.00010402166239886768, "eps_tau_out_task": 0.0001040115268176045, "targets": [0.00010339611628573925, 0.11520000000000002, 0.17280000000000267], "n_points": {"+": 8, "-": 8}, "saturated": {"+": false, "-": false}, "time_s": 21.978981971740723}
+ok
+test_th_pure_witness (__main__.T4ToeplitzHausdorff.test_th_pure_witness) ... /mnt/cj/sandbox/map_20261030T022613Z/code/tests/test_map.py:219: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/thtest_aao4pjbt/g.json' mode='w' encoding='UTF-8'>
+  _j.dump(G, open(gp, "w"))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/mnt/cj/sandbox/map_20261030T022613Z/code/th_witness.py:53: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/thtest_aao4pjbt/g.json' mode='r' encoding='UTF-8'>
+  G = json.load(open(gpath))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/mnt/cj/sandbox/map_20261030T022613Z/code/th_witness.py:102: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/thtest_aao4pjbt/th.json' mode='w' encoding='UTF-8'>
+  json.dump(out, open(outp, "w"), indent=1)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/mnt/cj/sandbox/map_20261030T022613Z/code/tests/test_map.py:222: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/thtest_aao4pjbt/th.json' mode='r' encoding='UTF-8'>
+  r = _j.load(open(outp))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 1091.491s
+
+OK
+{
+ "Jz": 1.6,
+ "label": "m_s",
+ "npz_a": "/tmp/thtest_aao4pjbt/s0.npz",
+ "npz_b": "/tmp/thtest_aao4pjbt/s1.npz",
+ "t_a": 0.4,
+ "t_b": 0.6,
+ "E_thr": 0.0,
+ "E_a": -6.309384051217019,
+ "E_b": -6.1636104837356225,
+ "O_a": 0.7038562416686384,
+ "O_b": 0.8752609203592563,
+ "overlap_ab": "(-0.9447641945430545+5.551115123125784e-17j)",
+ "H_ab": "(5.960882647941883-4.440892098500626e-16j)",
+ "O_ab": "(-0.7695302258194073+3.3306690738754696e-16j)",
+ "E_mix": -6.221919910728181,
+ "O_mix": 0.8066990488830091,
+ "residual_2x2": 0.0,
+ "coef_a": "(0.47680443874947276+0.415520790320793j)",
+ "coef_b": "(-0.508906956901946+0.5839637910151846j)",
+ "chi_a": 32,
+ "chi_b": 32,
+ "chi_pure": 64,
+ "pure": {
+  "E": -6.221919910728177,
+  "O": 0.8066990488830087,
+  "norm": 1.0000000000000007,
+  "sector_var": 0.0,
+  "m_s": 0.8066990488830087
+ },
+ "dE_pure_mix": 3.552713678800501e-15,
+ "dO_pure_mix": -4.440892098500626e-16,
+ "below_threshold": true
+}

@@ -1,0 +1,17 @@
+E1 status: finished True (all tasks finished), updated 2026-11-12T21:56:33Z, jobs {'verified': 48}
+E1 certificate files 48; used 48 (claim identity, stored verifier record and independent verifier record all agree); skipped 0
+   by (n, Jz, sign): {'57/3.2/-1': 8, '57/3.2/+1': 2, '57/3.3/-1': 7, '57/3.3/+1': 2, '115/3.3/-1': 10, '115/3.3/+1': 1, '115/3.6/-1': 10, '115/3.6/+1': 1, '115/5.0/-1': 6, '115/5.0/+1': 1}
+declared E1 column present: True
+ n=57 m_s     with E1: J*_exact 3.5 (26 of 45; reference-free 3.5, 26); stored certificates only: 3.5 (26); against the declared E1 column: 29 rows compared, 29 identical as exact rationals; label and truth inside every interval: True
+     new rows of the extended range (width / tau; CERTIFIED): 3.2: 1.1532 no; 3.3: 1.1144 no
+     sets with E1: |S| = 26 (3.5-6.0), |S_3/4| = 23, |S_1/2| = 18
+ n=57 Czz_bar with E1: J*_exact 3.4 (27 of 45; reference-free 3.4, 27); stored certificates only: 3.4 (27); against the declared E1 column: 33 rows compared, 33 identical as exact rationals; label and truth inside every interval: True
+     new rows of the extended range (width / tau; CERTIFIED): 3.2: 1.0622 no; 3.3: 1.0213 no
+ n=115 m_s     with E1: J*_exact 3.4 (27 of 45; reference-free 3.4, 27); stored certificates only: 4.0 (21); against the declared E1 column: 28 rows compared, 28 identical as exact rationals; label and truth inside every interval: True
+     new rows of the extended range (width / tau; CERTIFIED): 3.3: 1.0695 no; 3.4: 0.9013 yes; 3.5: 0.8466 yes; 3.6: 0.7400 yes; 3.7: 0.7221 yes; 3.8: 0.6456 yes; 3.9: 0.5940 yes
+     19 rows of the old range become narrower; largest gain at 5.0: 0.5313 -> 0.2825 tau
+     sets with E1: |S| = 27 (3.4-6.0), |S_3/4| = 25, |S_1/2| = 18
+ n=115 Czz_bar with E1: J*_exact 3.6 (25 of 45; reference-free 3.6, 25); stored certificates only: 4.0 (21); against the declared E1 column: 27 rows compared, 27 identical as exact rationals; label and truth inside every interval: True
+     new rows of the extended range (width / tau; CERTIFIED): 3.4: 8.9445 no; 3.5: 1.5996 no; 3.6: 0.9576 yes; 3.7: 0.7780 yes; 3.8: 0.6379 yes; 3.9: 0.5765 yes
+disagreements with the declared E1 column beyond rounding: 0
+written C:\Users\Nicolas\Downloads\Proyecto_SQD_ML\P5_energy_certified_labels\work\phase3\full_runs\real_data\checks/rd_audit_e1_preview.json

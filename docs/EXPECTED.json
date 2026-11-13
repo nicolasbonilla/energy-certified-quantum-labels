@@ -1,0 +1,24 @@
+{
+  "certificates": 316,
+  "guardian": {
+    "main.tex": {
+      "CONTEXT": 159,
+      "MISSING": 0,
+      "PATH": 261,
+      "STRING": 404,
+      "UNCHECKED": 73,
+      "total": 897,
+      "unresolved_items": 0
+    },
+    "supplement.tex": {
+      "CONTEXT": 544,
+      "MISSING": 0,
+      "PATH": 986,
+      "STRING": 1951,
+      "UNCHECKED": 842,
+      "total": 4323,
+      "unresolved_items": 0
+    }
+  },
+  "upstream_archive_included": true
+}

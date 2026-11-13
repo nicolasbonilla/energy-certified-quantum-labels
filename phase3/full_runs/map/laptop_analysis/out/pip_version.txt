@@ -1,0 +1,1 @@
+/mnt/cj/venv/bin/python: No module named pip

@@ -1,0 +1,16 @@
+test_generators_vs_dense (__main__.TestBO2.test_generators_vs_dense) ... ok
+test_run_all_toy (__main__.TestBO2.test_run_all_toy) ... bo 2.0 ZY_pergate_minority C0 -6.199211 Copt -6.206978 Ebo -6.207246 f 0.0076 th_rms 7.24e-01 0s
+bo 2.0 ZY_pergate_majority C0 -6.199211 Copt -6.219234 Ebo -6.228080 f 0.0274 th_rms 8.41e-01 0s
+bo 2.0 ZY_shared_minority C0 -6.199211 Copt -6.199211 Ebo -6.199211 f 0.0000 th_rms 1.28e-10 0s
+bo 2.0 ZY_shared_majority C0 -6.199211 Copt -6.199211 Ebo -6.199211 f 0.0000 th_rms 1.28e-10 0s
+bo 2.0 ZY_procedure_minority C0 -6.199211 Copt -6.206978 Ebo -6.207246 f 0.0076 th_rms 7.24e-01 0s
+bo 2.0 ZY_procedure_majority C0 -6.199211 Copt -6.219234 Ebo -6.228080 f 0.0274 th_rms 8.41e-01 0s
+bo 2.0 YX_pergate_minority C0 -6.199211 Copt -7.121858 Ebo -7.129935 f 0.8843 th_rms 3.44e-01 0s
+bo 2.0 YX_pergate_majority C0 -6.199211 Copt -7.121858 Ebo -7.129935 f 0.8843 th_rms 3.44e-01 0s
+bo 2.0 GV_pergate C0 -6.199211 Copt -7.189128 Ebo -7.199397 f 0.9503 th_rms 1.89e-01 0s
+ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 10.907s
+
+OK

@@ -1,0 +1,30 @@
+n= 19 Jz=4.0 Czz_bar  E0=  -21.0256 eps_up=0.0394 eps_tau=0.0860  s_req=0.0466 J  (0.222 % |E0|, 2.45e-03 J/site)  dec+: lam=0.2323 F=-16.676  dec-: lam=0.4056 F=-28.847 Jz'=3.071/5.622
+n= 19 Jz=4.0 m_s      E0=  -21.0256 eps_up=0.0394 eps_tau=0.0778  s_req=0.0384 J  (0.183 % |E0|, 2.02e-03 J/site)  dec+: lam=0.4363 F=-29.038  dec-: lam=0.1972 F=-17.504 
+n= 57 Jz=3.4 Czz_bar  E0=  -57.9040 eps_up=0.1695 eps_tau=0.1868  s_req=0.0173 J  (0.030 % |E0|, 3.04e-04 J/site)  dec+: lam=0.1700 F=-47.846  dec-: lam=0.2750 F=-74.672 Jz'=2.720/4.500
+n= 57 Jz=3.6 Czz_bar  E0=  -60.9169 eps_up=0.1468 eps_tau=0.2216  s_req=0.0749 J  (0.123 % |E0|, 1.31e-03 J/site)  dec+: lam=0.1969 F=-49.195  dec-: lam=0.3221 F=-80.679 Jz'=2.812/4.888
+n= 57 Jz=4.0 Czz_bar  E0=  -66.9958 eps_up=0.1185 eps_tau=0.3036  s_req=0.1851 J  (0.276 % |E0|, 3.25e-03 J/site)  dec+: lam=0.2500 F=-51.950  dec-: lam=0.5025 F=-98.169 Jz'=3.000/6.010
+n= 57 Jz=4.5 Czz_bar  E0=  -74.6714 eps_up=0.0932 eps_tau=0.4322  s_req=0.3391 J  (0.454 % |E0|, 5.95e-03 J/site)  dec+: lam=0.3335 F=-54.407  dec-: lam=0.7559 F=-121.988 Jz'=3.166/7.524
+n= 57 Jz=5.0 Czz_bar  E0=  -82.4098 eps_up=0.0695 eps_tau=0.5927  s_req=0.5233 J  (0.635 % |E0|, 9.18e-03 J/site)  dec+: lam=0.4223 F=-56.568  dec-: lam=1.3184 F=-165.559 Jz'=3.311/10.274
+n= 57 Jz=5.5 Czz_bar  E0=  -90.1944 eps_up=0.0632 eps_tau=0.7895  s_req=0.7263 J  (0.805 % |E0|, 1.27e-02 J/site)  dec+: lam=0.5333 F=-57.407  dec-: lam=2.0000 F=-216.900 Jz'=3.367/13.500
+n= 57 Jz=6.0 Czz_bar  E0=  -98.0141 eps_up=0.0625 eps_tau=1.0018  s_req=0.9392 J  (0.958 % |E0|, 1.65e-02 J/site)  dec+: lam=0.6460 F=-58.147  dec-: lam=2.0000 F=-224.868 Jz'=3.416/14.000
+n= 57 Jz=3.4 m_s      E0=  -57.9040 eps_up=0.1695 eps_tau=0.1841  s_req=0.0145 J  (0.025 % |E0|, 2.55e-04 J/site)  dec+: lam=0.3321 F=-76.022  dec-: lam=0.1683 F=-48.987 
+n= 57 Jz=3.6 m_s      E0=  -60.9169 eps_up=0.1468 eps_tau=0.2209  s_req=0.0742 J  (0.122 % |E0|, 1.30e-03 J/site)  dec+: lam=0.4007 F=-82.914  dec-: lam=0.1926 F=-50.645 
+n= 57 Jz=4.0 m_s      E0=  -66.9958 eps_up=0.1185 eps_tau=0.3017  s_req=0.1832 J  (0.273 % |E0|, 3.21e-03 J/site)  dec+: lam=0.5850 F=-99.410  dec-: lam=0.2196 F=-55.131 
+n= 57 Jz=4.5 m_s      E0=  -74.6714 eps_up=0.0932 eps_tau=0.4122  s_req=0.3190 J  (0.427 % |E0|, 5.60e-03 J/site)  dec+: lam=0.9788 F=-129.395  dec-: lam=0.2564 F=-60.664 
+n= 57 Jz=5.0 m_s      E0=  -82.4098 eps_up=0.0695 eps_tau=0.5049  s_req=0.4354 J  (0.528 % |E0|, 7.64e-03 J/site)  dec+: lam=1.2800 F=-154.309  dec-: lam=0.2691 F=-67.580 
+n= 57 Jz=5.5 m_s      E0=  -90.1944 eps_up=0.0632 eps_tau=0.6179  s_req=0.5547 J  (0.615 % |E0|, 9.73e-03 J/site)  dec+: lam=1.2800 F=-162.238  dec-: lam=0.3084 F=-73.100 
+n= 57 Jz=6.0 m_s      E0=  -98.0141 eps_up=0.0625 eps_tau=0.7203  s_req=0.6577 J  (0.671 % |E0|, 1.15e-02 J/site)  dec+: lam=1.2800 F=-170.174  dec-: lam=0.3448 F=-78.819 
+n=115 Jz=3.3 Czz_bar  E0= -116.0652 eps_up=0.3428 eps_tau=0.3665  s_req=0.0237 J  (0.020 % |E0|, 2.06e-04 J/site)  dec+: lam=0.1626 F=-96.258  dec-: lam=0.2605 F=-148.787 Jz'=2.650/4.342
+n=115 Jz=3.6 Czz_bar  E0= -125.3909 eps_up=0.2341 eps_tau=0.4751  s_req=0.2410 J  (0.192 % |E0|, 2.10e-03 J/site)  dec+: lam=0.2033 F=-100.376  dec-: lam=0.3538 F=-170.280 Jz'=2.787/5.015
+n=115 Jz=4.0 Czz_bar  E0= -137.9525 eps_up=0.1733 eps_tau=0.6510  s_req=0.4778 J  (0.346 % |E0|, 4.15e-03 J/site)  dec+: lam=0.2557 F=-106.154  dec-: lam=0.5036 F=-202.471 Jz'=2.977/6.015
+n=115 Jz=4.5 Czz_bar  E0= -153.8076 eps_up=0.1268 eps_tau=0.9265  s_req=0.7997 J  (0.520 % |E0|, 6.95e-03 J/site)  dec+: lam=0.3412 F=-110.983  dec-: lam=0.7929 F=-256.301 Jz'=3.135/7.672
+n=115 Jz=5.0 Czz_bar  E0= -169.7875 eps_up=0.1178 eps_tau=1.2708  s_req=1.1530 J  (0.679 % |E0|, 1.00e-02 J/site)  dec+: lam=0.4307 F=-115.366  dec-: lam=1.3617 F=-347.058 Jz'=3.277/10.447
+n=115 Jz=5.5 Czz_bar  E0= -185.8594 eps_up=0.0716 eps_tau=1.6900  s_req=1.6184 J  (0.871 % |E0|, 1.41e-02 J/site)  dec+: lam=0.5474 F=-116.385  dec-: lam=2.0000 F=-447.288 Jz'=3.310/13.500
+n=115 Jz=6.0 Czz_bar: eps_tau_out not resolved (beyond computed range); s_req = 2.022719471188814
+n=115 Jz=3.3 m_s      E0= -116.0652 eps_up=0.3428 eps_tau=0.3820  s_req=0.0392 J  (0.034 % |E0|, 3.41e-04 J/site)  dec+: lam=0.3354 F=-152.990  dec-: lam=0.1599 F=-98.942 
+n=115 Jz=3.6 m_s      E0= -125.3909 eps_up=0.2341 eps_tau=0.5001  s_req=0.2660 J  (0.212 % |E0|, 2.31e-03 J/site)  dec+: lam=0.4543 F=-175.848  dec-: lam=0.1944 F=-104.366 
+n=115 Jz=4.0 m_s      E0= -137.9525 eps_up=0.1733 eps_tau=0.6586  s_req=0.4853 J  (0.352 % |E0|, 4.22e-03 J/site)  dec+: lam=0.6496 F=-210.730  dec-: lam=0.2146 F=-114.451 
+n=115 Jz=4.5 m_s      E0= -153.8076 eps_up=0.1268 eps_tau=0.8881  s_req=0.7614 J  (0.495 % |E0|, 6.62e-03 J/site)  dec+: lam=1.0695 F=-274.622  dec-: lam=0.2555 F=-125.550 
+n=115 Jz=5.0 m_s      E0= -169.7875 eps_up=0.1178 eps_tau=1.1150  s_req=0.9972 J  (0.587 % |E0|, 8.67e-03 J/site)  dec+: lam=1.2800 F=-314.929  dec-: lam=0.2879 F=-137.711 
+n=115 Jz=5.5 m_s      E0= -185.8594 eps_up=0.0716 eps_tau=1.2475  s_req=1.1760 J  (0.633 % |E0|, 1.02e-02 J/site)  dec+: lam=1.2800 F=-331.283  dec-: lam=0.2928 F=-153.037 
+n=115 Jz=6.0 m_s      E0= -202.0012 eps_up=0.0552 eps_tau=1.4981  s_req=1.4429 J  (0.714 % |E0|, 1.25e-02 J/site)  dec+: lam=1.2800 F=-347.652  dec-: lam=0.3461 F=-163.060 

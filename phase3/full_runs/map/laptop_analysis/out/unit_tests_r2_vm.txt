@@ -1,0 +1,10 @@
+test_c2_field_dmrg_vs_ed (__main__.T.test_c2_field_dmrg_vs_ed) ... ok
+test_legendre_czz (__main__.T.test_legendre_czz)
+Exact max/min of Czz_bar at <H(Jz)> <= E equals the bracket from E0(Jz') (fine grid). ... ok
+test_outer_equals_exact_limit (__main__.T.test_outer_equals_exact_limit)
+Dual bound sign<O> <= (E - G_sign(lam))/lam at the bisected lam equals the exact (ED) witness value. ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 83.817s
+
+OK

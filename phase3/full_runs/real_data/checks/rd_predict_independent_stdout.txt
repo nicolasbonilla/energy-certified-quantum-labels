@@ -1,0 +1,73 @@
+gate: declaration 6dfbc5681a7b4708...; the three converted files have the pinned SHA-256
+n = 19 from scratch: dim 75582, 26 levels, 50 couplings, 57 s
+n = 19 from scratch against out/n19/n19_curves.json: |dE0| <= 5.0e-14, |dm_s| <= 2.2e-11, curve |d de| <= 4.5e-15, |d dm_s| <= 8.2e-09
+out/n19 against bias_law/inputs/n19_curves.json at 14 shared couplings: {'max_abs_dE0': 2.842170943040401e-14, 'max_abs_dms0': 3.309463814105129e-11, 'max_abs_curve': 1.2141728178427513e-08}
+
+n = 57  lattice equal to the project graph: {'edges': True, 'nn2': True, 'eta': True, 'M0': 9.0}
+  gates re-checked: {'G2_max_fraction': 0.9889860198661556, 'G2_min_fraction': 0.9318166403000377, 'G2_ok': True, 'G3_min': 0.046805378154374466, 'G4_max_dms_tau': 5.3107292364717625e-05, 'G4_max_dE0': 1.871730077596112e-06, 'G4_max_seven_tau': 0.0001457224547555068}
+  P1-P3 sites              F = 1.000000 (0 of 2850 not positive) holds True | t<=1 1.0000 | t in [0.0550, 0.6157], median 0.177
+  P1-P3 edges              F = 0.999375 (2 of 3200 not positive) holds True | t<=1 1.0000 | t in [-0.0164, 0.6503], median 0.148
+  P1-P3 second_neighbours  F = 1.000000 (0 of 4350 not positive) holds True | t<=1 1.0000 | t in [0.0652, 0.4467], median 0.160
+  P1-P3 loops              F = 1.000000 (0 of 200 not positive) holds True | t<=1 1.0000 | t in [0.0694, 0.3432], median 0.143
+     t <= 0: edges              Jz 1.9 item (19, 36) t = -0.0164 (real -0.84424, GS -0.84675, difference 0.049 of the item's 6 %)
+     t <= 0: edges              Jz 1.9 item (24, 56) t = -0.0074 (real -0.79632, GS -0.79781, difference 0.031 of the item's 6 %)
+  P4    sites              Spearman -0.980216 holds True | 8 increases between neighbouring couplings
+  P4    edges              Spearman -0.972629 holds True | 11 increases between neighbouring couplings
+  P4    second_neighbours  Spearman -0.975894 holds True | 8 increases between neighbouring couplings
+  P4    loops              Spearman -0.971957 holds True | 11 increases between neighbouring couplings
+  P4    m_s                Spearman -0.980216 holds True
+  P5 stored_curve              all         mean miss 0.1110 (ok True) | deciding 22, ratios 0.8029..1.0455 (median 0.8510), outside at [] | all ratios 0.803..1.418
+  P5 stored_curve              training_45 mean miss 0.0559 (ok True) | deciding 17, ratios 0.8029..1.0455 (median 0.8509), outside at [] | all ratios 0.803..1.418
+  P5 stored_curve              test        mean miss 0.6375 (ok False) | deciding 4, ratios 0.8474..0.8716 (median 0.8535), outside at [] | all ratios 0.847..0.872
+  P5 authors_truth_everywhere  all         mean miss 0.1110 (ok True) | deciding 22, ratios 0.8029..1.0455 (median 0.8511), outside at [] | all ratios 0.803..1.418
+  P5 authors_truth_everywhere  training_45 mean miss 0.0559 (ok True) | deciding 17, ratios 0.8029..1.0455 (median 0.8509), outside at [] | all ratios 0.803..1.418
+  P5 ed_curve                  all         mean miss 0.1110 (ok True) | deciding 22, ratios 0.8029..1.0455 (median 0.8510), outside at [] | all ratios 0.803..1.418
+  P5 ed_curve                  training_45 mean miss 0.0559 (ok True) | deciding 17, ratios 0.8029..1.0455 (median 0.8509), outside at [] | all ratios 0.803..1.418
+  P5 ed_curve                  test        mean miss 0.6375 (ok False) | deciding 4, ratios 0.8474..0.8716 (median 0.8535), outside at [] | all ratios 0.847..0.872
+  P5 max_abs_curve_stored_minus_ed: 4.1949568818644423e-10
+  P5 max_abs_ratio_stored_minus_ed: 2.61342314455959e-09
+  P5 n_de_outside_curve: 0
+  n = 19 vs truth: closer than the label at 39 of 50 couplings (34 of 45 training): [1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 2.0, 2.1, 2.2, 2.3, 2.4, 2.5, 2.6, 2.7, 2.8, 2.9, 3.0, 3.1, 3.2, 3.3, 3.4, 3.5, 3.6, 3.7, 3.8, 3.9, 4.0, 4.1, 4.2, 4.4, 4.5, 4.6, 5.1, 5.4, 5.7, 5.9]
+     within a fifth of tau from Jz = 3.0 on; max all 1.472, training 0.809; stored certificate range: {'from_Jz': 3.4, 'n_couplings': 27, 'max_n19_minus_truth_tau': 0.14340899120002856, 'max_label_miss_tau': 0.17987329165349814, 'n19_closer_than_label': 16}; with E1: {'from_Jz': 3.2, 'n_couplings': 29, 'max_n19_minus_truth_tau': 0.16452291733676713, 'max_label_miss_tau': 0.2070364154266583, 'n19_closer_than_label': 18}
+  largest |difference| from the sealed output: 2.22e-16 (over 42 compared quantities)
+
+n = 115  lattice equal to the project graph: {'edges': True, 'nn2': True, 'eta': True, 'M0': 19.0}
+  gates re-checked: {'G2_max_fraction': 0.9965343373899527, 'G2_min_fraction': 0.9519881819055968, 'G2_ok': True, 'G3_min': 0.04582430107734581, 'G4_max_dms_tau': 5.170468116577864e-05, 'G4_max_dE0': 3.0099951246143064e-05, 'G4_max_seven_tau': 0.00027916877404256485}
+  P1-P3 sites              F = 0.999652 (2 of 5750 not positive) holds True | t<=1 1.0000 | t in [-1.6901, 0.6085], median 0.122
+  P1-P3 edges              F = 0.999545 (3 of 6600 not positive) holds True | t<=1 1.0000 | t in [-1.5057, 0.7837], median 0.095
+  P1-P3 second_neighbours  F = 0.999243 (7 of 9250 not positive) holds True | t<=1 1.0000 | t in [-0.7789, 0.4410], median 0.107
+  P1-P3 loops              F = 0.998333 (1 of 600 not positive) holds True | t<=1 1.0000 | t in [-0.4731, 0.3800], median 0.094
+     t <= 0: sites              Jz 1.5 item 19 t = -1.6901 (real 0.52269, GS 0.82257, difference -6.076 of the item's 6 %)
+     t <= 0: sites              Jz 1.5 item 89 t = -0.8974 (real -0.51916, GS -0.74658, difference 5.077 of the item's 6 %)
+     t <= 0: edges              Jz 1.5 item (18, 89) t = -1.3715 (real -0.46870, GS -0.77597, difference 6.600 of the item's 6 %)
+     t <= 0: edges              Jz 1.5 item (19, 90) t = -1.5057 (real -0.43090, GS -0.77288, difference 7.375 of the item's 6 %)
+     t <= 0: edges              Jz 1.5 item (55, 89) t = -1.3457 (real -0.47469, GS -0.77605, difference 6.472 of the item's 6 %)
+     t <= 0: second_neighbours  Jz 1.5 item (18, 19) t = -0.6968 (real 0.47899, GS 0.69295, difference -5.146 of the item's 6 %)
+     t <= 0: second_neighbours  Jz 1.5 item (19, 20) t = -0.5872 (real 0.42494, GS 0.63770, difference -5.561 of the item's 6 %)
+     t <= 0: second_neighbours  Jz 1.5 item (19, 55) t = -0.7789 (real 0.45271, GS 0.69234, difference -5.769 of the item's 6 %)
+     t <= 0: second_neighbours  Jz 1.5 item (19, 60) t = -0.7515 (real 0.44041, GS 0.68051, difference -5.880 of the item's 6 %)
+     t <= 0: second_neighbours  Jz 1.5 item (83, 89) t = -0.3896 (real 0.41176, GS 0.57670, difference -4.767 of the item's 6 %)
+     t <= 0: second_neighbours  Jz 1.5 item (88, 89) t = -0.3984 (real 0.41080, GS 0.57867, difference -4.835 of the item's 6 %)
+     t <= 0: second_neighbours  Jz 1.5 item (89, 90) t = -0.3552 (real 0.41712, GS 0.56989, difference -4.468 of the item's 6 %)
+     t <= 0: loops              Jz 1.5 item [10, 11, 17, 18, 54, 55, 81, 82, 83, 87, 88, 89] t = -0.4731 (real 0.38618, GS 0.58332, difference -5.633 of the item's 6 %)
+  P4    sites              Spearman -0.995486 holds True | 9 increases between neighbouring couplings
+  P4    edges              Spearman -0.992413 holds True | 13 increases between neighbouring couplings
+  P4    second_neighbours  Spearman -0.992893 holds True | 10 increases between neighbouring couplings
+  P4    loops              Spearman -0.994334 holds True | 11 increases between neighbouring couplings
+  P4    m_s                Spearman -0.995486 holds True
+  P5 stored_curve              all         mean miss 0.1676 (ok True) | deciding 19, ratios 0.6087..0.8122 (median 0.7411), outside at [1.5, 1.6, 1.7, 1.9, 2.0, 2.2, 2.3, 2.4, 2.5, 2.6, 2.7, 2.9] | all ratios 0.609..1.067
+  P5 stored_curve              training_45 mean miss 0.0820 (ok True) | deciding 14, ratios 0.6962..0.7884 (median 0.7322), outside at [1.6, 1.7, 1.9, 2.0, 2.2, 2.3, 2.4, 2.5, 2.6, 2.7, 2.9] | all ratios 0.696..1.067
+  P5 stored_curve              test        mean miss 0.8972 (ok False) | deciding 4, ratios 0.7660..0.8122 (median 0.7865), outside at [] | all ratios 0.766..0.812
+  P5 authors_truth_everywhere  all         mean miss 0.1676 (ok True) | deciding 19, ratios 0.6087..0.8122 (median 0.7411), outside at [1.5, 1.6, 1.7, 1.9, 2.0, 2.2, 2.3, 2.4, 2.5, 2.6, 2.7, 2.9] | all ratios 0.609..1.067
+  P5 authors_truth_everywhere  training_45 mean miss 0.0820 (ok True) | deciding 14, ratios 0.6962..0.7884 (median 0.7322), outside at [1.6, 1.7, 1.9, 2.0, 2.2, 2.3, 2.4, 2.5, 2.6, 2.7, 2.9] | all ratios 0.696..1.067
+  P5 ed_curve                  all         mean miss 0.1676 (ok True) | deciding 19, ratios 0.6087..0.8122 (median 0.7411), outside at [1.5, 1.6, 1.7, 1.9, 2.0, 2.2, 2.3, 2.4, 2.5, 2.6, 2.7, 2.9] | all ratios 0.609..1.067
+  P5 ed_curve                  training_45 mean miss 0.0820 (ok True) | deciding 14, ratios 0.6962..0.7884 (median 0.7322), outside at [1.6, 1.7, 1.9, 2.0, 2.2, 2.3, 2.4, 2.5, 2.6, 2.7, 2.9] | all ratios 0.696..1.067
+  P5 ed_curve                  test        mean miss 0.8972 (ok False) | deciding 4, ratios 0.7660..0.8122 (median 0.7865), outside at [] | all ratios 0.766..0.812
+  P5 max_abs_curve_stored_minus_ed: 4.2264830524274544e-10
+  P5 max_abs_ratio_stored_minus_ed: 2.38046804490466e-09
+  P5 n_de_outside_curve: 0
+  n = 19 vs truth: closer than the label at 11 of 50 couplings (6 of 45 training): [1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 2.0, 2.1]
+     within a fifth of tau from Jz = 3.5 on; max all 2.067, training 1.098; stored certificate range: {'from_Jz': 4.0, 'n_couplings': 21, 'max_n19_minus_truth_tau': 0.1423984390320734, 'max_label_miss_tau': 0.0638964127204507, 'n19_closer_than_label': 0}; with E1: {'from_Jz': 3.3, 'n_couplings': 28, 'max_n19_minus_truth_tau': 0.21708271715888178, 'max_label_miss_tau': 0.152314233092885, 'n19_closer_than_label': 0}
+  largest |difference| from the sealed output: 2.22e-16 (over 42 compared quantities)
+
+P5 rule recomputed: {'stored_curve': 'FAIL', 'authors_truth_everywhere': 'FAIL', 'ed_curve': 'FAIL'} | sealed: FAIL

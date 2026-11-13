@@ -1,0 +1,83 @@
+Heisenberg ladder 2x6 open, J_rung = 2.0: dim 924, gap 1.4171, <O>/n = 1.9e-15, <O^3>/n^3 = 1.1e-15, sigma_n = 0.5081, D_n = 107.79359 (>= 0: True), trial-energy identity error 2.2e-16, [O,[H,O]] Hermitian to 0e+00
+    c/sigma = 0.10 sign +1: E* in [0.003578609, 0.003578609]  bound 0.003633448  bound/exact     1.015  psi_theta error 1.0e-14  ok
+    c/sigma = 0.30 sign +1: E* in [0.032497993, 0.032497993]  bound 0.033388014  bound/exact     1.027  psi_theta error 1.8e-14  ok
+    c/sigma = 0.50 sign +1: E* in [0.091956441, 0.091956441]  bound 0.097113942  bound/exact     1.056  psi_theta error 2.3e-14  ok
+    c/sigma = 0.50 sign -1: E* in [0.091956441, 0.091956441]  bound 0.097113942  bound/exact     1.056  psi_theta error 2.3e-14  ok
+    c/sigma = 0.70 sign +1: E* in [0.185563602, 0.185563602]  bound 0.207208801  bound/exact     1.117  psi_theta error 2.7e-14  ok
+    c/sigma = 0.90 sign +1: E* in [0.319836690, 0.319836690]  bound 0.408905552  bound/exact     1.278  psi_theta error 3.4e-14  ok
+    c/sigma = 1.00 sign +1: E* in [0.405501325, 0.405501325]  bound 0.724868333  bound/exact     1.788  psi_theta error 4.1e-14  ok
+    c/sigma = 1.00 sign -1: E* in [0.405501325, 0.405501325]  bound 0.724868333  bound/exact     1.788  psi_theta error 4.1e-14  ok
+    [3 s]
+Heisenberg ladder 2x6 open, J_rung = 0.5: dim 924, gap 0.4412, <O>/n = 4.6e-16, <O^3>/n^3 = 2.8e-16, sigma_n = 0.5792, D_n = 57.84061 (>= 0: True), trial-energy identity error 6.7e-16, [O,[H,O]] Hermitian to 0e+00
+    c/sigma = 0.10 sign +1: E* in [0.001194571, 0.001194571]  bound 0.001500610  bound/exact     1.256  psi_theta error 3.2e-15  ok
+    c/sigma = 0.30 sign +1: E* in [0.010916086, 0.010916086]  bound 0.013789212  bound/exact     1.263  psi_theta error 4.0e-15  ok
+    c/sigma = 0.50 sign +1: E* in [0.031316131, 0.031316131]  bound 0.040107948  bound/exact     1.281  psi_theta error 4.5e-15  ok
+    c/sigma = 0.50 sign -1: E* in [0.031316131, 0.031316131]  bound 0.040107948  bound/exact     1.281  psi_theta error 4.5e-15  ok
+    c/sigma = 0.70 sign +1: E* in [0.064755501, 0.064755501]  bound 0.085576999  bound/exact     1.322  psi_theta error 1.9e-15  ok
+    c/sigma = 0.90 sign +1: E* in [0.116356360, 0.116356360]  bound 0.168877527  bound/exact     1.451  psi_theta error 4.4e-16  ok
+    c/sigma = 1.00 sign +1: E* in [0.152170006, 0.152170006]  bound 0.299369796  bound/exact     1.967  psi_theta error 6.7e-16  ok
+    c/sigma = 1.00 sign -1: E* in [0.152170006, 0.152170006]  bound 0.299369796  bound/exact     1.967  psi_theta error 6.7e-16  ok
+    [3 s]
+Heisenberg 3-leg ladder 3x4 open: dim 924, gap 0.5219, <O>/n = -3.9e-15, <O^3>/n^3 = -2.6e-15, sigma_n = 0.6022, D_n = 71.37792 (>= 0: True), trial-energy identity error 1.5e-14, [O,[H,O]] Hermitian to 0e+00
+    c/sigma = 0.10 sign +1: E* in [0.001415502, 0.001415502]  bound 0.001713013  bound/exact     1.210  psi_theta error 4.1e-15  ok
+    c/sigma = 0.30 sign +1: E* in [0.012938514, 0.012938514]  bound 0.015741003  bound/exact     1.217  psi_theta error 1.1e-14  ok
+    c/sigma = 0.50 sign +1: E* in [0.037142106, 0.037142106]  bound 0.045785018  bound/exact     1.233  psi_theta error 1.8e-14  ok
+    c/sigma = 0.50 sign -1: E* in [0.037142106, 0.037142106]  bound 0.045785018  bound/exact     1.233  psi_theta error 1.8e-14  ok
+    c/sigma = 0.70 sign +1: E* in [0.076903152, 0.076903152]  bound 0.097689977  bound/exact     1.270  psi_theta error 2.4e-14  ok
+    c/sigma = 0.90 sign +1: E* in [0.138571585, 0.138571585]  bound 0.192781261  bound/exact     1.391  psi_theta error 3.0e-14  ok
+    c/sigma = 1.00 sign +1: E* in [0.181701281, 0.181701281]  bound 0.341744030  bound/exact     1.881  psi_theta error 3.4e-14  ok
+    c/sigma = 1.00 sign -1: E* in [0.181701281, 0.181701281]  bound 0.341744030  bound/exact     1.881  psi_theta error 3.4e-14  ok
+    [3 s]
+J1-J2 Heisenberg ring N=12, J2 = 0.2: dim 924, gap 0.3182, <O>/n = 5.9e-16, <O^3>/n^3 = 3.6e-16, sigma_n = 0.5521, D_n = 57.20147 (>= 0: True), trial-energy identity error 2.3e-15, [O,[H,O]] Hermitian to 0e+00  D_n + 16<K_xy> = 0.0e+00
+    c/sigma = 0.10 sign +1: E* in [0.000975511, 0.000975511]  bound 0.001632930  bound/exact     1.674  psi_theta error 5.6e-16  ok
+    c/sigma = 0.30 sign +1: E* in [0.008949602, 0.008949602]  bound 0.015005111  bound/exact     1.677  psi_theta error 5.8e-16  ok
+    c/sigma = 0.50 sign +1: E* in [0.025908909, 0.025908909]  bound 0.043644569  bound/exact     1.685  psi_theta error 6.1e-16  ok
+    c/sigma = 0.50 sign -1: E* in [0.025908909, 0.025908909]  bound 0.043644569  bound/exact     1.685  psi_theta error 6.1e-16  ok
+    c/sigma = 0.70 sign +1: E* in [0.054513489, 0.054513489]  bound 0.093122971  bound/exact     1.708  psi_theta error 1.9e-15  ok
+    c/sigma = 0.90 sign +1: E* in [0.101213637, 0.101213637]  bound 0.183768737  bound/exact     1.816  psi_theta error 5.0e-15  ok
+    c/sigma = 1.00 sign +1: E* in [0.135778614, 0.135778614]  bound 0.325767497  bound/exact     2.399  psi_theta error 5.2e-15  ok
+    c/sigma = 1.00 sign -1: E* in [0.135778614, 0.135778614]  bound 0.325767497  bound/exact     2.399  psi_theta error 5.2e-15  ok
+    [3 s]
+J1-J2 Heisenberg ring N=12, J2 = 0.4: dim 924, gap 0.1020, <O>/n = -3.0e-15, <O^3>/n^3 = -1.7e-15, sigma_n = 0.5092, D_n = 55.16619 (>= 0: True), trial-energy identity error 1.5e-14, [O,[H,O]] Hermitian to 0e+00  D_n + 16<K_xy> = 0.0e+00
+    c/sigma = 0.10 sign +1: E* in [0.000977124, 0.000977124]  bound 0.001851328  bound/exact     1.895  psi_theta error 7.4e-15  ok
+    c/sigma = 0.30 sign +1: E* in [0.008965460, 0.008965460]  bound 0.017011981  bound/exact     1.898  psi_theta error 3.1e-15  ok
+    c/sigma = 0.50 sign +1: E* in [0.025954900, 0.025954900]  bound 0.049481845  bound/exact     1.906  psi_theta error 3.2e-15  ok
+    c/sigma = 0.50 sign -1: E* in [0.025954900, 0.025954900]  bound 0.049481845  bound/exact     1.906  psi_theta error 3.2e-15  ok
+    c/sigma = 0.70 sign +1: E* in [0.054551941, 0.054551941]  bound 0.105577772  bound/exact     1.935  psi_theta error 5.7e-15  ok
+    c/sigma = 0.90 sign +1: E* in [0.100688137, 0.100688137]  bound 0.208347025  bound/exact     2.069  psi_theta error 1.2e-14  ok
+    c/sigma = 1.00 sign +1: E* in [0.134000510, 0.134000510]  bound 0.369337516  bound/exact     2.756  psi_theta error 1.3e-14  ok
+    c/sigma = 1.00 sign -1: E* in [0.134000510, 0.134000510]  bound 0.369337516  bound/exact     2.756  psi_theta error 1.3e-14  ok
+    [4 s]
+J1-J2 Heisenberg ring N=12, J2 = 0.5 (Majumdar-Ghosh point): sector ground state DEGENERATE (splitting 1.2e-14) -> hypothesis fails, proposition silent
+J1-J2 ring N=12, J2 = 0.4, DIMER label sum (-1)^i P_{i,i+1}: dim 924, gap 0.1020, <O>/n = 5.5e-16, <O^3>/n^3 = 3.1e-16, sigma_n = 0.6626, D_n = 21.11237 (>= 0: True), trial-energy identity error 2.2e-15, [O,[H,O]] Hermitian to 9e-16
+    c/sigma = 0.30 sign +1: E* in [0.002467884, 0.002467884]  bound 0.003844836  bound/exact     1.558  psi_theta error 7.5e-15  ok
+    c/sigma = 0.70 sign +1: E* in [0.015294163, 0.015294163]  bound 0.023861371  bound/exact     1.560  psi_theta error 7.8e-15  ok
+    c/sigma = 1.00 sign +1: E* in [0.043590974, 0.043590974]  bound 0.083473059  bound/exact     1.915  psi_theta error 8.6e-15  ok
+    c/sigma = 1.00 sign -1: E* in [0.043590974, 0.043590974]  bound 0.083473059  bound/exact     1.915  psi_theta error 8.6e-15  ok
+    [1 s]
+random-bond XXZ + DM ring N=12 (complex H, flux -1.702 rad): dim 924, gap 0.1420, <O>/n = -3.3e-14, <O^3>/n^3 = -2.4e-14, sigma_n = 0.7070, D_n = 55.10002 (>= 0: True), trial-energy identity error 2.9e-15, [O,[H,O]] Hermitian to 0e+00
+    c/sigma = 0.30 sign +1: E* in [0.003785666, 0.003785666]  bound 0.008815446  bound/exact     2.329  psi_theta error 1.2e-13  ok
+    c/sigma = 0.70 sign +1: E* in [0.023798921, 0.023798921]  bound 0.054709391  bound/exact     2.299  psi_theta error 2.5e-13  ok
+    c/sigma = 1.00 sign +1: E* in [0.072386218, 0.072386218]  bound 0.191387166  bound/exact     2.644  psi_theta error 3.5e-13  ok
+    c/sigma = 1.00 sign -1: E* in [0.072386218, 0.072386218]  bound 0.191387166  bound/exact     2.644  psi_theta error 3.5e-13  ok
+    [6 s]
+    control: || X H X - H || = 0.710 (not a symmetry), || X conj(H) X - H || = 0.0e+00 (symmetry)
+XXZ ring N=14, Jz = 0.5 (easy plane): dim 3432, gap 0.4070, <O>/n = -1.5e-15, <O^3>/n^3 = -7.0e-16, sigma_n = 0.4477, D_n = 70.61001 (>= 0: True), trial-energy identity error 8.3e-15, [O,[H,O]] Hermitian to 0e+00  D_n + 16<K_xy> = 0.0e+00
+    c/sigma = 0.30 sign +1: E* in [0.013222503, 0.013222503]  bound 0.020701419  bound/exact     1.566  psi_theta error 2.6e-15  ok
+    c/sigma = 0.70 sign +1: E* in [0.077821241, 0.077821241]  bound 0.128474732  bound/exact     1.651  psi_theta error 1.0e-14  ok
+    c/sigma = 1.00 sign +1: E* in [0.177641532, 0.177641532]  bound 0.449436821  bound/exact     2.530  psi_theta error 1.1e-14  ok
+    c/sigma = 1.00 sign -1: E* in [0.177641532, 0.177641532]  bound 0.449436821  bound/exact     2.530  psi_theta error 1.1e-14  ok
+    [5 s]
+open J1-J2 XXZ chain N=16 (Jz = 2, J2 = 0.3): dim 12870, gap 0.2179, <O>/n = 1.7e-14, <O^3>/n^3 = 8.9e-15, sigma_n = 0.4972, D_n = 68.93220 (>= 0: True), trial-energy identity error 1.9e-14, [O,[H,O]] Hermitian to 0e+00
+    c/sigma = 0.50 sign +1: E* in [0.018808038, 0.018808038]  bound 0.036480753  bound/exact     1.940  psi_theta error 1.3e-13  ok
+    c/sigma = 0.50 sign -1: E* in [0.018808038, 0.018808038]  bound 0.036480753  bound/exact     1.940  psi_theta error 1.3e-13  ok
+    c/sigma = 1.00 sign +1: E* in [0.093907950, 0.093907950]  bound 0.272296050  bound/exact     2.900  psi_theta error 2.7e-13  ok
+    c/sigma = 1.00 sign -1: E* in [0.093907950, 0.093907950]  bound 0.272296050  bound/exact     2.900  psi_theta error 2.7e-13  ok
+    [25 s]
+
+SUMMARY
+  values of c tested: 56; violations (dual lower bound on E* above the bound): 0
+  bound / exact at c = sigma_n: 1.788 .. 2.900;  over all c: 1.015 .. 2.900
+  largest error of the explicit state psi_theta (label and energy against the formula): 3.5e-13
+  largest relative duality gap (primal - dual)/primal: 3.8e-11
+total time 54 s

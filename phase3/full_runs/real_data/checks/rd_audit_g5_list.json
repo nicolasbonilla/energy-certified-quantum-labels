@@ -1,0 +1,86 @@
+[
+ {
+  "name": "v2_n115_vball2_m_s_m4.0_l0.144973",
+  "path": "C:/Users/Nicolas/Downloads/Proyecto_SQD_ML/P5_energy_certified_labels/work/phase3/full_runs/rigor/out_20261031T100015Z\\out\\jobs\\v2_n115_vball2_m_s_m4.0_l0.144973_cert.json",
+  "sha256": "25b3eb727afc361938d8daeaa366b30827edcd96f5652d85a4dea4002806caa1",
+  "graph": "hh_d7.json",
+  "reproved_by_math_rigorous_bounds": true,
+  "ok": [
+   [
+    null,
+    null,
+    null
+   ]
+  ]
+ },
+ {
+  "name": "v2_n115_vball2_m_s_p4.0_l0.272766",
+  "path": "C:/Users/Nicolas/Downloads/Proyecto_SQD_ML/P5_energy_certified_labels/work/phase3/full_runs/rigor/out_20261031T100015Z\\out\\jobs\\v2_n115_vball2_m_s_p4.0_l0.272766_cert.json",
+  "sha256": "43cb5bf701c5d11a1501434dce70753bd8d8dc52bec5a489e5541b8e2be386b7",
+  "graph": "hh_d7.json",
+  "reproved_by_math_rigorous_bounds": true,
+  "ok": [
+   [
+    null,
+    null,
+    null
+   ]
+  ]
+ },
+ {
+  "name": "v2_n57_eball2_m_s_m3.4_l0.125924",
+  "path": "C:/Users/Nicolas/Downloads/Proyecto_SQD_ML/P5_energy_certified_labels/work/phase3/full_runs/rigor/out_20261031T100015Z\\out\\jobs\\v2_n57_eball2_m_s_m3.4_l0.125924_cert.json",
+  "sha256": "b1883808fcac63a6918a46f49c07b7e04ba0d30b612169b8088959860975e577",
+  "graph": "hh_d5.json",
+  "reproved_by_math_rigorous_bounds": true,
+  "ok": [
+   [
+    null,
+    null,
+    null
+   ]
+  ]
+ },
+ {
+  "name": "v2_n57_eball2_m_s_m3.6_l0.123765",
+  "path": "C:/Users/Nicolas/Downloads/Proyecto_SQD_ML/P5_energy_certified_labels/work/phase3/full_runs/rigor/out_20261031T100015Z\\out\\jobs\\v2_n57_eball2_m_s_m3.6_l0.123765_cert.json",
+  "sha256": "4d6536a1a0599ce02e45aca6d0a26f4dfbb0c1ce6e3bf3bf92ebb80a95ef0d3a",
+  "graph": "hh_d5.json",
+  "reproved_by_math_rigorous_bounds": true,
+  "ok": [
+   [
+    null,
+    null,
+    null
+   ]
+  ]
+ },
+ {
+  "name": "v2_n57_eball2_m_s_p3.4_l0.305157",
+  "path": "C:/Users/Nicolas/Downloads/Proyecto_SQD_ML/P5_energy_certified_labels/work/phase3/full_runs/rigor/out_20261031T100015Z\\out\\jobs\\v2_n57_eball2_m_s_p3.4_l0.305157_cert.json",
+  "sha256": "bc391b67dee0b479bd0eb94fbb0d78776b135a56235e60f90724b8272eea3585",
+  "graph": "hh_d5.json",
+  "reproved_by_math_rigorous_bounds": true,
+  "ok": [
+   [
+    null,
+    null,
+    null
+   ]
+  ]
+ },
+ {
+  "name": "v2_n57_eball2_m_s_p3.6_l0.304711",
+  "path": "C:/Users/Nicolas/Downloads/Proyecto_SQD_ML/P5_energy_certified_labels/work/phase3/full_runs/rigor/out_20261031T100015Z\\out\\jobs\\v2_n57_eball2_m_s_p3.6_l0.304711_cert.json",
+  "sha256": "6bcc21f4fa28e22ac0940205ee78c714be5b8a4c015c512f73fe9438ca7c2182",
+  "graph": "hh_d5.json",
+  "reproved_by_math_rigorous_bounds": true,
+  "ok": [
+   [
+    null,
+    null,
+    null
+   ]
+  ]
+ }
+]

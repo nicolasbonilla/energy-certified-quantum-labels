@@ -1,0 +1,23 @@
+\begin{table}
+\caption{\label{tab:enemag}
+Ground-state energies (in units of $J_1$) $e(D,\chi)$ and magnetization square $m^2(D,\chi)$ for $D=7$, which can be considered as upper bounds 
+of the exact $D \to \infty$ values. The tensor was optimized up to an environment dimension $\chi_{opt}=3D^2=147$. The $\chi \to \infty$ 
+extrapolations are done from  environment bond dimensions $\chi \in [D^2,13D^2]$.}
+\begin{ruledtabular}
+\begin{tabular}{lcccc}
+$J_2/J_1$ & $e(7,147)$ & $e(7,\chi \to \infty )$ & $m^2(7,147)$ & $m^2(7,\chi \to \infty )$ \\
+\hline
+0.0 & -0.669428 & -0.669432 &  0.0994 & 0.0994 \\
+0.05 & -0.649273 & -0.649277 &  0.0926 & 0.0926 \\
+0.1 & -0.629497 & -0.629501 &  0.0852 & 0.0852 \\
+0.15 & -0.610154 & -0.610159 &  0.0771 & 0.0771 \\
+0.2 & -0.591314 & -0.591320 &  0.0685 & 0.0685 \\
+0.25 & -0.573067 & -0.573076 &  0.0591 & 0.0591 \\
+0.3 & -0.555520 & -0.555533 &  0.0491 & 0.0491 \\
+0.35 & -0.538850 & -0.538867 &  0.0383 & 0.0382 \\
+0.4 & -0.523054 & -0.523259 &  0.0270 & 0.0268 \\
+0.45 & -0.508895 & -0.508976 &  0.0173 & 0.0173 \\
+0.5 & -0.496152 & -0.496289 &  0.0086 & 0.0086 \\
+\end{tabular}
+\end{ruledtabular}
+\end{table}

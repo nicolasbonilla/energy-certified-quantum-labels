@@ -1,0 +1,79 @@
+== G. sign rule P1-P3 (F = fraction of (item, coupling) pairs with t > 0) and rank rule P4, own code ==
+ n=57 sites             F = 2850/2850 = 1.000000 (stored 1.000000) HOLDS True; exceptions at []; t<=1: 1.0000; Spearman(D, Jz) = -0.980216 (stored -0.980216) HOLDS True
+ n=57 edges             F = 3198/3200 = 0.999375 (stored 0.999375) HOLDS True; exceptions at [('1.9', 2)]; t<=1: 1.0000; Spearman(D, Jz) = -0.972629 (stored -0.972629) HOLDS True
+ n=57 second_neighbours F = 4350/4350 = 1.000000 (stored 1.000000) HOLDS True; exceptions at []; t<=1: 1.0000; Spearman(D, Jz) = -0.975894 (stored -0.975894) HOLDS True
+ n=57 loops             F = 200/200 = 1.000000 (stored 1.000000) HOLDS True; exceptions at []; t<=1: 1.0000; Spearman(D, Jz) = -0.971957 (stored -0.971957) HOLDS True
+ n=115 sites             F = 5748/5750 = 0.999652 (stored 0.999652) HOLDS True; exceptions at [('1.5', 2)]; t<=1: 1.0000; Spearman(D, Jz) = -0.995486 (stored -0.995486) HOLDS True
+ n=115 edges             F = 6597/6600 = 0.999545 (stored 0.999545) HOLDS True; exceptions at [('1.5', 3)]; t<=1: 1.0000; Spearman(D, Jz) = -0.992413 (stored -0.992413) HOLDS True
+ n=115 second_neighbours F = 9243/9250 = 0.999243 (stored 0.999243) HOLDS True; exceptions at [('1.5', 7)]; t<=1: 1.0000; Spearman(D, Jz) = -0.992893 (stored -0.992893) HOLDS True
+ n=115 loops             F = 599/600 = 0.998333 (stored 0.998333) HOLDS True; exceptions at [('1.5', 1)]; t<=1: 1.0000; Spearman(D, Jz) = -0.994334 (stored -0.994334) HOLDS True
+ all families and sizes: 32785 of 32800 pairs on the Neel side
+
+== H. n = 19 curve from an own exact diagonalization (recipe of bias_law/code/n19b.py re-implemented) and P5 ==
+ n = 19: 19 sites, 20 edges, sector dimension 75582, 26 truncation levels (D = 5 .. 68024)
+ couplings diagonalized: 50 of 50 (47 s); against the curve file fixed before the hash: |dE0| <= 5.7e-14, |dm_s| <= 3.1e-11, curve points <= 8.2e-09
+ n=57 five couplings, ratio = Delta / curve(de_real) (mine | stored): 1.1: 0.8512 | 0.8512; 1.5: 0.8062 | 0.8062; 2.0: 0.8392 | 0.8392; 2.5: 0.8212 | 0.8212; 2.9: 0.9454 | 0.9454
+   50 couplings: mean miss after correction 0.1110 tau (raw 0.6226; limit 0.2); deciding couplings 22, ratios 0.8029-1.0455, median 0.851, outside [0.75, 1.3]: 0 []
+   45 training couplings only (reported, not deciding): mean miss 0.0559 tau; deciding 17, outside 0
+ n=115 five couplings, ratio = Delta / curve(de_real) (mine | stored): 1.1: 0.8122 | 0.8122; 1.5: 0.6087 | 0.6087; 2.0: 0.7313 | 0.7313; 2.5: 0.6962 | 0.6962; 2.9: 0.7331 | 0.7331
+   50 couplings: mean miss after correction 0.1676 tau (raw 0.5299; limit 0.6); deciding couplings 19, ratios 0.6087-0.8122, median 0.741, outside [0.75, 1.3]: 12 ['1.5', '1.6', '1.7', '1.9', '2.0', '2.2', '2.3', '2.4', '2.5', '2.6', '2.7', '2.9']
+   45 training couplings only (reported, not deciding): mean miss 0.0820 tau; deciding 14, outside 11
+ P5, one decision by the declared rule, from my numbers: FAIL (stored: FAIL)
+
+== sets of (f3) from my own exact intervals ==
+ n=57 |S| = 26 (3.5-6.0), |S_3/4| = 23 (3.8-6.0), |S_1/2| = 18 (4.3-6.0), S_p = S_1_2  (equal to out/S_sets.json: True)
+ n=115 |S| = 21 (4.0-6.0), |S_3/4| = 21 (4.0-6.0), |S_1/2| = 10 (5.1-6.0), S_p = S_3_4  (equal to out/S_sets.json: True)
+
+== K. the filter on the 45 training labels (keep iff CERTIFIED (exact)) and the n = 19 comparison ==
+ n=57 kept 26, largest miss kept 0.1745 tau (mean 0.0815); dropped 19: within tau/2 10, within tau 15, above tau 4 (largest 1.668 tau); kept above tau/2: 0
+   exact n = 19 against the truth: at most 0.1344 tau on the kept labels; 1.472 1.339 1.194 1.052 tau at 1.1-1.4; closer to the truth than the label at 15 of the 26 kept and at 39 of 50
+ n=115 kept 21, largest miss kept 0.0639 tau (mean 0.0358); dropped 24: within tau/2 17, within tau 21, above tau 3 (largest 1.543 tau); kept above tau/2: 0
+   exact n = 19 against the truth: at most 0.1424 tau on the kept labels; 2.067 1.847 1.630 1.431 tau at 1.1-1.4; closer to the truth than the label at 0 of the 21 kept and at 11 of 50
+ stored filter block (sealed run), m_s: {"115_m_s": {}, "57_m_s": {}}
+
+== M. like-for-like J*_s for m_s (sector hypothesis; interpolated thresholds where no chain is stored) ==
+ n=57 J*_s = 3.2, CERTIFIED_s at 29 of 45 (stored figures-based J* = 3.2). A like-for-like number about in-sector states.
+ n=115 J*_s = 3.1, CERTIFIED_s at 30 of 45 (stored figures-based J* = 3.1). A like-for-like number about in-sector states.
+
+== J. (f3) the constructive test, every split end to end from my own exact intervals ==
+ n=57 S     (26 couplings: 6 train / 12 calibration / 8 query, k = 12): splits equal to the stored ones 200 of 200; max |mine - stored| in q and widths 1.9e-12
+    M1: (W) 6 of 200 splits, (C) 1600 of 1600 pairs, 2q = 0.9062-1.5630 tau, largest miss 0.2114 tau
+    M2: (W) 6 of 200 splits, (C) 1600 of 1600 pairs, 2q = 0.9168-1.5450 tau, largest miss 0.2108 tau
+    M0: (W) 6 of 200 splits, (C) 1600 of 1600 pairs, 2q = 0.8899-1.4318 tau, largest miss 0.1559 tau
+    outcome for M1 and M2 by the declared rule: FAIL
+ n=57 S_3_4 (23 couplings: 6 train / 12 calibration / 5 query, k = 12): splits equal to the stored ones 200 of 200; max |mine - stored| in q and widths 8.7e-13
+    M1: (W) 50 of 200 splits, (C) 1000 of 1000 pairs, 2q = 0.8156-1.1624 tau, largest miss 0.1569 tau
+    M2: (W) 66 of 200 splits, (C) 1000 of 1000 pairs, 2q = 0.8222-1.1366 tau, largest miss 0.1360 tau
+    M0: (W) 50 of 200 splits, (C) 1000 of 1000 pairs, 2q = 0.8179-1.0824 tau, largest miss 0.1207 tau
+    outcome for M1 and M2 by the declared rule: FAIL
+ n=57 S_1_2 (18 couplings: 4 train / 9 calibration / 5 query, k = 9): splits equal to the stored ones 200 of 200; max |mine - stored| in q and widths 1.5e-12
+    M1: (W) 200 of 200 splits, (C) 1000 of 1000 pairs, 2q = 0.5867-0.8570 tau, largest miss 0.1367 tau
+    M2: (W) 200 of 200 splits, (C) 1000 of 1000 pairs, 2q = 0.5627-0.8559 tau, largest miss 0.1483 tau
+    M0: (W) 200 of 200 splits, (C) 1000 of 1000 pairs, 2q = 0.5991-0.7607 tau, largest miss 0.0900 tau
+    outcome for M1 and M2 by the declared rule: PASS
+ n=115 S     (21 couplings: 6 train / 12 calibration / 3 query, k = 12): splits equal to the stored ones 200 of 200; max |mine - stored| in q and widths 1.3e-12
+    M1: (W) 200 of 200 splits, (C) 600 of 600 pairs, 2q = 0.8591-0.9984 tau, largest miss 0.1087 tau
+    M2: (W) 199 of 200 splits, (C) 600 of 600 pairs, 2q = 0.8693-1.0272 tau, largest miss 0.1160 tau
+    M0: (W) 200 of 200 splits, (C) 600 of 600 pairs, 2q = 0.8647-0.9625 tau, largest miss 0.0670 tau
+    outcome for M1 and M2 by the declared rule: PASS
+ n=115 S_3_4 (21 couplings: 6 train / 12 calibration / 3 query, k = 12): splits equal to the stored ones 200 of 200; max |mine - stored| in q and widths 8.6e-13
+    M1: (W) 200 of 200 splits, (C) 600 of 600 pairs, 2q = 0.8628-0.9840 tau, largest miss 0.1212 tau
+    M2: (W) 200 of 200 splits, (C) 600 of 600 pairs, 2q = 0.8651-0.9910 tau, largest miss 0.1304 tau
+    M0: (W) 200 of 200 splits, (C) 600 of 600 pairs, 2q = 0.8583-0.9640 tau, largest miss 0.0673 tau
+    outcome for M1 and M2 by the declared rule: PASS
+ split 0 of the primary set (n = 57, S_1/2), end to end:
+   train ['4.7', '4.9', '5.2', '5.4'] | calibration ['4.5', '4.6', '5.1', '5.3', '5.5', '5.6', '5.8', '5.9', '6.0'] | query ['4.3', '4.4', '4.8', '5.0', '5.7']
+   M1: q = 0.019479137 (stored 0.019479137); 2q/tau(x) = 0.6735 0.6724 0.6687 0.6671 0.6630; miss/tau = 0.0688 0.0666 0.0635 0.0646 0.0766; covered [True, True, True, True, True]
+   M2: q = 0.019075297 (stored 0.019075297); 2q/tau(x) = 0.6596 0.6585 0.6548 0.6533 0.6492; miss/tau = 0.0500 0.0545 0.0648 0.0669 0.0663; covered [True, True, True, True, True]
+   M0: q = 0.020374537 (stored 0.020374537); 2q/tau(x) = 0.7045 0.7033 0.6994 0.6978 0.6934; miss/tau = 0.0877 0.0837 0.0739 0.0718 0.0732; covered [True, True, True, True, True]
+ n=57: change of the true m_s over S_p (4.3-6.0): 0.295-0.300 tau
+ n=115: change of the true m_s over S_p (4.0-6.0): 0.364-0.372 tau
+
+== N. L1 and L2 for the cubic in 1/Jz trained on the 45 real labels (own code; jackknife over couplings) ==
+ n=57 real labels: miss at 1.1-1.4 = 3.720 3.175 2.695 2.286 tau (L1 holds: True); standard interval 0.139-0.167 tau wide, truth covered at 0 of 4 (L2 holds: True)
+        control on DMRG labels: miss 0.243 0.129 0.064 0.030 tau; interval 0.0048-0.0058 tau wide; truth covered at 0 of 4
+ n=115 real labels: miss at 1.1-1.4 = 5.064 3.845 2.993 2.376 tau (L1 holds: True); standard interval 0.085-0.100 tau wide, truth covered at 0 of 4 (L2 holds: True)
+        control on DMRG labels: miss 0.196 0.106 0.054 0.025 tau; interval 0.0041-0.0049 tau wide; truth covered at 0 of 4
+
+== disagreements with the stored outputs beyond rounding: 0 ==
+written C:/Users/Nicolas/Downloads/Proyecto_SQD_ML/P5_energy_certified_labels/work/phase3/full_runs/real_data/checks/rd_audit_predict_learn.json (55 s)

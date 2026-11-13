@@ -1,0 +1,9 @@
+# Fig. 1(c) right: rows (top to bottom) training range: held-out public labels, reference, reference by the control;
+# test range: the same three. cov = k/m
+row cov k m
+5 0.9111111111111111 41 45
+4 0.0 0 45
+3 0.9111111111111111 41 45
+1.6 0.0 0 4
+0.6 0.0 0 4
+-0.4 0.0 0 4

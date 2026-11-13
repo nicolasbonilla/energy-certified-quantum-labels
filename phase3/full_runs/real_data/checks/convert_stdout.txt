@@ -1,0 +1,72 @@
+archive sha256 13aa8e69c9bc614c72c5a415ecd889f113eabe95eec81e221174b3f14dedbb91 | commit in pax header 6b8866b66d62aaf3ee815cd14fa58e9bf4629d66
+data members: 302 | cmaps: 2
+pickle protocols: {5: 302}
+opcodes over all files: {'APPENDS': 65946, 'BINBYTES': 398, 'BINFLOAT': 654, 'BINGET': 53006, 'BININT': 1104, 'BININT1': 155778, 'BININT2': 200, 'BUILD': 552, 'EMPTY_DICT': 404, 'EMPTY_LIST': 65946, 'FRAME': 302, 'MARK': 68198, 'MEMOIZE': 155912, 'NEWFALSE': 1200, 'NEWTRUE': 654, 'NONE': 2304, 'PROTO': 302, 'REDUCE': 26510, 'SETITEMS': 404, 'SHORT_BINBYTES': 25810, 'SHORT_BINUNICODE': 5836, 'STACK_GLOBAL': 1354, 'STOP': 302, 'TUPLE': 1848, 'TUPLE1': 1296, 'TUPLE2': 25310, 'TUPLE3': 1200}
+globals over all files: {'dill._dill._create_array': 250, 'numpy._core.multiarray._reconstruct': 250, 'numpy._core.multiarray.scalar': 302, 'numpy.dtype': 302, 'numpy.ndarray': 250}
+refused files: 0 | members not matching the name pattern: []
+lattice map cmaps/heavy_hex_edges_d_5.txt: n = 57, 64 unique edges, colour classes 33 (with node 0) / 24
+lattice map cmaps/heavy_hex_edges_d_7.txt: n = 115, 132 unique edges, colour classes 67 (with node 0) / 48
+
+n = 57:
+  group dmrg               couplings 51 (1.0 .. 6.0)
+     2_nn_corr_funcs_zz                 present at all 51   list len 151 of [numpy.float64]
+     2_nn_corr_pairs                    present at all 51   list len 151 of [list len 2 of [int]]
+     _heavy_hex_ordered                 present at all 51   bool
+     dmrg_params                        present at all 51   dict keys ['chi_max', 'trunc_cut']
+     e1                                 present at all 51   numpy.float64
+     ground_state_energy                present at all 51   numpy.float64
+     jz                                 present at all 51   float
+     z                                  present at all 51   ndarray <f8 shape (57,)
+     z_loop                             present at all 51   ndarray <f8 shape (4,)
+     z_loop_sites                       present at all 51   list len 4 of [list len 12 of [int]]
+  group skqd_post_select   couplings 50 (1.1 .. 6.0)
+     energy_vopt                        present at all 50   float
+     final_global_energy                present at all 50   float
+     ground_state_energy                present at all 50   numpy.float64
+     jz                                 present at all 50   numpy.float64
+  group skqd_random_flip   couplings 50 (1.1 .. 6.0)
+     2_nn_corr_funcs_zz_basis_opt       present at all 50   ndarray <f8 shape (151,)
+     2_nn_corr_pairs_zz_basis_opt       present at all 50   list len 151 of [list len 2 of [int]]
+     energy_vopt                        present at all 50   float
+     final_global_energy                present at all 50   float
+     ground_state_energy                present at all 50   numpy.float64
+     jz                                 present at all 50   float
+     z_basis_opt                        present at all 50   ndarray <f8 shape (57,)
+     z_loop                             present at all 50   ndarray <f8 shape (4,)
+     z_loop_sites                       present at all 50   list len 4 of [list len 12 of [int]]
+
+n = 115:
+  group dmrg               couplings 51 (1.0 .. 6.0)
+     2_nn_corr_funcs_zz                 present at all 51   list len 317 of [numpy.float64]
+     2_nn_corr_pairs                    present at all 51   list len 317 of [list len 2 of [int]]
+     _heavy_hex_ordered                 present at all 51   bool
+     dmrg_params                        present at all 51   dict keys ['chi_max', 'trunc_cut']
+     e1                                 present at all 51   numpy.float64
+     ground_state_energy                present at all 51   numpy.float64
+     jz                                 present at all 51   float
+     z                                  present at all 51   ndarray <f8 shape (115,)
+     z_loop                             present at all 51   ndarray <f8 shape (12,)
+     z_loop_sites                       present at all 51   list len 12 of [list len 12 of [int]]
+  group skqd_post_select   couplings 50 (1.1 .. 6.0)
+     2_nn_corr_funcs_zz_basis_opt       present at all 50   list len 317 of [numpy.float64]; ndarray <f8 shape (317,)
+     2_nn_corr_pairs_zz_basis_opt       present at all 50   list len 317 of [list len 2 of [int]]
+     energy_vopt                        present at all 50   float
+     final_global_energy                present at all 50   float
+     ground_state_energy                present at all 50   numpy.float64
+     jz                                 present at all 50   numpy.float64
+     z_basis_opt                        present at all 50   list len 115 of [numpy.float64]; ndarray <f8 shape (115,)
+     z_loop                             present at all 50   list len 12 of [numpy.float64]; ndarray <f8 shape (12,)
+     z_loop_sites                       present at all 50   list len 12 of [list len 12 of [int]]
+  group skqd_random_flip   couplings 50 (1.1 .. 6.0)
+     2_nn_corr_funcs_zz_basis_opt       present at all 50   ndarray <f8 shape (317,)
+     2_nn_corr_pairs_zz_basis_opt       present at all 50   list len 317 of [list len 2 of [int]]
+     energy_vopt                        present at all 50   float
+     final_global_energy                present at all 50   float
+     ground_state_energy                present at all 50   numpy.float64
+     jz                                 present at all 50   numpy.float64
+     z_basis_opt                        present at all 50   ndarray <f8 shape (115,)
+     z_loop                             present at all 50   ndarray <f8 shape (12,)
+     z_loop_sites                       present at all 50   list len 12 of [list len 12 of [int]]
+
+notes: {}
+outputs: {'real_n57.json': 'ec96cd6d49a160ba91b38a08f987d221aa01c465c470e0eb17c13f9bacedc4dd', 'real_n115.json': '5890160c5ff0992b0859ce44fba3a74d1aff6fa6e005f8ef0d0db4f4233d0002', 'lattice_maps.json': 'a066581a316dbcfacabe8b50f318dc323fc05eaf67c67f99209cc4282586ec81'}

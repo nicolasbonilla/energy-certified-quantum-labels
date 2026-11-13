@@ -1,0 +1,29 @@
+{
+ "ok": true,
+ "E_LB_exact": "-13745429105/536870912",
+ "E_LB_float_floor": -25.60285684655187,
+ "n_clusters": 17,
+ "n_blocks": 118,
+ "max_block": 35,
+ "denominator_bits": 54,
+ "twoS": 3,
+ "task": {
+  "K": 32,
+  "maxiter": 600,
+  "betas": [
+   30,
+   300,
+   3000,
+   30000,
+   100000
+  ],
+  "use_mu": true,
+  "kind": "m_s",
+  "Jz": "6.0",
+  "sigma": -1,
+  "lam": "6211361828999095/18014398509481984",
+  "clusters": "vball2"
+ },
+ "cert_sha256": "840bffa55fc194cd87dce259e21bf5d87413bbc191e06907ccdaa3a9c4967880",
+ "time_s": 0.5837371349334717
+}

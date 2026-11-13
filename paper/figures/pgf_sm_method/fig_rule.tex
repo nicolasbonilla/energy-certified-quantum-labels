@@ -1,0 +1,135 @@
+% fig_rule.tex -- native PGFPlots version of Supplemental Fig. figS:rule (was fig2_rule.py).
+% Data: dat/rule_*.dat, written by export_sm_method.py from the stored outputs. Compile here with pdflatex.
+\documentclass[10pt,border=1pt]{standalone}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{amsmath}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\usepgfplotslibrary{groupplots}
+% label colours and markers as in the certification map (fig_map.tex / common.LAB)
+\definecolor{cMs}{HTML}{2A78D6}
+\definecolor{cCzz}{HTML}{EB6834}
+\definecolor{cCtwo}{HTML}{1BAF7A}
+\definecolor{cZbulk}{HTML}{B07D00}
+\definecolor{cZbdry}{HTML}{D0628F}
+\definecolor{cCedge}{HTML}{007A3D}
+\definecolor{cZloop}{HTML}{6250D6}
+\definecolor{cInk}{HTML}{0B0B0B}
+\definecolor{cMuted}{HTML}{52514E}
+\definecolor{cCert}{HTML}{E3F1E6}
+\definecolor{cCertText}{HTML}{2F6B3C}
+\definecolor{cRing}{HTML}{C0392B}
+% (a) sizes n = 6, 9, 12 (blues); (b) error per site 0.05, 0.1, 0.2 (oranges)
+\definecolor{cNa}{HTML}{6BAED6}
+\definecolor{cNb}{HTML}{2171B5}
+\definecolor{cNc}{HTML}{08306B}
+\definecolor{cDa}{HTML}{F09A4A}
+\definecolor{cDb}{HTML}{D6500C}
+\definecolor{cDc}{HTML}{7F2704}
+\pgfplotsset{
+  lab/.style 2 args={#1, only marks, mark=#2, mark size=1.7pt, every mark/.append style={solid, line width=0.6pt}},
+  open/.style={every mark/.append style={fill=white}},
+  mMs/.style={lab={cMs}{*}},            mCzz/.style={lab={cCzz}{square*}, mark size=1.5pt},
+  mCtwo/.style={lab={cCtwo}{diamond*}, mark size=2.0pt},
+  mZbulk/.style={lab={cZbulk}{triangle*}, every mark/.append style={rotate=180}, mark size=1.9pt},
+  mZbdry/.style={lab={cZbdry}{triangle*}, mark size=1.9pt},
+  mCedge/.style={lab={cCedge}{x}, mark size=1.9pt}, mZloop/.style={lab={cZloop}{pentagon*}, mark size=1.7pt},
+}
+\newcommand{\pts}[3]{\addplot[#1] table[x=J, y=ratio] {dat/rule_c_n#2_#3.dat};}
+\begin{document}
+\begin{tikzpicture}
+\begin{groupplot}[
+  group style={group size=2 by 2, horizontal sep=1.75cm, vertical sep=1.75cm},
+  scale only axis, width=7.2cm, height=4.1cm,
+  tick label style={font=\footnotesize}, label style={font=\small},
+  title style={font=\small, yshift=-3pt},
+  axis line style={cMuted, line width=0.5pt}, tick style={cMuted, line width=0.5pt}, xtick align=inside, ytick align=outside, ytick pos=left, xtick pos=bottom,
+  every axis plot/.append style={line join=round},
+  legend cell align=left,
+  legend style={font=\footnotesize, draw=none, fill=white, fill opacity=0.88, text opacity=1, inner sep=2pt,
+    row sep=0pt, column sep=2pt},
+]
+% ---------------- (a) average, exact ----------------
+\nextgroupplot[
+  xmode=log, ymode=log, xmin=5e-5, xmax=0.6, ymin=0.012, ymax=3, log ticks with fixed point,
+  xtick={1e-4,1e-3,1e-2,1e-1}, xticklabels={$10^{-4}$,$10^{-3}$,$10^{-2}$,$10^{-1}$}, ytick={0.1,1},
+  xlabel={error per site $\delta e$}, ylabel={width of $\bar O$},
+  title={(a) average, exact},
+  legend style={at={(0.03,0.95)}, anchor=north west},
+]
+\addplot[cNa, line width=1.6pt, mark=o, mark size=2.6pt, mark options={line width=0.7pt, fill=white}]
+  table[x=de, y=w] {dat/rule_a_n6.dat};
+\addlegendentry{$n=6$}
+\addplot[cNb, line width=0.9pt, mark=square, mark size=1.8pt, mark options={line width=0.6pt}]
+  table[x=de, y=w] {dat/rule_a_n9.dat};
+\addlegendentry{$n=9$}
+\addplot[cNc, line width=0.5pt, mark=*, mark size=1.0pt] table[x=de, y=w] {dat/rule_a_n12.dat};
+\addlegendentry{$n=12$}
+\addplot[cInk, line width=0.9pt, densely dotted] table[x=de, y=law] {dat/rule_a_law.dat};
+\addlegendentry{$2\sqrt{2\chi\,\delta e}$}
+\addplot[only marks, mark=o, mark size=4.6pt, cRing, mark options={line width=0.7pt}, forget plot] table[x=de, y=w] {dat/rule_a_ring_n12.dat};
+\node[font=\footnotesize, cRing, anchor=south east, inner sep=1pt] at (rel axis cs:0.975,0.04) {ringed: window above the gap, $\epsilon>\Delta$};
+
+\addplot[only marks, mark=o, mark size=4.6pt, cRing, mark options={line width=0.7pt}, forget plot] table[x=de, y=w] {dat/rule_a_ring_n9.dat};
+\addplot[only marks, mark=o, mark size=4.6pt, cRing, mark options={line width=0.7pt}, forget plot] table[x=de, y=w] {dat/rule_a_ring_n6.dat};
+% ---------------- (b) local, exact ----------------
+\nextgroupplot[
+  xmin=5.6, xmax=12.4, ymin=1.35, ymax=2.13, xtick={6,8,10,12}, ytick={1.4,1.6,...,2.01},
+  yticklabel style={/pgf/number format/fixed, /pgf/number format/precision=1, /pgf/number format/fixed zerofill},
+  xlabel={number of sites $n$}, ylabel={width of $Z_0$},
+  title={(b) local, exact},
+  legend style={at={(0.97,0.06)}, anchor=south east},
+]
+\addplot[cInk, line width=0.6pt, densely dotted, forget plot] coordinates {(5.6,2) (12.4,2)};
+\node[font=\footnotesize, cMuted, anchor=south west, inner sep=1pt] at (axis cs:5.75,2.022) {full range};
+\addplot[cDa, line width=0.9pt, mark=square*, mark size=1.6pt] table[x=n, y=w] {dat/rule_b_de0.05.dat};
+\addlegendentry{$\delta e=0.05$}
+\addplot[cDb, line width=0.9pt, mark=triangle*, mark size=2.0pt] table[x=n, y=w] {dat/rule_b_de0.1.dat};
+\addlegendentry{$\delta e=0.1$}
+\addplot[cDc, line width=0.9pt, mark=*, mark size=1.5pt] table[x=n, y=w] {dat/rule_b_de0.2.dat};
+\addlegendentry{$\delta e=0.2$}
+% ---------------- (c) rule at 57/115 qubits ----------------
+\nextgroupplot[
+  xmin=1.35, xmax=6.3, ymin=0.74, ymax=1.92, xtick={2,3,4,5,6}, ytick={0.8,1.0,...,1.81},
+  yticklabel style={/pgf/number format/fixed, /pgf/number format/precision=1, /pgf/number format/fixed zerofill},
+  xlabel={coupling $J_z$}, ylabel={$\delta e^*_{\rm law}/\delta e^*$},
+  title={(c) rule at 57/115 qubits},
+  legend columns=4, transpose legend, legend style={at={(0.025,0.95)}, anchor=north west},
+]
+\fill[cCert] (axis cs:1.35,0.8) rectangle (axis cs:6.3,1.25);
+\addplot[cInk, line width=0.5pt, forget plot] coordinates {(1.35,1) (6.3,1)};
+\node[font=\footnotesize, cCertText, anchor=south east, inner sep=1pt] at (axis cs:6.22,0.815) {band fixed in advance};
+\pts{mMs}{57}{m_s}\addlegendentry{$m_s$}
+\pts{mCzz}{57}{Czz_bar}\addlegendentry{$\bar C_{zz}$}
+\pts{mCtwo}{57}{C2_bar}\addlegendentry{$\bar C_{2}$}
+\pts{mZbulk}{57}{Z_bulk}\addlegendentry{$Z_{\rm bulk}$}
+\pts{mZbdry}{57}{Z_boundary}\addlegendentry{$Z_{\rm bdry}$}
+\pts{mCedge}{57}{Czz_edge}\addlegendentry{$C_{zz}^{\rm edge}$}
+\pts{mZloop}{57}{Z_loop}\addlegendentry{$Z_{\rm loop}$}
+\node[font=\footnotesize, cMuted, anchor=north west, inner sep=1pt] at (axis cs:1.45,1.345) {filled: $n=57$; open: $n=115$};
+\pts{mMs,open,forget plot}{115}{m_s}\pts{mCzz,open,forget plot}{115}{Czz_bar}
+\pts{mCtwo,open,forget plot}{115}{C2_bar}\pts{mZbulk,open,forget plot}{115}{Z_bulk}
+% ---------------- (d) size dependence ----------------
+\nextgroupplot[
+  xmin=1.8, xmax=6.2, ymin=0.35, ymax=1.32, xtick={2,3,4,5,6}, ytick={0.4,0.6,...,1.21},
+  yticklabel style={/pgf/number format/fixed, /pgf/number format/precision=1, /pgf/number format/fixed zerofill},
+  xlabel={coupling $J_z$}, ylabel={$\delta e^*(115)/\delta e^*(57)$},
+  title={(d) size dependence},
+  legend columns=2, legend style={at={(0.97,0.50)}, anchor=north east},
+]
+\addplot[cInk, line width=0.5pt, forget plot] coordinates {(1.8,1) (6.2,1)};
+\addplot[cInk, line width=0.6pt, densely dotted, forget plot] coordinates {(1.8,0.495652173913) (6.2,0.495652173913)};
+\node[font=\footnotesize, cMuted, anchor=north west, inner sep=1pt] at (axis cs:1.9,0.975) {intensive};
+\node[font=\footnotesize, cMuted, anchor=south west, inner sep=1pt] at (axis cs:1.9,0.515) {$57/115$};
+\addplot[cMs, line width=0.9pt, mark=*, mark size=1.6pt] table[x=J, y=ratio] {dat/rule_d_m_s.dat};
+\addlegendentry{$m_s$}
+\addplot[cCzz, line width=0.9pt, mark=square*, mark size=1.5pt] table[x=J, y=ratio] {dat/rule_d_Czz_bar.dat};
+\addlegendentry{$\bar C_{zz}$}
+\addplot[cCtwo, line width=0.9pt, mark=diamond*, mark size=2.0pt] table[x=J, y=ratio] {dat/rule_d_C2_bar.dat};
+\addlegendentry{$\bar C_{2}$}
+\addplot[cZbulk, only marks, mark=triangle*, mark size=2.2pt, mark options={rotate=180}] table[x=J, y=ratio] {dat/rule_d_Z_bulk.dat};
+\addlegendentry{$Z_{\rm bulk}$}
+\end{groupplot}
+\end{tikzpicture}
+\end{document}

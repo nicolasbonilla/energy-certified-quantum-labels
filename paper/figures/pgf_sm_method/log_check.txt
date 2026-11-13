@@ -1,0 +1,27 @@
+== fig_rule ==
+pdflatex return code: 0
+errors (lines starting with !): 0
+overfull boxes: 0
+underfull boxes: 0
+missing characters: 0
+warnings: 0
+page size: 497.8 x 329.6 bp = 17.56 x 11.63 cm
+fonts: LMMathExtension10-Regular, LMMathItalic6-Regular, LMMathItalic8-Regular, LMMathItalic9-Regular, LMMathSymbols6-Regular, LMRoman6-Regular, LMRoman8-Regular, LMRoman9-Regular
+== fig_mechanism ==
+pdflatex return code: 0
+errors (lines starting with !): 0
+overfull boxes: 0
+underfull boxes: 0
+missing characters: 0
+warnings: 0
+page size: 501.8 x 224.9 bp = 17.70 x 7.93 cm
+fonts: LMMathItalic6-Regular, LMMathItalic8-Regular, LMMathItalic9-Regular, LMMathSymbols9-Regular, LMRoman6-Regular, LMRoman8-Regular, LMRoman9-Regular
+== fig_bias_ratio ==
+pdflatex return code: 0
+errors (lines starting with !): 0
+overfull boxes: 0
+underfull boxes: 0
+missing characters: 0
+warnings: 0
+page size: 502.0 x 248.7 bp = 17.71 x 8.77 cm
+fonts: LMMathItalic6-Regular, LMMathItalic8-Regular, LMMathItalic9-Regular, LMMathSymbols9-Regular, LMRoman6-Regular, LMRoman8-Regular, LMRoman9-Regular

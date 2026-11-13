@@ -1,0 +1,74 @@
+===== test_map_stored.py  (exit code 0, 7.9 s) =====
+
+(a) J* (central) and counts of the stored map reproduced for 10 label-size pairs
+
+(a) 171 stored rows reproduced: 39 CERTIFIED, 119 NOT_CERTIFIED, 13 GRAY; 0 mismatches
+
+(b) certificates: 220 files, 214 distinct by SHA-256, 140 used (n = 57: 120, n = 115: 20)
+
+(b) rigor table reproduced as exact rationals: 17 of 18 within tau; exception (57, 3.4, 'm_s') at 1.0859 tau; with the full pool of Sec. 2: 17 of 18
+
+(c) device interval at Jz = 6.0, m_s: [0.963251393, 0.992101341], 0.499177 tau (stored 0.499177); full pool of Sec. 2: 0.499177 tau
+
+(c) device interval at Jz = 6.0, Czz_bar: [-0.992826883, -0.960120222], 0.567753 tau (stored 0.567753); full pool of Sec. 2: 0.516176 tau
+
+(d) m_s, n = 57, Jz = 3.6 from (3.4, 4.0): direct 0.9093 tau, predicted by concavity 0.9389 tau, pool of Sec. 2 0.9093 tau; smallest margin of a stored state 8.17e-05
+
+(d) m_s, n = 57, Jz = 4.0 from (3.6, 4.5): direct 0.6607 tau, predicted by concavity 0.7530 tau, pool of Sec. 2 0.6607 tau; smallest margin of a stored state 1.95e-05
+
+(d) m_s, n = 57, Jz = 4.5 from (4.0, 5.0): direct 0.4920 tau, predicted by concavity 0.5434 tau, pool of Sec. 2 0.4920 tau; smallest margin of a stored state 4.84e-05
+
+(d) m_s, n = 57, Jz = 5.0 from (4.5, 5.5): direct 0.3504 tau, predicted by concavity 0.3897 tau, pool of Sec. 2 0.3504 tau; smallest margin of a stored state 4.02e-05
+
+(d) m_s, n = 57, Jz = 5.5 from (5.0, 6.0): direct 0.2848 tau, predicted by concavity 0.3045 tau, pool of Sec. 2 0.2848 tau; smallest margin of a stored state 8.62e-05
+
+test_interpolation_returns_the_computed_value_at_a_computed_point (__main__.TestA_StoredMap.test_interpolation_returns_the_computed_value_at_a_computed_point) ... ok
+test_jstar_and_counts_of_the_stored_map (__main__.TestA_StoredMap.test_jstar_and_counts_of_the_stored_map) ... ok
+test_rows_reproduce_the_stored_map (__main__.TestA_StoredMap.test_rows_reproduce_the_stored_map) ... ok
+test_largest_energy_is_an_exact_root (__main__.TestB_RigorRows.test_largest_energy_is_an_exact_root) ... ok
+test_loader_counts (__main__.TestB_RigorRows.test_loader_counts) ... ok
+test_rows_of_the_rigor_table (__main__.TestB_RigorRows.test_rows_of_the_rigor_table) ... ok
+test_device_interval_at_6 (__main__.TestC_DeviceInterval.test_device_interval_at_6) ... ok
+test_neighbours_predict_a_valid_weaker_bound (__main__.TestD_Concavity.test_neighbours_predict_a_valid_weaker_bound) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 7.517s
+
+OK
+
+===== test_map_synthetic.py  (exit code 0, 13.0 s) =====
+
+(e) end-to-end synthetic run: 140 rows, 18 exact intervals, all labels inside; statuses of m_s: {'1.1': 'GRAY', '3.0': 'GRAY', '3.4': 'CERTIFIED_EXACT', '4.0': 'CERTIFIED_EXACT', '6.0': 'CERTIFIED_EXACT'}
+
+test_run_on_genuine_mixtures_of_stored_states (__main__.TestEndToEnd.test_run_on_genuine_mixtures_of_stored_states) ... ok
+test_caps_tolerances_and_largest_energy (__main__.TestExactSideOnTheDimer.test_caps_tolerances_and_largest_energy) ... ok
+test_czz_rule (__main__.TestExactSideOnTheDimer.test_czz_rule) ... ok
+test_pairs_by_concavity_and_range (__main__.TestExactSideOnTheDimer.test_pairs_by_concavity_and_range) ... ok
+test_tight_bound_in_and_out_of_the_sector (__main__.TestExactSideOnTheDimer.test_tight_bound_in_and_out_of_the_sector) ... ok
+test_g1 (__main__.TestGates.test_g1) ... ok
+test_g2_g3 (__main__.TestGates.test_g2_g3) ... ok
+test_g4_and_the_seven_labels_from_raw_arrays (__main__.TestGates.test_g4_and_the_seven_labels_from_raw_arrays) ... ok
+test_g5 (__main__.TestGates.test_g5) ... ok
+test_g5_reprove_one_stored_certificate (__main__.TestGates.test_g5_reprove_one_stored_certificate) ... ok
+test_g6 (__main__.TestGates.test_g6) ... ok
+test_g7_and_no_decision (__main__.TestGates.test_g7_and_no_decision) ... ok
+test_refuses_without_or_with_a_wrong_hash (__main__.TestGuard.test_refuses_without_or_with_a_wrong_hash) ... ok
+test_seed (__main__.TestGuard.test_seed) ... ok
+test_the_real_folder_is_refused_while_the_declaration_is_not_hashed (__main__.TestGuard.test_the_real_folder_is_refused_while_the_declaration_is_not_hashed) ... ok
+test_pools_brackets_and_the_linear_rule_on_stored_states (__main__.TestNotCertifiedSide.test_pools_brackets_and_the_linear_rule_on_stored_states) ... ok
+test_q_negative_and_zero (__main__.TestNotCertifiedSide.test_q_negative_and_zero) ... ok
+test_q_positive_known_answer (__main__.TestNotCertifiedSide.test_q_positive_known_answer) ... ok
+test_threshold_of_the_reevaluated_pool (__main__.TestNotCertifiedSide.test_threshold_of_the_reevaluated_pool) ... ok
+test_agrees_with_the_loader_of_the_learning_code (__main__.TestSchemaLoader.test_agrees_with_the_loader_of_the_learning_code) ... ok
+test_bad_objects_are_refused (__main__.TestSchemaLoader.test_bad_objects_are_refused) ... ok
+test_labels_and_exact_quantities (__main__.TestSchemaLoader.test_labels_and_exact_quantities) ... ok
+test_filter (__main__.TestTables.test_filter) ... ok
+test_jstar_relations_rounding (__main__.TestTables.test_jstar_relations_rounding) ... ok
+test_nested_sets_and_primary_set (__main__.TestTables.test_nested_sets_and_primary_set) ... ok
+
+----------------------------------------------------------------------
+Ran 25 tests in 12.477s
+
+OK
+
+ALL MAP TESTS PASSED

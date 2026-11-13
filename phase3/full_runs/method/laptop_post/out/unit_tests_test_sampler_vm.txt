@@ -1,0 +1,8 @@
+test_complex_down1 (__main__.TestSampler.test_complex_down1) ... ok
+test_real_down0 (__main__.TestSampler.test_real_down0) ... ok
+test_tenpy_toy (__main__.TestSampler.test_tenpy_toy) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 1.318s
+
+OK

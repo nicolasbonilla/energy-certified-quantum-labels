@@ -1,0 +1,25 @@
+{
+ "n": 19,
+ "Jz": 1.6,
+ "kind": "R1a",
+ "stages": [
+  {
+   "tag": "chi512",
+   "E": -10.364284278360378,
+   "m_s": 0.7328657589821345,
+   "dmrg": {
+    "E_dmrg": -10.364284278360385,
+    "sweeps": 14,
+    "time_s": 32.25940203666687,
+    "dE_last": 5.1514348342607263e-14,
+    "max_trunc_err": 1.1302075506884776e-06,
+    "last_trunc_err": 0.0,
+    "chi_max_reached": 432,
+    "norm_test_before": 7.835829968182083e-14,
+    "canonicalized": false,
+    "warnings": []
+   },
+   "sid": "n19_J1.6_R1_chi512"
+  }
+ ]
+}

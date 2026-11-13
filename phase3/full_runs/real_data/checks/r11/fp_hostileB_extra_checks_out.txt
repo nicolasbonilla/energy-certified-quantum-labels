@@ -1,0 +1,41 @@
+==================== n = 57
+  Jz=1.1  de emulated 0.04954 | dataset first stage 0.08521 | dataset final 0.02140 | emu/first 0.581 | emu/final 2.315
+  Jz=1.2  de emulated 0.04328 | dataset first stage 0.08387 | dataset final 0.01976 | emu/first 0.516 | emu/final 2.190
+  Jz=1.3  de emulated 0.03792 | dataset first stage 0.07989 | dataset final 0.01802 | emu/first 0.475 | emu/final 2.105
+  Jz=1.4  de emulated 0.03281 | dataset first stage 0.07051 | dataset final 0.01542 | emu/first 0.465 | emu/final 2.127
+  Jz=1.6  de emulated 0.02476 | dataset first stage 0.05732 | dataset final 0.01135 | emu/first 0.432 | emu/final 2.180
+  Jz=1.8  de emulated 0.01880 | dataset first stage 0.04874 | dataset final 0.00887 | emu/first 0.386 | emu/final 2.118
+  Jz=2.0  de emulated 0.01451 | dataset first stage 0.04383 | dataset final 0.00751 | emu/first 0.331 | emu/final 1.933
+  Jz=2.2  de emulated 0.01120 | dataset first stage 0.03883 | dataset final 0.00683 | emu/first 0.288 | emu/final 1.639
+  Jz=2.5  de emulated 0.00733 | dataset first stage 0.02822 | dataset final 0.00428 | emu/first 0.260 | emu/final 1.712
+  Jz=3.0  de emulated 0.00379 | dataset first stage 0.02030 | dataset final 0.00281 | emu/first 0.187 | emu/final 1.349
+  Jz=3.5  de emulated 0.00220 | dataset first stage 0.01611 | dataset final 0.00221 | emu/first 0.137 | emu/final 0.998
+  Jz=4.0  de emulated 0.00137 | dataset first stage 0.01162 | dataset final 0.00172 | emu/first 0.118 | emu/final 0.800
+  Jz=5.0  de emulated 0.00075 | dataset first stage 0.00676 | dataset final 0.00101 | emu/first 0.111 | emu/final 0.743
+  Jz=6.0  de emulated 0.00051 | dataset first stage 0.00494 | dataset final 0.00088 | emu/first 0.103 | emu/final 0.578
+emulated first stage over the dataset's own first stage: 0.103 to 0.581 (median 0.310); over final: 0.578 to 2.315
+jackknife+ (Barber et al.), cubic, labels=public: held-out label inside 41 of 45; truth inside 0 of 45; width 0.0955-0.1342 tau
+jackknife+ (Barber et al.), cubic, labels=DMRG control: held-out label inside 41 of 45; truth inside 41 of 45; width 0.0031-0.0044 tau
+  Jz=1.1 public m_s 0.77220, authors' DMRG 0.59525: label 29.7 % above (4.95 tau); a model within 3 % of the label is at least 25.8 % = 4.31 tau above the DMRG value
+  Jz=1.2 public m_s 0.79776, authors' DMRG 0.64038: label 24.6 % above (4.10 tau); a model within 3 % of the label is at least 20.8 % = 3.47 tau above the DMRG value
+  Jz=1.3 public m_s 0.82092, authors' DMRG 0.67994: label 20.7 % above (3.46 tau); a model within 3 % of the label is at least 17.1 % = 2.85 tau above the DMRG value
+  Jz=1.4 public m_s 0.82968, authors' DMRG 0.71440: label 16.1 % above (2.69 tau); a model within 3 % of the label is at least 12.7 % = 2.11 tau above the DMRG value
+==================== n = 115
+  Jz=1.1  de emulated 0.08694 | dataset first stage 0.14971 | dataset final 0.02273 | emu/first 0.581 | emu/final 3.825
+  Jz=1.2  de emulated 0.07865 | dataset first stage 0.14453 | dataset final 0.01968 | emu/first 0.544 | emu/final 3.996
+  Jz=1.3  de emulated 0.07124 | dataset first stage 0.13680 | dataset final 0.01717 | emu/first 0.521 | emu/final 4.148
+  Jz=1.4  de emulated 0.06461 | dataset first stage 0.12419 | dataset final 0.01542 | emu/first 0.520 | emu/final 4.191
+  Jz=1.6  de emulated 0.05321 | dataset first stage 0.11688 | dataset final 0.01168 | emu/first 0.455 | emu/final 4.556
+  Jz=2.0  de emulated 0.03690 | dataset first stage 0.09522 | dataset final 0.00729 | emu/first 0.387 | emu/final 5.060
+  Jz=2.5  de emulated 0.02392 | dataset first stage 0.10268 | dataset final 0.00425 | emu/first 0.233 | emu/final 5.624
+  Jz=3.0  de emulated 0.01589 | dataset first stage 0.06236 | dataset final 0.00294 | emu/first 0.255 | emu/final 5.404
+  Jz=4.0  de emulated 0.00741 | dataset first stage 0.04948 | dataset final 0.00125 | emu/first 0.150 | emu/final 5.937
+  Jz=5.0  de emulated 0.00371 | dataset first stage 0.03668 | dataset final 0.00086 | emu/first 0.101 | emu/final 4.333
+  Jz=6.0  de emulated 0.00197 | dataset first stage 0.03338 | dataset final 0.00040 | emu/first 0.059 | emu/final 4.945
+emulated first stage over the dataset's own first stage: 0.059 to 0.581 (median 0.387); over final: 3.825 to 5.937
+jackknife+ (Barber et al.), cubic, labels=public: held-out label inside 41 of 45; truth inside 11 of 45; width 0.0601-0.0825 tau
+jackknife+ (Barber et al.), cubic, labels=DMRG control: held-out label inside 41 of 45; truth inside 41 of 45; width 0.0027-0.0038 tau
+  Jz=1.1 public m_s 0.79299, authors' DMRG 0.61952: label 28.0 % above (4.67 tau); a model within 3 % of the label is at least 24.2 % = 4.03 tau above the DMRG value
+  Jz=1.2 public m_s 0.80646, authors' DMRG 0.66233: label 21.8 % above (3.63 tau); a model within 3 % of the label is at least 18.1 % = 3.02 tau above the DMRG value
+  Jz=1.3 public m_s 0.82342, authors' DMRG 0.69969: label 17.7 % above (2.95 tau); a model within 3 % of the label is at least 14.2 % = 2.36 tau above the DMRG value
+  Jz=1.4 public m_s 0.83630, authors' DMRG 0.73213: label 14.2 % above (2.37 tau); a model within 3 % of the label is at least 10.8 % = 1.80 tau above the DMRG value

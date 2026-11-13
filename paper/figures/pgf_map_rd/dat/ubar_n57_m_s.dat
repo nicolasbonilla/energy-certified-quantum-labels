@@ -1,0 +1,12 @@
+# grey bars of the undecided rows, n=57, m_s: (J, Ul), (J, top), blank; top = Uu, or E1 if no stored
+# exact interval exists; top drawn at most 3 (units of tau): see ucap_n57_m_s.dat
+J w
+3.2 0.9444759044343323
+3.2 1.1532091744935145
+nan nan
+3.3 0.9328996723064251
+3.3 1.114414395941586
+nan nan
+3.4 0.8441962523344587
+3.4 1.0042385504609097
+nan nan

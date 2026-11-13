@@ -1,0 +1,40 @@
+(a) SSB, TFIM1D h=0.5, Zbar, no symmetry constraint; m_spont = 0.9647
+  de=1.0e-04: u_n = 0.5439, 0.9656, 0.9675, 0.9677  (n=6,8,10,12; o0=0)
+  de=1.0e-03: u_n = 0.9708, 0.9733, 0.9736, 0.9737  (n=6,8,10,12; o0=0)
+  de=1.0e-02: u_n = 0.9874, 0.9878, 0.9879, 0.9879  (n=6,8,10,12; o0=0)
+
+(b) exact TL, TFIM Xbar (HF conjugate of h)
+  h=1.5:
+    de=1.0e-02: u+=0.052759 u-=0.068592  (u-)^2/de=0.4705  (u+)^2/de=0.2784  log(1/de)=4.61
+    de=1.0e-03: u+=0.018354 u-=0.019934  (u-)^2/de=0.3974  (u+)^2/de=0.3369  log(1/de)=6.91
+    de=1.0e-04: u+=0.005974 u-=0.006132  (u-)^2/de=0.3760  (u+)^2/de=0.3568  log(1/de)=9.21
+    de=1.0e-05: u+=0.001906 u-=0.001922  (u-)^2/de=0.3694  (u+)^2/de=0.3633  log(1/de)=11.51
+    de=1.0e-06: u+=0.000604 u-=0.000606  (u-)^2/de=0.3673  (u+)^2/de=0.3654  log(1/de)=13.82
+  h=1.0:
+    de=1.0e-02: u+=0.144558 u-=0.154558  (u-)^2/de=2.3888  (u+)^2/de=2.0897  log(1/de)=4.61
+    de=1.0e-03: u+=0.055043 u-=0.056043  (u-)^2/de=3.1409  (u+)^2/de=3.0298  log(1/de)=6.91
+    de=1.0e-04: u+=0.019701 u-=0.019801  (u-)^2/de=3.9206  (u+)^2/de=3.8811  log(1/de)=9.21
+    de=1.0e-05: u+=0.006849 u-=0.006859  (u-)^2/de=4.7050  (u+)^2/de=4.6913  log(1/de)=11.51
+    de=1.0e-06: u+=0.002341 u-=0.002342  (u-)^2/de=5.4862  (u+)^2/de=5.4815  log(1/de)=13.82
+  ED n=8, h=1, u-(de=1e-3) = 0.04101   (TL 0.05604)
+  ED n=12, h=1, u-(de=1e-3) = 0.04405   (TL 0.05604)
+
+(c) critical order parameter, TFIM1D h=1, Zbar, finite-size scaling
+  x=de n^2= 0.03: u_n n^(1/8) = 0.2760, 0.2764, 0.2765, 0.2766   (n=6,8,10,12)
+  x=de n^2= 0.10: u_n n^(1/8) = 0.4927, 0.4934, 0.4937, 0.4939   (n=6,8,10,12)
+  x=de n^2= 0.30: u_n n^(1/8) = 0.7965, 0.7975, 0.7980, 0.7982   (n=6,8,10,12)
+  x=de n^2= 1.00: u_n n^(1/8) = 1.0942, 1.0960, 1.0969, 1.0974   (n=6,8,10,12)
+  x=de n^2= 3.00: u_n n^(1/8) = 1.1990, 1.2066, 1.2102, 1.2123   (n=6,8,10,12)
+  n=6: local slope dlog u/dlog de over x in [0.3,3] = 0.179  (TL prediction 1/16 = 0.0625; mean-field 1/4; regular 1/2)
+  n=12: local slope dlog u/dlog de over x in [0.3,3] = 0.183  (TL prediction 1/16 = 0.0625; mean-field 1/4; regular 1/2)
+
+(d) scaling lemma check
+  p=2.0000 A=0.7: de=1e-06 numeric u=1.673320e-03  formula=1.673320e-03  rel.err=1.1e-16
+  p=2.0000 A=0.7: de=1e-03 numeric u=5.291503e-02  formula=5.291503e-02  rel.err=0.0e+00
+  p=1.0667 A=0.3: de=1e-06 numeric u=1.723200e-01  formula=1.723200e-01  rel.err=2.2e-16
+  p=1.0667 A=0.3: de=1e-03 numeric u=2.653601e-01  formula=2.653601e-01  rel.err=0.0e+00
+  p=1.3333 A=1.0: de=1e-06 numeric u=5.549055e-02  formula=5.549055e-02  rel.err=1.3e-15
+  p=1.3333 A=1.0: de=1e-03 numeric u=3.120463e-01  formula=3.120463e-01  rel.err=0.0e+00
+  p=1.5000 A=2.0: de=1e-06 numeric u=3.000000e-02  formula=3.000000e-02  rel.err=6.7e-16
+  p=1.5000 A=2.0: de=1e-03 numeric u=3.000000e-01  formula=3.000000e-01  rel.err=4.4e-16
+time 8.8 s

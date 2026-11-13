@@ -1,0 +1,21 @@
+{
+ "claims": {
+  "C-H1": false,
+  "C-H2": true,
+  "C-H3": true,
+  "C-H4": null,
+  "C-H5": [
+   true,
+   false
+  ]
+ },
+ "gates": {
+  "G2": true,
+  "G1": true,
+  "P1": false,
+  "P2": false,
+  "P3": true,
+  "P4": true,
+  "G4": null
+ }
+}

@@ -1,0 +1,76 @@
+comb: n = 12, majority 8, minority 4, edges 11, Neel sector n_up = 8, M_0 = 4
+sectors M_z = [-12, -10, -8, -6, -4, -2, 0, 2, 4, 6, 8, 10, 12]  dimensions [1, 12, 66, 220, 495, 792, 924, 792, 495, 220, 66, 12, 1]
+
+=== Jz = 1.6 ===
+sector ground energies E_0^(q) - E_0^(M_0): -12: 10.16587  -10: 7.08518  -8: 4.24648  -6: 1.81123  -4: 0.00000  -2: 0.24804  +0: 0.30857  +2: 0.24804  +4: 0.00000  +6: 1.81123  +8: 4.24648  +10: 7.08518  +12: 10.16587
+global ground energy minus E_0^(M_0): 0.000e+00 (the Neel sector and its mirror image are the lowest)
+interval of uniform fields (per unit of M_z): B_- = -0.000000, B_+ = 0.905615  [B_+/Jz = 0.566010]
+ground state of the Neel sector: m_s = 0.775201, C_zz = -0.775391
+  de = 1e-03  (eps = 0.0120)
+     bounds for the mean window at M = M_0:  sum_q p_q |q - M_0| <= 2 eps/(B_+ - B_-) = 0.02650 ;  weight of the mirror sector p_(-M_0) <= eps/(2 M_0 (B_+ - B_-)) = 0.00166
+     m_s  sector M_z = M_0             outer [+0.7310, +0.8155] width 0.0845 | inner [+0.7311, +0.8155] width 0.0844
+     m_s  mean  Tr M_z s = M_0        outer [+0.7310, +0.8155] width 0.0845 | inner [+0.7311, +0.8155] width 0.0844
+          lower-end mixture, weights by sector: +4: 1.00000 ; weight outside the Neel sector 0.00000
+     m_s  mean  Tr M_z s = M_0 - 0.2  outer [+0.6924, +0.7769] width 0.0845 | inner [+0.6924, +0.7768] width 0.0844
+          lower-end mixture, weights by sector: -4: 0.02500  +4: 0.97500 ; weight outside the Neel sector 0.02500
+     m_s  no constraint on M_z        outer [-0.8155, +0.8155] width 1.6310 | inner [-0.8155, +0.8155] width 1.6309
+     m_s: the mean window at M_0 exceeds the sector window by 0.0000 below and 0.0000 above (outer values); the free window is [-0.8155, +0.8155]
+     C_zz sector M_z = M_0             outer [-0.8126, -0.7357] width 0.0769 | inner [-0.8125, -0.7358] width 0.0767
+     C_zz mean  Tr M_z s = M_0        outer [-0.8126, -0.7357] width 0.0769 | inner [-0.8125, -0.7358] width 0.0767
+          lower-end mixture, weights by sector: +4: 1.00000 ; weight outside the Neel sector 0.00000
+     C_zz mean  Tr M_z s = M_0 - 0.2  outer [-0.8126, -0.7357] width 0.0769 | inner [-0.8125, -0.7358] width 0.0767
+          lower-end mixture, weights by sector: -4: 0.02500  +4: 0.97500 ; weight outside the Neel sector 0.02500
+     C_zz no constraint on M_z        outer [-0.8126, -0.7357] width 0.0769 | inner [-0.8125, -0.7358] width 0.0767
+  de = 1e-02  (eps = 0.1200)
+     bounds for the mean window at M = M_0:  sum_q p_q |q - M_0| <= 2 eps/(B_+ - B_-) = 0.26501 ;  weight of the mirror sector p_(-M_0) <= eps/(2 M_0 (B_+ - B_-)) = 0.01656
+     m_s  sector M_z = M_0             outer [+0.6231, +0.8891] width 0.2661 | inner [+0.6232, +0.8889] width 0.2657
+     m_s  mean  Tr M_z s = M_0        outer [+0.6231, +0.8891] width 0.2661 | inner [+0.6232, +0.8889] width 0.2657
+          lower-end mixture, weights by sector: +4: 1.00000 ; weight outside the Neel sector 0.00000
+     m_s  mean  Tr M_z s = M_0 - 0.2  outer [+0.5849, +0.8523] width 0.2674 | inner [+0.5851, +0.8522] width 0.2670
+          lower-end mixture, weights by sector: -4: 0.02500  +4: 0.97500 ; weight outside the Neel sector 0.02500
+     m_s  no constraint on M_z        outer [-0.8891, +0.8891] width 1.7783 | inner [-0.8889, +0.8889] width 1.7778
+     m_s: the mean window at M_0 exceeds the sector window by 0.0000 below and 0.0000 above (outer values); the free window is [-0.8891, +0.8891]
+     C_zz sector M_z = M_0             outer [-0.8833, -0.6422] width 0.2411 | inner [-0.8830, -0.6422] width 0.2408
+     C_zz mean  Tr M_z s = M_0        outer [-0.8833, -0.6422] width 0.2411 | inner [-0.8830, -0.6422] width 0.2408
+          lower-end mixture, weights by sector: +4: 1.00000 ; weight outside the Neel sector 0.00000
+     C_zz mean  Tr M_z s = M_0 - 0.2  outer [-0.8833, -0.6422] width 0.2411 | inner [-0.8830, -0.6422] width 0.2409
+          lower-end mixture, weights by sector: -4: 0.02500  +4: 0.97500 ; weight outside the Neel sector 0.02500
+     C_zz no constraint on M_z        outer [-0.8833, -0.6422] width 0.2411 | inner [-0.8830, -0.6422] width 0.2409
+
+=== Jz = 4.0 ===
+sector ground energies E_0^(q) - E_0^(M_0): -12: 22.62573  -10: 16.22209  -8: 10.01499  -6: 4.09940  -4: 0.00000  -2: 1.35122  +0: 1.47587  +2: 1.35122  +4: 0.00000  +6: 4.09940  +8: 10.01499  +10: 16.22209  +12: 22.62573
+global ground energy minus E_0^(M_0): 0.000e+00 (the Neel sector and its mirror image are the lowest)
+interval of uniform fields (per unit of M_z): B_- = 0.000000, B_+ = 2.049702  [B_+/Jz = 0.512425]
+ground state of the Neel sector: m_s = 0.946853, C_zz = -0.946580
+  de = 1e-03  (eps = 0.0120)
+     bounds for the mean window at M = M_0:  sum_q p_q |q - M_0| <= 2 eps/(B_+ - B_-) = 0.01171 ;  weight of the mirror sector p_(-M_0) <= eps/(2 M_0 (B_+ - B_-)) = 0.00073
+     m_s  sector M_z = M_0             outer [+0.9298, +0.9613] width 0.0315 | inner [+0.9299, +0.9613] width 0.0314
+     m_s  mean  Tr M_z s = M_0        outer [+0.9298, +0.9613] width 0.0315 | inner [+0.9299, +0.9613] width 0.0314
+          lower-end mixture, weights by sector: +4: 1.00000 ; weight outside the Neel sector 0.00000
+     m_s  mean  Tr M_z s = M_0 - 0.2  outer [+0.8825, +0.9141] width 0.0316 | inner [+0.8826, +0.9140] width 0.0315
+          lower-end mixture, weights by sector: -4: 0.02500  +4: 0.97500 ; weight outside the Neel sector 0.02500
+     m_s  no constraint on M_z        outer [-0.9613, +0.9613] width 1.9226 | inner [-0.9613, +0.9613] width 1.9225
+     m_s: the mean window at M_0 exceeds the sector window by 0.0000 below and 0.0000 above (outer values); the free window is [-0.9613, +0.9613]
+     C_zz sector M_z = M_0             outer [-0.9602, -0.9311] width 0.0291 | inner [-0.9602, -0.9311] width 0.0290
+     C_zz mean  Tr M_z s = M_0        outer [-0.9602, -0.9311] width 0.0291 | inner [-0.9602, -0.9311] width 0.0290
+          lower-end mixture, weights by sector: +4: 1.00000 ; weight outside the Neel sector 0.00000
+     C_zz mean  Tr M_z s = M_0 - 0.2  outer [-0.9602, -0.9311] width 0.0291 | inner [-0.9602, -0.9311] width 0.0290
+          lower-end mixture, weights by sector: -4: 0.02500  +4: 0.97500 ; weight outside the Neel sector 0.02500
+     C_zz no constraint on M_z        outer [-0.9602, -0.9311] width 0.0291 | inner [-0.9602, -0.9311] width 0.0290
+  de = 1e-02  (eps = 0.1200)
+     bounds for the mean window at M = M_0:  sum_q p_q |q - M_0| <= 2 eps/(B_+ - B_-) = 0.11709 ;  weight of the mirror sector p_(-M_0) <= eps/(2 M_0 (B_+ - B_-)) = 0.00732
+     m_s  sector M_z = M_0             outer [+0.8835, +0.9842] width 0.1006 | inner [+0.8839, +0.9841] width 0.1003
+     m_s  mean  Tr M_z s = M_0        outer [+0.8835, +0.9842] width 0.1006 | inner [+0.8839, +0.9841] width 0.1003
+          lower-end mixture, weights by sector: +4: 1.00000 ; weight outside the Neel sector 0.00000
+     m_s  mean  Tr M_z s = M_0 - 0.2  outer [+0.8365, +0.9406] width 0.1040 | inner [+0.8368, +0.9404] width 0.1036
+          lower-end mixture, weights by sector: -4: 0.02500  +4: 0.97500 ; weight outside the Neel sector 0.02500
+     m_s  no constraint on M_z        outer [-0.9842, +0.9842] width 1.9683 | inner [-0.9841, +0.9841] width 1.9682
+     m_s: the mean window at M_0 exceeds the sector window by 0.0000 below and 0.0000 above (outer values); the free window is [-0.9842, +0.9842]
+     C_zz sector M_z = M_0             outer [-0.9829, -0.8911] width 0.0918 | inner [-0.9829, -0.8913] width 0.0915
+     C_zz mean  Tr M_z s = M_0        outer [-0.9829, -0.8911] width 0.0918 | inner [-0.9829, -0.8913] width 0.0915
+          lower-end mixture, weights by sector: +4: 1.00000 ; weight outside the Neel sector 0.00000
+     C_zz mean  Tr M_z s = M_0 - 0.2  outer [-0.9829, -0.8911] width 0.0918 | inner [-0.9829, -0.8913] width 0.0915
+          lower-end mixture, weights by sector: -4: 0.02500  +4: 0.97500 ; weight outside the Neel sector 0.02500
+     C_zz no constraint on M_z        outer [-0.9829, -0.8911] width 0.0918 | inner [-0.9829, -0.8913] width 0.0915
+
+elapsed 1803 s

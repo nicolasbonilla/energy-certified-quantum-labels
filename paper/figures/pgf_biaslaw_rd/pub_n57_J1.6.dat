@@ -1,0 +1,4 @@
+# public label of m_s, n = 57, Jz = 1.6: de = published energy error per site, dm = label - reference
+# source real_data/out/predict_real.json sizes.57.P5.rows[Jz=1.6] (de, Delta)
+de dm
+0.011354653944598437 0.07710772018310263

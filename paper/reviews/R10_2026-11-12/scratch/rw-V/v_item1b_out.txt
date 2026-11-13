@@ -1,0 +1,33 @@
+1. pinned wall (referee's example): n = 10, sector M = 0: E_q = -9.063508, sector gap D_s = 3.05182; levels of the whole space below E_q: 0; lowest level of the whole space at e = +0.0000; levels of other sectors inside (0, D_s): 10
+   A'                      commutes with M   lowest e_k with weight of B'psi   weight below D_s   max_alpha |I|/bound   max_alpha |III|/bound   |<A;A'>|   max_alpha(|I| or |III| minus its bound)
+   Z_5                     True                +3.05182 (>= D_s)           1.27e-31          2.110e-01             2.110e-01         6.243e-02   max excess +1.2e-16
+   Z_7                     True                +3.05182 (>= D_s)           2.28e-31          1.052e-02             1.052e-02         1.625e-05   max excess +1.6e-16
+   Z_6 Z_7                 True                +3.05182 (>= D_s)           1.01e-31          3.406e-02             3.406e-02         1.024e-03   max excess +1.1e-16
+   S+_6 S-_7 + h.c.        True                +3.05182 (>= D_s)           1.13e-35          1.321e-02             1.321e-02         1.280e-04   max excess +1.0e-18
+   X_6                     False               +0.00000 (<  D_s)           3.28e-02          3.840e+07             3.840e+07         3.175e-02   max excess +1.6e-02   <- control (A = X at the first site)
+   [1 s]
+2. ferromagnetic dimers with a step field (mine): n = 10, sector M = 0: E_q = -11.516894, sector gap D_s = 0.98814; levels of the whole space below E_q: 2; lowest level of the whole space at e = -1.4899; levels of other sectors inside (0, D_s): 0
+   A'                      commutes with M   lowest e_k with weight of B'psi   weight below D_s   max_alpha |I|/bound   max_alpha |III|/bound   |<A;A'>|   max_alpha(|I| or |III| minus its bound)
+   Z_5                     True                +0.98814 (>= D_s)           2.17e-29          9.463e-01             9.463e-01         9.842e-01   max excess -2.1e-06
+   Z_7                     True                +0.98814 (>= D_s)           1.53e-31          1.522e-02             1.522e-02         2.751e-04   max excess -5.9e-08
+   Z_6 Z_7                 True                +0.98814 (>= D_s)           2.02e-31          5.962e-02             5.962e-02         7.105e-03   max excess -3.0e-07
+   S+_6 S-_7 + h.c.        True                +0.98814 (>= D_s)           2.48e-35          2.527e-02             2.527e-02         1.371e-03   max excess -1.5e-07
+   X_6                     False               -1.48986 (<  D_s)           8.39e-03          2.378e+04             2.378e+04         8.245e-02   max excess +5.9e-02   <- control (A = X at the first site)
+   [3 s]
+   (piece: sites [10, 1, 2, 15, 9, 12, 0, 4, 5, 17] of the 19-site patch, 9 bonds, 6 majority / 4 minority sites)
+3. heavy-hex piece, Jz = 1.6, tilt mu = +0.00 Jz (field -mu eta_i Z_i): n = 10, sector M = 2: E_q = -4.842010, sector gap D_s = 0.60101; levels of the whole space below E_q: 0; lowest level of the whole space at e = -0.0000; levels of other sectors inside (0, D_s): 2
+   A'                      commutes with M   lowest e_k with weight of B'psi   weight below D_s   max_alpha |I|/bound   max_alpha |III|/bound   |<A;A'>|   max_alpha(|I| or |III| minus its bound)
+   Z_7                     True                +0.60101 (>= D_s)           4.15e-30          2.232e-02             2.232e-02         1.085e-02   max excess -2.7e-03
+   Z_9                     True                +0.60101 (>= D_s)           1.79e-31          1.078e-01             1.078e-01         8.673e-02   max excess -4.8e-03
+   Z_8 Z_9                 True                +0.60101 (>= D_s)           4.78e-34          9.222e-02             9.222e-02         7.743e-02   max excess -4.9e-03
+   X_9                     False               +0.18982 (<  D_s)           3.88e-03          2.045e-01             2.045e-01         6.348e-02   max excess -4.4e-03   <- control (A = X at the first site)
+   [4 s]
+3. heavy-hex piece, Jz = 1.6, tilt mu = -0.15 Jz (field -mu eta_i Z_i): n = 10, sector M = 2: E_q = -4.717513, sector gap D_s = 0.25860; levels of the whole space below E_q: 9; lowest level of the whole space at e = -2.0728; levels of other sectors inside (0, D_s): 2
+   A'                      commutes with M   lowest e_k with weight of B'psi   weight below D_s   max_alpha |I|/bound   max_alpha |III|/bound   |<A;A'>|   max_alpha(|I| or |III| minus its bound)
+   Z_7                     True                +0.25860 (>= D_s)           1.01e-30          2.590e-02             2.590e-02         5.761e-03   max excess -1.6e-01
+   Z_9                     True                +0.25860 (>= D_s)           2.20e-32          7.522e-03             7.522e-03         3.722e-03   max excess -1.1e-01
+   Z_8 Z_9                 True                +0.25860 (>= D_s)           1.54e-30          2.183e-02             2.183e-02         7.958e-03   max excess -1.7e-01
+   X_9                     False               -1.04158 (<  D_s)           2.95e-04          1.790e-02             1.790e-02         1.777e-02   max excess -2.1e-01   <- control (A = X at the first site)
+   [5 s]
+
+failures for charge-conserving A' (spectral support below D_s, or a violated bound on I, III): 0   [5 s]

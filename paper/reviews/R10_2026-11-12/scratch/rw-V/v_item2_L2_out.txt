@@ -1,0 +1,108 @@
+A. my construction against the generator and the stored graphs
+   d = 3: n = 19, |E| = 20, isomorphic to rustworkx.generators.heavy_hex_graph(3) (rustworkx 0.14.2): True
+   d = 5: n = 57, |E| = 64, isomorphic to rustworkx.generators.heavy_hex_graph(5) (rustworkx 0.14.2): True
+   d = 7: n = 115, |E| = 132, isomorphic to rustworkx.generators.heavy_hex_graph(7) (rustworkx 0.14.2): True
+   d = 9: n = 193, |E| = 224, isomorphic to rustworkx.generators.heavy_hex_graph(9) (rustworkx 0.14.2): True
+   d = 11: n = 291, |E| = 340, isomorphic to rustworkx.generators.heavy_hex_graph(11) (rustworkx 0.14.2): True
+   d = 13: n = 409, |E| = 480, isomorphic to rustworkx.generators.heavy_hex_graph(13) (rustworkx 0.14.2): True
+   d = 3: isomorphic to the stored map graph hh_d3.json: True; stored sum(eta) = 3, mine 3
+   d = 5: isomorphic to the stored map graph hh_d5.json: True; stored sum(eta) = 9, mine 9
+   d = 7: isomorphic to the stored map graph hh_d7.json: True; stored sum(eta) = 19, mine 19
+
+B. (S1), (S2);  C. neighbourhood types
+   d = 3: bipartite True; (S1) True; (S2) True; 7 types
+   d = 5: bipartite True; (S1) True; (S2) True; 10 types
+   d = 7: bipartite True; (S1) True; (S2) True; 10 types
+   d = 9: bipartite True; (S1) True; (S2) True; 10 types
+   d = 11: bipartite True; (S1) True; (S2) True; 10 types
+   d = 25: bipartite True; (S1) True; (S2) True; 10 types
+   d = 41: bipartite True; (S1) True; (S2) True; 10 types
+   (S1), (S2) hold for every odd d = 3..41: True
+   d = 3: types and multiplicities:
+      majority degree 1  sees (3) :    2   in table
+      majority degree 2  sees (2,2) :    2   in table
+      majority degree 2  sees (2,3) :    4   in table
+      majority degree 2  sees (3,3) :    3   in table
+      minority degree 2  sees (2,3) :    4   in table
+      minority degree 3  sees (2,3,3) :    2   in table
+      minority degree 3  sees (2,3,d) :    2   in table
+   d = 5: types and multiplicities:
+      majority degree 1  sees (3) :    2   in table
+      majority degree 2  sees (2,2) :    2   in table
+      majority degree 2  sees (2,3) :   12   in table
+      majority degree 2  sees (3,3) :   17   in table
+      minority degree 2  sees (2,3) :    4   in table
+      minority degree 2  sees (3,3) :    4   in table
+      minority degree 3  sees (2,2,3) :    2   in table
+      minority degree 3  sees (2,3,3) :    6   in table
+      minority degree 3  sees (2,3,d) :    2   in table
+      minority degree 3  sees (3,3,3) :    6   in table
+   d = 7: types and multiplicities:
+      majority degree 1  sees (3) :    2   in table
+      majority degree 2  sees (2,2) :    2   in table
+      majority degree 2  sees (2,3) :   20   in table
+      majority degree 2  sees (3,3) :   43   in table
+      minority degree 2  sees (2,3) :    4   in table
+      minority degree 2  sees (3,3) :    8   in table
+      minority degree 3  sees (2,2,3) :    4   in table
+      minority degree 3  sees (2,3,3) :   10   in table
+      minority degree 3  sees (2,3,d) :    2   in table
+      minority degree 3  sees (3,3,3) :   20   in table
+   types for every odd d = 5..41 are exactly the ten rows of the table: True; d = 3 has 7 of them
+   minority rows allowed by (S1) alone [degree; for each neighbour: degree of its other neighbour or d]:
+      degree 2 (2,2): excluded by (S2)
+      degree 2 (2,3): occurs
+      degree 2 (2,d): excluded by (S2)
+      degree 2 (3,3): occurs
+      degree 2 (3,d): allowed by (S1)+(S2), does NOT occur (d <= 41)
+      degree 2 (d,d): excluded by (S2)
+      degree 3 (2,2,2): excluded by (S2)
+      degree 3 (2,2,3): occurs
+      degree 3 (2,2,d): excluded by (S2)
+      degree 3 (2,3,3): occurs
+      degree 3 (2,3,d): occurs
+      degree 3 (2,d,d): excluded by (S2)
+      degree 3 (3,3,3): occurs
+      degree 3 (3,3,d): allowed by (S1)+(S2), does NOT occur (d <= 41)
+      degree 3 (3,d,d): allowed by (S1)+(S2), does NOT occur (d <= 41)
+      degree 3 (d,d,d): excluded by (S2)
+
+D. the rule in exact rationals (Jz = 1)
+   45465 site inequalities on d = 3, 5, 7, 9, 11, 13, 21 at 21 fields B in (0, 1/2): failures so far 0
+      degree 2 (2,2): min over B of [sum g - (2B + gamma)] = -203/1625 (-0.12492)   <- not required: excluded by (S2)
+      degree 2 (2,3): min over B of [sum g - (2B + gamma)] = 0 (+0.00000)
+      degree 2 (2,d): min over B of [sum g - (2B + gamma)] = 0 (+0.00000)   <- not required: excluded by (S2)
+      degree 2 (3,3): min over B of [sum g - (2B + gamma)] = 1/6500 (+0.00015)
+      degree 2 (3,d): min over B of [sum g - (2B + gamma)] = 3/6500 (+0.00046)
+      degree 2 (d,d): min over B of [sum g - (2B + gamma)] = 1/1500 (+0.00067)   <- not required: excluded by (S2)
+      degree 3 (2,2,2): min over B of [sum g - (2B + gamma)] = -203/1625 (-0.12492)   <- not required: excluded by (S2)
+      degree 3 (2,2,3): min over B of [sum g - (2B + gamma)] = 0 (+0.00000)
+      degree 3 (2,2,d): min over B of [sum g - (2B + gamma)] = 3/6500 (+0.00046)   <- not required: excluded by (S2)
+      degree 3 (2,3,3): min over B of [sum g - (2B + gamma)] = 1/6500 (+0.00015)
+      degree 3 (2,3,d): min over B of [sum g - (2B + gamma)] = 1/1625 (+0.00062)
+      degree 3 (2,d,d): min over B of [sum g - (2B + gamma)] = 7/6500 (+0.00108)   <- not required: excluded by (S2)
+      degree 3 (3,3,3): min over B of [sum g - (2B + gamma)] = 1/3250 (+0.00031)
+      degree 3 (3,3,d): min over B of [sum g - (2B + gamma)] = 1/1300 (+0.00077)
+      degree 3 (3,d,d): min over B of [sum g - (2B + gamma)] = 2/1625 (+0.00123)
+      degree 3 (d,d,d): min over B of [sum g - (2B + gamma)] = 11/6500 (+0.00169)   <- not required: excluded by (S2)
+   every row allowed by (S1)+(S2) satisfies the minority inequality for all 999 fields B = k/2000: True
+   ranges 0 < x-y, x+y <= 1/2, x < t <= min(1/2, 2B-gamma); identities 2x+y = 2B+gamma, 3x-2y = 2B+gamma+(B-13gamma/2) >= 0: checked at 999 fields; failures so far 0
+   at B = 3/8: gamma = 3/52, x = 9/26, y = 3/26, t = 1/2, budget 9/13, demand 21/26; gamma(13/32) = 1/16
+
+E. d = 3: all 2^19 - 1 sets
+   524287 sets, 851 distinct triples (boundary bonds, majority, minority)
+      B = 1/4: gamma = 1/26 (0.03846); exact minimum of cost/|D| over all sets = 3/38 (0.07895); ratio certified/exact = 0.487
+      B = 7/20: gamma = 7/130 (0.05385); exact minimum of cost/|D| over all sets = 1/10 (0.10000); ratio certified/exact = 0.538
+      B = 3/8: gamma = 3/52 (0.05769); exact minimum of cost/|D| over all sets = 1/12 (0.08333); ratio certified/exact = 0.692
+      B = 13/32: gamma = 1/16 (0.06250); exact minimum of cost/|D| over all sets = 1/16 (0.06250); ratio certified/exact = 1.000
+      B = 9/20: gamma = 1/30 (0.03333); exact minimum of cost/|D| over all sets = 1/30 (0.03333); ratio certified/exact = 1.000
+   violations of cost(D) >= gamma(B)|D| over all sets and 21 fields: 0
+   sets that keep the magnetization: 75581; minimum of (1/2)|bd D|/|D| = 3/28 at |D| = 14, 3 boundary bonds; classical crossing field = 3/56 = 0.0536 Jz; sector statement gamma/16-form: min |bd D|/|D| = 3/14 >= 1/8: True
+
+F. d = 5, 7, 9: random, grown and adversarial sets (exact rationals)
+   d = 5: 7631 distinct triples from 40000 sets, 160251 exact comparisons; smallest cost/|D| seen at B = 3/8: 1/12 (0.0833; certified 3/52 = 0.0577, claimed exact 1/12 = 0.0833)
+   d = 7: 16438 distinct triples from 40000 sets, 345198 exact comparisons; smallest cost/|D| seen at B = 3/8: 1/12 (0.0833; certified 3/52 = 0.0577, claimed exact 1/12 = 0.0833)
+   d = 9: 22419 distinct triples from 40000 sets, 470799 exact comparisons; smallest cost/|D| seen at B = 3/8: 1/12 (0.0833; certified 3/52 = 0.0577, claimed exact 1/12 = 0.0833)
+   violations: 0 in 976248 comparisons
+
+TOTAL FAILURES: 0   [125 s]

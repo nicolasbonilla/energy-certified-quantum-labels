@@ -1,0 +1,36 @@
+T2d check: GS eigenvector of M (o_GS = +2.230e-32), mu_c = 0.255621
+LemB: worst distance of a two-state mixture point to the pure numerical range of the span (121x121 grid): 1.53e-03
+
+T2b iff diagnostics (family, side, chi_glob, mu at sup, de there, sup_de u^2/2de, de at sup, rel gap):
+  S1   +1  chi_glob 1.01041  mu* 1e-05  de(mu*) -5.05e-11  R 1.01034  de_R 1e-09  rel 6.68e-05
+  S1   -1  chi_glob 2.15766  mu* 0.524  de(mu*) 0.303  R 2.15809  de_R 0.306  rel -2.00e-04
+  S1   +1  chi_glob 0.88973  mu* 1e-05  de(mu*) -4.45e-11  R 0.88966  de_R 1e-09  rel 7.65e-05
+  S1   -1  chi_glob 1.96856  mu* 0.546  de(mu*) 0.301  R 1.96895  de_R 0.302  rel -1.95e-04
+  S1   +1  chi_glob 2.45903  mu* 1e-05  de(mu*) -1.23e-10  R 2.45878  de_R 1e-09  rel 1.01e-04
+  S1   -1  chi_glob 4.32830  mu* 0.156  de(mu*) 0.0523  R 4.32841  de_R 0.0518  rel -2.65e-05
+  S1   +1  chi_glob 0.40529  mu* 1.13e-05  de(mu*) 2.5e-11  R 0.40525  de_R 1e-09  rel 1.04e-04
+  S1   -1  chi_glob 1.67264  mu* 0.695  de(mu*) 0.398  R 1.67275  de_R 0.397  rel -6.77e-05
+  S2   +1  chi_glob 1.30429  mu* 0.886  de(mu*) 0.532  R 1.30480  de_R 0.533  rel -3.87e-04
+  S2   -1  chi_glob 0.52733  mu* 1.22e-05  de(mu*) 3.91e-11  R 0.52732  de_R 1e-09  rel 2.27e-05
+  S2   +1  chi_glob 1.36293  mu* 0.886  de(mu*) 0.515  R 1.36343  de_R 0.514  rel -3.70e-04
+  S2   -1  chi_glob 0.58880  mu* 1.33e-05  de(mu*) 5.18e-11  R 0.58880  de_R 1e-09  rel 2.87e-06
+  S3Z  +1  chi_glob 2.37844  mu* 1e-05  de(mu*) -1.19e-10  R 2.37844  de_R 2.12e-09  rel 1.32e-06
+  S3Z  -1  chi_glob 2.37844  mu* 1.08e-05  de(mu*) 1.39e-10  R 2.37844  de_R 1.7e-09  rel 1.19e-06
+  S3X  +1  chi_glob 0.11093  mu* 1.33e-05  de(mu*) 1.1e-11  R 0.11092  de_R 1.01e-09  rel 1.04e-04
+  S3X  -1  chi_glob 0.57180  mu* 3.23  de(mu*) 2.94  R 0.57183  de_R 2.93  rel -5.58e-05
+  S3Z  +1  chi_glob 1.06183  mu* 2.53e-05  de(mu*) 3.4e-10  R 1.06183  de_R 4.31e-09  rel -8.80e-08
+  S3Z  -1  chi_glob 1.06183  mu* 2.24e-05  de(mu*) 2.66e-10  R 1.06183  de_R 4.82e-09  rel 4.36e-07
+  S3X  +1  chi_glob 0.03699  mu* 1.33e-05  de(mu*) 4.36e-12  R 0.03698  de_R 1.02e-09  rel 2.36e-04
+  S3X  -1  chi_glob 0.41671  mu* 4.64  de(mu*) 4.42  R 0.41674  de_R 4.41  rel -7.33e-05
+
+Worst margins (negative = violation):
+  T2b upper  (sqrt(2chi+de) - u)/u                 +4.919e-05
+  T2b lower  (u - lower)/u                         +4.921e-04
+  LemA |primal - dual|/u (neg = gap)               +1.998e-03
+  T2c (2C1/Delta* - chi+)/chi+                     +9.774e-02
+  T2b iff (if):      (chi_glob - sup u^2/2de)/chi_glob -3.874e-04
+  T2b iff (only if): -(chi_glob - sup u^2/2de)/chi_glob + 1e-2 +9.764e-03
+  T3a |E*(c) - alpha*(c)|/E* (neg = gap)           +2.000e-03
+  T2d (de/mu_c - u)/u                              -8.398e-10
+  T1a (extent - bound)                             +4.427e-02
+  T1b (extent - bound)                             +2.718e-01

@@ -1,0 +1,4 @@
+# bias_at_ibm_energy[57_1.6]: ibm_ratio (dotted line), dm_s (diamond);
+# extrap = 1 if status == 'extrapolated' (not drawn differently)
+ratio dms extrap
+1.348 0.09420404769366984 1.0

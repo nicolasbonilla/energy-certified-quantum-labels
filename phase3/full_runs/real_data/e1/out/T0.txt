@@ -1,0 +1,1 @@
+1794512583.8312163 2026-11-12T19:43:03Z first start of the E1 scheduler; the cap of 8 h counts from here

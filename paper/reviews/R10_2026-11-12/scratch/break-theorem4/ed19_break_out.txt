@@ -1,0 +1,46 @@
+n=19 |E|=20 |P2|=25  Neel sector: 11 up spins, M=3, dimension 75582
+built the 20 sector matrices in 0.6s; largest sector 92378
+
+Jz   label  t=lambda/Jz | global g.s. sector (#up) in Neel? | global gap  gap/Jz  classical gap  gap-Jz*cl | 1st excited in sector | sector gap  /Jz  classical
+   6 ms   +0.00000 | 11 True  (classical g.s. Neel: True) |   0.86238 0.14373 0.25000 -0.6376 | 12 |   4.99407 0.83234 1.00000   [3s]
+      Neel-sector ground state at Jz=6, lambda=0: max_i sum_j |<Z_i;Z_j>| = 0.1134 (j=i included), 0.0584 (j!=i); Var(n m_s)/n = 0.0852
+   6 ms   -0.01000 | 11 True  (classical g.s. Neel: True) |   0.60883 0.10147 0.19000 -0.5312 | 12 |   4.49305 0.74884 0.88000   [3s]
+   6 ms   -0.02500 | 11 True  (classical g.s. Neel: True) |   0.18900 0.03150 0.10000 -0.4110 | 12 |   3.64516 0.60753 0.70000   [3s]
+   6 czz  +0.01000 | 11 True  (classical g.s. Neel: True) |   0.62556 0.10426 0.21000 -0.6344 | 12 |   4.75951 0.79325 0.96000   [3s]
+   6 czz  +0.01667 | 11 True  (classical g.s. Neel: True) |   0.46785 0.07797 0.18333 -0.6322 | 12 |   4.60343 0.76724 0.93333   [3s]
+   6 c2   -0.00500 | 11 True  (classical g.s. Neel: True) |   0.68464 0.11411 0.21000 -0.5754 | 12 |   4.70957 0.78493 0.95000   [3s]
+   6 c2   -0.00667 | 11 True  (classical g.s. Neel: True) |   0.62446 0.10408 0.19667 -0.5555 | 12 |   4.61489 0.76915 0.93333   [3s]
+  12 ms   +0.00000 | 11 True  (classical g.s. Neel: True) |   2.32589 0.19382 0.25000 -0.6741 | 12 |  10.93285 0.91107 1.00000   [3s]
+      Neel-sector ground state at Jz=12, lambda=0: max_i sum_j |<Z_i;Z_j>| = 0.0279 (j=i included), 0.0141 (j!=i); Var(n m_s)/n = 0.0212
+  12 ms   -0.01000 | 11 True  (classical g.s. Neel: True) |   1.80328 0.15027 0.19000 -0.4767 | 12 |   9.89538 0.82462 0.88000   [3s]
+  12 ms   -0.02500 | 11 True  (classical g.s. Neel: True) |   0.89582 0.07465 0.10000 -0.3042 | 12 |   8.03074 0.66923 0.70000   [3s]
+  12 czz  +0.01000 | 11 True  (classical g.s. Neel: True) |   1.84734 0.15394 0.21000 -0.6727 | 12 |  10.45522 0.87127 0.96000   [3s]
+  12 czz  +0.01667 | 11 True  (classical g.s. Neel: True) |   1.52838 0.12736 0.18333 -0.6716 | 12 |  10.13693 0.84474 0.93333   [4s]
+  12 c2   -0.00500 | 11 True  (classical g.s. Neel: True) |   1.95783 0.16315 0.21000 -0.5622 | 12 |  10.34831 0.86236 0.95000   [3s]
+  12 c2   -0.00667 | 11 True  (classical g.s. Neel: True) |   1.83088 0.15257 0.19667 -0.5291 | 12 |  10.15320 0.84610 0.93333   [3s]
+  12 ms   -0.03500 | 11 True  (classical g.s. Neel: True) |   0.23885 0.01990 0.04000 -0.2411 | 12 |   6.08245 0.50687 0.52000   [3s]
+  12 ms   -0.04500 | 13 False (classical g.s. Neel: False) |   0.44232 0.03686 0.02000 +0.2023 | 12 |   2.76630 0.23053 0.24000   [2s]
+  12 czz  +0.07000 | 13 False (classical g.s. Neel: False) |   0.33893 0.02824 0.03000 -0.0211 | 14 |   7.59564 0.63297 0.72000   [3s]
+  12 c2   -0.03500 | 13 False (classical g.s. Neel: False) |   0.55281 0.04607 0.03000 +0.1928 | 12 |   6.83209 0.56934 0.65000   [3s]
+  24 ms   +0.00000 | 11 True  (classical g.s. Neel: True) |   5.30895 0.22121 0.25000 -0.6911 | 12 |  22.90588 0.95441 1.00000   [3s]
+      Neel-sector ground state at Jz=24, lambda=0: max_i sum_j |<Z_i;Z_j>| = 0.0070 (j=i included), 0.0035 (j!=i); Var(n m_s)/n = 0.0053
+  24 ms   -0.01000 | 11 True  (classical g.s. Neel: True) |   4.19922 0.17497 0.19000 -0.3608 | 12 |  20.67078 0.86128 0.88000   [3s]
+  24 ms   -0.02500 | 11 True  (classical g.s. Neel: True) |   2.21716 0.09238 0.10000 -0.1828 | 12 |  16.59736 0.69156 0.70000   [2s]
+  24 czz  +0.01000 | 11 True  (classical g.s. Neel: True) |   4.34964 0.18123 0.21000 -0.6904 | 12 |  21.94694 0.91446 0.96000   [3s]
+  24 czz  +0.01667 | 11 True  (classical g.s. Neel: True) |   3.71013 0.15459 0.18333 -0.6899 | 12 |  21.30771 0.88782 0.93333   [3s]
+  24 c2   -0.00500 | 11 True  (classical g.s. Neel: True) |   4.55012 0.18959 0.21000 -0.4899 | 12 |  21.72809 0.90534 0.95000   [4s]
+  24 c2   -0.00667 | 11 True  (classical g.s. Neel: True) |   4.28109 0.17838 0.19667 -0.4389 | 12 |  21.33423 0.88893 0.93333   [3s]
+  48 ms   +0.00000 | 11 True  (classical g.s. Neel: True) |  11.30081 0.23543 0.25000 -0.6992 | 12 |  46.89351 0.97695 1.00000   [3s]
+      Neel-sector ground state at Jz=48, lambda=0: max_i sum_j |<Z_i;Z_j>| = 0.0017 (j=i included), 0.0009 (j!=i); Var(n m_s)/n = 0.0013
+  48 ms   -0.01000 | 11 True  (classical g.s. Neel: True) |   8.89419 0.18530 0.19000 -0.2258 | 12 |  41.98872 0.87476 0.88000   [2s]
+  48 ms   -0.02500 | 11 True  (classical g.s. Neel: True) |   4.70268 0.09797 0.10000 -0.0973 | 12 |  33.49626 0.69784 0.70000   [2s]
+  48 czz  +0.01000 | 11 True  (classical g.s. Neel: True) |   9.38115 0.19544 0.21000 -0.6989 | 12 |  44.97401 0.93696 0.96000   [3s]
+  48 czz  +0.01667 | 11 True  (classical g.s. Neel: True) |   8.10139 0.16878 0.18333 -0.6986 | 12 |  43.69437 0.91030 0.93333   [3s]
+  48 c2   -0.00500 | 11 True  (classical g.s. Neel: True) |   9.71352 0.20237 0.21000 -0.3665 | 12 |  44.52922 0.92769 0.95000   [3s]
+  48 c2   -0.00667 | 11 True  (classical g.s. Neel: True) |   9.13463 0.19030 0.19667 -0.3054 | 12 |  43.73722 0.91119 0.93333   [3s]
+  48 ms   -0.03500 | 11 True  (classical g.s. Neel: True) |   1.84946 0.03853 0.04000 -0.0705 | 12 |  24.91742 0.51911 0.52000   [3s]
+  48 ms   -0.04500 | 13 False (classical g.s. Neel: False) |   1.01664 0.02118 0.02000 +0.0566 | 12 |  11.48891 0.23935 0.24000   [3s]
+  48 czz  +0.07000 | 15 False (classical g.s. Neel: False) |   0.73430 0.01530 0.03000 -0.7057 | 14 |  33.45822 0.69705 0.72000   [3s]
+  48 c2   -0.03500 | 13 False (classical g.s. Neel: False) |   1.49736 0.03119 0.03000 +0.0574 | 12 |  30.19393 0.62904 0.65000   [4s]
+
+total 107s

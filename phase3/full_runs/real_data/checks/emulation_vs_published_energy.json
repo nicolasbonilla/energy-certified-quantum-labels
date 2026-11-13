@@ -1,0 +1,177 @@
+{
+ "what": "energy error per site of the emulated first stage (primary variant) over the published energy error per site of the dataset, same coupling and size; descriptive, post hoc (coordinator, 2026-11-13)",
+ "sources": [
+  "phase3/full_runs/method/laptop_post/out/emu/emu_n<n>_J<Jz>.json: var.primary.dE_site",
+  "phase3/full_runs/real_data/out/map_rows.json: rows[label = m_s].de_real"
+ ],
+ "sizes": {
+  "57": {
+   "rows": [
+    {
+     "Jz": 1.1,
+     "de_emulated": 0.04954020605971976,
+     "de_published": 0.02140047910716684,
+     "ratio": 2.3149110733286884
+    },
+    {
+     "Jz": 1.2,
+     "de_emulated": 0.043276554151156596,
+     "de_published": 0.01975889677393738,
+     "ratio": 2.190231299160374
+    },
+    {
+     "Jz": 1.3,
+     "de_emulated": 0.03792126679901773,
+     "de_published": 0.01801660490916147,
+     "ratio": 2.1047953812726785
+    },
+    {
+     "Jz": 1.4,
+     "de_emulated": 0.032811682688165394,
+     "de_published": 0.015424158194136962,
+     "ratio": 2.127291634018496
+    },
+    {
+     "Jz": 1.6,
+     "de_emulated": 0.024757510737372673,
+     "de_published": 0.011354653944598437,
+     "ratio": 2.1803844360356006
+    },
+    {
+     "Jz": 1.8,
+     "de_emulated": 0.018795645214665604,
+     "de_published": 0.008873351131085465,
+     "ratio": 2.118212717720589
+    },
+    {
+     "Jz": 2.0,
+     "de_emulated": 0.014513722869669945,
+     "de_published": 0.00750675747985827,
+     "ratio": 1.9334210421226996
+    },
+    {
+     "Jz": 2.2,
+     "de_emulated": 0.011199217650141417,
+     "de_published": 0.006834776283798536,
+     "ratio": 1.6385638951619457
+    },
+    {
+     "Jz": 2.5,
+     "de_emulated": 0.007329706097863957,
+     "de_published": 0.004281177717277548,
+     "ratio": 1.7120770455950622
+    },
+    {
+     "Jz": 3.0,
+     "de_emulated": 0.003791142009112834,
+     "de_published": 0.0028098031084468787,
+     "ratio": 1.3492553971898733
+    },
+    {
+     "Jz": 3.5,
+     "de_emulated": 0.0022031650366970547,
+     "de_published": 0.002208016820150617,
+     "ratio": 0.9978026510444648
+    },
+    {
+     "Jz": 4.0,
+     "de_emulated": 0.0013738055204299826,
+     "de_published": 0.0017173857907628169,
+     "ratio": 0.7999399598035424
+    },
+    {
+     "Jz": 5.0,
+     "de_emulated": 0.0007477168053445606,
+     "de_published": 0.0010057045942032442,
+     "ratio": 0.7434755788671017
+    },
+    {
+     "Jz": 6.0,
+     "de_emulated": 0.0005068097041676841,
+     "de_published": 0.0008775792781579495,
+     "ratio": 0.5775087411264819
+    }
+   ],
+   "n_couplings": 14,
+   "ratio_min": 0.5775087411264819,
+   "ratio_max": 2.3149110733286884,
+   "ratio_min_at": 6.0,
+   "ratio_max_at": 1.1
+  },
+  "115": {
+   "rows": [
+    {
+     "Jz": 1.1,
+     "de_emulated": 0.08693784352805585,
+     "de_published": 0.022728610923914518,
+     "ratio": 3.8250398943906365
+    },
+    {
+     "Jz": 1.2,
+     "de_emulated": 0.07865123324094453,
+     "de_published": 0.01968316978786739,
+     "ratio": 3.995862154754402
+    },
+    {
+     "Jz": 1.3,
+     "de_emulated": 0.07124326486856662,
+     "de_published": 0.017174219433105358,
+     "ratio": 4.148267998208799
+    },
+    {
+     "Jz": 1.4,
+     "de_emulated": 0.06461171778920034,
+     "de_published": 0.01541754861253055,
+     "ratio": 4.190790599271238
+    },
+    {
+     "Jz": 1.6,
+     "de_emulated": 0.05321083953131387,
+     "de_published": 0.011680079198926987,
+     "ratio": 4.555691671697071
+    },
+    {
+     "Jz": 2.0,
+     "de_emulated": 0.036896615816589394,
+     "de_published": 0.007292021584089896,
+     "ratio": 5.0598610263431345
+    },
+    {
+     "Jz": 2.5,
+     "de_emulated": 0.023923965968725973,
+     "de_published": 0.004253817046095714,
+     "ratio": 5.6241172832489665
+    },
+    {
+     "Jz": 3.0,
+     "de_emulated": 0.01588670179162203,
+     "de_published": 0.0029398114449613244,
+     "ratio": 5.403986646439848
+    },
+    {
+     "Jz": 4.0,
+     "de_emulated": 0.007410859546065813,
+     "de_published": 0.0012482693045710576,
+     "ratio": 5.93690761995658
+    },
+    {
+     "Jz": 5.0,
+     "de_emulated": 0.0037133263860139125,
+     "de_published": 0.0008568951581809336,
+     "ratio": 4.3334664113364525
+    },
+    {
+     "Jz": 6.0,
+     "de_emulated": 0.0019703478868062455,
+     "de_published": 0.00039847222766633937,
+     "ratio": 4.944755870053046
+    }
+   ],
+   "n_couplings": 11,
+   "ratio_min": 3.8250398943906365,
+   "ratio_max": 5.93690761995658,
+   "ratio_min_at": 1.1,
+   "ratio_max_at": 4.0
+  }
+ }
+}

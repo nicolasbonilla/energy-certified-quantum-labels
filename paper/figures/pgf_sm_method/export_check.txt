@@ -1,0 +1,72 @@
+export_sm_method.py check log (python -B; nothing recomputed; exact float equality unless stated)
+tables written: 95 (dat/)
+
+=== fig2_rule (figS:rule) ===
+[a] values against the raw lines of t3_comb.txt
+  n=6  de=0.0001  w=0.02608  OK
+  n=9  de=0.03  w=0.41336  OK
+  n=12 de=0.3  w=1.29360  OK
+  caption 'n = 6, 9, 12': n in file = [6, 9, 12]  OK
+  ringed (eps/gap > 1): [(6, 0.3, 1.05, 1.28938), (9, 0.3, 1.59, 1.2933), (12, 0.3, 2.14, 1.2936)]
+  caption 'intensive above the gap': w(n=12)/w(n=6) at de=0.3 = 1.29360/1.28938 = 1.0033, eps/gap(n=12) = 2.14  OK
+  dotted law = 2sqrt(2chi0 de) column of the n=12 rows (6 points)  OK
+[b] t2_local.txt block (iv)
+  caption 'h = 1.5', 'full range is 2': block header h=1.5, range 2  OK
+  de=0.05: n=6 w=1.471, n=8 w=1.616, n=10 w=1.729, n=12 w=1.818  OK
+  de=0.1: n=6 w=1.842, n=8 w=1.943, n=10 w=1.991, n=12 w=2.000  OK
+  de=0.2: n=6 w=2.000, n=8 w=2.000, n=10 w=2.000, n=12 w=2.000  OK
+[c] law_ratio_out against the JSON
+  rows with Jz >= 1.6 (n=57, 115): 125; with a stored law_ratio_out (drawn): 116; without: 9 [(57, 'Czz_edge', 1.6), (57, 'Z_boundary', 1.6), (57, 'Z_boundary', 1.8), (57, 'Z_bulk', 1.6), (57, 'Z_bulk', 1.8), (57, 'Z_loop', 1.6), (57, 'Z_loop', 1.8), (57, 'Z_loop', 2.0), (115, 'Czz_bar', 6.0)]
+  n=57  m_s        Jz=6.0 ratio=1.6301  OK
+  n=115 m_s        Jz=6.0 ratio=1.7752  OK
+  n=115 C2_bar     Jz=1.6 ratio=1.2029  OK
+  n=57  Z_boundary Jz=2.0 ratio=0.9837  OK
+  caption 'band [0.8, 1.25]; the outliers are m_s at Jz >= 5': points outside the band = [(57, 'm_s', 5.0, 1.3118), (57, 'm_s', 5.5, 1.4473), (57, 'm_s', 6.0, 1.6301), (115, 'm_s', 5.0, 1.3507), (115, 'm_s', 5.5, 1.6265), (115, 'm_s', 6.0, 1.7752)]  OK
+  drawn points inside the band: 110, range 0.9837-1.2162
+[d] claims C-E
+  caption 'Z_bulk follows 57/115': ratio 0.4958 vs 57/115 = 0.4957  OK
+  caption 'averages are intensive': 29 ratios in 1.0007-1.1720  OK
+
+=== fig3_mechanism (figS:mechanism) ===
+[a,b] panels drawn (n, Jz): [(57, 1.2), (57, 1.6), (57, 2.5), (57, 4.0), (115, 1.2), (115, 1.6), (115, 2.5)]
+  n=57  Jz=1.2 star (pipeline_floor = primary variant at the published budget) dm_s=+0.2586 D=336818; RR 5 pts; max |sample mean| = 3.4e-04
+  n=57  Jz=1.6 star (pipeline_floor = primary variant at the published budget) dm_s=+0.1391 D=375441; RR 6 pts; max |sample mean| = 4.3e-04
+  n=57  Jz=2.5 star (pipeline_floor = primary variant at the published budget) dm_s=+0.0364 D=291117; RR 5 pts; max |sample mean| = 5.8e-04
+  n=57  Jz=4.0 star (pipeline_floor = primary variant at the published budget) dm_s=+0.0051 D=214674; RR 5 pts; max |sample mean| = 1.1e-04
+  n=115 Jz=1.2 star (pipeline_floor = primary variant at the published budget) dm_s=+0.3008 D=472401; RR 3 pts; max |sample mean| = 2.0e-04
+  n=115 Jz=1.6 star (pipeline_floor = primary variant at the published budget) dm_s=+0.1809 D=479203; RR 3 pts; max |sample mean| = 2.2e-04
+  n=115 Jz=2.5 star (pipeline_floor = primary variant at the published budget) dm_s=+0.0672 D=431473; RR 4 pts; max |sample mean| = 1.8e-04
+  text 'sample mean reproduces the reference m_s to 6e-4 in every case': max |dm_s| = 5.78e-04  OK
+[c] n=57, Jz = 1.6, 2.5, 4.0 (Jz = 1.2 has no reported ratio); families drawn: gs_random, gs_top, kscan_ideal, kscan_floor, pipeline_*; gs_projected is not drawn in (c)
+  Jz=1.6 reported r=1.3480, diamond dm_s=0.09420 (extrapolated)  OK
+  Jz=2.5 reported r=0.2350, diamond dm_s=0.02621 (interpolated)  OK
+  Jz=4.0 reported r=0.0523, diamond dm_s=0.00610 (interpolated)  OK
+
+=== figS1_bias_vs_ratio ===
+  panels (every key with gs_random): ['57_1.2', '57_1.6', '57_2.5', '57_4.0', '115_1.2', '115_1.6', '115_2.5']
+  57_1.2  families ['gs_random', 'gs_top', 'gs_projected', 'kscan_ideal', 'kscan_floor']; 5 pipeline stars; 3 rotation circles; reported r none
+  57_1.6  families ['gs_random', 'gs_top', 'gs_projected']; 4 pipeline stars; 0 rotation circles; reported r 1.3480, diamond 0.09420, extrapolated
+  57_2.5  families ['gs_random', 'gs_top', 'gs_projected', 'kscan_ideal', 'kscan_floor']; 5 pipeline stars; 6 rotation circles; reported r 0.2350, diamond 0.02621, interpolated
+  57_4.0  families ['gs_random', 'gs_projected']; 5 pipeline stars; 0 rotation circles; reported r 0.0523, diamond 0.00610, interpolated
+  115_1.2 families ['gs_random', 'gs_top', 'gs_projected', 'kscan_ideal', 'kscan_floor']; 4 pipeline stars; 0 rotation circles; reported r none
+  115_1.6 families ['gs_random', 'gs_top', 'gs_projected']; 4 pipeline stars; 0 rotation circles; reported r 2.7160, diamond 0.11388, extrapolated
+  115_2.5 families ['gs_random', 'gs_top', 'gs_projected', 'kscan_ideal', 'kscan_floor']; 4 pipeline stars; 0 rotation circles; reported r 0.4640, diamond 0.01941, extrapolated
+  caption 'the two rotation variants': bo_* variants ['GV', 'YX'] (YX = R_Y on the control wire, minority and majority orientation give the same point; GV = Givens)  OK
+  57_1.2 bo_primary GV_pergate: ratio=3.1300 dm_s_rot=0.1326  OK
+  57_2.5 bo_dev_rec YX_pergate_minority: ratio=0.3516 dm_s_rot=0.0359  OK
+
+=== consistency of the .tex files with the tables ===
+  fig_rule        every drawn point lies inside its panel's axis limits (185 points)  OK
+  fig_mechanism   n57_J4.0   diamond filled <-> status interpolated  OK
+  fig_mechanism   n57_J2.5   diamond filled <-> status interpolated  OK
+  fig_mechanism   n57_J1.6   diamond open  <-> status extrapolated  OK
+  fig_mechanism   every drawn point lies inside its panel's axis limits (149 points)  OK
+  fig_bias_ratio  n57_J1.6   diamond open  <-> status extrapolated  OK
+  fig_bias_ratio  n57_J2.5   diamond filled <-> status interpolated  OK
+  fig_bias_ratio  n57_J4.0   diamond filled <-> status interpolated  OK
+  fig_bias_ratio  n115_J1.6  diamond open  <-> status extrapolated  OK
+  fig_bias_ratio  n115_J2.5  diamond open  <-> status extrapolated  OK
+  fig_bias_ratio  every drawn point lies inside its panel's axis limits (168 points)  OK
+  every exported table is drawn (95 tables)  OK
+
+all assertions passed

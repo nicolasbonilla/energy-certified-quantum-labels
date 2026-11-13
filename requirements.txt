@@ -1,0 +1,34 @@
+# Python 3.11 on the machine where the package was built. Versions below are the ones installed there
+# (isolated mode, `python -I`) for the packages that the scripts of this package import (377 Python files read).
+
+# Core: `python run_checks.py numbers certificates map bias learning` (the guardian itself needs no package)
+numpy==1.26.4
+scipy==1.13.1
+# (numpy 2.2 also works for the map code: phase3/full_runs/real_data/code/README.md, section How to run)
+
+# Figure scripts, figure and overlap checks, theory checks, second benchmark
+# (matplotlib brings python-dateutil and its other requirements with it when installed with pip)
+matplotlib==3.9.0    # the earlier figure scripts whose loaders the export scripts import; imported by 20 file(s)
+mpmath==1.3.0    # high-precision checks; imported by 2 file(s)
+networkx==3.2.1    # theory checks (heavy-hex geometry); imported by 5 file(s)
+pillow==10.4.0    # figure previews; imported by 5 file(s)
+PyMuPDF==1.23.25    # paper/check_overlap.py and the overlap checks of the figure folders; imported by 15 file(s)
+rustworkx==0.14.2    # theory checks (heavy-hex geometry) and graph files; imported by 13 file(s)
+scikit-learn==1.7.2    # regressors of the learning tests on the second benchmark; imported by 1 file(s)
+
+# -----------------------------------------------------------------------------------------------------
+# OPTIONAL. Not needed by run_checks.py. Imported only by code that ran on cloud machines or that talks to a
+# quantum processor (DMRG, neural models, device jobs); the versions used there are recorded in each run folder
+# (versions.txt, vm_in_*/). A re-run of the device jobs needs an IBM Quantum account of your own.
+# -----------------------------------------------------------------------------------------------------
+# flax (not installed on the build machine)    # imported by 1 file(s)
+# jax (not installed on the build machine)    # imported by 2 file(s)
+# netket (not installed on the build machine)    # imported by 1 file(s)
+# optax (not installed on the build machine)    # imported by 1 file(s)
+# physics-tenpy (not installed on the build machine)    # imported by 17 file(s)
+# pyvista (not installed on the build machine)    # imported by 2 file(s)
+# qiskit==1.0.2 (installed on the build machine)    # imported by 8 file(s)
+# qiskit-aer==0.14.2 (installed on the build machine)    # imported by 4 file(s)
+# qiskit-ibm-runtime==0.24.0 (installed on the build machine)    # imported by 9 file(s)
+
+# LaTeX: pdflatex and bibtex with REVTeX 4.2, pgfplots and TikZ (MiKTeX or TeX Live), for `run_checks.py pdf`.

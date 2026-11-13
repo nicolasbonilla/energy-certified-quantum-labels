@@ -1,0 +1,9 @@
+python 3.11.2 numpy 2.2.6 scipy 1.13.1 tenpy 1.1.0 cython True
+CPU(s):                                  4
+Model name:                              Intel(R) Xeon(R) CPU @ 2.80GHz
+BIOS Model name:                           CPU @ 2.0GHz
+Thread(s) per core:                      2
+Core(s) per socket:                      2
+               total        used        free      shared  buff/cache   available
+Mem:              31           0          30           0           0          30
+/dev/sdb         20G  1.6G   18G   9% /mnt/cj

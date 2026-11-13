@@ -1,0 +1,30 @@
+
+=== de = 0.002  (eps = 0.016); instances 160, splits 200
+energy identity, implied (E - E0)/eps of the 10 bond labels: exact +0.000, onestate median +1.000, perlabel median +88.6 [min +37.2]
+all labels of every set inside their certified intervals: True
+mean |shift| bonds: perlabel 0.0494, onestate 0.0214; Cnn: perlabel 0.0087, onestate 0.0087; mean certified half-width bonds 0.0487
+labels    class  SC truth  SC own CSC truth min CSC/split width CSC/SC
+exact     bond      0.906   0.906     0.972         0.820         1.45
+exact     avg       0.913   0.913     0.943         0.760         1.15
+perlabel  bond      0.807   0.906     0.969         0.800         1.72
+perlabel  avg       0.879   0.911     0.939         0.600         1.29
+onestate  bond      0.919   0.905     0.971         0.820         1.32
+onestate  avg       0.879   0.911     0.939         0.600         1.29
+Prop 2(a): 0 violations in 220000 checks
+Prop 2(c) (CB, perlabel, avg, tau=0.08): answer rate 0.062, P(answer and miss > tau/2) = 0.0022 <= alpha = 0.1
+
+=== de = 0.01  (eps = 0.08); instances 160, splits 200
+energy identity, implied (E - E0)/eps of the 10 bond labels: exact +0.000, onestate median +1.000, perlabel median +41.1 [min +19.1]
+all labels of every set inside their certified intervals: True
+mean |shift| bonds: perlabel 0.1105, onestate 0.0461; Cnn: perlabel 0.0194, onestate 0.0194; mean certified half-width bonds 0.1085
+labels    class  SC truth  SC own CSC truth min CSC/split width CSC/SC
+exact     bond      0.905   0.905     0.990         0.900         2.00
+exact     avg       0.906   0.906     0.973         0.880         1.39
+perlabel  bond      0.520   0.905     0.988         0.900         2.59
+perlabel  avg       0.790   0.905     0.966         0.800         1.69
+onestate  bond      0.912   0.904     0.992         0.900         1.67
+onestate  avg       0.790   0.905     0.966         0.800         1.69
+Prop 2(a): 0 violations in 220000 checks
+Prop 2(c) (CB, perlabel, avg, tau=0.08): answer rate 0.000, P(answer and miss > tau/2) = 0.0000 <= alpha = 0.1
+
+runtime 171.4 s

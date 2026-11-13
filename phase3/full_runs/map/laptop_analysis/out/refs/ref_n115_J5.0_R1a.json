@@ -1,0 +1,43 @@
+{
+ "n": 115,
+ "Jz": 5.0,
+ "kind": "R1a",
+ "stages": [
+  {
+   "tag": "chi160",
+   "E": -169.78746715661157,
+   "m_s": 0.9748716498920651,
+   "dmrg": {
+    "E_dmrg": -169.7874671566102,
+    "sweeps": 31,
+    "time_s": 517.3902814388275,
+    "dE_last": -1.5116370377654675e-09,
+    "max_trunc_err": 6.208266145058783e-07,
+    "last_trunc_err": 1.3066204067337192e-10,
+    "chi_max_reached": 160,
+    "norm_test_before": 5.175843332087114e-15,
+    "canonicalized": false,
+    "warnings": []
+   },
+   "sid": "n115_J5.0_R1_chi160"
+  },
+  {
+   "tag": "chi320",
+   "E": -169.78746777716566,
+   "m_s": 0.9748716171463956,
+   "dmrg": {
+    "E_dmrg": -169.787467777166,
+    "sweeps": 13,
+    "time_s": 619.9670517444611,
+    "dE_last": -9.9333874459262e-11,
+    "max_trunc_err": 2.2553240311684852e-11,
+    "last_trunc_err": 3.2706191547612883e-12,
+    "chi_max_reached": 320,
+    "norm_test_before": 4.732999833259259e-15,
+    "canonicalized": false,
+    "warnings": []
+   },
+   "sid": "n115_J5.0_R1_chi320"
+  }
+ ]
+}

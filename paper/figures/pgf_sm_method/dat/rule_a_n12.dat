@@ -1,0 +1,9 @@
+# fig2_rule (a), n=12; source paper/data/r3gen/out/t3_comb.txt (parse_t3)
+# de, w = exact width, eg = eps/gap, ring = 1 if eg > 1 (ringed)
+de w eg ring
+0.0001 0.02326 0.0 0.0
+0.001 0.07358 0.01 0.0
+0.01 0.23332 0.07 0.0
+0.03 0.40611 0.21 0.0
+0.1 0.74741 0.71 0.0
+0.3 1.2936 2.14 1.0

@@ -1,0 +1,9 @@
+pdflatex return code: 0
+errors (lines starting with !): 0
+overfull boxes: 0
+underfull boxes: 0
+missing characters: 0
+warnings: 0
+page size: 503.6 x 290.7 bp = 17.77 x 10.25 cm
+fonts: FDCGIA+LMMathItalic8-Regular, HOUYYA+LMMathItalic6-Regular, MDUTJF+LMMathSymbols8-Regular, QEKNNO+LMMathSymbols9-Regular, SQUKLD+LMMathItalic9-Regular, SUMPKF+LMRoman9-Regular, URPVMO+LMRoman6-Regular, VWYFLO+LMRoman7-Regular, YJNAQM+LMMathSymbols6-Regular, YUBSRP+LMRoman8-Regular
+previews: fig_overview_rd_300dpi.png, fig_overview_rd_150dpi.png (pdftoppm)

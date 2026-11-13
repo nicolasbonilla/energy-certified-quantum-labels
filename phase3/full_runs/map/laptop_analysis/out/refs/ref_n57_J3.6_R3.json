@@ -1,0 +1,24 @@
+{
+ "n": 57,
+ "Jz": 3.6,
+ "kind": "R3",
+ "stages": [
+  {
+   "tag": "R3",
+   "E": -59.24375429117707,
+   "dmrg": {
+    "E_dmrg": -59.24375429117698,
+    "sweeps": 19,
+    "time_s": 158.17159628868103,
+    "dE_last": -9.57101065068855e-12,
+    "max_trunc_err": 1.2835568294036094e-06,
+    "last_trunc_err": 3.257513997364945e-11,
+    "chi_max_reached": 200,
+    "norm_test_before": 5.377745610192647e-15,
+    "canonicalized": false,
+    "warnings": []
+   },
+   "sid": "n57_J3.6_R3_sz_minus"
+  }
+ ]
+}

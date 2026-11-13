@@ -1,0 +1,58 @@
+# Fig. 3 (a, b), n=57, label Z_boundary; source real_data/e1/map_e1/map_rows.json (= out/map_rows.json)
+# N = lower.w_lower_over_tau where status NOT_CERTIFIED; C = exact.width_over_tau where CERTIFIED_EXACT;
+# Nm = N at the couplings that carry a marker (all for m_s and Czz_bar; else every third and lone points);
+# Ul, Uu = the same two quantities where status GRAY (m_s, Czz_bar only; Uu nan if no exact interval);
+# E1 = exact_e1.width_over_tau where the extension gives an interval the stored certificates did not;
+# cE1 = 1 if status_e1 is CERTIFIED_EXACT there. nan = not applicable; k = index of the coupling (0..49)
+# Uud = Uu where Uu <= 3 (the drawn top of an undecided bar; longer bars end at 3 with an arrow)
+J k N Nm C Ul Uu E1 cE1 Uud
+1.1 0 40.71018189726633 nan nan nan nan nan 0 nan
+1.2 1 39.44960733820259 39.44960733820259 nan nan nan nan 0 nan
+1.3 2 37.743065642840335 nan nan nan nan nan 0 nan
+1.4 3 36.675143044111806 nan nan nan nan nan 0 nan
+1.5 4 32.195148309348006 32.195148309348006 nan nan nan nan 0 nan
+1.6 5 28.65185222286683 nan nan nan nan nan 0 nan
+1.7 6 24.83941071487994 nan nan nan nan nan 0 nan
+1.8 7 21.51412221217711 21.51412221217711 nan nan nan nan 0 nan
+1.9 8 19.677221669069603 nan nan nan nan nan 0 nan
+2.0 9 16.84015545462939 nan nan nan nan nan 0 nan
+2.1 10 15.640394248605725 15.640394248605725 nan nan nan nan 0 nan
+2.2 11 13.184266890914815 nan nan nan nan nan 0 nan
+2.3 12 11.955565289605165 nan nan nan nan nan 0 nan
+2.4 13 10.662181645119633 10.662181645119633 nan nan nan nan 0 nan
+2.5 14 8.82342320655497 nan nan nan nan nan 0 nan
+2.6 15 8.320697184576352 nan nan nan nan nan 0 nan
+2.7 16 6.800025503293606 6.800025503293606 nan nan nan nan 0 nan
+2.8 17 6.6122641954414645 nan nan nan nan nan 0 nan
+2.9 18 6.238188292880079 nan nan nan nan nan 0 nan
+3.0 19 5.272369677648652 5.272369677648652 nan nan nan nan 0 nan
+3.1 20 4.862567201988401 nan nan nan nan nan 0 nan
+3.2 21 4.4614258111330445 nan nan nan nan nan 0 nan
+3.3 22 4.507611059372789 4.507611059372789 nan nan nan nan 0 nan
+3.4 23 4.054811667772353 nan nan nan nan nan 0 nan
+3.5 24 3.635915067589453 nan nan nan nan nan 0 nan
+3.6 25 3.448160140326968 3.448160140326968 nan nan nan nan 0 nan
+3.7 26 3.7033253731157427 nan nan nan nan nan 0 nan
+3.8 27 2.7348243222808013 nan nan nan nan nan 0 nan
+3.9 28 2.814218878552977 2.814218878552977 nan nan nan nan 0 nan
+4.0 29 2.626921704773102 nan nan nan nan nan 0 nan
+4.1 30 2.499811587144087 nan nan nan nan nan 0 nan
+4.2 31 2.1240589850572915 2.1240589850572915 nan nan nan nan 0 nan
+4.3 32 1.7756550494474033 nan nan nan nan nan 0 nan
+4.4 33 2.0002769639536018 nan nan nan nan nan 0 nan
+4.5 34 1.9276869314389613 1.9276869314389613 nan nan nan nan 0 nan
+4.6 35 1.8478534706323078 nan nan nan nan nan 0 nan
+4.7 36 1.683279957893606 nan nan nan nan nan 0 nan
+4.8 37 1.5496067900315418 1.5496067900315418 nan nan nan nan 0 nan
+4.9 38 1.510420952308721 nan nan nan nan nan 0 nan
+5.0 39 1.401085635846929 nan nan nan nan nan 0 nan
+5.1 40 1.5615542616916713 1.5615542616916713 nan nan nan nan 0 nan
+5.2 41 1.3506839255001126 nan nan nan nan nan 0 nan
+5.3 42 1.1876864366572124 nan nan nan nan nan 0 nan
+5.4 43 1.7555019047159468 1.7555019047159468 nan nan nan nan 0 nan
+5.5 44 1.1741219276656287 nan nan nan nan nan 0 nan
+5.6 45 1.0563331957651225 nan nan nan nan nan 0 nan
+5.7 46 1.612328289863179 1.612328289863179 nan nan nan nan 0 nan
+5.8 47 1.0166336205460396 nan nan nan nan nan 0 nan
+5.9 48 1.463280534924698 nan nan nan nan nan 0 nan
+6.0 49 nan nan nan nan nan nan 0 nan

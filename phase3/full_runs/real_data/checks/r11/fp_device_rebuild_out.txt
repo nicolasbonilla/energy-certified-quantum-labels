@@ -1,0 +1,8 @@
+job  Jz   reading  D (rebuilt = stored)   vector bit-identical   exact E rebuilt minus stored   m_s, Czz rebuilt minus stored
+C    6.0  recovery 364045 = 364045        no                     2.3e-26                       2.8e-16, -3.5e-16
+C    6.0  post-sel 57419 = 57419          no                     -1.4e-27                      4.4e-16, -4.0e-16
+B    4.0  recovery 218647 = 218647        no                     5.2e-27                       1.6e-16, 1.7e-17
+B    4.0  post-sel 31571 = 31571          no                     -1.4e-27                      -9.7e-17, 8.3e-17
+
+greatest |exact E rebuilt minus stored| over the four cases: 2.3e-26 (below 1e-25: True)
+all four subspaces reproduced exactly (same dimension, every configuration in the sector): True

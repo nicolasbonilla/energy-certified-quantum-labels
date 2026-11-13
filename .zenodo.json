@@ -1,0 +1,42 @@
+{
+  "title": "Data and code for: What a sample's energy certifies about quantum-generated training labels",
+  "upload_type": "software",
+  "description": "<p>Replication package of the article <em>What a sample's energy certifies about quantum-generated training labels</em> by Nicolás Bonilla Vargas. It contains the sources of the article and of its Supplemental Material; a converted copy, with checksums, of the public data of the dataset studied (arXiv:2606.15983; repository github.com/bjader/quantum-groundstate-learning at commit 6b8866b, Apache-2.0), and the pinned archive of that repository; the declared analysis of those data (certification map, tests of the bias, learning tests) with its code, written protocol, outputs and independent checks; the certificates behind every statement proved in exact arithmetic, with two exact verifiers; the earlier map built from the published figures, the classical emulation, the author's processor run, the second benchmark and the tests declared in advance; the scripts and outputs of the numerical checks of the proofs; and the scripts that make every figure and generated table. Every number printed in the article carries a source comment in the LaTeX files; <code>paper/check_numbers.py</code> re-checks the printed numbers against the stored files, <code>docs/NUMBERS_TO_FILES.tsv</code> lists every stored file cited with the lines that cite it, and <code>docs/MANIFEST.tsv</code> gives the SHA-256 of every file. <code>python run_checks.py</code> re-runs the checks that need no cloud machine. What is not included and how to regenerate it is in <code>docs/LEFT_OUT.md</code>. Code under the MIT licence; text, figures, data and documentation under CC BY 4.0; third-party material keeps its own licence (file <code>NOTICE</code>).</p>",
+  "creators": [
+    {
+      "name": "Bonilla Vargas, Nicolás",
+      "affiliation": "Universidad Nacional de Colombia, Bogotá, Colombia; SRH University, Munich, Germany; Daita AI, Munich, Germany",
+      "orcid": "0009-0006-6155-4391"
+    }
+  ],
+  "license": "mit",
+  "access_right": "open",
+  "keywords": [
+    "quantum computing",
+    "quantum-generated training data",
+    "certification",
+    "ground-state observables",
+    "energy window",
+    "sample-based quantum diagonalization",
+    "conformal prediction",
+    "heavy-hex lattice",
+    "XXZ model",
+    "exact arithmetic",
+    "reproducible research"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "arXiv:2606.15983",
+      "relation": "references",
+      "resource_type": "publication-preprint"
+    },
+    {
+      "identifier": "https://github.com/bjader/quantum-groundstate-learning",
+      "relation": "isDerivedFrom",
+      "resource_type": "dataset"
+    }
+  ],
+  "version": "1.0.0",
+  "publication_date": "2026-11-13",
+  "notes": "Code, analyses and text were produced with the help of AI tools, as stated in the article (Author contributions)."
+}

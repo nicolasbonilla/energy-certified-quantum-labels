@@ -1,0 +1,12 @@
+banks ready 2s
+split 20/200  81s
+split 40/200  161s
+split 60/200  229s
+split 80/200  299s
+split 100/200  365s
+split 120/200  433s
+split 140/200  519s
+split 160/200  611s
+split 180/200  684s
+split 200/200  754s
+done 754s

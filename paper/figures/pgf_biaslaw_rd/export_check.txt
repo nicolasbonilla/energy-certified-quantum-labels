@@ -1,0 +1,27 @@
+export_biaslaw_rd.py -- data of main Fig. 4 with the public labels (nothing recomputed)
+
+[0] data of the earlier figure, copied unchanged from ../data_biaslaw/
+PASS  18 files copied with equal SHA-256 (curve19, chord, states_n57, states_n115 at Jz = 1.2, 1.6, 2.5, 4.0; device; tie115)
+
+[1] the public labels at their published energies (panel (a), filled symbols)
+PASS  n = 57: 50 rows of the curve test P5
+  n = 57  Jz = 1.2  de = 0.019759  label - reference = 0.157386 (4.096 tau)  19-site curve at that de = 0.183910  ratio = 0.8558
+  n = 57  Jz = 1.6  de = 0.011355  label - reference = 0.077108 (1.668 tau)  19-site curve at that de = 0.095416  ratio = 0.8081
+  n = 57  Jz = 2.5  de = 0.004281  label - reference = 0.022095 (0.410 tau)  19-site curve at that de = 0.026904  ratio = 0.8212
+  n = 57  Jz = 4.0  de = 0.001717  label - reference = 0.006305 (0.110 tau)  19-site curve at that de = 0.005482  ratio = 1.1502  (not a deciding coupling of the declared test)
+PASS  n = 115: 50 rows of the curve test P5
+  n = 115 Jz = 1.2  de = 0.019683  label - reference = 0.144128 (3.627 tau)  19-site curve at that de = 0.183465  ratio = 0.7856
+  n = 115 Jz = 1.6  de = 0.011680  label - reference = 0.072618 (1.543 tau)  19-site curve at that de = 0.097039  ratio = 0.7483
+  n = 115 Jz = 2.5  de = 0.004254  label - reference = 0.018621 (0.344 tau)  19-site curve at that de = 0.026746  ratio = 0.6962
+  n = 115 Jz = 4.0  de = 0.001248  label - reference = 0.003684 (0.064 tau)  19-site curve at that de = 0.004561  ratio = 0.8079  (not a deciding coupling of the declared test)
+PASS  all eight points inside the axes of panel (a)
+PASS  seven of the eight public labels lie below the 19-site curve of their coupling (ratio label bias / curve 0.70-0.86); the eighth, n = 57 at Jz = 4.0, lies above it (ratio 1.15)
+PASS  caption: ratios 0.70-0.86 at seven points, 1.15 at n = 57, Jz = 4.0
+
+[2] the declared test of the curve on the public labels (P5), for the caption
+  outcome FAIL; mean miss of m_s over the 50 couplings: 0.6226 -> 0.1110 tau (n = 57), 0.5299 -> 0.1676 tau (n = 115) after subtracting the curve
+  deciding ratios: n = 57: 22 couplings, 0.8029-1.0455, 0 outside the declared band; n = 115: 19 couplings, 0.6087-0.8122, 12 outside
+PASS  the declared test FAILS: 0 of 22 deciding ratios outside the band at n = 57, 12 of 19 at n = 115
+PASS  mean miss 0.62 -> 0.11 tau (n = 57) and 0.53 -> 0.17 tau (n = 115)
+
+ALL ASSERTIONS PASSED

@@ -1,0 +1,1 @@
+{"n_components": 508, "max_dE": 1.8189894035458565e-12, "max_dO": 0.0, "max_dm_tenpy": 1.0237366510068568e-12, "max_dnorm": 7.993605777301127e-15, "max_var": 0.0, "all_mixtures_below": true, "n_mixtures_incomplete": 0, "all_pure_below": true, "n_missing": 0, "n_pruned": 0, "pass_": true}

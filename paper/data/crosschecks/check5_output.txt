@@ -1,0 +1,14 @@
+v2 n= 57 Jz=4.0 m_s      side +: 55 clusters (<= 7 sites)  min[lambda_min(h_k) - t_k] = +2.79e-09  E_LB = -84.357863 (claimed -84.357863)  u = +0.973938 (deposit +0.973938)  OK
+x_ n= 57 Jz=4.0 m_s      side -: 62 clusters (<= 9 sites)  min[lambda_min(h_k) - t_k] = +2.50e-09  E_LB = -58.787162 (claimed -58.787162)  u = -0.935939 (deposit -0.935939)  OK
+      -> certified interval [0.93594, 0.97394], width 0.03800 = 0.6607 tau (deposit 0.6607 tau)   [E_up = -66.877360, a DMRG-anchored number]
+v2 n= 57 Jz=6.0 Czz_bar  side +: 55 clusters (<= 7 sites)  min[lambda_min(h_k) - t_k] = +2.62e-09  E_LB = -83.522069 (claimed -83.522069)  u = -0.971241 (deposit -0.971241)  OK
+v2 n= 57 Jz=6.0 Czz_bar  side -: 55 clusters (<= 7 sites)  min[lambda_min(h_k) - t_k] = +2.90e-09  E_LB = -118.776830 (claimed -118.776830)  u = +0.985983 (deposit +0.985983)  OK
+      -> certified interval [-0.98598, -0.97124], width 0.01474 = 0.2509 tau (deposit 0.2509 tau)   [E_up = -97.951589, a DMRG-anchored number]
+v2 n= 57 Jz=3.4 Czz_bar  side +: 62 clusters (<= 9 sites)  min[lambda_min(h_k) - t_k] = +2.19e-09  E_LB = -48.084561 (claimed -48.084561)  u = -0.906461 (deposit -0.906461)  OK
+v2 n= 57 Jz=3.4 Czz_bar  side -: 62 clusters (<= 9 sites)  min[lambda_min(h_k) - t_k] = +2.66e-09  E_LB = -73.388417 (claimed -73.388417)  u = +0.962448 (deposit +0.962448)  OK
+      -> certified interval [-0.96245, -0.90646], width 0.05599 = 0.9945 tau (deposit 0.9945 tau)   [E_up = -57.734498, a DMRG-anchored number]
+v2 n=115 Jz=6.0 m_s      side +: 113 clusters (<= 7 sites)  min[lambda_min(h_k) - t_k] = +3.30e-09  E_LB = -231.834264 (claimed -231.834264)  u = +0.986571 (deposit +0.986571)  OK
+v2 n=115 Jz=6.0 m_s      side -: 113 clusters (<= 7 sites)  min[lambda_min(h_k) - t_k] = +3.07e-09  E_LB = -179.317825 (claimed -179.317825)  u = -0.977535 (deposit -0.977535)  OK
+      -> certified interval [0.97754, 0.98657], width 0.00904 = 0.1533 tau (deposit 0.1533 tau)   [E_up = -201.946017, a DMRG-anchored number]
+all re-verified certificates consistent: True
+bareiss_pd vs numpy on 2995 random symmetric integer matrices: 0 disagreements

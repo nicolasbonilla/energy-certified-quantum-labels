@@ -1,0 +1,7 @@
+fig_composite_rd.pdf: 138 text spans; clearance 0.8 bp; render 600 dpi
+text left after removal: 0 words
+TEXT/INK   'published'                  box (243.6, 64.3, 278.9, 72.3):  2.5 % of the pixels differ from the dominant colour (244, 244, 252)
+TEXT/INK   'width ='                    box (95.0, 127.3, 125.6, 135.3): 13.6 % of the pixels differ from the dominant colour (244, 244, 252)
+TEXT/INK   ' τ'                         box (125.6, 127.7, 131.7, 135.6): 14.8 % of the pixels differ from the dominant colour (244, 244, 252)
+TEXT/INK   '(c, d)'                     box (41.1, 307.2, 60.2, 314.2):  6.3 % of the pixels differ from the dominant colour (236, 228, 228)
+text/text conflicts: 0; text boxes with ink or a colour edge behind them: 4

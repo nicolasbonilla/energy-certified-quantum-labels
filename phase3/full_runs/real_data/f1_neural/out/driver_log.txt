@@ -1,0 +1,12 @@
+2026-11-12T22:04:55Z  driver started; declaration 6dfbc5681a7b4708ba790e1dd3139d8efdcccb9ced24e5ab2ce4b5a7a209ffaa; out C:\Users\Nicolas\Downloads\Proyecto_SQD_ML\P5_energy_certified_labels\work\phase3\full_runs\real_data\f1_neural\out
+2026-11-12T22:04:55Z  copied the stored test-range piece of the perceptron at n = 57
+2026-11-12T22:04:55Z  architecture 1, n = 57, test range: started (one process, many hours)
+2026-11-12T22:04:56Z  mlp57 in distribution: 8 processes started
+2026-11-13T01:42:54Z  mlp57 in distribution: exit codes [0, 0, 0, 0, 0, 0, 0, 0]
+2026-11-13T01:42:56Z  mlp57 assemble: exit codes [0]
+2026-11-13T02:05:15Z  mlp115 test range: exit codes [0]
+2026-11-13T02:05:15Z  mlp115 in distribution: 8 processes started
+2026-11-13T05:46:46Z  mlp115 in distribution: exit codes [0, 0, 0, 0, 0, 0, 0, 0]
+2026-11-13T05:46:47Z  mlp115 assemble: exit codes [0]
+2026-11-13T12:03:56Z  architecture 1, n = 57: exit codes [0]
+2026-11-13T12:03:56Z  driver finished: {'A_mlp57': True, 'B_mlp115': True, 'C_ibm57': True}

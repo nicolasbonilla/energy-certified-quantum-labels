@@ -1,0 +1,408 @@
+{
+ "a_windows": {
+  "57": {
+   "couplings": 18,
+   "inside": 14,
+   "outside": [
+    "1.1",
+    "1.2",
+    "1.3",
+    "1.4"
+   ],
+   "ratio_min": 0.9672755923212619,
+   "ratio_max": 1.78337325893057,
+   "ratio_train": [
+    0.9672755923212619,
+    1.0376636311266456
+   ],
+   "ood": [
+    "1.1",
+    "1.2",
+    "1.3",
+    "1.4"
+   ],
+   "ratio_ood": {
+    "1.1": 1.78337325893057,
+    "1.2": 1.6465747311614485,
+    "1.3": 1.5013837424301226,
+    "1.4": 1.2853465161780802
+   },
+   "rows": 116,
+   "decisive_predicted": 106,
+   "decisive_implied_by_window": 78,
+   "decisive_not_implied": [
+    [
+     1.1,
+     "C2_bar",
+     "NOT_CERTIFIED"
+    ],
+    [
+     1.1,
+     "Czz_bar",
+     "NOT_CERTIFIED"
+    ],
+    [
+     1.1,
+     "Czz_edge",
+     "NOT_CERTIFIED"
+    ],
+    [
+     1.1,
+     "Z_boundary",
+     "NOT_CERTIFIED"
+    ],
+    [
+     1.1,
+     "Z_bulk",
+     "NOT_CERTIFIED"
+    ],
+    [
+     1.1,
+     "Z_loop",
+     "NOT_CERTIFIED"
+    ],
+    [
+     1.1,
+     "m_s",
+     "NOT_CERTIFIED"
+    ],
+    [
+     1.2,
+     "C2_bar",
+     "NOT_CERTIFIED"
+    ],
+    [
+     1.2,
+     "Czz_bar",
+     "NOT_CERTIFIED"
+    ],
+    [
+     1.2,
+     "Czz_edge",
+     "NOT_CERTIFIED"
+    ],
+    [
+     1.2,
+     "Z_boundary",
+     "NOT_CERTIFIED"
+    ],
+    [
+     1.2,
+     "Z_bulk",
+     "NOT_CERTIFIED"
+    ],
+    [
+     1.2,
+     "Z_loop",
+     "NOT_CERTIFIED"
+    ],
+    [
+     1.2,
+     "m_s",
+     "NOT_CERTIFIED"
+    ],
+    [
+     1.3,
+     "C2_bar",
+     "NOT_CERTIFIED"
+    ],
+    [
+     1.3,
+     "Czz_bar",
+     "NOT_CERTIFIED"
+    ],
+    [
+     1.3,
+     "Czz_edge",
+     "NOT_CERTIFIED"
+    ],
+    [
+     1.3,
+     "Z_boundary",
+     "NOT_CERTIFIED"
+    ],
+    [
+     1.3,
+     "Z_bulk",
+     "NOT_CERTIFIED"
+    ],
+    [
+     1.3,
+     "Z_loop",
+     "NOT_CERTIFIED"
+    ],
+    [
+     1.3,
+     "m_s",
+     "NOT_CERTIFIED"
+    ],
+    [
+     1.4,
+     "C2_bar",
+     "NOT_CERTIFIED"
+    ],
+    [
+     1.4,
+     "Czz_bar",
+     "NOT_CERTIFIED"
+    ],
+    [
+     1.4,
+     "Czz_edge",
+     "NOT_CERTIFIED"
+    ],
+    [
+     1.4,
+     "Z_boundary",
+     "NOT_CERTIFIED"
+    ],
+    [
+     1.4,
+     "Z_bulk",
+     "NOT_CERTIFIED"
+    ],
+    [
+     1.4,
+     "Z_loop",
+     "NOT_CERTIFIED"
+    ],
+    [
+     1.4,
+     "m_s",
+     "NOT_CERTIFIED"
+    ]
+   ]
+  },
+  "115": {
+   "couplings": 16,
+   "inside": 12,
+   "outside": [
+    "1.1",
+    "1.2",
+    "1.3",
+    "1.4"
+   ],
+   "ratio_min": 0.9861091601563653,
+   "ratio_max": 1.8940509103262095,
+   "ratio_train": [
+    0.9861091601563653,
+    1.0109827280473809
+   ],
+   "ood": [
+    "1.1",
+    "1.2",
+    "1.3",
+    "1.4"
+   ],
+   "ratio_ood": {
+    "1.1": 1.8940509103262095,
+    "1.2": 1.640264148988949,
+    "1.3": 1.4311849527587797,
+    "1.4": 1.284795717710879
+   },
+   "rows": 49,
+   "decisive_predicted": 46,
+   "decisive_implied_by_window": 34,
+   "decisive_not_implied": [
+    [
+     1.1,
+     "C2_bar",
+     "NOT_CERTIFIED"
+    ],
+    [
+     1.1,
+     "Czz_bar",
+     "NOT_CERTIFIED"
+    ],
+    [
+     1.1,
+     "m_s",
+     "NOT_CERTIFIED"
+    ],
+    [
+     1.2,
+     "C2_bar",
+     "NOT_CERTIFIED"
+    ],
+    [
+     1.2,
+     "Czz_bar",
+     "NOT_CERTIFIED"
+    ],
+    [
+     1.2,
+     "m_s",
+     "NOT_CERTIFIED"
+    ],
+    [
+     1.3,
+     "C2_bar",
+     "NOT_CERTIFIED"
+    ],
+    [
+     1.3,
+     "Czz_bar",
+     "NOT_CERTIFIED"
+    ],
+    [
+     1.3,
+     "m_s",
+     "NOT_CERTIFIED"
+    ],
+    [
+     1.4,
+     "C2_bar",
+     "NOT_CERTIFIED"
+    ],
+    [
+     1.4,
+     "Czz_bar",
+     "NOT_CERTIFIED"
+    ],
+    [
+     1.4,
+     "m_s",
+     "NOT_CERTIFIED"
+    ]
+   ]
+  }
+ },
+ "b_archive": {
+  "named": 302,
+  "found": 302,
+  "hash_equal": 302
+ },
+ "c_tokens": {
+  "dmrg/2_nn_corr_funcs_zz": [
+   102,
+   102,
+   0
+  ],
+  "dmrg/2_nn_corr_pairs (integers)": [
+   102,
+   102,
+   0
+  ],
+  "dmrg/e1": [
+   102,
+   102,
+   0
+  ],
+  "dmrg/ground_state_energy": [
+   102,
+   102,
+   0
+  ],
+  "dmrg/jz": [
+   102,
+   102,
+   0
+  ],
+  "dmrg/z": [
+   102,
+   102,
+   0
+  ],
+  "dmrg/z_loop": [
+   102,
+   102,
+   0
+  ],
+  "dmrg/z_loop_sites (integers)": [
+   102,
+   102,
+   0
+  ],
+  "skqd_post_select/2_nn_corr_funcs_zz_basis_opt": [
+   50,
+   50,
+   0
+  ],
+  "skqd_post_select/2_nn_corr_pairs_zz_basis_opt (integers)": [
+   50,
+   50,
+   0
+  ],
+  "skqd_post_select/energy_vopt": [
+   100,
+   100,
+   0
+  ],
+  "skqd_post_select/final_global_energy": [
+   100,
+   100,
+   0
+  ],
+  "skqd_post_select/ground_state_energy": [
+   100,
+   100,
+   0
+  ],
+  "skqd_post_select/jz": [
+   100,
+   100,
+   0
+  ],
+  "skqd_post_select/z_basis_opt": [
+   50,
+   50,
+   0
+  ],
+  "skqd_post_select/z_loop": [
+   50,
+   50,
+   0
+  ],
+  "skqd_post_select/z_loop_sites (integers)": [
+   50,
+   50,
+   0
+  ],
+  "skqd_random_flip/2_nn_corr_funcs_zz_basis_opt": [
+   100,
+   100,
+   0
+  ],
+  "skqd_random_flip/2_nn_corr_pairs_zz_basis_opt (integers)": [
+   100,
+   100,
+   0
+  ],
+  "skqd_random_flip/energy_vopt": [
+   100,
+   100,
+   0
+  ],
+  "skqd_random_flip/final_global_energy": [
+   100,
+   100,
+   0
+  ],
+  "skqd_random_flip/ground_state_energy": [
+   100,
+   100,
+   0
+  ],
+  "skqd_random_flip/jz": [
+   100,
+   100,
+   0
+  ],
+  "skqd_random_flip/z_basis_opt": [
+   100,
+   100,
+   0
+  ],
+  "skqd_random_flip/z_loop": [
+   100,
+   100,
+   0
+  ],
+  "skqd_random_flip/z_loop_sites (integers)": [
+   100,
+   100,
+   0
+  ]
+ },
+ "c_problems": []
+}

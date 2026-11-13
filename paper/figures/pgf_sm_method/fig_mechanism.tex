@@ -1,0 +1,131 @@
+% fig_mechanism.tex -- native PGFPlots version of Supplemental Fig. figS:mechanism (was fig3_mechanism.py).
+% Data: dat/mech_ab_*.dat and dat/fam_n57_*.dat, written by export_sm_method.py. Compile here with pdflatex.
+\documentclass[10pt,border=1pt]{standalone}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{amsmath}
+\usepackage{pgfplots}
+\usepackage{pgfplotstable}
+\pgfplotsset{compat=1.18}
+\usepgfplotslibrary{groupplots}
+\usetikzlibrary{calc}
+% J_z colours as in fig_bias_law.tex
+\definecolor{cA}{HTML}{B5451B}
+\definecolor{cB}{HTML}{E08E0B}
+\definecolor{cC}{HTML}{1B8A8F}
+\definecolor{cD}{HTML}{2B3A67}
+\definecolor{cInk}{HTML}{0B0B0B}
+\definecolor{cMuted}{HTML}{52514E}
+% filled five-pointed star
+\pgfdeclareplotmark{fstar}{%
+  \pgfpathmoveto{\pgfqpointpolar{90}{\pgfplotmarksize}}%
+  \pgfpathlineto{\pgfqpointpolar{126}{0.42\pgfplotmarksize}}\pgfpathlineto{\pgfqpointpolar{162}{\pgfplotmarksize}}%
+  \pgfpathlineto{\pgfqpointpolar{198}{0.42\pgfplotmarksize}}\pgfpathlineto{\pgfqpointpolar{234}{\pgfplotmarksize}}%
+  \pgfpathlineto{\pgfqpointpolar{270}{0.42\pgfplotmarksize}}\pgfpathlineto{\pgfqpointpolar{306}{\pgfplotmarksize}}%
+  \pgfpathlineto{\pgfqpointpolar{342}{0.42\pgfplotmarksize}}\pgfpathlineto{\pgfqpointpolar{18}{\pgfplotmarksize}}%
+  \pgfpathlineto{\pgfqpointpolar{54}{0.42\pgfplotmarksize}}\pgfpathclose\pgfusepathqfillstroke}
+% one marker per family, the same in (a)-(c) and in fig_bias_ratio.tex
+\pgfplotsset{
+  fRR/.style={#1, line width=0.8pt, mark=*, mark size=1.5pt, mark options={solid}},
+  fProj/.style={#1, line width=0.6pt, densely dotted, mark=x, mark size=2.0pt, mark options={solid, line width=0.6pt}},
+  fMean/.style={#1, only marks, mark=triangle, mark size=2.1pt, mark options={solid, fill=white, line width=0.6pt}},
+  fTop/.style={#1, line width=0.6pt, mark=pentagon, mark size=2.0pt, mark options={solid, fill=white, line width=0.6pt}},
+  fKi/.style={#1, line width=0.5pt, mark=square, mark size=1.5pt, mark options={solid, fill=white, line width=0.5pt}},
+  fKf/.style={#1, line width=0.5pt, mark=square*, mark size=1.5pt, mark options={solid}},
+  fPipe/.style={only marks, mark=fstar, mark size=3.6pt, mark options={draw=black, fill=#1, line width=0.35pt}},
+  fIbm/.style={only marks, mark=diamond*, mark size=2.8pt, mark options={draw=black, fill=black}},
+  fIbmX/.style={only marks, mark=diamond*, mark size=2.8pt, mark options={draw=black, fill=white, line width=0.7pt}},
+}
+\newcommand{\ab}[2]{% #1 = n57_J1.2 etc., #2 = colour
+  \addplot[fRR=#2] table[x=D, y=dms] {dat/mech_ab_#1_rr.dat};
+  \addplot[fProj=#2, forget plot] table[x=D, y=dms] {dat/mech_ab_#1_proj.dat};
+  \addplot[fMean=#2, forget plot] table[x=D, y=dms] {dat/mech_ab_#1_mean.dat};
+  \addplot[fPipe=#2, forget plot] table[x=D, y=dms] {dat/mech_ab_#1_pipe.dat};}
+% reported ratio of the dataset: dotted vertical line at the ratio stored in dat/fam_n57_J*_ibm.dat
+\newcommand{\reported}[2]{\draw[#2, line width=0.7pt, densely dotted] (axis cs:#1,0.0025) -- (axis cs:#1,0.35);}
+\begin{document}
+\pgfplotstableread{dat/fam_n57_J1.6_ibm.dat}\tib\pgfplotstablegetelem{0}{ratio}\of\tib\let\rB\pgfplotsretval
+\pgfplotstableread{dat/fam_n57_J2.5_ibm.dat}\tib\pgfplotstablegetelem{0}{ratio}\of\tib\let\rC\pgfplotsretval
+\pgfplotstableread{dat/fam_n57_J4.0_ibm.dat}\tib\pgfplotstablegetelem{0}{ratio}\of\tib\let\rD\pgfplotsretval
+\begin{tikzpicture}
+\begin{groupplot}[
+  group style={group size=3 by 1, horizontal sep=1.2cm},
+  scale only axis, width=4.45cm, height=4.6cm,
+  tick label style={font=\footnotesize}, label style={font=\small},
+  title style={font=\small, yshift=-3pt},
+  axis line style={cMuted, line width=0.5pt}, tick style={cMuted, line width=0.5pt},
+  xtick align=inside, ytick align=outside, ytick pos=left, xtick pos=bottom,
+  every axis plot/.append style={line join=round},
+  legend cell align=left,
+  legend style={font=\footnotesize, draw=none, fill=white, fill opacity=0.88, text opacity=1, inner sep=2pt,
+    row sep=0pt, column sep=2pt},
+]
+% ---------------- (a) n = 57 ----------------
+\nextgroupplot[
+  xmode=log, xmin=1e3, xmax=6e6, ymin=-0.02, ymax=0.34, ytick={0,0.1,0.2,0.3},
+  yticklabel style={/pgf/number format/fixed, /pgf/number format/precision=1, /pgf/number format/fixed zerofill},
+  xtick={1e4,1e5,1e6},
+  xlabel={subspace dimension $D$}, ylabel={$m_s-m_s^{\rm GS}$},
+  title={(a) $n=57$, perfect samples},
+  legend style={at={(0.03,0.955)}, anchor=north west},
+  legend image code/.code={\draw[mark repeat=2, mark phase=2] plot coordinates {(0cm,0cm) (0.25cm,0cm) (0.5cm,0cm)};},
+]
+\addplot[cInk, line width=0.5pt, forget plot] coordinates {(1e3,0) (6e6,0)};
+\ab{n57_J1.2}{cA}\addlegendentry{$J_z=1.2$}
+\ab{n57_J1.6}{cB}\addlegendentry{$J_z=1.6$}
+\ab{n57_J2.5}{cC}\addlegendentry{$J_z=2.5$}
+\ab{n57_J4.0}{cD}\addlegendentry{$J_z=4.0$}
+% ---------------- (b) n = 115 ----------------
+\nextgroupplot[
+  xmode=log, xmin=1e3, xmax=6e6, ymin=-0.02, ymax=0.34, ytick={0,0.1,0.2,0.3},
+  yticklabel style={/pgf/number format/fixed, /pgf/number format/precision=1, /pgf/number format/fixed zerofill},
+  xtick={1e4,1e5,1e6},
+  xlabel={subspace dimension $D$},
+  title={(b) $n=115$, perfect samples},
+  legend to name=famleg, legend columns=3, every axis plot post/.append style={forget plot},
+  legend style={font=\footnotesize, draw=none, fill=none, column sep=2pt, row sep=1pt,
+    /tikz/every even column/.append style={column sep=8pt}},
+]
+\addplot[cInk, line width=0.5pt, forget plot] coordinates {(1e3,0) (6e6,0)};
+\ab{n115_J1.2}{cA}\ab{n115_J1.6}{cB}\ab{n115_J2.5}{cC}
+% family key, shown once above the three panels
+
+\addlegendimage{fRR=cMuted}\addlegendentry{Rayleigh--Ritz in perfect samples}
+\addlegendimage{fProj=cMuted}\addlegendentry{support only}
+\addlegendimage{fMean=cMuted}\addlegendentry{sample mean}
+\addlegendimage{fPipe=cMuted}\addlegendentry{full pipeline; in (c), all variants}
+\addlegendimage{fTop=cMuted}\addlegendentry{most-probable subsets}
+\addlegendimage{fKi=cMuted}\addlegendentry{Krylov, no noise}
+\addlegendimage{fKf=cMuted}\addlegendentry{Krylov, $1\%$ flips}
+\addlegendimage{fIbm}\addlegendentry{bias at the reported $r$ (open: extrapolated)}
+\addlegendimage{cInk, line width=0.7pt, densely dotted}\addlegendentry{reported $r$ of the dataset}
+% ---------------- (c) n = 57, bias against energy ----------------
+\nextgroupplot[
+  xmode=log, ymode=log, xmin=0.018, xmax=12, ymin=0.0025, ymax=0.35, log ticks with fixed point,
+  xtick={0.1,1,10}, ytick={0.01,0.1},
+  xlabel={energy ratio $r=(E-E_0)/(E_1-E_0)$},
+  title={(c) $n=57$: bias against energy},
+]
+% J_z = 4.0 (gs_random only; no most-probable subsets or Krylov scans were run)
+\reported{\rD}{cD}
+\addplot[fRR=cD] table[x=ratio, y=dms] {dat/fam_n57_J4.0_gs_random.dat};
+\addplot[fPipe=cD] table[x=ratio, y=dms] {dat/fam_n57_J4.0_pipe.dat};
+\addplot[fIbm] table[x=ratio, y=dms] {dat/fam_n57_J4.0_ibm.dat};   % status: interpolated
+% J_z = 2.5
+\reported{\rC}{cC}
+\addplot[fRR=cC] table[x=ratio, y=dms] {dat/fam_n57_J2.5_gs_random.dat};
+\addplot[fTop=cC] table[x=ratio, y=dms] {dat/fam_n57_J2.5_gs_top.dat};
+\addplot[fKi=cC] table[x=ratio, y=dms] {dat/fam_n57_J2.5_kscan_ideal.dat};
+\addplot[fKf=cC] table[x=ratio, y=dms] {dat/fam_n57_J2.5_kscan_floor.dat};
+\addplot[fPipe=cC] table[x=ratio, y=dms] {dat/fam_n57_J2.5_pipe.dat};
+\addplot[fIbm] table[x=ratio, y=dms] {dat/fam_n57_J2.5_ibm.dat};   % status: interpolated
+% J_z = 1.6
+\reported{\rB}{cB}
+\addplot[fRR=cB] table[x=ratio, y=dms] {dat/fam_n57_J1.6_gs_random.dat};
+\addplot[fTop=cB] table[x=ratio, y=dms] {dat/fam_n57_J1.6_gs_top.dat};
+\addplot[fPipe=cB] table[x=ratio, y=dms] {dat/fam_n57_J1.6_pipe.dat};
+\addplot[fIbmX] table[x=ratio, y=dms] {dat/fam_n57_J1.6_ibm.dat};  % status: extrapolated
+\end{groupplot}
+\node[anchor=south] at ($(group c2r1.north)+(0,0.62cm)$) {\pgfplotslegendfromname{famleg}};
+\end{tikzpicture}
+\end{document}

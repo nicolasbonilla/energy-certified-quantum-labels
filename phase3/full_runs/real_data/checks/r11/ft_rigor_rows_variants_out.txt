@@ -1,0 +1,41 @@
+﻿twoS by n: {19: [3], 57: [9], 115: [19]}
+n=57: sites 57 edges 64  n_up 33 n_down 24
+n=115: sites 115 edges 132  n_up 67 n_down 48
+n= 57 Jz=4.0 m_s       all: 0.6607 C  v2only: 0.6948 C  no_x: 0.6948 C  anylam: 0.6607 C
+n= 57 Jz=4.0 Czz_bar   all: 0.6517 C  v2only: 0.6517 C  no_x: 0.6517 C  anylam: 0.6517 C
+n= 57 Jz=6.0 m_s       all: 0.2397 C  v2only: incomplete  no_x: 1.4934 n  anylam: 0.2397 C
+n= 57 Jz=6.0 Czz_bar   all: 0.2509 C  v2only: 0.2509 C  no_x: 0.2509 C  anylam: 0.2509 C
+n= 57 Jz=3.4 m_s       all: 1.0859 n  v2only: 1.0859 n  no_x: 1.0859 n  anylam: 1.0859 n
+n= 57 Jz=3.4 Czz_bar   all: 0.9945 C  v2only: 0.9945 C  no_x: 0.9945 C  anylam: 0.9945 C
+n= 57 Jz=3.6 m_s       all: 0.9093 C  v2only: 0.9093 C  no_x: 0.9093 C  anylam: 0.9093 C
+n= 57 Jz=3.6 Czz_bar   all: 0.8451 C  v2only: 0.8451 C  no_x: 0.8451 C  anylam: 0.8451 C
+n= 57 Jz=4.5 m_s       all: 0.4920 C  v2only: 0.4920 C  no_x: 0.4920 C  anylam: 0.4920 C
+n= 57 Jz=4.5 Czz_bar   all: 0.4796 C  v2only: 0.4796 C  no_x: 0.4796 C  anylam: 0.4796 C
+n= 57 Jz=5.0 m_s       all: 0.3504 C  v2only: 0.3504 C  no_x: 0.3504 C  anylam: 0.3504 C
+n= 57 Jz=5.0 Czz_bar   all: 0.3513 C  v2only: 0.3513 C  no_x: 0.3513 C  anylam: 0.3513 C
+n= 57 Jz=5.5 m_s       all: 0.2848 C  v2only: 0.2848 C  no_x: 0.2848 C  anylam: 0.2848 C
+n= 57 Jz=5.5 Czz_bar   all: 0.2897 C  v2only: 0.2897 C  no_x: 0.2897 C  anylam: 0.2897 C
+n=115 Jz=4.0 m_s       all: 0.5491 C  v2only: 0.5491 C  no_x: 0.5491 C  anylam: 0.5491 C
+n=115 Jz=4.0 Czz_bar   all: 0.5414 C  v2only: 0.5414 C  no_x: 0.5414 C  anylam: 0.5414 C
+n=115 Jz=6.0 m_s       all: 0.1533 C  v2only: 0.1533 C  no_x: 0.1533 C  anylam: 0.1533 C
+n=115 Jz=6.0 Czz_bar   all: 0.1632 C  v2only: 0.1632 C  no_x: 0.1632 C  anylam: 0.1632 C
+
+outward rounding of the printed table (rig_v2.tex prints nearest):
+n= 57 Jz=4.0 m_s      lower end printed 0.93594, proved >= 0.935938861 (outward: 0.93593)
+n= 57 Jz=4.0 Czz_bar  upper end printed -0.93360, proved <= -0.933595108 (outward: -0.93359)
+n= 57 Jz=6.0 m_s      lower end printed 0.97347, proved >= 0.973466233 (outward: 0.97346); upper end printed 0.98758, proved <= 0.987582991 (outward: 0.98759)
+n= 57 Jz=6.0 Czz_bar  lower end printed -0.98598, proved >= -0.985983225 (outward: -0.98599)
+n= 57 Jz=3.4 m_s      outward as printed
+n= 57 Jz=3.4 Czz_bar  w/tau printed 0.994, value 0.994477 (outward: 0.995)
+n= 57 Jz=3.6 m_s      w/tau printed 0.909, value 0.909256 (outward: 0.910)
+n= 57 Jz=3.6 Czz_bar  w/tau printed 0.845, value 0.845124 (outward: 0.846)
+n= 57 Jz=4.5 m_s      lower end printed 0.95009, proved >= 0.950085037 (outward: 0.95008); w/tau printed 0.492, value 0.492023 (outward: 0.493)
+n= 57 Jz=4.5 Czz_bar  lower end printed -0.97609, proved >= -0.976093388 (outward: -0.97610)
+n= 57 Jz=5.0 m_s      lower end printed 0.96141, proved >= 0.961408817 (outward: 0.96140); upper end printed 0.98187, proved <= 0.981870964 (outward: 0.98188); w/tau printed 0.350, value 0.350392 (outward: 0.351)
+n= 57 Jz=5.0 Czz_bar  w/tau printed 0.351, value 0.351298 (outward: 0.352)
+n= 57 Jz=5.5 m_s      lower end printed 0.96832, proved >= 0.968316371 (outward: 0.96831)
+n= 57 Jz=5.5 Czz_bar  outward as printed
+n=115 Jz=4.0 m_s      upper end printed 0.97364, proved <= 0.973642901 (outward: 0.97365); w/tau printed 0.549, value 0.549060 (outward: 0.550)
+n=115 Jz=4.0 Czz_bar  upper end printed -0.93895, proved <= -0.938945273 (outward: -0.93894); w/tau printed 0.541, value 0.541411 (outward: 0.542)
+n=115 Jz=6.0 m_s      lower end printed 0.97754, proved >= 0.977535299 (outward: 0.97753); upper end printed 0.98657, proved <= 0.986571273 (outward: 0.98658); w/tau printed 0.153, value 0.153284 (outward: 0.154)
+n=115 Jz=6.0 Czz_bar  w/tau printed 0.163, value 0.163198 (outward: 0.164)

@@ -1,0 +1,17 @@
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 22.362s
+
+OK
+T1: SC mean coverage 0.9059 (expected 0.9048), certified 0.9671, band 0.9671
+T4: de=1e-03 D=166/252 de_gen=9.884e-04 W=0.9995
+T4: de=5e-03 D=126/252 de_gen=4.520e-03 W=0.9970
+T4: de=2e-02 D=80/252 de_gen=1.915e-02 W=0.9846
+T5: Cnn de=1e-03 cert [-0.488446, -0.476412]; exact limit within [-0.488445, -0.476414] (attained) and [-0.488446, -0.476412] (grid bound); loss vs attained 0.021%
+T5: Cnn de=5e-03 cert [-0.495506, -0.468591]; exact limit within [-0.495493, -0.468604] (attained) and [-0.495497, -0.468600] (grid bound); loss vs attained 0.093%
+T5: Cstag de=1e-03 cert [0.177641, 0.197791]; exact limit within [0.177642, 0.197790] (attained) and [0.177641, 0.197792] (grid bound); loss vs attained 0.015%
+T5: Cstag de=5e-03 cert [0.165262, 0.210267]; exact limit within [0.165265, 0.210265] (attained) and [0.165262, 0.210268] (grid bound); loss vs attained 0.009%
+T5: P_1_2 de=1e-03 cert [-0.133286, -0.067195]; exact limit within [-0.133265, -0.067276] (attained) and [-0.133276, -0.067268] (grid bound); loss vs attained 0.154%
+T5: P_1_2 de=5e-03 cert [-0.175283, -0.027861]; exact limit within [-0.175257, -0.027903] (attained) and [-0.175269, -0.027890] (grid bound); loss vs attained 0.045%
+T5: P_1_5 de=1e-03 cert [0.325883, 0.332610]; exact limit within [0.326176, 0.332573] (attained) and [0.326175, 0.332573] (grid bound); loss vs attained 5.160%
+T5: P_1_5 de=5e-03 cert [0.318736, 0.333333]; exact limit within [0.318796, 0.333204] (attained) and [0.318794, 0.333333] (grid bound); loss vs attained 1.318%

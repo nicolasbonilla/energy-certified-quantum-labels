@@ -1,0 +1,11 @@
+test_H_subspace_vs_dense (__main__.TestEmu.test_H_subspace_vs_dense) ... ok
+test_bo_lowers_energy (__main__.TestEmu.test_bo_lowers_energy) ... ok
+test_colouring_proper (__main__.TestEmu.test_colouring_proper) ... ok
+test_diag_labels (__main__.TestEmu.test_diag_labels) ... ok
+test_propagation_vs_dense (__main__.TestEmu.test_propagation_vs_dense) ... ok
+test_recover_and_noise (__main__.TestEmu.test_recover_and_noise) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 6.125s
+
+OK

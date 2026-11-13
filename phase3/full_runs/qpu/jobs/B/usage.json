@@ -1,0 +1,50 @@
+{
+ "time": "2026-10-31T09:19:11Z",
+ "quantum_seconds": 136.0,
+ "metrics": {
+  "caller": "qiskit_ibm_runtime~sampler.py",
+  "qiskit_version": "qiskit_ibm_runtime-0.48.0,qiskit-2.5.1*,qiskit_aer-0.17.2,qiskit_addon_opt_mapper-0.1.0,qiskit_addon_sqd-0.12.1,mthree-3.0.0",
+  "timestamps": {
+   "created": "2026-10-31T09:13:11.494999Z",
+   "finished": "2026-10-31T09:18:13.306364Z",
+   "running": "2026-10-31T09:13:13.123269Z"
+  },
+  "usage": {
+   "qpu_charge_time_seconds": 136,
+   "value": 2.258742,
+   "unit": "resource_units",
+   "status": "complete",
+   "details": [
+    {
+     "value": 2.258742,
+     "unit": "resource_units",
+     "metric": {
+      "id": "caffe3ca-729c-5750-8777-df63bbf8bfd9",
+      "value": 136
+     }
+    }
+   ]
+  },
+  "circuits_execution_time_ns": 132413794304
+ },
+ "account_after": {
+  "time": "2026-10-31T09:19:12Z",
+  "instances": [
+   {
+    "name": "open-instance",
+    "plan": "open",
+    "pricing_type": "free",
+    "crn_tag": "574123eca6"
+   }
+  ],
+  "consumed_s": 421,
+  "limit_s": 600,
+  "remaining_s": 179,
+  "period": {
+   "start_time": "2026-10-03T09:19:12.758Z",
+   "end_time": "2026-10-31T09:19:12.758Z"
+  },
+  "limit_reached": false,
+  "free_ok": true
+ }
+}

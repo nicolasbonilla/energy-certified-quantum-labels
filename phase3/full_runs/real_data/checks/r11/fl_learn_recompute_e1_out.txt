@@ -1,0 +1,14 @@
+n=57 extended sets: S 26 (3.5-6.0), S_3_4 23, S_1_2 18, S_p S_1_2
+n=115 extended sets: S 27 (3.4-6.0), S_3_4 25, S_1_2 18, S_p S_1_2
+f3 n=115 set=S_1_2 (18 couplings; 4/9/5) score=interval M1: (W) 200 of 200 splits; (C) 1000 of 1000 pairs; 2q/tau 0.4058-0.8204; max miss 0.1071
+f3 n=115 set=S_1_2 (18 couplings; 4/9/5) score=interval M2: (W) 200 of 200 splits; (C) 1000 of 1000 pairs; 2q/tau 0.4087-0.8355; max miss 0.1199
+f3 n=115 set=S_1_2 (18 couplings; 4/9/5) score=interval M0: (W) 200 of 200 splits; (C) 1000 of 1000 pairs; 2q/tau 0.4161-0.7087; max miss 0.0550
+   set S_1_2: Jz 4.3-6.0 ; truth change 0.2767-0.2814 tau
+f3 n=115 set=S_3_4 (25 couplings; 6/12/7) score=interval M1: (W) 42 of 200 splits; (C) 1400 of 1400 pairs; 2q/tau 0.7341-1.2258; max miss 0.1509
+f3 n=115 set=S_3_4 (25 couplings; 6/12/7) score=interval M2: (W) 43 of 200 splits; (C) 1400 of 1400 pairs; 2q/tau 0.7435-1.1777; max miss 0.1271
+f3 n=115 set=S_3_4 (25 couplings; 6/12/7) score=interval M0: (W) 43 of 200 splits; (C) 1400 of 1400 pairs; 2q/tau 0.7385-1.1167; max miss 0.0989
+   set S_3_4: Jz 3.6-6.0 ; truth change 0.5154-0.5319 tau
+f3 n=115 set=S (27 couplings; 6/12/9) score=interval M1: (W) 15 of 200 splits; (C) 1800 of 1800 pairs; 2q/tau 0.7204-1.5294; max miss 0.1919
+f3 n=115 set=S (27 couplings; 6/12/9) score=interval M2: (W) 15 of 200 splits; (C) 1800 of 1800 pairs; 2q/tau 0.7426-1.4584; max miss 0.1607
+f3 n=115 set=S (27 couplings; 6/12/9) score=interval M0: (W) 15 of 200 splits; (C) 1800 of 1800 pairs; 2q/tau 0.7388-1.3901; max miss 0.1231
+   set S: Jz 3.4-6.0 ; truth change 0.6110-0.6343 tau

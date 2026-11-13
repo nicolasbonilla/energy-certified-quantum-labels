@@ -1,0 +1,94 @@
+============================================================================================================
+Part 1: decorated chain, n = 10 (minority b1..b3 = sites 0..2; majority a0..a3 = 3..6 and teeth t1..t3 = 7..9)
+
+Jz=1.6 mu=+0.00 Jz: sector gap D_s=1.760794; window of B: (-0.000000, +1.191604); best global gap 1.318013 at B=+0.532349; m_s=+0.8221; C_1=1.0789
+    B=+0.023832 inside : full-space ground state has M=+4.0000, gap=0.190657; lemma: min(D_s, D_c)=+0.190657  ok
+    B=+0.297901 inside : full-space ground state has M=+4.0000, gap=0.849117; lemma: min(D_s, D_c)=+0.849117  ok
+    B=+0.595802 inside : full-space ground state has M=+4.0000, gap=1.191604; lemma: min(D_s, D_c)=+1.191604  ok
+    B=+0.893703 inside : full-space ground state has M=+4.0000, gap=0.595802; lemma: min(D_s, D_c)=+0.595802  ok
+    B=+1.167772 inside : full-space ground state has M=+4.0000, gap=0.047664; lemma: min(D_s, D_c)=+0.047664  ok
+    B=-0.050000 outside: full-space ground state has M=-4.0000, gap=0.353315; lemma: min(D_s, D_c)=-0.400000  ok
+    B=+1.241604 outside: full-space ground state has M=+6.0000, gap=0.100000; lemma: min(D_s, D_c)=-0.100000  ok
+    B=+0.000000 inside : full-space ground state has M=+4.0000, gap=0.000000; lemma: min(D_s, D_c)=+0.000000  ok
+
+Jz=1.6 mu=-0.04 Jz: sector gap D_s=1.487906; window of B: (+0.131233, +1.123229); best global gap 1.122648 at B=+0.561759; m_s=+0.7779; C_1=1.3076
+    B=+0.151073 inside : full-space ground state has M=+4.0000, gap=0.158719; lemma: min(D_s, D_c)=+0.158719  ok
+    B=+0.379232 inside : full-space ground state has M=+4.0000, gap=0.757593; lemma: min(D_s, D_c)=+0.757593  ok
+    B=+0.627231 inside : full-space ground state has M=+4.0000, gap=0.991996; lemma: min(D_s, D_c)=+0.991996  ok
+    B=+0.875230 inside : full-space ground state has M=+4.0000, gap=0.495998; lemma: min(D_s, D_c)=+0.495998  ok
+    B=+1.103389 inside : full-space ground state has M=+4.0000, gap=0.039680; lemma: min(D_s, D_c)=+0.039680  ok
+    B=+0.081233 outside: full-space ground state has M=-4.0000, gap=0.321394; lemma: min(D_s, D_c)=-0.400000  ok
+    B=+1.173229 outside: full-space ground state has M=+6.0000, gap=0.100000; lemma: min(D_s, D_c)=-0.100000  ok
+    B=+0.000000 outside: full-space ground state has M=-4.0000, gap=0.483860; lemma: min(D_s, D_c)=-1.049864  ok
+
+Jz=1.6 mu=+0.04 Jz: sector gap D_s=2.028609; window of B: (-0.131233, +1.260472); best global gap 1.502346 at B=+0.509299; m_s=+0.8547; C_1=0.9038
+    B=-0.103399 inside : full-space ground state has M=+4.0000, gap=0.222673; lemma: min(D_s, D_c)=+0.222673  ok
+    B=+0.216693 inside : full-space ground state has M=+4.0000, gap=0.917247; lemma: min(D_s, D_c)=+0.917247  ok
+    B=+0.564620 inside : full-space ground state has M=+4.0000, gap=1.391705; lemma: min(D_s, D_c)=+1.391705  ok
+    B=+0.912546 inside : full-space ground state has M=+4.0000, gap=0.695853; lemma: min(D_s, D_c)=+0.695853  ok
+    B=+1.232638 inside : full-space ground state has M=+4.0000, gap=0.055668; lemma: min(D_s, D_c)=+0.055668  ok
+    B=-0.181233 outside: full-space ground state has M=-4.0000, gap=0.361595; lemma: min(D_s, D_c)=-0.400000  ok
+    B=+1.310472 outside: full-space ground state has M=+6.0000, gap=0.100000; lemma: min(D_s, D_c)=-0.100000  ok
+    B=+0.000000 inside : full-space ground state has M=+4.0000, gap=0.483860; lemma: min(D_s, D_c)=+0.483860  ok
+
+Jz=1.6 mu=-0.20 Jz: sector gap D_s=0.473773; window of B: (+0.613371, +0.924330); best global gap 0.327213 at B=+0.760688; m_s=+0.3715; C_1=2.5171
+    B=+0.619590 inside : full-space ground state has M=+4.0000, gap=0.042281; lemma: min(D_s, D_c)=+0.042281  ok
+    B=+0.691111 inside : full-space ground state has M=+4.0000, gap=0.188059; lemma: min(D_s, D_c)=+0.188059  ok
+    B=+0.768850 inside : full-space ground state has M=+4.0000, gap=0.310958; lemma: min(D_s, D_c)=+0.310958  ok
+    B=+0.846590 inside : full-space ground state has M=+4.0000, gap=0.155479; lemma: min(D_s, D_c)=+0.155479  ok
+    B=+0.918110 inside : full-space ground state has M=+4.0000, gap=0.012438; lemma: min(D_s, D_c)=+0.012438  ok
+    B=+0.563371 outside: full-space ground state has M=-4.0000, gap=0.107647; lemma: min(D_s, D_c)=-0.400000  ok
+    B=+0.974330 outside: full-space ground state has M=+6.0000, gap=0.100000; lemma: min(D_s, D_c)=-0.100000  ok
+    B=+0.000000 outside: full-space ground state has M=-4.0000, gap=1.234389; lemma: min(D_s, D_c)=-4.906970  ok
+
+Jz=4.0 mu=+0.00 Jz: sector gap D_s=4.051500; window of B: (+0.000000, +2.950065); best global gap 3.635341 at B=+1.132087; m_s=+0.9605; C_1=0.2744
+    B=+0.059001 inside : full-space ground state has M=+4.0000, gap=0.472010; lemma: min(D_s, D_c)=+0.472010  ok
+    B=+0.737516 inside : full-space ground state has M=+4.0000, gap=2.846199; lemma: min(D_s, D_c)=+2.846199  ok
+    B=+1.475033 inside : full-space ground state has M=+4.0000, gap=2.950065; lemma: min(D_s, D_c)=+2.950065  ok
+    B=+2.212549 inside : full-space ground state has M=+4.0000, gap=1.475033; lemma: min(D_s, D_c)=+1.475033  ok
+    B=+2.891064 inside : full-space ground state has M=+4.0000, gap=0.118003; lemma: min(D_s, D_c)=+0.118003  ok
+    B=-0.050000 outside: full-space ground state has M=-4.0000, gap=0.400000; lemma: min(D_s, D_c)=-0.400000  ok
+    B=+3.000065 outside: full-space ground state has M=+6.0000, gap=0.100000; lemma: min(D_s, D_c)=-0.100000  ok
+    B=+0.000000 outside: full-space ground state has M=+4.0000, gap=0.000000; lemma: min(D_s, D_c)=-0.000000  ok
+
+Jz=4.0 mu=-0.04 Jz: sector gap D_s=3.365573; window of B: (+0.383882, +2.756828); best global gap 3.090606 at B=+1.211447; m_s=+0.9465; C_1=0.3704
+    B=+0.431341 inside : full-space ground state has M=+4.0000, gap=0.379671; lemma: min(D_s, D_c)=+0.379671  ok
+    B=+0.977118 inside : full-space ground state has M=+4.0000, gap=2.621949; lemma: min(D_s, D_c)=+2.621949  ok
+    B=+1.570355 inside : full-space ground state has M=+4.0000, gap=2.372946; lemma: min(D_s, D_c)=+2.372946  ok
+    B=+2.163591 inside : full-space ground state has M=+4.0000, gap=1.186473; lemma: min(D_s, D_c)=+1.186473  ok
+    B=+2.709369 inside : full-space ground state has M=+4.0000, gap=0.094918; lemma: min(D_s, D_c)=+0.094918  ok
+    B=+0.333882 outside: full-space ground state has M=-4.0000, gap=0.400000; lemma: min(D_s, D_c)=-0.400000  ok
+    B=+2.806828 outside: full-space ground state has M=+6.0000, gap=0.100000; lemma: min(D_s, D_c)=-0.100000  ok
+    B=+0.000000 outside: full-space ground state has M=-4.0000, gap=1.930709; lemma: min(D_s, D_c)=-3.071055  ok
+
+Jz=4.0 mu=+0.04 Jz: sector gap D_s=4.711061; window of B: (-0.383882, +3.129452); best global gap 4.094791 at B=+1.082057; m_s=+0.9695; C_1=0.2119
+    B=-0.313615 inside : full-space ground state has M=+4.0000, gap=0.562133; lemma: min(D_s, D_c)=+0.562133  ok
+    B=+0.494452 inside : full-space ground state has M=+4.0000, gap=2.919613; lemma: min(D_s, D_c)=+2.919613  ok
+    B=+1.372785 inside : full-space ground state has M=+4.0000, gap=3.513334; lemma: min(D_s, D_c)=+3.513334  ok
+    B=+2.251119 inside : full-space ground state has M=+4.0000, gap=1.756667; lemma: min(D_s, D_c)=+1.756667  ok
+    B=+3.059186 inside : full-space ground state has M=+4.0000, gap=0.140533; lemma: min(D_s, D_c)=+0.140533  ok
+    B=-0.433882 outside: full-space ground state has M=-4.0000, gap=0.400000; lemma: min(D_s, D_c)=-0.400000  ok
+    B=+3.179452 outside: full-space ground state has M=+6.0000, gap=0.100000; lemma: min(D_s, D_c)=-0.100000  ok
+    B=+0.000000 inside : full-space ground state has M=+4.0000, gap=1.930709; lemma: min(D_s, D_c)=+1.930709  ok
+
+Jz=4.0 mu=-0.20 Jz: sector gap D_s=0.071697; window of B: (+1.776297, +1.825275); best global gap 0.053509 at B=+1.798521; m_s=-0.0152; C_1=1.9088
+    B=+1.777277 inside : full-space ground state has M=+4.0000, gap=0.003918; lemma: min(D_s, D_c)=+0.003918  ok
+    B=+1.788542 inside : full-space ground state has M=+4.0000, gap=0.033553; lemma: min(D_s, D_c)=+0.033553  ok
+    B=+1.800786 inside : full-space ground state has M=+4.0000, gap=0.048978; lemma: min(D_s, D_c)=+0.048978  ok
+    B=+1.813031 inside : full-space ground state has M=+4.0000, gap=0.024489; lemma: min(D_s, D_c)=+0.024489  ok
+    B=+1.824296 inside : full-space ground state has M=+4.0000, gap=0.001959; lemma: min(D_s, D_c)=+0.001959  ok
+    B=+1.726297 outside: full-space ground state has M=-4.0000, gap=0.046344; lemma: min(D_s, D_c)=-0.292951  ok
+    B=+1.875275 outside: full-space ground state has M=+6.0000, gap=0.100000; lemma: min(D_s, D_c)=-0.100000  ok
+    B=+0.000000 outside: full-space ground state has M=-4.0000, gap=3.498938; lemma: min(D_s, D_c)=-14.103327  ok
+
+Part 1: 64 comparisons with the full-space diagonalization, failures: 0
+============================================================================================================
+Part 2: heavy-hex patch d = 3 (n = 19, Neel sector 11 up / 8 down, M0 = 3), all 20 sectors
+  Jz=1.6 mu=+0.00 Jz: D_s=0.96235; window of B/Jz: (+0.000000, +0.364958); best global gap 0.77283 at B=0.1234 Jz; gap at B=3Jz/8: nan; m_s=+0.7329; C_1=1.4890   (4 s)
+  Jz=4.0 mu=+0.00 Jz: D_s=3.06175; window of B/Jz: (+0.000000, +0.425208); best global gap 2.55125 at B=0.1063 Jz; gap at B=3Jz/8: 0.40166; m_s=+0.9528; C_1=0.2596   (4 s)
+  Jz=4.0 mu=-0.04 Jz: D_s=1.26665; window of B/Jz: (+0.240940, +0.332970); best global gap 0.55218 at B=0.2639 Jz; gap at B=3Jz/8: nan; m_s=+0.9298; C_1=0.4472   (5 s)
+  Jz=4.0 mu=-0.08 Jz: D_s=0.00552; window of B/Jz: (+0.432966, +0.398972); EMPTY window (no B makes the sector ground state the global one); m_s=-0.4731; C_1=4.9672   (4 s)
+  reports/level-theory.md, same quantities: Jz=1.6: D_s 0.962, window (0, 0.365), best 0.772 at 0.123, C_1 1.49;
+     Jz=4: D_s 3.061, window (0, 0.425), best 2.551 at 0.106, gap at 3Jz/8 0.401, C_1 0.26;
+     Jz=4, mu=-0.04Jz: window (0.241, 0.333), best 0.552; Jz=4, mu=-0.08Jz: none
+total 28.7 s

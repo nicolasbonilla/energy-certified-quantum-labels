@@ -1,0 +1,4 @@
+overlap_check.py on fig_composite.pdf: 521 glyphs, 2470 stroked segments, 133 markers/nodes, 7447 background fills ignored
+text items touching something: 2
+  (c, d)                                   line
+  1.2                                      line

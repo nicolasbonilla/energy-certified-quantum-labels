@@ -1,0 +1,70 @@
+== part A: exact full-range energy eps_full(n) = E_sat - E0, open chain, Z at site c ==
+   (kappa_A = 2 + 2 + 2h for an interior site; the reset bound says full range once eps >= kappa_A)
+  h=1.5 n= 3  E0=-4.83241479  eps_full=1.226864  kappa_A/eps_full=5.706
+  h=1.5 n= 4  E0=-6.50389156  eps_full=1.198791  kappa_A/eps_full=5.839
+  h=1.5 n= 5  E0=-8.17568688  eps_full=1.171037  kappa_A/eps_full=5.978
+  h=1.5 n= 6  E0=-9.84757147  eps_full=1.162466  kappa_A/eps_full=6.022
+  h=1.5 n= 7  E0=-11.51948366  eps_full=1.153924  kappa_A/eps_full=6.066
+  h=1.5 n= 8  E0=-13.19140495  eps_full=1.150898  kappa_A/eps_full=6.082
+  h=1.5 n= 9  E0=-14.86332939  eps_full=1.147874  kappa_A/eps_full=6.098
+  h=1.5 n=10  E0=-16.53525495  eps_full=1.146729  kappa_A/eps_full=6.104
+  h=1.5 n=11  E0=-18.20718092  eps_full=1.145584  kappa_A/eps_full=6.110
+  h=1.5 n=12  E0=-19.87910704  eps_full=1.145134  kappa_A/eps_full=6.113
+  h=1.5 n=13  E0=-21.55103323  eps_full=1.144683  kappa_A/eps_full=6.115
+  h=1.5 n=14  E0=-23.22295943  eps_full=1.144502  kappa_A/eps_full=6.116
+  h=1.5 n=15  E0=-24.89488565  eps_full=1.144321  kappa_A/eps_full=6.117
+  h=1.5 n=16  E0=-26.56681187  eps_full=1.144246  kappa_A/eps_full=6.118
+  h=1.5 n=17  E0=-28.23873809  eps_full=1.144172  kappa_A/eps_full=6.118
+  h=1.5 n=18  E0=-29.91066431  eps_full=1.144141  kappa_A/eps_full=6.118
+  h=1.5 n=19  E0=-31.58259053  eps_full=1.144111  kappa_A/eps_full=6.118
+  h=1.5 n=20  E0=-33.25451675  eps_full=1.144098  kappa_A/eps_full=6.118
+  h=1.5 n=21  E0=-34.92644298  eps_full=1.144085  kappa_A/eps_full=6.118
+  h=1.5 n=22  E0=-36.59836920  eps_full=1.144079  kappa_A/eps_full=6.118
+  h=1.5 n=23  E0=-38.27029542  eps_full=1.144074  kappa_A/eps_full=6.118
+  h=1.5 n=24  E0=-39.94222164  eps_full=1.144072  kappa_A/eps_full=6.118
+  h=1.5 n=25  E0=-41.61414786  eps_full=1.144069  kappa_A/eps_full=6.119
+  h=1.5 n=26  E0=-43.28607408  eps_full=1.144069  kappa_A/eps_full=6.119
+  h=1.5 n=27  E0=-44.95800030  eps_full=1.144068  kappa_A/eps_full=6.119
+  check: n=8 E0(ED)=-13.19140495  E0(free fermions)=-13.19140495
+  check: n=10 E0(ED)=-16.53525495  E0(free fermions)=-16.53525495
+  h=1.5 de=0.05: N*=140.0; smallest n with n*de >= eps_full(n): 23; eps_full(n=27)/de = 22.88; N*/that = 6.12
+  h=1.5 de=0.1: N*=70.0; smallest n with n*de >= eps_full(n): 12; eps_full(n=27)/de = 11.44; N*/that = 6.12
+  h=1.5 de=0.2: N*=35.0; smallest n with n*de >= eps_full(n): 6; eps_full(n=27)/de = 5.72; N*/that = 6.12
+  time 7 s
+
+== part B: exact width of Z at fixed error per site (inner = explicit states, outer = dual) ==
+  open-centre n= 4 site=2 E0=-6.503892 eps_full=1.1988 | de=0.05: w=1.1631/1.1631  | de=0.1: w=1.5498/1.5498  | de=0.2: w=1.9124/1.9124    [7 s, 44 solves]
+  open-centre n= 5 site=2 E0=-8.175687 eps_full=1.1710 | de=0.05: w=1.3047/1.3047  | de=0.1: w=1.6995/1.6995  | de=0.2: w=1.9857/1.9857    [7 s, 45 solves]
+  open-centre n= 6 site=3 E0=-9.847571 eps_full=1.1625 | de=0.05: w=1.4149/1.4149  | de=0.1: w=1.8026/1.8026  | de=0.2: w=2.0000/2.0000*   [7 s, 39 solves]
+  open-centre n= 7 site=3 E0=-11.519484 eps_full=1.1539 | de=0.05: w=1.5111/1.5111  | de=0.1: w=1.8797/1.8797  | de=0.2: w=2.0000/2.0000*   [8 s, 39 solves]
+  open-centre n= 8 site=4 E0=-13.191405 eps_full=1.1509 | de=0.05: w=1.5905/1.5905  | de=0.1: w=1.9327/1.9327  | de=0.2: w=2.0000/2.0000*   [12 s, 37 solves]
+  open-centre n= 9 site=4 E0=-14.863329 eps_full=1.1479 | de=0.05: w=1.6599/1.6599  | de=0.1: w=1.9685/1.9685  | de=0.2: w=2.0000/2.0000*   [14 s, 39 solves]
+  open-centre n=10 site=5 E0=-16.535255 eps_full=1.1467 | de=0.05: w=1.7190/1.7190  | de=0.1: w=1.9896/1.9896  | de=0.2: w=2.0000/2.0000*   [15 s, 39 solves]
+  open-centre n=11 site=5 E0=-18.207181 eps_full=1.1456 | de=0.05: w=1.7703/1.7703  | de=0.1: w=1.9991/1.9991  | de=0.2: w=2.0000/2.0000*   [18 s, 35 solves]
+  open-centre n=12 site=6 E0=-19.879107 eps_full=1.1451 | de=0.05: w=1.8144/1.8144  | de=0.1: w=2.0000/2.0000* | de=0.2: w=2.0000/2.0000*   [23 s, 35 solves]
+  periodic    n= 4 site=0 E0=-6.760009 eps_full=1.0770 | de=0.05: w=1.2662/1.2662  | de=0.1: w=1.6529/1.6529  | de=0.2: w=1.9588/1.9588    [23 s, 41 solves]
+  periodic    n= 5 site=0 E0=-8.401898 eps_full=1.0903 | de=0.05: w=1.3795/1.3795  | de=0.1: w=1.7624/1.7624  | de=0.2: w=1.9962/1.9962    [24 s, 44 solves]
+  periodic    n= 6 site=0 E0=-10.056946 eps_full=1.1035 | de=0.05: w=1.4707/1.4707  | de=0.1: w=1.8415/1.8415  | de=0.2: w=2.0000/2.0000*   [24 s, 39 solves]
+  periodic    n= 7 site=0 E0=-11.718999 eps_full=1.1144 | de=0.05: w=1.5482/1.5482  | de=0.1: w=1.9004/1.9004  | de=0.2: w=2.0000/2.0000*   [26 s, 38 solves]
+  periodic    n= 8 site=0 E0=-13.385005 eps_full=1.1230 | de=0.05: w=1.6160/1.6160  | de=0.1: w=1.9434/1.9434  | de=0.2: w=2.0000/2.0000*   [33 s, 40 solves]
+  periodic    n= 9 site=0 E0=-15.053324 eps_full=1.1293 | de=0.05: w=1.6761/1.6761  | de=0.1: w=1.9732/1.9732  | de=0.2: w=2.0000/2.0000*   [34 s, 40 solves]
+  periodic    n=10 site=0 E0=-16.723025 eps_full=1.1338 | de=0.05: w=1.7294/1.7294  | de=0.1: w=1.9914/1.9914  | de=0.2: w=2.0000/2.0000*   [37 s, 37 solves]
+  periodic    n=11 site=0 E0=-18.393566 eps_full=1.1370 | de=0.05: w=1.7767/1.7767  | de=0.1: w=1.9994/1.9994  | de=0.2: w=2.0000/2.0000*   [39 s, 38 solves]
+  periodic    n=12 site=0 E0=-20.064625 eps_full=1.1392 | de=0.05: w=1.8184/1.8184  | de=0.1: w=2.0000/2.0000* | de=0.2: w=2.0000/2.0000*   [42 s, 35 solves]
+  open-centre de=0.05: N*=140; first n with width >= 99% of range: None (even n only: None); first n with EXACTLY the full range: None;  N*/n99 = nan, N*/n_full = nan
+  open-centre de=0.1: N*=70; first n with width >= 99% of range: 10 (even n only: 10); first n with EXACTLY the full range: 12;  N*/n99 = 7.00, N*/n_full = 5.83
+  open-centre de=0.2: N*=35; first n with width >= 99% of range: 5 (even n only: 6); first n with EXACTLY the full range: 6;  N*/n99 = 7.00, N*/n_full = 5.83
+  periodic    de=0.05: N*=140; first n with width >= 99% of range: None (even n only: None); first n with EXACTLY the full range: None;  N*/n99 = nan, N*/n_full = nan
+  periodic    de=0.1: N*=70; first n with width >= 99% of range: 10 (even n only: 10); first n with EXACTLY the full range: 12;  N*/n99 = 7.00, N*/n_full = 5.83
+  periodic    de=0.2: N*=35; first n with width >= 99% of range: 5 (even n only: 6); first n with EXACTLY the full range: 6;  N*/n99 = 7.00, N*/n_full = 5.83
+
+== part C: energy at which the width reaches 99 % of the range, and looseness for other fields h (n = 10) ==
+  h=0.8: kappa_A=  5.6  gap=0.0802  eps_99=0.1369  eps_full=0.2324   kappa/eps_99= 40.90   kappa/eps_full= 24.10   [43 s]
+  h=1.0: kappa_A=  6.0  gap=0.2989  eps_99=0.3466  eps_full=0.4720   kappa/eps_99= 17.31   kappa/eps_full= 12.71   [45 s]
+  h=1.2: kappa_A=  6.4  gap=0.6190  eps_99=0.5954  eps_full=0.7508   kappa/eps_99= 10.75   kappa/eps_full=  8.52   [46 s]
+  h=1.5: kappa_A=  7.0  gap=1.1672  eps_99=0.9465  eps_full=1.1467   kappa/eps_99=  7.40   kappa/eps_full=  6.10   [50 s]
+  h=2.0: kappa_A=  8.0  gap=2.1333  eps_99=1.4681  eps_full=1.7415   kappa/eps_99=  5.45   kappa/eps_full=  4.59   [53 s]
+  h=3.0: kappa_A= 10.0  gap=4.1101  eps_99=2.4135  eps_full=2.8309   kappa/eps_99=  4.14   kappa/eps_full=  3.53   [54 s]
+  h=5.0: kappa_A= 14.0  gap=8.0964  eps_99=4.1976  eps_full=4.8995   kappa/eps_99=  3.34   kappa/eps_full=  2.86   [56 s]
+total time 56 s
+EXIT 0

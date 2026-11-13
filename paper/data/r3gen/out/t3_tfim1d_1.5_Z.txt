@@ -1,0 +1,34 @@
+tfim1d_1.5_Z n= 6 Zbar  de=1.0e-04 eps/gap=   0.00 | exact w=0.06050 (u+=0.03025, u-=0.03025) | 2sqrt(2chi0 de)=0.06051 | sandwich lo=0.04898 hi=0.06051 [True] | Manchanda: radius exact=0.03025, Eq.10 upper=0.03044, Thm2 lower=0.03025 (applies: eps<=Dbar/2=0.5264? True)
+tfim1d_1.5_Z n= 6 Zbar  de=1.0e-03 eps/gap=   0.01 | exact w=0.19094 (u+=0.09547, u-=0.09547) | 2sqrt(2chi0 de)=0.19135 | sandwich lo=0.15490 hi=0.19135 [True] | Manchanda: radius exact=0.09547, Eq.10 upper=0.09732, Thm2 lower=0.09540 (applies: eps<=Dbar/2=0.5264? True)
+tfim1d_1.5_Z n= 6 Zbar  de=1.0e-02 eps/gap=   0.06 | exact w=0.59213 (u+=0.29607, u-=0.29607) | 2sqrt(2chi0 de)=0.60510 | sandwich lo=0.48983 hi=0.60510 [True] | Manchanda: radius exact=0.29607, Eq.10 upper=0.31348, Thm2 lower=0.29380 (applies: eps<=Dbar/2=0.5264? True)
+tfim1d_1.5_Z n= 6 Zbar  de=3.0e-02 eps/gap=   0.17 | exact w=0.98077 (u+=0.49038, u-=0.49038) | 2sqrt(2chi0 de)=1.04806 | sandwich lo=0.84840 hi=1.04806 [True] | Manchanda: radius exact=0.49038, Eq.10 upper=0.54186, Thm2 lower=0.47714 (applies: eps<=Dbar/2=0.5264? True)
+tfim1d_1.5_Z n= 6 Zbar  de=1.0e-01 eps/gap=   0.57 | exact w=1.52693 (u+=0.76346, u-=0.76346) | 2sqrt(2chi0 de)=1.91349 | sandwich lo=0.89973 hi=1.91349 [True] | Manchanda: radius exact=0.76346, Eq.10 upper=0.82648, Thm2 lower=nan (applies: eps<=Dbar/2=0.5264? False)
+tfim1d_1.5_Z n= 6 Zbar  de=3.0e-01 eps/gap=   1.71 | exact w=1.89648 (u+=0.94824, u-=0.94824) | 2sqrt(2chi0 de)=3.31426 | sandwich lo=0.89973 hi=3.37304 [True] | Manchanda: radius exact=0.94824, Eq.10 upper=1.21042, Thm2 lower=nan (applies: eps<=Dbar/2=0.5264? False)
+   n=6: chi0 (finite diff)=4.57680; Manchanda chi_O*n=4.57685; sum-rule bound 2v^2/s1=4.49621 [True]; gap=1.0523
+tfim1d_1.5_Z n= 8 Zbar  de=1.0e-04 eps/gap=   0.00 | exact w=0.06282 (u+=0.03141, u-=0.03141) | 2sqrt(2chi0 de)=0.06283 | sandwich lo=0.04949 hi=0.06283 [True] | Manchanda: radius exact=0.03141, Eq.10 upper=0.03168, Thm2 lower=0.03140 (applies: eps<=Dbar/2=0.5099? True)
+tfim1d_1.5_Z n= 8 Zbar  de=1.0e-03 eps/gap=   0.01 | exact w=0.19819 (u+=0.09909, u-=0.09909) | 2sqrt(2chi0 de)=0.19870 | sandwich lo=0.15649 hi=0.19870 [True] | Manchanda: radius exact=0.09909, Eq.10 upper=0.10177, Thm2 lower=0.09896 (applies: eps<=Dbar/2=0.5099? True)
+tfim1d_1.5_Z n= 8 Zbar  de=1.0e-02 eps/gap=   0.08 | exact w=0.61231 (u+=0.30615, u-=0.30615) | 2sqrt(2chi0 de)=0.62833 | sandwich lo=0.49487 hi=0.62833 [True] | Manchanda: radius exact=0.30615, Eq.10 upper=0.33057, Thm2 lower=0.30159 (applies: eps<=Dbar/2=0.5099? True)
+tfim1d_1.5_Z n= 8 Zbar  de=3.0e-02 eps/gap=   0.24 | exact w=1.00610 (u+=0.50305, u-=0.50305) | 2sqrt(2chi0 de)=1.08830 | sandwich lo=0.85714 hi=1.08830 [True] | Manchanda: radius exact=0.50305, Eq.10 upper=0.57374, Thm2 lower=0.47584 (applies: eps<=Dbar/2=0.5099? True)
+tfim1d_1.5_Z n= 8 Zbar  de=1.0e-01 eps/gap=   0.78 | exact w=1.53958 (u+=0.76979, u-=0.76979) | 2sqrt(2chi0 de)=1.98695 | sandwich lo=0.91836 hi=1.98695 [True] | Manchanda: radius exact=0.76979, Eq.10 upper=0.84197, Thm2 lower=nan (applies: eps<=Dbar/2=0.5099? False)
+tfim1d_1.5_Z n= 8 Zbar  de=3.0e-01 eps/gap=   2.35 | exact w=1.89877 (u+=0.94939, u-=0.94939) | 2sqrt(2chi0 de)=3.44150 | sandwich lo=0.91836 hi=3.48049 [True] | Manchanda: radius exact=0.94939, Eq.10 upper=1.40294, Thm2 lower=nan (applies: eps<=Dbar/2=0.5099? False)
+   n=8: chi0 (finite diff)=4.93497; Manchanda chi_O*n=4.93504; sum-rule bound 2v^2/s1=4.86157 [True]; gap=1.0194
+tfim1d_1.5_Z n=10 Zbar  de=1.0e-04 eps/gap=   0.00 | exact w=0.06374 (u+=0.03187, u-=0.03187) | 2sqrt(2chi0 de)=0.06376 | sandwich lo=0.04963 hi=0.06376 [True]
+tfim1d_1.5_Z n=10 Zbar  de=1.0e-03 eps/gap=   0.01 | exact w=0.20105 (u+=0.10053, u-=0.10053) | 2sqrt(2chi0 de)=0.20161 | sandwich lo=0.15695 hi=0.20161 [True]
+tfim1d_1.5_Z n=10 Zbar  de=1.0e-02 eps/gap=   0.10 | exact w=0.61988 (u+=0.30994, u-=0.30994) | 2sqrt(2chi0 de)=0.63756 | sandwich lo=0.49631 hi=0.63756 [True]
+tfim1d_1.5_Z n=10 Zbar  de=3.0e-02 eps/gap=   0.30 | exact w=1.01454 (u+=0.50727, u-=0.50727) | 2sqrt(2chi0 de)=1.10428 | sandwich lo=0.85963 hi=1.10428 [True]
+tfim1d_1.5_Z n=10 Zbar  de=1.0e-01 eps/gap=   0.99 | exact w=1.54297 (u+=0.77149, u-=0.77149) | 2sqrt(2chi0 de)=2.01613 | sandwich lo=0.92370 hi=2.01613 [True]
+tfim1d_1.5_Z n=10 Zbar  de=3.0e-01 eps/gap=   2.98 | exact w=1.89939 (u+=0.94969, u-=0.94969) | 2sqrt(2chi0 de)=3.49204 | sandwich lo=0.92370 hi=3.52429 [True]
+tfim1d_1.5_Z n=12 Zbar  de=1.0e-04 eps/gap=   0.00 | exact w=0.06411 (u+=0.03205, u-=0.03205) | 2sqrt(2chi0 de)=0.06413 | sandwich lo=0.04967 hi=0.06413 [True]
+tfim1d_1.5_Z n=12 Zbar  de=1.0e-03 eps/gap=   0.01 | exact w=0.20220 (u+=0.10110, u-=0.10110) | 2sqrt(2chi0 de)=0.20279 | sandwich lo=0.15709 hi=0.20279 [True]
+tfim1d_1.5_Z n=12 Zbar  de=1.0e-02 eps/gap=   0.12 | exact w=0.62276 (u+=0.31138, u-=0.31138) | 2sqrt(2chi0 de)=0.64127 | sandwich lo=0.49675 hi=0.64127 [True]
+tfim1d_1.5_Z n=12 Zbar  de=3.0e-02 eps/gap=   0.36 | exact w=1.01742 (u+=0.50871, u-=0.50871) | 2sqrt(2chi0 de)=1.11070 | sandwich lo=0.86040 hi=1.11070 [True]
+tfim1d_1.5_Z n=12 Zbar  de=1.0e-01 eps/gap=   1.20 | exact w=1.54400 (u+=0.77200, u-=0.77200) | 2sqrt(2chi0 de)=2.02786 | sandwich lo=0.92535 hi=2.02786 [True]
+tfim1d_1.5_Z n=12 Zbar  de=3.0e-01 eps/gap=   3.59 | exact w=1.89958 (u+=0.94979, u-=0.94979) | 2sqrt(2chi0 de)=3.51236 | sandwich lo=0.92535 hi=3.54208 [True]
+intensivity: w(n)/w(n_max) at fixed de:
+  de=1.0e-04: 0.0605, 0.0628, 0.0637, 0.0641
+  de=1.0e-03: 0.1909, 0.1982, 0.2011, 0.2022
+  de=1.0e-02: 0.5921, 0.6123, 0.6199, 0.6228
+  de=3.0e-02: 0.9808, 1.0061, 1.0145, 1.0174
+  de=1.0e-01: 1.5269, 1.5396, 1.5430, 1.5440
+  de=3.0e-01: 1.8965, 1.8988, 1.8994, 1.8996
+time 27.3 s

@@ -1,0 +1,2 @@
+2026-11-12T19:43:09Z watching: first start 2026-11-12T19:43:03Z, cap 8 h, everything is stopped at 2026-11-13T03:45:03Z (pid 29932)
+2026-11-12T21:56:40Z scheduler has ended and no E1 process is left: nothing to stop

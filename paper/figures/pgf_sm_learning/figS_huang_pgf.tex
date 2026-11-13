@@ -1,0 +1,136 @@
+% figS_huang_pgf.tex -- Supplemental figure of the second benchmark (fig:huang) as a native PGFPlots figure.
+% Data: hu_*.dat in this folder, written by export_sm.py from the arrays ../figS_huang.py plots (checks in
+% export_check.txt). Compile in this folder with pdflatex. Style as ../fig_bias_law.tex and Fig. 1.
+% Colours as in main Fig. 1(b): teal family = averages, orange family = single pairs; black line = width tau.
+% Panel (d) (pair classes, all single pairs) uses a separate categorical set that avoids teal, orange and grey.
+\documentclass[10pt,border=1pt]{standalone}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{amsmath}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\usetikzlibrary{calc}
+\definecolor{cnn}{HTML}{169B88}    % average, nearest neighbours (teal)
+\definecolor{cd2}{HTML}{0B5F53}    % average, diagonal pairs (dark teal)
+\definecolor{ccent}{HTML}{CF5521}  % central bond (orange)
+\definecolor{cfar}{HTML}{8A3A12}   % end-to-end pair (dark orange-brown)
+\definecolor{cfix}{HTML}{E08E0B}   % fixed bond (7,12) (amber)
+\definecolor{knn}{HTML}{0072B2}
+\definecolor{kdiag}{HTML}{CC79A7}
+\definecolor{kle}{HTML}{2B3A67}
+\definecolor{kgt}{HTML}{B5911B}
+\definecolor{ink}{HTML}{1D1D1D}
+\definecolor{mute}{HTML}{6F6F6B}
+\definecolor{band}{HTML}{EFEEEA}
+\pgfplotsset{
+  every axis/.append style={
+    scale only axis, tick label style={font=\footnotesize}, label style={font=\small},
+    axis line style={line width=0.5pt}, every tick/.style={line width=0.5pt, black}, tick align=inside,
+    tick pos=left, legend cell align=left, unbounded coords=jump,
+    legend style={font=\footnotesize, draw=none, fill=none, inner sep=1.5pt, row sep=0.5pt},
+  },
+  every axis plot/.append style={line join=round},
+  wax/.style={width=7.3cm, height=4.6cm, xmin=8.5e-4, xmax=1.18e-2, ymin=0.07, ymax=8,
+    xtick={0.001,0.002,0.005,0.01}, xticklabels={0.001,0.002,0.005,0.01},
+    ytick={0.1,0.2,0.5,1,2,5}, yticklabels={0.1,0.2,0.5,1,2,5}, xminorticks=false, yminorticks=false,
+    xlabel={energy error per spin $\delta e$}, ylabel={width$\,/\,\tau$}},
+  Cnn/.style={cnn, mark=*, mark size=1.7pt},
+  Cd2/.style={cd2, mark=square*, mark size=1.55pt},
+  Ccent/.style={ccent, mark=triangle*, mark size=2.1pt},
+  Cfar/.style={cfar, mark=diamond*, mark size=2.1pt},
+  Cfix/.style={cfix, mark=triangle*, mark size=2.1pt, mark options={rotate=180}},
+  outer/.style={line width=1.0pt},
+  inner/.style={line width=0.8pt, dash pattern=on 3pt off 2pt, no markers},
+  markimg/.style={legend image code/.code={\path[draw=none, fill=none] (0cm,0cm) -- (0.6cm,0cm);
+    \draw[##1] plot coordinates {(0.3cm,0cm)};}},
+}
+\newcommand{\wshade}{\fill[band] (axis cs:1e-3,0.07) rectangle (axis cs:1e-2,8);}
+\newcommand{\wtau}{\draw[ink, line width=0.8pt] (axis cs:8.5e-4,1) -- (axis cs:1.18e-2,1);}
+% (c): one label; #1 = label key
+\newcommand{\cset}[1]{%
+  \addplot[#1, no markers, line width=0.9pt, forget plot] table[x=x,y=de] {hu_c_#1_bars.dat};
+  \addplot[#1, only marks, forget plot, mark options={fill=white, line width=0.6pt}, mark size=2.9pt]
+    table[x=x,y=de_law] {hu_c_#1.dat};
+  \addplot[#1, only marks, forget plot] table[x=x,y=de_out] {hu_c_#1.dat};
+}
+\begin{document}
+\begin{tikzpicture}
+% =============================================================================================== (a) n = 20
+\begin{axis}[xmode=log, ymode=log, wax, name=pa, at={(0,0)}, anchor=north west,
+  legend to name=leghu, legend columns=5,
+  legend style={/tikz/every even column/.append style={column sep=2.5pt}},
+  legend image code/.code={\draw[mark repeat=2, mark phase=2, #1] plot coordinates {(0cm,0cm) (0.25cm,0cm) (0.5cm,0cm)};}]
+\wshade
+\wtau
+\addplot[Cnn, outer, forget plot] table[x=de,y=w_out] {hu_a_Cnn.dat};
+\addplot[Cd2, outer, forget plot] table[x=de,y=w_out] {hu_a_Cd2.dat};
+\addplot[Ccent, outer, forget plot] table[x=de,y=w_out] {hu_a_Ccent.dat};
+\addplot[Cfar, outer, forget plot] table[x=de,y=w_out] {hu_a_Cfar.dat};
+\addlegendimage{Cnn, outer}\addlegendentry{$\bar C_{\rm nn}$ (average)}
+\addlegendimage{Cd2, outer}\addlegendentry{$\bar C_{\rm diag}$ (average)}
+\addlegendimage{Ccent, outer}\addlegendentry{$C_{\rm cent}$ (central bond)}
+\addlegendimage{Cfar, outer}\addlegendentry{$C_{\rm far}$ (end to end)}
+\addlegendimage{Cfix, outer}\addlegendentry{$C_{(7,12)}$ (fixed bond)}
+\addlegendimage{mute, outer}\addlegendentry{outer width}
+\addlegendimage{mute, inner}\addlegendentry{inner width (rigorous)}
+\addlegendimage{ink, line width=0.8pt}\addlegendentry{width $=\tau=0.08$}
+\addlegendimage{legend image code/.code={\fill[band] (0cm,-0.12cm) rectangle (0.5cm,0.12cm);}}
+\addlegendentry{$\delta e\in[10^{-3},10^{-2}]$}
+\end{axis}
+% =============================================================================================== (b) n = 45
+\begin{axis}[xmode=log, ymode=log, wax, name=pb, at={($(pa.north east)+(1.8cm,0)$)}, anchor=north west]
+\wshade
+\wtau
+\addplot[Cnn, inner, forget plot] table[x=de,y=w_in] {hu_b_Cnn.dat};
+\addplot[Cd2, inner, forget plot] table[x=de,y=w_in] {hu_b_Cd2.dat};
+\addplot[Ccent, inner, forget plot] table[x=de,y=w_in] {hu_b_Ccent.dat};
+\addplot[Cfar, inner, forget plot] table[x=de,y=w_in] {hu_b_Cfar.dat};
+\addplot[Cfix, inner, forget plot] table[x=de,y=w_in] {hu_b_Cfix.dat};
+\addplot[Cnn, outer, forget plot] table[x=de,y=w_out] {hu_b_Cnn.dat};
+\addplot[Cd2, outer, forget plot] table[x=de,y=w_out] {hu_b_Cd2.dat};
+\addplot[Ccent, outer, forget plot] table[x=de,y=w_out] {hu_b_Ccent.dat};
+\addplot[Cfar, outer, forget plot] table[x=de,y=w_out] {hu_b_Cfar.dat};
+\addplot[Cfix, outer, forget plot] table[x=de,y=w_out] {hu_b_Cfix.dat};
+\end{axis}
+% =============================================================================================== (c) delta e* vs n
+\begin{axis}[ymode=log, name=pc, at={($(pa.south west)+(0,-2.05cm)$)}, anchor=north west, width=7.3cm, height=4.6cm,
+  xmin=14, xmax=51, ymin=1.2e-4, ymax=0.2, xtick={20,30,45}, yminorticks=false,
+  xlabel={number of spins $n$}, ylabel={$\delta e^{*}$ (largest certified $\delta e$)},
+  legend style={at={(0.5,0.44)}, anchor=center}]
+\fill[band] (axis cs:14,1e-3) rectangle (axis cs:51,1e-2);
+\cset{Cnn}\cset{Cd2}\cset{Ccent}\cset{Cfar}\cset{Cfix}
+\addlegendimage{markimg, only marks, mark=*, mark size=1.7pt, mute}
+\addlegendentry{computed (filled)}
+\addlegendimage{markimg, only marks, mark=*, mark size=2.9pt, mark options={fill=white, draw=mute, line width=0.6pt}}
+\addlegendentry{Eq.~(3) of the main text (open)}
+\addlegendimage{legend image code/.code={\draw[mute, line width=0.9pt] (0.3cm,-0.14cm) -- (0.3cm,0.14cm);}}
+\addlegendentry{inner--outer band (bar)}
+\end{axis}
+% =============================================================================================== (d) histogram, n = 20
+\begin{axis}[xmode=log, name=pd, at={($(pb.south west)+(0,-2.05cm)$)}, anchor=north west, width=7.3cm, height=4.6cm,
+  xmin=9e-5, xmax=4e-2, ymin=0, ymax=40, xminorticks=false,
+  xtick={1e-4,1e-3,1e-2}, ytick={0,10,20,30,40},
+  xlabel={$\delta e^{*}$ of each pair correlator $C_{ij}$, $n=20$}, ylabel={number of pairs},
+  legend style={at={(0.985,0.975)}, anchor=north east}]
+\fill[band] (axis cs:1e-3,0) rectangle (axis cs:1e-2,40);
+\addplot[knn, line width=1.1pt] table[x=x,y=count] {hu_d_nn.dat};
+\addlegendentry{nearest neighbours (93)}
+\addplot[kdiag, line width=1.1pt] table[x=x,y=count] {hu_d_diag.dat};
+\addlegendentry{diagonal pairs (72)}
+\addplot[kle, line width=1.0pt, dash pattern=on 3.5pt off 1.5pt] table[x=x,y=count] {hu_d_rle3.dat};
+\addlegendentry{other, $r\leq3$ (243)}
+\addplot[kgt, line width=1.1pt] table[x=x,y=count] {hu_d_rgt3.dat};
+\addlegendentry{other, $r>3$ (162)}
+\end{axis}
+% =============================================================================================== titles and legend
+\node[font=\small, anchor=base west] at ($(pa.outer north west |- pa.north)+(0,0.25cm)$)
+  {(a) $n=20$, instance (4,1), exact};
+\node[font=\small, anchor=base west] at ($(pb.outer north west |- pb.north)+(0,0.25cm)$)
+  {(b) $n=45$, instance (9,1)};
+\node[font=\small, anchor=base west] at ($(pc.outer north west |- pc.north)+(0,0.25cm)$)
+  {(c) $\delta e^{*}$ of each label against $n$};
+\node[font=\small, anchor=base west] at ($(pd.outer north west |- pd.north)+(0,0.25cm)$)
+  {(d) the benchmark's own labels (570 pairs)};
+\node[anchor=south] at ($(pa.north west)!0.5!(pb.north east)+(0,0.72cm)$) {\pgfplotslegendfromname{leghu}};
+\end{tikzpicture}
+\end{document}

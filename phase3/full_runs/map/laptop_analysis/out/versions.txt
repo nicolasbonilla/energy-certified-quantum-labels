@@ -1,0 +1,10 @@
+python 3.11.2 numpy 2.2.6 scipy 1.13.1 tenpy 1.1.0 /mnt/cj/sandbox/map_20261030T022613Z/pylib/tenpy/__init__.py cython True
+ldd (Debian GLIBC 2.36-9+deb12u14) 2.36
+CPU(s):                                  8
+Model name:                              Intel(R) Xeon(R) CPU @ 2.80GHz
+BIOS Model name:                           CPU @ 2.0GHz
+Thread(s) per core:                      2
+Core(s) per socket:                      4
+               total        used        free      shared  buff/cache   available
+Mem:              62           0          61           0           0          61
+/dev/sdb         30G   11G   20G  35% /mnt/cj

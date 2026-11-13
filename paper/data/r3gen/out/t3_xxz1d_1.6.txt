@@ -1,0 +1,31 @@
+xxz1d_1.6    n= 6 m_s   de=1.0e-04 eps/gap=   0.00 | exact w=0.10874 (u+=0.05437, u-=0.05437) | 2sqrt(2chi0 de)=0.10880 | sandwich lo=0.06198 hi=0.10880 [True] | Manchanda: radius exact=0.05437, Eq.10 upper=0.05465, Thm2 lower=0.05437 (applies: eps<=Dbar/2=0.2522? True)
+xxz1d_1.6    n= 6 m_s   de=1.0e-03 eps/gap=   0.01 | exact w=0.34219 (u+=0.17109, u-=0.17109) | 2sqrt(2chi0 de)=0.34404 | sandwich lo=0.19601 hi=0.34404 [True] | Manchanda: radius exact=0.17109, Eq.10 upper=0.17388, Thm2 lower=0.17100 (applies: eps<=Dbar/2=0.2522? True)
+xxz1d_1.6    n= 6 m_s   de=1.0e-02 eps/gap=   0.12 | exact w=1.02786 (u+=0.51393, u-=0.51393) | 2sqrt(2chi0 de)=1.08796 | sandwich lo=0.61984 hi=1.08796 [True] | Manchanda: radius exact=0.51393, Eq.10 upper=0.54297, Thm2 lower=0.51062 (applies: eps<=Dbar/2=0.2522? True)
+xxz1d_1.6    n= 6 m_s   de=3.0e-02 eps/gap=   0.36 | exact w=1.56656 (u+=0.78328, u-=0.78328) | 2sqrt(2chi0 de)=1.88441 | sandwich lo=1.07360 hi=1.88441 [True] | Manchanda: radius exact=0.78328, Eq.10 upper=0.88309, Thm2 lower=0.75562 (applies: eps<=Dbar/2=0.2522? True)
+xxz1d_1.6    n= 6 m_s   de=1.0e-01 eps/gap=   1.19 | exact w=1.95081 (u+=0.97540, u-=0.97540) | 2sqrt(2chi0 de)=3.44044 | sandwich lo=1.44077 hi=3.44044 [True] | Manchanda: radius exact=0.97540, Eq.10 upper=1.08392, Thm2 lower=nan (applies: eps<=Dbar/2=0.2522? False)
+   n=6: chi0 (finite diff)=14.79579; Manchanda chi_O*n=14.79698; sum-rule bound 2v^2/s1=12.95432 [True]; gap=0.5025
+xxz1d_1.6    n= 8 m_s   de=1.0e-04 eps/gap=   0.00 | exact w=0.14116 (u+=0.07058, u-=0.07058) | 2sqrt(2chi0 de)=0.14129 | sandwich lo=0.06369 hi=0.14129 [True] | Manchanda: radius exact=0.07058, Eq.10 upper=0.07107, Thm2 lower=0.07057 (applies: eps<=Dbar/2=0.1757? True)
+xxz1d_1.6    n= 8 m_s   de=1.0e-03 eps/gap=   0.02 | exact w=0.44217 (u+=0.22108, u-=0.22108) | 2sqrt(2chi0 de)=0.44681 | sandwich lo=0.20141 hi=0.44681 [True] | Manchanda: radius exact=0.22108, Eq.10 upper=0.22588, Thm2 lower=0.22087 (applies: eps<=Dbar/2=0.1757? True)
+xxz1d_1.6    n= 8 m_s   de=1.0e-02 eps/gap=   0.23 | exact w=1.26050 (u+=0.63025, u-=0.63025) | 2sqrt(2chi0 de)=1.41292 | sandwich lo=0.63692 hi=1.41292 [True] | Manchanda: radius exact=0.63025, Eq.10 upper=0.68724, Thm2 lower=0.62095 (applies: eps<=Dbar/2=0.1757? True)
+xxz1d_1.6    n= 8 m_s   de=3.0e-02 eps/gap=   0.69 | exact w=1.70760 (u+=0.85380, u-=0.85380) | 2sqrt(2chi0 de)=2.44726 | sandwich lo=1.10318 hi=2.44726 [True] | Manchanda: radius exact=0.85380, Eq.10 upper=0.90332, Thm2 lower=nan (applies: eps<=Dbar/2=0.1757? False)
+xxz1d_1.6    n= 8 m_s   de=1.0e-01 eps/gap=   2.29 | exact w=1.96922 (u+=0.98461, u-=0.98461) | 2sqrt(2chi0 de)=4.46806 | sandwich lo=1.52124 hi=4.46806 [True] | Manchanda: radius exact=0.98461, Eq.10 upper=1.24969, Thm2 lower=nan (applies: eps<=Dbar/2=0.1757? False)
+   n=8: chi0 (finite diff)=24.95443; Manchanda chi_O*n=24.96095; sum-rule bound 2v^2/s1=19.19895 [True]; gap=0.3495
+xxz1d_1.6    n=10 m_s   de=1.0e-04 eps/gap=   0.00 | exact w=0.17418 (u+=0.08709, u-=0.08709) | 2sqrt(2chi0 de)=0.17443 | sandwich lo=0.06445 hi=0.17443 [True] | Manchanda: radius exact=0.08709, Eq.10 upper=0.08783, Thm2 lower=0.08708 (applies: eps<=Dbar/2=0.1313? True)
+xxz1d_1.6    n=10 m_s   de=1.0e-03 eps/gap=   0.04 | exact w=0.54197 (u+=0.27098, u-=0.27098) | 2sqrt(2chi0 de)=0.55160 | sandwich lo=0.20382 hi=0.55160 [True] | Manchanda: radius exact=0.27098, Eq.10 upper=0.27828, Thm2 lower=0.27059 (applies: eps<=Dbar/2=0.1313? True)
+xxz1d_1.6    n=10 m_s   de=1.0e-02 eps/gap=   0.38 | exact w=1.42499 (u+=0.71249, u-=0.71249) | 2sqrt(2chi0 de)=1.74431 | sandwich lo=0.64455 hi=1.74431 [True] | Manchanda: radius exact=0.71249, Eq.10 upper=0.80018, Thm2 lower=0.68648 (applies: eps<=Dbar/2=0.1313? True)
+xxz1d_1.6    n=10 m_s   de=3.0e-02 eps/gap=   1.15 | exact w=1.75589 (u+=0.87794, u-=0.87794) | 2sqrt(2chi0 de)=3.02123 | sandwich lo=1.11639 hi=3.02123 [True] | Manchanda: radius exact=0.87794, Eq.10 upper=0.94999, Thm2 lower=nan (applies: eps<=Dbar/2=0.1313? False)
+xxz1d_1.6    n=10 m_s   de=1.0e-01 eps/gap=   3.83 | exact w=1.97570 (u+=0.98785, u-=0.98785) | 2sqrt(2chi0 de)=5.51598 | sandwich lo=1.55790 hi=5.51598 [True] | Manchanda: radius exact=0.98785, Eq.10 upper=1.47434, Thm2 lower=nan (applies: eps<=Dbar/2=0.1313? False)
+   n=10: chi0 (finite diff)=38.03259; Manchanda chi_O*n=38.05817; sum-rule bound 2v^2/s1=26.02364 [True]; gap=0.2609
+xxz1d_1.6    n=12 m_s   de=1.0e-04 eps/gap=   0.01 | exact w=0.20818 (u+=0.10409, u-=0.10409) | 2sqrt(2chi0 de)=0.20860 | sandwich lo=0.06486 hi=0.20860 [True] | Manchanda: radius exact=0.10409, Eq.10 upper=0.10512, Thm2 lower=0.10407 (applies: eps<=Dbar/2=0.1025? True)
+xxz1d_1.6    n=12 m_s   de=1.0e-03 eps/gap=   0.06 | exact w=0.64187 (u+=0.32094, u-=0.32094) | 2sqrt(2chi0 de)=0.65965 | sandwich lo=0.20509 hi=0.65965 [True] | Manchanda: radius exact=0.32094, Eq.10 upper=0.33132, Thm2 lower=0.32026 (applies: eps<=Dbar/2=0.1025? True)
+xxz1d_1.6    n=12 m_s   de=1.0e-02 eps/gap=   0.59 | exact w=1.51515 (u+=0.75757, u-=0.75757) | 2sqrt(2chi0 de)=2.08599 | sandwich lo=0.64856 hi=2.08599 [True] | Manchanda: radius exact=0.75757, Eq.10 upper=0.80822, Thm2 lower=nan (applies: eps<=Dbar/2=0.1025? False)
+xxz1d_1.6    n=12 m_s   de=3.0e-02 eps/gap=   1.77 | exact w=1.77729 (u+=0.88865, u-=0.88865) | 2sqrt(2chi0 de)=3.61305 | sandwich lo=1.12335 hi=3.61305 [True] | Manchanda: radius exact=0.88865, Eq.10 upper=1.01833, Thm2 lower=nan (applies: eps<=Dbar/2=0.1025? False)
+xxz1d_1.6    n=12 m_s   de=1.0e-01 eps/gap=   5.89 | exact w=1.97875 (u+=0.98937, u-=0.98937) | 2sqrt(2chi0 de)=6.59649 | sandwich lo=1.57738 hi=6.59649 [True] | Manchanda: radius exact=0.98937, Eq.10 upper=1.58890, Thm2 lower=nan (applies: eps<=Dbar/2=0.1025? False)
+   n=12: chi0 (finite diff)=54.39217; Manchanda chi_O*n=54.47322; sum-rule bound 2v^2/s1=33.46523 [True]; gap=0.2036
+intensivity: w(n)/w(n_max) at fixed de:
+  de=1.0e-04: 0.1087, 0.1412, 0.1742, 0.2082
+  de=1.0e-03: 0.3422, 0.4422, 0.5420, 0.6419
+  de=1.0e-02: 1.0279, 1.2605, 1.4250, 1.5151
+  de=3.0e-02: 1.5666, 1.7076, 1.7559, 1.7773
+  de=1.0e-01: 1.9508, 1.9692, 1.9757, 1.9787
+time 35.4 s

@@ -1,0 +1,56 @@
+NOTICE
+======
+
+This package contains material of third parties. It keeps its own licence; the licences of this package
+(file LICENSE) do not apply to it.
+
+1. Public data and code of the dataset studied
+
+   "Quantum ground state learning: code and data to reproduce 'Learning ground state observables from
+   quantum computing experiments'" (arXiv:2606.15983), by Ben Jaderberg, Freya Shah, Minjun Jeon,
+   M. Emre Sahin, Christa Zoufal and Kunal Sharma.
+   Repository: https://github.com/bjader/quantum-groundstate-learning
+   Commit:     6b8866b66d62aaf3ee815cd14fa58e9bf4629d66 (2026-07-22)
+   Licence:    Apache License 2.0; full text in
+               phase3/full_runs/real_data/source/LICENSE_upstream.txt
+
+   Redistributed here without change:
+     phase3/full_runs/real_data/source/archive/quantum-groundstate-learning-6b8866b66d62aaf3ee815cd14fa58e9bf4629d66.tar.gz
+       the archive of that commit as served by the hosting service (778170 bytes,
+       SHA-256 13aa8e69c9bc614c72c5a415ecd889f113eabe95eec81e221174b3f14dedbb91).
+       Its data files are serialized Python objects (pickle). Do not load them with pickle: use the
+       converted files below, or the converter, which reads them as a stream of instructions and
+       refuses anything but arrays and plain numbers.
+     phase3/full_runs/real_data/source/code_as_text/
+       the 76 text files of that archive (code, README, edge lists, requirements), each saved under a
+       flattened name with ".txt" appended so that it can be read and cannot be imported or run.
+       The bytes of each file are those of the archive member; only the file name was changed.
+
+   Derived from it by the author of this package (changes stated as the licence asks):
+     phase3/full_runs/real_data/converted/real_n57.json, real_n115.json, lattice_maps.json
+       every field of every data file of the archive, written as plain JSON by
+       phase3/full_runs/real_data/code/convert_real_data.py (format conversion only; no value changed;
+       the SHA-256 of each input member is recorded inside). conversion_log.json and SHA256SUMS.txt
+       record the conversion.
+     phase3/full_runs/real_data/source/MEMBERS.tsv, SHA256SUMS.txt, github_api/tree_*.json
+       lists of the files of the archive (path, size, checksums) and the tree record of the hosting service.
+     Everything else under phase3/full_runs/real_data/ (out/, checks/, results/, e1/, tests/) and the
+       figures and tables of the article are analyses of those converted data by the author.
+
+2. Random Heisenberg models of the second benchmark
+
+   Data files of H.-Y. Huang, R. Kueng, G. Torlai, V. V. Albert and J. Preskill, "Provably efficient machine
+   learning for quantum many-body problems", Science 377, eabk3333 (2022), from the authors' public
+   repository. Licence: MIT, Copyright (c) 2022 Hsin-Yuan Huang; full text in
+   phase3/full_runs/huang/data_huang/LICENSE_upstream.md and phase3/full_runs/learning/data_huang20/LICENSE_upstream.md.
+   Redistributed here without change: phase3/full_runs/huang/data_huang/heisenberg_*.txt and
+   phase3/full_runs/learning/data_huang20/heisenberg_*.txt (checksums in the provenance/ folder of each run).
+
+3. Records of a quantum processor
+
+   The files calibration_snapshot.json under phase3/full_runs/qpu/jobs/ and phase3/full_runs/final_tests/jobs/
+   are calibration data of the processor ibm_kingston as returned by IBM Quantum services at the time of each
+   job. They are included as the record of the conditions of the author's own runs.
+
+Not redistributed: the wheels of TeNPy used on the cloud machines (public on PyPI; version 1.1.0), the
+papers saved while checking the literature, and the records of bibliographic services.

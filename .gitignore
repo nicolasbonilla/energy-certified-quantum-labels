@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# LaTeX by-products of the three documents (their PDFs are kept). The patterns are tied to paper/ on purpose,
+# so that they never hide a stored output of a run folder under phase3/.
+paper/*.aux
+paper/*.log
+paper/*.blg
+paper/*.bbl
+paper/*.out
+paper/*.toc
+paper/*.synctex.gz
+paper/*Notes.bib
+paper/figures/*/*.aux
+paper/figures/*/*.log
+
+# work folders of run_checks.py when --tmp points inside the package
+_check_tmp/
+_build/
+
+# the author's own notes for publishing: not part of the public repository
+PASOS_PARA_PUBLICAR.md
+
+# secrets: never commit credentials
+.env
+*.pem
+qiskit-ibm.json
+
+# OS
+.DS_Store
+Thumbs.db

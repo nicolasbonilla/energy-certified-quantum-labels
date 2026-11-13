@@ -1,0 +1,1600 @@
+{
+ "tasks": [
+  {
+   "id": "krylov_57_4.0",
+   "args": [
+    "krylov",
+    "57",
+    "4.0"
+   ],
+   "deps": [],
+   "prio": 1,
+   "mem": 2
+  },
+  {
+   "id": "krylov_57_6.0",
+   "args": [
+    "krylov",
+    "57",
+    "6.0"
+   ],
+   "deps": [],
+   "prio": 1,
+   "mem": 2
+  },
+  {
+   "id": "crq_B_rec",
+   "args": [
+    "crq",
+    "B",
+    "4.0",
+    "rec"
+   ],
+   "deps": [],
+   "prio": 1,
+   "mem": 3
+  },
+  {
+   "id": "crq_B_ps",
+   "args": [
+    "crq",
+    "B",
+    "4.0",
+    "ps"
+   ],
+   "deps": [],
+   "prio": 1,
+   "mem": 2
+  },
+  {
+   "id": "csim",
+   "args": [
+    "csim"
+   ],
+   "deps": [
+    "krylov_57_4.0",
+    "krylov_57_6.0"
+   ],
+   "prio": 1,
+   "mem": 6
+  },
+  {
+   "id": "cert_0",
+   "args": [
+    "cert",
+    "0"
+   ],
+   "deps": [],
+   "prio": 1,
+   "mem": 3
+  },
+  {
+   "id": "cert_1",
+   "args": [
+    "cert",
+    "1"
+   ],
+   "deps": [],
+   "prio": 1,
+   "mem": 3
+  },
+  {
+   "id": "cert_2",
+   "args": [
+    "cert",
+    "2"
+   ],
+   "deps": [],
+   "prio": 1,
+   "mem": 3
+  },
+  {
+   "id": "cert_3",
+   "args": [
+    "cert",
+    "3"
+   ],
+   "deps": [],
+   "prio": 1,
+   "mem": 3
+  },
+  {
+   "id": "cert_4",
+   "args": [
+    "cert",
+    "4"
+   ],
+   "deps": [],
+   "prio": 1,
+   "mem": 3
+  },
+  {
+   "id": "cert_5",
+   "args": [
+    "cert",
+    "5"
+   ],
+   "deps": [],
+   "prio": 1,
+   "mem": 3
+  },
+  {
+   "id": "n19_1.5",
+   "args": [
+    "n19",
+    "1.5"
+   ],
+   "deps": [],
+   "prio": 2,
+   "mem": 2
+  },
+  {
+   "id": "n19_1.6",
+   "args": [
+    "n19",
+    "1.6"
+   ],
+   "deps": [],
+   "prio": 2,
+   "mem": 2
+  },
+  {
+   "id": "n19_1.7",
+   "args": [
+    "n19",
+    "1.7"
+   ],
+   "deps": [],
+   "prio": 2,
+   "mem": 2
+  },
+  {
+   "id": "n19_2.8",
+   "args": [
+    "n19",
+    "2.8"
+   ],
+   "deps": [],
+   "prio": 2,
+   "mem": 2
+  },
+  {
+   "id": "n19_3.2",
+   "args": [
+    "n19",
+    "3.2"
+   ],
+   "deps": [],
+   "prio": 2,
+   "mem": 2
+  },
+  {
+   "id": "ref_115_1.5",
+   "args": [
+    "ref",
+    "115",
+    "1.5"
+   ],
+   "deps": [],
+   "prio": 2,
+   "mem": 5
+  },
+  {
+   "id": "krylov_115_1.5",
+   "args": [
+    "krylov",
+    "115",
+    "1.5"
+   ],
+   "deps": [],
+   "prio": 2,
+   "mem": 3
+  },
+  {
+   "id": "emu_115_1.5",
+   "args": [
+    "emu",
+    "115",
+    "1.5"
+   ],
+   "deps": [
+    "ref_115_1.5",
+    "krylov_115_1.5"
+   ],
+   "prio": 2,
+   "mem": 7
+  },
+  {
+   "id": "ref_115_1.7",
+   "args": [
+    "ref",
+    "115",
+    "1.7"
+   ],
+   "deps": [],
+   "prio": 2,
+   "mem": 5
+  },
+  {
+   "id": "krylov_115_1.7",
+   "args": [
+    "krylov",
+    "115",
+    "1.7"
+   ],
+   "deps": [],
+   "prio": 2,
+   "mem": 3
+  },
+  {
+   "id": "emu_115_1.7",
+   "args": [
+    "emu",
+    "115",
+    "1.7"
+   ],
+   "deps": [
+    "ref_115_1.7",
+    "krylov_115_1.7"
+   ],
+   "prio": 2,
+   "mem": 7
+  },
+  {
+   "id": "ref_115_2.8",
+   "args": [
+    "ref",
+    "115",
+    "2.8"
+   ],
+   "deps": [],
+   "prio": 2,
+   "mem": 5
+  },
+  {
+   "id": "krylov_115_2.8",
+   "args": [
+    "krylov",
+    "115",
+    "2.8"
+   ],
+   "deps": [],
+   "prio": 2,
+   "mem": 3
+  },
+  {
+   "id": "emu_115_2.8",
+   "args": [
+    "emu",
+    "115",
+    "2.8"
+   ],
+   "deps": [
+    "ref_115_2.8",
+    "krylov_115_2.8"
+   ],
+   "prio": 2,
+   "mem": 7
+  },
+  {
+   "id": "ref_57_1.5",
+   "args": [
+    "ref",
+    "57",
+    "1.5"
+   ],
+   "deps": [],
+   "prio": 2,
+   "mem": 2
+  },
+  {
+   "id": "krylov_57_1.5",
+   "args": [
+    "krylov",
+    "57",
+    "1.5"
+   ],
+   "deps": [],
+   "prio": 2,
+   "mem": 2
+  },
+  {
+   "id": "emu_57_1.5",
+   "args": [
+    "emu",
+    "57",
+    "1.5"
+   ],
+   "deps": [
+    "ref_57_1.5",
+    "krylov_57_1.5"
+   ],
+   "prio": 2,
+   "mem": 4
+  },
+  {
+   "id": "ref_57_1.7",
+   "args": [
+    "ref",
+    "57",
+    "1.7"
+   ],
+   "deps": [],
+   "prio": 2,
+   "mem": 2
+  },
+  {
+   "id": "krylov_57_1.7",
+   "args": [
+    "krylov",
+    "57",
+    "1.7"
+   ],
+   "deps": [],
+   "prio": 2,
+   "mem": 2
+  },
+  {
+   "id": "emu_57_1.7",
+   "args": [
+    "emu",
+    "57",
+    "1.7"
+   ],
+   "deps": [
+    "ref_57_1.7",
+    "krylov_57_1.7"
+   ],
+   "prio": 2,
+   "mem": 4
+  },
+  {
+   "id": "ref_57_2.8",
+   "args": [
+    "ref",
+    "57",
+    "2.8"
+   ],
+   "deps": [],
+   "prio": 2,
+   "mem": 2
+  },
+  {
+   "id": "krylov_57_2.8",
+   "args": [
+    "krylov",
+    "57",
+    "2.8"
+   ],
+   "deps": [],
+   "prio": 2,
+   "mem": 2
+  },
+  {
+   "id": "emu_57_2.8",
+   "args": [
+    "emu",
+    "57",
+    "2.8"
+   ],
+   "deps": [
+    "ref_57_2.8",
+    "krylov_57_2.8"
+   ],
+   "prio": 2,
+   "mem": 4
+  },
+  {
+   "id": "ref_57_3.2",
+   "args": [
+    "ref",
+    "57",
+    "3.2"
+   ],
+   "deps": [],
+   "prio": 2,
+   "mem": 2
+  },
+  {
+   "id": "krylov_57_3.2",
+   "args": [
+    "krylov",
+    "57",
+    "3.2"
+   ],
+   "deps": [],
+   "prio": 2,
+   "mem": 2
+  },
+  {
+   "id": "emu_57_3.2",
+   "args": [
+    "emu",
+    "57",
+    "3.2"
+   ],
+   "deps": [
+    "ref_57_3.2",
+    "krylov_57_3.2"
+   ],
+   "prio": 2,
+   "mem": 4
+  },
+  {
+   "id": "ref_57_2.5",
+   "args": [
+    "ref",
+    "57",
+    "2.5"
+   ],
+   "deps": [],
+   "prio": 2,
+   "mem": 2
+  },
+  {
+   "id": "krylov_57_2.5",
+   "args": [
+    "krylov",
+    "57",
+    "2.5"
+   ],
+   "deps": [],
+   "prio": 2,
+   "mem": 2
+  },
+  {
+   "id": "emu_57_2.5",
+   "args": [
+    "emu",
+    "57",
+    "2.5"
+   ],
+   "deps": [
+    "ref_57_2.5",
+    "krylov_57_2.5"
+   ],
+   "prio": 2,
+   "mem": 4
+  },
+  {
+   "id": "bref_1.6_0",
+   "args": [
+    "bref",
+    "1.6",
+    "0"
+   ],
+   "deps": [],
+   "prio": 3,
+   "mem": 4
+  },
+  {
+   "id": "bkry_1.6_0",
+   "args": [
+    "bkry",
+    "1.6",
+    "0"
+   ],
+   "deps": [],
+   "prio": 3,
+   "mem": 3
+  },
+  {
+   "id": "bpatch_1.6_0",
+   "args": [
+    "bpatch",
+    "1.6",
+    "0"
+   ],
+   "deps": [],
+   "prio": 3,
+   "mem": 2
+  },
+  {
+   "id": "bref_1.6_1",
+   "args": [
+    "bref",
+    "1.6",
+    "1"
+   ],
+   "deps": [],
+   "prio": 3,
+   "mem": 4
+  },
+  {
+   "id": "bkry_1.6_1",
+   "args": [
+    "bkry",
+    "1.6",
+    "1"
+   ],
+   "deps": [],
+   "prio": 3,
+   "mem": 3
+  },
+  {
+   "id": "bpatch_1.6_1",
+   "args": [
+    "bpatch",
+    "1.6",
+    "1"
+   ],
+   "deps": [],
+   "prio": 3,
+   "mem": 2
+  },
+  {
+   "id": "bref_1.6_2",
+   "args": [
+    "bref",
+    "1.6",
+    "2"
+   ],
+   "deps": [],
+   "prio": 3,
+   "mem": 4
+  },
+  {
+   "id": "bkry_1.6_2",
+   "args": [
+    "bkry",
+    "1.6",
+    "2"
+   ],
+   "deps": [],
+   "prio": 3,
+   "mem": 3
+  },
+  {
+   "id": "bpatch_1.6_2",
+   "args": [
+    "bpatch",
+    "1.6",
+    "2"
+   ],
+   "deps": [],
+   "prio": 3,
+   "mem": 2
+  },
+  {
+   "id": "bref_1.6_3",
+   "args": [
+    "bref",
+    "1.6",
+    "3"
+   ],
+   "deps": [],
+   "prio": 3,
+   "mem": 4
+  },
+  {
+   "id": "bkry_1.6_3",
+   "args": [
+    "bkry",
+    "1.6",
+    "3"
+   ],
+   "deps": [],
+   "prio": 3,
+   "mem": 3
+  },
+  {
+   "id": "bpatch_1.6_3",
+   "args": [
+    "bpatch",
+    "1.6",
+    "3"
+   ],
+   "deps": [],
+   "prio": 3,
+   "mem": 2
+  },
+  {
+   "id": "bref_1.6_4",
+   "args": [
+    "bref",
+    "1.6",
+    "4"
+   ],
+   "deps": [],
+   "prio": 3,
+   "mem": 4
+  },
+  {
+   "id": "bkry_1.6_4",
+   "args": [
+    "bkry",
+    "1.6",
+    "4"
+   ],
+   "deps": [],
+   "prio": 3,
+   "mem": 3
+  },
+  {
+   "id": "bpatch_1.6_4",
+   "args": [
+    "bpatch",
+    "1.6",
+    "4"
+   ],
+   "deps": [],
+   "prio": 3,
+   "mem": 2
+  },
+  {
+   "id": "bref_1.6_5",
+   "args": [
+    "bref",
+    "1.6",
+    "5"
+   ],
+   "deps": [],
+   "prio": 3,
+   "mem": 4
+  },
+  {
+   "id": "bkry_1.6_5",
+   "args": [
+    "bkry",
+    "1.6",
+    "5"
+   ],
+   "deps": [],
+   "prio": 3,
+   "mem": 3
+  },
+  {
+   "id": "bpatch_1.6_5",
+   "args": [
+    "bpatch",
+    "1.6",
+    "5"
+   ],
+   "deps": [],
+   "prio": 3,
+   "mem": 2
+  },
+  {
+   "id": "btrain_1.6_000",
+   "args": [
+    "btrain",
+    "1.6",
+    "0"
+   ],
+   "deps": [],
+   "prio": 3,
+   "mem": 2
+  },
+  {
+   "id": "btrain_1.6_001",
+   "args": [
+    "btrain",
+    "1.6",
+    "1"
+   ],
+   "deps": [],
+   "prio": 3,
+   "mem": 2
+  },
+  {
+   "id": "btrain_1.6_002",
+   "args": [
+    "btrain",
+    "1.6",
+    "2"
+   ],
+   "deps": [],
+   "prio": 3,
+   "mem": 2
+  },
+  {
+   "id": "btrain_1.6_003",
+   "args": [
+    "btrain",
+    "1.6",
+    "3"
+   ],
+   "deps": [],
+   "prio": 3,
+   "mem": 2
+  },
+  {
+   "id": "btrain_1.6_004",
+   "args": [
+    "btrain",
+    "1.6",
+    "4"
+   ],
+   "deps": [],
+   "prio": 3,
+   "mem": 2
+  },
+  {
+   "id": "btrain_1.6_005",
+   "args": [
+    "btrain",
+    "1.6",
+    "5"
+   ],
+   "deps": [],
+   "prio": 3,
+   "mem": 2
+  },
+  {
+   "id": "btrain_1.6_006",
+   "args": [
+    "btrain",
+    "1.6",
+    "6"
+   ],
+   "deps": [],
+   "prio": 3,
+   "mem": 2
+  },
+  {
+   "id": "btrain_1.6_007",
+   "args": [
+    "btrain",
+    "1.6",
+    "7"
+   ],
+   "deps": [],
+   "prio": 3,
+   "mem": 2
+  },
+  {
+   "id": "btrain_1.6_008",
+   "args": [
+    "btrain",
+    "1.6",
+    "8"
+   ],
+   "deps": [],
+   "prio": 3,
+   "mem": 2
+  },
+  {
+   "id": "btrain_1.6_009",
+   "args": [
+    "btrain",
+    "1.6",
+    "9"
+   ],
+   "deps": [],
+   "prio": 3,
+   "mem": 2
+  },
+  {
+   "id": "btrain_1.6_010",
+   "args": [
+    "btrain",
+    "1.6",
+    "10"
+   ],
+   "deps": [],
+   "prio": 3,
+   "mem": 2
+  },
+  {
+   "id": "btrain_1.6_011",
+   "args": [
+    "btrain",
+    "1.6",
+    "11"
+   ],
+   "deps": [],
+   "prio": 3,
+   "mem": 2
+  },
+  {
+   "id": "btrain_1.6_012",
+   "args": [
+    "btrain",
+    "1.6",
+    "12"
+   ],
+   "deps": [],
+   "prio": 3,
+   "mem": 2
+  },
+  {
+   "id": "btrain_1.6_013",
+   "args": [
+    "btrain",
+    "1.6",
+    "13"
+   ],
+   "deps": [],
+   "prio": 3,
+   "mem": 2
+  },
+  {
+   "id": "btrain_1.6_014",
+   "args": [
+    "btrain",
+    "1.6",
+    "14"
+   ],
+   "deps": [],
+   "prio": 3,
+   "mem": 2
+  },
+  {
+   "id": "btrain_1.6_015",
+   "args": [
+    "btrain",
+    "1.6",
+    "15"
+   ],
+   "deps": [],
+   "prio": 3,
+   "mem": 2
+  },
+  {
+   "id": "btrain_1.6_016",
+   "args": [
+    "btrain",
+    "1.6",
+    "16"
+   ],
+   "deps": [],
+   "prio": 3,
+   "mem": 2
+  },
+  {
+   "id": "btrain_1.6_017",
+   "args": [
+    "btrain",
+    "1.6",
+    "17"
+   ],
+   "deps": [],
+   "prio": 3,
+   "mem": 2
+  },
+  {
+   "id": "btrain_1.6_018",
+   "args": [
+    "btrain",
+    "1.6",
+    "18"
+   ],
+   "deps": [],
+   "prio": 3,
+   "mem": 2
+  },
+  {
+   "id": "btrain_1.6_019",
+   "args": [
+    "btrain",
+    "1.6",
+    "19"
+   ],
+   "deps": [],
+   "prio": 3,
+   "mem": 2
+  },
+  {
+   "id": "btrain_1.6_020",
+   "args": [
+    "btrain",
+    "1.6",
+    "20"
+   ],
+   "deps": [],
+   "prio": 3,
+   "mem": 2
+  },
+  {
+   "id": "btrain_1.6_021",
+   "args": [
+    "btrain",
+    "1.6",
+    "21"
+   ],
+   "deps": [],
+   "prio": 3,
+   "mem": 2
+  },
+  {
+   "id": "btrain_1.6_022",
+   "args": [
+    "btrain",
+    "1.6",
+    "22"
+   ],
+   "deps": [],
+   "prio": 3,
+   "mem": 2
+  },
+  {
+   "id": "btrain_1.6_023",
+   "args": [
+    "btrain",
+    "1.6",
+    "23"
+   ],
+   "deps": [],
+   "prio": 3,
+   "mem": 2
+  },
+  {
+   "id": "bmodel_1.6_site",
+   "args": [
+    "bmodel",
+    "1.6",
+    "site"
+   ],
+   "deps": [
+    "bref_1.6_0",
+    "bref_1.6_1",
+    "bref_1.6_2",
+    "bref_1.6_3",
+    "bref_1.6_4",
+    "bref_1.6_5",
+    "bkry_1.6_0",
+    "bkry_1.6_1",
+    "bkry_1.6_2",
+    "bkry_1.6_3",
+    "bkry_1.6_4",
+    "bkry_1.6_5",
+    "bpatch_1.6_0",
+    "bpatch_1.6_1",
+    "bpatch_1.6_2",
+    "bpatch_1.6_3",
+    "bpatch_1.6_4",
+    "bpatch_1.6_5",
+    "btrain_1.6_000",
+    "btrain_1.6_001",
+    "btrain_1.6_002",
+    "btrain_1.6_003",
+    "btrain_1.6_004",
+    "btrain_1.6_005",
+    "btrain_1.6_006",
+    "btrain_1.6_007",
+    "btrain_1.6_008",
+    "btrain_1.6_009",
+    "btrain_1.6_010",
+    "btrain_1.6_011",
+    "btrain_1.6_012",
+    "btrain_1.6_013",
+    "btrain_1.6_014",
+    "btrain_1.6_015",
+    "btrain_1.6_016",
+    "btrain_1.6_017",
+    "btrain_1.6_018",
+    "btrain_1.6_019",
+    "btrain_1.6_020",
+    "btrain_1.6_021",
+    "btrain_1.6_022",
+    "btrain_1.6_023"
+   ],
+   "prio": 4,
+   "mem": 8
+  },
+  {
+   "id": "bmodel_1.6_bond",
+   "args": [
+    "bmodel",
+    "1.6",
+    "bond"
+   ],
+   "deps": [
+    "bref_1.6_0",
+    "bref_1.6_1",
+    "bref_1.6_2",
+    "bref_1.6_3",
+    "bref_1.6_4",
+    "bref_1.6_5",
+    "bkry_1.6_0",
+    "bkry_1.6_1",
+    "bkry_1.6_2",
+    "bkry_1.6_3",
+    "bkry_1.6_4",
+    "bkry_1.6_5",
+    "bpatch_1.6_0",
+    "bpatch_1.6_1",
+    "bpatch_1.6_2",
+    "bpatch_1.6_3",
+    "bpatch_1.6_4",
+    "bpatch_1.6_5",
+    "btrain_1.6_000",
+    "btrain_1.6_001",
+    "btrain_1.6_002",
+    "btrain_1.6_003",
+    "btrain_1.6_004",
+    "btrain_1.6_005",
+    "btrain_1.6_006",
+    "btrain_1.6_007",
+    "btrain_1.6_008",
+    "btrain_1.6_009",
+    "btrain_1.6_010",
+    "btrain_1.6_011",
+    "btrain_1.6_012",
+    "btrain_1.6_013",
+    "btrain_1.6_014",
+    "btrain_1.6_015",
+    "btrain_1.6_016",
+    "btrain_1.6_017",
+    "btrain_1.6_018",
+    "btrain_1.6_019",
+    "btrain_1.6_020",
+    "btrain_1.6_021",
+    "btrain_1.6_022",
+    "btrain_1.6_023"
+   ],
+   "prio": 4,
+   "mem": 8
+  },
+  {
+   "id": "bref_2.5_0",
+   "args": [
+    "bref",
+    "2.5",
+    "0"
+   ],
+   "deps": [],
+   "prio": 3,
+   "mem": 4
+  },
+  {
+   "id": "bkry_2.5_0",
+   "args": [
+    "bkry",
+    "2.5",
+    "0"
+   ],
+   "deps": [],
+   "prio": 3,
+   "mem": 3
+  },
+  {
+   "id": "bpatch_2.5_0",
+   "args": [
+    "bpatch",
+    "2.5",
+    "0"
+   ],
+   "deps": [],
+   "prio": 3,
+   "mem": 2
+  },
+  {
+   "id": "bref_2.5_1",
+   "args": [
+    "bref",
+    "2.5",
+    "1"
+   ],
+   "deps": [],
+   "prio": 3,
+   "mem": 4
+  },
+  {
+   "id": "bkry_2.5_1",
+   "args": [
+    "bkry",
+    "2.5",
+    "1"
+   ],
+   "deps": [],
+   "prio": 3,
+   "mem": 3
+  },
+  {
+   "id": "bpatch_2.5_1",
+   "args": [
+    "bpatch",
+    "2.5",
+    "1"
+   ],
+   "deps": [],
+   "prio": 3,
+   "mem": 2
+  },
+  {
+   "id": "bref_2.5_2",
+   "args": [
+    "bref",
+    "2.5",
+    "2"
+   ],
+   "deps": [],
+   "prio": 3,
+   "mem": 4
+  },
+  {
+   "id": "bkry_2.5_2",
+   "args": [
+    "bkry",
+    "2.5",
+    "2"
+   ],
+   "deps": [],
+   "prio": 3,
+   "mem": 3
+  },
+  {
+   "id": "bpatch_2.5_2",
+   "args": [
+    "bpatch",
+    "2.5",
+    "2"
+   ],
+   "deps": [],
+   "prio": 3,
+   "mem": 2
+  },
+  {
+   "id": "bref_2.5_3",
+   "args": [
+    "bref",
+    "2.5",
+    "3"
+   ],
+   "deps": [],
+   "prio": 3,
+   "mem": 4
+  },
+  {
+   "id": "bkry_2.5_3",
+   "args": [
+    "bkry",
+    "2.5",
+    "3"
+   ],
+   "deps": [],
+   "prio": 3,
+   "mem": 3
+  },
+  {
+   "id": "bpatch_2.5_3",
+   "args": [
+    "bpatch",
+    "2.5",
+    "3"
+   ],
+   "deps": [],
+   "prio": 3,
+   "mem": 2
+  },
+  {
+   "id": "bref_2.5_4",
+   "args": [
+    "bref",
+    "2.5",
+    "4"
+   ],
+   "deps": [],
+   "prio": 3,
+   "mem": 4
+  },
+  {
+   "id": "bkry_2.5_4",
+   "args": [
+    "bkry",
+    "2.5",
+    "4"
+   ],
+   "deps": [],
+   "prio": 3,
+   "mem": 3
+  },
+  {
+   "id": "bpatch_2.5_4",
+   "args": [
+    "bpatch",
+    "2.5",
+    "4"
+   ],
+   "deps": [],
+   "prio": 3,
+   "mem": 2
+  },
+  {
+   "id": "bref_2.5_5",
+   "args": [
+    "bref",
+    "2.5",
+    "5"
+   ],
+   "deps": [],
+   "prio": 3,
+   "mem": 4
+  },
+  {
+   "id": "bkry_2.5_5",
+   "args": [
+    "bkry",
+    "2.5",
+    "5"
+   ],
+   "deps": [],
+   "prio": 3,
+   "mem": 3
+  },
+  {
+   "id": "bpatch_2.5_5",
+   "args": [
+    "bpatch",
+    "2.5",
+    "5"
+   ],
+   "deps": [],
+   "prio": 3,
+   "mem": 2
+  },
+  {
+   "id": "btrain_2.5_000",
+   "args": [
+    "btrain",
+    "2.5",
+    "0"
+   ],
+   "deps": [],
+   "prio": 3,
+   "mem": 2
+  },
+  {
+   "id": "btrain_2.5_001",
+   "args": [
+    "btrain",
+    "2.5",
+    "1"
+   ],
+   "deps": [],
+   "prio": 3,
+   "mem": 2
+  },
+  {
+   "id": "btrain_2.5_002",
+   "args": [
+    "btrain",
+    "2.5",
+    "2"
+   ],
+   "deps": [],
+   "prio": 3,
+   "mem": 2
+  },
+  {
+   "id": "btrain_2.5_003",
+   "args": [
+    "btrain",
+    "2.5",
+    "3"
+   ],
+   "deps": [],
+   "prio": 3,
+   "mem": 2
+  },
+  {
+   "id": "btrain_2.5_004",
+   "args": [
+    "btrain",
+    "2.5",
+    "4"
+   ],
+   "deps": [],
+   "prio": 3,
+   "mem": 2
+  },
+  {
+   "id": "btrain_2.5_005",
+   "args": [
+    "btrain",
+    "2.5",
+    "5"
+   ],
+   "deps": [],
+   "prio": 3,
+   "mem": 2
+  },
+  {
+   "id": "btrain_2.5_006",
+   "args": [
+    "btrain",
+    "2.5",
+    "6"
+   ],
+   "deps": [],
+   "prio": 3,
+   "mem": 2
+  },
+  {
+   "id": "btrain_2.5_007",
+   "args": [
+    "btrain",
+    "2.5",
+    "7"
+   ],
+   "deps": [],
+   "prio": 3,
+   "mem": 2
+  },
+  {
+   "id": "btrain_2.5_008",
+   "args": [
+    "btrain",
+    "2.5",
+    "8"
+   ],
+   "deps": [],
+   "prio": 3,
+   "mem": 2
+  },
+  {
+   "id": "btrain_2.5_009",
+   "args": [
+    "btrain",
+    "2.5",
+    "9"
+   ],
+   "deps": [],
+   "prio": 3,
+   "mem": 2
+  },
+  {
+   "id": "btrain_2.5_010",
+   "args": [
+    "btrain",
+    "2.5",
+    "10"
+   ],
+   "deps": [],
+   "prio": 3,
+   "mem": 2
+  },
+  {
+   "id": "btrain_2.5_011",
+   "args": [
+    "btrain",
+    "2.5",
+    "11"
+   ],
+   "deps": [],
+   "prio": 3,
+   "mem": 2
+  },
+  {
+   "id": "btrain_2.5_012",
+   "args": [
+    "btrain",
+    "2.5",
+    "12"
+   ],
+   "deps": [],
+   "prio": 3,
+   "mem": 2
+  },
+  {
+   "id": "btrain_2.5_013",
+   "args": [
+    "btrain",
+    "2.5",
+    "13"
+   ],
+   "deps": [],
+   "prio": 3,
+   "mem": 2
+  },
+  {
+   "id": "btrain_2.5_014",
+   "args": [
+    "btrain",
+    "2.5",
+    "14"
+   ],
+   "deps": [],
+   "prio": 3,
+   "mem": 2
+  },
+  {
+   "id": "btrain_2.5_015",
+   "args": [
+    "btrain",
+    "2.5",
+    "15"
+   ],
+   "deps": [],
+   "prio": 3,
+   "mem": 2
+  },
+  {
+   "id": "btrain_2.5_016",
+   "args": [
+    "btrain",
+    "2.5",
+    "16"
+   ],
+   "deps": [],
+   "prio": 3,
+   "mem": 2
+  },
+  {
+   "id": "btrain_2.5_017",
+   "args": [
+    "btrain",
+    "2.5",
+    "17"
+   ],
+   "deps": [],
+   "prio": 3,
+   "mem": 2
+  },
+  {
+   "id": "btrain_2.5_018",
+   "args": [
+    "btrain",
+    "2.5",
+    "18"
+   ],
+   "deps": [],
+   "prio": 3,
+   "mem": 2
+  },
+  {
+   "id": "btrain_2.5_019",
+   "args": [
+    "btrain",
+    "2.5",
+    "19"
+   ],
+   "deps": [],
+   "prio": 3,
+   "mem": 2
+  },
+  {
+   "id": "btrain_2.5_020",
+   "args": [
+    "btrain",
+    "2.5",
+    "20"
+   ],
+   "deps": [],
+   "prio": 3,
+   "mem": 2
+  },
+  {
+   "id": "btrain_2.5_021",
+   "args": [
+    "btrain",
+    "2.5",
+    "21"
+   ],
+   "deps": [],
+   "prio": 3,
+   "mem": 2
+  },
+  {
+   "id": "btrain_2.5_022",
+   "args": [
+    "btrain",
+    "2.5",
+    "22"
+   ],
+   "deps": [],
+   "prio": 3,
+   "mem": 2
+  },
+  {
+   "id": "btrain_2.5_023",
+   "args": [
+    "btrain",
+    "2.5",
+    "23"
+   ],
+   "deps": [],
+   "prio": 3,
+   "mem": 2
+  },
+  {
+   "id": "bmodel_2.5_site",
+   "args": [
+    "bmodel",
+    "2.5",
+    "site"
+   ],
+   "deps": [
+    "bref_2.5_0",
+    "bref_2.5_1",
+    "bref_2.5_2",
+    "bref_2.5_3",
+    "bref_2.5_4",
+    "bref_2.5_5",
+    "bkry_2.5_0",
+    "bkry_2.5_1",
+    "bkry_2.5_2",
+    "bkry_2.5_3",
+    "bkry_2.5_4",
+    "bkry_2.5_5",
+    "bpatch_2.5_0",
+    "bpatch_2.5_1",
+    "bpatch_2.5_2",
+    "bpatch_2.5_3",
+    "bpatch_2.5_4",
+    "bpatch_2.5_5",
+    "btrain_2.5_000",
+    "btrain_2.5_001",
+    "btrain_2.5_002",
+    "btrain_2.5_003",
+    "btrain_2.5_004",
+    "btrain_2.5_005",
+    "btrain_2.5_006",
+    "btrain_2.5_007",
+    "btrain_2.5_008",
+    "btrain_2.5_009",
+    "btrain_2.5_010",
+    "btrain_2.5_011",
+    "btrain_2.5_012",
+    "btrain_2.5_013",
+    "btrain_2.5_014",
+    "btrain_2.5_015",
+    "btrain_2.5_016",
+    "btrain_2.5_017",
+    "btrain_2.5_018",
+    "btrain_2.5_019",
+    "btrain_2.5_020",
+    "btrain_2.5_021",
+    "btrain_2.5_022",
+    "btrain_2.5_023"
+   ],
+   "prio": 4,
+   "mem": 8
+  },
+  {
+   "id": "bmodel_2.5_bond",
+   "args": [
+    "bmodel",
+    "2.5",
+    "bond"
+   ],
+   "deps": [
+    "bref_2.5_0",
+    "bref_2.5_1",
+    "bref_2.5_2",
+    "bref_2.5_3",
+    "bref_2.5_4",
+    "bref_2.5_5",
+    "bkry_2.5_0",
+    "bkry_2.5_1",
+    "bkry_2.5_2",
+    "bkry_2.5_3",
+    "bkry_2.5_4",
+    "bkry_2.5_5",
+    "bpatch_2.5_0",
+    "bpatch_2.5_1",
+    "bpatch_2.5_2",
+    "bpatch_2.5_3",
+    "bpatch_2.5_4",
+    "bpatch_2.5_5",
+    "btrain_2.5_000",
+    "btrain_2.5_001",
+    "btrain_2.5_002",
+    "btrain_2.5_003",
+    "btrain_2.5_004",
+    "btrain_2.5_005",
+    "btrain_2.5_006",
+    "btrain_2.5_007",
+    "btrain_2.5_008",
+    "btrain_2.5_009",
+    "btrain_2.5_010",
+    "btrain_2.5_011",
+    "btrain_2.5_012",
+    "btrain_2.5_013",
+    "btrain_2.5_014",
+    "btrain_2.5_015",
+    "btrain_2.5_016",
+    "btrain_2.5_017",
+    "btrain_2.5_018",
+    "btrain_2.5_019",
+    "btrain_2.5_020",
+    "btrain_2.5_021",
+    "btrain_2.5_022",
+    "btrain_2.5_023"
+   ],
+   "prio": 4,
+   "mem": 8
+  }
+ ]
+}

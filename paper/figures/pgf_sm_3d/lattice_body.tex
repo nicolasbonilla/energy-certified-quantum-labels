@@ -1,0 +1,66 @@
+% lattice_body.tex -- native TikZ/PGFPlots version of figS_lattice / figS_lattice_n115 (fig_lattice.py). Input by
+% figS_lattice_pgf.tex / figS_lattice_n115_pgf.tex, which set \N, the bond length \ULAT and the node radius \RNODE.
+% Data: lat<N>_*.dat and values<N>.tex, written by export_sm3d.py from landscape_data.py. Compile with pdflatex.
+\documentclass[10pt,border=1pt]{standalone}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{amsmath}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\usetikzlibrary{calc}
+\input{values\N.tex}
+\definecolor{cInk}{HTML}{1D1D1D}
+\definecolor{cSub}{HTML}{3D3D3D}
+\definecolor{cMute}{HTML}{6E6E6A}
+\definecolor{cEdge}{HTML}{AAA79F}
+\pgfplotsset{
+  % the warm sequential ramp of fig1_composite.py / fig_lattice.py (monotone in lightness)
+  colormap={excess}{rgb255=(251,243,234) rgb255=(247,201,162) rgb255=(239,141,85) rgb255=(207,85,33)
+                    rgb255=(124,42,15)},
+  every axis/.append style={tick label style={font=\footnotesize}, label style={font=\small},
+                            axis line style={cMute}, tick style={cMute}},
+  lattice/.style={x=\ULAT, y=\ULAT, hide axis, xmin=-0.45, xmax=\Lside+0.45, ymin=-\Lside-0.45, ymax=0.45,
+                  clip=false, colormap name=excess, point meta min=0, point meta max=\Vmax},
+}
+\newcommand{\lattice}[1]{%
+  \addplot[cEdge, line width=1.9pt, quiver={u=\thisrow{dx}, v=\thisrow{dy}}] table[x=x, y=y] {lat\N_edges.dat};
+  \addplot[scatter, only marks, mark=*, mark size=\RNODE, point meta=\thisrow{#1},
+    scatter/use mapped color={draw=black!45, fill=mapped color}, mark options={line width=0.35pt}]
+    table[x=x, y=y] {lat\N_nodes.dat};}
+\newcommand{\ttl}[2]{\small(#1)\hspace{0.45em}#2}
+\begin{document}
+\begin{tikzpicture}
+\begin{axis}[name=A, lattice, at={(0,0)}, anchor=north west]
+\lattice{a}
+\end{axis}
+\begin{axis}[name=B, lattice, at={($(A.north east)+(1.0cm,0)$)}, anchor=north west]
+\lattice{b}
+\end{axis}
+% titles: what each panel shows, its site average and its smallest site (numbers from values<N>.tex)
+\node[anchor=base west, inner sep=0pt] (ta) at ($(A.north west)+(-0.1cm,1.25cm)$)
+  {\ttl{a}{what the emulated method does}};
+\node[anchor=base west, inner sep=0pt, font=\footnotesize, text=cSub, align=left] at ($(ta.base west)+(0,-0.42cm)$)
+  {$\eta_i\bigl(\langle Z_i\rangle_{\rm emulated}-\langle Z_i\rangle_{\rm DMRG}\bigr)$};
+\node[anchor=base west, inner sep=0pt, font=\footnotesize, text=cSub] at ($(ta.base west)+(0,-0.80cm)$)
+  {site average \Aavg{} (the $m_s$ bias), smallest \Amin};
+\node[anchor=base west, inner sep=0pt] (tb) at ($(B.north west)+(-0.1cm,1.25cm)$)
+  {\ttl{b}{what the energy allows}};
+\node[anchor=base west, inner sep=0pt, font=\footnotesize, text=cSub] at ($(tb.base west)+(0,-0.42cm)$)
+  {$\eta_i\bigl(\langle Z_i\rangle_{\phi_+}-\langle Z_i\rangle_{\phi_-}\bigr)$ at $E_{\rm lo}$};
+\node[anchor=base west, inner sep=0pt, font=\footnotesize, text=cSub] at ($(tb.base west)+(0,-0.80cm)$)
+  {site average \Bavg{} (the $m_s$ width), smallest \Bmin};
+% shared colour bar
+\coordinate (mid) at ($(A.south east)!0.5!(B.south west)$);
+\begin{axis}[name=CB, at={($(mid)+(-3.4cm,-0.35cm)$)}, anchor=north west, hide axis, scale only axis,
+  width=6.8cm, height=0.1cm, xmin=0, xmax=1, ymin=0, ymax=1,
+  colormap name=excess, point meta min=0, point meta max=\Vmax,
+  colorbar horizontal, colorbar style={at={(0,1)}, anchor=north west, width=6.8cm, height=0.22cm,
+    tick align=outside, xtick pos=left, xtick distance=0.2, minor xtick={},
+    xticklabel style={font=\footnotesize, /pgf/number format/.cd, fixed, precision=1, fixed zerofill},
+    xlabel={change of $\langle Z_i\rangle$ towards the N\'eel pattern, $\eta_i\,\Delta\langle Z_i\rangle$},
+    xlabel style={font=\small}, axis line style={cMute}, tick style={cMute}}]
+\addplot[draw=none] coordinates {(0,0)};
+\end{axis}
+\node[anchor=base east, inner sep=0pt, font=\small] at ($(B.east |- mid)+(0,-0.62cm)$) {$n=\N$, $J_z=\Jlat$};
+\end{tikzpicture}
+\end{document}

@@ -1,0 +1,26 @@
+{
+ "L": 9,
+ "k": 1,
+ "label": "Ccent",
+ "sign": "+",
+ "lam": 0.7113226319291627,
+ "F_warm": -109.63970334244414,
+ "F_cold": -109.63970205431553,
+ "dF": 1.2881286011179327e-06,
+ "o_warm": -0.1617848155430635,
+ "o_cold": -0.1617846897951207,
+ "flag_warm_stuck": false,
+ "sid": "L9k1_cold_Ccent_p",
+ "dmrg": {
+  "E_dmrg": -109.63970205431535,
+  "sweeps": 25,
+  "time_s": 244.07413053512573,
+  "dE_last": 9.022262759117439e-08,
+  "max_trunc_err": 0.0035716134706605387,
+  "last_trunc_err": 6.098355768737799e-06,
+  "chi_max_reached": 256,
+  "norm_test_before": 1.522542964500109e-14,
+  "canonicalized": false,
+  "warnings": []
+ }
+}

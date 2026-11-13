@@ -1,0 +1,106 @@
+================================================================================================================
+Part 1: stored energy intervals of m_s (inner = hull of stored explicit states, a sub-interval of the window;
+        outer = DMRG-referenced interval). Widths in units of tau(x) = 0.06 |m_s^truth(x)| at the QUERY x.
+
+n = 57: training couplings [1.6, 1.8, 2.0, 2.2, 2.5, 3.0, 3.5, 4.0, 5.0, 6.0]; missing map rows: [2.2, 3.5]
+   Jz    tau      w_in/tau(Jz)  w_out/tau(Jz)  hull(inner,label)/tau(Jz)
+   1.6  0.04622     11.700        12.682          11.700
+   1.8  0.04874      7.826         8.624           7.826
+   2.0  0.05067      5.565         6.035           5.565
+   2.2  0.05217      0.000         n/a           0.000
+   2.5  0.05383      2.340         2.664           2.340
+   3.0  0.05564      1.319         1.346           1.319
+   3.5  0.05677      0.000         n/a           0.000
+   4.0  0.05751      0.494         0.494           0.494
+   5.0  0.05840      0.253         0.254           0.253
+   6.0  0.05888      0.145         0.158           0.145
+   query  range  m   k   floor (inner)  floor (inner+label)  floor (outer; n/a if a row is missing)  cubic 2q_lo  cubic 2q_hi  2q_lo/floor
+    1.1   test  10  10      15.139         15.139                  nan                           30.065       30.902     1.986
+    1.2   test  10  10      14.073         14.073                  nan                           27.948       28.725     1.986
+    1.3   test  10  10      13.254         13.254                  nan                           26.322       27.054     1.986
+    1.4   test  10  10      12.615         12.615                  nan                           25.053       25.749     1.986
+    1.6   train  9   9       8.254          8.254                  nan                           16.549       17.004     2.005
+    1.8   train  9   9      11.093         11.093                  nan                           22.356       22.968     2.015
+    2.0   train  9   9      10.671         10.671                  nan                           21.198       21.787     1.987
+    2.2   train  9   9      10.366         10.366                  nan                           20.621       21.193     1.989
+    2.5   train  9   9      10.045         10.045                  nan                           19.923       20.478     1.983
+    3.0   train  9   9       9.718          9.718                  nan                           19.296       19.832     1.986
+    3.5   train  9   9       9.525          9.525                  nan                           18.915       19.441     1.986
+    4.0   train  9   9       9.402          9.402                  nan                           18.652       19.172     1.984
+    5.0   train  9   9       9.259          9.259                  nan                           18.380       18.892     1.985
+    6.0   train  9   9       9.183          9.183                  nan                           18.184       18.691     1.980
+   n = 57, train range: floor (inner) 8.25-11.09 tau; with the label in the hull 8.25-11.09 tau; outer nan-nan tau
+   n = 57, test range: floor (inner) 12.61-15.14 tau; with the label in the hull 12.61-15.14 tau; outer nan-nan tau
+
+n = 115: training couplings [1.6, 2.0, 2.5, 3.0, 4.0, 5.0, 6.0]; missing map rows: []
+   Jz    tau      w_in/tau(Jz)  w_out/tau(Jz)  hull(inner,label)/tau(Jz)
+   1.6  0.04707     16.657        18.788          17.770
+   2.0  0.05125      9.441        10.950          10.146
+   2.5  0.05421      2.414         5.757           2.834
+   3.0  0.05591      2.571         3.543           2.803
+   4.0  0.05766      1.135         1.177           1.135
+   5.0  0.05849      0.544         0.565           0.544
+   6.0  0.05895      0.273         0.312           0.273
+   query  range  m   k   floor (inner)  floor (inner+label)  floor (outer; n/a if a row is missing)  cubic 2q_lo  cubic 2q_hi  2q_lo/floor
+    1.1   test   7   7      21.094         22.504               23.793                           44.945       45.665     1.997
+    1.2   test   7   7      19.731         21.049               22.255                           42.040       42.713     1.997
+    1.3   test   7   7      18.677         19.925               21.067                           39.795       40.432     1.997
+    1.4   test   7   7      17.850         19.042               20.134                           38.032       38.641     1.997
+    1.6   train  6   6      10.278         11.046               11.922                           22.086       22.475     1.999
+    2.0   train  6   6      15.299         16.321               17.257                           32.572       33.094     1.996
+    2.5   train  6   6      14.465         15.431               16.315                           30.811       31.304     1.997
+    3.0   train  6   6      14.025         14.962               15.819                           29.884       30.363     1.997
+    4.0   train  6   6      13.599         14.507               15.339                           28.984       29.448     1.998
+    5.0   train  6   6      13.405         14.301               15.121                           28.560       29.018     1.997
+    6.0   train  6   6      13.302         14.190               15.003                           28.338       28.792     1.997
+   n = 115, train range: floor (inner) 10.28-15.30 tau; with the label in the hull 11.05-16.32 tau; outer 11.92-17.26 tau
+   n = 115, test range: floor (inner) 17.85-21.09 tau; with the label in the hull 19.04-22.50 tau; outer 20.13-23.79 tau
+
+attack: 1675000 random prediction vectors plus 3 direct minimizations per query; violations of 2q >= floor: 0; smallest 2q/floor found: 1.000000 (1 = attained by the midpoints)
+================================================================================================================
+Part 2: the dataset's own 45 training couplings (Jz = 1.6, 1.7, ..., 6.0), alpha = 0.1
+   labels in the map: ['C2_bar', 'Czz_bar', 'Czz_edge', 'Z_boundary', 'Z_bulk', 'Z_loop', 'm_s']
+   m = 45, k = ceil(46 x 0.9) = 42: at most 3 calibration labels may have intervals wider than 2q
+
+   n = 57, label m_s: computed map rows in the training range (width of the hull of explicit states at the three energies of the digitization band)
+     Jz    eps_lo    eps_dig   eps_up    tau       w_in(lo)  /tau    w_in(dig) /tau    w_out(up) /tau   on the 0.1 grid
+     1.6    0.4990    0.6237   0.7790  0.04622   0.30810   6.67    0.34899   7.55    0.39833   8.62   True
+     1.8    0.4085    0.5130   0.6156  0.04874   0.23224   4.76    0.26427   5.42    0.29405   6.03   True
+     2.0    0.3455    0.4348   0.5217  0.05067   0.18067   3.57    0.20528   4.05    0.22831   4.51   True
+     2.5    0.1987    0.2492   0.2990  0.05383   0.09507   1.77    0.10690   1.99    0.11827   2.20   True
+     3.0    0.1290    0.1613   0.1946  0.05564   0.05721   1.03    0.06397   1.15    0.07078   1.27   True
+     3.2    0.1164    0.1454   0.1756  0.05616   0.04905   0.87    0.05503   0.98    0.06067   1.08   True
+     3.3    0.1226    0.1532   0.1853  0.05638   0.04798   0.85    0.05387   0.96    0.05951   1.06   True
+     3.4    0.1121    0.1402   0.1695  0.05658   0.04380   0.77    0.04893   0.86    0.05421   0.96   True
+     3.6    0.0974    0.1218   0.1468  0.05694   0.03735   0.66    0.04166   0.73    0.04606   0.81   True
+     4.0    0.0788    0.0985   0.1185  0.05751   0.02852   0.50    0.03183   0.55    0.03508   0.61   True
+     4.5    0.0617    0.0771   0.0932  0.05803   0.02102   0.36    0.02342   0.40    0.02591   0.45   True
+     5.0    0.0460    0.0575   0.0695  0.05840   0.01543   0.26    0.01720   0.29    0.01900   0.33   True
+     5.5    0.0421    0.0527   0.0632  0.05867   0.01276   0.22    0.01423   0.24    0.01566   0.27   True
+     6.0    0.0414    0.0517   0.0625  0.05888   0.01108   0.19    0.01235   0.21    0.01364   0.23   True
+     lowest energy of the band (at_lo, inner): 5 computed couplings wider than their tau; the 4th widest computed interval is 0.09507 -> w_(42) >= 0.09507 whatever the other 31 labels are;
+        in units of the largest tolerance of the training range (tau = 0.05888 at Jz = 6.0): 1.615 tau;   in units of tau at the coupling of that label: 1.766 tau
+     digitized energy (at_dig, inner): 5 computed couplings wider than their tau; the 4th widest computed interval is 0.10690 -> w_(42) >= 0.10690 whatever the other 31 labels are;
+        in units of the largest tolerance of the training range (tau = 0.05888 at Jz = 6.0): 1.815 tau;   in units of tau at the coupling of that label: 1.986 tau
+
+   n = 115, label m_s: computed map rows in the training range (width of the hull of explicit states at the three energies of the digitization band)
+     Jz    eps_lo    eps_dig   eps_up    tau       w_in(lo)  /tau    w_in(dig) /tau    w_out(up) /tau   on the 0.1 grid
+     1.6    1.0706    1.3382   1.6144  0.04707   0.29584   6.28    0.33690   7.16    0.37815   8.03   True
+     1.8    0.8850    1.1063   1.3341  0.04945   0.22516   4.55    0.25581   5.17    0.28732   5.81   True
+     2.0    0.6707    0.8414   1.0102  0.05125   0.16481   3.22    0.18715   3.65    0.20883   4.07   True
+     2.5    0.3923    0.4919   0.5905  0.05421   0.08776   1.62    0.09879   1.82    0.10942   2.02   True
+     3.0    0.2703    0.3379   0.4078  0.05591   0.05437   0.97    0.06039   1.08    0.06850   1.23   True
+     3.3    0.2267    0.2834   0.3428  0.05660   0.04311   0.76    0.04824   0.85    0.05339   0.94   True
+     3.6    0.1554    0.1943   0.2341  0.05713   0.03115   0.55    0.03473   0.61    0.03837   0.67   True
+     4.0    0.1152    0.1440   0.1733  0.05766   0.02280   0.40    0.02542   0.44    0.02803   0.49   True
+     4.5    0.0839    0.1049   0.1268  0.05814   0.01624   0.28    0.01811   0.31    0.02000   0.34   True
+     5.0    0.0780    0.0975   0.1178  0.05849   0.01334   0.23    0.01487   0.25    0.01642   0.28   True
+     5.5    0.0476    0.0596   0.0716  0.05875   0.00901   0.15    0.01006   0.17    0.01106   0.19   True
+     6.0    0.0365    0.0456   0.0552  0.05895   0.00691   0.12    0.00771   0.13    0.00850   0.14   True
+     lowest energy of the band (at_lo, inner): 4 computed couplings wider than their tau; the 4th widest computed interval is 0.08776 -> w_(42) >= 0.08776 whatever the other 33 labels are;
+        in units of the largest tolerance of the training range (tau = 0.05895 at Jz = 6.0): 1.489 tau;   in units of tau at the coupling of that label: 1.619 tau
+     digitized energy (at_dig, inner): 5 computed couplings wider than their tau; the 4th widest computed interval is 0.09879 -> w_(42) >= 0.09879 whatever the other 33 labels are;
+        in units of the largest tolerance of the training range (tau = 0.05895 at Jz = 6.0): 1.676 tau;   in units of tau at the coupling of that label: 1.822 tau
+
+   The floor of Part 2 is conditional on the digitized energies of the map (the dataset's own energies were
+   read from figures) and on all 45 training points being used as calibration points with the constant-width score.

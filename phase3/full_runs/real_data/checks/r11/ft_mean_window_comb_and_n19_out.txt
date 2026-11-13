@@ -1,0 +1,30 @@
+﻿
+== C. window of energy and mean magnetization on the 12-site comb (Sec. II) ==
+comb: n=12, M_0=4, edges=11
+Jz=1.6: E0(sector)=-5.765867, E0(-M_0 sector)-E0=0.00e+00, B_-=0.000000, B_+=0.905615
+   de=1e-03 ms   sector [+0.7310, +0.8155] | mean M_0 [+0.7310, +0.8155] | mean M_0-0.2 [+0.6924, +0.7769] | no constraint [-0.8155, +0.8155]
+   de=1e-03 czz  sector [-0.8126, -0.7357] | mean M_0 [-0.8126, -0.7357] | mean M_0-0.2 [-0.8126, -0.7357] | no constraint [-0.8126, -0.7357]
+   de=1e-03 mean=4.0: greatest weight of the reversed sector = 0.001656 ; bound q/M_0 + de/(2 m_0 B_+) = 0.001656 ; ok True
+   de=1e-03 mean=3.8: greatest weight of the reversed sector = 0.026656 ; bound q/M_0 + de/(2 m_0 B_+) = 0.026656 ; ok True
+   de=1e-02 ms   sector [+0.6231, +0.8891] | mean M_0 [+0.6231, +0.8891] | mean M_0-0.2 [+0.5849, +0.8523] | no constraint [-0.8891, +0.8891]
+   de=1e-02 mean=4.0: greatest weight of the reversed sector = 0.016563 ; bound q/M_0 + de/(2 m_0 B_+) = 0.016563 ; ok True
+   de=1e-02 mean=3.8: greatest weight of the reversed sector = 0.041563 ; bound q/M_0 + de/(2 m_0 B_+) = 0.041563 ; ok True
+Jz=4.0: E0(sector)=-11.625730, E0(-M_0 sector)-E0=1.78e-15, B_-=-0.000000, B_+=2.049702
+   de=1e-03 ms   sector [+0.9298, +0.9613] | mean M_0 [+0.9298, +0.9613] | mean M_0-0.2 [+0.8825, +0.9141] | no constraint [-0.9613, +0.9613]
+   de=1e-03 czz  sector [-0.9602, -0.9311] | mean M_0 [-0.9602, -0.9311] | mean M_0-0.2 [-0.9602, -0.9311] | no constraint [-0.9602, -0.9311]
+   de=1e-03 mean=4.0: greatest weight of the reversed sector = 0.000732 ; bound q/M_0 + de/(2 m_0 B_+) = 0.000732 ; ok True
+   de=1e-03 mean=3.8: greatest weight of the reversed sector = 0.025732 ; bound q/M_0 + de/(2 m_0 B_+) = 0.025732 ; ok True
+   de=1e-02 ms   sector [+0.8835, +0.9842] | mean M_0 [+0.8835, +0.9842] | mean M_0-0.2 [+0.8365, +0.9406] | no constraint [-0.9842, +0.9842]
+   de=1e-02 mean=4.0: greatest weight of the reversed sector = 0.007318 ; bound q/M_0 + de/(2 m_0 B_+) = 0.007318 ; ok True
+   de=1e-02 mean=3.8: greatest weight of the reversed sector = 0.032318 ; bound q/M_0 + de/(2 m_0 B_+) = 0.032318 ; ok True
+
+== D. n = 19 patch: sectors, the field 3/8 Jz, tilts (Theorem 4 remarks) ==   t=847s
+Jz=1.6 tilt t=+0.0000: interval of fields (B_-, B_+) = (0.0000, 0.3650) Jz ; charge gap at B=3/8 Jz: -0.0321 ; sector gap 0.9623  -> full-space ground state in the Neel sector: False
+Jz=4.0 tilt t=+0.0000: interval of fields (B_-, B_+) = (0.0000, 0.4252) Jz ; charge gap at B=3/8 Jz: +0.4017 ; sector gap 3.0618  -> full-space ground state in the Neel sector: True
+Jz=4.0 tilt t=-0.0250: interval of fields (B_-, B_+) = (0.1508, 0.3703) Jz ; charge gap at B=3/8 Jz: -0.0670 ; sector gap 2.1848  -> full-space ground state in the Neel sector: False
+Jz=4.5 tilt t=-0.0250: interval of fields (B_-, B_+) = (0.1523, 0.3768) Jz ; charge gap at B=3/8 Jz: +0.0163 ; sector gap 2.5463  -> full-space ground state in the Neel sector: True
+Jz=1.6 tilt t=-0.0250: interval of fields (B_-, B_+) = (0.1148, 0.3148) Jz ; charge gap at B=3/8 Jz: -0.2074 ; sector gap 0.6403  -> full-space ground state in the Neel sector: False
+Jz=6.0 tilt t=+0.0000: interval of fields (B_-, B_+) = (-0.0000, 0.4469) Jz ; charge gap at B=3/8 Jz: +0.8624 ; sector gap 4.9941  -> full-space ground state in the Neel sector: True
+Jz=6.0: max_i sum_j |<Z_i;Z_j>| = 0.1134 ; m_s = 0.97893
+
+done in 885 s

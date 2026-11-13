@@ -1,0 +1,81 @@
+ok   predict_results.json: identical copy                       -> [PASS] test         predict_results.json: SHA-256 equal to the stored output (04be4924ea62f10c)
+ok   predict_results.json: other line endings                   -> [PASS] test         predict_results.json: equal to the stored output apart from line endings (the stored file was written on Windows, this one on a sy
+ok   predict_results.json: same entries, other spacing          -> [PASS] test         predict_results.json: equal to the stored output entry by entry; the two files differ only in how the same entries are written
+ok   predict_results.json: every decimal number times (1 + 3e-13) -> [PASS] test         predict_results.json: equal to the stored output entry by entry, NOT byte for byte: 5378 of its 5378 decimal numbers differ in the
+ok   predict_results.json: one decimal number off by 1e-6       -> [FAIL] test         predict_results.json: DIFFERS from the stored output (new 5a27732c10966966, stored 04be4924ea62f10c)
+ok   predict_results.json: one integer plus one                 -> [FAIL] test         predict_results.json: DIFFERS from the stored output (new 90fdc7cb6b804588, stored 04be4924ea62f10c)
+ok   predict_results.json: one word changed                     -> [FAIL] test         predict_results.json: DIFFERS from the stored output (new 66513511f6876ed5, stored 04be4924ea62f10c)
+ok   predict_results.json: one key removed                      -> [FAIL] test         predict_results.json: DIFFERS from the stored output (new d4b13fdd79f1df46, stored 04be4924ea62f10c)
+ok   predict_results.json: one digit of a checksum changed      -> [FAIL] test         predict_results.json: DIFFERS from the stored output (new be1046cbe7623782, stored 04be4924ea62f10c)
+ok   f2_floor.json: identical copy                              -> [PASS] test         f2_floor.json: SHA-256 equal to the stored output (7755247d895068a2)
+ok   f2_floor.json: other line endings                          -> [PASS] test         f2_floor.json: equal to the stored output apart from line endings (the stored file was written on Windows, this one on a system wi
+ok   f2_floor.json: same entries, other spacing                 -> [PASS] test         f2_floor.json: equal to the stored output entry by entry; the two files differ only in how the same entries are written
+ok   f2_floor.json: every decimal number times (1 + 3e-13)      -> [PASS] test         f2_floor.json: equal to the stored output entry by entry, NOT byte for byte: 374 of its 374 decimal numbers differ in the last dig
+ok   f2_floor.json: one decimal number off by 1e-6              -> [FAIL] test         f2_floor.json: DIFFERS from the stored output (new fccdf5bca9c87312, stored 7755247d895068a2)
+ok   f2_floor.json: one integer plus one                        -> [FAIL] test         f2_floor.json: DIFFERS from the stored output (new 4e73dbfd741187fe, stored 7755247d895068a2)
+ok   f2_floor.json: one word changed                            -> [FAIL] test         f2_floor.json: DIFFERS from the stored output (new 8261b3e404691c84, stored 7755247d895068a2)
+ok   f2_floor.json: one key removed                             -> [FAIL] test         f2_floor.json: DIFFERS from the stored output (new f48b29fbb800cd63, stored 7755247d895068a2)
+ok   f2_floor.json: one digit of a checksum changed             -> [FAIL] test         f2_floor.json: DIFFERS from the stored output (new 2ee4dbc1d6aa0123, stored 7755247d895068a2)
+ok   f1_rules.json: identical copy                              -> [PASS] test         f1_rules.json: SHA-256 equal to the stored output (81cbe7cf88eaa3aa)
+ok   f1_rules.json: other line endings                          -> [PASS] test         f1_rules.json: equal to the stored output apart from line endings (the stored file was written on Windows, this one on a system wi
+ok   f1_rules.json: same entries, other spacing                 -> [PASS] test         f1_rules.json: equal to the stored output entry by entry; the two files differ only in how the same entries are written
+ok   f1_rules.json: every decimal number times (1 + 3e-13)      -> [PASS] test         f1_rules.json: equal to the stored output entry by entry, NOT byte for byte: 123 of its 130 decimal numbers differ in the last dig
+ok   f1_rules.json: one decimal number off by 1e-6              -> [FAIL] test         f1_rules.json: DIFFERS from the stored output (new 69082fcd0e42f00d, stored 81cbe7cf88eaa3aa)
+ok   f1_rules.json: one integer plus one                        -> [FAIL] test         f1_rules.json: DIFFERS from the stored output (new 126300788a3a5a90, stored 81cbe7cf88eaa3aa)
+ok   f1_rules.json: one word changed                            -> [FAIL] test         f1_rules.json: DIFFERS from the stored output (new c08b743115eb3f29, stored 81cbe7cf88eaa3aa)
+ok   f1_rules.json: one key removed                             -> [FAIL] test         f1_rules.json: DIFFERS from the stored output (new 73bca4243e045cf9, stored 81cbe7cf88eaa3aa)
+ok   f1_rules.json: one digit of a checksum changed             -> [FAIL] test         f1_rules.json: DIFFERS from the stored output (new 8513e561c5ae3365, stored 81cbe7cf88eaa3aa)
+ok   results_cheap.json: identical copy                         -> [PASS] test         results_cheap.json: SHA-256 equal to the stored output (e3193b9a80525aaf)
+ok   results_cheap.json: other line endings                     -> [PASS] test         results_cheap.json: equal to the stored output apart from line endings (the stored file was written on Windows, this one on a syst
+ok   results_cheap.json: same entries, other spacing            -> [PASS] test         results_cheap.json: equal to the stored output apart from recorded run times and the folder of the package
+ok   results_cheap.json: every decimal number times (1 + 3e-13) -> [PASS] test         results_cheap.json: equal to the stored output entry by entry, NOT byte for byte: 6843 of its 7086 decimal numbers differ in the l
+ok   results_cheap.json: one decimal number off by 1e-6         -> [FAIL] test         results_cheap.json: DIFFERS from the stored output (new fe72fab0d1f70080, stored e3193b9a80525aaf)
+ok   results_cheap.json: one integer plus one                   -> [FAIL] test         results_cheap.json: DIFFERS from the stored output (new 933d747a713b745b, stored e3193b9a80525aaf)
+ok   results_cheap.json: one word changed                       -> [FAIL] test         results_cheap.json: DIFFERS from the stored output (new 2900b6a275f977d4, stored e3193b9a80525aaf)
+ok   results_cheap.json: one key removed                        -> [FAIL] test         results_cheap.json: DIFFERS from the stored output (new 9f7aefb4622c3827, stored e3193b9a80525aaf)
+ok   map_summary.json: identical copy                           -> [PASS] test         map_summary.json: SHA-256 equal to the stored output (39982e97e3364c37)
+ok   map_summary.json: other line endings                       -> [PASS] test         map_summary.json: equal to the stored output apart from line endings (the stored file was written on Windows, this one on a system
+ok   map_summary.json: same entries, other spacing              -> [PASS] test         map_summary.json: equal to the stored output entry by entry; the two files differ only in how the same entries are written
+ok   map_summary.json: every decimal number times (1 + 3e-13)   -> [PASS] test         map_summary.json: equal to the stored output entry by entry, NOT byte for byte: 3850 of its 3850 decimal numbers differ in the las
+ok   map_summary.json: one decimal number off by 1e-6           -> [FAIL] test         map_summary.json: DIFFERS from the stored output (new c947a521d659ce26, stored 39982e97e3364c37)
+ok   map_summary.json: one integer plus one                     -> [FAIL] test         map_summary.json: DIFFERS from the stored output (new e7ed17ebf8b35f29, stored 39982e97e3364c37)
+ok   map_summary.json: one word changed                         -> [FAIL] test         map_summary.json: DIFFERS from the stored output (new e71f028d20f11912, stored 39982e97e3364c37)
+ok   map_summary.json: one key removed                          -> [FAIL] test         map_summary.json: DIFFERS from the stored output (new 0731ad38b81ca9cf, stored 39982e97e3364c37)
+ok   map_summary.json: one digit of a checksum changed          -> [FAIL] test         map_summary.json: DIFFERS from the stored output (new 241857f50580ac2c, stored 39982e97e3364c37)
+ok   map_gates.json: identical copy                             -> [PASS] test         map_gates.json: SHA-256 equal to the stored output (34b1e72d3bc460ae)
+ok   map_gates.json: other line endings                         -> [PASS] test         map_gates.json: equal to the stored output apart from line endings (the stored file was written on Windows, this one on a system w
+ok   map_gates.json: same entries, other spacing                -> [PASS] test         map_gates.json: equal to the stored output apart from recorded run times and the folder of the package
+ok   map_gates.json: every decimal number times (1 + 3e-13)     -> [PASS] test         map_gates.json: equal to the stored output entry by entry, NOT byte for byte: 796 of its 796 decimal numbers differ in the last di
+ok   map_gates.json: one decimal number off by 1e-6             -> [FAIL] test         map_gates.json: DIFFERS from the stored output (new 2db4c927bd4146a8, stored 34b1e72d3bc460ae)
+ok   map_gates.json: one integer plus one                       -> [FAIL] test         map_gates.json: DIFFERS from the stored output (new 4cfc9fd445ab04d3, stored 34b1e72d3bc460ae)
+ok   map_gates.json: one word changed                           -> [FAIL] test         map_gates.json: DIFFERS from the stored output (new f267f2845cff3635, stored 34b1e72d3bc460ae)
+ok   map_gates.json: one key removed                            -> [FAIL] test         map_gates.json: DIFFERS from the stored output (new 6dab11eae5ed2f9e, stored 34b1e72d3bc460ae)
+ok   map_gates.json: one digit of a checksum changed            -> [FAIL] test         map_gates.json: DIFFERS from the stored output (new 89bebb237158912a, stored 34b1e72d3bc460ae)
+ok   S_sets.json: identical copy                                -> [PASS] test         S_sets.json: SHA-256 equal to the stored output (e82b32a79abdc43c)
+ok   S_sets.json: other line endings                            -> [PASS] test         S_sets.json: equal to the stored output apart from line endings (the stored file was written on Windows, this one on a system with
+ok   S_sets.json: same entries, other spacing                   -> [PASS] test         S_sets.json: equal to the stored output entry by entry; the two files differ only in how the same entries are written
+ok   S_sets.json: every decimal number times (1 + 3e-13)        -> [PASS] test         S_sets.json: equal to the stored output entry by entry, NOT byte for byte: 943 of its 943 decimal numbers differ in the last digit
+ok   S_sets.json: one decimal number off by 1e-6                -> [FAIL] test         S_sets.json: DIFFERS from the stored output (new 21d911a4a3d1bb13, stored e82b32a79abdc43c)
+ok   S_sets.json: one word changed                              -> [FAIL] test         S_sets.json: DIFFERS from the stored output (new 79c6c33dc003793b, stored e82b32a79abdc43c)
+ok   S_sets.json: one key removed                               -> [FAIL] test         S_sets.json: DIFFERS from the stored output (new 0d087d64a03a2584, stored e82b32a79abdc43c)
+ok   S_sets.json: one digit of a checksum changed               -> [FAIL] test         S_sets.json: DIFFERS from the stored output (new b1079ee5ee9fd9bd, stored e82b32a79abdc43c)
+map_tables.md: 374 decimal numbers found by the pattern
+ok   map_tables.md: identical copy                              -> [PASS] test         map_tables.md: SHA-256 equal to the stored output (6f48ec7c3e4f954b)
+ok   map_tables.md: other line endings                          -> [PASS] test         map_tables.md: equal to the stored output apart from line endings (the stored file was written on Windows, this one on a system wi
+ok   map_tables.md: one decimal number, last digits             -> [PASS] test         map_tables.md: equal to the stored output entry by entry, NOT byte for byte: 1 of its 374 decimal numbers differ in the last digit
+ok   map_tables.md: one decimal number off by 1e-3              -> [FAIL] test         map_tables.md: DIFFERS from the stored output (new 50c4464603ae5464, stored 6f48ec7c3e4f954b)
+ok   map_tables.md: one integer plus one                        -> [FAIL] test         map_tables.md: DIFFERS from the stored output (new 7fbc89aed58a8cbb, stored 6f48ec7c3e4f954b)
+ok   map_tables.md: one word changed                            -> [FAIL] test         map_tables.md: DIFFERS from the stored output (new 7a78fa9374abd7c9, stored 6f48ec7c3e4f954b)
+ok   pattern on 'n57_J1.6_m_s_m_l0.066484'   -> 0 decimal numbers []
+ok   pattern on '13aa8e69c9bc614c72c5'       -> 0 decimal numbers []
+ok   pattern on 'v1.2.3'                     -> 0 decimal numbers []
+ok   pattern on 'x = 0.25, y = -1.5e-3'      -> 2 decimal numbers ['0.25', '-1.5e-3']
+ok   pattern on 'file_2.5.json'              -> 0 decimal numbers []
+ok   pattern on '(3.14)'                     -> 1 decimal numbers ['3.14']
+ok   pattern on '1e5'                        -> 1 decimal numbers ['1e5']
+ok   pattern on 'abc1e5'                     -> 0 decimal numbers []
+ok   pattern on '12'                         -> 0 decimal numbers []
+ok   pattern on '0.5-0.7'                    -> 1 decimal numbers ['0.5']
+ok   pattern on '[0.5, 0.7]'                 -> 2 decimal numbers ['0.5', '0.7']
+
+78 cases, 78 as expected, 0 not

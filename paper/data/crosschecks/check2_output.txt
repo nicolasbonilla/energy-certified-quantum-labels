@@ -1,0 +1,45 @@
+(a) TFIM open chain, h=1.5, O = Z_center, kappa_A = 7
+  de = 0.05   N* = kappa/de = 140.00
+    n= 4 eps= 0.20  window [-0.5816, +0.5816] width 1.1631  bound-up 0.0286 actual-up 0.5816  ok
+    n= 6 eps= 0.30  window [-0.7074, +0.7074] width 1.4149  bound-up 0.0429 actual-up 0.7074  ok
+    n= 8 eps= 0.40  window [-0.7953, +0.7953] width 1.5905  bound-up 0.0571 actual-up 0.7953  ok
+    n=10 eps= 0.50  window [-0.8595, +0.8595] width 1.7190  bound-up 0.0714 actual-up 0.8595  ok
+    n=12 eps= 0.60  window [-0.9072, +0.9072] width 1.8144  bound-up 0.0857 actual-up 0.9072  ok
+  -> window reaches 99% of full range first at n = None (N* = 140.0)
+  de = 0.10   N* = kappa/de = 70.00
+    n= 4 eps= 0.40  window [-0.7749, +0.7749] width 1.5498  bound-up 0.0571 actual-up 0.7749  ok
+    n= 6 eps= 0.60  window [-0.9013, +0.9013] width 1.8026  bound-up 0.0857 actual-up 0.9013  ok
+    n= 8 eps= 0.80  window [-0.9663, +0.9663] width 1.9327  bound-up 0.1143 actual-up 0.9663  ok
+    n=10 eps= 1.00  window [-0.9948, +0.9948] width 1.9896  bound-up 0.1429 actual-up 0.9948  ok
+    n=12 eps= 1.20  window [-1.0000, +1.0000] width 2.0000  bound-up 0.1714 actual-up 1.0000  ok
+  -> window reaches 99% of full range first at n = 10 (N* = 70.0)
+  de = 0.20   N* = kappa/de = 35.00
+    n= 4 eps= 0.80  window [-0.9562, +0.9562] width 1.9124  bound-up 0.1143 actual-up 0.9562  ok
+    n= 6 eps= 1.20  window [-1.0000, +1.0000] width 2.0000  bound-up 0.1714 actual-up 1.0000  ok
+    n= 8 eps= 1.60  window [-1.0000, +1.0000] width 2.0000  bound-up 0.2286 actual-up 1.0000  ok
+    n=10 eps= 2.00  window [-1.0000, +1.0000] width 2.0000  bound-up 0.2857 actual-up 1.0000  ok
+    n=12 eps= 2.40  window [-1.0000, +1.0000] width 2.0000  bound-up 0.3429 actual-up 1.0000  ok
+  -> window reaches 99% of full range first at n = 6 (N* = 35.0)
+  de = 0.75   N* = kappa/de = 9.33
+    n= 4 eps= 3.00  window [-1.0000, +1.0000] width 2.0000  bound-up 0.4286 actual-up 1.0000  ok
+    n= 6 eps= 4.50  window [-1.0000, +1.0000] width 2.0000  bound-up 0.6429 actual-up 1.0000  ok
+    n= 8 eps= 6.00  window [-1.0000, +1.0000] width 2.0000  bound-up 0.8571 actual-up 1.0000  ok
+    n=10 eps= 7.50  window [-1.0000, +1.0000] width 2.0000  bound-up 1.0000 actual-up 1.0000  ok   (n >= N*: full range required)
+    n=12 eps= 9.00  window [-1.0000, +1.0000] width 2.0000  bound-up 1.0000 actual-up 1.0000  ok   (n >= N*: full range required)
+  -> window reaches 99% of full range first at n = 4 (N* = 9.3)
+
+(b) XXZ chain Jz=2 in a U(1) sector, O = Z_center, block B = {c, c+1}
+  n= 8 nup= 4 de=0.01 kappa_B=4.50 c_B+=0.9364 o_GS=+0.0000  bound 0.0166  actual 0.7602  ok
+  n= 8 nup= 4 de=0.03 kappa_B=4.50 c_B+=0.9364 o_GS=+0.0000  bound 0.0499  actual 0.9778  ok
+  n= 8 nup= 4 de=0.10 kappa_B=4.50 c_B+=0.9364 o_GS=+0.0000  bound 0.1665  actual 1.0000  ok
+  n= 8 nup= 5 de=0.01 kappa_B=4.50 c_B+=0.9428 o_GS=+0.0479  bound 0.0159  actual 0.5876  ok
+  n= 8 nup= 5 de=0.03 kappa_B=4.50 c_B+=0.9428 o_GS=+0.0479  bound 0.0477  actual 0.8788  ok
+  n= 8 nup= 5 de=0.10 kappa_B=4.50 c_B+=0.9428 o_GS=+0.0479  bound 0.1591  actual 0.9521  ok
+  n=12 nup= 6 de=0.01 kappa_B=4.50 c_B+=0.9225 o_GS=-0.0000  bound 0.0246  actual 0.9212  ok
+  n=12 nup= 6 de=0.03 kappa_B=4.50 c_B+=0.9225 o_GS=-0.0000  bound 0.0738  actual 1.0000  ok
+  n=12 nup= 6 de=0.10 kappa_B=4.50 c_B+=0.9225 o_GS=-0.0000  bound 0.2460  actual 1.0000  ok
+  n=12 nup= 7 de=0.01 kappa_B=4.50 c_B+=0.9191 o_GS=+0.0339  bound 0.0236  actual 0.7552  ok
+  n=12 nup= 7 de=0.03 kappa_B=4.50 c_B+=0.9191 o_GS=+0.0339  bound 0.0708  actual 0.9642  ok
+  n=12 nup= 7 de=0.10 kappa_B=4.50 c_B+=0.9191 o_GS=+0.0339  bound 0.2360  actual 0.9661  ok
+
+Theorem 1 tests: 32, violations: 0

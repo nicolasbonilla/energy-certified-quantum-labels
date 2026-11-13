@@ -1,0 +1,28 @@
+start 2026-11-12T19:55:38Z
+declaration 6dfbc5681a7b4708ba790e1dd3139d8efdcccb9ced24e5ab2ce4b5a7a209ffaa | seed 1845216616 | stages ['f1_cheap', 'prop2', 'f2', 'f3', 'rules']
+  rd_learn_ibm.py C:\Users\Nicolas\Downloads\Proyecto_SQD_ML\P5_energy_certified_labels\work C:\Users\Nicolas\Downloads\Proyecto_SQD_ML\P5_energy_certified_labels\work\phase3\full_runs\real_data\out\learn --data=real --models=poly3_invJ,null_nn --tag=cheap -> exit 0 (log C:\Users\Nicolas\Downloads\Proyecto_SQD_ML\P5_energy_certified_labels\work\phase3\full_runs\real_data\out\learn\stdout_cheap.txt)
+  rd_prop2_cubic.py C:\Users\Nicolas\Downloads\Proyecto_SQD_ML\P5_energy_certified_labels\work C:\Users\Nicolas\Downloads\Proyecto_SQD_ML\P5_energy_certified_labels\work\phase3\full_runs\real_data\out\learn --data=real --sets=C:\Users\Nicolas\Downloads\Proyecto_SQD_ML\P5_energy_certified_labels\work\phase3\full_runs\real_data\out\S_sets.json -> exit 0 (log C:\Users\Nicolas\Downloads\Proyecto_SQD_ML\P5_energy_certified_labels\work\phase3\full_runs\real_data\out\learn\prop2_cubic_stdout.txt)
+  f2 n = 57: floor w_(42) of 45 = 0.22959 = 5.36-6.43 tau at the test queries -> HOLDS (readings agree: True)
+  f2 n = 115: floor w_(42) of 45 = 0.20427 = 4.65-5.50 tau at the test queries -> HOLDS (readings agree: True)
+  f3 n = 57: |S| = 26, |S_3/4| = 23, |S_1/2| = 18, primary S_1_2 -> PASS
+     S      M1: (W) 0.030 of splits, (C) 1.000 of pairs, 2q/tau 0.906-1.563, largest miss 0.211 tau
+     S      M2: (W) 0.030 of splits, (C) 1.000 of pairs, 2q/tau 0.917-1.545, largest miss 0.211 tau
+     S      M0: (W) 0.030 of splits, (C) 1.000 of pairs, 2q/tau 0.890-1.432, largest miss 0.156 tau
+     S_3_4  M1: (W) 0.250 of splits, (C) 1.000 of pairs, 2q/tau 0.816-1.162, largest miss 0.157 tau
+     S_3_4  M2: (W) 0.330 of splits, (C) 1.000 of pairs, 2q/tau 0.822-1.137, largest miss 0.136 tau
+     S_3_4  M0: (W) 0.250 of splits, (C) 1.000 of pairs, 2q/tau 0.818-1.082, largest miss 0.121 tau
+     S_1_2  M1: (W) 1.000 of splits, (C) 1.000 of pairs, 2q/tau 0.587-0.857, largest miss 0.137 tau
+     S_1_2  M2: (W) 1.000 of splits, (C) 1.000 of pairs, 2q/tau 0.563-0.856, largest miss 0.148 tau
+     S_1_2  M0: (W) 1.000 of splits, (C) 1.000 of pairs, 2q/tau 0.599-0.761, largest miss 0.090 tau
+  f3 n = 115: |S| = 21, |S_3/4| = 21, |S_1/2| = 10, primary S_3_4 -> PASS
+     S      M1: (W) 1.000 of splits, (C) 1.000 of pairs, 2q/tau 0.859-0.998, largest miss 0.109 tau
+     S      M2: (W) 0.995 of splits, (C) 1.000 of pairs, 2q/tau 0.869-1.027, largest miss 0.116 tau
+     S      M0: (W) 1.000 of splits, (C) 1.000 of pairs, 2q/tau 0.865-0.962, largest miss 0.067 tau
+     S_3_4  M1: (W) 1.000 of splits, (C) 1.000 of pairs, 2q/tau 0.863-0.984, largest miss 0.121 tau
+     S_3_4  M2: (W) 1.000 of splits, (C) 1.000 of pairs, 2q/tau 0.865-0.991, largest miss 0.130 tau
+     S_3_4  M0: (W) 1.000 of splits, (C) 1.000 of pairs, 2q/tau 0.858-0.964, largest miss 0.067 tau
+     S_1_2  NOT RUN (fewer than 15 couplings)
+  n = 57: L1 HOLDS {'1.1': 3.72, '1.2': 3.17, '1.3': 2.69, '1.4': 2.29} | L2 HOLDS | L3 HOLDS (2q_lo = 6.72-11.07 tau)
+  n = 115: L1 HOLDS {'1.1': 5.06, '1.2': 3.85, '1.3': 2.99, '1.4': 2.38} | L2 HOLDS | L3 HOLDS (2q_lo = 5.92-9.40 tau)
+exit code 0
+end 2026-11-12T19:56:28Z

@@ -1,0 +1,18 @@
+== fig_rule ==
+168 text spans; clearance 1.0 bp; render 600 dpi
+text left after removal: 0 words
+TeX rules treated as text: 0
+legend backgrounds: 4
+conflicts: 0
+== fig_mechanism ==
+115 text spans; clearance 1.0 bp; render 600 dpi
+text left after removal: 0 words
+TeX rules treated as text: 0
+legend backgrounds: 1
+conflicts: 0
+== fig_bias_ratio ==
+251 text spans; clearance 1.0 bp; render 600 dpi
+text left after removal: 0 words
+TeX rules treated as text: 0
+legend backgrounds: 0
+conflicts: 0

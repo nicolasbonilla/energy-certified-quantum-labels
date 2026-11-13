@@ -1,0 +1,133 @@
+export_map_rd.py -- data of main Fig. 3 on the public data (python -B -I; nothing recomputed)
+inputs: phase3/full_runs/real_data/out/map_rows.json (700 rows), e1/map_e1/map_rows.json (700 rows), method/laptop_post/out/emu/*.json
+
+[0] the E1 file repeats the declared map in every field drawn here
+PASS  same 700 rows (7 labels x 50 couplings x 2 sizes) in both files
+PASS  status, energies, tau, reference, label, exact width, explicit-state width and pair: 0 differences
+PASS  tau = 0.06 |O_GS| in all 700 rows
+PASS  status with the reference-free tolerance = status with tau in all 700 rows
+PASS  same for the E1 column
+
+PASS  n = 57: 50 couplings 1.1-6.0
+PASS  n = 115: 50 couplings 1.1-6.0
+files written: 30
+  dat/w_n57_m_s.dat
+  dat/ubar_n57_m_s.dat
+  dat/ucap_n57_m_s.dat
+  dat/w_n57_Czz_bar.dat
+  dat/ubar_n57_Czz_bar.dat
+  dat/ucap_n57_Czz_bar.dat
+  dat/w_n57_C2_bar.dat
+  dat/w_n57_Z_loop.dat
+  dat/w_n57_Z_boundary.dat
+  dat/w_n57_Z_bulk.dat
+  dat/w_n57_Czz_edge.dat
+  dat/strip_n57.dat
+  dat/strip_e1_n57.dat
+  dat/ms_n57.dat
+  dat/emu_n57.dat
+  dat/w_n115_m_s.dat
+  dat/ubar_n115_m_s.dat
+  dat/ucap_n115_m_s.dat
+  dat/w_n115_Czz_bar.dat
+  dat/ubar_n115_Czz_bar.dat
+  dat/ucap_n115_Czz_bar.dat
+  dat/w_n115_C2_bar.dat
+  dat/w_n115_Z_loop.dat
+  dat/w_n115_Z_boundary.dat
+  dat/w_n115_Z_bulk.dat
+  dat/w_n115_Czz_edge.dat
+  dat/strip_n115.dat
+  dat/strip_e1_n115.dat
+  dat/ms_n115.dat
+  dat/emu_n115.dat
+
+[1] statuses of the order parameter and of the mean correlation (caption; counts out of the 45 training couplings)
+PASS  n = 57 m_s: 45 training couplings, 1.6-6.0
+PASS  every certified coupling is a training coupling
+  n = 57  m_s     certified: 26 of 45 (Jz = 3.5-6.0); with E1: 26 of 45 (Jz = 3.5-6.0); not certified: Jz = 1.1-3.1; undecided: Jz = 3.2-3.4; undecided with E1: Jz = 3.2-3.4
+PASS  n = 57 Czz_bar: 45 training couplings, 1.6-6.0
+PASS  every certified coupling is a training coupling
+  n = 57  Czz_bar certified: 27 of 45 (Jz = 3.4-6.0); with E1: 27 of 45 (Jz = 3.4-6.0); not certified: Jz = 1.1-3.1; undecided: Jz = 3.2-3.3; undecided with E1: Jz = 3.2-3.3
+PASS  n = 115 m_s: 45 training couplings, 1.6-6.0
+PASS  every certified coupling is a training coupling
+  n = 115 m_s     certified: 21 of 45 (Jz = 4.0-6.0); with E1: 27 of 45 (Jz = 3.4-6.0); not certified: Jz = 1.1-3.0; undecided: Jz = 3.1-3.9; undecided with E1: Jz = 3.1-3.3
+PASS  n = 115 Czz_bar: 45 training couplings, 1.6-6.0
+PASS  every certified coupling is a training coupling
+  n = 115 Czz_bar certified: 21 of 45 (Jz = 4.0-6.0); with E1: 25 of 45 (Jz = 3.6-6.0); not certified: Jz = 1.1-3.0; undecided: Jz = 3.1-3.9; undecided with E1: Jz = 3.1-3.5
+PASS  m_s, n = 57: 26 of 45, Jz = 3.5-6.0
+PASS  m_s, n = 115: 21 of 45, Jz = 4.0-6.0
+PASS  m_s, n = 115 with E1: 27 of 45, Jz = 3.4-6.0
+PASS  n = 57 with E1: still 26 of 45 (m_s) and 27 of 45 (Czz_bar): the extension certifies none more at n = 57
+PASS  Czz_bar, n = 57: 27 of 45, Jz = 3.4-6.0
+PASS  Czz_bar, n = 115: 21 of 45, Jz = 4.0-6.0
+PASS  Czz_bar, n = 115 with E1: 25 of 45, Jz = 3.6-6.0
+PASS  not certified, n = 57: m_s and Czz_bar at Jz = 1.1-3.1
+PASS  not certified, n = 115: m_s and Czz_bar at Jz = 1.1-3.0
+PASS  undecided m_s: Jz = 3.2-3.4 (n = 57), 3.1-3.9 (n = 115)
+PASS  undecided m_s with E1: Jz = 3.1-3.3 (n = 115), 3.2-3.4 (n = 57)
+PASS  n = 57: all seven labels NOT_CERTIFIED at Jz = 1.1-1.5 (all seven at Jz = 1.1-3.1)
+PASS  n = 57: no row of C2_bar or of a local label is certified (no certificate exists for them)
+      n = 57, (not certified, undecided) of 50 couplings: {'C2_bar': (29, 21), 'Z_loop': (50, 0), 'Z_boundary': (49, 1), 'Z_bulk': (47, 3), 'Czz_edge': (47, 3)}
+      n = 57, not-certified points with no not-certified neighbour (drawn with their own marker): {'C2_bar': 0, 'Z_loop': 0, 'Z_boundary': 0, 'Z_bulk': 2, 'Czz_edge': 2}
+PASS  n = 115: all seven labels NOT_CERTIFIED at Jz = 1.1-1.5 (all seven at Jz = 1.1-2.9)
+PASS  n = 115: no row of C2_bar or of a local label is certified (no certificate exists for them)
+      n = 115, (not certified, undecided) of 50 couplings: {'C2_bar': (27, 23), 'Z_loop': (33, 17), 'Z_boundary': (20, 30), 'Z_bulk': (28, 22), 'Czz_edge': (27, 23)}
+      n = 115, not-certified points with no not-certified neighbour (drawn with their own marker): {'C2_bar': 0, 'Z_loop': 0, 'Z_boundary': 0, 'Z_bulk': 0, 'Czz_edge': 0}
+      n = 57, local rows by the kind of states used: {'stored chain': 64, 're-evaluated': 136}
+      n = 115, local rows by the kind of states used: {'stored states, no chain of this label': 63, 're-evaluated': 136, 'stored chain': 1}
+PASS  caption: at n = 115 states aimed at a local label were stored only for Z_bulk at Jz = 4 (the only local row with a stored chain of its own label)
+      n = 115, labels that the states used by the local rows were aimed at (number of components): {'Czz_bar': 55, 'm_s': 201, 'C2_bar': 469, 'Z_bulk': 61}
+PASS  caption: at n = 115 the local rows use states aimed at the averages (m_s, Czz_bar, C2_bar) or at Z_bulk
+PASS  the states aimed at Z_bulk are used at Jz = 3.7-4.4 only
+PASS  caption: undecided local rows: 92 of the 200 at n = 115, 7 of the 200 at n = 57 (four local labels x 50 couplings)
+PASS  at n = 57 every local row uses states of its own label (stored chain or re-evaluated)
+  undecided rows that have an exact interval of at most tau: n = 115 Czz_bar Jz = 3.6 (0.958 tau, in declared range: False, with E1: CERTIFIED_EXACT), n = 115 Czz_bar Jz = 3.7 (0.778 tau, in declared range: False, with E1: CERTIFIED_EXACT), n = 115 Czz_bar Jz = 3.8 (0.638 tau, in declared range: False, with E1: CERTIFIED_EXACT), n = 115 Czz_bar Jz = 3.9 (0.577 tau, in declared range: False, with E1: CERTIFIED_EXACT)
+PASS  caption: only Czz_bar at n = 115, Jz = 3.6-3.9 has an exact interval within tau at a coupling outside the range of couplings fixed in the declaration; it is counted only with the extension E1
+
+[2] widths quoted in the caption (units of tau; printed value rounded upward)
+  m_s n = 57  Jz = 6.0 exact interval width / tau = 0.217841 -> 0.22 (0.2179)
+  m_s n = 115 Jz = 6.0 exact interval width / tau = 0.144567 -> 0.15 (0.1446)
+  m_s n = 57  Jz = 3.5 exact interval width / tau = 0.910404 -> 0.92 (0.9105)
+  m_s n = 57  Jz = 3.4 exact interval width / tau = 1.004239 -> 1.01 (1.0043)
+PASS  caption: 0.22 tau (n = 57) and 0.15 tau (n = 115) at Jz = 6.0
+PASS  the row m_s, n = 57, Jz = 3.4: exact interval 1.0043 tau wide (undecided)
+  m_s n = 57  Jz = 3.2 E1 exact interval width / tau = 1.153209 -> 1.16 (undecided)
+  m_s n = 57  Jz = 3.3 E1 exact interval width / tau = 1.114414 -> 1.12 (undecided)
+  m_s n = 115 Jz = 3.3 E1 exact interval width / tau = 1.069481 -> 1.07 (undecided)
+PASS  E1 at n = 57: exact intervals 1.12 tau (Jz = 3.3) and 1.16 tau (Jz = 3.2) wide, undecided
+PASS  E1 at n = 115, Jz = 3.3: exact interval 1.07 tau wide, undecided
+  m_s n = 57  Jz = 1.1 explicit states: labels 0.1065 and 0.7789 (outward: [0.107, 0.778]), distance 18.8254 tau -> 18.8 tau (rounded down)
+  m_s n = 115 Jz = 1.1 explicit states: labels 0.2066 and 0.8127 (outward: [0.207, 0.812]), distance 16.3051 tau -> 16.3 tau (rounded down)
+PASS  caption: explicit states at Jz = 1.1 are 18.8 tau (n = 57) and 16.3 tau (n = 115) apart
+
+[3] the public labels of m_s against the reference (caption of c, d)
+PASS  n = 57: label above the reference at all 50 couplings
+  n = 57: (label - reference)/tau = 4.9544 at Jz = 1.1, 0.0374 at Jz = 6.0; largest 4.9544, smallest 0.0374
+PASS  n = 115: label above the reference at all 50 couplings
+  n = 115: (label - reference)/tau = 4.6669 at Jz = 1.1, 0.0136 at Jz = 6.0; largest 4.6669, smallest 0.0136
+PASS  caption: 4.95 tau (Jz = 1.1) to 0.04 tau (6.0) at n = 57
+PASS  caption: 4.67 tau (Jz = 1.1) at n = 115; 0.02 tau at 6.0 (0.0136 rounded up)
+  every label and the reference lie between the labels of the two explicit states (100 rows) and inside the exact interval where one exists (asserted row by row above)
+PASS  n = 57: emulated first stage above the reference at all 14 couplings
+  n = 57 emulation: 14 couplings (1.1, 1.2, 1.3, 1.4, 1.6, 1.8, 2.0, 2.2, 2.5, 3.0, 3.5, 4.0, 5.0, 6.0); dm_s/tau from 8.423 (Jz = 1.1) to 0.0208 (Jz = 6.0); its energy error over the published one: 0.578-2.315
+PASS  n = 57: the emulation's own reference and the reference of the map differ by at most 1.3e-03 tau (the emulated bias is taken against its own reference, as in the earlier figure)
+PASS  n = 115: emulated first stage above the reference at all 11 couplings
+  n = 115 emulation: 11 couplings (1.1, 1.2, 1.3, 1.4, 1.6, 2.0, 2.5, 3.0, 4.0, 5.0, 6.0); dm_s/tau from 9.229 (Jz = 1.1) to 0.0656 (Jz = 6.0); its energy error over the published one: 3.825-5.937
+PASS  n = 115: the emulation's own reference and the reference of the map differ by at most 1.9e-04 tau (the emulated bias is taken against its own reference, as in the earlier figure)
+PASS  n = 115: the emulation's energy error exceeds the published one at every emulated coupling
+PASS  caption: at n = 115 the emulation's energy error is more than 3.8 times the published one (smallest ratio 3.825)
+  n = 57: the emulation's energy error is below the published one at 4 of 14 emulated couplings
+PASS  n = 57: the emulated bias in units of tau falls from one emulated coupling to the next (same sign and same trend as the public labels)
+  n = 57: the public label's distance from the reference, in units of tau, rises between neighbouring couplings 8 times out of 49 (it falls overall: 4.95 tau at Jz = 1.1, 0.04 tau at 6.0)
+PASS  n = 115: the emulated bias in units of tau falls from one emulated coupling to the next (same sign and same trend as the public labels)
+  n = 115: the public label's distance from the reference, in units of tau, rises between neighbouring couplings 9 times out of 49 (it falls overall: 4.67 tau at Jz = 1.1, 0.01 tau at 6.0)
+
+[4] axis limits of fig_map_rd.tex contain every drawn value
+PASS  top row: min 0.1446, max 71.9759 within [0.08, 200]
+PASS  bottom row: min -13.684 tau, max +9.229 tau within [-22, 14] (drawn scale [-2.342, 2.146])
+  drawn-scale tick positions: 0.5 tau -> 0.5000, 1 tau -> 1.0000, 2 tau -> 1.3010, 3 tau -> 1.4771, 5 tau -> 1.6990, 10 tau -> 2.0000, 20 tau -> 2.3010
+  undecided bars of (a, b) longer than 3 tau, drawn up to 3 tau with an arrow: n = 115 Czz_bar Jz = 3.4 (top 8.9445 tau)
+PASS  caption: one undecided bar exceeds 3 tau (n = 115, Czz_bar, Jz = 3.4, exact interval 8.9 tau wide, rounded down); it is drawn up to 3 tau with an arrow
+
+all assertions passed

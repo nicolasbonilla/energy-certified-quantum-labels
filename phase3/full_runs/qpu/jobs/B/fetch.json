@@ -1,0 +1,322 @@
+{
+ "job": "B",
+ "job_id": "dbir29ohoj4c73b6qa10",
+ "fetched": "2026-10-31T09:19:09Z",
+ "status": "DONE",
+ "pubs": {
+  "neel": {
+   "shots": 10000,
+   "unique": 1224,
+   "unique_in_sector": 398,
+   "shots_in_sector": 5247,
+   "metadata": {
+    "circuit_metadata": {},
+    "num_randomizations": 32,
+    "compilation": {
+     "scheduler_timing": null,
+     "stretch_values": null
+    }
+   }
+  },
+  "asym": {
+   "shots": 10000,
+   "unique": 986,
+   "unique_in_sector": 0,
+   "shots_in_sector": 0,
+   "metadata": {
+    "circuit_metadata": {},
+    "num_randomizations": 32,
+    "compilation": {
+     "scheduler_timing": null,
+     "stretch_values": null
+    }
+   }
+  },
+  "J1.6_k1": {
+   "shots": 23000,
+   "unique": 15790,
+   "unique_in_sector": 2832,
+   "shots_in_sector": 4324,
+   "metadata": {
+    "circuit_metadata": {},
+    "num_randomizations": 32,
+    "compilation": {
+     "scheduler_timing": null,
+     "stretch_values": null
+    }
+   }
+  },
+  "J1.6_k2": {
+   "shots": 23000,
+   "unique": 21381,
+   "unique_in_sector": 3436,
+   "shots_in_sector": 3757,
+   "metadata": {
+    "circuit_metadata": {},
+    "num_randomizations": 32,
+    "compilation": {
+     "scheduler_timing": null,
+     "stretch_values": null
+    }
+   }
+  },
+  "J1.6_k3": {
+   "shots": 23000,
+   "unique": 22764,
+   "unique_in_sector": 3415,
+   "shots_in_sector": 3456,
+   "metadata": {
+    "circuit_metadata": {},
+    "num_randomizations": 32,
+    "compilation": {
+     "scheduler_timing": null,
+     "stretch_values": null
+    }
+   }
+  },
+  "J1.6_k4": {
+   "shots": 23000,
+   "unique": 22988,
+   "unique_in_sector": 3363,
+   "shots_in_sector": 3366,
+   "metadata": {
+    "circuit_metadata": {},
+    "num_randomizations": 32,
+    "compilation": {
+     "scheduler_timing": null,
+     "stretch_values": null
+    }
+   }
+  },
+  "J1.6_k5": {
+   "shots": 23000,
+   "unique": 23000,
+   "unique_in_sector": 3365,
+   "shots_in_sector": 3365,
+   "metadata": {
+    "circuit_metadata": {},
+    "num_randomizations": 32,
+    "compilation": {
+     "scheduler_timing": null,
+     "stretch_values": null
+    }
+   }
+  },
+  "J1.6_k6": {
+   "shots": 23000,
+   "unique": 23000,
+   "unique_in_sector": 3243,
+   "shots_in_sector": 3243,
+   "metadata": {
+    "circuit_metadata": {},
+    "num_randomizations": 32,
+    "compilation": {
+     "scheduler_timing": null,
+     "stretch_values": null
+    }
+   }
+  },
+  "J1.6_k7": {
+   "shots": 23000,
+   "unique": 23000,
+   "unique_in_sector": 3202,
+   "shots_in_sector": 3202,
+   "metadata": {
+    "circuit_metadata": {},
+    "num_randomizations": 32,
+    "compilation": {
+     "scheduler_timing": null,
+     "stretch_values": null
+    }
+   }
+  },
+  "J1.6_k8": {
+   "shots": 23000,
+   "unique": 23000,
+   "unique_in_sector": 2972,
+   "shots_in_sector": 2972,
+   "metadata": {
+    "circuit_metadata": {},
+    "num_randomizations": 32,
+    "compilation": {
+     "scheduler_timing": null,
+     "stretch_values": null
+    }
+   }
+  },
+  "J1.6_k9": {
+   "shots": 23000,
+   "unique": 23000,
+   "unique_in_sector": 2840,
+   "shots_in_sector": 2840,
+   "metadata": {
+    "circuit_metadata": {},
+    "num_randomizations": 32,
+    "compilation": {
+     "scheduler_timing": null,
+     "stretch_values": null
+    }
+   }
+  },
+  "J1.6_k10": {
+   "shots": 23000,
+   "unique": 23000,
+   "unique_in_sector": 2954,
+   "shots_in_sector": 2954,
+   "metadata": {
+    "circuit_metadata": {},
+    "num_randomizations": 32,
+    "compilation": {
+     "scheduler_timing": null,
+     "stretch_values": null
+    }
+   }
+  },
+  "J4.0_k1": {
+   "shots": 23000,
+   "unique": 16293,
+   "unique_in_sector": 2835,
+   "shots_in_sector": 4222,
+   "metadata": {
+    "circuit_metadata": {},
+    "num_randomizations": 32,
+    "compilation": {
+     "scheduler_timing": null,
+     "stretch_values": null
+    }
+   }
+  },
+  "J4.0_k2": {
+   "shots": 23000,
+   "unique": 21720,
+   "unique_in_sector": 3529,
+   "shots_in_sector": 3777,
+   "metadata": {
+    "circuit_metadata": {},
+    "num_randomizations": 32,
+    "compilation": {
+     "scheduler_timing": null,
+     "stretch_values": null
+    }
+   }
+  },
+  "J4.0_k3": {
+   "shots": 23000,
+   "unique": 22834,
+   "unique_in_sector": 3587,
+   "shots_in_sector": 3622,
+   "metadata": {
+    "circuit_metadata": {},
+    "num_randomizations": 32,
+    "compilation": {
+     "scheduler_timing": null,
+     "stretch_values": null
+    }
+   }
+  },
+  "J4.0_k4": {
+   "shots": 23000,
+   "unique": 22989,
+   "unique_in_sector": 3523,
+   "shots_in_sector": 3524,
+   "metadata": {
+    "circuit_metadata": {},
+    "num_randomizations": 32,
+    "compilation": {
+     "scheduler_timing": null,
+     "stretch_values": null
+    }
+   }
+  },
+  "J4.0_k5": {
+   "shots": 23000,
+   "unique": 22999,
+   "unique_in_sector": 3191,
+   "shots_in_sector": 3191,
+   "metadata": {
+    "circuit_metadata": {},
+    "num_randomizations": 32,
+    "compilation": {
+     "scheduler_timing": null,
+     "stretch_values": null
+    }
+   }
+  },
+  "J4.0_k6": {
+   "shots": 23000,
+   "unique": 22999,
+   "unique_in_sector": 3149,
+   "shots_in_sector": 3149,
+   "metadata": {
+    "circuit_metadata": {},
+    "num_randomizations": 32,
+    "compilation": {
+     "scheduler_timing": null,
+     "stretch_values": null
+    }
+   }
+  },
+  "J4.0_k7": {
+   "shots": 23000,
+   "unique": 23000,
+   "unique_in_sector": 3206,
+   "shots_in_sector": 3206,
+   "metadata": {
+    "circuit_metadata": {},
+    "num_randomizations": 32,
+    "compilation": {
+     "scheduler_timing": null,
+     "stretch_values": null
+    }
+   }
+  },
+  "J4.0_k8": {
+   "shots": 23000,
+   "unique": 23000,
+   "unique_in_sector": 3034,
+   "shots_in_sector": 3034,
+   "metadata": {
+    "circuit_metadata": {},
+    "num_randomizations": 32,
+    "compilation": {
+     "scheduler_timing": null,
+     "stretch_values": null
+    }
+   }
+  },
+  "J4.0_k9": {
+   "shots": 23000,
+   "unique": 23000,
+   "unique_in_sector": 3084,
+   "shots_in_sector": 3084,
+   "metadata": {
+    "circuit_metadata": {},
+    "num_randomizations": 32,
+    "compilation": {
+     "scheduler_timing": null,
+     "stretch_values": null
+    }
+   }
+  },
+  "J4.0_k10": {
+   "shots": 23000,
+   "unique": 23000,
+   "unique_in_sector": 2867,
+   "shots_in_sector": 2867,
+   "metadata": {
+    "circuit_metadata": {},
+    "num_randomizations": 32,
+    "compilation": {
+     "scheduler_timing": null,
+     "stretch_values": null
+    }
+   }
+  }
+ },
+ "result_metadata": {
+  "execution": {
+   "execution_spans": "ExecutionSpans([TwirledSliceSpanV2(<start='2026-10-31 09:15:20', stop='2026-10-31 09:15:26', size=20032>), TwirledSliceSpanV2(<start='2026-10-31 09:15:46', stop='2026-10-31 09:17:55', size=460160>)])"
+  },
+  "version": 2
+ }
+}

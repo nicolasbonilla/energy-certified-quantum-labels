@@ -1,0 +1,76 @@
+gate n=19 (E_LB <= ED E0 for 28 jobs): True
+Czz_bar_m4.0                       eball2  E_LB     -30.742998  ref            -  ED   -30.737878  slack_ref         -  slack_true   0.00512  rel  0.0167%  Anderson -31.0973
+Czz_bar_m4.0                       vball2  E_LB     -30.738310  ref            -  ED   -30.737878  slack_ref         -  slack_true   0.00043  rel  0.0014%  Anderson -31.1174
+Czz_bar_m6.0                       eball2  E_LB     -70.297428  ref            -  ED   -70.297243  slack_ref         -  slack_true   0.00019  rel  0.0003%  Anderson -70.4449
+Czz_bar_m6.0                       vball2  E_LB     -70.297302  ref            -  ED   -70.297243  slack_ref         -  slack_true   0.00006  rel  0.0001%  Anderson -70.4574
+Czz_bar_p4.0                       eball2  E_LB     -16.356267  ref            -  ED   -16.351631  slack_ref         -  slack_true   0.00464  rel  0.0284%  Anderson -17.0608
+Czz_bar_p4.0                       vball2  E_LB     -16.360095  ref            -  ED   -16.351631  slack_ref         -  slack_true   0.00846  rel  0.0518%  Anderson -17.0591
+Czz_bar_p6.0                       eball2  E_LB     -18.277349  ref            -  ED   -18.274753  slack_ref         -  slack_true   0.00260  rel  0.0142%  Anderson -18.9071
+Czz_bar_p6.0                       vball2  E_LB     -18.279576  ref            -  ED   -18.274753  slack_ref         -  slack_true   0.00482  rel  0.0264%  Anderson -18.9150
+G1_Czz_bar_m4.0                    eball2  E_LB     -28.847157  ref   -28.846803  ED   -28.846803  slack_ref   0.00035  slack_true   0.00035  rel  0.0012%  Anderson -29.2322
+G1_Czz_bar_m4.0                    vball2  E_LB     -28.847360  ref   -28.846803  ED   -28.846803  slack_ref   0.00056  slack_true   0.00056  rel  0.0019%  Anderson -29.2523
+G1_Czz_bar_p4.0                    eball2  E_LB     -16.679826  ref   -16.675642  ED   -16.675642  slack_ref   0.00418  slack_true   0.00418  rel  0.0251%  Anderson -17.3708
+G1_Czz_bar_p4.0                    vball2  E_LB     -16.683301  ref   -16.675642  ED   -16.675642  slack_ref   0.00766  slack_true   0.00766  rel  0.0459%  Anderson -17.3711
+G1_m_s_m4.0                        eball2  E_LB     -17.592810  ref   -17.504483  ED   -17.504483  slack_ref   0.08833  slack_true   0.08833  rel  0.5046%  Anderson -24.9683
+G1_m_s_m4.0                        vball2  E_LB     -17.729540  ref   -17.504483  ED   -17.504483  slack_ref   0.22506  slack_true   0.22506  rel  1.2857%  Anderson -25.0094
+G1_m_s_p4.0                        eball2  E_LB     -29.038657  ref   -29.038499  ED   -29.038499  slack_ref   0.00016  slack_true   0.00016  rel  0.0005%  Anderson -29.2993
+G1_m_s_p4.0                        vball2  E_LB     -29.038726  ref   -29.038499  ED   -29.038499  slack_ref   0.00023  slack_true   0.00023  rel  0.0008%  Anderson -29.3353
+H_4.0                              eball2  E_LB     -21.026899  ref            -  ED   -21.025613  slack_ref         -  slack_true   0.00129  rel  0.0061%  Anderson -21.5701
+H_4.0                              vball2  E_LB     -21.028057  ref            -  ED   -21.025613  slack_ref         -  slack_true   0.00244  rel  0.0116%  Anderson -21.5853
+H_6.0                              eball2  E_LB     -30.689965  ref            -  ED   -30.689675  slack_ref         -  slack_true   0.00029  rel  0.0009%  Anderson -31.0497
+H_6.0                              vball2  E_LB     -30.690108  ref            -  ED   -30.689675  slack_ref         -  slack_true   0.00043  rel  0.0014%  Anderson -31.0699
+m_s_m4.0                           eball2  E_LB     -17.663389  ref            -  ED   -17.357384  slack_ref         -  slack_true   0.30601  rel  1.7630%  Anderson -25.3693
+m_s_m4.0                           vball2  E_LB     -17.781002  ref            -  ED   -17.357384  slack_ref         -  slack_true   0.42362  rel  2.4406%  Anderson -25.4099
+m_s_m6.0                           eball2  E_LB     -25.554681  ref            -  ED   -25.071635  slack_ref         -  slack_true   0.48305  rel  1.9267%  Anderson -37.3516
+m_s_m6.0                           vball2  E_LB     -25.602857  ref            -  ED   -25.071635  slack_ref         -  slack_true   0.53122  rel  2.1188%  Anderson -37.3799
+m_s_p4.0                           eball2  E_LB     -31.805696  ref            -  ED   -31.800758  slack_ref         -  slack_true   0.00494  rel  0.0155%  Anderson -32.0284
+m_s_p4.0                           vball2  E_LB     -31.804946  ref            -  ED   -31.800758  slack_ref         -  slack_true   0.00419  rel  0.0132%  Anderson -32.0614
+m_s_p6.0                           eball2  E_LB     -54.722252  ref            -  ED   -54.720225  slack_ref         -  slack_true   0.00203  rel  0.0037%  Anderson -54.8458
+m_s_p6.0                           vball2  E_LB     -54.721945  ref            -  ED   -54.720225  slack_ref         -  slack_true   0.00172  rel  0.0031%  Anderson -54.8653
+Czz_bar_m4.0                       eball2  E_LB     -98.169810  ref   -98.168689  ED            -  slack_ref   0.00112  slack_true         -  rel  0.0011%  Anderson -99.3064
+Czz_bar_m4.0                       vball2  E_LB     -98.171310  ref   -98.168689  ED            -  slack_ref   0.00262  slack_true         -  rel  0.0027%  Anderson -99.3175
+Czz_bar_m6.0                       eball2  E_LB    -224.868209  ref  -224.867970  ED            -  slack_ref   0.00024  slack_true         -  rel  0.0001%  Anderson -225.3507
+Czz_bar_m6.0                       vball2  E_LB    -224.868529  ref  -224.867970  ED            -  slack_ref   0.00056  slack_true         -  rel  0.0002%  Anderson -225.3663
+Czz_bar_p4.0                       eball2  E_LB     -51.965111  ref   -51.949722  ED            -  slack_ref   0.01539  slack_true         -  rel  0.0296%  Anderson -54.1765
+Czz_bar_p4.0                       vball2  E_LB     -51.972799  ref   -51.949722  ED            -  slack_ref   0.02308  slack_true         -  rel  0.0444%  Anderson -54.0664
+Czz_bar_p6.0                       eball2  E_LB     -58.155353  ref   -58.146645  ED            -  slack_ref   0.00871  slack_true         -  rel  0.0150%  Anderson -60.1262
+Czz_bar_p6.0                       vball2  E_LB     -58.159843  ref   -58.146645  ED            -  slack_ref   0.01320  slack_true         -  rel  0.0227%  Anderson -60.0592
+H_4.0                              eball2  E_LB     -67.000353  ref   -66.995812  ED            -  slack_ref   0.00454  slack_true         -  rel  0.0068%  Anderson -68.7003
+H_4.0                              vball2  E_LB     -67.002441  ref   -66.995812  ED            -  slack_ref   0.00663  slack_true         -  rel  0.0099%  Anderson -68.6695
+H_6.0                              eball2  E_LB     -98.015250  ref   -98.014127  ED            -  slack_ref   0.00112  slack_true         -  rel  0.0011%  Anderson -99.1537
+H_6.0                              vball2  E_LB     -98.015499  ref   -98.014127  ED            -  slack_ref   0.00137  slack_true         -  rel  0.0014%  Anderson -99.1648
+m_s_m4.0                           eball2  E_LB     -56.015318  ref   -55.131251  ED            -  slack_ref   0.88407  slack_true         -  rel  1.6036%  Anderson -80.2342
+m_s_m4.0                           vball2  E_LB     -56.202708  ref   -55.131251  ED            -  slack_ref   1.07146  slack_true         -  rel  1.9435%  Anderson -80.3048
+m_s_m6.0                           eball2  E_LB     -80.270294  ref   -78.818969  ED            -  slack_ref   1.45133  slack_true         -  rel  1.8413%  Anderson -118.1413
+m_s_m6.0                           vball2  E_LB     -80.349241  ref   -78.818969  ED            -  slack_ref   1.53027  slack_true         -  rel  1.9415%  Anderson -118.1926
+m_s_p4.0                           eball2  E_LB     -99.430393  ref   -99.410110  ED            -  slack_ref   0.02028  slack_true         -  rel  0.0204%  Anderson -100.2218
+m_s_p4.0                           vball2  E_LB     -99.410762  ref   -99.410110  ED            -  slack_ref   0.00065  slack_true         -  rel  0.0007%  Anderson -100.2951
+m_s_p6.0                           eball2  E_LB    -170.182824  ref  -170.174387  ED            -  slack_ref   0.00844  slack_true         -  rel  0.0050%  Anderson -170.6273
+m_s_p6.0                           vball2  E_LB    -170.180776  ref  -170.174387  ED            -  slack_ref   0.00639  slack_true         -  rel  0.0038%  Anderson -170.6745
+row n=19 Jz=4.0 Czz_bar  eball2 rho 0.060  w_rig/tau 0.740  rigorously certified: True
+row n=19 Jz=4.0 Czz_bar  vball2 rho 0.109  w_rig/tau 0.753  rigorously certified: True
+row n=19 Jz=4.0 Czz_bar  best   rho 0.060  w_rig/tau 0.740  rigorously certified: True
+row n=19 Jz=4.0 m_s      eball2 rho 1.584  w_rig/tau 1.152  rigorously certified: False
+row n=19 Jz=4.0 m_s      vball2 rho 4.036  w_rig/tau 1.791  rigorously certified: False
+row n=19 Jz=4.0 m_s      best   rho 1.584  w_rig/tau 1.152  rigorously certified: False
+row n=57 Jz=4.0 Czz_bar  eball2 rho 0.058  w_rig/tau 0.715  rigorously certified: True
+row n=57 Jz=4.0 Czz_bar  vball2 rho 0.088  w_rig/tau 0.724  rigorously certified: True
+row n=57 Jz=4.0 Czz_bar  best   rho 0.058  w_rig/tau 0.715  rigorously certified: True
+row n=57 Jz=6.0 Czz_bar  eball2 rho 0.007  w_rig/tau 0.492  rigorously certified: True
+row n=57 Jz=6.0 Czz_bar  vball2 rho 0.011  w_rig/tau 0.494  rigorously certified: True
+row n=57 Jz=6.0 Czz_bar  best   rho 0.007  w_rig/tau 0.492  rigorously certified: True
+row n=57 Jz=4.0 m_s      eball2 rho 3.538  w_rig/tau 1.888  rigorously certified: False
+row n=57 Jz=4.0 m_s      vball2 rho 4.252  w_rig/tau 2.138  rigorously certified: False
+row n=57 Jz=4.0 m_s      best   rho 3.509  w_rig/tau 1.878  rigorously certified: False
+row n=57 Jz=6.0 m_s      eball2 rho 1.741  w_rig/tau 1.535  rigorously certified: False
+row n=57 Jz=6.0 m_s      vball2 rho 1.835  w_rig/tau 1.602  rigorously certified: False
+row n=57 Jz=6.0 m_s      best   rho 1.740  w_rig/tau 1.534  rigorously certified: False
+H Jz=4.0 eball2 slack 0.0045 (0.007%) s_req 0.1832 rho 0.025
+H Jz=4.0 vball2 slack 0.0066 (0.010%) s_req 0.1832 rho 0.036
+H Jz=4.0 best   slack 0.0045 (0.007%) s_req 0.1832 rho 0.025
+H Jz=6.0 eball2 slack 0.0011 (0.001%) s_req 0.6577 rho 0.002
+H Jz=6.0 vball2 slack 0.0014 (0.001%) s_req 0.6577 rho 0.002
+H Jz=6.0 best   slack 0.0011 (0.001%) s_req 0.6577 rho 0.002
+VERDICT eball2 rho_max 3.538 -> REJECT
+VERDICT vball2 rho_max 4.252 -> REJECT
+VERDICT best   rho_max 3.509 -> REJECT

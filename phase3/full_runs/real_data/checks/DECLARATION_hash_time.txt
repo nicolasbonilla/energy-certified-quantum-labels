@@ -1,0 +1,2 @@
+2026-11-12T19:22:32Z
+UTC time of the system clock of this laptop, read right after the SHA-256 of DECLARATION.md (6dfbc5681a7b4708ba790e1dd3139d8efdcccb9ced24e5ab2ce4b5a7a209ffaa) was computed and written to DECLARATION.sha256 by the sealing task rd-seal. It is not an external time stamp.

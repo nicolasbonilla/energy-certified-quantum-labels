@@ -1,0 +1,88 @@
+export_composite.py -- data of main Fig. 2 (n = 57) for fig_composite.tex
+inputs via ../fig1_composite.py, ../landscape_data.py, ../common.py (ROOT = C:\Users\Nicolas\Downloads\Proyecto_SQD_ML\Quantum_for_AI\J_next_paper)
+
+[built-in checks of the figure scripts]
+PASS  landscape_data.check_inner(57): inner hull = summary_map.json at E_lo, E_dig, E_up of every m_s row (max |diff| = 0.00e+00)
+PASS  fig1_composite.relief_data(): grid valid everywhere (assert ok.all() inside)
+PASS  fig1_composite.device_values(): its two assertions (per-site formula, mean = stored Delta m_s)
+PASS  landscape_data.layout(57): every heavy-hex edge has unit length (assert inside)
+
+[panel (a): map of log10(width / tau) over (J_z, de)]
+relief grid: 16 computed couplings x 150 de values (0.0001 .. 0.024, log-spaced); log10(w/tau) in [-1.4459, 1.3284]
+couplings: 1.1, 1.2, 1.3, 1.4, 1.6, 1.8, 2, 2.5, 3, 3.3, 3.6, 4, 4.5, 5, 5.5, 6
+PASS  display grid contains every computed coupling
+PASS  display grid equals the relief grid at the computed couplings
+PASS  same interpolation as fig1_composite.refine (relief mesh), max |diff| = 0.0e+00
+PASS  downsampled rows still cover the whole de range
+a_map.dat (drawn): 99 J columns (every 0.05) x 75 de rows (every 2-th of the 150 rows) = 7425 cells; full-resolution relief grid in a_grid_raw.dat
+width = tau contour: 1 segment(s), [605] points
+  from (J=6.000, de=0.0139) to (J=1.301, de=0.0001)
+PASS  ood rows are the first 4 couplings (J_z <= 1.4)
+  line J=1.1  de_dig=0.012000 inner w/tau=15.6681 (floor)
+  line J=1.2  de_dig=0.012000 inner w/tau=13.4855 (floor)
+  line J=1.3  de_dig=0.012000 inner w/tau=11.6755 (floor)
+  line J=1.4  de_dig=0.012000 inner w/tau=10.1969 (floor)
+  line J=1.6  de_dig=0.010943 inner w/tau=7.5515 
+  line J=1.8  de_dig=0.009000 inner w/tau=5.4216 
+  line J=2    de_dig=0.007627 inner w/tau=4.0510 
+  line J=2.5  de_dig=0.004372 inner w/tau=1.9858 
+  line J=3    de_dig=0.002829 inner w/tau=1.1496 
+  line J=3.3  de_dig=0.002689 inner w/tau=0.9556 
+  line J=3.6  de_dig=0.002137 inner w/tau=0.7317 
+  line J=4    de_dig=0.001728 inner w/tau=0.5534 
+  line J=4.5  de_dig=0.001353 inner w/tau=0.4037 
+  line J=5    de_dig=0.001008 inner w/tau=0.2945 
+  line J=5.5  de_dig=0.000924 inner w/tau=0.2425 
+  line J=6    de_dig=0.000907 inner w/tau=0.2097 
+PASS  dataset line inside the map (de range)
+PASS  the line crosses width = tau once
+PASS  J* = 3.2 (caption: J* = 3.2)
+PASS  the drawn line meets the contour at J_z = 3.226, i.e. at J* = 3.2 to the printed digit (between computed 3 and 3.3)
+
+[panel (b): width at the dataset's energy]
+PASS  6 ringed points, all computed: [3.6, 4.0, 4.5, 5.0, 5.5, 6.0]
+  J=1.1  w_out/tau=15.8359 open (floor)
+  J=1.2  w_out/tau=13.5906 open (floor)
+  J=1.3  w_out/tau=11.7819 open (floor)
+  J=1.4  w_out/tau=10.2855 open (floor)
+  J=1.6  w_out/tau=7.6128 filled
+  J=1.8  w_out/tau=5.4420 filled
+  J=2    w_out/tau=4.0691 filled
+  J=2.5  w_out/tau=1.9965 filled
+  J=3    w_out/tau=1.1564 filled
+  J=3.2  w_out/tau=0.9801 filled
+  J=3.3  w_out/tau=0.9561 filled
+  J=3.4  w_out/tau=0.8714 filled
+  J=3.6  w_out/tau=0.7383 filled  ringed
+  J=4    w_out/tau=0.5577 filled  ringed
+  J=4.5  w_out/tau=0.4071 filled  ringed
+  J=5    w_out/tau=0.2967 filled  ringed
+  J=5.5  w_out/tau=0.2443 filled  ringed
+  J=6    w_out/tau=0.2112 filled  ringed
+PASS  all points inside the y range 0.15..30 of the current panel
+PASS  w_out <= tau exactly from J* on (w(3.2) = 0.9801, w(3.0) = 1.1564)
+PASS  tau = 0.06 |m_s,GS| in every row (caption)
+
+[panels (c), (d): per-site excess of order at J_z = 1.2]
+PASS  device: per-site value = eta_i(<Z_i> - <Z_i>_DMRG), max |diff| = 0.0e+00
+PASS  device: mean of the 57 values = stored Delta m_s = 0.309833 (|diff| = 0.0e+00)
+PASS  device: all 57 sites positive
+PASS  device: largest site 0.4663 inside the colour scale 0..0.5
+      device: Delta m_s = +0.3098, smallest +0.2017, largest +0.4663
+PASS  control: per-site value = eta_i(<Z_i> - <Z_i>_DMRG), max |diff| = 0.0e+00
+PASS  control: mean of the 57 values = stored Delta m_s = 0.252660 (|diff| = 1.7e-16)
+PASS  control: all 57 sites positive
+PASS  control: largest site 0.3799 inside the colour scale 0..0.5
+      control: Delta m_s = +0.2527, smallest +0.1602, largest +0.3799
+PASS  caption (c): Delta m_s = +0.310
+PASS  caption (d): Delta m_s = +0.253
+PASS  figure (c): smallest site +0.202
+PASS  figure (d): smallest site +0.160
+PASS  caption (d): the device noise adds +0.0572 (+0.057)
+PASS  4 routed sites: [25, 30, 31, 36]
+PASS  routed sites are graph indices
+PASS  heavy-hex d = 5: 57 nodes placed, 64 edges
+      smallest distance between two sites in the drawing: 1.000 (bond length 1)
+
+wrote composite_values.tex, a_grid_raw.dat, a_map.dat, a_contour_tau.dat, a_line_floor.dat, a_line_data.dat, b_line.dat, b_filled.dat, b_open.dat, b_ringed.dat, cd_nodes.dat, cd_edges.dat, cd_routed.dat
+ALL CHECKS PASSED

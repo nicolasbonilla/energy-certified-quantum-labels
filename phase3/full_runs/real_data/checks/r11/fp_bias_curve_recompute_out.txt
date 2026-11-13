@@ -1,0 +1,105 @@
+=== (1) Blind test of the curve (declared rule: mean miss <= 0.2 tau at n=57, <= 0.6 tau at n=115, all 7 ratios in [0.75, 1.3]) ===
+   n   Jz       m0        de       dm     raw  curve19   ratio   chord   n19tr | n=115 only: curve57    tr57   a+b/n a+bNe/n  a+b/rt
+  57  1.5   0.7443   0.02859  +0.1627   3.644   0.1322  0.9650   0.538   0.923   signed residual -0.132 tau; de/de_max(n19 curve) 0.273
+  57  1.7   0.7928   0.02145  +0.1191   2.505   0.0854  0.9670   0.348   0.710   signed residual -0.085 tau; de/de_max(n19 curve) 0.228
+  57  2.8   0.9171   0.00493  +0.0235   0.428   0.0169  1.0412   0.013   0.224   signed residual +0.017 tau; de/de_max(n19 curve) 0.084
+  57  3.2   0.9359   0.00305  +0.0136   0.241   0.0130  1.0568   0.037   0.165   signed residual +0.013 tau; de/de_max(n19 curve) 0.059
+ 115  1.5   0.7602   0.05865  +0.2048   4.489   0.5840  0.8849   0.134   1.253 |   0.098   0.349   0.121   0.027   0.016    signed residual -0.584 tau; de/de_max(n19 curve) 0.560
+ 115  1.7   0.8057   0.04844  +0.1603   3.317   0.3970  0.8931   0.128   0.966 |   0.044   0.267   0.091   0.018   0.015    signed residual -0.397 tau; de/de_max(n19 curve) 0.515
+ 115  2.8   0.9222   0.01867  +0.0502   0.908   0.0385  0.9593   0.054   0.314 |   0.026   0.091   0.035   0.012   0.001    signed residual -0.039 tau; de/de_max(n19 curve) 0.316
+n=57  mean (min, max): {'raw': '1.7043 (0.2414, 3.6436)', 'miss': '0.0619 (0.0130, 0.1322)', 'chord': '0.2342 (0.0135, 0.5381)', 'small': '0.5054 (0.1645, 0.9233)'}
+n=115  mean (min, max): {'raw': '2.9044 (0.9076, 4.4889)', 'miss': '0.3398 (0.0385, 0.5840)', 'chord': '0.1054 (0.0543, 0.1340)', 'small': '0.8441 (0.3135, 1.2530)', 'curve57': '0.0562 (0.0261, 0.0979)', 'truth57': '0.2358 (0.0912, 0.3491)', 'a_b_over_n': '0.0824 (0.0351, 0.1211)', 'a_b_edges_over_n': '0.0189 (0.0119, 0.0268)', 'a_b_over_sqrt_n': '0.0110 (0.0013, 0.0164)'}
+ratios: min 0.8849 max 1.0568 ; all in [0.75, 1.3]: True
+rule: mean57 0.0619 <= 0.2: True ; mean115 0.3398 <= 0.6: True
+paper: '1.7 to 0.06 tau' -> 1.704 to 0.0619 ; '2.9 to 0.34 tau' -> 2.904 to 0.3398 ; 'ratios 0.88-1.06' -> 0.8849-1.0568
+how far inside the rule: mean57/limit 0.31, mean115/limit 0.57; largest single miss n=57 0.132, n=115 0.584 tau
+sign of the residual (dm - curve): n=57 ['-0.132', '-0.085', '+0.017', '+0.013'] ; n=115 ['-0.584', '-0.397', '-0.039']
+ratios of all stored variants at the blind couplings (not the rule):
+  n=57 J=1.5 {'ideal': 0.964, 'floor': 0.965, 'dev_ps': 0.96, 'dev_rec': 0.946}
+  n=57 J=1.7 {'ideal': 0.963, 'floor': 0.967, 'dev_ps': 0.974, 'dev_rec': 0.955}
+  n=57 J=2.8 {'ideal': 1.032, 'floor': 1.041, 'dev_ps': 1.086, 'dev_rec': 1.056}
+  n=57 J=3.2 {'ideal': 1.04, 'floor': 1.057, 'dev_ps': 1.124, 'dev_rec': 1.089}
+  n=115 J=1.5 {'ideal': 0.874, 'floor': 0.885, 'dev_ps': 0.931, 'dev_rec': 0.931}
+  n=115 J=1.7 {'ideal': 0.88, 'floor': 0.893, 'dev_ps': 0.949, 'dev_rec': 0.946}
+  n=115 J=2.8 {'ideal': 0.933, 'floor': 0.959, 'dev_ps': 1.089, 'dev_rec': 1.091}
+
+=== (2) Exploratory analysis (bias_law): stored emulated states against the n=19 curve ===
+n=57 primary labels at 14 couplings: raw mean 2.432, corrected mean 0.0622 (max 0.174), n19 truth mean 0.585, chord mean 0.367
+   per coupling  J: ratio dm/curve, corrected miss (tau), signed residual (tau)
+     J=1.1 ratio 0.9868  corrected 0.1124  signed -0.1124  raw 8.422  de 0.04954
+     J=1.2 ratio 0.9753  corrected 0.1706  signed -0.1706  raw 6.730  de 0.04328
+     J=1.3 ratio 0.9691  corrected 0.1737  signed -0.1737  raw 5.445  de 0.03792
+     J=1.4 ratio 0.9647  corrected 0.1621  signed -0.1621  raw 4.429  de 0.03281
+     J=1.6 ratio 0.9632  corrected 0.1149  signed -0.1149  raw 3.010  de 0.02476
+     J=1.8 ratio 0.9719  corrected 0.0608  signed -0.0608  raw 2.104  de 0.01880
+     J=2.0 ratio 0.9880  corrected 0.0183  signed -0.0183  raw 1.508  de 0.01451
+     J=2.2 ratio 1.0045  corrected 0.0049  signed +0.0049  raw 1.096  de 0.01120
+     J=2.5 ratio 1.0237  corrected 0.0156  signed +0.0156  raw 0.676  de 0.00733
+     J=3.0 ratio 1.0478  corrected 0.0144  signed +0.0144  raw 0.316  de 0.00379
+     J=3.5 ratio 1.0642  corrected 0.0098  signed +0.0098  raw 0.162  de 0.00220
+     J=4.0 ratio 1.0584  corrected 0.0049  signed +0.0049  raw 0.089  de 0.00137
+     J=5.0 ratio 1.1321  corrected 0.0043  signed +0.0043  raw 0.037  de 0.00075
+     J=6.0 ratio 1.2347  corrected 0.0040  signed +0.0040  raw 0.021  de 0.00051
+   primary-label ratio over ALL 14 couplings: min 0.9632 max 1.2347  -> 3.7 % below, 23.5 % above the curve
+   corrected miss: training couplings (Jz >= 1.6) mean 0.0252 max 0.1149 ; test couplings (Jz < 1.5) 0.112-0.174, mean 0.155
+   mean corrected miss 0.062, sd over couplings 0.069, bootstrap-over-couplings 95 % range of the mean [0.030, 0.099], median 0.017
+n=115 primary labels at 11 couplings: raw mean 3.357, corrected mean 0.3853 (max 0.971), n19 truth mean 0.883, chord mean 0.105
+   per coupling  J: ratio dm/curve, corrected miss (tau), signed residual (tau)
+     J=1.1 ratio 0.9048  corrected 0.9707  signed -0.9707  raw 9.228  de 0.08694
+     J=1.2 ratio 0.8924  corrected 0.9130  signed -0.9130  raw 7.569  de 0.07865
+     J=1.3 ratio 0.8834  corrected 0.8301  signed -0.8301  raw 6.291  de 0.07124
+     J=1.4 ratio 0.8829  corrected 0.7011  signed -0.7011  raw 5.288  de 0.06461
+     J=1.6 ratio 0.8881  corrected 0.4839  signed -0.4839  raw 3.842  de 0.05321
+     J=2.0 ratio 0.9122  corrected 0.2135  signed -0.2135  raw 2.219  de 0.03690
+     J=2.5 ratio 0.9437  corrected 0.0740  signed -0.0740  raw 1.240  de 0.02392
+     J=3.0 ratio 0.9678  corrected 0.0248  signed -0.0248  raw 0.745  de 0.01589
+     J=4.0 ratio 1.0107  corrected 0.0032  signed +0.0032  raw 0.303  de 0.00741
+     J=5.0 ratio 1.1116  corrected 0.0137  signed +0.0137  raw 0.136  de 0.00371
+     J=6.0 ratio 1.1948  corrected 0.0107  signed +0.0107  raw 0.066  de 0.00197
+   primary-label ratio over ALL 11 couplings: min 0.8829 max 1.1948  -> 11.7 % below, 19.5 % above the curve
+   corrected miss: training couplings (Jz >= 1.6) mean 0.1177 max 0.4839 ; test couplings (Jz < 1.5) 0.701-0.971, mean 0.854
+   mean corrected miss 0.385, sd over couplings 0.401, bootstrap-over-couplings 95 % range of the mean [0.171, 0.617], median 0.213
+
+--- the sentence 'lie within -12 to +24 % of that curve' (blw:nulls.spread_pct_low/high) ---
+four plotted couplings 1.2, 1.6, 2.5, 4.0 (as in bias_law.py): 127 states, ratio min 0.8761 (n=115 J=1.6 gs_random) max 1.2432 (n=115 J=4.0 pipe_dev_rec) -> -12.39 % .. +24.32 %
+    quantiles 5/25/50/75/95 %: [0.884, 0.923, 0.959, 1.002, 1.117] ; fraction within +-10 %: 0.77
+    n=57: 71 states, min 0.9273 max 1.1999 median 0.9755
+    n=115: 56 states, min 0.8761 max 1.2432 median 0.9181
+all stored couplings: 195 states, ratio min 0.8735 (n=115 J=1.4 pipe_ideal) max 1.4122 (n=115 J=6.0 pipe_dev_ps) -> -12.65 % .. +41.22 %
+    quantiles 5/25/50/75/95 %: [0.883, 0.926, 0.967, 1.021, 1.227] ; fraction within +-10 %: 0.72
+    n=57: 111 states, min 0.9273 max 1.3165 median 0.9814
+    n=115: 84 states, min 0.8735 max 1.4122 median 0.9224
+
+--- device labels against the n=19 curve (the sentence also names 'our device labels at three couplings') ---
+  device J=1.2 rec: de 0.08139 dm +0.3098 curve 0.3395 ratio 0.9127 (-8.7 %)  raw 8.064 tau corrected 0.771 tau chord 0.303 tau
+  device J=1.2 ps: de 0.08505 dm +0.3150 curve 0.3410 ratio 0.9238 (-7.6 %)  raw 8.198 tau corrected 0.676 tau chord 0.266 tau
+  device J=1.6 rec: de 0.06402 dm +0.1955 curve 0.2072 ratio 0.9435 (-5.7 %)  raw 4.231 tau corrected 0.253 tau chord 0.085 tau
+  device J=1.6 ps: de 0.06617 dm +0.1982 curve 0.2077 ratio 0.9539 (-4.6 %)  raw 4.288 tau corrected 0.207 tau chord 0.073 tau
+  device J=4.0 rec: de 0.01448 dm +0.0239 curve 0.0207 ratio 1.1564 (+15.6 %)  raw 0.416 tau corrected 0.056 tau chord 0.009 tau
+  device J=4.0 ps: de 0.01533 dm +0.0246 curve 0.0210 ratio 1.1712 (+17.1 %)  raw 0.428 tau corrected 0.063 tau chord 0.010 tau
+  device ratio range: 0.9127 .. 1.1712  -> -8.7 % .. +17.1 % ; raw mean 4.271, corrected mean 0.338 (max 0.771), chord mean 0.124
+  device 'rec' readings only (3 points): ratio [0.913, 0.943, 1.156] ; corrected [0.771, 0.253, 0.056]
+
+--- limited power of the blind test: linear interpolation in Jz of the exploratory corrected misses ---
+n=57  interpolated |miss| [0.1385, 0.0879, 0.0149, 0.0126] mean 0.0635 ; observed [0.1322, 0.0854, 0.0169, 0.013] mean 0.0619 ; max |difference| 0.0063
+       interpolated ratio [0.964, 0.9676, 1.0382, 1.0544] ; observed ratio [0.965, 0.967, 1.0412, 1.0568] ; max |difference| 0.0031
+       neighbours' exploratory ratios bracket every blind ratio: False
+n=115  interpolated |miss| [0.5925, 0.4163, 0.0445] mean 0.3511 ; observed [0.584, 0.397, 0.0385] mean 0.3398 ; max |difference| 0.0193
+       interpolated ratio [0.8855, 0.8942, 0.9582] ; observed ratio [0.8849, 0.8931, 0.9593] ; max |difference| 0.0011
+       neighbours' exploratory ratios bracket every blind ratio: True
+
+--- appended (R11): primary labels over both sizes, and states outside the range of the four plotted couplings ---
+primary-label ratio over all 25 coupling-size pairs (14 + 11): 0.8829-1.2347
+ratio range of the 127 states at the four plotted couplings: [0.8761, 1.2432]
+  ratio 0.8735 n=115 J=1.4 pipe_ideal   de=0.06219  |dm-curve|=0.7546 tau  raw=5.213 tau
+  ratio 0.8748 n=115 J=1.3 pipe_ideal   de=0.06869  |dm-curve|=0.8889 tau  raw=6.209 tau
+  ratio 1.2490 n=57 J=6.0 pipe_dev_rec de=0.00521  |dm-curve|=0.0237 tau  raw=0.119 tau
+  ratio 1.2660 n=57 J=5.0 pipe_dev_ps  de=0.00880  |dm-curve|=0.0474 tau  raw=0.226 tau
+  ratio 1.2986 n=115 J=5.0 pipe_dev_ps  de=0.01680  |dm-curve|=0.0673 tau  raw=0.293 tau
+  ratio 1.3165 n=57 J=6.0 pipe_dev_ps  de=0.00577  |dm-curve|=0.0312 tau  raw=0.130 tau
+  ratio 1.3293 n=115 J=5.0 pipe_dev_rec de=0.01519  |dm-curve|=0.0711 tau  raw=0.287 tau
+  ratio 1.3962 n=115 J=6.0 pipe_dev_rec de=0.01115  |dm-curve|=0.0504 tau  raw=0.178 tau
+  ratio 1.4122 n=115 J=6.0 pipe_dev_ps  de=0.01100  |dm-curve|=0.0521 tau  raw=0.178 tau
+states outside the range of the four couplings: 9 of 195 (2 below, 7 above)
+  below: ['n=115 J=1.4 pipe_ideal', 'n=115 J=1.3 pipe_ideal']
+  above: couplings [5.0, 6.0] ; families ['pipe_dev_ps', 'pipe_dev_rec'] ; greatest raw bias among them raw=0.293 tau ; greatest ratio 1.4122

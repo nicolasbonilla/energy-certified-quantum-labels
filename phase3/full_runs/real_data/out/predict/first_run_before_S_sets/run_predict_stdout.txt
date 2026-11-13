@@ -1,0 +1,28 @@
+n = 57 (50 couplings; orientation +1 everywhere: True)
+  P1-P3 sites              F = 1.0000 over 2850 pairs -> HOLDS | t <= 1: 1.0000 | undefined: 0
+  P1-P3 edges              F = 0.9994 over 3200 pairs -> HOLDS | t <= 1: 1.0000 | undefined: 0
+  P1-P3 second_neighbours  F = 1.0000 over 4350 pairs -> HOLDS | t <= 1: 1.0000 | undefined: 0
+  P1-P3 loops              F = 1.0000 over 200 pairs -> HOLDS | t <= 1: 1.0000 | undefined: 0
+  P4    sites              Spearman(D, Jz) = -0.9802 -> HOLDS | D from 0.037 to 5.244
+  P4    edges              Spearman(D, Jz) = -0.9726 -> HOLDS | D from 0.037 to 2.859
+  P4    second_neighbours  Spearman(D, Jz) = -0.9759 -> HOLDS | D from 0.065 to 7.954
+  P4    loops              Spearman(D, Jz) = -0.9720 -> HOLDS | D from 0.065 to 8.929
+  P4    m_s                Spearman(D, Jz) = -0.9802 -> HOLDS | D from 0.037 to 4.954
+  P5 all         mean miss 0.111 tau (limit 0.2; raw 0.623, chord 0.058, n = 19 truth 0.294) | ratios at 22 deciding couplings: [0.8029305243879575, 1.0455473759403995], outside [0.75, 1.3] at []
+  P5 training_45 mean miss 0.056 tau (limit 0.2; raw 0.310, chord 0.041, n = 19 truth 0.194) | ratios at 17 deciding couplings: [0.8029305243879575, 1.0455473759403995], outside [0.75, 1.3] at []
+  n = 19 against the truth, in tau: test couplings {'1.1': 1.472, '1.2': 1.339, '1.3': 1.194, '1.4': 1.052} | largest over all 1.472 | over the kept labels: None
+n = 115 (50 couplings; orientation +1 everywhere: True)
+  P1-P3 sites              F = 0.9997 over 5750 pairs -> HOLDS | t <= 1: 1.0000 | undefined: 0
+  P1-P3 edges              F = 0.9995 over 6600 pairs -> HOLDS | t <= 1: 1.0000 | undefined: 0
+  P1-P3 second_neighbours  F = 0.9992 over 9250 pairs -> HOLDS | t <= 1: 1.0000 | undefined: 0
+  P1-P3 loops              F = 0.9983 over 600 pairs -> HOLDS | t <= 1: 1.0000 | undefined: 0
+  P4    sites              Spearman(D, Jz) = -0.9955 -> HOLDS | D from 0.014 to 4.967
+  P4    edges              Spearman(D, Jz) = -0.9924 -> HOLDS | D from 0.011 to 2.866
+  P4    second_neighbours  Spearman(D, Jz) = -0.9929 -> HOLDS | D from 0.022 to 7.609
+  P4    loops              Spearman(D, Jz) = -0.9943 -> HOLDS | D from 0.020 to 8.531
+  P4    m_s                Spearman(D, Jz) = -0.9955 -> HOLDS | D from 0.014 to 4.667
+  P5 all         mean miss 0.168 tau (limit 0.6; raw 0.530, chord 0.094, n = 19 truth 0.407) | ratios at 19 deciding couplings: [0.6087244253331762, 0.8122164625923688], outside [0.75, 1.3] at [1.5, 1.6, 1.7, 1.9, 2.0, 2.2, 2.3, 2.4, 2.5, 2.6, 2.7, 2.9]
+  P5 training_45 mean miss 0.082 tau (limit 0.6; raw 0.248, chord 0.084, n = 19 truth 0.269) | ratios at 14 deciding couplings: [0.6962170340346393, 0.7884223770308845], outside [0.75, 1.3] at [1.6, 1.7, 1.9, 2.0, 2.2, 2.3, 2.4, 2.5, 2.6, 2.7, 2.9]
+  n = 19 against the truth, in tau: test couplings {'1.1': 2.067, '1.2': 1.847, '1.3': 1.63, '1.4': 1.431} | largest over all 2.067 | over the kept labels: None
+P5 rule (50 couplings of each size): FAIL
+P5 rule on the 45 training couplings (reported, does not decide): FAIL

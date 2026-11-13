@@ -1,0 +1,130 @@
+================================================================================================================
+Family A TFIM h=1.5, mean Z   (mu1 = 0.40)
+ n= 6 side +1 o_GS=-0.0000 gap0=1.052 chi(0)=4.5768 chi+=4.5769 chi-=2.6963 | C1=2.4156 Delta*=1.052 (at mu=1e-05) 2C1/Delta*=4.5912 [chi+ <= it: True]
+     de=1e-04 u_n=0.030249 sandwich [0.023222, 0.030255] ok        sqrt(2 chi0 de)=0.030255 u/law=0.9998 eps/gap0=0.00
+     de=1e-03 u_n=0.095470 sandwich [0.073434, 0.095675] ok        sqrt(2 chi0 de)=0.095675 u/law=0.9979 eps/gap0=0.01
+     de=1e-02 u_n=0.296067 sandwich [0.232220, 0.302551] ok        sqrt(2 chi0 de)=0.302551 u/law=0.9786 eps/gap0=0.06
+     de=3e-02 u_n=0.490385 sandwich [0.402217, 0.524034] ok        sqrt(2 chi0 de)=0.524033 u/law=0.9358 eps/gap0=0.17
+     de=1e-01 u_n=0.763463 sandwich [0.539261, 0.956750] ok        sqrt(2 chi0 de)=0.956750 u/law=0.7980 eps/gap0=0.57
+     de=3e-01 u_n=0.948239 sandwich [0.539261, 1.657140] ok        sqrt(2 chi0 de)=1.657139 u/law=0.5722 eps/gap0=1.71
+ n= 8 side +1 o_GS=-0.0000 gap0=1.019 chi(0)=4.9351 chi+=4.9351 chi-=2.7391 | C1=2.5221 Delta*=1.019 (at mu=1e-05) 2C1/Delta*=4.9480 [chi+ <= it: True]
+     de=1e-04 u_n=0.031409 sandwich [0.023406, 0.031417] ok        sqrt(2 chi0 de)=0.031417 u/law=0.9997 eps/gap0=0.00
+     de=1e-03 u_n=0.099094 sandwich [0.074015, 0.099349] ok        sqrt(2 chi0 de)=0.099349 u/law=0.9974 eps/gap0=0.01
+     de=1e-02 u_n=0.306155 sandwich [0.234057, 0.314168] ok        sqrt(2 chi0 de)=0.314168 u/law=0.9745 eps/gap0=0.08
+     de=3e-02 u_n=0.503052 sandwich [0.405399, 0.544155] ok        sqrt(2 chi0 de)=0.544155 u/law=0.9245 eps/gap0=0.24
+     de=1e-01 u_n=0.769788 sandwich [0.547829, 0.993487] ok        sqrt(2 chi0 de)=0.993487 u/law=0.7748 eps/gap0=0.78
+     de=3e-01 u_n=0.949387 sandwich [0.547829, 1.720770] ok        sqrt(2 chi0 de)=1.720769 u/law=0.5517 eps/gap0=2.35
+ n=10 side +1 o_GS=+0.0000 gap0=1.008 chi(0)=5.0811 chi+=5.0811 chi-=2.7511 | C1=2.5655 Delta*=1.008 (at mu=1e-05) 2C1/Delta*=5.0925 [chi+ <= it: True]
+     de=1e-04 u_n=0.031869 sandwich [0.023457, 0.031878] ok        sqrt(2 chi0 de)=0.031878 u/law=0.9997 eps/gap0=0.00
+     de=1e-03 u_n=0.100526 sandwich [0.074177, 0.100808] ok        sqrt(2 chi0 de)=0.100808 u/law=0.9972 eps/gap0=0.01
+     de=1e-02 u_n=0.309941 sandwich [0.234568, 0.318781] ok        sqrt(2 chi0 de)=0.318781 u/law=0.9723 eps/gap0=0.10
+     de=3e-02 u_n=0.507268 sandwich [0.406284, 0.552145] ok        sqrt(2 chi0 de)=0.552145 u/law=0.9187 eps/gap0=0.30
+     de=1e-01 u_n=0.771486 sandwich [0.550223, 1.008075] ok        sqrt(2 chi0 de)=1.008075 u/law=0.7653 eps/gap0=0.99
+     de=3e-01 u_n=0.949695 sandwich [0.550223, 1.746037] ok        sqrt(2 chi0 de)=1.746037 u/law=0.5439 eps/gap0=2.98
+ n=12 side +1 o_GS=-0.0000 gap0=1.003 chi(0)=5.1403 chi+=5.1404 chi-=2.7548 | C1=2.5833 Delta*=1.003 (at mu=1e-05) 2C1/Delta*=5.1509 [chi+ <= it: True]
+     de=1e-04 u_n=0.032054 sandwich [0.023472, 0.032064] ok        sqrt(2 chi0 de)=0.032064 u/law=0.9997 eps/gap0=0.00
+     de=1e-03 u_n=0.101098 sandwich [0.074227, 0.101394] ok        sqrt(2 chi0 de)=0.101394 u/law=0.9971 eps/gap0=0.01
+     de=1e-02 u_n=0.311379 sandwich [0.234725, 0.320636] ok        sqrt(2 chi0 de)=0.320635 u/law=0.9711 eps/gap0=0.12
+     de=3e-02 u_n=0.508708 sandwich [0.406555, 0.555358] ok        sqrt(2 chi0 de)=0.555356 u/law=0.9160 eps/gap0=0.36
+     de=1e-01 u_n=0.772001 sandwich [0.550957, 1.013941] ok        sqrt(2 chi0 de)=1.013937 u/law=0.7614 eps/gap0=1.20
+     de=3e-01 u_n=0.949788 sandwich [0.550957, 1.756197] ok        sqrt(2 chi0 de)=1.756191 u/law=0.5408 eps/gap0=3.59
+================================================================================================================
+Family B comb Jz=2 pinned sector, m_s   (mu1 = 0.40)
+ n= 6 side +1 o_GS=+0.7977 gap0=1.365 chi(0)=0.7978 chi+=0.7978 chi-=0.4654 | C1=1.2599 Delta*=1.365 (at mu=1e-05) 2C1/Delta*=1.8466 [chi+ <= it: True]
+     de=1e-04 u_n=0.012446 sandwich [0.009648, 0.012632] ok        sqrt(2 chi0 de)=0.012632 u/law=0.9853 eps/gap0=0.00
+     de=1e-03 u_n=0.038071 sandwich [0.030509, 0.039944] ok        sqrt(2 chi0 de)=0.039944 u/law=0.9531 eps/gap0=0.00
+     de=1e-02 u_n=0.107127 sandwich [0.093080, 0.126315] ok        sqrt(2 chi0 de)=0.126315 u/law=0.8481 eps/gap0=0.04
+     de=3e-02 u_n=0.160264 sandwich [0.093080, 0.218784] ok        sqrt(2 chi0 de)=0.218784 u/law=0.7325 eps/gap0=0.13
+     de=1e-01 u_n=0.202335 sandwich [0.093080, 0.399443] (n/a)     sqrt(2 chi0 de)=0.399443 u/law=0.5065 eps/gap0=0.44
+     de=3e-01 u_n=0.212335 sandwich [0.093080, 0.691856] (n/a)     sqrt(2 chi0 de)=0.691856 u/law=0.3069 eps/gap0=1.32
+ n= 6 side -1 o_GS=+0.7977 gap0=1.365 chi(0)=0.7978 chi+=1.5681 chi-=0.7978 | C1=2.4020 Delta*=0.2288 (at mu=-0.4) 2C1/Delta*=20.9967 [chi+ <= it: True]
+     de=1e-04 u_n=0.012816 sandwich [0.012632, 0.017709] ok        sqrt(2 chi0 de)=0.012632 u/law=1.0145 eps/gap0=0.00
+     de=1e-03 u_n=0.041765 sandwich [0.039945, 0.056001] ok        sqrt(2 chi0 de)=0.039945 u/law=1.0456 eps/gap0=0.00
+     de=1e-02 u_n=0.143836 sandwich [0.126317, 0.177091] ok        sqrt(2 chi0 de)=0.126318 u/law=1.1387 eps/gap0=0.04
+     de=3e-02 u_n=0.268868 sandwich [0.159561, 0.306730] ok        sqrt(2 chi0 de)=0.218789 u/law=1.2289 eps/gap0=0.13
+     de=1e-01 u_n=0.547761 sandwich [0.159561, 0.560010] ok        sqrt(2 chi0 de)=0.399452 u/law=1.3713 eps/gap0=0.44
+     de=3e-01 u_n=1.016856 sandwich [0.159561, 0.969965] (n/a)     sqrt(2 chi0 de)=0.691871 u/law=1.4697 eps/gap0=1.32
+ n= 9 side +1 o_GS=+0.8212 gap0=1.354 chi(0)=0.6784 chi+=0.6784 chi-=0.3967 | C1=1.2582 Delta*=1.354 (at mu=1e-05) 2C1/Delta*=1.8592 [chi+ <= it: True]
+     de=1e-04 u_n=0.011458 sandwich [0.008907, 0.011648] ok        sqrt(2 chi0 de)=0.011648 u/law=0.9837 eps/gap0=0.00
+     de=1e-03 u_n=0.034923 sandwich [0.028166, 0.036834] ok        sqrt(2 chi0 de)=0.036834 u/law=0.9481 eps/gap0=0.01
+     de=1e-02 u_n=0.097234 sandwich [0.079333, 0.116479] ok        sqrt(2 chi0 de)=0.116479 u/law=0.8348 eps/gap0=0.07
+     de=3e-02 u_n=0.144054 sandwich [0.079333, 0.201748] ok        sqrt(2 chi0 de)=0.201748 u/law=0.7140 eps/gap0=0.20
+     de=1e-01 u_n=0.179060 sandwich [0.079333, 0.368340] (n/a)     sqrt(2 chi0 de)=0.368340 u/law=0.4861 eps/gap0=0.66
+     de=3e-01 u_n=0.189060 sandwich [0.079333, 0.637983] (n/a)     sqrt(2 chi0 de)=0.637983 u/law=0.2963 eps/gap0=1.99
+ n= 9 side -1 o_GS=+0.8212 gap0=1.354 chi(0)=0.6784 chi+=1.5299 chi-=0.6784 | C1=2.6556 Delta*=0.1307 (at mu=-0.4) 2C1/Delta*=40.6295 [chi+ <= it: True]
+     de=1e-04 u_n=0.011838 sandwich [0.011648, 0.017492] ok        sqrt(2 chi0 de)=0.011648 u/law=1.0163 eps/gap0=0.00
+     de=1e-03 u_n=0.038722 sandwich [0.036835, 0.055315] ok        sqrt(2 chi0 de)=0.036835 u/law=1.0512 eps/gap0=0.01
+     de=1e-02 u_n=0.134958 sandwich [0.116481, 0.174922] ok        sqrt(2 chi0 de)=0.116481 u/law=1.1586 eps/gap0=0.07
+     de=3e-02 u_n=0.255556 sandwich [0.135679, 0.302973] ok        sqrt(2 chi0 de)=0.201752 u/law=1.2667 eps/gap0=0.20
+     de=1e-01 u_n=0.534231 sandwich [0.135679, 0.553151] ok        sqrt(2 chi0 de)=0.368347 u/law=1.4503 eps/gap0=0.66
+     de=3e-01 u_n=1.034896 sandwich [0.135679, 0.958085] (n/a)     sqrt(2 chi0 de)=0.637995 u/law=1.6221 eps/gap0=1.99
+ n=12 side +1 o_GS=+0.8329 gap0=1.352 chi(0)=0.6133 chi+=0.6133 chi-=0.3618 | C1=1.2589 Delta*=1.352 (at mu=1e-05) 2C1/Delta*=1.8620 [chi+ <= it: True]
+     de=1e-04 u_n=0.010887 sandwich [0.008506, 0.011075] ok        sqrt(2 chi0 de)=0.011075 u/law=0.9830 eps/gap0=0.00
+     de=1e-03 u_n=0.033134 sandwich [0.026898, 0.035023] ok        sqrt(2 chi0 de)=0.035023 u/law=0.9461 eps/gap0=0.01
+     de=1e-02 u_n=0.091873 sandwich [0.072352, 0.110751] ok        sqrt(2 chi0 de)=0.110751 u/law=0.8295 eps/gap0=0.09
+     de=3e-02 u_n=0.135593 sandwich [0.072352, 0.191826] ok        sqrt(2 chi0 de)=0.191826 u/law=0.7069 eps/gap0=0.27
+     de=1e-01 u_n=0.167462 sandwich [0.072352, 0.350225] (n/a)     sqrt(2 chi0 de)=0.350225 u/law=0.4782 eps/gap0=0.89
+     de=3e-01 u_n=0.177462 sandwich [0.072352, 0.606608] (n/a)     sqrt(2 chi0 de)=0.606608 u/law=0.2925 eps/gap0=2.66
+ n=12 side -1 o_GS=+0.8329 gap0=1.352 chi(0)=0.6133 chi+=1.4942 chi-=0.6133 | C1=2.8276 Delta*=0.08689 (at mu=-0.4) 2C1/Delta*=65.0814 [chi+ <= it: True]
+     de=1e-04 u_n=0.011263 sandwich [0.011075, 0.017287] ok        sqrt(2 chi0 de)=0.011075 u/law=1.0170 eps/gap0=0.00
+     de=1e-03 u_n=0.036899 sandwich [0.035023, 0.054666] ok        sqrt(2 chi0 de)=0.035023 u/law=1.0536 eps/gap0=0.01
+     de=1e-02 u_n=0.129279 sandwich [0.110752, 0.172871] ok        sqrt(2 chi0 de)=0.110752 u/law=1.1673 eps/gap0=0.09
+     de=3e-02 u_n=0.246323 sandwich [0.122660, 0.299421] ok        sqrt(2 chi0 de)=0.191828 u/law=1.2841 eps/gap0=0.27
+     de=1e-01 u_n=0.522621 sandwich [0.122660, 0.546665] ok        sqrt(2 chi0 de)=0.350228 u/law=1.4922 eps/gap0=0.89
+     de=3e-01 u_n=1.043673 sandwich [0.122660, 0.946851] (n/a)     sqrt(2 chi0 de)=0.606612 u/law=1.7205 eps/gap0=2.66
+================================================================================================================
+Family C XXZ ring Jz=2 S^z=0, m_s   (mu1 = 0.40)
+ n= 6 side +1 o_GS=+0.0000 gap0=0.4063 chi(0)=20.3802 chi+=20.3803 chi-=4.3410 | C1=4.2256 Delta*=0.4063 (at mu=1e-05) 2C1/Delta*=20.8012 [chi+ <= it: True]
+     de=1e-04 u_n=0.063799 sandwich [0.029465, 0.063844] ok        sqrt(2 chi0 de)=0.063844 u/law=0.9993 eps/gap0=0.00
+     de=1e-03 u_n=0.200473 sandwich [0.093177, 0.201892] ok        sqrt(2 chi0 de)=0.201892 u/law=0.9930 eps/gap0=0.01
+     de=1e-02 u_n=0.592399 sandwich [0.294653, 0.638440] ok        sqrt(2 chi0 de)=0.638439 u/law=0.9279 eps/gap0=0.15
+     de=3e-02 u_n=0.859369 sandwich [0.510354, 1.105810] ok        sqrt(2 chi0 de)=1.105809 u/law=0.7771 eps/gap0=0.44
+     de=1e-01 u_n=0.991074 sandwich [0.868202, 2.018923] ok        sqrt(2 chi0 de)=2.018923 u/law=0.4909 eps/gap0=1.48
+     de=3e-01 u_n=1.008021 sandwich [0.868202, 3.496878] ok        sqrt(2 chi0 de)=3.496877 u/law=0.2883 eps/gap0=4.43
+ n= 8 side +1 o_GS=-0.0000 gap0=0.2588 chi(0)=39.3283 chi+=39.3283 chi-=4.5258 | C1=5.2698 Delta*=0.2588 (at mu=1e-05) 2C1/Delta*=40.7308 [chi+ <= it: True]
+     de=1e-04 u_n=0.088557 sandwich [0.030086, 0.088689] ok        sqrt(2 chi0 de)=0.088689 u/law=0.9985 eps/gap0=0.00
+     de=1e-03 u_n=0.276272 sandwich [0.095140, 0.280458] ok        sqrt(2 chi0 de)=0.280458 u/law=0.9851 eps/gap0=0.03
+     de=1e-02 u_n=0.747510 sandwich [0.300859, 0.886885] ok        sqrt(2 chi0 de)=0.886885 u/law=0.8428 eps/gap0=0.31
+     de=3e-02 u_n=0.915073 sandwich [0.521103, 1.536130] ok        sqrt(2 chi0 de)=1.536130 u/law=0.5957 eps/gap0=0.93
+     de=1e-01 u_n=0.995897 sandwich [0.905162, 2.804577] ok        sqrt(2 chi0 de)=2.804577 u/law=0.3551 eps/gap0=3.09
+     de=3e-01 u_n=1.008656 sandwich [0.905162, 4.857671] ok        sqrt(2 chi0 de)=4.857671 u/law=0.2076 eps/gap0=9.27
+ n=10 side +1 o_GS=-0.0000 gap0=0.177 chi(0)=68.1967 chi+=68.1967 chi-=4.6061 | C1=6.3106 Delta*=0.177 (at mu=1e-05) 2C1/Delta*=71.3107 [chi+ <= it: True]
+     de=1e-04 u_n=0.116468 sandwich [0.030352, 0.116788] ok        sqrt(2 chi0 de)=0.116788 u/law=0.9973 eps/gap0=0.01
+     de=1e-03 u_n=0.359089 sandwich [0.095981, 0.369315] ok        sqrt(2 chi0 de)=0.369315 u/law=0.9723 eps/gap0=0.06
+     de=1e-02 u_n=0.829755 sandwich [0.303517, 1.167876] ok        sqrt(2 chi0 de)=1.167876 u/law=0.7105 eps/gap0=0.57
+     de=3e-02 u_n=0.930526 sandwich [0.525708, 2.022821] ok        sqrt(2 chi0 de)=2.022821 u/law=0.4600 eps/gap0=1.70
+     de=1e-01 u_n=0.997334 sandwich [0.921228, 3.693149] ok        sqrt(2 chi0 de)=3.693149 u/law=0.2700 eps/gap0=5.65
+     de=3e-01 u_n=1.008930 sandwich [0.921228, 6.396722] ok        sqrt(2 chi0 de)=6.396722 u/law=0.1577 eps/gap0=16.95
+ n=12 side +1 o_GS=-0.0000 gap0=0.1264 chi(0)=110.6196 chi+=110.6196 chi-=4.6470 | C1=7.3578 Delta*=0.1264 (at mu=1e-05) 2C1/Delta*=116.4009 [chi+ <= it: True]
+     de=1e-04 u_n=0.148051 sandwich [0.030486, 0.148741] ok        sqrt(2 chi0 de)=0.148741 u/law=0.9954 eps/gap0=0.01
+     de=1e-03 u_n=0.448115 sandwich [0.096406, 0.470361] ok        sqrt(2 chi0 de)=0.470361 u/law=0.9527 eps/gap0=0.09
+     de=1e-02 u_n=0.857090 sandwich [0.304862, 1.487411] ok        sqrt(2 chi0 de)=1.487411 u/law=0.5762 eps/gap0=0.95
+     de=3e-02 u_n=0.937077 sandwich [0.528036, 2.576272] ok        sqrt(2 chi0 de)=2.576272 u/law=0.3637 eps/gap0=2.85
+     de=1e-01 u_n=0.997934 sandwich [0.929408, 4.703608] ok        sqrt(2 chi0 de)=4.703608 u/law=0.2122 eps/gap0=9.49
+     de=3e-01 u_n=1.009069 sandwich [0.929408, 8.146888] ok        sqrt(2 chi0 de)=8.146888 u/law=0.1239 eps/gap0=28.48
+================================================================================================================
+Size dependence of u_n(de), side + (and side - for B):
+  A side +1 de=1e-03: n=6: 0.09547  n=8: 0.09909  n=10: 0.10053  n=12: 0.10110
+  A side +1 de=1e-02: n=6: 0.29607  n=8: 0.30615  n=10: 0.30994  n=12: 0.31138
+  A side +1 de=1e-01: n=6: 0.76346  n=8: 0.76979  n=10: 0.77149  n=12: 0.77200
+  B side +1 de=1e-03: n=6: 0.03807  n=9: 0.03492  n=12: 0.03313
+  B side +1 de=1e-02: n=6: 0.10713  n=9: 0.09723  n=12: 0.09187
+  B side +1 de=1e-01: n=6: 0.20233  n=9: 0.17906  n=12: 0.16746
+  B side -1 de=1e-03: n=6: 0.04176  n=9: 0.03872  n=12: 0.03690
+  B side -1 de=1e-02: n=6: 0.14384  n=9: 0.13496  n=12: 0.12928
+  B side -1 de=1e-01: n=6: 0.54776  n=9: 0.53423  n=12: 0.52262
+  C side +1 de=1e-03: n=6: 0.20047  n=8: 0.27627  n=10: 0.35909  n=12: 0.44811
+  C side +1 de=1e-02: n=6: 0.59240  n=8: 0.74751  n=10: 0.82976  n=12: 0.85709
+  C side +1 de=1e-01: n=6: 0.99107  n=8: 0.99590  n=10: 0.99733  n=12: 0.99793
+================================================================================================================
+Corollary 1 (accuracy law): exact de* where the two-sided width u+ + u- equals tau, vs tau^2/(8 chi(0))
+  A n= 8 tau=0.0500 exact de*=6.33433e-05  law=6.33222e-05  law/exact=0.9997  eps*/gap0=0.000
+  A n= 8 tau=0.1000 exact de*=0.00025362  law=0.000253289  law/exact=0.9987  eps*/gap0=0.002
+  A n= 8 tau=0.2000 exact de*=0.00101846  law=0.00101316  law/exact=0.9948  eps*/gap0=0.008
+  A n= 8 tau=0.4000 exact de*=0.00413979  law=0.00405262  law/exact=0.9789  eps*/gap0=0.032
+  A n=10 tau=0.0500 exact de*=6.15241e-05  law=6.15027e-05  law/exact=0.9997  eps*/gap0=0.001
+  A n=10 tau=0.2000 exact de*=0.000989509  law=0.000984043  law/exact=0.9945  eps*/gap0=0.010
+  B n= 9 tau=0.0493 exact de*=0.000447444  law=0.000447311  law/exact=0.9997  eps*/gap0=0.003
+  B n=12 tau=0.0500 exact de*=0.000509073  law=0.000508986  law/exact=0.9998  eps*/gap0=0.005
+
+Theorem 2 tests (sandwich where valid + chi bound): 89, violations: 0

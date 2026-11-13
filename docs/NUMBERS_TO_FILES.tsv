@@ -1,0 +1,170 @@
+stored_file	in_package	main.tex_lines	supplement.tex_lines	tables.tex_lines
+paper/data/crosschecks/check2_output.txt	yes	398	883,884,885,889,2465,2466,2467,2468	
+paper/data/crosschecks/check3_output.txt	yes		272,273,890,2482,2483	
+paper/data/crosschecks/check4_output.txt	yes		893,894,905,906,2661	
+paper/data/crosschecks/check5_output.txt	yes		1337,1338,1339	
+paper/data/r3gen/out/t1_duality.txt	yes		857,860,868,869,871,872,873,879,910,911,912,913,914,915,917,920,922,923,924	
+paper/data/r3gen/out/t2_local.txt	yes		875,2506,2507	
+paper/data/r3gen/out/t3_comb.txt	yes		2478,2479,2504	
+paper/data/r3gen/out/t4_regimes.txt	yes		857,860,868,869,871,873,877,878,879,910,911,912,913,914,915,917,920,922,923,924	
+paper/data/r3gen/out/t5_defects.txt	yes		880	
+paper/data/r3gen/out/t6_chibound.txt	yes		857,860,868,869,871,873,879,881,910,911,912,913,914,915,917,920,922,923,924	
+paper/figures/FIGURES_README.md	yes		1132	66
+paper/figures/pgf_composite_rd/export_check.txt	yes	270,274,275,280		
+paper/figures/pgf_map_rd/export_check.txt	yes	678,685,686,694		
+paper/figures/pgf_overview/export_check.txt	yes	136		
+paper/figures/pgf_overview_rd/export_check.txt	yes	140,142,143,145,146		
+paper/figures/pgf_sm_3d/export_check.txt	yes			137,138,139,147
+paper/reviews/R10_2026-11-12/scratch/break-lemmas/break_F_out.txt	yes		1835,1836,2160,2161,2162,2165,2171,2172,2181,2182	
+paper/reviews/R10_2026-11-12/scratch/break-lemmas/break_L1_part1_out.txt	yes		424,426	
+paper/reviews/R10_2026-11-12/scratch/break-lemmas/break_PD_out.txt	yes		805,807,808,809	
+paper/reviews/R10_2026-11-12/scratch/break-lemmas/break_PU_out.txt	yes		709,710,711,712,713,714	
+paper/reviews/R10_2026-11-12/scratch/math-learning/calibration_variants_out.txt	yes		2101,2104,2105	
+paper/reviews/R10_2026-11-12/scratch/math-learning/extra_checks_out.txt	yes		2125,2126,2127,2149	
+paper/reviews/R10_2026-11-12/scratch/math-thm1/t3_looseness_output.txt	yes	397	212,213,886,887,2468,2469	
+paper/reviews/R10_2026-11-12/scratch/math-thm1/t5_dilute_and_avg_output.txt	yes		198,199	
+paper/reviews/R10_2026-11-12/scratch/math-thm1/t9_filling_corollary_output.txt	yes		243,244,865	
+paper/reviews/R10_2026-11-12/scratch/phys-declared-stats/extras_bias2_out.txt	yes		2722,2723,2778	
+paper/reviews/R10_2026-11-12/scratch/phys-declared-stats/extras_bias_out.txt	yes		2759,2760	
+paper/reviews/R10_2026-11-12/scratch/phys-declared-stats/learning_splits_M1_out.txt	yes		1890	
+paper/reviews/R10_2026-11-12/scratch/phys-declared-stats/learning_splits_M2_out.txt	yes		1891	
+paper/reviews/R10_2026-11-12/scratch/phys-declared-stats/recompute_benchmark_out.txt	yes	1022		
+paper/reviews/R10_2026-11-12/scratch/phys-declared-stats/recompute_c3_out.txt	yes		2913	
+paper/reviews/R10_2026-11-12/scratch/phys-declared-stats/recompute_table2_out.txt	yes	843,848	2858,2859,2864	
+paper/reviews/R10_2026-11-12/scratch/phys-declared-stats/stats_gain_out.txt	yes		2860,2861,2862,2863,2872,2873,2874,2875	
+paper/reviews/R10_2026-11-12/scratch/phys-declared-stats/summarize_refits_out.txt	yes		2877,2879	
+paper/reviews/R10_2026-11-12/scratch/rw-T/t_mean_window_out.txt	yes		898,899,900,901,902,2385	
+paper/reviews/R10_2026-11-12/scratch/rw-V/v_item1_sector_out.txt	yes		271,399,400,401,402,404,405,406,408,409,411,413,418,419,420,430,441,442,443	
+paper/reviews/R10_2026-11-12/scratch/rw-V/v_item1b_out.txt	yes		432,436,437,439	
+paper/reviews/R10_2026-11-12/scratch/rw-V/v_item1c_out.txt	yes		427,428,429,430,431	
+paper/reviews/R10_2026-11-12/scratch/rw-V/v_item2_L2_out.txt	yes		452,468,545,546,556,557,558,559,864,3264,3265,3372	
+paper/reviews/R10_2026-11-12/scratch/rw-V/v_item3_PD_out.txt	yes		782,783,786,788,789,790	
+paper/reviews/R10_2026-11-12/scratch/rw-V/v_item3b_out.txt	yes		786	
+paper/reviews/R10_2026-11-12/scratch/rw-V/v_item3c_out.txt	yes		785	
+paper/reviews/R10_2026-11-12/scratch/rw-V/v_item45_out.txt	yes		359,864,2166,3130,3265,3639,3640,3641,3644	
+paper/reviews/R10_2026-11-12/scratch/rw-V/v_item4_ed19_out.txt	yes	490,494,495,496	3645,3698,3699,3700,3701,3702,3703,3704,3708	
+paper/reviews/R10_2026-11-12/scratch/theory-theorem4/ed19_pairs_out.txt	yes		3691,3692,3693,3694,3695,3696	
+paper/reviews/R10_2026-11-12/scratch/theory-theorem4/geometry_peierls_out.txt	yes		2381,3121,3123,3130,3131,3219,3231,3233,3237,3246,3254,3256,3263,3354,3359,3360,3361	
+paper/reviews/R10_2026-11-12/theory/lemmas/attack_F2_out.txt	yes		1834,1835,1849,1851,1852	
+paper/reviews/R10_2026-11-12/theory/lemmas/attack_L1_out.txt	yes		423	
+paper/reviews/R10_2026-11-12/theory/lemmas/attack_L2_out.txt	yes		549,550,551	
+paper/reviews/R10_2026-11-12/theory/lemmas/attack_PD_out.txt	yes		795,797,799,800,801,802,803,804	
+paper/reviews/R10_2026-11-12/theory/lemmas/attack_PU_out.txt	yes		650,702,703,704,705,706,707,715,716,717,718	
+phase3/STEP0_witness_prior_art_feasibility.md	yes	561,562,1213	2000,2287,2288,2289,2290,2291,2292,2294,2295,2296,2298,2299,2300,2301,2302,2314	
+phase3/design/R2_constructive_half.md	yes	206	1614,1615,1616,1617,1620,1621,1628,1634,1635,1636,1637,1638,1640,1641,1642	
+phase3/design/R3_generality.md	yes	370,371	78,79,91,92,93,94,96,98,99,101,102,147,149,152,154,156,157,161,162,168,173,174,175,181,187,188,205,206,247,250,251,252,253,255,257,258,259,260,261,275,276,278,279,280,281,282,565,567,580,583,593,594,595,596,606,607,608,609,610,614,615,811,812,813,814,815,816,818,819,823,828,833,835,836,837,839,842,857,860,868,869,871,873,874,876,879,910,911,912,913,914,915,917,920,922,923,924	
+phase3/full_runs/bias_law/code/bias_law.py	yes	759,769,778,1324	2347,2728,2743,2769,2776	
+phase3/full_runs/bias_law/code/generality.py	yes		2790	
+phase3/full_runs/bias_law/code/instance_test.py	yes		2799	
+phase3/full_runs/bias_law/inputs/generality.txt	yes	803	2796	
+phase3/full_runs/bias_law/out/results.json	yes	781,784,785,786,790,791,804,806,807,808,1107	1373,1548,2723,2724,2736,2744,2745,2746,2748,2749,2750,2755,2757,2758,2764,2765,2766,2769,2771,2772,2773,2777,2779,2783,2784,2791,2792,2800,2801,2802,2803,2819	
+phase3/full_runs/final_tests/ADDENDUM_C3.md	yes		2912	
+phase3/full_runs/final_tests/ADDENDUM_C3b.md	yes	1337	2897,2922,2923	
+phase3/full_runs/final_tests/DECLARATION.md	yes	814,816,836,837,840,844	2821,2839,2840,2841,2842,2847,2848,2850,2863,2884,2886	
+phase3/full_runs/final_tests/DEVIATIONS.md	yes	1332		
+phase3/full_runs/final_tests/RESULTS.md	yes	647,648,749,853,855,1106,1301,1330,1332,1334,1336,1339,1344,1363	1575,1599,2343,2348,2349,2407,2812,2824,2828,2896,2898,2908,2911,2917,2924,2925,2936,2938,2942,2946,2948,2949	
+phase3/full_runs/final_tests/analysis/c3b_20261110/test_c3b.json	yes	648,856,1106,1337,1346	1600,2896,2898,2927,2928	
+phase3/full_runs/final_tests/analysis/post_checks.json	yes	818,843,847,848	1015,2832,2857,2858,2871,2879	
+phase3/full_runs/final_tests/analysis/post_checks_s.json	yes	844	2864,2881,2882,2883,2884	
+phase3/full_runs/final_tests/analysis/test_a.json	yes	815,816,817,818	2820,2821,2822,2823,2824,2826,2827,2830	
+phase3/full_runs/final_tests/analysis/test_b.json	yes		2854,2855,2878	
+phase3/full_runs/final_tests/analysis/test_c.json	yes	748	2893,2894,2911,2912,2913,2914,2946	
+phase3/full_runs/final_tests/analysis/test_c_extra.json	yes	858,1346,1347	2918,2919,2930,2931	
+phase3/full_runs/final_tests/jobs/C_20261108/prep.json	yes	1300		
+phase3/full_runs/final_tests/jobs/C_20261108/submit.json	yes		2923,2924	
+phase3/full_runs/huang/DECLARATION.md	yes	1018	2207,2208,2209,2210,2211,2212,2213,2214,2215,2216,2217,2219,2223,2224,2226,2227,2233,2238,2244,2245,2246,2247,2248,2249,2250,2251,2253,2255,2256,2257,2258,2259,2260,2261	
+phase3/full_runs/huang/RESULTS.md	yes	137,1017,1018,1020,1021,1023,1024,1025,1026,1027,1028	2207,2208,2209,2210,2211,2212,2213,2214,2215,2216,2217,2219,2223,2224,2226,2227,2233,2238,2244,2245,2246,2247,2248,2249,2250,2251,2252,2253,2255,2256,2257,2258,2259,2260,2261,2338,2339,2340,2342,2344,2345,2393,2437,2439,2445,2446	
+phase3/full_runs/huang/laptop_analysis/tables_huang.md	yes		2216	
+phase3/full_runs/kill_tests/W_window/DECLARATION.md	yes	1117	2351,2964,3029,3031,3032,3035,3045,3048,3049,3050,3073,3087,3088	
+phase3/full_runs/kill_tests/W_window/DEVIATIONS.md	yes		3049,3077,3078	
+phase3/full_runs/kill_tests/W_window/FORMULA.md	yes		2961,2962,2987	
+phase3/full_runs/kill_tests/W_window/RESULTS.md	yes		3037,3038,3040,3041,3046,3092	
+phase3/full_runs/kill_tests/W_window/STEP0.md	yes		2961,2996,2997,2999,3010,3011,3012,3013,3014,3019,3022,3023,3024	
+phase3/full_runs/kill_tests/W_window/code/step0/recheck_r.py	yes		2989,2990,2992,2993,3004	
+phase3/full_runs/kill_tests/W_window/out_20261107T190617Z/out/analysis.json	yes	1118,1119	3032,3034,3039,3062,3063,3064,3065,3066,3071,3072,3073,3075,3089	
+phase3/full_runs/kill_tests/W_window/s2_summary.json	yes		3078,3079	
+phase3/full_runs/kill_tests/W_window/step0_recheck.json	yes		2989,2991,2994,3004,3010,3011,3012,3013,3014,3019,3025	
+phase3/full_runs/learning/DECLARATION.md	yes	1034,1041	1862,1877,1882,1883,1884,1885,1889,1894,1940,1950,1960,1961,1972	
+phase3/full_runs/learning/RESULTS.md	yes	1030,1032,1033,1035,1050,1150	1668,1856,1857,1858,1859,1861,1866,1867,1887,1890,1893,1895,1896,1898,1899,1903,1904,1905,1910,1912,1913,1917,1923,1943,1946,1950,1962,1974,2689,2695,2696,2697,2698,2699,2701,2702	
+phase3/full_runs/learning/analysis/learn_M1_D_O.json	yes	1037,1044,1046,1049,1052	1915,1916,1922,1930,1937,1938,1939,2684,2685,2686,2698,2699	
+phase3/full_runs/learning/analysis/learn_M2_D_O.json	yes	1037,1040	1915,1916,1939,2684,2685,2686,2698	
+phase3/full_runs/learning/analysis/verdicts.json	yes	1035,1039	1888,1889,1892,1894,1895,1896,1897,1898,2688,2693,2700	
+phase3/full_runs/learning/code/labels_l.py	yes	1033	1861	
+phase3/full_runs/learning_ibm/README.md	yes		2036,2037,2043,2044,2084,2110	
+phase3/full_runs/learning_ibm/crosschecks/prop2_attack_output.txt	yes		1927,1928	
+phase3/full_runs/learning_ibm/crosschecks/thm_attack_output.txt	yes	515	2607	
+phase3/full_runs/learning_ibm/out/consistency_huang_output.txt	yes	1051	849,1924,1925	
+phase3/full_runs/learning_ibm/out/descriptive.json	yes		2089,2091,2092,2121	
+phase3/full_runs/learning_ibm/out/prop2_cubic.json	yes		2115,2117,2119,2120,2134,2140,2141,2142,2144,2146,2157,2158,2190,2191	
+phase3/full_runs/learning_ibm/out/results.json	yes		2031,2040,2044,2048,2056,2059,2061,2067,2068,2069,2071,2072,2073,2074,2075,2077,2078,2079,2080,2082,2083,2084,2090,2092,2093,2094,2095,2096,2097,2099,2100,2107,2108,2109,2110,2111,2112,2163,2180,2188,2195,2196,2197	
+phase3/full_runs/learning_ibm/out/widths_huang.json	yes	1043		
+phase3/full_runs/map/DECLARATION.md	yes	197,269,310,312,703,739,761,768,1214,1265,1271,1272,1273,1360	1007,1015,1018,1066,1067,1068,1069,1070,1073,1074,1075,1076,1077,1078,1079,1080,1085,1086,1087,1088,1094,1095,1106,1107,1113,1116,1117,1119,1124,1131,1132,1136,1137,1139,1141,1145,1147,1148,1161,1162,1163,1173,1176,1179,1181,1186,1190,1192,2052,2139,2338,2339,2340,2342,2344,2345,2393,2437,2439,2445,2446,2508,2510,2541,2542,2576,2577,2621,2734	69,70,77,79,83,94,98,102,108
+phase3/full_runs/map/RESULTS.md	yes		1066,1067,1068,1070,1073,1074,1075,1076,1077,1078,1079,1085,1086,1088,1094,1095,1106,1107,1113,1116,1117,1119,1124,1131,1132,1136,1137,1139,1141,1145,1147,1148,1161,1162,1163,1173,1176,1179,1181,1186,1190,1192,2337,2338,2339,2340,2342,2344,2345,2393,2437,2439,2445,2446,2576,2577,2611,2624,2625,2626	79,98
+phase3/full_runs/map/laptop_analysis/code/tau_scan.py	yes		1015,1016,2356	
+phase3/full_runs/map/laptop_analysis/summary_map.json	yes	622,623,627	207,209,826,1009,1010,1011,1012,1014,1018,1019,1020,1022,1023,1024,1026,1028,1029,1093,1164,1165,1175,1177,1600,2295,2404,2473,2474,2514,2564,2566,2582,2592,2594,2595,2599,2601,2603,2612,2613,2614,2615,2616,2618,2619,2622,2623,2627,2628	
+phase3/full_runs/map/laptop_analysis/tau_scan.json	yes		1016	
+phase3/full_runs/method/DECLARATION.md	yes	714,722,1195,1275,1276	1351,1352,1353,1354,1355,1356,1358,1359,1360,1361,1375,1380,1385,1388,1389,1391,1397,1400,1405,1407,1408,1412,1419,1420,1421,1426,1436,1443,1444,1450,1459,1461,1465,1467,1468,1469,1490,1494,1495,1498,1500,1513,1526,1530,1533,1536,1538,1541,1542,1544,1545,1553,1554,1555,1557,1985,1986,1988,1989,1995,2004,2005,2008,2338,2339,2340,2342,2344,2345,2393,2403,2437,2439,2445,2446,2642	
+phase3/full_runs/method/RESULTS.md	yes	721,1278	1351,1352,1353,1354,1355,1356,1358,1359,1360,1380,1382,1383,1385,1388,1389,1391,1397,1400,1404,1405,1406,1407,1408,1412,1419,1420,1421,1426,1436,1439,1441,1443,1444,1450,1459,1461,1465,1467,1468,1469,1490,1494,1495,1498,1500,1513,1526,1530,1533,1536,1538,1541,1542,1544,1545,1553,1554,1555,1557,1985,1986,1988,1989,1995,2000,2001,2004,2005,2008,2338,2339,2340,2341,2342,2344,2345,2393,2437,2439,2445,2446,2652,2653,2655,2656,2657,2675,2676,2725	
+phase3/full_runs/method/code/graphs/hh_d3.json	yes		2733	
+phase3/full_runs/method/laptop_post/out/emu/emu_n57_J1.2.json	yes	719,720		
+phase3/full_runs/method/laptop_post/out/emu/emu_n57_J1.6.json	yes	722,737		
+phase3/full_runs/method/laptop_post/out/emu/emu_n57_J2.5.json	yes	722		
+phase3/full_runs/method/laptop_post/out/emu/emu_n57_J4.0.json	yes	722		
+phase3/full_runs/method/laptop_post/out/ml/ml_n115.json	yes		1998	
+phase3/full_runs/method/laptop_post/out/ml/ml_n57.json	yes		1998,1999	
+phase3/full_runs/method/laptop_post/out/summary.json	yes	1277	1364,1365,1366,1367,1368,1381,1439,1440,1441,1442,1518,1519,1520,2650,2668,2670	
+phase3/full_runs/method/laptop_post/results_tables.md	yes		1351,1352,1353,1354,1355,1356,1358,1359,1360,1380,1385,1388,1389,1391,1397,1400,1405,1407,1408,1412,1419,1420,1421,1426,1436,1443,1444,1450,1459,1461,1465,1467,1468,1490,1494,1495,1498,1500,1513,1526,1530,1533,1536,1538,1541,1542,1544,1545,1546,1553,1554,1555,1557,1985,1986,1988,1989,1995,2004,2005,2008,2338,2339,2340,2342,2344,2345,2393,2437,2439,2445,2446,2658	
+phase3/full_runs/qpu/DECLARATION.md	yes		1568,1569,1571,1572,1573,1574,1579,1580,1581,1582,1583,1584,1587,1588,1591,1595,1596,1597,1598,1599	
+phase3/full_runs/qpu/RESULTS.md	yes	284,285,647,741,744,853,1299,1301,1336	1568,1569,1571,1572,1573,1574,1579,1580,1581,1582,1583,1584,1587,1588,1591,1595,1596,1597,1598,1599,2899,2908,2946	
+phase3/full_runs/qpu/analysis/TABLES.md	yes		1568,1569,1571,1572,1573,1574,1579,1580,1581,1582,1583,1584,1587,1588,1591,1595,1596,1597,1598,1599	
+phase3/full_runs/qpu/analysis/analysis.json	yes	284,286,287,741,742,743,744		
+phase3/full_runs/real_data/DECLARATION.md	yes	108,110,115,117,178,180,229,246,565,583,585,653,673,715,827,1121,1142,1143,1147,1182,1194,1197,1215,1223,1224,1233,1235,1236,1245,1254,1312	241,946,959,991,1032,1033,1316,1334,2286,2408,2409,2413,2522,2523,3141,3735,3738,3743,3744,3768,3769,3786,3814,3815,3816,3817,3818,3893,3897,3946,3993,3997,3998,4001,4007,4026,4032,4052,4053,4055,4062,4075,4087,4200,4330,4344,4345,4351,4352,4353,4354,4362,4435	
+phase3/full_runs/real_data/DECLARATION_hash_time.txt	yes	1352	3989	
+phase3/full_runs/real_data/DEVIATIONS.md	yes	1260	2423,3941,3950	
+phase3/full_runs/real_data/RESULTS.md	yes	569,574,587,596,604,607,611,646,661,731,1134,1258	949,958,978,979,980,981,984,985,997,1035,1039,1040,1049,1050,1051,1058,1122,2415,2419,2420,2423,3766,3783,3784,3785,3792,3812,3813,3822,3823,3824,3825,3826,3827,3828,3829,3830,3831,3832,3842,3846,3854,3875,3881,3897,3901,3903,3931,3936,3937,3938,3942,3949,3958,3959,3961,3962,3963,3965,3966,3967,4008,4027,4028,4152	
+phase3/full_runs/real_data/checks/G1_rerun_2026-11-12.md	yes		2360,3754,3949	
+phase3/full_runs/real_data/checks/emulation_vs_published_energy.json	yes	704,705,706	1378,1379	
+phase3/full_runs/real_data/checks/r11/fl_learn_paper_numbers_out.txt	yes	938,945,946,947,955,956,957,1000,1198	2373,4258,4259,4260,4389,4390	
+phase3/full_runs/real_data/checks/r11/fl_learn_recompute_e1_out.txt	yes		2373	
+phase3/full_runs/real_data/checks/r11/fl_neural_f1_out.txt	yes	960,961,962,963,964,1307	4245,4246,4247,4248,4250,4251,4255,4256	
+phase3/full_runs/real_data/checks/r11/fn_abstract_n19_percent_out.txt	yes	112		
+phase3/full_runs/real_data/checks/r11/fn_cite1_check_public_record_out.txt	yes	228		
+phase3/full_runs/real_data/checks/r11/fp_bias_curve_recompute_out.txt	yes	780,782,783	2735,2736,2737,2738,2739,2756,2819,2833	
+phase3/full_runs/real_data/checks/r11/fp_counts_out.txt	yes	721	1404,2876	
+phase3/full_runs/real_data/checks/r11/fp_device_rebuild_out.txt	yes		2905	
+phase3/full_runs/real_data/checks/r11/fp_hostileB_extra_checks_out.txt	yes	714,717	1376,1378	
+phase3/full_runs/real_data/checks/r11/fp_hostileB_recompute_bias_out.txt	yes	228	1369,1370	
+phase3/full_runs/real_data/checks/r11/ft_hypothesis_H_and_explicit_widths_out.txt	yes	588	3771,3772,3835,3836,3837,3838,3839	
+phase3/full_runs/real_data/checks/r11/ft_mean_window_comb_and_n19_out.txt	yes	335,336	122	
+phase3/full_runs/real_data/checks/r11/ft_not_certified_without_reference_out.txt	yes	654,1246		
+phase3/full_runs/real_data/checks/r11/ft_rigor_block_counts_out.txt	yes		1242,1243	
+phase3/full_runs/real_data/checks/r11/ft_rigor_mu_table_out.txt	yes		1219,1280	
+phase3/full_runs/real_data/checks/r11/ft_rigor_rows_variants_out.txt	yes		1296	
+phase3/full_runs/real_data/checks/r11/ft_theorem4_constant_out.txt	yes	489	3638,3642,3643	
+phase3/full_runs/real_data/checks/r11/package_checks_certificates_all_2026-11-13.txt	yes	1382		
+phase3/full_runs/real_data/checks/rd_audit_map.json	yes		1483,1484,2415	
+phase3/full_runs/real_data/checks/rd_audit_predict_learn.json	yes	731	4008,4152	
+phase3/full_runs/real_data/e1/E1_SPEC.md	yes		1254,1321,3862,3863,3865,3868	
+phase3/full_runs/real_data/e1/collect_e1_stdout_2026-11-12.txt	yes		1320,1324,1325,3870,3871,3876,3882,3885	
+phase3/full_runs/real_data/e1/learn_e1/RESULTS_learn_e1.md	yes		4436,4437,4438,4439,4440,4441	
+phase3/full_runs/real_data/e1/map_e1/S_sets.json	yes		4433,4434	
+phase3/full_runs/real_data/e1/map_e1/map_rows.json	yes	592	3875,3877	
+phase3/full_runs/real_data/e1/map_e1/map_summary.json	yes	111,181,590,591,645,687,1184,1295	964,965,1319,2363,3873,3874,3875,3880	
+phase3/full_runs/real_data/f1_neural/out/results_mlp_pilot3_n115.json	yes		4247,4249	
+phase3/full_runs/real_data/f1_neural/out/results_mlp_pilot3_n57.json	yes		4246,4249	
+phase3/full_runs/real_data/out/S_sets.json	yes		4331,4332,4333,4395	
+phase3/full_runs/real_data/out/learn/results_cheap.json	yes	139		
+phase3/full_runs/real_data/out/learn_real.json	yes	116,117,118,146,935,941,944,945,947,948,952,953,961,962,976,977,978,979,981,982,985,986,987,989,990,994,995,996,997,998,999,1000,1001,1197,1198,1200,1201,1307,1314	2031,2368,4181,4183,4184,4185,4188,4191,4211,4213,4215,4232,4233,4234,4235,4236,4237,4238,4241,4242,4250,4251,4261,4262,4263,4266,4267,4291,4292,4293,4294,4295,4296,4299,4300,4301,4303,4304,4305,4306,4309,4311,4312,4313,4314,4316,4318,4319,4331,4343,4344,4349,4350,4369,4370,4371,4372,4373,4376,4377,4379,4380,4381,4382,4384,4385,4386,4387,4388,4392,4393,4394,4410,4411,4412,4414,4417,4418,4419	
+phase3/full_runs/real_data/out/map_gates.json	yes	567	2629,2630,3767	
+phase3/full_runs/real_data/out/map_real.json	yes	276,569,587,597,598,607	183,206,946,975,976,977,978,981,2471,2562,2563,2596,2604	
+phase3/full_runs/real_data/out/map_summary.json	yes	110,111,112,113,114,141,180,181,182,186,581,583,584,585,599,600,602,613,643,644,683,684,968,969,971,1095,1096,1184,1186,1188,1252	964,965,981,992,993,1036,1037,1052,1310,1311,2361,2362,3818,3819,3821,3822,3823	
+phase3/full_runs/real_data/out/predict_real.json	yes	280,716,729,730,733,734,737,763,764,765,766,822,824,825,826,827,828,830,831,1103,1104,1105,1108	1374,1418,1486,1487,1509,1518,1520,1560,2361,2365,2673,2674,2728,2729,2786,2787,3995,4000,4001,4006,4010,4011,4014,4019,4026,4027,4028,4029,4031,4032,4045,4046,4050,4051,4057,4058,4059,4060,4061,4062,4063,4066,4067,4069,4070,4072,4073,4076,4077,4078,4079,4081,4082,4100,4101,4102,4103,4104,4105,4108,4112,4113,4114,4115,4116,4117,4118,4119,4120,4121,4123,4134,4136,4137,4138,4139,4146,4148,4149,4150,4151,4156,4157	
+phase3/full_runs/real_data/results/RESULTS_learn.md	yes	944,952,953,977,978,989,1001	2031,4205,4233,4237,4241,4293,4294,4299,4300,4312,4313,4314,4316,4319,4371,4372,4379,4380,4385,4394,4415	
+phase3/full_runs/real_data/results/RESULTS_predict.md	yes		3989,4013,4082,4150	
+phase3/full_runs/real_data/source/README.md	yes	1375	3732,3733,3734,3735,3739,3745	
+phase3/full_runs/rigor/DECLARATION_v2.md	yes		1210,1215,1234,1235,1236,1237,1239,1245,1247,1251,1257,1258,1262,1263,1267,1275,1276,1278,1279,1281,1282,1283,1287,1288,1290,1291,1300,1302,1303,1331,1343	
+phase3/full_runs/rigor/RESULTS.md	yes		1210,1234,1235,1236,1237,1239,1245,1247,1251,1257,1258,1262,1263,1267,1275,1276,1278,1279,1281,1282,1283,1287,1288,1290,1291,1300,1302,1303,1331,1343,2338,2339,2340,2342,2344,2345,2393,2437,2439,2445,2446	
+phase3/full_runs/rigor/RESULTS_v2.md	yes		1210,1215,1234,1235,1236,1237,1239,1242,1243,1245,1247,1251,1257,1258,1262,1263,1267,1275,1276,1277,1278,1279,1280,1281,1282,1283,1287,1288,1290,1291,1300,1302,1303,1331,1343,2338,2339,2340,2342,2344,2345,2393,2437,2439,2445,2446,2571	
+phase3/full_runs/rigor/code/verify_exact.py	yes		1341	
+phase3/full_runs/rigor/outputs/results.json	yes		2585	
+phase3/full_runs/rigor/outputs/results_v2.json	yes		1139,1274,1277,2578,2579,2581,2582,2583	

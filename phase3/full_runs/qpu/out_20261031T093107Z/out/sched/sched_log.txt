@@ -1,0 +1,12 @@
+2026-10-31T09:32:52Z start control_1.2_100000
+2026-10-31T09:32:52Z start control_1.6_23000
+2026-10-31T09:32:52Z start device_A_1.2
+2026-10-31T09:32:52Z start control_4.0_23000
+2026-10-31T09:33:02Z end device_A_1.2
+2026-10-31T09:33:02Z start device_B_1.6
+2026-10-31T09:33:05Z end device_B_1.6
+2026-10-31T09:33:05Z start device_B_4.0
+2026-10-31T09:33:07Z end device_B_4.0
+2026-10-31T09:46:02Z end control_4.0_23000
+2026-10-31T09:46:17Z end control_1.6_23000
+2026-10-31T09:47:41Z end control_1.2_100000

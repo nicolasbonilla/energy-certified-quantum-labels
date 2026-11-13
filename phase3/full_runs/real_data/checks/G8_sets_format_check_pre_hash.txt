@@ -1,0 +1,32 @@
+REFUSED: C:\Users\Nicolas\AppData\Local\Temp\tmpy40jmn4t\bad\S_sets.sha256 does not match C:\Users\Nicolas\AppData\Local\Temp\tmpy40jmn4t\bad\S_sets.json.
+REFUSED: C:\Users\Nicolas\AppData\Local\Temp\tmpy40jmn4t\bad\S_sets.sha256 does not exist: the nested sets are not fixed yet.
+dry-run sets file: C:\Users\Nicolas\Downloads\Proyecto_SQD_ML\P5_energy_certified_labels\work\paper\reviews\R10_2026-11-12\scratch\rd-code-map\dry_run_out\S_sets.json  (declaration_sha256 51a70e7f687f...)
+  [ok] current map_tables.write_s_sets reproduces the dry-run S_sets.json byte for byte (SHA-256 30d4d9bf066ee459...)
+  [ok] the writer's S_sets.sha256 holds that hash
+  [ok] n = 57: rd_common.load_sets accepts the writer's file (sha file required, declaration checked), no warning
+  [ok] n = 115: rd_common.load_sets accepts the writer's file (sha file required, declaration checked), no warning
+  [ok] the reader refuses the file under another declaration hash
+  [ok] the reader refuses a wrong S_sets.sha256 (exit code 3)
+  [ok] the reader refuses a sets file without S_sets.sha256 (exit code 3)
+  [ok] n = 57: one interval record per coupling (50)
+  [ok] n = 57: S read back = the training couplings whose m_s row is CERTIFIED (exact): 26
+  [ok] n = 57: nested; S_p = S_3_4 (21 couplings)
+  [ok] n = 57: exact end points, lower widths ((1 - q) x hull), tau and q read back equal the map rows at all 50 couplings
+  [ok] n = 57: prop2_intervals gives an upper interval at 49 couplings, kinds {'like_for_like': 11, 'interpolated': 11, 'exact': 27}
+  [ok] n = 57: every non-exact upper interval is flagged indicative
+  [ok] n = 57: every member of S has an exact upper interval
+  [ok] n = 57: floor_f2 runs: m = 45, k = 42, floor 0.04387 = 1.02-1.23 tau at the test queries; held out m = 44, k = 41
+  [ok] n = 57: run_f3 runs on the file (20 splits): sets {'S': 'RUN', 'S_3_4': 'RUN', 'S_1_2': 'NOT RUN (fewer than 15 couplings)'}, primary S_3_4 -> PASS; 2q >= w_(k) in every split
+  [ok] n = 57: the kept set used by run_predict (sets['S']) is a list of couplings of the data
+  [ok] n = 115: one interval record per coupling (50)
+  [ok] n = 115: S read back = the training couplings whose m_s row is CERTIFIED (exact): 21
+  [ok] n = 115: nested; S_p = S_3_4 (20 couplings)
+  [ok] n = 115: exact end points, lower widths ((1 - q) x hull), tau and q read back equal the map rows at all 50 couplings
+  [ok] n = 115: prop2_intervals gives an upper interval at 49 couplings, kinds {'like_for_like': 11, 'interpolated': 17, 'exact': 21}
+  [ok] n = 115: every non-exact upper interval is flagged indicative
+  [ok] n = 115: every member of S has an exact upper interval
+  [ok] n = 115: floor_f2 runs: m = 45, k = 42, floor 0.03940 = 0.90-1.06 tau at the test queries; held out m = 44, k = 41
+  [ok] n = 115: run_f3 runs on the file (20 splits): sets {'S': 'RUN', 'S_3_4': 'RUN', 'S_1_2': 'NOT RUN (fewer than 15 couplings)'}, primary S_3_4 -> PASS; 2q >= w_(k) in every split
+  [ok] n = 115: the kept set used by run_predict (sets['S']) is a list of couplings of the data
+  [ok] no file of converted/ was opened
+ALL 28 CHECKS PASSED

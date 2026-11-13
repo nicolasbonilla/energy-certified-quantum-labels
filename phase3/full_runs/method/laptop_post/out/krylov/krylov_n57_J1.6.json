@@ -1,0 +1,50 @@
+{
+ "n": 57,
+ "Jz": 1.6,
+ "dt": 0.0622,
+ "per_k": 100000,
+ "info": [
+  {
+   "k": 1,
+   "n_unique_std": 244
+  },
+  {
+   "k": 2,
+   "n_unique_std": 1578
+  },
+  {
+   "k": 3,
+   "n_unique_std": 3574
+  },
+  {
+   "k": 4,
+   "n_unique_std": 8341
+  },
+  {
+   "k": 5,
+   "n_unique_std": 17702
+  },
+  {
+   "k": 6,
+   "n_unique_std": 30707
+  },
+  {
+   "k": 7,
+   "n_unique_std": 46439
+  },
+  {
+   "k": 8,
+   "n_unique_std": 62853
+  },
+  {
+   "k": 9,
+   "n_unique_std": 77045
+  },
+  {
+   "k": 10,
+   "n_unique_std": 87421
+  }
+ ],
+ "fresh": false,
+ "source": "pilot3 r4_20261029T211913Z data/krylov_J1.6.npz (sha256 in out/p3_import.txt)"
+}

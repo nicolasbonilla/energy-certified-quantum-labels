@@ -1,0 +1,70 @@
+============================== n = 57
+public m_s label minus authors' DMRG, in tau: Jz=1.1: 4.9545 ; Jz=1.6: 1.6685 (Delta=0.0771) ; Jz=6.0: 0.0374 ; all positive: True ; n>tau up to Jz=1.9
+m_s at Jz=1.1: public 0.77220, authors' DMRG 0.59525
+f1 cubic, n=57, labels=public: {"test": {"miss_tau": [3.7202, 3.175, 2.6946, 2.286], "truth_in": 0, "public_label_in": 0, "width_tau": [0.1669, 0.1551, 0.1461, 0.1391]}, "ind": {"n": 45, "held_out_label_in": 41, "truth_in": 0, "width_tau": [0.0966, 0.1496], "miss_tau": [0.0529, 1.6395]}}
+f1 cubic, n=57, labels=DMRG (control): {"test": {"miss_tau": [0.2425, 0.1286, 0.0644, 0.0297], "truth_in": 0, "public_label_in": 0, "width_tau": [0.0058, 0.0054, 0.0051, 0.0048]}, "ind": {"n": 45, "held_out_label_in": 41, "truth_in": 41, "width_tau": [0.0034, 0.0043], "miss_tau": [0.0, 0.0086]}}
+Jz=1.5 apart: cubic miss 1.9436 tau
+filter: kept 26 (Jz 3.5-6.0), max miss kept 0.1745 tau; dropped 19, of which within tau: 15
+f2: m=45 k=42 floor=0.229590 ; widest four at [1.6, 1.7, 1.8, 1.9] ; floor/tau at 1.1-1.4: [6.4284, 5.9754, 5.6277, 5.3563] ; min over all couplings 3.8990
+f2 held out (m=44,k=41): 3.8990-4.5308
+Prop 2(b) cubic, lower widths, all 45 labels: q=0.19773 ; 2q/tau at test 9.2260-11.0727 ; over all 49: 6.7160-11.0727
+  --- split 0 of S_1_2 (n=57), model M1, end to end ---
+  training couplings: [4.7, 4.9, 5.2, 5.4]
+  calibration couplings: [4.5, 4.6, 5.1, 5.3, 5.5, 5.6, 5.8, 5.9, 6.0]
+  query couplings: [4.3, 4.4, 4.8, 5.0, 5.7]
+  public m_s labels at training couplings: [0.97389, 0.975668, 0.978511, 0.981797]
+  fitted line m_s = 1.032676 + -0.278016 / Jz
+   cal Jz=4.5  f=0.970895  I=[0.951416, 0.977770]  width/tau=0.4542  score=0.019479  (w/2=0.013177)
+   cal Jz=4.6  f=0.972238  I=[0.953259, 0.978878]  width/tau=0.4409  score=0.018979  (w/2=0.012810)
+   cal Jz=5.1  f=0.978163  I=[0.962037, 0.983018]  width/tau=0.3589  score=0.016126  (w/2=0.010490)
+   cal Jz=5.3  f=0.980220  I=[0.966606, 0.983378]  width/tau=0.2863  score=0.013614  (w/2=0.008386)
+   cal Jz=5.5  f=0.982128  I=[0.969010, 0.984548]  width/tau=0.2648  score=0.013118  (w/2=0.007769)
+   cal Jz=5.6  f=0.983031  I=[0.970637, 0.984934]  width/tau=0.2435  score=0.012394  (w/2=0.007149)
+   cal Jz=5.8  f=0.984743  I=[0.972353, 0.986205]  width/tau=0.2355  score=0.012389  (w/2=0.006926)
+   cal Jz=5.9  f=0.985555  I=[0.969542, 0.989109]  width/tau=0.3325  score=0.016013  (w/2=0.009784)
+   cal Jz=6.0  f=0.986340  I=[0.974216, 0.987043]  width/tau=0.2178  score=0.012125  (w/2=0.006414)
+  k = 9 of m = 9  ->  q = 0.019479136644734 ; floor w_(k)/2 = 0.013177
+   query Jz=4.3  f=0.968021  truth=0.964041  tau=0.057842  2q/tau=0.6735239091  |f-truth|/tau=0.0688  truth inside: True
+   query Jz=4.4  f=0.969491  truth=0.965633  tau=0.057938  2q/tau=0.6724134902  |f-truth|/tau=0.0666  truth inside: True
+   query Jz=4.8  f=0.974756  truth=0.971055  tau=0.058263  2q/tau=0.6686590823  |f-truth|/tau=0.0635  truth inside: True
+   query Jz=5.0  f=0.977073  truth=0.973299  tau=0.058398  2q/tau=0.6671173768  |f-truth|/tau=0.0646  truth inside: True
+   query Jz=5.7  f=0.983902  truth=0.979403  tau=0.058764  2q/tau=0.6629597611  |f-truth|/tau=0.0766  truth inside: True
+f3 n=57 set=S_1_2 (18 couplings; 4/9/5) score=interval M1: (W) 200 of 200 splits; (C) 1000 of 1000 pairs; 2q/tau 0.5867-0.8570; max miss 0.1367
+f3 n=57 set=S_1_2 (18 couplings; 4/9/5) score=interval M2: (W) 200 of 200 splits; (C) 1000 of 1000 pairs; 2q/tau 0.5627-0.8559; max miss 0.1483
+f3 n=57 set=S_1_2 (18 couplings; 4/9/5) score=interval M0: (W) 200 of 200 splits; (C) 1000 of 1000 pairs; 2q/tau 0.5991-0.7607; max miss 0.0900
+   truth change over the set: 0.2947-0.3000 tau ; exact widths 0.2178-0.4905 tau ; max label miss 0.0816 tau
+f3 n=57 set=S_3_4 (23 couplings; 6/12/5) score=interval M1: (W) 50 of 200 splits; (C) 1000 of 1000 pairs; 2q/tau 0.8156-1.1624; max miss 0.1569
+f3 n=57 set=S_3_4 (23 couplings; 6/12/5) score=interval M2: (W) 66 of 200 splits; (C) 1000 of 1000 pairs; 2q/tau 0.8222-1.1366; max miss 0.1360
+f3 n=57 set=S_3_4 (23 couplings; 6/12/5) score=interval M0: (W) 50 of 200 splits; (C) 1000 of 1000 pairs; 2q/tau 0.8179-1.0824; max miss 0.1207
+   truth change over the set: 0.4625-0.4757 tau ; exact widths 0.2178-0.7006 tau ; max label miss 0.1202 tau
+f3 n=57 set=S (26 couplings; 6/12/8) score=interval M1: (W) 6 of 200 splits; (C) 1600 of 1600 pairs; 2q/tau 0.9062-1.5630; max miss 0.2114
+f3 n=57 set=S (26 couplings; 6/12/8) score=interval M2: (W) 6 of 200 splits; (C) 1600 of 1600 pairs; 2q/tau 0.9168-1.5450; max miss 0.2108
+f3 n=57 set=S (26 couplings; 6/12/8) score=interval M0: (W) 6 of 200 splits; (C) 1600 of 1600 pairs; 2q/tau 0.8899-1.4318; max miss 0.1559
+   truth change over the set: 0.5983-0.6206 tau ; exact widths 0.2178-0.9104 tau ; max label miss 0.1745 tau
+f3 n=57 set=S_1_2 (18 couplings; 4/9/5) score=standard M1: (W) 200 of 200 splits; (C) 29 of 1000 pairs; 2q/tau 0.0283-0.1589; max miss 0.1367
+f3 n=57 set=S_1_2 (18 couplings; 4/9/5) score=standard M2: (W) 200 of 200 splits; (C) 56 of 1000 pairs; 2q/tau 0.0269-0.2507; max miss 0.1483
+f3 n=57 set=S_1_2 (18 couplings; 4/9/5) score=standard M0: (W) 200 of 200 splits; (C) 0 of 1000 pairs; 2q/tau 0.0224-0.1029; max miss 0.0900
+truth change Jz 4 to 6: 0.3880-0.3973 tau
+============================== n = 115
+public m_s label minus authors' DMRG, in tau: Jz=1.1: 4.6669 ; Jz=1.6: 1.5427 (Delta=0.0726) ; Jz=6.0: 0.0136 ; all positive: True ; n>tau up to Jz=1.8
+m_s at Jz=1.1: public 0.79299, authors' DMRG 0.61952
+f1 cubic, n=115, labels=public: {"test": {"miss_tau": [5.0643, 3.8451, 2.9928, 2.3756], "truth_in": 0, "public_label_in": 1, "width_tau": [0.1002, 0.0937, 0.0887, 0.0848]}, "ind": {"n": 45, "held_out_label_in": 40, "truth_in": 11, "width_tau": [0.0594, 0.0842], "miss_tau": [0.0214, 1.6095]}}
+f1 cubic, n=115, labels=DMRG (control): {"test": {"miss_tau": [0.1963, 0.1058, 0.0537, 0.0251], "truth_in": 0, "public_label_in": 0, "width_tau": [0.0049, 0.0045, 0.0043, 0.0041]}, "ind": {"n": 45, "held_out_label_in": 41, "truth_in": 41, "width_tau": [0.003, 0.0037], "miss_tau": [0.0, 0.0074]}}
+Jz=1.5 apart: cubic miss 1.9161 tau
+filter: kept 21 (Jz 4.0-6.0), max miss kept 0.0639 tau; dropped 24, of which within tau: 21
+f2: m=45 k=42 floor=0.204267 ; widest four at [1.6, 1.7, 1.8, 1.9] ; floor/tau at 1.1-1.4: [5.4953, 5.1401, 4.8656, 4.65] ; min over all couplings 3.4651
+f2 held out (m=44,k=41): 3.4651-3.9855
+Prop 2(b) cubic, lower widths, all 45 labels: q=0.17461 ; 2q/tau at test 7.9500-9.3951 ; over all 49: 5.9242-9.3951
+f3 n=115 set=S_1_2: 10 couplings, not run
+f3 n=115 set=S_3_4 (21 couplings; 6/12/3) score=interval M1: (W) 200 of 200 splits; (C) 600 of 600 pairs; 2q/tau 0.8628-0.9840; max miss 0.1212
+f3 n=115 set=S_3_4 (21 couplings; 6/12/3) score=interval M2: (W) 200 of 200 splits; (C) 600 of 600 pairs; 2q/tau 0.8651-0.9910; max miss 0.1304
+f3 n=115 set=S_3_4 (21 couplings; 6/12/3) score=interval M0: (W) 200 of 200 splits; (C) 600 of 600 pairs; 2q/tau 0.8583-0.9640; max miss 0.0673
+   truth change over the set: 0.3642-0.3723 tau ; exact widths 0.1446-0.6649 tau ; max label miss 0.0639 tau
+f3 n=115 set=S (21 couplings; 6/12/3) score=interval M1: (W) 200 of 200 splits; (C) 600 of 600 pairs; 2q/tau 0.8591-0.9984; max miss 0.1087
+f3 n=115 set=S (21 couplings; 6/12/3) score=interval M2: (W) 199 of 200 splits; (C) 600 of 600 pairs; 2q/tau 0.8693-1.0272; max miss 0.1160
+f3 n=115 set=S (21 couplings; 6/12/3) score=interval M0: (W) 200 of 200 splits; (C) 600 of 600 pairs; 2q/tau 0.8647-0.9625; max miss 0.0670
+   truth change over the set: 0.3642-0.3723 tau ; exact widths 0.1446-0.6649 tau ; max label miss 0.0639 tau
+f3 n=115 set=S_3_4 (21 couplings; 6/12/3) score=standard M1: (W) 200 of 200 splits; (C) 213 of 600 pairs; 2q/tau 0.0123-0.1152; max miss 0.1212
+f3 n=115 set=S_3_4 (21 couplings; 6/12/3) score=standard M2: (W) 200 of 200 splits; (C) 149 of 600 pairs; 2q/tau 0.0092-0.1348; max miss 0.1304
+f3 n=115 set=S_3_4 (21 couplings; 6/12/3) score=standard M0: (W) 200 of 200 splits; (C) 90 of 600 pairs; 2q/tau 0.0129-0.0791; max miss 0.0673
+truth change Jz 4 to 6: 0.3642-0.3723 tau

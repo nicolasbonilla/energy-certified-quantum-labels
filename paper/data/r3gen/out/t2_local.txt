@@ -1,0 +1,37 @@
+== (i)-(iii) single-site resets, no symmetry constraint (TFIM) ==
+TFIM1D h=1.5       n= 8 O=Z_0 sgn=+1: reset cost eps_R=2.0378 <= kappa_A=7.000 [True]; reset shift=1.0000; exact u(eps_R)=1.0000 >= shift [True]; min over grid of u-interp = -8.88e-16 [>= 0: True]
+TFIM1D h=1.5       n= 8 O=Z_0 sgn=-1: reset cost eps_R=2.0378 <= kappa_A=7.000 [True]; reset shift=1.0000; exact u(eps_R)=1.0000 >= shift [True]; min over grid of u-interp = -8.88e-16 [>= 0: True]
+TFIM1D h=1.5       n= 8 O=X_0 sgn=+1: reset cost eps_R=0.5378 <= kappa_A=7.000 [True]; reset shift=0.1277; exact u(eps_R)=0.1277 >= shift [True]; min over grid of u-interp = +4.44e-16 [>= 0: True]
+TFIM1D h=1.5       n= 8 O=X_0 sgn=-1: reset cost eps_R=3.5378 <= kappa_A=7.000 [True]; reset shift=1.8723; exact u(eps_R)=1.8723 >= shift [True]; min over grid of u-interp = -1.11e-15 [>= 0: True]
+TFIM1D h=1.5       n=12 O=Z_0 sgn=+1: reset cost eps_R=2.0294 <= kappa_A=7.000 [True]; reset shift=1.0000; exact u(eps_R)=1.0000 >= shift [True]; min over grid of u-interp = +9.99e-16 [>= 0: True]
+TFIM1D h=1.5       n=12 O=Z_0 sgn=-1: reset cost eps_R=2.0294 <= kappa_A=7.000 [True]; reset shift=1.0000; exact u(eps_R)=1.0000 >= shift [True]; min over grid of u-interp = +1.33e-15 [>= 0: True]
+TFIM1D h=1.5       n=12 O=X_0 sgn=+1: reset cost eps_R=0.5294 <= kappa_A=7.000 [True]; reset shift=0.1235; exact u(eps_R)=0.1235 >= shift [True]; min over grid of u-interp = +0.00e+00 [>= 0: True]
+TFIM1D h=1.5       n=12 O=X_0 sgn=-1: reset cost eps_R=3.5294 <= kappa_A=7.000 [True]; reset shift=1.8765; exact u(eps_R)=1.8765 >= shift [True]; min over grid of u-interp = +2.22e-16 [>= 0: True]
+TFIM1D h=0.5       n=10 O=Z_0 sgn=+1: reset cost eps_R=1.9976 <= kappa_A=5.000 [True]; reset shift=1.0000; exact u(eps_R)=1.0000 >= shift [True]; min over grid of u-interp = +4.44e-16 [>= 0: True]
+TFIM1D h=0.5       n=10 O=Z_0 sgn=-1: reset cost eps_R=1.9976 <= kappa_A=5.000 [True]; reset shift=1.0000; exact u(eps_R)=1.0000 >= shift [True]; min over grid of u-interp = -4.44e-16 [>= 0: True]
+TFIM2D 3x4 h=3.5   n=12 O=Z_5 sgn=+1: reset cost eps_R=4.1258 <= kappa_A=15.000 [True]; reset shift=1.0000; exact u(eps_R)=1.0000 >= shift [True]; min over grid of u-interp = +2.22e-15 [>= 0: True]
+TFIM2D 3x4 h=3.5   n=12 O=Z_5 sgn=-1: reset cost eps_R=4.1258 <= kappa_A=15.000 [True]; reset shift=1.0000; exact u(eps_R)=1.0000 >= shift [True]; min over grid of u-interp = -9.99e-16 [>= 0: True]
+TFIM2D 3x4 h=2.0   n=12 O=Z_5 sgn=+1: reset cost eps_R=3.9533 <= kappa_A=12.000 [True]; reset shift=1.0000; exact u(eps_R)=1.0000 >= shift [True]; min over grid of u-interp = +3.33e-16 [>= 0: True]
+TFIM2D 3x4 h=2.0   n=12 O=Z_5 sgn=-1: reset cost eps_R=3.9533 <= kappa_A=12.000 [True]; reset shift=1.0000; exact u(eps_R)=1.0000 >= shift [True]; min over grid of u-interp = +2.22e-16 [>= 0: True]
+
+== (iv) local width at fixed energy density grows with n (TFIM1D h=1.5, O=Z_0, range 2) ==
+de=0.05: n=6: w=1.471; n=8: w=1.616; n=10: w=1.729; n=12: w=1.818
+de=0.1: n=6: w=1.842; n=8: w=1.943; n=10: w=1.991; n=12: w=2.000
+de=0.2: n=6: w=2.000; n=8: w=2.000; n=10: w=2.000; n=12: w=2.000
+
+== (v) U(1) sector: covariant reset on B={0,1} (XXZ Jz=1.6, Sz=0) and 2D ==
+XXZ1D      n= 8 B=[0, 1] sgn=+1: eps_R=1.2747 <= kappa_B=3.900 [True]; shift=0.8562 (= 1 - o0 - 2P(blocked) ; o0=-0.0000); exact u(eps_R)=1.0000 [>= shift: True]; norm=1.000000000000
+XXZ1D      n= 8 B=[0, 1] sgn=-1: eps_R=1.2747 <= kappa_B=3.900 [True]; shift=0.8562 (= 1 - o0 - 2P(blocked) ; o0=+0.0000); exact u(eps_R)=1.0000 [>= shift: True]; norm=1.000000000000
+XXZ1D      n=12 B=[0, 1] sgn=+1: eps_R=1.2507 <= kappa_B=3.900 [True]; shift=0.8551 (= 1 - o0 - 2P(blocked) ; o0=+0.0000); exact u(eps_R)=1.0000 [>= shift: True]; norm=1.000000000000
+XXZ1D      n=12 B=[0, 1] sgn=-1: eps_R=1.2507 <= kappa_B=3.900 [True]; shift=0.8551 (= 1 - o0 - 2P(blocked) ; o0=+0.0000); exact u(eps_R)=1.0000 [>= shift: True]; norm=1.000000000000
+XXZ2D 3x4  n=12 B=[5, 6] sgn=+1: eps_R=2.0581 <= kappa_B=9.100 [True]; shift=0.8495 (= 1 - o0 - 2P(blocked) ; o0=+0.0000); exact u(eps_R)=1.0000 [>= shift: True]; norm=1.000000000000
+XXZ2D 3x4  n=12 B=[5, 6] sgn=-1: eps_R=2.0581 <= kappa_B=9.100 [True]; shift=0.8495 (= 1 - o0 - 2P(blocked) ; o0=+0.0000); exact u(eps_R)=1.0000 [>= shift: True]; norm=1.000000000000
+
+== block averages (TFIM1D h=1.5 n=12): reset all b sites of a block to up ==
+b= 1: eps_R=2.029 (per site 2.029); kappa_B=7.0; u(eps_R)=1.0000 vs full 1-o0=1.0000; so full range once n*de >= 2.03, i.e. b* = n de/2.03
+b= 2: eps_R=2.701 (per site 1.351); kappa_B=12.0; u(eps_R)=1.0000 vs full 1-o0=1.0000; so full range once n*de >= 2.70, i.e. b* = n de/1.35
+b= 3: eps_R=3.374 (per site 1.125); kappa_B=17.0; u(eps_R)=1.0000 vs full 1-o0=1.0000; so full range once n*de >= 3.37, i.e. b* = n de/1.12
+b= 4: eps_R=4.046 (per site 1.011); kappa_B=22.0; u(eps_R)=1.0000 vs full 1-o0=1.0000; so full range once n*de >= 4.05, i.e. b* = n de/1.01
+b= 6: eps_R=5.390 (per site 0.898); kappa_B=32.0; u(eps_R)=1.0000 vs full 1-o0=1.0000; so full range once n*de >= 5.39, i.e. b* = n de/0.90
+b=12: eps_R=8.065 (per site 0.672); kappa_B=60.0; u(eps_R)=1.0000 vs full 1-o0=1.0000; so full range once n*de >= 8.06, i.e. b* = n de/0.67
+time 59.6 s

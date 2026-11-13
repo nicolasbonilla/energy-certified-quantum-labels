@@ -1,0 +1,14 @@
+pdflatex return code: 0
+errors (lines starting with !): 0
+overfull boxes: 0
+underfull boxes: 0
+missing characters: 0
+warnings: 5
+    Package pgfplots Warning: the current plot has no coordinates (or all have been
+    Package pgfplots Warning: the current plot has no coordinates (or all have been
+    Package pgfplots Warning: the current plot has no coordinates (or all have been
+    Package pgfplots Warning: the current plot has no coordinates (or all have been
+    Package pgfplots Warning: the current plot has no coordinates (or all have been
+page size: 500.5 x 371.8 bp = 17.66 x 13.12 cm
+fonts: CIXFWA+LMMathSymbols7-Regular, CUYEUD+LMRoman8-Italic, HLKPNG+LMMathSymbols8-Regular, HOUYYA+LMMathItalic6-Regular, JBUEEG+LMMathSymbols9-Regular, JBZUZC+LMMathItalic7-Regular, JNLNJP+LMRoman6-Regular, NAPJTK+LMRoman8-Regular, TYCRFU+LMMathItalic8-Regular, UWYXZI+LMRoman7-Regular, XGQIFW+LMMathItalic9-Regular, XKTAHR+LMRoman9-Regular
+previews: fig_map_rd_300dpi.png, fig_map_rd_150dpi.png (pdftoppm)

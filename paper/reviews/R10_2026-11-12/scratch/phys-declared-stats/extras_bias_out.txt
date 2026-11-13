@@ -1,0 +1,27 @@
+=== spreads behind the exploratory means of Sec. V (units of tau = 0.06 m_s(GS) at the target) ===
+52 states of 7 families at n=115 with the n=57 cubic: raw mean 4.285, median 3.812, min 1.022, max 8.121, n 52
+                                                  corrected mean 0.176, median 0.170, min 0.001, max 0.436, n 52 ; families 7 ; worst (0.436297414913752, 1.2, 'gs_random')
+   J=1.2 corrected mean 0.347, median 0.330, min 0.306, max 0.436, n 21
+   J=1.6 corrected mean 0.177, median 0.170, min 0.141, max 0.235, n 9
+   J=2.5 corrected mean 0.012, median 0.004, min 0.001, max 0.068, n 22
+device, six readings (3 couplings x with/without recovery): raw mean 4.271, median 4.259, min 0.416, max 8.198, n 6
+   n=19 curve mean 0.338, median 0.230, min 0.056, max 0.771, n 6
+   n=57 cubic mean 0.065, median 0.050, min 0.009, max 0.159, n 6
+   chord      mean 0.124, median 0.079, min 0.009, max 0.303, n 6
+   per coupling (rec): n=19 curve [0.771, 0.253, 0.056]
+chord, primary labels n=57: mean 0.367, median 0.136, min 0.021, max 1.386, n 14
+chord, primary labels n=115: mean 0.105, median 0.113, min 0.000, max 0.272, n 11
+classical two-point form a+b/n        at n=115 (11 couplings): mean 0.102, median 0.066, min 0.008, max 0.295, n 11
+classical two-point form a+b*Ne/n     at n=115 (11 couplings): mean 0.037, median 0.015, min 0.004, max 0.147, n 11
+classical two-point form a+b/sqrt(n)  at n=115 (11 couplings): mean 0.014, median 0.003, min 0.001, max 0.080, n 11
+label corrected with the n=57 curve at n=115 (stored rows): mean 0.090, median 0.026, min 0.002, max 0.302, n 11
+truth at n=57 used as the answer at n=115: mean 0.259, median 0.188, min 0.018, max 0.652, n 11
+
+=== truth at n = 19 against the truth at n = 57 (abstract: 'within a fifth of the tolerance' from Jz = 3.2 up) ===
+  J: miss of the n=19 truth (tau): 1.1: 1.473, 1.2: 1.339, 1.3: 1.194, 1.4: 1.053, 1.5: 0.923, 1.6: 0.809, 1.7: 0.710, 1.8: 0.625, 2.0: 0.491, 2.2: 0.393, 2.5: 0.291, 2.8: 0.224, 3.0: 0.191, 3.2: 0.165, 3.5: 0.134, 4.0: 0.100, 5.0: 0.062, 6.0: 0.042
+  monotonically decreasing in Jz over the 18 stored couplings: True ; couplings with Jz >= 3.2: [3.2, 3.5, 4.0, 5.0, 6.0] ; largest there 0.1645
+
+=== a check the paper does not make: the device label of the declared job at Jz = 6.0 against the n = 19 curve ===
+  rec: E-E0 = 0.2278 J (de 0.00400), dm_s = +0.00558 (raw miss 0.095 tau); n=19 curve 0.00517 -> ratio 1.079, corrected miss 0.007 tau; chord 0.00699 -> miss 0.024 tau
+  ps: E-E0 = 0.2557 J (de 0.00449), dm_s = +0.00613 (raw miss 0.104 tau); n=19 curve 0.00536 -> ratio 1.144, corrected miss 0.013 tau; chord 0.00741 -> miss 0.022 tau
+  noiseless control keys: ['Jz', 'dt', 'shots_per_circuit', 'info', 'discarded_total', 'flag_discarded', 'E0', 'm_s_ref', 'var']

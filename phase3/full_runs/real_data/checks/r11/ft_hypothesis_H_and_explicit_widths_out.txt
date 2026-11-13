@@ -1,0 +1,22 @@
+(1) m_s: explicit-state width (lower) against exact width, in tau
+   n=57 Jz=3.1 status=NOT_CERTIFIED   status_e1=NOT_CERTIFIED   explicit 1.0285 | exact primary - | exact with E1 - | sector-like outer nan inner nan
+   n=57 Jz=3.2 status=GRAY            status_e1=GRAY            explicit 0.9445 | exact primary - | exact with E1 1.1532 | sector-like outer 0.9765 inner 0.9763
+   n=57 Jz=3.3 status=GRAY            status_e1=GRAY            explicit 0.9329 | exact primary - | exact with E1 1.1144 | sector-like outer 0.9582 inner 0.9578
+   n=57 Jz=3.4 status=GRAY            status_e1=GRAY            explicit 0.8442 | exact primary 1.0042 | exact with E1 1.0042 | sector-like outer 0.8734 inner 0.8667
+   n=57 Jz=3.5 status=CERTIFIED_EXACT status_e1=CERTIFIED_EXACT explicit 0.7615 | exact primary 0.9104 | exact with E1 0.9104 | sector-like outer nan inner nan
+   n=57 Jz=3.6 status=CERTIFIED_EXACT status_e1=CERTIFIED_EXACT explicit 0.7107 | exact primary 0.8345 | exact with E1 0.8345 | sector-like outer 0.7357 inner 0.7291
+   n=115 Jz=3.0 status=NOT_CERTIFIED   status_e1=NOT_CERTIFIED   explicit 1.0386 | exact primary - | exact with E1 - | sector-like outer 1.1034 inner 1.0804
+   n=115 Jz=3.1 status=GRAY            status_e1=GRAY            explicit 0.8904 | exact primary - | exact with E1 - | sector-like outer nan inner nan
+   n=115 Jz=3.3 status=GRAY            status_e1=GRAY            explicit 0.8276 | exact primary - | exact with E1 1.0695 | sector-like outer 0.8588 inner 0.8550
+   n=115 Jz=3.4 status=GRAY            status_e1=CERTIFIED_EXACT explicit 0.6869 | exact primary - | exact with E1 0.9013 | sector-like outer nan inner nan
+   n=115 Jz=3.6 status=GRAY            status_e1=CERTIFIED_EXACT explicit 0.5838 | exact primary - | exact with E1 0.7400 | sector-like outer 0.6140 inner 0.6087
+   n=115 Jz=3.9 status=GRAY            status_e1=CERTIFIED_EXACT explicit 0.4741 | exact primary - | exact with E1 0.5940 | sector-like outer nan inner nan
+   n=115 Jz=4.0 status=CERTIFIED_EXACT status_e1=CERTIFIED_EXACT explicit 0.4222 | exact primary 0.5147 | exact with E1 0.5147 | sector-like outer 0.4434 inner 0.4402
+
+(2) two-site distributions of the published labels
+   n=57: 7550 published pairs (edges and second neighbours, 50 couplings): smallest two-site probability 3.585e-06 at ('5.9', 35, 22)
+   n=115: 15850 published pairs (edges and second neighbours, 50 couplings): smallest two-site probability 7.610e-07 at ('5.4', 61, 29)
+
+(3) published label inside the exact interval, reference inside
+   exact     rows with an interval 108 ; label inside 108 ; reference inside 108
+   exact_e1  rows with an interval 117 ; label inside 117 ; reference inside 117

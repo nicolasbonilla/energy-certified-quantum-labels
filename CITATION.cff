@@ -1,0 +1,100 @@
+cff-version: 1.2.0
+message: "If you use this repository or its results, please cite the work below."
+type: software
+title: "Data and code for: What a sample's energy certifies about quantum-generated training labels"
+authors:
+  - family-names: "Bonilla Vargas"
+    given-names: "Nicolás"
+    orcid: "https://orcid.org/0009-0006-6155-4391"
+    affiliation: "Universidad Nacional de Colombia, Bogotá, Colombia; SRH University, Munich, Germany; Daita AI, Munich, Germany"
+    email: "ngbonillav@unal.edu.co"
+repository-code: "https://github.com/nicolasbonilla/energy-certified-quantum-labels"
+url: "https://github.com/nicolasbonilla/energy-certified-quantum-labels"
+version: "1.0.0"
+date-released: "2026-11-13"
+abstract: >-
+  Replication package of the article "What a sample's energy certifies about quantum-generated
+  training labels". Abstract of the article: Quantum processors now supply training labels for machine
+  learning of quantum matter; each sample's energy is a scalable quality check. We determine, label by
+  label, what any energy-only certificate can guarantee and the accuracy it requires. A label stays
+  certifiable at large size exactly when shifting it costs energy linear in size: local labels lose
+  certification beyond a size inversely proportional to the energy error per site; averages keep it
+  under a uniform-gap hypothesis. For the model of a public 57- and 115-qubit dataset we prove the
+  hypothesis at strong anisotropy, above a threshold that is not explicit; in the dataset's range it
+  remains a hypothesis. The published energy and site magnetizations, taken as those of one state,
+  certify in exact arithmetic, with no reference value, the order parameter to 6% at 26 of 45 training
+  couplings at 57 qubits and 21 at 115 (27 with certificates added afterwards), where an exact 19-site
+  calculation is within 1.3% of the reference. Near the isotropic point, where the test couplings lie,
+  the order parameter needs an energy error more than 110 times smaller at 57 qubits (79 at 115);
+  explicit states show that no analysed label is certified. The public labels are over-ordered there;
+  at 57 qubits a cubic model trained on them inherits the bias: its standard prediction intervals
+  contain 41 of 45 held-out labels but the authors' reference value at none (11 of 45 at 115).
+  Intervals calibrated on the 18 labels certified to half the tolerance stay below the tolerance and
+  contain the reference value, which varies little there, in all 200 splits, also for a control
+  trained on uncertified labels; with all certified labels they mostly exceed it. One processor point
+  of ours is certified with no reference value, where a classical energy does better. We propose that
+  datasets report each label's interval width alongside the best classical estimate.
+license:
+  - "MIT"
+  - "CC-BY-4.0"
+keywords:
+  - quantum computing
+  - quantum-generated training data
+  - certification
+  - ground-state observables
+  - energy window
+  - sample-based quantum diagonalization
+  - conformal prediction
+  - heavy-hex lattice
+  - XXZ model
+  - exact arithmetic
+  - reproducible research
+preferred-citation:
+  type: unpublished
+  title: "What a sample's energy certifies about quantum-generated training labels"
+  authors:
+    - family-names: "Bonilla Vargas"
+      given-names: "Nicolás"
+      orcid: "https://orcid.org/0009-0006-6155-4391"
+      affiliation: "Universidad Nacional de Colombia, Bogotá, Colombia; SRH University, Munich, Germany; Daita AI, Munich, Germany"
+  year: 2026
+  notes: "Manuscript; not on arXiv and no journal reference yet."
+references:
+  - type: unpublished
+    title: "Learning ground state observables from quantum computing experiments"
+    authors:
+      - family-names: "Jaderberg"
+        given-names: "Ben"
+      - family-names: "Shah"
+        given-names: "Freya"
+      - family-names: "Jeon"
+        given-names: "Minjun"
+      - family-names: "Sahin"
+        given-names: "M. Emre"
+      - family-names: "Zoufal"
+        given-names: "Christa"
+      - family-names: "Sharma"
+        given-names: "Kunal"
+    year: 2026
+    url: "https://arxiv.org/abs/2606.15983"
+    notes: "The dataset studied, arXiv:2606.15983."
+  - type: software
+    title: "Quantum ground state learning: code and data to reproduce 'Learning ground state observables from quantum computing experiments'"
+    authors:
+      - family-names: "Jaderberg"
+        given-names: "Ben"
+      - family-names: "Shah"
+        given-names: "Freya"
+      - family-names: "Jeon"
+        given-names: "Minjun"
+      - family-names: "Sahin"
+        given-names: "M. Emre"
+      - family-names: "Zoufal"
+        given-names: "Christa"
+      - family-names: "Sharma"
+        given-names: "Kunal"
+    year: 2026
+    url: "https://github.com/bjader/quantum-groundstate-learning"
+    commit: "6b8866b66d62aaf3ee815cd14fa58e9bf4629d66"
+    license: "Apache-2.0"
+    notes: "Repository of the dataset, used at this commit; a converted copy of its data is in phase3/full_runs/real_data/converted/."

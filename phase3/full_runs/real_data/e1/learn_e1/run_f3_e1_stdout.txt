@@ -1,0 +1,21 @@
+declaration 6dfbc5681a7b4708ba790e1dd3139d8efdcccb9ced24e5ab2ce4b5a7a209ffaa | seed 1845216616 | stages ['f3']
+  f3 n = 57: |S| = 26, |S_3/4| = 23, |S_1/2| = 18, primary S_1_2 -> PASS
+     S      M1: (W) 0.030 of splits, (C) 1.000 of pairs, 2q/tau 0.906-1.563, largest miss 0.211 tau
+     S      M2: (W) 0.030 of splits, (C) 1.000 of pairs, 2q/tau 0.917-1.545, largest miss 0.211 tau
+     S      M0: (W) 0.030 of splits, (C) 1.000 of pairs, 2q/tau 0.890-1.432, largest miss 0.156 tau
+     S_3_4  M1: (W) 0.250 of splits, (C) 1.000 of pairs, 2q/tau 0.816-1.162, largest miss 0.157 tau
+     S_3_4  M2: (W) 0.330 of splits, (C) 1.000 of pairs, 2q/tau 0.822-1.137, largest miss 0.136 tau
+     S_3_4  M0: (W) 0.250 of splits, (C) 1.000 of pairs, 2q/tau 0.818-1.082, largest miss 0.121 tau
+     S_1_2  M1: (W) 1.000 of splits, (C) 1.000 of pairs, 2q/tau 0.587-0.857, largest miss 0.137 tau
+     S_1_2  M2: (W) 1.000 of splits, (C) 1.000 of pairs, 2q/tau 0.563-0.856, largest miss 0.148 tau
+     S_1_2  M0: (W) 1.000 of splits, (C) 1.000 of pairs, 2q/tau 0.599-0.761, largest miss 0.090 tau
+  f3 n = 115: |S| = 27, |S_3/4| = 25, |S_1/2| = 18, primary S_1_2 -> PASS
+     S      M1: (W) 0.075 of splits, (C) 1.000 of pairs, 2q/tau 0.720-1.529, largest miss 0.192 tau
+     S      M2: (W) 0.075 of splits, (C) 1.000 of pairs, 2q/tau 0.743-1.458, largest miss 0.161 tau
+     S      M0: (W) 0.075 of splits, (C) 1.000 of pairs, 2q/tau 0.739-1.390, largest miss 0.123 tau
+     S_3_4  M1: (W) 0.210 of splits, (C) 1.000 of pairs, 2q/tau 0.734-1.226, largest miss 0.151 tau
+     S_3_4  M2: (W) 0.215 of splits, (C) 1.000 of pairs, 2q/tau 0.744-1.178, largest miss 0.127 tau
+     S_3_4  M0: (W) 0.215 of splits, (C) 1.000 of pairs, 2q/tau 0.738-1.117, largest miss 0.099 tau
+     S_1_2  M1: (W) 1.000 of splits, (C) 1.000 of pairs, 2q/tau 0.406-0.820, largest miss 0.107 tau
+     S_1_2  M2: (W) 1.000 of splits, (C) 1.000 of pairs, 2q/tau 0.409-0.835, largest miss 0.120 tau
+     S_1_2  M0: (W) 1.000 of splits, (C) 1.000 of pairs, 2q/tau 0.416-0.709, largest miss 0.055 tau

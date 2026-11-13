@@ -1,0 +1,356 @@
+PU attack: exact E*_n(c) against the bound.  Columns: c/sigma, E* (dual value), E* (explicit state), bound, bound/E*
+
+ring 8                     Jz=1.0 n=8 |E|=8 dim=70 symmetry: spin flip
+   E0=-3.6510934089 sector gap=0.522674 <O>=+1.6e-16 <O^3>=+2.7e-14 sigma=0.655916 D=38.944996 (<= 8|E| = 64)
+   trial state: <phi|H-E0|phi> = 0.7072040035; identity D/(2 n^2 sigma^2) = 0.7072040035; difference +1.6e-15
+   c/sigma=0.25  E*: [0.008951026, 0.008951026]  bound=0.011228336  bound/E*=  1.254  mu*=0.013832  ok
+   c/sigma=0.50  E*: [0.037381623, 0.037381623]  bound=0.047373685  bound/E*=  1.267  mu*=0.030228  ok
+   c/sigma=0.75  E*: [0.091517543, 0.091517543]  bound=0.119716262  bound/E*=  1.308  mu*=0.054379  ok
+   c/sigma=1.00  E*: [0.190431357, 0.190431357]  bound=0.353602002  bound/E*=  1.857  mu*=0.103779  ok
+
+ring 8                     Jz=2.5 n=8 |E|=8 dim=70 symmetry: spin flip
+   E0=-5.8455843731 sector gap=0.176112 <O>=-1.6e-14 <O^3>=-9.2e-13 sigma=0.866300 D=26.691709 (<= 8|E| = 64)
+   trial state: <phi|H-E0|phi> = 0.2778625207; identity D/(2 n^2 sigma^2) = 0.2778625207; difference +2.8e-16
+   c/sigma=0.25  E*: [0.002879224, 0.002879224]  bound=0.004411646  bound/E*=  1.532  mu*=0.003379  ok
+   c/sigma=0.50  E*: [0.012156557, 0.012156557]  bound=0.018613260  bound/E*=  1.531  mu*=0.007566  ok
+   c/sigma=0.75  E*: [0.030765563, 0.030765563]  bound=0.047036869  bound/E*=  1.529  mu*=0.014900  ok
+   c/sigma=1.00  E*: [0.079556874, 0.079556874]  bound=0.138931260  bound/E*=  1.746  mu*=0.068498  ok
+
+ring 8                     Jz=4.0 n=8 |E|=8 dim=70 symmetry: spin flip
+   E0=-8.5220315146 sector gap=0.061294 <O>=+4.3e-14 <O^3>=+2.6e-12 sigma=0.946522 D=17.136071 (<= 8|E| = 64)
+   trial state: <phi|H-E0|phi> = 0.1494305671; identity D/(2 n^2 sigma^2) = 0.1494305671; difference -7.4e-15
+   c/sigma=0.25  E*: [0.000991990, 0.000991990]  bound=0.002372521  bound/E*=  2.392  mu*=0.001066  ok
+   c/sigma=0.50  E*: [0.004189839, 0.004189839]  bound=0.010009950  bound/E*=  2.389  mu*=0.002388  ok
+   c/sigma=0.75  E*: [0.010621134, 0.010621134]  bound=0.025295769  bound/E*=  2.382  mu*=0.004729  ok
+   c/sigma=1.00  E*: [0.032396739, 0.032396739]  bound=0.074715284  bound/E*=  2.306  mu*=0.083405  ok
+
+ring 12                    Jz=1.0 n=12 |E|=12 dim=924 symmetry: spin flip
+   E0=-5.3873909174 sector gap=0.355848 <O>=-3.1e-15 <O^3>=-3.2e-13 sigma=0.572395 D=57.465503 (<= 8|E| = 96)
+   trial state: <phi|H-E0|phi> = 0.6090077637; identity D/(2 n^2 sigma^2) = 0.6090077637; difference -8.9e-16
+   c/sigma=0.25  E*: [0.006466101, 0.006466101]  bound=0.009669266  bound/E*=  1.495  mu*=0.007637  ok
+   c/sigma=0.50  E*: [0.027049539, 0.027049539]  bound=0.040795785  bound/E*=  1.508  mu*=0.016748  ok
+   c/sigma=0.75  E*: [0.066441580, 0.066441580]  bound=0.103093496  bound/E*=  1.552  mu*=0.030323  ok
+   c/sigma=1.00  E*: [0.138809783, 0.138809783]  bound=0.304503882  bound/E*=  2.194  mu*=0.057904  ok
+
+ring 12                    Jz=2.5 n=12 |E|=12 dim=924 symmetry: spin flip
+   E0=-8.6830594838 sector gap=0.066228 <O>=-8.6e-15 <O^3>=-1.3e-12 sigma=0.856020 D=37.304617 (<= 8|E| = 96)
+   trial state: <phi|H-E0|phi> = 0.1767675894; identity D/(2 n^2 sigma^2) = 0.1767675894; difference -2.5e-15
+   c/sigma=0.25  E*: [0.001094968, 0.001094968]  bound=0.002806553  bound/E*=  2.563  mu*=0.000867  ok
+   c/sigma=0.50  E*: [0.004629425, 0.004629425]  bound=0.011841183  bound/E*=  2.558  mu*=0.001948  ok
+   c/sigma=0.75  E*: [0.011768169, 0.011768169]  bound=0.029923410  bound/E*=  2.543  mu*=0.003885  ok
+   c/sigma=1.00  E*: [0.034145704, 0.034145704]  bound=0.088383795  bound/E*=  2.588  mu*=0.033858  ok
+
+ring 12                    Jz=4.0 n=12 |E|=12 dim=924 symmetry: spin flip
+   E0=-12.7436722702 sector gap=0.010846 <O>=-2.7e-14 <O^3>=-3.6e-12 sigma=0.946232 D=23.704295 (<= 8|E| = 96)
+   trial state: <phi|H-E0|phi> = 0.0919261126; identity D/(2 n^2 sigma^2) = 0.0919261126; difference +3.4e-15
+   c/sigma=0.25  E*: [0.000175826, 0.000175826]  bound=0.001459518  bound/E*=  8.301  mu*=0.000126  ok
+   c/sigma=0.50  E*: [0.000742762, 0.000742762]  bound=0.006157882  bound/E*=  8.291  mu*=0.000282  ok
+   c/sigma=0.75  E*: [0.001883965, 0.001883965]  bound=0.015561352  bound/E*=  8.260  mu*=0.000560  ok
+   c/sigma=1.00  E*: [0.009432146, 0.009432146]  bound=0.045963056  bound/E*=  4.873  mu*=0.073567  ok
+
+ring 16                    Jz=1.0 n=16 |E|=16 dim=12870 symmetry: spin flip
+   E0=-7.1422963606 sector gap=0.270190 <O>=+5.8e-15 <O^3>=+5.7e-13 sigma=0.517947 D=76.184495 (<= 8|E| = 128)
+   trial state: <phi|H-E0|phi> = 0.5546591589; identity D/(2 n^2 sigma^2) = 0.5546591589; difference -1.2e-14
+   c/sigma=0.25  E*: [0.005128686, 0.005128686]  bound=0.008806369  bound/E*=  1.717  mu*=0.005023  ok
+   c/sigma=0.50  E*: [0.021488359, 0.021488359]  bound=0.037155118  bound/E*=  1.729  mu*=0.011051  ok
+   c/sigma=0.75  E*: [0.052955073, 0.052955073]  bound=0.093893305  bound/E*=  1.773  mu*=0.020146  ok
+   c/sigma=1.00  E*: [0.111236139, 0.111236139]  bound=0.277329579  bound/E*=  2.493  mu*=0.038746  ok
+
+ring 16                    Jz=2.5 n=16 |E|=16 dim=12870 symmetry: spin flip
+   E0=-11.5494652429 sector gap=0.027650 <O>=-4.8e-12 <O^3>=-1.0e-09 sigma=0.852912 D=48.290679 (<= 8|E| = 128)
+   trial state: <phi|H-E0|phi> = 0.1296536861; identity D/(2 n^2 sigma^2) = 0.1296536861; difference +2.7e-14
+   c/sigma=0.25  E*: [0.000458333, 0.000458333]  bound=0.002058522  bound/E*=  4.491  mu*=0.000273  ok
+   c/sigma=0.50  E*: [0.001938611, 0.001938611]  bound=0.008685150  bound/E*=  4.480  mu*=0.000614  ok
+   c/sigma=0.75  E*: [0.004935211, 0.004935211]  bound=0.021947917  bound/E*=  4.447  mu*=0.001231  ok
+   c/sigma=1.00  E*: [0.016916880, 0.016916880]  bound=0.064826843  bound/E*=  3.832  mu*=0.025402  ok
+
+ring 16                    Jz=4.0 n=16 |E|=16 dim=12870 symmetry: spin flip
+   E0=-16.9854208826 sector gap=0.002087 <O>=+2.7e-11 <O^3>=+6.4e-09 sigma=0.944861 D=31.118630 (<= 8|E| = 128)
+   trial state: <phi|H-E0|phi> = 0.0680791942; identity D/(2 n^2 sigma^2) = 0.0680791942; difference +2.8e-14
+   c/sigma=0.25  E*: [0.000033740, 0.000033740]  bound=0.001080899  bound/E*= 32.036  mu*=0.000018  ok
+   c/sigma=0.50  E*: [0.000142508, 0.000142508]  bound=0.004560441  bound/E*= 32.001  mu*=0.000041  ok
+   c/sigma=0.75  E*: [0.000361291, 0.000361291]  bound=0.011524520  bound/E*= 31.898  mu*=0.000081  ok
+   c/sigma=1.00  E*: [0.004958154, 0.004958154]  bound=0.034039597  bound/E*=  6.865  mu*=0.061567  ok
+
+ladder 2x4 periodic        Jz=1.0 n=8 |E|=12 dim=70 symmetry: spin flip
+   E0=-4.8200893744 sector gap=0.820089 <O>=-1.6e-15 <O^3>=-8.3e-14 sigma=0.686784 D=51.414287 (<= 8|E| = 96)
+   trial state: <phi|H-E0|phi> = 0.8515963758; identity D/(2 n^2 sigma^2) = 0.8515963758; difference -2.1e-15
+   c/sigma=0.25  E*: [0.013053885, 0.013053885]  bound=0.013520865  bound/E*=  1.036  mu*=0.019239  ok
+   c/sigma=0.50  E*: [0.054260668, 0.054260668]  bound=0.057046140  bound/E*=  1.051  mu*=0.041632  ok
+   c/sigma=0.75  E*: [0.131466141, 0.131466141]  bound=0.144159159  bound/E*=  1.097  mu*=0.073177  ok
+   c/sigma=1.00  E*: [0.267460240, 0.267460240]  bound=0.425798188  bound/E*=  1.592  mu*=0.133017  ok
+
+ladder 2x4 periodic        Jz=2.5 n=8 |E|=12 dim=70 symmetry: spin flip
+   E0=-8.1854434410 sector gap=0.144062 <O>=+8.5e-15 <O^3>=+4.6e-13 sigma=0.935283 D=24.083682 (<= 8|E| = 96)
+   trial state: <phi|H-E0|phi> = 0.2150933176; identity D/(2 n^2 sigma^2) = 0.2150933176; difference +6.0e-15
+   c/sigma=0.25  E*: [0.002313904, 0.002313904]  bound=0.003415054  bound/E*=  1.476  mu*=0.002515  ok
+   c/sigma=0.50  E*: [0.009767256, 0.009767256]  bound=0.014408520  bound/E*=  1.475  mu*=0.005629  ok
+   c/sigma=0.75  E*: [0.024713256, 0.024713256]  bound=0.036411230  bound/E*=  1.473  mu*=0.011089  ok
+   c/sigma=1.00  E*: [0.067816136, 0.067816136]  bound=0.107546659  bound/E*=  1.586  mu*=0.085765  ok
+
+ladder 2x4 periodic        Jz=4.0 n=8 |E|=12 dim=70 symmetry: spin flip
+   E0=-12.3983013245 sector gap=0.039402 <O>=+8.5e-15 <O^3>=+5.3e-13 sigma=0.978827 D=13.448906 (<= 8|E| = 96)
+   trial state: <phi|H-E0|phi> = 0.1096643278; identity D/(2 n^2 sigma^2) = 0.1096643278; difference -1.1e-14
+   c/sigma=0.25  E*: [0.000630735, 0.000630735]  bound=0.001741149  bound/E*=  2.761  mu*=0.000655  ok
+   c/sigma=0.50  E*: [0.002662431, 0.002662431]  bound=0.007346117  bound/E*=  2.759  mu*=0.001466  ok
+   c/sigma=0.75  E*: [0.006737642, 0.006737642]  bound=0.018564097  bound/E*=  2.755  mu*=0.002890  ok
+   c/sigma=1.00  E*: [0.021849442, 0.021849442]  bound=0.054832164  bound/E*=  2.510  mu*=0.158736  ok
+
+ladder 2x6 periodic        Jz=1.0 n=12 |E|=18 dim=924 symmetry: spin flip
+   E0=-7.0132460189 sector gap=0.626569 <O>=+8.9e-16 <O^3>=+2.8e-14 sigma=0.609696 D=74.807958 (<= 8|E| = 144)
+   trial state: <phi|H-E0|phi> = 0.6987620646; identity D/(2 n^2 sigma^2) = 0.6987620646; difference -8.9e-16
+   c/sigma=0.25  E*: [0.010098374, 0.010098374]  bound=0.011094302  bound/E*=  1.099  mu*=0.011170  ok
+   c/sigma=0.50  E*: [0.041891262, 0.041891262]  bound=0.046808183  bound/E*=  1.117  mu*=0.024067  ok
+   c/sigma=0.75  E*: [0.100997252, 0.100997252]  bound=0.118287201  bound/E*=  1.171  mu*=0.041798  ok
+   c/sigma=1.00  E*: [0.202671312, 0.202671312]  bound=0.349381032  bound/E*=  1.724  mu*=0.073075  ok
+
+ladder 2x6 periodic        Jz=2.5 n=12 |E|=18 dim=924 symmetry: spin flip
+   E0=-12.1746271706 sector gap=0.032575 <O>=+2.8e-14 <O^3>=+3.6e-12 sigma=0.940899 D=30.798619 (<= 8|E| = 144)
+   trial state: <phi|H-E0|phi> = 0.1207959572; identity D/(2 n^2 sigma^2) = 0.1207959572; difference +3.1e-15
+   c/sigma=0.25  E*: [0.000526705, 0.000526705]  bound=0.001917887  bound/E*=  3.641  mu*=0.000379  ok
+   c/sigma=0.50  E*: [0.002224613, 0.002224613]  bound=0.008091795  bound/E*=  3.637  mu*=0.000850  ok
+   c/sigma=0.75  E*: [0.005639429, 0.005639429]  bound=0.020448471  bound/E*=  3.626  mu*=0.001684  ok
+   c/sigma=1.00  E*: [0.019119987, 0.019119987]  bound=0.060397979  bound/E*=  3.159  mu*=0.064252  ok
+
+ladder 2x6 periodic        Jz=4.0 n=12 |E|=18 dim=924 symmetry: spin flip
+   E0=-18.5661361331 sector gap=0.003612 <O>=-8.5e-12 <O^3>=-1.2e-09 sigma=0.979531 D=18.289501 (<= 8|E| = 144)
+   trial state: <phi|H-E0|phi> = 0.0661871030; identity D/(2 n^2 sigma^2) = 0.0661871030; difference -6.1e-15
+   c/sigma=0.25  E*: [0.000057819, 0.000057819]  bound=0.001050858  bound/E*= 18.175  mu*=0.000040  ok
+   c/sigma=0.50  E*: [0.000244065, 0.000244065]  bound=0.004433695  bound/E*= 18.166  mu*=0.000090  ok
+   c/sigma=0.75  E*: [0.000617668, 0.000617668]  bound=0.011204225  bound/E*= 18.140  mu*=0.000177  ok
+   c/sigma=1.00  E*: [0.005556144, 0.005556144]  bound=0.033093551  bound/E*=  5.956  mu*=0.166009  ok
+
+ladder 2x8 periodic        Jz=1.0 n=16 |E|=24 dim=12870 symmetry: spin flip
+   E0=-9.2832484850 sector gap=0.557398 <O>=-4.0e-14 <O^3>=-6.2e-12 sigma=0.549959 D=99.021317 (<= 8|E| = 192)
+   trial state: <phi|H-E0|phi> = 0.6394364063; identity D/(2 n^2 sigma^2) = 0.6394364063; difference -1.1e-16
+   c/sigma=0.25  E*: [0.009023475, 0.009023475]  bound=0.010152384  bound/E*=  1.125  mu*=0.008292  ok
+   c/sigma=0.50  E*: [0.037322676, 0.037322676]  bound=0.042834117  bound/E*=  1.148  mu*=0.017754  ok
+   c/sigma=0.75  E*: [0.089384283, 0.089384283]  bound=0.108244489  bound/E*=  1.211  mu*=0.030361  ok
+   c/sigma=1.00  E*: [0.176560838, 0.176560838]  bound=0.319718203  bound/E*=  1.811  mu*=0.050969  ok
+
+ladder 2x8 periodic        Jz=2.5 n=16 |E|=24 dim=12870 symmetry: spin flip
+   E0=-16.2153315429 sector gap=0.009242 <O>=-1.5e-11 <O^3>=-3.4e-09 sigma=0.940780 D=39.682323 (<= 8|E| = 192)
+   trial state: <phi|H-E0|phi> = 0.0875690612; identity D/(2 n^2 sigma^2) = 0.0875690612; difference +3.7e-14
+   c/sigma=0.25  E*: [0.000149391, 0.000149391]  bound=0.001390341  bound/E*=  9.307  mu*=0.000081  ok
+   c/sigma=0.50  E*: [0.000630979, 0.000630979]  bound=0.005866015  bound/E*=  9.297  mu*=0.000181  ok
+   c/sigma=0.75  E*: [0.001599615, 0.001599615]  bound=0.014823786  bound/E*=  9.267  mu*=0.000358  ok
+   c/sigma=1.00  E*: [0.008413176, 0.008413176]  bound=0.043784531  bound/E*=  5.204  mu*=0.060458  ok
+
+ladder 2x8 periodic        Jz=4.0 n=16 |E|=24 dim=12870 symmetry: spin flip
+   E0=-24.7525992854 sector gap=0.000414 <O>=+1.8e-10 <O^3>=+4.6e-08 sigma=0.978761 D=24.182863 (<= 8|E| = 192)
+   trial state: <phi|H-E0|phi> = 0.0493042604; identity D/(2 n^2 sigma^2) = 0.0493042604; difference -5.1e-14
+   c/sigma=0.25  E*: [0.000006623, 0.000006623]  bound=0.000782808  bound/E*=118.196  mu*=0.000003  ok
+   c/sigma=0.50  E*: [0.000027954, 0.000027954]  bound=0.003302759  bound/E*=118.149  mu*=0.000008  ok
+   c/sigma=0.75  E*: [0.000070725, 0.000070725]  bound=0.008346279  bound/E*=118.010  mu*=0.000015  ok
+   c/sigma=1.00  E*: [0.003372992, 0.003372992]  bound=0.024652130  bound/E*=  7.309  mu*=0.129353  ok
+
+ladder 2x8 open            Jz=1.0 n=16 |E|=22 dim=12870 symmetry: spin flip
+   E0=-8.9154711236 sector gap=0.631012 <O>=-3.0e-14 <O^3>=-3.9e-12 sigma=0.509792 D=95.098359 (<= 8|E| = 176)
+   trial state: <phi|H-E0|phi> = 0.7146898575; identity D/(2 n^2 sigma^2) = 0.7146898575; difference -2.5e-14
+   c/sigma=0.25  E*: [0.010244664, 0.010244664]  bound=0.011347189  bound/E*=  1.108  mu*=0.010140  ok
+   c/sigma=0.50  E*: [0.042150960, 0.042150960]  bound=0.047875143  bound/E*=  1.136  mu*=0.021472  ok
+   c/sigma=0.75  E*: [0.099818617, 0.099818617]  bound=0.120983475  bound/E*=  1.212  mu*=0.035806  ok
+   c/sigma=1.00  E*: [0.192619505, 0.192619505]  bound=0.357344929  bound/E*=  1.855  mu*=0.056827  ok
+
+ladder 2x8 open            Jz=2.5 n=16 |E|=22 dim=12870 symmetry: spin flip
+   E0=-15.0594034185 sector gap=0.025436 <O>=-2.6e-12 <O^3>=-5.9e-10 sigma=0.910189 D=43.918743 (<= 8|E| = 176)
+   trial state: <phi|H-E0|phi> = 0.1035420469; identity D/(2 n^2 sigma^2) = 0.1035420469; difference -1.4e-14
+   c/sigma=0.25  E*: [0.000413239, 0.000413239]  bound=0.001643946  bound/E*=  3.978  mu*=0.000231  ok
+   c/sigma=0.50  E*: [0.001745834, 0.001745834]  bound=0.006936002  bound/E*=  3.973  mu*=0.000518  ok
+   c/sigma=0.75  E*: [0.004429094, 0.004429094]  bound=0.017527710  bound/E*=  3.957  mu*=0.001027  ok
+   c/sigma=1.00  E*: [0.014544002, 0.014544002]  bound=0.051771023  bound/E*=  3.560  mu*=0.027213  ok
+
+ladder 2x8 open            Jz=4.0 n=16 |E|=22 dim=12870 symmetry: spin flip
+   E0=-22.7993062226 sector gap=0.001265 <O>=+1.5e-10 <O^3>=+3.6e-08 sigma=0.971123 D=25.865849 (<= 8|E| = 176)
+   trial state: <phi|H-E0|phi> = 0.0535683297; identity D/(2 n^2 sigma^2) = 0.0535683297; difference -2.9e-14
+   c/sigma=0.25  E*: [0.000020278, 0.000020278]  bound=0.000850509  bound/E*= 41.942  mu*=0.000011  ok
+   c/sigma=0.50  E*: [0.000085603, 0.000085603]  bound=0.003588398  bound/E*= 41.919  mu*=0.000024  ok
+   c/sigma=0.75  E*: [0.000216679, 0.000216679]  bound=0.009068105  bound/E*= 41.850  mu*=0.000047  ok
+   c/sigma=1.00  E*: [0.003512590, 0.003512590]  bound=0.026784165  bound/E*=  7.625  mu*=0.086354  ok
+
+square 4x4 torus           Jz=1.0 n=16 |E|=32 dim=12870 symmetry: spin flip
+   E0=-11.2284832084 sector gap=0.578598 <O>=-1.2e-13 <O^3>=-2.1e-11 sigma=0.607209 D=119.770488 (<= 8|E| = 256)
+   trial state: <phi|H-E0|phi> = 0.6344587103; identity D/(2 n^2 sigma^2) = 0.6344587103; difference -1.3e-14
+   c/sigma=0.25  E*: [0.009253908, 0.009253908]  bound=0.010073353  bound/E*=  1.089  mu*=0.007711  ok
+   c/sigma=0.50  E*: [0.038427380, 0.038427380]  bound=0.042500675  bound/E*=  1.106  mu*=0.016650  ok
+   c/sigma=0.75  E*: [0.092873065, 0.092873065]  bound=0.107401860  bound/E*=  1.156  mu*=0.029087  ok
+   c/sigma=1.00  E*: [0.187564512, 0.187564512]  bound=0.317229355  bound/E*=  1.691  mu*=0.051741  ok
+
+square 4x4 torus           Jz=2.5 n=16 |E|=32 dim=12870 symmetry: spin flip
+   E0=-21.0763137922 sector gap=0.002357 <O>=+1.1e-10 <O^3>=+2.7e-08 sigma=0.967015 D=34.889270 (<= 8|E| = 256)
+   trial state: <phi|H-E0|phi> = 0.0728711844; identity D/(2 n^2 sigma^2) = 0.0728711844; difference +1.2e-14
+   c/sigma=0.25  E*: [0.000037809, 0.000037809]  bound=0.001156982  bound/E*= 30.601  mu*=0.000020  ok
+   c/sigma=0.50  E*: [0.000159619, 0.000159619]  bound=0.004881444  bound/E*= 30.582  mu*=0.000044  ok
+   c/sigma=0.75  E*: [0.000404108, 0.000404108]  bound=0.012335713  bound/E*= 30.526  mu*=0.000088  ok
+   c/sigma=1.00  E*: [0.005554870, 0.005554870]  bound=0.036435592  bound/E*=  6.559  mu*=0.116303  ok
+
+square 4x4 torus           Jz=4.0 n=16 |E|=32 dim=12870 symmetry: spin flip
+   E0=-32.6684953563 sector gap=0.000092 <O>=+1.9e-09 <O^3>=+4.8e-07 sigma=0.987628 D=21.458697 (<= 8|E| = 256)
+   trial state: <phi|H-E0|phi> = 0.0429681607; identity D/(2 n^2 sigma^2) = 0.0429681607; difference +5.0e-14
+   c/sigma=0.25  E*: [0.000001469, 0.000001469]  bound=0.000682209  bound/E*=464.294  mu*=0.000001  ok
+   c/sigma=0.50  E*: [0.000006201, 0.000006201]  bound=0.002878321  bound/E*=464.189  mu*=0.000002  ok
+   c/sigma=0.75  E*: [0.000015680, 0.000015680]  bound=0.007273697  bound/E*=463.882  mu*=0.000003  ok
+   c/sigma=1.00  E*: [0.002899398, 0.002899398]  bound=0.021484080  bound/E*=  7.410  mu*=0.203100  ok
+
+square 4x4 open            Jz=1.0 n=16 |E|=24 dim=12870 symmetry: spin flip
+   E0=-9.1892070652 sector gap=0.502270 <O>=+1.7e-14 <O^3>=+2.7e-12 sigma=0.557483 D=98.018209 (<= 8|E| = 192)
+   trial state: <phi|H-E0|phi> = 0.6159908386; identity D/(2 n^2 sigma^2) = 0.6159908386; difference -1.5e-14
+   c/sigma=0.25  E*: [0.008276986, 0.008276986]  bound=0.009780137  bound/E*=  1.182  mu*=0.007508  ok
+   c/sigma=0.50  E*: [0.034303966, 0.034303966]  bound=0.041263562  bound/E*=  1.203  mu*=0.016143  ok
+   c/sigma=0.75  E*: [0.082513355, 0.082513355]  bound=0.104275598  bound/E*=  1.264  mu*=0.027877  ok
+   c/sigma=1.00  E*: [0.164511842, 0.164511842]  bound=0.307995419  bound/E*=  1.872  mu*=0.047845  ok
+
+square 4x4 open            Jz=2.5 n=16 |E|=24 dim=12870 symmetry: spin flip
+   E0=-16.1922078158 sector gap=0.007006 <O>=-1.0e-10 <O^3>=-2.5e-08 sigma=0.941180 D=38.572476 (<= 8|E| = 192)
+   trial state: <phi|H-E0|phi> = 0.0850476262; identity D/(2 n^2 sigma^2) = 0.0850476262; difference -7.3e-15
+   c/sigma=0.25  E*: [0.000113263, 0.000113263]  bound=0.001350308  bound/E*= 11.922  mu*=0.000061  ok
+   c/sigma=0.50  E*: [0.000478393, 0.000478393]  bound=0.005697111  bound/E*= 11.909  mu*=0.000137  ok
+   c/sigma=0.75  E*: [0.001212836, 0.001212836]  bound=0.014396955  bound/E*= 11.870  mu*=0.000272  ok
+   c/sigma=1.00  E*: [0.007495064, 0.007495064]  bound=0.042523813  bound/E*=  5.674  mu*=0.062604  ok
+
+square 4x4 open            Jz=4.0 n=16 |E|=24 dim=12870 symmetry: spin flip
+   E0=-24.7420840568 sector gap=0.000316 <O>=-4.1e-10 <O^3>=-1.0e-07 sigma=0.978159 D=23.773908 (<= 8|E| = 192)
+   trial state: <phi|H-E0|phi> = 0.0485301613; identity D/(2 n^2 sigma^2) = 0.0485301613; difference -1.1e-14
+   c/sigma=0.25  E*: [0.000005051, 0.000005051]  bound=0.000770517  bound/E*=152.549  mu*=0.000003  ok
+   c/sigma=0.50  E*: [0.000021319, 0.000021319]  bound=0.003250904  bound/E*=152.487  mu*=0.000006  ok
+   c/sigma=0.75  E*: [0.000053940, 0.000053940]  bound=0.008215238  bound/E*=152.304  mu*=0.000012  ok
+   c/sigma=1.00  E*: [0.003162554, 0.003162554]  bound=0.024265081  bound/E*=  7.673  mu*=0.120186  ok
+
+ring 12, sector S^z=1      Jz=1.0 n=12 |E|=12 dim=792 symmetry: translation
+   E0=-5.0315434037 sector gap=0.462169 <O>=-2.7e-15 <O^3>=-1.9e-13 sigma=0.411404 D=56.703422 (<= 8|E| = 96)
+   trial state: <phi|H-E0|phi> = 1.1632670944; identity D/(2 n^2 sigma^2) = 1.1632670944; difference +2.2e-16
+   c/sigma=0.25  E*: [0.016536360, 0.016536360]  bound=0.018469287  bound/E*=  1.117  mu*=0.026973  ok
+   c/sigma=0.50  E*: [0.067492186, 0.067492186]  bound=0.077924120  bound/E*=  1.155  mu*=0.056182  ok
+   c/sigma=0.75  E*: [0.157323884, 0.157323884]  bound=0.196919117  bound/E*=  1.252  mu*=0.090567  ok
+   c/sigma=1.00  E*: [0.295092867, 0.295092867]  bound=0.581633547  bound/E*=  1.971  mu*=0.134910  ok
+
+ring 12, sector S^z=1      Jz=2.5 n=12 |E|=12 dim=792 symmetry: translation
+   E0=-7.5244115547 sector gap=0.377809 <O>=-1.0e-15 <O^3>=-4.2e-14 sigma=0.429969 D=48.934787 (<= 8|E| = 96)
+   trial state: <phi|H-E0|phi> = 0.9190732183; identity D/(2 n^2 sigma^2) = 0.9190732183; difference +2.2e-15
+   c/sigma=0.25  E*: [0.012962662, 0.012962662]  bound=0.014592201  bound/E*=  1.126  mu*=0.020253  ok
+   c/sigma=0.50  E*: [0.053086258, 0.053086258]  bound=0.061566232  bound/E*=  1.160  mu*=0.042479  ok
+   c/sigma=0.75  E*: [0.124555925, 0.124555925]  bound=0.155581713  bound/E*=  1.249  mu*=0.069436  ok
+   c/sigma=1.00  E*: [0.236304282, 0.236304282]  bound=0.459536609  bound/E*=  1.945  mu*=0.106061  ok
+
+ring 12, sector S^z=1      Jz=4.0 n=12 |E|=12 dim=792 symmetry: translation
+   E0=-10.2976195023 sector gap=0.331677 <O>=-2.9e-15 <O^3>=-1.2e-13 sigma=0.432072 D=43.541666 (<= 8|E| = 96)
+   trial state: <phi|H-E0|phi> = 0.8098428896; identity D/(2 n^2 sigma^2) = 0.8098428896; difference +2.2e-15
+   c/sigma=0.25  E*: [0.011458733, 0.011458733]  bound=0.012857942  bound/E*=  1.122  mu*=0.017820  ok
+   c/sigma=0.50  E*: [0.046960541, 0.046960541]  bound=0.054249187  bound/E*=  1.155  mu*=0.037431  ok
+   c/sigma=0.75  E*: [0.110335665, 0.110335665]  bound=0.137091084  bound/E*=  1.242  mu*=0.061365  ok
+   c/sigma=1.00  E*: [0.209836507, 0.209836507]  bound=0.404921445  bound/E*=  1.930  mu*=0.094235  ok
+
+ring 12, sector S^z=2      Jz=1.0 n=12 |E|=12 dim=495 symmetry: translation
+   E0=-4.0705293260 sector gap=0.433123 <O>=+1.4e-16 <O^3>=+2.7e-15 sigma=0.344383 D=52.076117 (<= 8|E| = 96)
+   trial state: <phi|H-E0|phi> = 1.5246231188; identity D/(2 n^2 sigma^2) = 1.5246231188; difference -4.4e-16
+   c/sigma=0.25  E*: [0.023329592, 0.023329592]  bound=0.024206566  bound/E*=  1.038  mu*=0.045390  ok
+   c/sigma=0.50  E*: [0.094768756, 0.094768756]  bound=0.102130383  bound/E*=  1.078  mu*=0.093650  ok
+   c/sigma=0.75  E*: [0.219079487, 0.219079487]  bound=0.258089857  bound/E*=  1.178  mu*=0.148488  ok
+   c/sigma=1.00  E*: [0.405866364, 0.405866364]  bound=0.762311559  bound/E*=  1.878  mu*=0.215926  ok
+
+ring 12, sector S^z=2      Jz=2.5 n=12 |E|=12 dim=495 symmetry: translation
+   E0=-5.3930453209 sector gap=0.406969 <O>=+4.7e-16 <O^3>=+1.6e-14 sigma=0.346080 D=49.275318 (<= 8|E| = 96)
+   trial state: <phi|H-E0|phi> = 1.4285128684; identity D/(2 n^2 sigma^2) = 1.4285128684; difference -1.8e-15
+   c/sigma=0.25  E*: [0.021849985, 0.021849985]  bound=0.022680616  bound/E*=  1.038  mu*=0.042306  ok
+   c/sigma=0.50  E*: [0.088777509, 0.088777509]  bound=0.095692217  bound/E*=  1.078  mu*=0.087325  ok
+   c/sigma=0.75  E*: [0.205309390, 0.205309390]  bound=0.241820210  bound/E*=  1.178  mu*=0.138570  ok
+   c/sigma=1.00  E*: [0.380595555, 0.380595555]  bound=0.714256434  bound/E*=  1.877  mu*=0.201778  ok
+
+ring 12, sector S^z=2      Jz=4.0 n=12 |E|=12 dim=495 symmetry: translation
+   E0=-6.8122478110 sector gap=0.391763 <O>=-4.4e-16 <O^3>=-1.1e-14 sigma=0.344988 D=47.473000 (<= 8|E| = 96)
+   trial state: <phi|H-E0|phi> = 1.3849903796; identity D/(2 n^2 sigma^2) = 1.3849903796; difference -4.2e-15
+   c/sigma=0.25  E*: [0.021195450, 0.021195450]  bound=0.021989605  bound/E*=  1.037  mu*=0.041166  ok
+   c/sigma=0.50  E*: [0.086100792, 0.086100792]  bound=0.092776763  bound/E*=  1.078  mu*=0.084936  ok
+   c/sigma=0.75  E*: [0.199043111, 0.199043111]  bound=0.234452676  bound/E*=  1.178  mu*=0.134670  ok
+   c/sigma=1.00  E*: [0.368737936, 0.368737936]  bound=0.692495190  bound/E*=  1.878  mu*=0.195811  ok
+
+ring 16, sector S^z=1      Jz=1.0 n=16 |E|=16 dim=11440 symmetry: translation
+   E0=-6.8721066784 sector gap=0.348700 <O>=+4.4e-15 <O^3>=+4.0e-13 sigma=0.379494 D=75.807764 (<= 8|E| = 128)
+   trial state: <phi|H-E0|phi> = 1.0280973810; identity D/(2 n^2 sigma^2) = 1.0280973810; difference -3.8e-15
+   c/sigma=0.25  E*: [0.013612541, 0.013612541]  bound=0.016323186  bound/E*=  1.199  mu*=0.018051  ok
+   c/sigma=0.50  E*: [0.055537958, 0.055537958]  bound=0.068869466  bound/E*=  1.240  mu*=0.037568  ok
+   c/sigma=0.75  E*: [0.129336675, 0.129336675]  bound=0.174037441  bound/E*=  1.346  mu*=0.060417  ok
+   c/sigma=1.00  E*: [0.242051090, 0.242051090]  bound=0.514048691  bound/E*=  2.124  mu*=0.089436  ok
+
+ring 16, sector S^z=1      Jz=2.5 n=16 |E|=16 dim=11440 symmetry: translation
+   E0=-10.5148447051 sector gap=0.259897 <O>=+2.2e-16 <O^3>=-2.0e-13 sigma=0.409510 D=62.462091 (<= 8|E| = 128)
+   trial state: <phi|H-E0|phi> = 0.7274747973; identity D/(2 n^2 sigma^2) = 0.7274747973; difference -2.8e-14
+   c/sigma=0.25  E*: [0.009409999, 0.009409999]  bound=0.011550177  bound/E*=  1.227  mu*=0.011580  ok
+   c/sigma=0.50  E*: [0.038562460, 0.038562460]  bound=0.048731571  bound/E*=  1.264  mu*=0.024320  ok
+   c/sigma=0.75  E*: [0.090584029, 0.090584029]  bound=0.123147724  bound/E*=  1.359  mu*=0.039844  ok
+   c/sigma=1.00  E*: [0.172136123, 0.172136123]  bound=0.363737399  bound/E*=  2.113  mu*=0.061028  ok
+
+ring 16, sector S^z=1      Jz=4.0 n=16 |E|=16 dim=11440 symmetry: translation
+   E0=-14.6435790199 sector gap=0.214607 <O>=-3.2e-14 <O^3>=-3.2e-12 sigma=0.414495 D=53.188459 (<= 8|E| = 128)
+   trial state: <phi|H-E0|phi> = 0.6046564905; identity D/(2 n^2 sigma^2) = 0.6046564905; difference -2.1e-14
+   c/sigma=0.25  E*: [0.007829584, 0.007829584]  bound=0.009600181  bound/E*=  1.226  mu*=0.009522  ok
+   c/sigma=0.50  E*: [0.032112410, 0.032112410]  bound=0.040504305  bound/E*=  1.261  mu*=0.020032  ok
+   c/sigma=0.75  E*: [0.075557916, 0.075557916]  bound=0.102356907  bound/E*=  1.355  mu*=0.032937  ok
+   c/sigma=1.00  E*: [0.144023382, 0.144023382]  bound=0.302328245  bound/E*=  2.099  mu*=0.050803  ok
+
+ring 16, sector S^z=2      Jz=1.0 n=16 |E|=16 dim=8008 symmetry: translation
+   E0=-6.1223152677 sector gap=0.342390 <O>=+2.7e-16 <O^3>=+4.4e-15 sigma=0.325038 D=72.806932 (<= 8|E| = 128)
+   trial state: <phi|H-E0|phi> = 1.3459670594; identity D/(2 n^2 sigma^2) = 1.3459670594; difference +4.4e-16
+   c/sigma=0.25  E*: [0.019813618, 0.019813618]  bound=0.021370029  bound/E*=  1.079  mu*=0.030612  ok
+   c/sigma=0.50  E*: [0.080311388, 0.080311388]  bound=0.090162697  bound/E*=  1.123  mu*=0.062875  ok
+   c/sigma=0.75  E*: [0.184872519, 0.184872519]  bound=0.227846766  bound/E*=  1.232  mu*=0.098773  ok
+   c/sigma=1.00  E*: [0.339914319, 0.339914319]  bound=0.672983530  bound/E*=  1.980  mu*=0.141100  ok
+
+ring 16, sector S^z=2      Jz=2.5 n=16 |E|=16 dim=8008 symmetry: translation
+   E0=-8.7053953623 sector gap=0.305934 <O>=-8.8e-16 <O^3>=-7.3e-14 sigma=0.330685 D=66.298618 (<= 8|E| = 128)
+   trial state: <phi|H-E0|phi> = 1.1841492737; identity D/(2 n^2 sigma^2) = 1.1841492737; difference +4.6e-14
+   c/sigma=0.25  E*: [0.017367042, 0.017367042]  bound=0.018800835  bound/E*=  1.083  mu*=0.026384  ok
+   c/sigma=0.50  E*: [0.070477618, 0.070477618]  bound=0.079322960  bound/E*=  1.126  mu*=0.054320  ok
+   c/sigma=0.75  E*: [0.162576206, 0.162576206]  bound=0.200454075  bound/E*=  1.233  mu*=0.085699  ok
+   c/sigma=1.00  E*: [0.299887133, 0.299887133]  bound=0.592074637  bound/E*=  1.974  mu*=0.123244  ok
+
+ring 16, sector S^z=2      Jz=4.0 n=16 |E|=16 dim=8008 symmetry: translation
+   E0=-11.5172687260 sector gap=0.284799 <O>=+2.4e-15 <O^3>=+1.8e-13 sigma=0.330145 D=61.981416 (<= 8|E| = 128)
+   trial state: <phi|H-E0|phi> = 1.1106626064; identity D/(2 n^2 sigma^2) = 1.1106626064; difference +4.2e-15
+   c/sigma=0.25  E*: [0.016304127, 0.016304127]  bound=0.017634081  bound/E*=  1.082  mu*=0.024811  ok
+   c/sigma=0.50  E*: [0.066174620, 0.066174620]  bound=0.074400287  bound/E*=  1.124  mu*=0.051098  ok
+   c/sigma=0.75  E*: [0.152690400, 0.152690400]  bound=0.188014172  bound/E*=  1.231  mu*=0.080656  ok
+   c/sigma=1.00  E*: [0.281753562, 0.281753562]  bound=0.555331303  bound/E*=  1.971  mu*=0.116066  ok
+
+====================================================================================================
+summary at c = sigma_n:  lattice, Jz, n, sigma_n, E*_n(sigma_n), bound D/(4 n^2 sigma^2), crude 2|E|/(n^2 sigma^2), n E*, n bound
+  ring 8                     1.0   8  0.6559  0.190431  0.353602  0.581089  1.5235  2.8288
+  ring 8                     2.5   8  0.8663  0.079557  0.138931  0.333122  0.6365  1.1115
+  ring 8                     4.0   8  0.9465  0.032397  0.074715  0.279048  0.2592  0.5977
+  ring 12                    1.0  12  0.5724  0.138810  0.304504  0.508694  1.6657  3.6540
+  ring 12                    2.5  12  0.8560  0.034146  0.088384  0.227448  0.4097  1.0606
+  ring 12                    4.0  12  0.9462  0.009432  0.045963  0.186146  0.1132  0.5516
+  ring 16                    1.0  16  0.5179  0.111236  0.277330  0.465950  1.7798  4.4373
+  ring 16                    2.5  16  0.8529  0.016917  0.064827  0.171831  0.2707  1.0372
+  ring 16                    4.0  16  0.9449  0.004958  0.034040  0.140015  0.0793  0.5446
+  ladder 2x4 periodic        1.0   8  0.6868  0.267460  0.425798  0.795044  2.1397  3.4064
+  ladder 2x4 periodic        2.5   8  0.9353  0.067816  0.107547  0.428692  0.5425  0.8604
+  ladder 2x4 periodic        4.0   8  0.9788  0.021849  0.054832  0.391399  0.1748  0.4387
+  ladder 2x6 periodic        1.0  12  0.6097  0.202671  0.349381  0.672534  2.4321  4.1926
+  ladder 2x6 periodic        2.5  12  0.9409  0.019120  0.060398  0.282393  0.2294  0.7248
+  ladder 2x6 periodic        4.0  12  0.9795  0.005556  0.033094  0.260558  0.0667  0.3971
+  ladder 2x8 periodic        1.0  16  0.5500  0.176561  0.319718  0.619926  2.8250  5.1155
+  ladder 2x8 periodic        2.5  16  0.9408  0.008413  0.043785  0.211848  0.1346  0.7006
+  ladder 2x8 periodic        4.0  16  0.9788  0.003373  0.024652  0.195726  0.0540  0.3944
+  ladder 2x8 open            1.0  16  0.5098  0.192620  0.357345  0.661344  3.0819  5.7175
+  ladder 2x8 open            2.5  16  0.9102  0.014544  0.051771  0.207467  0.2327  0.8283
+  ladder 2x8 open            4.0  16  0.9711  0.003513  0.026784  0.182249  0.0562  0.4285
+  square 4x4 torus           1.0  16  0.6072  0.187565  0.317229  0.678053  3.0010  5.0757
+  square 4x4 torus           2.5  16  0.9670  0.005555  0.036436  0.267346  0.0889  0.5830
+  square 4x4 torus           4.0  16  0.9876  0.002899  0.021484  0.256303  0.0464  0.3437
+  square 4x4 open            1.0  16  0.5575  0.164512  0.307995  0.603308  2.6322  4.9279
+  square 4x4 open            2.5  16  0.9412  0.007495  0.042524  0.211668  0.1199  0.6804
+  square 4x4 open            4.0  16  0.9782  0.003163  0.024265  0.195967  0.0506  0.3882
+  ring 12, sector S^z=1      1.0  12  0.4114  0.295093  0.581634  0.984717  3.5411  6.9796
+  ring 12, sector S^z=1      2.5  12  0.4300  0.236304  0.459537  0.901516  2.8357  5.5144
+  ring 12, sector S^z=1      4.0  12  0.4321  0.209837  0.404921  0.892765  2.5180  4.8591
+  ring 12, sector S^z=2      1.0  12  0.3444  0.405866  0.762312  1.405287  4.8704  9.1477
+  ring 12, sector S^z=2      2.5  12  0.3461  0.380596  0.714256  1.391541  4.5671  8.5711
+  ring 12, sector S^z=2      4.0  12  0.3450  0.368738  0.692495  1.400365  4.4249  8.3099
+  ring 16, sector S^z=1      1.0  16  0.3795  0.242051  0.514049  0.867962  3.8728  8.2248
+  ring 16, sector S^z=1      2.5  16  0.4095  0.172136  0.363737  0.745386  2.7542  5.8198
+  ring 16, sector S^z=1      4.0  16  0.4145  0.144023  0.302328  0.727564  2.3044  4.8373
+  ring 16, sector S^z=2      1.0  16  0.3250  0.339914  0.672984  1.183155  5.4386  10.7677
+  ring 16, sector S^z=2      2.5  16  0.3307  0.299887  0.592075  1.143094  4.7982  9.4732
+  ring 16, sector S^z=2      4.0  16  0.3301  0.281754  0.555331  1.146834  4.5081  8.8853
+violations: 0;  smallest bound/E* over all rows: 1.0358   (96.2 s)

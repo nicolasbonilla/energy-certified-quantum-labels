@@ -1,0 +1,58 @@
+declaration 6dfbc5681a7b4708ba790e1dd3139d8efdcccb9ced24e5ab2ce4b5a7a209ffaa | seed 1845216616 | numpy 1.26.4
+largest absolute differences from the sealed output:
+  f1 cubic cov_label flags           0.000e+00
+  f1 cubic cov_truth flags           0.000e+00
+  f1 cubic miss/tau                  6.584e-11
+  f1 cubic pred                      2.351e-12
+  f1 cubic q                         6.853e-13
+  f1 nearest cov_label flags         0.000e+00
+  f1 nearest cov_truth flags         0.000e+00
+  f1 nearest miss/tau                0.000e+00
+  f1 nearest pred                    0.000e+00
+  f1 nearest q                       0.000e+00
+  f2 floor                           0.000e+00
+  f3 frac_pairs_C                    0.000e+00
+  f3 frac_splits_W                   0.000e+00
+  f3 largest miss/tau                8.722e-13
+  f3 width/tau max                   1.575e-12
+  f3 width/tau median                1.401e-12
+  f3 width/tau min                   3.149e-12
+  prop2 W_lo/tau (relative)          3.816e-12
+  prop2 q_lo (all 45 labels)         3.109e-15
+n = 57 inputs: {'max_abs_diff_intervals_and_labels_vs_map_real': 3.3306690738754696e-16, 'exact_intervals': 27, 'lower_intervals': 50, 'S_equals_certified_exact_rows_of_map_real': True}
+  f2 floor 0.229590 (k = 42 of 45); the four widest lower widths are at ['1.6', '1.7', '1.8', '1.9']
+  truth change 4.0 -> 6.0: 0.388-0.397 tau
+  S      size 26 range [3.5, 6.0] truth change ['0.598', '0.621'] tau, exact widths ['0.218', '0.910'] tau, label miss <= 0.175 tau: RUN
+         splits equal to the stored ones: True
+         M1            interval score: W 0.030 C 1.000 2q/tau 0.906-1.563 miss <= 0.211 | standard score (post hoc): W 1.000 C 0.016 2q/tau 0.0320-0.1186
+         M2            interval score: W 0.030 C 1.000 2q/tau 0.917-1.545 miss <= 0.211 | standard score (post hoc): W 1.000 C 0.127 2q/tau 0.0227-0.4050
+         M0            interval score: W 0.030 C 1.000 2q/tau 0.890-1.432 miss <= 0.156 | standard score (post hoc): W 1.000 C 0.031 2q/tau 0.0287-0.1384
+         const_posthoc interval score: W 0.000 C 1.000 2q/tau 1.070-2.334 miss <= 0.558 | standard score (post hoc): W 1.000 C 0.828 2q/tau 0.3587-0.8897
+  S_3_4  size 23 range [3.8, 6.0] truth change ['0.463', '0.476'] tau, exact widths ['0.218', '0.701'] tau, label miss <= 0.120 tau: RUN
+         splits equal to the stored ones: True
+         M1            interval score: W 0.250 C 1.000 2q/tau 0.816-1.162 miss <= 0.157 | standard score (post hoc): W 1.000 C 0.004 2q/tau 0.0250-0.0952
+         M2            interval score: W 0.330 C 1.000 2q/tau 0.822-1.137 miss <= 0.136 | standard score (post hoc): W 1.000 C 0.023 2q/tau 0.0248-0.1758
+         M0            interval score: W 0.250 C 1.000 2q/tau 0.818-1.082 miss <= 0.121 | standard score (post hoc): W 1.000 C 0.000 2q/tau 0.0274-0.0988
+         const_posthoc interval score: W 0.015 C 1.000 2q/tau 0.873-1.753 miss <= 0.445 | standard score (post hoc): W 1.000 C 0.815 2q/tau 0.2838-0.6782
+  S_1_2  size 18 range [4.3, 6.0] truth change ['0.295', '0.300'] tau, exact widths ['0.218', '0.490'] tau, label miss <= 0.082 tau: RUN
+         splits equal to the stored ones: True
+         M1            interval score: W 1.000 C 1.000 2q/tau 0.587-0.857 miss <= 0.137 | standard score (post hoc): W 1.000 C 0.029 2q/tau 0.0283-0.1589
+         M2            interval score: W 1.000 C 1.000 2q/tau 0.563-0.856 miss <= 0.148 | standard score (post hoc): W 1.000 C 0.056 2q/tau 0.0269-0.2507
+         M0            interval score: W 1.000 C 1.000 2q/tau 0.599-0.761 miss <= 0.090 | standard score (post hoc): W 1.000 C 0.000 2q/tau 0.0224-0.1029
+         const_posthoc interval score: W 0.485 C 1.000 2q/tau 0.529-1.206 miss <= 0.320 | standard score (post hoc): W 1.000 C 0.801 2q/tau 0.1637-0.5083
+n = 115 inputs: {'max_abs_diff_intervals_and_labels_vs_map_real': 2.220446049250313e-16, 'exact_intervals': 21, 'lower_intervals': 50, 'S_equals_certified_exact_rows_of_map_real': True}
+  f2 floor 0.204267 (k = 42 of 45); the four widest lower widths are at ['1.6', '1.7', '1.8', '1.9']
+  truth change 4.0 -> 6.0: 0.364-0.372 tau
+  S      size 21 range [4.0, 6.0] truth change ['0.364', '0.372'] tau, exact widths ['0.145', '0.665'] tau, label miss <= 0.064 tau: RUN
+         splits equal to the stored ones: True
+         M1            interval score: W 1.000 C 1.000 2q/tau 0.859-0.998 miss <= 0.109 | standard score (post hoc): W 1.000 C 0.360 2q/tau 0.0161-0.1498
+         M2            interval score: W 0.995 C 1.000 2q/tau 0.869-1.027 miss <= 0.116 | standard score (post hoc): W 1.000 C 0.260 2q/tau 0.0102-0.2086
+         M0            interval score: W 1.000 C 1.000 2q/tau 0.865-0.962 miss <= 0.067 | standard score (post hoc): W 1.000 C 0.150 2q/tau 0.0100-0.0646
+         const_posthoc interval score: W 0.015 C 1.000 2q/tau 0.877-1.344 miss <= 0.334 | standard score (post hoc): W 1.000 C 0.852 2q/tau 0.2531-0.5620
+  S_3_4  size 21 range [4.0, 6.0] truth change ['0.364', '0.372'] tau, exact widths ['0.145', '0.665'] tau, label miss <= 0.064 tau: RUN
+         splits equal to the stored ones: True
+         M1            interval score: W 1.000 C 1.000 2q/tau 0.863-0.984 miss <= 0.121 | standard score (post hoc): W 1.000 C 0.355 2q/tau 0.0123-0.1152
+         M2            interval score: W 1.000 C 1.000 2q/tau 0.865-0.991 miss <= 0.130 | standard score (post hoc): W 1.000 C 0.248 2q/tau 0.0092-0.1348
+         M0            interval score: W 1.000 C 1.000 2q/tau 0.858-0.964 miss <= 0.067 | standard score (post hoc): W 1.000 C 0.150 2q/tau 0.0129-0.0791
+         const_posthoc interval score: W 0.025 C 1.000 2q/tau 0.813-1.340 miss <= 0.341 | standard score (post hoc): W 1.000 C 0.860 2q/tau 0.2411-0.5324
+  S_1_2  size 10 range [5.1, 6.0] truth change ['0.113', '0.114'] tau, exact widths ['0.145', '0.482'] tau, label miss <= 0.031 tau: NOT RUN

@@ -1,0 +1,14 @@
+tfim2d       n=12 Zbar  de=1.0e-04 eps/gap=   0.00 | exact w=0.04442 (u+=0.02221, u-=0.02221) | 2sqrt(2chi0 de)=0.04443 | sandwich lo=0.03946 hi=0.04443 [True]
+tfim2d       n=12 Zbar  de=1.0e-03 eps/gap=   0.01 | exact w=0.14026 (u+=0.07013, u-=0.07013) | 2sqrt(2chi0 de)=0.14050 | sandwich lo=0.12480 hi=0.14050 [True]
+tfim2d       n=12 Zbar  de=1.0e-02 eps/gap=   0.05 | exact w=0.43694 (u+=0.21847, u-=0.21847) | 2sqrt(2chi0 de)=0.44429 | sandwich lo=0.39465 hi=0.44429 [True]
+tfim2d       n=12 Zbar  de=3.0e-02 eps/gap=   0.16 | exact w=0.73175 (u+=0.36587, u-=0.36587) | 2sqrt(2chi0 de)=0.76953 | sandwich lo=0.58405 hi=0.76953 [True]
+tfim2d       n=12 Zbar  de=1.0e-01 eps/gap=   0.53 | exact w=1.19100 (u+=0.59550, u-=0.59550) | 2sqrt(2chi0 de)=1.40496 | sandwich lo=0.58405 hi=1.40496 [True]
+tfim2d       n=12 Zbar  de=3.0e-01 eps/gap=   1.59 | exact w=1.61732 (u+=0.80866, u-=0.80866) | 2sqrt(2chi0 de)=2.43346 | sandwich lo=0.58405 hi=2.74022 [True]
+intensivity: w(n)/w(n_max) at fixed de:
+  de=1.0e-04: 0.0444
+  de=1.0e-03: 0.1403
+  de=1.0e-02: 0.4369
+  de=3.0e-02: 0.7317
+  de=1.0e-01: 1.1910
+  de=3.0e-01: 1.6173
+time 19.4 s

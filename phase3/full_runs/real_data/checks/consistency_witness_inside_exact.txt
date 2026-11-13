@@ -1,0 +1,6 @@
+Post hoc consistency check (task rd-map, 2026-11-12). The labels of the two explicit witness mixtures of a row lie in
+W(E_real, M_real), so they must lie inside the exact interval I of the same row (two independent sides of Sec. 2 of the
+declaration: explicit DMRG states against exact-arithmetic bounds).
+rows with both an exact interval and a witness interval: 108
+violations: 0 []
+smallest distance of a witness end to the corresponding end of I: 0.000202

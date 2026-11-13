@@ -1,0 +1,6 @@
+﻿verified certificates of the two rigorous runs: S^z blocks per certificate and largest block, per size and cluster set
+  n= 19 eball2  certificates  18   (blocks per certificate, largest block) = [(152, 126)]
+  n= 19 vball2  certificates  38   (blocks per certificate, largest block) = [(118, 35)]
+  n= 57 eball2  certificates  21   (blocks per certificate, largest block) = [(568, 126)]
+  n= 57 vball2  certificates  93   (blocks per certificate, largest block) = [(406, 35)]
+  n=115 vball2  certificates  20   (blocks per certificate, largest block) = [(854, 35)]

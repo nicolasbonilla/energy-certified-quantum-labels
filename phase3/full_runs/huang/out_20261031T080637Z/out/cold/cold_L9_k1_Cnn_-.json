@@ -1,0 +1,26 @@
+{
+ "L": 9,
+ "k": 1,
+ "label": "Cnn",
+ "sign": "-",
+ "lam": 1.6055599131374907,
+ "F_warm": -163.86951565328206,
+ "F_cold": -163.86951006080926,
+ "dF": 5.5924728030731785e-06,
+ "o_warm": -0.4562997746356225,
+ "o_cold": -0.45629972015573034,
+ "flag_warm_stuck": false,
+ "sid": "L9k1_cold_Cnn_m",
+ "dmrg": {
+  "E_dmrg": -163.86951006080872,
+  "sweeps": 25,
+  "time_s": 247.0116834640503,
+  "dE_last": -3.770958301174687e-08,
+  "max_trunc_err": 0.0026478454078583268,
+  "last_trunc_err": 4.984645708823621e-06,
+  "chi_max_reached": 256,
+  "norm_test_before": 2.1214232532231645e-14,
+  "canonicalized": false,
+  "warnings": []
+ }
+}

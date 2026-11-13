@@ -1,0 +1,15 @@
+PART 1. (a), (b) against the full-space matrix (no sectors)
+   comb 8/3 (n=11): 144 comparisons [6.1 s]
+   heavy-hex Y piece 6/4 (n=10): 539 comparisons [354.7 s]
+   piece of the d=3 patch (n=12, sites [0, 9, 13, 3, 1, 15, 14, 4, 11, 2, 10, 16]): 182 comparisons [23.8 s]
+   frustrated triangle, sector M = -1 (degenerate sector ground state, splitting 0.0e+00): never the unique ground state of K for 25 fields x 2 couplings
+   TOTAL comparisons 915, mismatches 0
+
+PART 2. heavy-hex n = 19, all 20 sectors (own Lanczos)
+   matrices built [388 s]; Neel sector nup = 11 (M = 3), dim 75582
+   Jz   mu/Jz  sector gap   m_s       C_1     interval of (b) in units of Jz       max_B min(Ds,Dc)  at B/Jz   Dc at 3Jz/8
+Traceback (most recent call last):
+  File "C:\Users\Nicolas\Downloads\Proyecto_SQD_ML\P5_energy_certified_labels\work\paper\reviews\R10_2026-11-12\scratch\break-lemmas\break_L1.py", line 237, in <module>
+    p = v * v
+        ~~^~~
+TypeError: unsupported operand type(s) for *: 'NoneType' and 'NoneType'
