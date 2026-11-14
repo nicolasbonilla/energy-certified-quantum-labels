@@ -141,7 +141,8 @@ phase3/full_runs/real_data/checks/r11/ft_rigor_block_counts_out.txt	yes		1242,12
 phase3/full_runs/real_data/checks/r11/ft_rigor_mu_table_out.txt	yes		1219,1280	
 phase3/full_runs/real_data/checks/r11/ft_rigor_rows_variants_out.txt	yes		1296	
 phase3/full_runs/real_data/checks/r11/ft_theorem4_constant_out.txt	yes	489	3638,3642,3643	
-phase3/full_runs/real_data/checks/r11/package_checks_certificates_all_2026-11-13.txt	yes	1382		
+phase3/full_runs/real_data/checks/r11/package_checks_certificates_all_2026-11-13.txt	yes	1383		
+phase3/full_runs/real_data/checks/r11/zenodo_deposit_record_2026-11-14.txt	yes	1381		
 phase3/full_runs/real_data/checks/rd_audit_map.json	yes		1483,1484,2415	
 phase3/full_runs/real_data/checks/rd_audit_predict_learn.json	yes	731	4008,4152	
 phase3/full_runs/real_data/e1/E1_SPEC.md	yes		1254,1321,3862,3863,3865,3868	

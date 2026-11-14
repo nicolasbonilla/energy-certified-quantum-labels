@@ -1,0 +1,28 @@
+Deposit of the replication package at Zenodo
+============================================
+
+Read on 2026-11-14 from the public record https://zenodo.org/api/records/24216376 (no account needed).
+The record was made by Zenodo from the release v1.0.0 of the public repository, with no manual upload.
+
+identifier of all versions (resolves to the latest version):  10.5281/zenodo.24216375
+address of that identifier:                                   https://doi.org/10.5281/zenodo.24216375
+identifier of version 1.0.0 only:                             10.5281/zenodo.24216376
+record of version 1.0.0:                                      https://zenodo.org/records/24216376
+
+title:             Data and code for: What a sample's energy certifies about quantum-generated training labels
+version:           1.0.0
+publication date:  2026-11-13
+record created:    2026-11-14T08:20:31Z
+status:            published, open access
+file:              nicolasbonilla/energy-certified-quantum-labels-v1.0.0.zip
+size:              171428288 bytes
+MD5 (as given by Zenodo): fdf1447308294612cabcfcbb69ffee6b
+
+made from:         https://github.com/nicolasbonilla/energy-certified-quantum-labels
+release:           v1.0.0, published 2026-11-14T08:20:04Z
+commit:            8406d5a4d7b6924e9e169c2fa25fabf618a19db8
+
+The article prints the identifier of all versions. Version 1.0.1 of the package is version 1.0.0 with that
+identifier written into the article (Data and code availability), the cover of the repository, CITATION.cff and
+this file; no stored output, certificate or analysis script changed between the two versions. Later versions,
+if any, are listed on the page of the record.

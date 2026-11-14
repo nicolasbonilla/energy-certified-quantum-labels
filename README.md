@@ -6,15 +6,16 @@
 **Nicolás Bonilla Vargas** &nbsp;[![ORCID](https://img.shields.io/badge/ORCID-0009--0006--6155--4391-A6CE39?logo=orcid&logoColor=white)](https://orcid.org/0009-0006-6155-4391)<br>
 Universidad Nacional de Colombia, Bogotá, Colombia · SRH University, Munich, Germany · Daita AI, Munich, Germany
 
-[![Package](https://img.shields.io/badge/package-1.0.0-lightgrey.svg)](CITATION.cff)
+[![Package](https://img.shields.io/badge/package-1.0.1-lightgrey.svg)](CITATION.cff)
 [![License: MIT](https://img.shields.io/badge/code-MIT-green.svg)](LICENSE)
 [![License: CC BY 4.0](https://img.shields.io/badge/paper%2C%20data%2C%20docs-CC--BY--4.0-lightgrey.svg)](LICENSE)
 [![Python 3.11](https://img.shields.io/badge/python-3.11-blue.svg)](requirements.txt)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24216375.svg)](https://doi.org/10.5281/zenodo.24216375)
 
 </div>
 
-> **Status.** Version 1.0.0 of this package accompanies the manuscript *What a sample's energy certifies about quantum-generated training labels* ([`paper/main.pdf`](paper/main.pdf),
-> Supplemental Material [`paper/supplement.pdf`](paper/supplement.pdf)). Repository: <https://github.com/nicolasbonilla/energy-certified-quantum-labels>. The article is not on arXiv yet. The archived copy at Zenodo is made from the releases of this repository; its identifier is added here as soon as it exists.
+> **Status.** Version 1.0.1 of this package accompanies the manuscript *What a sample's energy certifies about quantum-generated training labels* ([`paper/main.pdf`](paper/main.pdf),
+> Supplemental Material [`paper/supplement.pdf`](paper/supplement.pdf)). Repository: <https://github.com/nicolasbonilla/energy-certified-quantum-labels>. Archived copy: [doi:10.5281/zenodo.24216375](https://doi.org/10.5281/zenodo.24216375) (resolves to the latest version). The article is not on arXiv yet.
 > Every number printed in the two documents carries a comment that names the stored file it comes from, and a
 > script re-checks them ([Quick start](#quick-start)).
 
@@ -79,7 +80,7 @@ and two classical extrapolations that use no quantum data.
 
 | Level | What you can re-run on a laptop | Command | Time (laptop, 2 threads) |
 |---|---|---|---|
-| Numbers | Every number printed in `main.tex` and `supplement.tex` against the stored file named in its `% src:` comment. Recorded when the package was built: main text 897 numbers, 0 `MISSING`; Supplement 4323 numbers, 0 `MISSING`. | `python run_checks.py numbers` | seconds |
+| Numbers | Every number printed in `main.tex` and `supplement.tex` against the stored file named in its `% src:` comment. Recorded when the package was built: main text 901 numbers, 0 `MISSING`; Supplement 4323 numbers, 0 `MISSING`. | `python run_checks.py numbers` | seconds |
 | Certificates | The 316 stored certificates are operator inequalities with rational coefficients. A verifier written as separate code (it imports neither the optimizer nor the stored verifier) re-proves each one in exact arithmetic (operator identity and positivity of every block). A sample of 5 by default, all with `--all`. | `python run_checks.py certificates` | about 1 minute for the sample |
 | Map on the public data | The declared map code is run again on the converted public data, the stored certificates and the stored states, into a temporary folder; its six outputs are compared with the stored ones by SHA-256 (see the note on comparisons below). | `python run_checks.py map` | about 5 minutes |
 | Bias | The declared tests of the sign, trend and size of the bias of the public labels. | `python run_checks.py bias` | seconds |
@@ -216,7 +217,7 @@ the value at that key of the stored JSON file; `STRING` = the printed string occ
 constant of the model (sizes, number of training couplings); `UNCHECKED` = arithmetic on cited values or a reading
 of a published figure, reported and not checked by the script. This table is generated from that report and from the
 source comments; the same information for every line of both documents is in the two report files, and
-[`docs/NUMBERS_TO_FILES.tsv`](docs/NUMBERS_TO_FILES.tsv) lists the 169 stored files that the comments name.
+[`docs/NUMBERS_TO_FILES.tsv`](docs/NUMBERS_TO_FILES.tsv) lists the 170 stored files that the comments name.
 
 | Line of `main.tex` | Printed | In the sentence | Guardian | Stored file | Key |
 |---|---|---|---|---|---|
@@ -371,7 +372,7 @@ leaves out (next section): a checksum run reports those as missing, and every ot
 | the manuscript cut into parts for the writers, and their notes; main.tex and supplement.tex are the assembled documents | `paper/parts/` | - |
 | the popular summary goes to the journal, not to the package | `paper/popular_summary.tex` | - |
 
-How to regenerate or obtain each item: [`docs/LEFT_OUT.md`](docs/LEFT_OUT.md). The package has 8402 files and
+How to regenerate or obtain each item: [`docs/LEFT_OUT.md`](docs/LEFT_OUT.md). The package has 8403 files and
 426 MB. No file is larger than 50 MB.
 
 ## Third-party material
@@ -405,7 +406,7 @@ See [`CITATION.cff`](CITATION.cff). Until the article has an arXiv number or a j
 @unpublished{BonillaVargas2026EnergyCertifiedLabels,
   title  = {What a sample's energy certifies about quantum-generated training labels},
   author = {Bonilla Vargas, Nicol\'as},
-  note   = {Code and data: https://github.com/nicolasbonilla/energy-certified-quantum-labels},
+  note   = {Code and data: https://github.com/nicolasbonilla/energy-certified-quantum-labels, doi:10.5281/zenodo.24216375},
   year   = {2026}
 }
 ```
