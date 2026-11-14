@@ -51,7 +51,8 @@ for fam in ("top", "kry"):
 P("")
 P("SUMMARY (changes in per cent of the miss of the stack without the label; ranges rounded outward)")
 n_best = sum(v["ne"] for v in res.values())
-P("  combined better than the embedded 19-site cluster: %d of 48 instances (0 of 6 in each of the 8 cases: %s)" % (
+P("  12 test instances (6 at each of the 2 couplings); each is compared for 2 label types and 2 estimates: 48 comparisons")
+P("  combined better than the embedded 19-site cluster: %d of 48 comparisons (0 of 6 in each of the 8 cases: %s)" % (
     n_best, all(v["ne"] == 0 for v in res.values())))
 rt = [v["ratio"] for v in res.values()]
 P("  miss of the combined model over the miss of the embedded 19-site cluster: %.1f to %.1f times" % (down(min(rt)), up(max(rt))))

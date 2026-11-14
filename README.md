@@ -6,7 +6,7 @@
 **Nicolás Bonilla Vargas** &nbsp;[![ORCID](https://img.shields.io/badge/ORCID-0009--0006--6155--4391-A6CE39?logo=orcid&logoColor=white)](https://orcid.org/0009-0006-6155-4391)<br>
 Universidad Nacional de Colombia, Bogotá, Colombia · SRH University, Munich, Germany · Daita AI, Munich, Germany
 
-[![Package](https://img.shields.io/badge/package-1.0.3-lightgrey.svg)](CITATION.cff)
+[![Package](https://img.shields.io/badge/package-1.0.4-lightgrey.svg)](CITATION.cff)
 [![License: MIT](https://img.shields.io/badge/code-MIT-green.svg)](LICENSE)
 [![License: CC BY 4.0](https://img.shields.io/badge/paper%2C%20data%2C%20docs-CC--BY--4.0-lightgrey.svg)](LICENSE)
 [![Python 3.11](https://img.shields.io/badge/python-3.11-blue.svg)](requirements.txt)
@@ -14,7 +14,7 @@ Universidad Nacional de Colombia, Bogotá, Colombia · SRH University, Munich, G
 
 </div>
 
-> **Status.** Version 1.0.3 of this package accompanies the manuscript *What a sample's energy certifies about quantum-generated training labels* ([`paper/main.pdf`](paper/main.pdf),
+> **Status.** Version 1.0.4 of this package accompanies the manuscript *What a sample's energy certifies about quantum-generated training labels* ([`paper/main.pdf`](paper/main.pdf),
 > Supplemental Material [`paper/supplement.pdf`](paper/supplement.pdf)). Repository: <https://github.com/nicolasbonilla/energy-certified-quantum-labels>. Archived copy: [doi:10.5281/zenodo.24216375](https://doi.org/10.5281/zenodo.24216375) (resolves to the latest version). The article is not on arXiv yet.
 > Every number printed in the two documents carries a comment that names its source, and a script checks the
 > numbers against the stored files so named ([Quick start](#quick-start)).
@@ -80,7 +80,7 @@ and two classical extrapolations that use no quantum data.
 
 | Level | What you can re-run on a laptop | Command | Time (laptop, 2 threads) |
 |---|---|---|---|
-| Numbers | Every number printed in `main.tex` and `supplement.tex` against the source named in its `% src:` comment. A number is looked up in the stored file that the comment names (`PATH`: at the cited entry; `STRING`: as text in the file); model constants and grid values (`CONTEXT`) and numbers derived from cited values or marked as structural (`UNCHECKED`) are listed, not looked up: about a quarter of the numbers of the main text and a third of those of the Supplement. `MISSING` counts the numbers with no source. Recorded when the package was built: main text 943 numbers, 0 `MISSING`; Supplement 4414 numbers, 0 `MISSING`. | `python run_checks.py numbers` | seconds |
+| Numbers | Every number printed in `main.tex` and `supplement.tex` against the source named in its `% src:` comment. A number is looked up in the stored file that the comment names (`PATH`: at the cited entry; `STRING`: as text in the file); model constants and grid values (`CONTEXT`) and numbers derived from cited values or marked as structural (`UNCHECKED`) are listed, not looked up: about a quarter of the numbers of the main text and a third of those of the Supplement. `MISSING` counts the numbers with no source. Recorded when the package was built: main text 951 numbers, 0 `MISSING`; Supplement 4425 numbers, 0 `MISSING`. | `python run_checks.py numbers` | seconds |
 | Certificates | The 316 stored certificate files prove 253 distinct bounds (some certificates are kept in two folders, as a copy or as a second run: `phase3/full_runs/real_data/checks/r11/certificate_counts_out.txt`). They are operator inequalities with rational coefficients. A verifier written as separate code (it imports neither the optimizer nor the stored verifier) re-proves each one in exact arithmetic (operator identity and positivity of every block). A sample of 5 by default, all with `--all`. | `python run_checks.py certificates` | about 1 minute for the sample |
 | Map on the public data | The declared map code is run again on the converted public data, the stored certificates and the stored states, into a temporary folder; its six outputs are compared with the stored ones by SHA-256 (see the note on comparisons below). | `python run_checks.py map` | about 5 minutes |
 | Bias | The declared tests of the sign, trend and size of the bias of the public labels. | `python run_checks.py bias` | seconds |

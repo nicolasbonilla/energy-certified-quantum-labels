@@ -11,7 +11,8 @@ secondary estimate Jz = 2.5 site: combined 0.0249, stack 0.0338, change -26.4 % 
 secondary estimate Jz = 2.5 bond: combined 0.0246, stack 0.0267, change -7.9 % (combined better in 5 of 6); embedded 19-site cluster 0.0100 (combined better in 0 of 6; combined / cluster = 2.45)
 
 SUMMARY (changes in per cent of the miss of the stack without the label; ranges rounded outward)
-  combined better than the embedded 19-site cluster: 0 of 48 instances (0 of 6 in each of the 8 cases: True)
+  12 test instances (6 at each of the 2 couplings); each is compared for 2 label types and 2 estimates: 48 comparisons
+  combined better than the embedded 19-site cluster: 0 of 48 comparisons (0 of 6 in each of the 8 cases: True)
   miss of the combined model over the miss of the embedded 19-site cluster: 2.4 to 4.2 times
   primary estimate: worse than the stack without the label in all 4 cases, by 9.2 to 20.3 %
   secondary estimate, site labels: -23.6 % (Jz = 1.6) and -26.4 % (Jz = 2.5), better in 6 of 6 and 6 of 6 instances

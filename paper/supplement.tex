@@ -84,7 +84,7 @@ bounds $C_1$), Lemma~\ref{lem:peierls} (a contour bound on the heavy-hex patches
 Propositions~\ref{prop:unpinned} and~\ref{prop:wall}, which replace two heuristic classes of the classification by
 proved statements; Theorem~4 of the main text is proved in Sec.~\ref{sm:thm4}. % (structural: theorem number)
 
-\subsection{Lemma A (Lagrange duality; Cohen and Feldmann)}
+\subsection{Lemma A (Lagrange duality)}
 The upper limit is the value of the semidefinite program $\max\{\Tr O\sigma:\sigma\succeq0,\Tr\sigma=1, % src: file:phase3/design/R3_generality.md
 \Pi\sigma\Pi=\sigma,\Tr H\sigma\le E\}$. For $\lambda>0$ and every feasible $\sigma$, % src: file:phase3/design/R3_generality.md
 $\Tr(H-\lambda O)\sigma\ge E_0(H-\lambda O)$, hence $\Tr O\sigma\le[E-E_0(H-\lambda O)]/\lambda$ (weak duality); the % src: file:phase3/design/R3_generality.md
@@ -95,8 +95,8 @@ ground state of $H-\lambda^*O$, or by a mixture of two ground states at a level 
 $u_+(\epsilon)$ is concave and nondecreasing, and with $\alpha(\lambda)=E_0-\lambda o_\GS^+-E_0(H-\lambda O)\ge0$ % src: file:phase3/design/R3_generality.md
 (convex, $\alpha(0)=\alpha'(0^+)=0$) one has $u_+(\epsilon)=\inf_{\lambda>0}[\alpha(\lambda)+\epsilon]/\lambda$ and % src: file:phase3/design/R3_generality.md
 $\alpha(\lambda)=\sup_{\epsilon\ge0}[\lambda u_+(\epsilon)-\epsilon]$, a conjugate pair. Dual attainment holds in the multiplier $\nu=1/\lambda\ge0$ of the energy constraint; when the label saturates inside the window,
-$\nu^*=0$ and the infimum over $\lambda$ is approached only as $\lambda\to\infty$, which is why the main text writes $\inf$ (an independent exact check finds such rows; Sec.~\ref{sm:checks}). This is the content of % src: file:phase3/design/R3_generality.md
-Ref.~\cite{cohen1971}, as Ref.~\cite{manchanda2026} attributes it (Sec.~\ref{sm:prov}); we claim nothing new in it. \hfill$\square$ % src: file:phase3/design/R3_generality.md
+$\nu^*=0$ and the infimum over $\lambda$ is approached only as $\lambda\to\infty$, which is why the main text writes $\inf$ (an independent exact check finds such rows; Sec.~\ref{sm:checks}). The bound is the one that Ref.~\cite{manchanda2026} attributes to % src: file:phase3/design/R3_generality.md
+Ref.~\cite{cohen1971} (Sec.~\ref{sm:prov}); its attainment is shown above, and we claim nothing new in either. \hfill$\square$ % src: file:phase3/design/R3_generality.md
 
 \emph{Two constraints (the window of energy and mean magnetization).} For $\lambda>0$, real $\mu$ and
 $\sigma\in\W(E,M)$, $\Tr(H-\lambda O+\mu M_z)\sigma\ge E_0^{\rm full}(H-\lambda O+\mu M_z)$, and the left-hand side
@@ -1437,7 +1437,7 @@ size. At $n=115$, $\Jz=1.2$ the $10^5$ most probable configurations already carr
 remaining $7\times10^5$ sampled strings change neither the energy nor the labels. % src: file:phase3/full_runs/method/RESULTS.md; file:phase3/full_runs/method/laptop_post/results_tables.md; def:phase3/full_runs/method/DECLARATION.md
 The declared reading of the scan at $n=57$ asked for at least $8\times10^6$ configurations; it stopped at % src: def:phase3/full_runs/method/DECLARATION.md (8×10⁶)
 $3.16\times10^6$, at the declared cap of $80$ minutes on sampling, and its outcome carries that flag. The % src: file:phase3/full_runs/method/RESULTS.md (3.16×10⁶ < 8×10⁶: the declared 80-min sampling cap was reached)
-truncation error of the Krylov evolution, recorded per step, passed its declared flag of $10^{-6}$ at $n=115$, % src: def:phase3/full_runs/method/DECLARATION.md (flagged if > 1e-6)
+truncation error of the Krylov evolution, recorded per step, exceeded its declared flag of $10^{-6}$ at $n=115$, % src: def:phase3/full_runs/method/DECLARATION.md (flagged if > 1e-6)
 $\Jz=4.0$, $5.0$ and $6.0$ (at most $2.8\times10^{-6}$) and stayed below it elsewhere. % src: file:phase3/full_runs/method/RESULTS.md (max 2.0e-6, 1.9e-6, 2.8e-6)
 
 \begin{figure}[h]
@@ -1476,7 +1476,7 @@ $e^{-i\theta Y_cX_t/2}$, and not the block drawn in the paper, $e^{-i\theta Z_cY
 label as the expectation value of the rotated operator in the re-diagonalized vector, that is, in the physical state
 $U^\dagger\psi'$ (file \texttt{qaml/observables/modified\_basis.py}). We did not compare the order and orientation of
 the CNOTs or the optimizer with ours. The optimized angles are not in the repository, and that this code produced the
-published files is the authors' statement, which the files cannot prove (one of its scripts treats the $57$-qubit results as older data kept in another file pattern). The sector: the final states are not in the
+published files is the authors' statement, which the files cannot prove (one of its scripts treats the $57$-qubit results of the dataset analysed here, the variant read by the repository's training scripts (Sec.~\ref{sm:public}), which that script calls \texttt{random\_flip}, as older data from a colleague, stored under another file pattern). The sector: the final states are not in the
 sector. The sum of the published site magnetizations lies below the sector value at all $50$ couplings of both % src: rdam:B_sector.57.n_negative (50); rdam:B_sector.115.n_negative (50)
 sizes, by $0.0003$--$0.2342$ at $n=57$ and $0.0026$--$0.4353$ at $n=115$ (Sec.~\ref{sm:public}), as a rotation that % src: rdam:B_sector.57.max (-0.00037); rdam:B_sector.57.min (-0.23420); rdam:B_sector.115.max (-0.00268); rdam:B_sector.115.min (-0.43520); derived: ranges rounded outward
 does not conserve the particle number can produce and a number-conserving one cannot. The record also holds the
@@ -1620,10 +1620,11 @@ dataset scale the $\Czz$ widths of the map are these brackets (the $\Czz$ field 
 Data on the generated state $\psi$ (its labels, energy variance, separately measured bond energies) constrain the
 ground state through a variational inequality, i.e.\ an upper bound on $E_0$, or through a fidelity bound from the % src: file:phase3/design/R2_constructive_half.md
 energy variance and a gap (Temple-type~\cite{temple1928}), together with a-priori ground-state properties (sector, symmetry, eigen-equation). We know
-of one further bridge, which needs translation symmetry: on a ring the total energy fixes the mean energy of every
-block, and a block Hamiltonian then bounds a local label. Tried during an internal review (post hoc) on a ring of
-$16$ sites at $\Jz=6.0$, with blocks of $6$ to $12$ sites and three weightings, it gives intervals of a bond % src: file:paper/reviews/R10_2026-11-12/scratch/level-theory/classes_out.txt (ring n=16 Jz=6.0; L= 6 to L=12)
-correlation $1.4$--$3.7\,\tau$ wide at an excess energy per bond of $0.005$, and reaches $0.6\,\tau$ only at zero % src: file:paper/reviews/R10_2026-11-12/scratch/level-theory/classes_out.txt (de=0.005: 1.4 tau to 3.7 tau; de=0.0: 0.6 tau)
+of one further bridge, which needs translation symmetry: on a ring the total energy fixes the average over
+translations of the energy of a block, and a block Hamiltonian then bounds the ring average of a local label (the
+label itself in a translation-invariant state). Tried during an internal review (post hoc) on a ring of
+$16$ sites at $\Jz=6.0$, with blocks of $6$ to $12$ sites and three weightings, it gives intervals of the ring-averaged bond % src: file:paper/reviews/R10_2026-11-12/scratch/level-theory/classes_out.txt (ring n=16 Jz=6.0; L= 6 to L=12)
+correlation $1.4$--$3.8\,\tau$ wide at an excess energy per bond of $0.005$, and reaches $0.6\,\tau$ only at zero % src: file:paper/reviews/R10_2026-11-12/scratch/level-theory/classes_out.txt (de=0.005: 1.4 tau to 3.7 tau; de=0.0: 0.6 tau); derived: greatest width 0.2178 over tau = 0.0584 is 3.73, rounded up to 3.8
 excess; the patches of the dataset have no such symmetry. The next paragraph evaluates the fidelity route.
 \end{remark}
 
@@ -1848,8 +1849,8 @@ pairs. Tolerance $\tau=0.08$ in correlator units, as in Sec.~\ref{sm:huang}. % s
 
 \emph{Label sets.} (i) Exact. (ii) A realistic generator: Rayleigh--Ritz diagonalization in the configurations of a
 stream of perfect samples of the exact ground state (the generous case: no device noise), cut at the shortest prefix
-whose energy error per spin is at most $\de$; at $\de=5\times10^{-3}$ the subspace holds $22$--$60\%$ of the % src: file:phase3/full_runs/learning/RESULTS.md (5e-3; 0.22-0.60)
-sector and a median captured weight of $0.99625$; all $280$ matched subspaces reach $\de$ to within % src: file:phase3/full_runs/learning/RESULTS.md (0.99625; pass 280/280)
+whose energy error per spin is at most $\de$; at $\de=5\times10^{-3}$, in the $100$ instances of the benchmark, the subspace holds $22$--$61\%$ of the % src: file:phase3/full_runs/learning/RESULTS.md (5e-3; 0.22-0.60); derived: 41 027 and 111 170 of the 184 756 configurations of the sector are 0.2221 and 0.6017, rounded outward
+sector and a median captured weight of $0.99625$ ($54$--$65\%$ and $0.99775$ in the $40$ shifted instances); all $280$ matched subspaces reach $\de$ to within % src: file:phase3/full_runs/learning/RESULTS.md (0.99625; pass 280/280); file:phase3/full_runs/learning/RESULTS.md (O, 5e-3: 0.55-0.64; 0.99775); derived: for the 40 shifted instances 101 411 and 118 736 of 184 756 are 0.5489 and 0.6427, rounded outward
 $0.06\%$. (iii) Labels shifted inside the window: the extreme label over the stored witness states (ground states of % src: derived: delta e_gen / delta e in [0.9994, 1.0000] (RESULTS.md gate G-GEN)
 $H-s\lambda G$, and their two-state mixtures) at energy $E_0+n\de$, toward less order (declared primary; the
 generator's sign) and toward more order. Energy intervals: Lemma~A at $E_{\rm gen}$ for (ii) and $E_0+n\de$ for
@@ -2045,7 +2046,7 @@ true $\ms$, in units of $\tau$. The dataset paper's architecture~1 (our implemen
 emulated site labels in the training range and $0.10$ of the true ones; at $1.1$--$1.4$, $0.31$ of the new emulated % src: lib:sizes.57.models.poly3_invJ.indist_emulated.summary.covZ_truth (0.100); lib:sizes.57.models.poly3_invJ.ood_emulated.summary.covZ_emu (0.311); lib:ood (1.1, 1.4)
 labels and none of the true ones; the second emulated state at the same couplings is covered at $0.46$ and $0.02$: % src: lib:sizes.57.models.poly3_invJ.indist_emulated.summary.covZ_ideal (0.458); lib:sizes.57.models.poly3_invJ.ood_emulated.summary.covZ_ideal (0.022)
 a slightly different setting of the same generator already escapes the narrow intervals. The prediction of $\ms$
-misses the truth there by $27$--$53\%$ and the new emulated labels by at most $1.5\%$; trained on DMRG labels, the same % src: lib:sizes.57.models.poly3_invJ.ood_emulated.summary.err_ms_vs_truth_pct_range (26.8, 52.7); lib:sizes.57.models.poly3_invJ.ood_emulated.summary.err_ms_vs_emu_pct_max (1.445); derived: upper bound 1.445 rounded up to 1.5
+misses the truth there by $26$--$53\%$ and the new emulated labels by at most $1.5\%$; trained on DMRG labels, the same % src: lib:sizes.57.models.poly3_invJ.ood_emulated.summary.err_ms_vs_truth_pct_range (26.8, 52.7); lib:sizes.57.models.poly3_invJ.ood_emulated.summary.err_ms_vs_emu_pct_max (1.445); derived: upper bound 1.445 rounded up to 1.5; derived: range 26.8-52.7 rounded outward
 model misses the truth by $0.1$--$1.2\%$. The nearest-neighbour null, with wider intervals, covers $0.79$ of the new % src: lib:sizes.57.models.poly3_invJ.ood_exact_control.summary.err_ms_vs_truth_pct_range (0.13, 1.20); lib:sizes.57.models.null_nn.ood_emulated.summary.covZ_emu (0.785)
 emulated labels at $1.1$--$1.4$ and none of the true ones. With a single split, the cubic model covers $0.22$ of the % src: lib:sizes.57.models.null_nn.ood_emulated.summary.covZ_truth (0.0); lib:sizes.57.split_robustness_ood.poly3_invJ.covZ_emu (0.217); lib:ood (1.1, 1.4)
 new emulated labels and none of the true ones in the test range, over all $120$ choices of the calibration % src: lib:sizes.57.split_robustness_ood.poly3_invJ.covZ_truth (0.0); lib:sizes.57.split_robustness_ood.poly3_invJ.n_splits (120)
@@ -2239,9 +2240,9 @@ in the sector, and 185 headline components re-evaluated in a separate process ($
 What each closest work proves and how the statements of the main text relate to it:
 \begin{itemize}
 \item \textbf{Jaderberg et al.~\cite{jaderberg2026}, with its public record~\cite{jaderberg2026data}.} \emph{Shows:} ground-state observables of the heavy-hex XXZ model at $57$ and $115$ qubits generated on a processor by sample-based Krylov diagonalization with a final basis optimization, a model trained on them and tested outside its training range, an Eckart-type bound that, as the paper notes, does not control local observables, and errors of its labels against its own DMRG reference. The paper states that its data are available on request; the labels, the energy of each sample and the DMRG values are public at $50$ couplings per size in a repository of one of its authors that names the paper, together with code that we read and did not run (Sec.~\ref{sm:public}; the block of the last step, Sec.~\ref{sm:bo}). \emph{Relation:} the dataset of the main text. We add what its published energy and site magnetizations certify about each label (Secs.~\ref{sm:map} and~\ref{sm:public}), the sign and trend of the label errors measured against the authors' reference (Sec.~\ref{sm:publictests}), and what a learner trained on the labels can guarantee (Sec.~\ref{sm:publiclearn}). % src: def:phase3/full_runs/real_data/DECLARATION.md (n = 57, 115; k = 11..60: 50 couplings)
-\item \textbf{Eckart~\cite{eckart1930}.} \emph{Proves:} infidelity $\le\epsilon/\Delta$, so a local error $\lesssim\|O\|\sqrt{\epsilon/\Delta}$. \emph{Relation:} an upper bound, vacuous for $\epsilon\ge\Delta$; ours are lower bounds and hold in the extensive regime. % src: file:phase3/STEP0_witness_prior_art_feasibility.md
+\item \textbf{Eckart~\cite{eckart1930}.} \emph{Attributed to it by Ref.~\cite{manchanda2026}:} infidelity $\le\epsilon/\Delta$, so a local error $\lesssim\|O\|\sqrt{\epsilon/\Delta}$. \emph{Relation:} an upper bound, vacuous for $\epsilon\ge\Delta$; ours are lower bounds and hold in the extensive regime. % src: file:phase3/STEP0_witness_prior_art_feasibility.md
 \item \textbf{Weinhold~\cite{weinhold1968}.} \emph{Proves:} bounds on expectation values from overlap information. \emph{Relation:} needs overlap or variance data, not energy only. % src: file:phase3/STEP0_witness_prior_art_feasibility.md
-\item \textbf{Cohen and Feldmann~\cite{cohen1971}.} \emph{Proves:} Lagrange-multiplier bounds. \emph{Relation:} the bound of Lemma~A is attributed to them (Sec.~\ref{sm:prov}); the form with two constraints used for the public data adds a multiplier of the mean magnetization (Sec.~\ref{sm:proofs}). % src: file:phase3/STEP0_witness_prior_art_feasibility.md
+\item \textbf{Cohen and Feldmann~\cite{cohen1971}.} \emph{Attributed to them by Ref.~\cite{manchanda2026}:} Lagrange-multiplier bounds. \emph{Relation:} the one-constraint bound of Lemma~A is one of these (Secs.~\ref{sm:proofs} and~\ref{sm:prov}); the form with two constraints used for the public data adds a multiplier of the mean magnetization (Sec.~\ref{sm:proofs}). % src: file:phase3/STEP0_witness_prior_art_feasibility.md
 \item \textbf{Manchanda~\cite{manchanda2026}, Thm.~1, Eq.~10, Cor.~1.} \emph{Proves:} radius $\le$ population $\epsilon\|H_{\rm ex}^{-1/2}O_{\rm ex}H_{\rm ex}^{-1/2}\|$ + coherence $\sqrt{2\epsilon\chi(\epsilon)}$, capped. \emph{Relation:} for an average at fixed $\de$ the population term grows with $n$ until the trivial cap; Theorem~2(b,c) replaces it by $\sqrt{2\chi_+\de}$, uniform in $n$. % src: file:phase3/STEP0_witness_prior_art_feasibility.md
 \item \textbf{Manchanda, Thm.~2, Cor.~2.} \emph{Proves:} $\sqrt{2\epsilon\chi_O}\sqrt{1-\epsilon/\bar\Delta_O}\le$ radius for $\epsilon\le\bar\Delta_O/2$, with the exact ground state. \emph{Relation:} the small-$\epsilon$ case of Theorem~2 ($\chi_{\bar O}=\chi/n$ gives $\sqrt{2\de\chi}$); ours holds for all $\epsilon$ up to $O(n)$ with computable witnesses. % src: file:phase3/STEP0_witness_prior_art_feasibility.md
 \item \textbf{Manchanda, Eq.~22.} \emph{Proves:} $\epsilon\lesssim\delta^2/(2\chi_O)$ at leading order. \emph{Relation:} Corollary~1 gives the exact form and the local and critical cases. % src: file:phase3/STEP0_witness_prior_art_feasibility.md
@@ -2257,7 +2258,7 @@ What each closest work proves and how the statements of the main text relate to 
 \item \textbf{Naceur et al.~\cite{naceur2025}.} \emph{Proves:} rigorous bounds from inexact numerical solutions by rational post-processing. \emph{Relation:} the same idea, applied to the cluster dual with integer elimination. % src: file:phase3/STEP0_witness_prior_art_feasibility.md
 \item \textbf{Nachtergaele, Sims and Young~\cite{nsy2022}.} \emph{Proves:} that the spectral gap of a frustration-free model is stable, uniformly in the volume, under the perturbations of their uniform perturbation models (their Theorem~6.8). \emph{Relation:} the proof of Theorem~4 of the main text verifies their hypotheses for the dataset's model on the open heavy-hex patches at strong anisotropy (Sec.~\ref{sm:thm4}); ours are the site-by-site classical bound on the patches at every size, the verification with an open boundary, and the reading in terms of the window. The threshold coupling that follows is not explicit. % (structural: theorem numbers)
 \item \textbf{Nachtergaele and Sims~\cite{nachtergaele2006}; Hastings and Koma~\cite{hastings2006}.} \emph{Proves:} exponential clustering of ground-state correlations from a spectral gap and Lieb--Robinson bounds; Ref.~\cite{nachtergaele2006} in a form that applies to finite systems as it stands, with explicit constants. \emph{Relation:} gives the constant $C_1$ of Theorem~2(c) from the gap; Lemma~\ref{lem:field}(d) notes that the proof uses the gap only for the states that the observable creates from the ground state, so that for labels that commute with the conserved charge the gap inside the sector suffices. % (structural: theorem numbers)
-\item \textbf{Yarotsky~\cite{yarotsky2006}.} \emph{Proves:} a unique gapped ground state for relatively bounded quantum perturbations of classical lattice systems, on cubic volumes (his Theorem~1). \emph{Relation:} a second route to the uniform gap of Theorem~4 on the periodic lattices (Sec.~\ref{sm:thm4}), with a ten-site cell; we compared our setting with the statement of his theorem and did not re-derive his proof, and Theorem~4 does not depend on this route. % (structural: theorem numbers)
+\item \textbf{Yarotsky~\cite{yarotsky2006}.} \emph{Proves:} for translation-invariant interactions on cubic volumes with periodic boundary conditions, that a classical model with a non-degenerate product ground state and a local gap keeps a unique ground state, with a gap independent of the volume, under sufficiently weak relatively bounded quantum perturbations (his Theorem~1). \emph{Relation:} a second route to the uniform gap of Theorem~4 on the periodic lattices (Sec.~\ref{sm:thm4}), with a ten-site cell; we compared our setting with the statement of his theorem and did not re-derive his proof, and Theorem~4 does not depend on this route. % (structural: theorem numbers)
 \item \textbf{Horsch and von der Linden~\cite{horsch1988}; Koma and Tasaki~\cite{koma1994}.} \emph{Proves:} in a ground state with long-range order that nothing pins, the order-parameter operator creates a state whose energy lies within order $1/n$ of the ground energy; Ref.~\cite{koma1994} gives the general form (their Theorem~2.2). The article of Ref.~\cite{horsch1988} was not read; we use its theorem in the form of Ref.~\cite{koma1994}, Sec.~2.2. \emph{Relation:} Proposition~\ref{prop:unpinned} is that theorem read in terms of the window: beyond a size $n\ge\sqrt{K/(4m_0^2\de)}$ the energy cannot certify an order parameter that no sector and no boundary pins. The heavy-hex sectors of the dataset pin the orientation, so this class is not the dataset's. % (structural: theorem numbers and a formula)
 \item \textbf{Huang et al.~\cite{huang2022}.} \emph{Proves:} provable learning of ground-state properties; provides the benchmark of Sec.~\ref{sm:huang}. \emph{Relation:} our rule says which of its labels the energy certifies.
 \item \textbf{Javanmardi et al.~\cite{javanmardi2023}; Cauchois et al.~\cite{cauchois2022}; Einbinder et al.~\cite{einbinder2022}.} \emph{Proves:} validity of conformal prediction with set-valued labels when each calibration score is replaced by its greatest value over the label's set~\cite{javanmardi2023}; lower bounds on the size of any prediction set that covers the true label, without assumptions on the distribution, from weak labels~\cite{cauchois2022}; validity of standard calibration for the true label when the label noise only adds dispersion, with examples in which a systematic error defeats it~\cite{einbinder2022}. \emph{Relation:} Proposition~2(b) is the score of Ref.~\cite{javanmardi2023} with the set supplied by the energy of each label; its part (d) and the remark of Sec.~\ref{sm:prop2proofs} make the price in width explicit for energy intervals; the public labels are a case of systematic error (Sec.~\ref{sm:publiclearn}). % (structural: proposition number)
@@ -2344,7 +2345,7 @@ emulation at $n=115$ missed its declared energy condition; the accuracy law of t
 at six rows; one rigorous block was rejected; two benchmark predictions failed and two were left undecided; the % src: map:claims.C-D.outside (6 rows)
 realistic benchmark generator left coverage intact; the curve of the bias passed its declared test on new emulated
 labels; the corrected labels failed the declared test on disordered lattices; and the declared device run was submitted
-two days later than declared and ran two days after that, and its label at $\Jz=6.0$ has an interval below the tolerance. On the public % src: file:phase3/full_runs/final_tests/RESULTS.md (6.0)
+two days later than declared and ran on 2026-11-10, and its label at $\Jz=6.0$ has an interval below the tolerance. On the public % src: file:phase3/full_runs/final_tests/RESULTS.md (6.0; 2026-11-10)
 data: the curve failed its declared test, on its second condition at $n=115$ (its limit on the mean miss at % src: def:phase3/full_runs/real_data/DECLARATION.md (n = 115)
 $n=115$ was already met by the uncorrected labels, so only the limit at $n=57$ tested anything); the constructive % src: def:phase3/full_runs/real_data/DECLARATION.md (n = 57, 115)
 learning test failed on the full set of certified labels and on the set certified to three quarters of the
@@ -2818,8 +2819,8 @@ $0.74$, and lengths beyond the grid with the penalty chosen on the test instance
 lower it by $9\%$, against the factor of $9$ that separates it from the cluster. % src: file:paper/reviews/R10_2026-11-12/scratch/phys-declared-stats/summarize_refits_out.txt (oracle beyond the grid 0.6749 (-9.0 %)); ftp:ratio_to_best_1.6.q_top (9.06)
 A model that combines the label with embedded clusters was tried after the outcome was known (post hoc, computed on
 2026-11-12 and not declared): the declared classical stack on the $13$-site clusters, with the generated label and % src: file:phase3/full_runs/real_data/checks/r11/combine_b.py (2026-11-12; 13-site clusters)
-its energy error added as inputs. It is closer to the truth than the embedded $19$-site cluster in none of the $48$ % src: file:phase3/full_runs/real_data/checks/r11/combine_b_summary_out.txt (0 of 48 instances)
-instances of the eight cases (two couplings, sites and bonds, both estimates); its miss is $2.4$ to $4.2$ times that % src: file:phase3/full_runs/real_data/checks/r11/combine_b_summary_out.txt (2.4 to 4.2 times)
+its energy error added as inputs. It is closer to the truth than the embedded $19$-site cluster in none of the $12$ test % src: file:phase3/full_runs/real_data/checks/r11/combine_b_summary_out.txt (12 test instances)
+instances, in any of the eight cases (two couplings, sites and bonds, both estimates); its miss is $2.4$ to $4.2$ times that % src: file:phase3/full_runs/real_data/checks/r11/combine_b_summary_out.txt (2.4 to 4.2 times)
 of the cluster. With the primary estimate it is worse than the stack without the label in all four cases, by
 $9.2$--$20.3\%$; with the secondary estimate it lowers the miss of the site labels by $23.6\%$ and $26.4\%$, in % src: file:phase3/full_runs/real_data/checks/r11/combine_b_summary_out.txt (9.2 to 20.3 %; -23.6 %; -26.4 %)
 $6$ of $6$ instances at both couplings, and changes that of the bond labels by $+2.5\%$ and $-7.9\%$ % src: file:phase3/full_runs/real_data/checks/r11/combine_b_summary_out.txt (better in 6 of 6 and 6 of 6 instances; +2.5 %; -7.9 %)
@@ -2831,6 +2832,7 @@ $50$--$63$\,s and $61$--$77$\,s for DMRG on the target at bond dimension $32$ an
 classical emulation of the generator; the training of the learned models is not included.
 \def\SMcap{Mean miss on disordered lattices at $n=57$ over six instances and $121$ labels, in units of $6\%$ of the mean absolute label of each type.}\def\SMlab{tab:ft_b} % src: def:phase3/full_runs/final_tests/DECLARATION.md (121); derived: 0.06 = 6 %
 \input{figures/sm_tables/ft_b.tex}
+\needspace{150pt}% (layout) keep this six-row table on one page (2026-11-14)
 \def\SMcap{Miss per test instance on disordered lattices, same units as Table~\ref{tab:ft_b}.}\def\SMlab{tab:ft_b_inst}
 \input{figures/sm_tables/ft_b_inst.tex}
 
@@ -2846,9 +2848,11 @@ declaration, which says so. Each interval is a statement about the stored classi
 device measured; the bit-order checks support that its configurations come from the declared circuits. The stored
 record holds the exact rational energy and a checksum of the rounded integer vector, not the vector. In a rebuild
 made during review with the declared code, the subspaces of the four cases (both jobs, with recovery and with
-post-selection) were reproduced exactly, the rounded vector was not reproduced bit for bit, and the exact energies of
+post-selection) were rebuilt with the stored dimensions and every configuration in the sector, the rounded vector was not reproduced bit for bit, and the exact energies of
 the rebuilt vectors differ from the stored ones by less than $10^{-25}$, with intervals equal to the twelve digits % src: file:phase3/full_runs/real_data/checks/r11/fp_device_rebuild_out.txt (greatest |exact E rebuilt minus stored| over the four cases: 2.3e-26 (below 1e-25: True)); derived: 2.3e-26 < 1e-25
-compared. The integer vectors are not deposited; the deposited code rebuilds them (\texttt{real\_data/checks/r11/fp\_device\_rebuild.py}).
+compared. The integer vectors are not deposited, and the deposited code
+(\texttt{real\_data/checks/r11/fp\_device\_rebuild.py}) is that of the rebuild just described: it does not return
+the stored vectors.
 \needspace{160pt}% (layout) keep Table S32 (eight rows) on one page (2026-11-10: its last row had fallen alone onto the next page)
 \def\SMcap{Device labels at $J_z=4.0$ and $6.0$ with intervals proved in exact arithmetic.}\def\SMlab{tab:ft_c} % src: file:phase3/full_runs/qpu/RESULTS.md (4.0); file:phase3/full_runs/final_tests/RESULTS.md (6.0)
 \input{figures/sm_tables/ft_c.tex}
@@ -2876,15 +2880,18 @@ energy gives a narrower interval at this coupling; the noiseless control of the 
 Against the planning numbers, which decided nothing: the simulation had given $0.63\,\tau$ for this device ($0.58\,\tau$ % src: file:phase3/full_runs/final_tests/RESULTS.md (Planned for kingston 0.63 τ (0.58 τ at noise factor 1.0))
 at the noise of its model); in the run the noise factor estimated from the data was $0.81$ and the energy error % src: file:phase3/full_runs/final_tests/RESULTS.md (measured noise factor 0.81)
 $0.228$, against the simulated $0.289$. % src: file:phase3/full_runs/final_tests/RESULTS.md (ε = 0.228 J below the simulation's 0.289 J)
+\needspace{120pt}% (layout) keep the caption and header of this table with its rows (2026-11-14)
 \def\SMcap{Expected intervals of $m_s$ at $J_z=6.0$ with $18$ certificates (floats of existing states, planning numbers, not exact proofs). The device run's proved interval is in Table~\ref{tab:ft_c}.}\def\SMlab{tab:ft_c6} % src: ftx:n_certs_J6 (18)
 \input{figures/sm_tables/ft_c6.tex}
 
 \emph{What the processor contributed (control, computed after the result).} The interval of the label holds for any
-vector, so it does not say what the processor's dynamics added. Two inputs with no dynamics were pushed through the
-same pipeline with the same certificates (all ten circuits, two recovery seeds; the widths are floating-point
-evaluations of the formula of the interval): the N\'eel string with independent bit flips, one probability per
-circuit chosen to match the device's in-sector fraction, and the device shots with every site's column permuted
-independently over the shots. At $\Jz=6.0$ the device shots give $0.49$--$0.51\,\tau$, the noise-only strings % src: file:phase3/full_runs/real_data/checks/r11/device_null_controls_Jz6.0_out.txt (0.49 to 0.51)
+vector with that energy, so it does not say what the processor's dynamics added. Two inputs were pushed through the
+same pipeline with the same certificates (all ten circuits and two seeds, each of which redraws the random recovery and, for the
+noise-only strings and the site-shuffled shots, the strings or the permutations themselves; the widths are
+floating-point evaluations of the formula of the interval): the N\'eel string with independent bit flips (one probability per
+circuit, chosen to match the device's in-sector fraction), which contains no dynamics at all, and the device shots
+with every site's column permuted independently over the shots, which keep the device's single-site marginals but
+none of its correlations between sites. At $\Jz=6.0$ the device shots give $0.49$--$0.51\,\tau$, the noise-only strings % src: file:phase3/full_runs/real_data/checks/r11/device_null_controls_Jz6.0_out.txt (0.49 to 0.51)
 $0.56$--$0.58\,\tau$ and the site-shuffled shots $0.61$--$0.62\,\tau$: the dynamics narrows the interval by % src: file:phase3/full_runs/real_data/checks/r11/device_null_controls_Jz6.0_out.txt (0.56 to 0.58; 0.61 to 0.62)
 $0.06$--$0.09\,\tau$, and the verdict ``below $\tau$'' is reached without it. The later circuits add little: % src: file:phase3/full_runs/real_data/checks/r11/device_null_controls_Jz6.0_out.txt (0.06 to 0.09)
 circuit $k=1$ alone gives $0.56$--$0.58\,\tau$ and circuits $k\le3$ give $0.50$--$0.51\,\tau$, while the fraction of the % src: file:phase3/full_runs/real_data/checks/r11/device_null_controls_Jz6.0_out.txt (k = 1 only: 0.56 to 0.58; k <= 3: 0.50 to 0.51, the two lines of the summary on the device shots of the opening circuits)
@@ -2892,7 +2899,7 @@ device shots that lie in the sector falls from $0.28$ at $k=1$ to $0.13$ at $k=1
 down with no sampling do as follows: the N\'eel string with its $64$ single bond flips ($65$ configurations) gives % src: file:phase3/full_runs/real_data/checks/r11/device_null_controls_Jz6.0_out.txt (64 single bond flips; 65 configurations)
 $0.67\,\tau$, and all $1994$ configurations within two exchange moves of the N\'eel string give $0.21\,\tau$, % src: file:phase3/full_runs/real_data/checks/r11/device_null_controls_Jz6.0_out.txt (0.67; 1994 configurations; 0.21)
 against several hundred thousand configurations from the device shots. At $\Jz=4.0$ the device shots give $2.36$--$2.40\,\tau$ and the % src: file:phase3/full_runs/real_data/checks/r11/device_null_controls_Jz4.0_out.txt (2.36 to 2.40)
-noise-only strings $2.36$--$2.42\,\tau$, which cannot be told apart; the $65$ configurations give $2.54\,\tau$ and % src: file:phase3/full_runs/real_data/checks/r11/device_null_controls_Jz4.0_out.txt (2.36 to 2.42; 65 configurations; 2.54)
+noise-only strings $2.36$--$2.42\,\tau$, which cannot be told apart (the proved interval of the stored label, Table~\ref{tab:ft_c}, from another draw of the recovery, is $2.47\,\tau$ wide); the $65$ configurations give $2.54\,\tau$ and % src: file:phase3/full_runs/real_data/checks/r11/device_null_controls_Jz4.0_out.txt (2.36 to 2.42; 65 configurations; 2.54); ftc:C1.rec.m_s.w_over_tau (2.466)
 the $1994$ configurations $0.96\,\tau$, below the tolerance where the device label is not. This control is post hoc: % src: file:phase3/full_runs/real_data/checks/r11/device_null_controls_Jz4.0_out.txt (1994 configurations; 0.96)
 it was computed on 2026-11-12, after the device results were known, and was not declared % src: file:phase3/full_runs/real_data/checks/r11/device_null_controls.py (2026-11-12)
 (\texttt{real\_data/checks/r11/device\_null\_controls.py}, with its two outputs).
@@ -3801,7 +3808,7 @@ not certified, and every certified public label and its reference value lie insi
 \emph{Declared secondary rows.} Two kinds of rows are secondary in the declaration and enter no count. With the
 energy that the files give for each sample before the last step of the method, whose states are in the sector, the
 stored sector thresholds would certify $\ms$ only at $\Jz=4.9$--$6.0$ at $n=57$ and at no coupling at $n=115$. % src: file:phase3/full_runs/real_data/RESULTS.md (I-11: 57 | 4.9-6.0 | 1.1-4.8; 115 | none | 1.1-6.0)
-The comparison variant at $n=115$, on the $41$ training couplings that the condition above leaves, has $17$ % src: file:phase3/full_runs/real_data/RESULTS.md (I-11: 17 | 15 | 9 | 41)
+The comparison variant at $n=115$, on the $41$ training couplings that the necessary condition of hypothesis~H leaves, has $17$ % src: file:phase3/full_runs/real_data/RESULTS.md (I-11: 17 | 15 | 9 | 41)
 certified rows, $15$ not certified and $9$ undecided, for $\ms$ and for $\Czz$ alike % src: file:phase3/full_runs/real_data/RESULTS.md (I-11: 17 | 15 | 9 | 41)
 (\texttt{real\_data/out/map\_secondary.json}).
 

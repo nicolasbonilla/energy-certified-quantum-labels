@@ -172,8 +172,8 @@ curve per coupling in the energy error per site, found after the data were in ha
 fixed in writing beforehand. The curve passes its declared test on new emulated labels and fails it on the
 public labels, on its second condition at $115$ qubits; corrected labels do not beat the best classical % src: def:phase3/full_runs/real_data/DECLARATION.md (n = 115)
 estimates; and one processor label has an
-interval proved below $\tau$, at a coupling where a classical energy does better and strings with no dynamics do
-nearly as well.
+interval proved below $\tau$, at a coupling where a classical energy does better, strings with no dynamics do nearly
+as well and a fixed set of configurations near the N\'eel string, chosen without sampling, does better.
 \item \emph{Learning} (Sec.~\ref{sec:learn}). Energy intervals of the labels carried through a learner and its
 calibration (Proposition~\ref{prop:learn}: conformal prediction with set-valued
 labels~\cite{javanmardi2023,cauchois2022}, here intervals supplied by the physics, and a floor that holds for any
@@ -266,7 +266,7 @@ attained in an exact $12$-site example (Supplemental Sec.~S2); no status of the 
 The statements of Sec.~\ref{sec:rule} are for the
 sector window; the statuses of the public data use $\W(E,M)$ and do not assume in-sector states.
 
-\begin{lemma}[Lagrange duality~\cite{cohen1971}]
+\begin{lemma}[Lagrange duality~\cite{cohen1971,manchanda2026}]
 \label{lem:dual}
 For $\epsilon>0$, $o^+(E_0+\epsilon)=\inf_{\lambda>0}[E_0+\epsilon-E_0(H-\lambda O)]/\lambda$, with all ground
 energies taken in the sector. When the infimum is attained, the extremal state is a ground state of $H-\lambda^*O$,
@@ -773,8 +773,11 @@ instances), in all $12$ instances, and DMRG on the target at bond dimension $32$
 better still (a possible reason, the locality of gapped ground states, is discussed in Supplemental Sec.~S14; we
 did not measure the gap of these instances). Against a regression on the same local
 couplings, a comparison added after the outcome was known, the label helps in the mean: the miss falls by $19\%$ and % src: ftp:gain_over_reg_1.6.q_top (19.4)
-$14\%$, in $4$ of $6$ and $6$ of $6$ instances; a model that combines the label with the clusters, tried afterwards, % src: ftp:gain_over_reg_2.5.q_top (13.8); file:paper/reviews/R10_2026-11-12/scratch/phys-declared-stats/recompute_table2_out.txt (wins 4/6; wins 6/6)
-reaches the $19$-site cluster in no instance. This regime, which DMRG solves, says what labels add where classical
+$14\%$, in $4$ of $6$ and $6$ of $6$ instances; a model that combines the label with embedded $13$-site clusters, tried afterwards, % src: ftp:gain_over_reg_2.5.q_top (13.8); file:paper/reviews/R10_2026-11-12/scratch/phys-declared-stats/recompute_table2_out.txt (wins 4/6; wins 6/6); file:phase3/full_runs/real_data/checks/r11/combine_b.py (13-site clusters)
+is closer to the reference than the $19$-site cluster in no instance; trained on the same $n=19$ states as the % (structural: size of the cluster and of the training systems, n = 19)
+quantum estimate above, it is $9.2$--$20.3\%$ worse than the same model without the label (trained instead on the % src: file:phase3/full_runs/real_data/checks/r11/combine_b_summary_out.txt (9.2 to 20.3 %)
+first stage of the method at $n=19$, the secondary family of Supplemental Sec.~S14, it lowers the miss of the site % (structural: size of the training systems, n = 19)
+labels). This regime, which DMRG solves, says what labels add where classical
 methods work, not where they fail; the untested cases and all estimates are in Supplemental Sec.~S14.
 
 \emph{A processor label.} A fourth test asked for one processor label with a proved interval below $\tau$ (at
@@ -785,12 +788,16 @@ With no reference value, the label's $\ms$ lies in a proved interval $0.50\,\tau
 this one label, at this one coupling, the distance to the ground-state value is proved to be at most that width. A
 classical energy gives a narrower interval here ($0.12\,\tau$). % src: ftx:intervals.dmrg_E0.m_s.w_over_tau (0.1232)
 The interval holds for any vector with that energy, so it does not show what the processor contributed. A control
-computed after the result shows how little its dynamics adds: the same pipeline applied to
-strings with no dynamics (the N\'eel string with independent bit flips at the device's in-sector rate) gives
-$0.56$--$0.58\,\tau$, which the device shots narrow by only $0.06$--$0.09\,\tau$, and the $1994$ configurations % src: file:phase3/full_runs/real_data/checks/r11/device_null_controls_Jz6.0_out.txt (0.56 to 0.58; 0.06 to 0.09; 1994)
-within two exchange moves of the N\'eel string give $0.21\,\tau$. At $\Jz=4.0$ device and noise-only strings % src: file:phase3/full_runs/real_data/checks/r11/device_null_controls_Jz6.0_out.txt (0.21)
-cannot be told apart ($2.36$--$2.40$ and $2.36$--$2.42\,\tau$), and those $1994$ configurations give $0.96\,\tau$ % src: file:phase3/full_runs/real_data/checks/r11/device_null_controls_Jz4.0_out.txt (2.36 to 2.40; 2.36 to 2.42; 1994; 0.96)
-there, below the tolerance that the device label misses (Supplemental Sec.~S14).
+computed after the result shows how little its dynamics adds (the widths of the control are floating-point
+evaluations of the formula of the proved interval, not proved intervals; a range spans two seeds of the random
+recovery of the sector and, for the strings with no dynamics, of the strings themselves): the same pipeline applied
+to strings with no dynamics (the N\'eel string with independent bit flips, with a probability per circuit chosen to
+match the device's in-sector fraction) gives $0.56$--$0.58\,\tau$, which the device shots narrow by only $0.06$--$0.09\,\tau$; a fixed % src: file:phase3/full_runs/real_data/checks/r11/device_null_controls_Jz6.0_out.txt (0.56 to 0.58; 0.06 to 0.09)
+set chosen without sampling, the $1994$ configurations within two exchange moves of the N\'eel string, gives % src: file:phase3/full_runs/real_data/checks/r11/device_null_controls_Jz6.0_out.txt (1994 configurations)
+$0.21\,\tau$ (the $65$ within one move: $0.67\,\tau$). At $\Jz=4.0$ device and noise-only strings cannot be told % src: file:phase3/full_runs/real_data/checks/r11/device_null_controls_Jz6.0_out.txt (0.21; 65 configurations; 0.67)
+apart ($2.36$--$2.40$ and $2.36$--$2.42\,\tau$; the proved interval of the stored label, from another draw of the % src: file:phase3/full_runs/real_data/checks/r11/device_null_controls_Jz4.0_out.txt (2.36 to 2.40; 2.36 to 2.42)
+recovery, is $2.47\,\tau$ wide), and the $1994$ configurations give $0.96\,\tau$ there, below the tolerance that % src: ftc:C1.rec.m_s.w_over_tau (2.466); file:phase3/full_runs/real_data/checks/r11/device_null_controls_Jz4.0_out.txt (1994; 0.96)
+the device label misses (Supplemental Sec.~S14).
 
 \emph{What the energy says where it certifies nothing.} For this method class and this model the answer is
 modest: the energy error per site estimates the size of the label error, within the limits listed above, and
@@ -968,7 +975,7 @@ energy-calibrated intervals of Proposition~\ref{prop:learn}(b) cover the truth a
 and learner, for every generated or shifted label set (with exact labels they coincide with the standard
 intervals, $0.90$--$0.91$). % src: lm2:coverage.exact.CSC.avg.covT_id (0.9021); lm1:coverage.exact.CSC.avg.covT_id (0.9105)
 With realistic labels---diagonalization in configurations sampled from the exact ground state, with the
-fewest samples that reach $\de$, subspaces that hold $22$--$60\%$ of the sector---standard intervals also cover the truth near the nominal rate: $0.91$ (averages) and $0.92$ (bonds) % src: lver:D2.value (0.909); lver:D1.value (0.920); file:phase3/full_runs/learning/RESULTS.md (0.22-0.60)
+fewest samples that reach $\de$, subspaces that hold $22$--$61\%$ of the sector---standard intervals also cover the truth near the nominal rate: $0.91$ (averages) and $0.92$ (bonds) % src: lver:D2.value (0.909); lver:D1.value (0.920); file:phase3/full_runs/learning/RESULTS.md (0.22-0.60); derived: 41 027 and 111 170 of the 184 756 configurations of the sector are 0.2221 and 0.6017, rounded outward
 with M1, $0.87$ and $0.91$ with M2 (bootstrap ranges: Supplemental Sec.~S8). This is the outcome declared as a null % src: lm2:coverage.gen5.SC.avg.covT_id (0.868); lm2:coverage.gen5.SC.nn.covT_id (0.915)
 (coverage at least $0.85$): on this benchmark, at this $\de$, the realistic generator does % src: def:phase3/full_runs/learning/DECLARATION.md (0.85)
 not defeat standard calibration, and its bias weakens order, the opposite sign to the heavy-hex case. The price is
@@ -1059,16 +1066,19 @@ models; the declared tests of the bias on emulated labels cover seven coupling--
 distribution,
 and the declared device test rests on a single job at one coupling, submitted later than declared.
 
-\emph{Relation to prior work.} Lemma~\ref{lem:dual} is the Lagrange-multiplier bound of Ref.~\cite{cohen1971}; the
+\emph{Relation to prior work.} The one-constraint bound of Lemma~\ref{lem:dual} is the Lagrange-multiplier bound that Ref.~\cite{manchanda2026}
+attributes to Ref.~\cite{cohen1971}, of which we could consult only the bibliographic record (our proof, with the
+attainment and the two-constraint form, is in Supplemental Sec.~S1); the
 $\sqrt{2\epsilon\chi}$ law at leading order and the bound $\chi\le2\,\mathrm{Var}/(n\Delta)$ are in
 Ref.~\cite{manchanda2026}; the convex-conjugate structure behind Theorems~\ref{thm:avg}(a) and~\ref{thm:cost} and
 the local-reset argument behind Theorem~\ref{thm:local} are elementary, and we do not claim them as new.
 Theorem~\ref{thm:strong} rests on the stability theorem of Ref.~\cite{nsy2022} and the clustering theorem of
-Ref.~\cite{nachtergaele2006}; for translation-invariant interactions on cubic volumes with periodic boundary
-conditions, a unique ground state with a gap uniform in the volume under relatively bounded quantum perturbations
-of a classical model is a theorem of Ref.~\cite{yarotsky2006}, which lists the earlier results. Ours are the
+Ref.~\cite{nachtergaele2006}. Reference~\cite{yarotsky2006}, which lists the earlier results, proves for
+translation-invariant interactions on cubic volumes with periodic boundary conditions that a classical model with
+a non-degenerate product ground state and a local gap keeps a unique ground state, with a gap uniform in the
+volume, under sufficiently weak relatively bounded quantum perturbations. Ours are the
 site-by-site classical bound on the open patches at every size, the
-verification of the hypotheses with an open boundary, and the reading in terms of the window. The conformal
+verification of the hypotheses of Ref.~\cite{nsy2022} with an open boundary, and the reading in terms of the window. The conformal
 statements are elementary (Sec.~\ref{sec:learn}). The certified
 side borrows its principle from the ground-state
 certificates of Refs.~\cite{wang2024prx,wang2026scipost} and its relaxation from the local-consistency
@@ -1092,7 +1102,8 @@ $0.135\,\tau$ and $0.143\,\tau$ of the reference ($0.21\,\tau$ over the $27$). N
 to that calculation, none of the seven labels we analysed is certified, and the order parameter needs an energy
 error per site more than $110$ times smaller at $57$ qubits ($79$ at $115$). % src: rdq:accuracy_factors.57.m_s.headline_F_A (110); rdq:accuracy_factors.115.m_s.headline_F_A (79)
 One processor data point of our own has intervals proved below the tolerance with no reference value, at a
-coupling where a classical energy gives a narrower one and strings with no dynamics give one nearly as narrow.
+coupling where, for the order parameter, a classical energy gives a narrower interval, strings with no dynamics one
+nearly as narrow and a fixed set of configurations near the N\'eel string, chosen without sampling, a narrower one.
 Where the energy certifies nothing, the public labels
 are over-ordered, as the first stage of the generating method is in our emulation and on the processor; for that
 stage the bias follows the energy error per site, largely through the endpoints of the path, in a curve that
@@ -1202,7 +1213,7 @@ started; it returned $48$ certificates, all accepted by both verifiers (Suppleme
 \emph{Device run.} The two jobs of Sec.~\ref{sec:method} ran on \texttt{ibm\_kingston} (IBM Heron r2) through the IBM
 Quantum free plan on 2026-10-31, with $10^5$ shots per circuit at $\Jz=1.2$ and $23\,000$ at $1.6$ and $4.0$ ($421$\,s % src: file:phase3/full_runs/qpu/RESULTS.md (10⁵; 23,000; 421 s)
 of processor time); the declared job at $\Jz=6.0$, with $40\,000$ shots per circuit, ran on the same device on % src: file:phase3/full_runs/final_tests/jobs/C_20261108/prep.json (6.0; 40000)
-2026-11-10 ($119$\,s). In all three a routed layout moves four boundary sites ($17\%$ more two-qubit gates and $55\%$ more depth than a native embedding). % src: file:phase3/full_runs/final_tests/RESULTS.md (2026-11-10; 119.0 s); file:phase3/full_runs/qpu/RESULTS.md (4, +17 %); file:phase3/full_runs/qpu/RESULTS.md (+55 % depth)
+2026-11-10 ($119$\,s). In all three a routed layout moves four boundary sites ($17\%$ more two-qubit gates and up to $55\%$ more two-qubit depth than a native embedding). % src: file:phase3/full_runs/final_tests/RESULTS.md (2026-11-10; 119.0 s); file:phase3/full_runs/qpu/RESULTS.md (4, +17 %); file:phase3/full_runs/qpu/RESULTS.md (+55 % depth)
 The noiseless control simulates the identical circuits with matrix-product states (Supplemental Sec.~S6).
 
 \emph{Learning test.} Public labels (Sec.~\ref{sec:realistic}): the published site magnetizations and energies at the

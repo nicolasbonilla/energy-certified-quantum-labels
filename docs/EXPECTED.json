@@ -2,21 +2,21 @@
   "certificates": 316,
   "guardian": {
     "main.tex": {
-      "CONTEXT": 163,
+      "CONTEXT": 165,
       "MISSING": 0,
-      "PATH": 270,
-      "STRING": 438,
+      "PATH": 271,
+      "STRING": 443,
       "UNCHECKED": 72,
-      "total": 943,
+      "total": 951,
       "unresolved_items": 0
     },
     "supplement.tex": {
       "CONTEXT": 545,
       "MISSING": 0,
       "PATH": 983,
-      "STRING": 2038,
-      "UNCHECKED": 848,
-      "total": 4414,
+      "STRING": 2046,
+      "UNCHECKED": 851,
+      "total": 4425,
       "unresolved_items": 0
     }
   },
