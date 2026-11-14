@@ -1,0 +1,56 @@
+== C-D accuracy law: de*_law / de*_out at the averaged rows with Jz >= 2.0
+rows 63 ; inside [0.8, 1.25]: 57, range 0.9968 - 1.2162 ; outside: 6
+   outside: (57, 5.0, 'm_s') ratio 1.3118 ; f_out = 8.784
+   outside: (115, 5.0, 'm_s') ratio 1.3507 ; f_out = 11.439
+   outside: (57, 5.5, 'm_s') ratio 1.4473 ; f_out = 11.729
+   outside: (115, 5.5, 'm_s') ratio 1.6265 ; f_out = 20.918
+   outside: (57, 6.0, 'm_s') ratio 1.6301 ; f_out = 13.928
+   outside: (115, 6.0, 'm_s') ratio 1.7752 ; f_out = 32.842
+   rows with no law ratio (no eps_tau_out or no chi): [(115, 6.0, 'Czz_bar')]
+   min f_out among the outside rows: 8.784
+   law ratio with the INNER threshold at the same rows (de*_law/de*_in): range 0.9160 - 1.5597
+
+== C-E intensivity: de*_out(115)/de*_out(57), Jz >= 2.0
+averages: 29 rows, range 1.0007 - 1.1720 (min at (5.5, 'm_s'), max at (2.0, 'm_s'))
+local: [(0.4958352626976017, 4.0, 'Z_bulk')]  57/115 = 0.49565
+the same below Jz = 2.0 (not part of the declared claim): [('1.1', 'C2_bar', 0.0), ('1.1', 'Czz_bar', 0.369), ('1.1', 'm_s', 0.0), ('1.2', 'C2_bar', 0.0), ('1.2', 'Czz_bar', 0.655), ('1.2', 'm_s', 0.242), ('1.3', 'C2_bar', 0.102), ('1.3', 'Czz_bar', 0.828), ('1.3', 'm_s', 0.721), ('1.4', 'C2_bar', 0.561), ('1.4', 'Czz_bar', 0.92), ('1.4', 'm_s', 0.965), ('1.6', 'C2_bar', 0.952), ('1.6', 'Czz_bar', 1.011), ('1.6', 'm_s', 1.135), ('1.8', 'C2_bar', 1.063), ('1.8', 'Czz_bar', 1.041), ('1.8', 'm_s', 1.168)]
+with the inner thresholds, Jz >= 2.0 averages: 29 rows, range 1.0399 - 1.1895
+
+== eps_dig / Delta_in at the certified rows (in-sector gap from the R2 reference where it exists)
+certified rows: 37 ; with a recorded in-sector gap: 35 ; max eps_dig/Delta_in = 0.1057 at (115, 3.3, 'm_s') ; max at n = 57: 0.0410 at (57, 3.6, 'm_s')
+   certified rows without an in-sector gap reference: [(57, 3.4, 'Czz_bar'), (57, 3.4, 'm_s')]
+   eps_dig/Delta_in at (57, 1.6, 'm_s'): 0.5758
+   eps_dig/Delta_in at (115, 1.6, 'm_s'): 1.2161
+
+== inner vs outer width at E_lo, averaged rows with Jz >= 1.6, n = 57
+max (w_out - w_in)/w_in at E_lo: 0.0054 at (57, 1.8, 'm_s') ; n = 115: 0.0056 at (115, 3.0, 'm_s')
+
+== direction of main Fig. 2(a): the colour and the teal contour are the INNER width. Inner vs outer thresholds (m_s, n = 57)
+   Jz=1.1 de*_in=5.4012e-05 de*_out=4.9178e-05 in/out = 1.0983 ; at the dataset's energy: w_in/tau = 15.6681, w_out/tau = 15.8359
+   Jz=1.4 de*_in=1.3244e-04 de*_out=1.3142e-04 in/out = 1.0077 ; at the dataset's energy: w_in/tau = 10.1969, w_out/tau = 10.2855
+   Jz=1.6 de*_in=2.2255e-04 de*_out=2.2219e-04 in/out = 1.0016 ; at the dataset's energy: w_in/tau = 7.5515, w_out/tau = 7.6128
+   Jz=2.0 de*_in=5.1785e-04 de*_out=5.1769e-04 in/out = 1.0003 ; at the dataset's energy: w_in/tau = 4.0510, w_out/tau = 4.0691
+   Jz=3.0 de*_in=2.1444e-03 de*_out=2.1433e-03 in/out = 1.0005 ; at the dataset's energy: w_in/tau = 1.1496, w_out/tau = 1.1564
+   Jz=3.2 de*_in=2.6540e-03 de*_out=2.6527e-03 in/out = 1.0005 ; at the dataset's energy: w_in/tau = 0.9800, w_out/tau = 0.9801
+   Jz=3.4 de*_in=3.2326e-03 de*_out=3.2295e-03 in/out = 1.0010 ; at the dataset's energy: w_in/tau = 0.8647, w_out/tau = 0.8714
+   Jz=4.0 de*_in=5.3562e-03 de*_out=5.2927e-03 in/out = 1.0120 ; at the dataset's energy: w_in/tau = 0.5534, w_out/tau = 0.5577
+   Jz=4.5 de*_in=7.2856e-03 de*_out=7.2308e-03 in/out = 1.0076 ; at the dataset's energy: w_in/tau = 0.4037, w_out/tau = 0.4071
+   Jz=5.0 de*_in=9.3687e-03 de*_out=8.8577e-03 in/out = 1.0577 ; at the dataset's energy: w_in/tau = 0.2945, w_out/tau = 0.2967
+   Jz=5.5 de*_in=1.1456e-02 de*_out=1.0841e-02 in/out = 1.0567 ; at the dataset's energy: w_in/tau = 0.2425, w_out/tau = 0.2443
+   Jz=6.0 de*_in=1.3856e-02 de*_out=1.2636e-02 in/out = 1.0965 ; at the dataset's energy: w_in/tau = 0.2097, w_out/tau = 0.2112
+
+== Table S (safe-to-train summary), own values
+   n= 57 m_s        w_in(lo)/tau at 1.2: 12.02 ; at 1.6: 6.67 ; w_out(E_dig)/tau at the last point (Jz=6.0): 0.211
+   n= 57 Czz_bar    w_in(lo)/tau at 1.2: 7.06 ; at 1.6: 4.79 ; w_out(E_dig)/tau at the last point (Jz=6.0): 0.225
+   n= 57 C2_bar     w_in(lo)/tau at 1.2: 15.56 ; at 1.6: 9.43 ; w_out(E_dig)/tau at the last point (Jz=6.0): 0.381
+   n= 57 Z_bulk     w_in(lo)/tau at 1.2: 36.38 ; at 1.6: 22.54 ; w_out(E_dig)/tau at the last point (Jz=6.0): 0.991
+   n= 57 Z_boundary w_in(lo)/tau at 1.2: 35.82 ; at 1.6: 24.90 ; w_out(E_dig)/tau at the last point (Jz=6.0): 1.051
+   n= 57 Czz_edge   w_in(lo)/tau at 1.2: 31.03 ; at 1.6: 20.91 ; w_out(E_dig)/tau at the last point (Jz=6.0): 0.988
+   n= 57 Z_loop     w_in(lo)/tau at 1.2: 56.21 ; at 1.6: 32.35 ; w_out(E_dig)/tau at the last point (Jz=6.0): 1.388
+   n=115 m_s        w_in(lo)/tau at 1.2: 10.62 ; at 1.6: 6.28 ; w_out(E_dig)/tau at the last point (Jz=6.0): 0.131
+   n=115 Czz_bar    w_in(lo)/tau at 1.2: 6.84 ; at 1.6: 4.79 ; w_out(E_dig)/tau at the last point (Jz=6.0): 0.145
+   n=115 C2_bar     w_in(lo)/tau at 1.2: 14.31 ; at 1.6: 9.08 ; w_out(E_dig)/tau at the last point (Jz=6.0): 0.240
+   n=115 Z_bulk     w_in(lo)/tau at 1.2: -- ; at 1.6: -- ; w_out(E_dig)/tau at the last point (Jz=4.0): 3.004
+   m_s width at the OOD point 1.2 (n=57): w_in(E_lo) = 0.4617 ; window at E_dig (inner) = 0.5181
+   m_s at 1.6 (n=57): inner window at E_lo [0.5765, 0.8846] ; at E_dig [0.5457, 0.8947] (w = 0.3490 = 7.55 tau) ; outer at E_up [0.5073, 0.9056] (8.62 tau)
+   local labels at (57, 1.6): w_in(E_lo)/2 = {'Z_bulk': 0.5223, 'Z_boundary': 0.6173, 'Czz_edge': 0.4963, 'Z_loop': 0.6005}

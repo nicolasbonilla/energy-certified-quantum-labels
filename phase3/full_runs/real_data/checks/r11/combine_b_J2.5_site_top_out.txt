@@ -1,0 +1,10 @@
+combination model, family top: 91200 training rows, 30 columns, 1s
+selected {'kind': 'rff', 'ell': 8.0, 'alpha': 0.0001, 'cv_mae': 0.0021810047600722853, 'train_mae': 0.0022066002014695277}  56s
+stored stack model for comparison: {'kind': 'rff', 'ell': 8.0, 'alpha': 0.001, 'cv_mae': 0.0019902656788007224}
+instance 0: label+13-site clusters 0.0385 | stored stack (no label) 0.0304 | emb13 0.0185 | emb19 (best classical) 0.0084 | q_top 0.2337
+instance 1: label+13-site clusters 0.0490 | stored stack (no label) 0.0361 | emb13 0.0331 | emb19 (best classical) 0.0106 | q_top 0.2886
+instance 2: label+13-site clusters 0.0348 | stored stack (no label) 0.0359 | emb13 0.0220 | emb19 (best classical) 0.0097 | q_top 0.2044
+instance 3: label+13-site clusters 0.0368 | stored stack (no label) 0.0366 | emb13 0.0226 | emb19 (best classical) 0.0102 | q_top 0.2613
+instance 4: label+13-site clusters 0.0401 | stored stack (no label) 0.0339 | emb13 0.0213 | emb19 (best classical) 0.0098 | q_top 0.2429
+instance 5: label+13-site clusters 0.0403 | stored stack (no label) 0.0301 | emb13 0.0226 | emb19 (best classical) 0.0090 | q_top 0.2494
+mean miss (this type): combined 0.0399, stack 0.0338 (change +18.0 %; combined better in 1 of 6), emb19 0.0096 (combined better in 0 of 6)

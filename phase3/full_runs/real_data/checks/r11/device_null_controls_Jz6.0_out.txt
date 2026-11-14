@@ -1,0 +1,32 @@
+device_null_controls.py, job C, Jz = 6.0, n = 57; 40000 shots per circuit, 10 circuits
+per circuit: in-sector fraction of the device, matched independent flip probability
+  k= 1  in-sector 0.2825  p 0.0396
+  k= 2  in-sector 0.2173  p 0.0619
+  k= 3  in-sector 0.1833  p 0.0838
+  k= 4  in-sector 0.1717  p 0.0942
+  k= 5  in-sector 0.1536  p 0.1150
+  k= 6  in-sector 0.1511  p 0.1184
+  k= 7  in-sector 0.1409  p 0.1341
+  k= 8  in-sector 0.1405  p 0.1346
+  k= 9  in-sector 0.1348  p 0.1447
+  k=10  in-sector 0.1340  p 0.1464
+k=1    seed 1 shots   40000 | device eps 0.2775 w/tau 0.5673 D 20308 | N1 noise-only eps 0.3337 w/tau 0.6420 D 15503 | N2 site-shuffled eps 0.3278 w/tau 0.6341 D 21687  (2 s)
+k=1    seed 2 shots   40000 | device eps 0.2822 w/tau 0.5736 D 20288 | N1 noise-only eps 0.3346 w/tau 0.6431 D 15676 | N2 site-shuffled eps 0.4287 w/tau 0.7694 D 21689  (2 s)
+k<=3   seed 1 shots  120000 | device eps 0.2355 w/tau 0.5099 D 86554 | N1 noise-only eps 0.3076 w/tau 0.6072 D 69305 | N2 site-shuffled eps 0.3116 w/tau 0.6125 D 91973  (7 s)
+k<=3   seed 2 shots  120000 | device eps 0.2332 w/tau 0.5067 D 86602 | N1 noise-only eps 0.3084 w/tau 0.6083 D 69414 | N2 site-shuffled eps 0.3336 w/tau 0.6419 D 91880  (7 s)
+k<=10  seed 1 shots  400000 | device eps 0.2285 w/tau 0.5003 D 364055 | N1 noise-only eps 0.2788 w/tau 0.5691 D 328152 | N2 site-shuffled eps 0.3121 w/tau 0.6132 D 371015  (26 s)
+k<=10  seed 2 shots  400000 | device eps 0.2245 w/tau 0.4947 D 364045 | N1 noise-only eps 0.2852 w/tau 0.5776 D 327978 | N2 site-shuffled eps 0.3115 w/tau 0.6124 D 370873  (15 s)
+Neel string and its 64 single bond flips: D = 65, eps = 0.3488, m_s interval 0.6621 tau
+all configurations within two exchange moves of the Neel string: D = 1994, eps = 0.0454, m_s interval 0.2091 tau
+
+SUMMARY (Jz = 6.0, all ten circuits, two recovery seeds; widths of the m_s interval in units of tau, every range
+rounded outward to two decimals; floating-point evaluation of the formula of the proved interval):
+  device shots: 0.49 to 0.51 tau (364045 to 364055 configurations)
+  noise-only strings (N1): 0.56 to 0.58 tau
+  site-shuffled device shots (N2): 0.61 to 0.62 tau
+  Neel string and its 64 single bond flips (65 configurations): 0.67 tau
+  all configurations within two exchange moves of the Neel string (1994 configurations): 0.21 tau
+  noise-only minus device: 0.06 to 0.09 tau
+  device shots, first circuit only: 0.56 to 0.58 tau
+  device shots, first three circuits: 0.50 to 0.51 tau
+  in-sector fraction of the device shots: 0.28 on the first circuit, 0.13 on the tenth (rounded to two decimals)

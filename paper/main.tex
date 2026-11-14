@@ -172,12 +172,14 @@ curve per coupling in the energy error per site, found after the data were in ha
 fixed in writing beforehand. The curve passes its declared test on new emulated labels and fails it on the
 public labels, on its second condition at $115$ qubits; corrected labels do not beat the best classical % src: def:phase3/full_runs/real_data/DECLARATION.md (n = 115)
 estimates; and one processor label has an
-interval proved below $\tau$, at a coupling where a classical energy does better.
+interval proved below $\tau$, at a coupling where a classical energy does better and strings with no dynamics do
+nearly as well.
 \item \emph{Learning} (Sec.~\ref{sec:learn}). Energy intervals of the labels carried through a learner and its
 calibration (Proposition~\ref{prop:learn}: conformal prediction with set-valued
 labels~\cite{javanmardi2023,cauchois2022}, here intervals supplied by the physics, and a floor that holds for any
 learner), tested on the public labels and on the public benchmark of Ref.~\cite{huang2022}: standard intervals
-follow the labels, and a guarantee on predictions needs calibration on labels certified well below the tolerance.
+follow the labels, and with the interval score used here a guarantee on predictions needs calibration on labels
+certified well below the tolerance.
 \end{enumerate}
 The certified statuses of the public labels rest on one hypothesis, that the published energy, site
 magnetizations and correlations are expectation values of one state; the ``not certified'' statuses do not use it
@@ -193,7 +195,7 @@ by their energy (Theorem~\ref{thm:local}(c), Proposition~\ref{prop:W}).
 \caption{\label{fig:landscape}What a sample's energy certifies, and what the first stage of the method class does
 inside the window ($n=57$). (a) The range of the staggered magnetization allowed by the energy, over the coupling $\Jz$ and the energy error per site
 $\de$: the colour is the width of that range, i.e.\ the spread of $\ms$ over all sector states with an
-error per site of at most $\de$ (inner side, from the stored states, as in Supplemental Fig.~S1; in units of $\tau$, log scale), a property of the model. Teal line: width $=\tau=0.06\,|m_s^{\rm GS}|$; below it the sector window is at most $\tau$ wide. % src: def:phase3/full_runs/map/DECLARATION.md (tau = 0.06|O_GS|)
+error per site of at most $\de$ (inner side, from the stored states, as in Supplemental Fig.~S1; in units of $\tau$, log scale), a property of the model. Teal line: width $=\tau=0.06\,|m_s^{\rm GS}|$ on that inner side; the threshold of the outer side, below which the sector window is proved at most $\tau$ wide, lies at most $9\%$ lower at the twelve couplings compared ($0.2\%$ at $\Jz=1.6$--$3.4$). % src: def:phase3/full_runs/map/DECLARATION.md (tau = 0.06|O_GS|); file:paper/reviews/R10_2026-11-12/scratch/math-map-logic/07_other_claims_out.txt (in/out = 1.0983 at Jz = 1.1, the largest; at most 1.0016 over Jz = 1.6-3.4); derived: 1 - 1/1.0983 = 8.95 % rounded up to 9 %, 1 - 1/1.0016 = 0.16 % rounded up to 0.2 %
 Black line: the published energy error of the dataset at each of its 50 couplings (one dot per coupling, as published, its zigzag at large $\Jz$ included), the four % src: file:paper/figures/pgf_composite_rd/export_check.txt (50 couplings)
 test couplings included.
 (b) The width of the interval of $\ms$ at the published energy, in units of $\tau$, with the statuses of
@@ -630,7 +632,8 @@ $n=115$ it does not: its energy error at the published budget is $3.82$--$5.94$ 
 published final one, so $n=115$ emulation numbers describe the method class at that budget only. The emulation
 omits the final basis-optimization step. Built as the dataset paper's text and diagram describe it, with the rotation
 on the target qubit of each pair of CNOTs, that step gave no energy gain in our emulation. The authors'
-code~\cite{jaderberg2026data}, which we read and did not run, puts the rotation on the control qubit, one angle per
+code~\cite{jaderberg2026data}, which we read and did not run (that it produced the published files is the authors'
+statement), puts the rotation on the control qubit, one angle per
 edge (the optimized angles are not public), and evaluates the labels in the rotated state; this block is one of two
 variants we had built before we knew the code, and in our emulation it reproduces the reported gain and leaves the
 bias-versus-energy relation unchanged. The order and orientation of the CNOTs and the optimizer were not compared (Supplemental
@@ -655,7 +658,8 @@ at $1.1$ for $n=115$. Taken one by one, $32\,785$ of the $32\,800$ pairs of a pu
 (sites, nearest- and second-neighbour correlations and loops, at both sizes) lie on the N\'eel side of the
 reference, and the error falls with the coupling: its rank correlation with $\Jz$ lies between $-0.996$ and % src: rdp:sizes.115.P4.sites.spearman (-0.9955); derived: -0.99549 rounded outward to -0.996 (lesson 7b)
 $-0.971$ in the eight cases ($50$ couplings each). Sign and trend were tests fixed in writing before they ran, after an initial look at % src: rdp:sizes.57.P4.loops.spearman (-0.9720); derived: -0.97196 rounded outward to -0.971 (lesson 7b); rdp:sizes.57.n_couplings (50)
-the data that had already shown them for $\ms$ (Methods; exceptions in Supplemental Sec.~S18). The
+the data that had already shown them for $\ms$ and, through two summary statistics, for the single sites (Methods;
+exceptions in Supplemental Sec.~S18). The
 public labels come after the final optimization, and at equal coupling their bias is smaller than that of the
 emulation: $+0.077$ against $+0.139$ at $n=57$, $\Jz=1.6$. % src: rdp:sizes.57.P5.rows[Jz=1.6].Delta (0.0771); emu(57,1.6):var.primary.err.dm_s (0.1390)
 
@@ -740,6 +744,7 @@ ratio of the bias to the curve to lie in $[0.75,1.3]$. The curve passes: the mea
 $0.06\,\tau$ and from $2.9$ to $0.34\,\tau$ (greatest single miss $0.14$ and $0.59\,\tau$), with ratios of % src: fta:summary.57.miss_curve19.mean (0.0619); fta:summary.115.raw.mean (2.904); fta:summary.115.miss_curve19.mean (0.3398); fta:summary.57.miss_curve19.max (0.1322); fta:summary.115.miss_curve19.max (0.5840); derived: maxima rounded up, 0.1322 to 0.14 and 0.5840 to 0.59
 $0.88$--$1.06$. Linear interpolation of the exploratory misses gives $0.06$ and $0.35\,\tau$ and so predicted this % src: fta:rule.ratio_min (0.8849); fta:rule.ratio_max (1.0568); ftp:interp_mean.57 (0.0635); ftp:interp_mean.115 (0.3511)
 outcome: the test probes only surprises between grid points, on the same lattice and pipeline.
+As in the exploration, at $n=115$ the chord ($0.11\,\tau$) and the three classical forms ($0.08$, $0.02$ and $0.01\,\tau$) do better. % src: fta:versus.115.miss_chord (0.1054); fta:versus.115.miss_a_b_over_n (0.0824); fta:versus.115.miss_a_b_edges_over_n (0.0189); fta:versus.115.miss_a_b_over_sqrt_n (0.0110)
 
 \emph{The curve on the public labels.} A second test applies the same recipe and rule to the public labels at all
 $50$ couplings of each size, the curve being read at each label's published energy. It was fixed after an initial % src: rdp:sizes.57.n_couplings (50)
@@ -768,7 +773,8 @@ instances), in all $12$ instances, and DMRG on the target at bond dimension $32$
 better still (a possible reason, the locality of gapped ground states, is discussed in Supplemental Sec.~S14; we
 did not measure the gap of these instances). Against a regression on the same local
 couplings, a comparison added after the outcome was known, the label helps in the mean: the miss falls by $19\%$ and % src: ftp:gain_over_reg_1.6.q_top (19.4)
-$14\%$, in $4$ of $6$ and $6$ of $6$ instances. This regime, which DMRG solves, says what labels add where classical % src: ftp:gain_over_reg_2.5.q_top (13.8); file:paper/reviews/R10_2026-11-12/scratch/phys-declared-stats/recompute_table2_out.txt (wins 4/6; wins 6/6)
+$14\%$, in $4$ of $6$ and $6$ of $6$ instances; a model that combines the label with the clusters, tried afterwards, % src: ftp:gain_over_reg_2.5.q_top (13.8); file:paper/reviews/R10_2026-11-12/scratch/phys-declared-stats/recompute_table2_out.txt (wins 4/6; wins 6/6)
+reaches the $19$-site cluster in no instance. This regime, which DMRG solves, says what labels add where classical
 methods work, not where they fail; the untested cases and all estimates are in Supplemental Sec.~S14.
 
 \emph{A processor label.} A fourth test asked for one processor label with a proved interval below $\tau$ (at
@@ -778,6 +784,13 @@ conditions that could stop it but not cause it, ran on 2026-11-10, and both bit-
 With no reference value, the label's $\ms$ lies in a proved interval $0.50\,\tau$ wide ($\Czz$: $0.57\,\tau$), so for % src: ft3:C3.rec.m_s.w_over_tau (0.4992); derived: 0.4992 ceiled to 0.50 (a width that bounds the distance); ft3:C3.rec.Czz_bar.w_over_tau (0.5678)
 this one label, at this one coupling, the distance to the ground-state value is proved to be at most that width. A
 classical energy gives a narrower interval here ($0.12\,\tau$). % src: ftx:intervals.dmrg_E0.m_s.w_over_tau (0.1232)
+The interval holds for any vector with that energy, so it does not show what the processor contributed. A control
+computed after the result shows how little its dynamics adds: the same pipeline applied to
+strings with no dynamics (the N\'eel string with independent bit flips at the device's in-sector rate) gives
+$0.56$--$0.58\,\tau$, which the device shots narrow by only $0.06$--$0.09\,\tau$, and the $1994$ configurations % src: file:phase3/full_runs/real_data/checks/r11/device_null_controls_Jz6.0_out.txt (0.56 to 0.58; 0.06 to 0.09; 1994)
+within two exchange moves of the N\'eel string give $0.21\,\tau$. At $\Jz=4.0$ device and noise-only strings % src: file:phase3/full_runs/real_data/checks/r11/device_null_controls_Jz6.0_out.txt (0.21)
+cannot be told apart ($2.36$--$2.40$ and $2.36$--$2.42\,\tau$), and those $1994$ configurations give $0.96\,\tau$ % src: file:phase3/full_runs/real_data/checks/r11/device_null_controls_Jz4.0_out.txt (2.36 to 2.40; 2.36 to 2.42; 1994; 0.96)
+there, below the tolerance that the device label misses (Supplemental Sec.~S14).
 
 \emph{What the energy says where it certifies nothing.} For this method class and this model the answer is
 modest: the energy error per site estimates the size of the label error, within the limits listed above, and
@@ -886,6 +899,8 @@ none at the test couplings. The price is paid in labels: of the $19$ and $24$ dr
 $15$ and $21$ are within $\tau$ of the truth as well, which a filter that uses no reference value cannot % src: rdq:filter.57_m_s.exact.dropped_within_tau (15); rdq:filter.115_m_s.exact.dropped_within_tau (21)
 know. The filter buys a guarantee, not accuracy: on the kept labels an exact $19$-site calculation already lies
 within $0.135\,\tau$ and $0.143\,\tau$ of the truth. % src: rdq:filter.57_m_s.exact.classical_n19.max_over_kept (0.1344); rdq:filter.115_m_s.exact.classical_n19.max_over_kept (0.1424); derived: upper bounds ceiled, 0.1344 to 0.135 and 0.1424 to 0.143
+The kept public labels are themselves closer to the truth than that calculation at all $21$ kept couplings at $n=115$ % src: rdp:post_hoc.per_size.115.kept.n (21); derived: the list post_hoc.per_size.115.kept.n19_closer is empty
+and at $11$ of the $26$ at $n=57$ (Supplemental Sec.~S18). % src: rdp:post_hoc.per_size.57.kept.n (26); derived: 26 - 15 = 11, with 15 couplings in post_hoc.per_size.57.kept.n19_closer
 
 \emph{The learner-side intervals.} A learner deployed on unlabelled inputs has no label at the query, only the energy
 intervals of its training labels. Calibrated on all $45$ public labels, the intervals of (b) cannot certify a
@@ -908,7 +923,7 @@ the truth in $1000$ of $1000$ (split, query) cases, which meets the declared rul
 result. (i) A control model, a cubic trained on every public label outside the calibration and query couplings,
 uncertified ones included, passes as well: the guarantee comes from calibrating on labels certified at their own
 energy with the interval score, not from the choice of training labels; with the standard score on the same splits
-the intervals contain the truth in at most $5.6\%$ of the cases (post hoc). (ii) The truth varies by only about % src: rdl:independent_check.sizes.57.f3.S_1_2.models.M2.standard_score_posthoc.frac_pairs_C (0.056)
+the intervals of these models contain the truth in at most $5.6\%$ of the cases (post hoc; a constant predictor, with standard intervals $0.16$--$0.51\,\tau$ wide, in $80.1\%$). (ii) The truth varies by only about % src: rdl:independent_check.sizes.57.f3.S_1_2.models.M2.standard_score_posthoc.frac_pairs_C (0.056); rdl:independent_check.sizes.57.f3.S_1_2.models.const_posthoc.standard_score_posthoc.frac_pairs_C (0.801); rdl:independent_check.sizes.57.f3.S_1_2.models.const_posthoc.standard_score_posthoc.width_tau (0.1637, 0.5083); derived: range rounded outward
 $0.30\,\tau$ over that range, so the test shows that the guarantee survives the learner and its calibration, not % src: rdl:independent_check.sizes.57.f3.S_1_2.truth_change_over_tau (0.2947, 0.3000)
 that a hard function was learned; the cases are drawn from $18$ couplings and are not independent trials. % src: rdl:summary.57.f3.sets.S_1_2.size (18)
 (iii) Labels certified at the tolerance itself are not enough: on all $26$ certified labels the same test fails on % src: rdl:summary.57.f3.sets.S.size (26)
@@ -953,7 +968,7 @@ energy-calibrated intervals of Proposition~\ref{prop:learn}(b) cover the truth a
 and learner, for every generated or shifted label set (with exact labels they coincide with the standard
 intervals, $0.90$--$0.91$). % src: lm2:coverage.exact.CSC.avg.covT_id (0.9021); lm1:coverage.exact.CSC.avg.covT_id (0.9105)
 With realistic labels---diagonalization in configurations sampled from the exact ground state, with the
-fewest samples that reach $\de$---standard intervals also cover the truth near the nominal rate: $0.91$ (averages) and $0.92$ (bonds) % src: lver:D2.value (0.909); lver:D1.value (0.920)
+fewest samples that reach $\de$, subspaces that hold $22$--$60\%$ of the sector---standard intervals also cover the truth near the nominal rate: $0.91$ (averages) and $0.92$ (bonds) % src: lver:D2.value (0.909); lver:D1.value (0.920); file:phase3/full_runs/learning/RESULTS.md (0.22-0.60)
 with M1, $0.87$ and $0.91$ with M2 (bootstrap ranges: Supplemental Sec.~S8). This is the outcome declared as a null % src: lm2:coverage.gen5.SC.avg.covT_id (0.868); lm2:coverage.gen5.SC.nn.covT_id (0.915)
 (coverage at least $0.85$): on this benchmark, at this $\de$, the realistic generator does % src: def:phase3/full_runs/learning/DECLARATION.md (0.85)
 not defeat standard calibration, and its bias weakens order, the opposite sign to the heavy-hex case. The price is
@@ -1049,7 +1064,10 @@ $\sqrt{2\epsilon\chi}$ law at leading order and the bound $\chi\le2\,\mathrm{Var
 Ref.~\cite{manchanda2026}; the convex-conjugate structure behind Theorems~\ref{thm:avg}(a) and~\ref{thm:cost} and
 the local-reset argument behind Theorem~\ref{thm:local} are elementary, and we do not claim them as new.
 Theorem~\ref{thm:strong} rests on the stability theorem of Ref.~\cite{nsy2022} and the clustering theorem of
-Ref.~\cite{nachtergaele2006}; ours are the site-by-site classical bound on the open patches at every size, the
+Ref.~\cite{nachtergaele2006}; for translation-invariant interactions on cubic volumes with periodic boundary
+conditions, a unique ground state with a gap uniform in the volume under relatively bounded quantum perturbations
+of a classical model is a theorem of Ref.~\cite{yarotsky2006}, which lists the earlier results. Ours are the
+site-by-site classical bound on the open patches at every size, the
 verification of the hypotheses with an open boundary, and the reading in terms of the window. The conformal
 statements are elementary (Sec.~\ref{sec:learn}). The certified
 side borrows its principle from the ground-state
@@ -1070,11 +1088,12 @@ dataset, under hypothesis~H of Table~\ref{tab:status}, the published energy and 
 order parameter in exact arithmetic, with no reference value, at
 $26$ of its $45$ training couplings at $57$ qubits and at $21$ at $115$ ($27$ with certificates added after the % src: rdq:jstar.57_m_s.sec2 (26; 3.5); rdq:jstar.115_m_s.sec2 (21; 4.0); rdeq:jstar.115_m_s.sec2_e1 (27; 3.4)
 analysis was declared), where a $19$-site exact calculation is already within % (structural: size of the exact calculation, n = 19)
-$0.135\,\tau$ and $0.143\,\tau$ of the reference. Near the isotropic point, where a certified label would add % src: rdq:filter.57_m_s.exact.classical_n19.max_over_kept (0.1344); rdq:filter.115_m_s.exact.classical_n19.max_over_kept (0.1424); derived: upper bounds ceiled, 0.1344 to 0.135 and 0.1424 to 0.143
+$0.135\,\tau$ and $0.143\,\tau$ of the reference ($0.21\,\tau$ over the $27$). Near the isotropic point, where a certified label would add % src: rdq:filter.57_m_s.exact.classical_n19.max_over_kept (0.1344); rdq:filter.115_m_s.exact.classical_n19.max_over_kept (0.1424); derived: upper bounds ceiled, 0.1344 to 0.135 and 0.1424 to 0.143; file:phase3/full_runs/real_data/checks/r11/fn_abstract_n19_percent_out.txt (27 kept couplings; 0.2032 tau); derived: 0.2032 rounded up to 0.21
 to that calculation, none of the seven labels we analysed is certified, and the order parameter needs an energy
 error per site more than $110$ times smaller at $57$ qubits ($79$ at $115$). % src: rdq:accuracy_factors.57.m_s.headline_F_A (110); rdq:accuracy_factors.115.m_s.headline_F_A (79)
 One processor data point of our own has intervals proved below the tolerance with no reference value, at a
-coupling where a classical energy gives a narrower one. Where the energy certifies nothing, the public labels
+coupling where a classical energy gives a narrower one and strings with no dynamics give one nearly as narrow.
+Where the energy certifies nothing, the public labels
 are over-ordered, as the first stage of the generating method is in our emulation and on the processor; for that
 stage the bias follows the energy error per site, largely through the endpoints of the path, in a curve that
 passed a declared test on emulated labels and failed its declared test on the public labels, on its second
@@ -1183,7 +1202,7 @@ started; it returned $48$ certificates, all accepted by both verifiers (Suppleme
 \emph{Device run.} The two jobs of Sec.~\ref{sec:method} ran on \texttt{ibm\_kingston} (IBM Heron r2) through the IBM
 Quantum free plan on 2026-10-31, with $10^5$ shots per circuit at $\Jz=1.2$ and $23\,000$ at $1.6$ and $4.0$ ($421$\,s % src: file:phase3/full_runs/qpu/RESULTS.md (10⁵; 23,000; 421 s)
 of processor time); the declared job at $\Jz=6.0$, with $40\,000$ shots per circuit, ran on the same device on % src: file:phase3/full_runs/final_tests/jobs/C_20261108/prep.json (6.0; 40000)
-2026-11-10 ($119$\,s). In all three a routed layout moves four boundary sites ($17\%$ more two-qubit gates). % src: file:phase3/full_runs/final_tests/RESULTS.md (2026-11-10; 119.0 s); file:phase3/full_runs/qpu/RESULTS.md (4, +17 %)
+2026-11-10 ($119$\,s). In all three a routed layout moves four boundary sites ($17\%$ more two-qubit gates and $55\%$ more depth than a native embedding). % src: file:phase3/full_runs/final_tests/RESULTS.md (2026-11-10; 119.0 s); file:phase3/full_runs/qpu/RESULTS.md (4, +17 %); file:phase3/full_runs/qpu/RESULTS.md (+55 % depth)
 The noiseless control simulates the identical circuits with matrix-product states (Supplemental Sec.~S6).
 
 \emph{Learning test.} Public labels (Sec.~\ref{sec:realistic}): the published site magnetizations and energies at the
@@ -1236,8 +1255,11 @@ Sec.~\ref{sec:map}, the tests of sign, trend and curve of Secs.~\ref{sec:method}
 tests of Sec.~\ref{sec:learn}) were fixed in writing in one document, whose SHA-256 checksum was computed on our own % src: derived: SHA-256 is a name, 256
 machine on 2026-11-12, before any of them ran; no third-party registry was used. They were declared after an initial % src: file:phase3/full_runs/real_data/DECLARATION_hash_time.txt (2026-11-12T19:22:32Z)
 look at the data: they are declared, not blind. That look had shown the published energies at all $100$ points, the % src: derived: 2 sizes x 50 couplings = 100 (rdp:sizes.57.n_couplings)
-published $\ms$ against its reference, the sum of the published site magnetizations and the status of $\ms$ under the
-sector window. It had not shown any exact interval at a published energy, any other label against its reference, any
+published $\ms$ against its reference, two summary statistics of the single sites (the greatest site error and the
+fraction of sites more ordered than the reference), the sum of the published site magnetizations, the status of
+$\ms$ under the sector window with the corresponding filter counts, and the accuracy needed for $\ms$ at the test
+couplings (complete list: Supplemental Sec.~S17). It had not shown any exact interval at a published energy, any correlation or loop against its reference,
+any single site beyond those two statistics, any
 ratio of a bias to the curve, or any learning result. The reference values (the authors'
 DMRG, and ours where stored), their agreement and an independent recomputation of the tests of the bias are in
 Supplemental Sec.~S17 and Sec.~S18.
@@ -1297,7 +1319,7 @@ of IBM or the IBM~Quantum team. AI tools were used as described in Methods.
 
 \end{acknowledgments}
 
-\nocite{hastings2006,temple1928,baccari2020,yarotsky2006,candelori2026,stoudenmire2012,damour2023,deroeck2015,trivedi2022,teufel2026,osborne2007,sandvik2026,jiang2011,sandvik1997,viteritti2023,vicentini2022,nsy2019,bravyi2010,michalakis2013,frohlich2020,delvecchio2022,deroeck2019}
+\nocite{hastings2006,temple1928,baccari2020,candelori2026,stoudenmire2012,damour2023,deroeck2015,trivedi2022,teufel2026,osborne2007,sandvik2026,jiang2011,sandvik1997,viteritti2023,vicentini2022,nsy2019,bravyi2010,michalakis2013,frohlich2020,delvecchio2022,deroeck2019}
 
 \bibliography{references}
 

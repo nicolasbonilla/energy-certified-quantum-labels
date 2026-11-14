@@ -8,6 +8,6 @@ copies. The number check (`paper/check_numbers.py`) was run on these copies.
 
 | file | comment-only lines left out | trailing notes cut |
 |---|---|---|
-| `paper/main.tex` | 204 | 5 |
+| `paper/main.tex` | 208 | 5 |
 | `paper/supplement.tex` | 109 | 8 |
 | `paper/tables.tex` | 10 | 2 |

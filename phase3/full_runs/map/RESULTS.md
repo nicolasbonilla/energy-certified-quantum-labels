@@ -6,6 +6,15 @@ a08178012e860ac49e8b8081ee4386e13f411d70cceaaddb631939451d2f030c, hashed 2026-10
 number comes from `out_20261030T022613Z/` (fetched, every file verified against `OUT_SHA256SUMS.txt`) or from the
 laptop re-executions listed in §12. Written 2026-10-30, 14:30-15:30 UTC.
 
+> **Note added on 2026-11-14 (nothing else in this file was changed).** Four markers below (`@@MAPTABLES@@`,
+> `@@JSTAR@@`, `@@DIGITIZATION@@`, `@@MINCHI@@`) stand for tables that were never inserted into this file. The tables
+> of the map, of J*, of the accuracy rule, of the gates and of the minimal-bond-dimension witnesses are in
+> `laptop_analysis/tables_map.md`, their numbers in `laptop_analysis/summary_map.json`, and the two readings of the
+> published figures in `digitization/`. This file describes the map built from the published figures, as written on
+> 2026-10-30. The statuses of the public labels at the published energies were computed later and supersede it where
+> they differ: `../real_data/RESULTS.md` and Sec. S17 of the Supplemental Material (for example, the agreement of
+> the two maps is stated there, and no row is certified without an exact interval).
+
 ## Resumen en español sencillo
 
 1. Calculamos el mapa completo de garantías para el conjunto de datos de IBM con 57 y 115 cúbits, con las reglas selladas antes de calcular. Usamos 11,96 horas de máquina (unos 7,1 €; 8,9 € con el recargo del programa), dentro del tope de 15. La máquina quedó apagada y los registros sellados no cambiaron.

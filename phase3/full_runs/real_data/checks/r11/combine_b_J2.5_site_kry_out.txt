@@ -1,0 +1,10 @@
+combination model, family kry: 91200 training rows, 30 columns, 1s
+selected {'kind': 'rff', 'ell': 8.0, 'alpha': 0.0001, 'cv_mae': 0.002252429710956425, 'train_mae': 0.0021929038168785994}  54s
+stored stack model for comparison: {'kind': 'rff', 'ell': 8.0, 'alpha': 0.001, 'cv_mae': 0.0019902656788007224}
+instance 0: label+13-site clusters 0.0227 | stored stack (no label) 0.0304 | emb13 0.0185 | emb19 (best classical) 0.0084 | q_kry 0.1900
+instance 1: label+13-site clusters 0.0317 | stored stack (no label) 0.0361 | emb13 0.0331 | emb19 (best classical) 0.0106 | q_kry 0.2503
+instance 2: label+13-site clusters 0.0231 | stored stack (no label) 0.0359 | emb13 0.0220 | emb19 (best classical) 0.0097 | q_kry 0.2005
+instance 3: label+13-site clusters 0.0254 | stored stack (no label) 0.0366 | emb13 0.0226 | emb19 (best classical) 0.0102 | q_kry 0.2140
+instance 4: label+13-site clusters 0.0237 | stored stack (no label) 0.0339 | emb13 0.0213 | emb19 (best classical) 0.0098 | q_kry 0.2137
+instance 5: label+13-site clusters 0.0229 | stored stack (no label) 0.0301 | emb13 0.0226 | emb19 (best classical) 0.0090 | q_kry 0.2103
+mean miss (this type): combined 0.0249, stack 0.0338 (change -26.4 %; combined better in 6 of 6), emb19 0.0096 (combined better in 0 of 6)

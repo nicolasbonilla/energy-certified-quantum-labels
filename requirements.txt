@@ -1,5 +1,5 @@
 # Python 3.11 on the machine where the package was built. Versions below are the ones installed there
-# (isolated mode, `python -I`) for the packages that the scripts of this package import (379 Python files read).
+# (isolated mode, `python -I`) for the packages that the scripts of this package import (386 Python files read).
 
 # Core: `python run_checks.py numbers certificates map bias learning` (the guardian itself needs no package)
 numpy==1.26.4
