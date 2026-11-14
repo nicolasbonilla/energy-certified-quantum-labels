@@ -62,6 +62,11 @@
 
 \tableofcontents
 
+\noindent\emph{Use of AI tools.} The statement on the AI tools used in this work, and on how their output was
+checked, is in the Methods of the main text; it covers the proofs, analyses, code, figures and text of this
+Supplemental Material. Where this Supplemental Material speaks of a reading of the paper, or of the writer, reader,
+referee or verifier of a check, it means a separate session of those tools, not a person.
+
 \section{Proofs}
 \label{sm:proofs}
 
@@ -1112,7 +1117,7 @@ $\Delta Z$, \emph{with the sign assumed from the emulation}; the public $\ms$ la
 reference at all $100$ points (Sec.~\ref{sm:public}). Both sit on the ``$+$'' side, close to the % src: file:phase3/full_runs/real_data/RESULTS.md (positive at all 100)
 upper edge where the bias is large (orange at $0.76$--$0.98$ of it for $\Jz\le2.5$, violet at $0.64$--$0.86$ for % src: figures/pgf_sm_3d/export_check.txt (orange ratios 0.76-0.98 at J <= 2.5, 0.29-0.59 above; violet 0.64-0.86 at J <= 1.6, 0.45 and 0.34 at 2.5 and 4)
 $\Jz\le1.6$) and further below it at larger $\Jz$ (down to $0.29$). The $\de$ range stops at $0.024$, the highest stored energy common to all couplings; the maps are straight % src: file:phase3/full_runs/map/RESULTS.md; def:phase3/full_runs/map/DECLARATION.md; derived: highest stored window energy common to all couplings, printed by figures/fig_landscape.py
-between computed couplings (ticks on the top axes). Source: deposited map and method outputs.}
+between computed couplings (ticks on the top axes). Source: deposited map and method outputs. Drawn by a script written with an AI tool (Methods of the main text).}
 \end{figure}
 
 
@@ -1407,7 +1412,7 @@ energy error per site there is $0.0198$, Sec.~\ref{sm:public}), whose site avera
 $\eta_i=+1$ on the majority colour. The emulated state lies at a higher energy than the witnesses ($\de=0.043$ % src: file:phase3/full_runs/method/RESULTS.md; file:phase3/full_runs/method/laptop_post/results_tables.md; def:phase3/full_runs/method/DECLARATION.md
 against $0.0096$), so the panels compare patterns, not positions in one window; the position of the emulated states in % src: file:phase3/full_runs/method/RESULTS.md; file:phase3/full_runs/method/laptop_post/results_tables.md; def:phase3/full_runs/method/DECLARATION.md; derived: 0.8 x 0.012 = 0.0096 (witness-side window at the conditional floor)
 their window is in ancillary Table~A7. Source: deposited emulated and reference labels, and the stored % src: file:phase3/full_runs/method/RESULTS.md; file:phase3/full_runs/method/laptop_post/results_tables.md; def:phase3/full_runs/method/DECLARATION.md
-witness states of the map with their mixture weights.}
+witness states of the map with their mixture weights. Drawn by a script written with an AI tool (Methods of the main text).}
 \end{figure}
 
 
@@ -1439,7 +1444,7 @@ digitized; none at $\Jz=1.2$); diamonds: the bias read there (open: extrapolated
 labels of the physical state after the two rotation variants of Sec.~\ref{sm:bo}, which the text of
 Ref.~\cite{jaderberg2026} does not describe (the one with $R_Y$ on the control qubit is the block of its public
 code~\cite{jaderberg2026data}).
-Source: deposited method outputs.}
+Source: deposited method outputs. Drawn by a script written with an AI tool (Methods of the main text).}
 \end{figure}
 
 \subsection{The basis-optimization step}
@@ -1924,7 +1929,7 @@ the window (blue); open, standard split conformal calibrated on the generated la
 split conformal; crosses, exact labels. Dotted: $\tau$; dashed: nominal level. (c, d) Risk--coverage curves of M1 over all
 queries, with realistic (c) and shifted (d) labels: the fraction of answers that miss the truth by more than $\tau/2$, against the fraction answered, for
 rankings by the energy-interval width, the band $W(x)$ and the conformal width (they coincide), random, and the oracle.
-Source: deposited learning outputs.}
+Source: deposited learning outputs. Drawn by a script written with an AI tool (Methods of the main text).}
 \end{figure}
 
 \def\SMcap{Learning with the benchmark's model (M1). Pooled over the labels of a class, the test instances and $200$ % src: def:phase3/full_runs/learning/DECLARATION.md (R = 200 random splits)
@@ -2185,7 +2190,7 @@ error per spin, $n=20$, instance $(4,1)$ (exact). (b) The same at $n=45$, instan
 DMRG-referenced; dashed: inner, rigorous). (c) $\des$ of each label against $n$ (filled: computed; bars: band between
 the inner and outer values; open: the leading-order law of Corollary~1 of the main text). The single pairs fall with $n$; the averages do not. % src: file:phase3/full_runs/huang/RESULTS.md; def:phase3/full_runs/huang/DECLARATION.md
 (d) $\des$ of all 570 pair correlators at $n=20$ by class. Shaded: $\de\in[10^{-3},10^{-2}]$. Source: deposited % src: file:phase3/full_runs/huang/RESULTS.md; def:phase3/full_runs/huang/DECLARATION.md
-outputs of the benchmark run.}
+outputs of the benchmark run. Drawn by a script written with an AI tool (Methods of the main text).}
 \end{figure}
 
 \def\SMcap{The rule on the second benchmark. Each block is one label, each row one instance $(L,k)$. $\des_{\rm in}$:
@@ -2275,7 +2280,7 @@ virtual machine; for the job at $\Jz=6.0$, the exact Rayleigh quotient on the sa
 exact arithmetic, on a laptop.
 The window test of Sec.~\ref{sm:window}: exact ground states and envelope chains at $n=24$, DMRG, % src: def:phase3/full_runs/kill_tests/W_window/DECLARATION.md (n = 24)
 transformer networks and an idealized Krylov generator on a virtual machine, with the arithmetic of its comparison
-with published states on a laptop. After the fifth independent reading of this paper, post-hoc checks that read stored outputs only: the margins
+with published states on a laptop. After the fifth internal reading of this paper, post-hoc checks that read stored outputs only: the margins
 and $n=19$ comparisons of the figures-based map, the tolerance scan of $J^*$, and the costs and energy errors of
 Sec.~\ref{sec:declared} (\texttt{final\_tests/code/post\_checks*.py}, \texttt{map/laptop\_analysis/code/tau\_scan.py},
 whose $6\%$ run reproduces the stored map exactly). % src: def:phase3/full_runs/map/laptop_analysis/code/tau_scan.py (0.06)
@@ -2430,7 +2435,7 @@ averaged labels at $\Jz\ge2.0$. The outliers are $\ms$
 at $\Jz\ge5$, where the ``$-$'' chain goes through the crossing to a reversed-domain state (an avoided crossing
 at finite $n$).
 (d) $\des(115)/\des(57)$: averages are intensive; the local $Z_{\rm bulk}$ follows $57/115$. % src: map:claims.C-E.rows (Z_bulk 0.4958)
-Sources: Sec.~\ref{sm:checks} and the deposited map outputs.}
+Sources: Sec.~\ref{sm:checks} and the deposited map outputs. Drawn by a script written with an AI tool (Methods of the main text).}
 \end{figure}
 
 \subsection{The certification map in detail}
@@ -2561,7 +2566,7 @@ without and with $1\%$ flips (open and filled squares) and every pipeline varian
 reported $r$ (its Fig.~2, digitized); diamonds, the emulated bias read there (open where it is extrapolated beyond the % fig: Ref. [jaderberg2026] Fig. 2
 sampled ratios), an estimate that assumes the dataset's pipeline follows the same bias--energy relation; the public
 labels now test that assumption (Sec.~\ref{sm:publiccurve}: its ratios stay inside the declared band at $n=57$ and it overstates the bias at $n=115$, so its declared test fails).
-Sources: deposited method outputs.}
+Sources: deposited method outputs. Drawn by a script written with an AI tool (Methods of the main text).}
 \end{figure}
 
 \emph{Mechanism.} Replacing the Krylov sampler by perfect samples of the DMRG ground state, cut to the same subspace

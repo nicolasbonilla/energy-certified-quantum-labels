@@ -11,7 +11,7 @@ authors:
 repository-code: "https://github.com/nicolasbonilla/energy-certified-quantum-labels"
 url: "https://github.com/nicolasbonilla/energy-certified-quantum-labels"
 doi: "10.5281/zenodo.24216375"
-version: "1.0.1"
+version: "1.0.2"
 date-released: "2026-11-14"
 abstract: >-
   Replication package of the article "What a sample's energy certifies about quantum-generated

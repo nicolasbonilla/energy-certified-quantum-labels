@@ -40,7 +40,7 @@
 \title{What a sample's energy certifies about quantum-generated training labels}
 
 \author{Nicol\'as Bonilla Vargas}
-\email{ngbonillav@unal.edu.co}
+\email[Contact author: ]{ngbonillav@unal.edu.co}
 \homepage{https://orcid.org/0009-0006-6155-4391}
 \affiliation{Universidad Nacional de Colombia, Bogot\'a, Colombia}
 \affiliation{SRH University, Munich, Germany}
@@ -89,7 +89,8 @@ states of the window ($19$ training labels: $16$ not certified, dark; % src: fil
 $3$ undecided, light; at $\Jz=1.1$--$1.3$ the bars, $13.5$--$18.8\,\tau$ wide, are cut by the axis, with a break mark). % src: file:paper/figures/pgf_overview_rd/export_check.txt (3 undecided; 13.5-18.8 tau wide)
 Right (and upper left): fraction of couplings at which the standard interval contains a held-out public label (open), the reference
 (black) and, for a control model trained on DMRG labels, the reference (grey): at $n=57$, $41$, $0$ and $41$ of the 45 in the % src: file:paper/figures/pgf_overview_rd/export_check.txt (41 of 45, 0 of 45, control 41 of 45)
-training range (at $n=115$ the reference is inside at $11$) and none of the $4$ in the test range for all three, the control included.} % src: file:paper/figures/pgf_overview_rd/export_check.txt (0 of 4, 0 of 4, control 0 of 4); rdl:summary.115.models.poly3_invJ.real.ind.truth_covered (11)
+training range (at $n=115$ the reference is inside at $11$) and none of the $4$ in the test range for all three, the control included. % src: file:paper/figures/pgf_overview_rd/export_check.txt (0 of 4, 0 of 4, control 0 of 4); rdl:summary.115.models.poly3_invJ.real.ind.truth_covered (11)
+Drawn by a script written with an AI tool (Methods); panels (b) and (c) from the deposited data.}
 \end{figure*}
 
 Quantum processors have begun to supply the labels on which machine-learning models of quantum many-body ground
@@ -210,7 +211,8 @@ without basis optimization; $\Jz=1.2$, one job): excess $\eta_i(\langle Z_i\rang
 each site ($\eta_i=+1$ on the majority colour), positive at all 57 sites ($\Delta\ms=+0.310$). The 4 ringed boundary % src: qpu:points.1.2.device.rec.dm_s (0.3098); file:phase3/full_runs/qpu/RESULTS.md (57/57)
 sites were routed, at the cost of $17\%$ more two-qubit gates. % src: file:phase3/full_runs/qpu/RESULTS.md (4, +17 %)
 (d) Noiseless simulation of the identical circuits, same colour scale: $\Delta\ms=+0.253$, again positive at every % src: qpu:points.1.2.control.rec.dm_s (0.2527)
-site; in this one job the device noise adds $+0.057$.} % src: qpu:points.1.2.D3_dm_s_device_minus_control (0.0572)
+site; in this one job the device noise adds $+0.057$. % src: qpu:points.1.2.D3_dm_s_device_minus_control (0.0572)
+Drawn from the deposited data by a script written with an AI tool (Methods).}
 \end{figure*}
 
 \section{Setting}
@@ -613,7 +615,7 @@ certified.
 dashed with E1; dotted: $\pm\tau/2$). The public labels lie above the reference at every coupling of both sizes, and
 inside the exact interval wherever one exists. The emulated first stage of the method class (circles), at its own energy
 (Sec.~\ref{sec:method}; at $n=115$ its energy error is more than $3.8$ times the published one), has the same sign % src: file:paper/figures/pgf_map_rd/export_check.txt (more than 3.8 times)
-and the same trend.}
+and the same trend. Drawn from the deposited data by a script written with an AI tool (Methods).}
 \end{figure*}
 
 \subsection{The method class inside the window: emulation, public labels, our device}
@@ -687,7 +689,8 @@ $n=115$: $12$ of the $19$ ratios that decide it lie below the declared band (Sec
 the coupling, written at the end of each curve; the legend, in black, shows the kind of data.
 (b) The emulated label at $n=115$: miss of $\ms$ of the label as generated, of the label corrected with the curve of the $n=57$ emulation, and of % src: def:phase3/full_runs/map/DECLARATION.md (57, 115)
 two classical extrapolations of the truth from $n=19$ and $57$ that use no quantum data. The dip of the corrected label % src: file:phase3/full_runs/bias_law/code/bias_law.py (n = 19, 57)
-near $\Jz=2$ is a change of sign of its residual, not a gain in accuracy.} % (coupling read from the figure)
+near $\Jz=2$ is a change of sign of its residual, not a gain in accuracy. % (coupling read from the figure)
+Drawn from the deposited data by a script written with an AI tool (Methods).}
 \end{figure*}
 
 The window of Sec.~\ref{sec:setting} holds for every state at a given energy, whereas a generator follows one path through
@@ -1250,6 +1253,21 @@ Proposition~\ref{prop:learn} computation was time-stamped before it ran. Outcome
 prominence whether or not they meet the plan, each where it occurs (Secs.~\ref{sec:dataset}--\ref{sec:learn}), and listed together in Supplemental Sec.~S11. All
 computations ran on CPUs (cloud virtual machines and a laptop), apart from the device runs.
 
+\emph{Use of AI tools.} Anthropic's Claude models (Claude Opus~5.5 throughout, Claude Fable~5.2 from the analyses of % src: file:phase3/full_runs/real_data/checks/r11/ai_use_record_2026-11-14.txt (Claude Opus 5.5; Claude Fable 5.2)
+the public data onward, and Claude Haiku~5.5 for reading web pages; with subagents for delegated subtasks), run % src: file:phase3/full_runs/real_data/checks/r11/ai_use_record_2026-11-14.txt (Claude Haiku 5.5)
+through the Claude~Code command-line tool (versions 2.1.310 to 2.1.322), were used to propose and carry out % src: file:phase3/full_runs/real_data/checks/r11/ai_use_record_2026-11-14.txt (2.1.310 to 2.1.322)
+analyses, to derive and check proofs, to write and test the deposited code, to draw the figures, to draft and edit
+the text and to check each citation against the cited work. The author directed the project, reviewed the work and
+takes full responsibility for its content. The output was checked in four ways, all carried out with the same tools:
+a script looks up each printed number in the stored file named beside it in the source, apart from model constants,
+grid values, numbers derived from cited values and digits marked as structural, which it only lists (about a quarter
+of the numbers of the main text and a third of those of the Supplemental Material), and finds no number without a
+source; every stored certificate is verified again in exact arithmetic by a separate program; the analyses of the
+public data, declared after an initial look at the data, and the declared tests were fixed in writing, with a
+checksum, before they ran, with the exceptions and deviations stated above; and the proofs, the text and the
+citations were read against their sources in separate sessions instructed to find errors. These checks do not verify
+every sentence.
+
 \section*{Data and code availability}
 The dataset paper states that its data are available on request. The labels of the dataset of
 Ref.~\cite{jaderberg2026}, the energy of each sample and its authors' own DMRG values are public in a repository of
@@ -1257,24 +1275,16 @@ one of its authors that names that paper~\cite{jaderberg2026data}. We used commi
 (2026-07-22), under its Apache-2.0 licence, and converted its files to plain numbers without running any of its % src: file:phase3/full_runs/real_data/source/README.md
 code (Supplemental Sec.~S17).
 The inputs, outputs and analysis scripts, the converted public data with their checksums, the written protocols and
-the scripts that regenerate the data tables and the plotted data of every figure, with a map from every printed
-number to the stored file it comes from, are public at
-\url{https://github.com/nicolasbonilla/energy-certified-quantum-labels} and deposited at Zenodo
-(DOI \href{https://doi.org/10.5281/zenodo.24216375}{10.5281/zenodo.24216375}). % src: file:phase3/full_runs/real_data/checks/r11/zenodo_deposit_record_2026-11-14.txt (10.5281/zenodo.24216375, the identifier of all versions)
-One script of the package repeats on a laptop, in about half an hour, the check of every printed number, the
-exact verification of all $316$ certificates, the map on the public data, the bias tests and the learning % src: file:phase3/full_runs/real_data/checks/r11/package_checks_certificates_all_2026-11-13.txt (316 PASS, 0 FAIL)
-tests of the cubic model, and compiles this paper. The tensor-network, emulation and neural-network runs come with
-code and stored outputs (repeating them takes hours), the processor runs as stored outputs; the
-package lists what it leaves out.
+the scripts that regenerate the data tables and the plotted data of every figure are public at
+\url{https://github.com/nicolasbonilla/energy-certified-quantum-labels} and are deposited at
+Zenodo~\cite{bonillavargas2026deposit} (DOI \href{https://doi.org/10.5281/zenodo.24216375}{10.5281/zenodo.24216375}). % src: file:phase3/full_runs/real_data/checks/r11/zenodo_deposit_record_2026-11-14.txt (10.5281/zenodo.24216375, the identifier of all versions)
+In the sources of this paper every printed number carries a comment that names its source. One script of that
+package repeats on a laptop, in about half an hour, the check of those numbers against the stored files so named,
+the exact verification of every stored certificate ($316$ files, which prove $253$ distinct bounds), the map on the % src: file:phase3/full_runs/real_data/checks/r11/package_checks_certificates_all_2026-11-13.txt (316 PASS, 0 FAIL); file:phase3/full_runs/real_data/checks/r11/certificate_counts_out.txt (253 distinct)
+public data, the tests of the bias and the learning tests of the cubic model, and compiles this paper. The
+tensor-network, emulation and neural-network runs come with code and stored outputs (repeating them takes hours of
+computing), the processor runs as stored outputs; the package lists what it leaves out.
 
-\section*{Author contributions}
-The sole author directed the project, reviewed all of the work and takes full responsibility for its content. Use of
-AI: Claude models of Anthropic (Claude Opus~5.5 and, in the pass on the public data, Claude Fable~5.2, including % (model version names, structural)
-subagents for delegated subtasks), run
-through the Claude~Code command-line tool, were used to propose and carry out analyses, to derive and check proofs, to
-write and test the deposited code, to build the figures from the deposited data, to draft and edit
-the text and to check the cited works against their sources. The number check of the package does not verify
-every sentence.
 
 \section*{Competing interests}
 The author is also affiliated with Daita AI (Munich, Germany); the company had no role in this work, and the author
@@ -1283,9 +1293,11 @@ declares no competing interests.
 \begin{acknowledgments}
 We acknowledge the use of IBM~Quantum services for this work; the device runs were executed on
 \texttt{ibm\_kingston}. The views expressed are those of the author and do not reflect the official policy or position
-of IBM or the IBM~Quantum team.
+of IBM or the IBM~Quantum team. AI tools were used as described in Methods.
 
 \end{acknowledgments}
+
+\nocite{hastings2006,temple1928,baccari2020,yarotsky2006,candelori2026,stoudenmire2012,damour2023,deroeck2015,trivedi2022,teufel2026,osborne2007,sandvik2026,jiang2011,sandvik1997,viteritti2023,vicentini2022,nsy2019,bravyi2010,michalakis2013,frohlich2020,delvecchio2022,deroeck2019}
 
 \bibliography{references}
 

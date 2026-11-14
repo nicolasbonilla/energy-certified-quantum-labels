@@ -1,0 +1,10 @@
+record: package_checks_certificates_all_2026-11-13.txt
+certificate files verified (PASS lines): 316 ; FAIL lines: 0
+distinct certificates (distinct names, one per bound): 253 distinct
+certificates stored as two files: 63 ; as more than two: 0
+check: 253 distinct + 63 second files = 316 files
+package list docs/CERTIFICATES.tsv: 316 files, 253 distinct names, 262 distinct SHA-256
+of the certificates stored as two files: 54 are identical copies (same SHA-256), 9 are the same bound computed in two runs (different files)
+   48  identical copies: phase3/full_runs/real_data/e1/certs + phase3/full_runs/real_data/e1/out/jobs
+    9  the same bound from two runs (different files): phase3/full_runs/rigor/out_20261031T073328Z/out/toy_vm + phase3/full_runs/rigor/out_20261031T100015Z/out/toy_vm
+    6  identical copies: phase3/full_runs/final_tests/analysis/c3b_20261110/merged_out/c/certs + phase3/full_runs/final_tests/out_20261106T120830Z/out/c/certs

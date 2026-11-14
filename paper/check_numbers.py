@@ -265,7 +265,8 @@ def split_comment(line):
 
 def strip_tex(code):
     s = code
-    s = re.sub(r"\\(cite|ref|eqref|label|input|includegraphics|begin|end|url|homepage|email|graphicspath|bibliography|"
+    # nocite (2026-11-14): the keys of the references that only the Supplemental Material cites are not printed numbers
+    s = re.sub(r"\\(nocite|cite|ref|eqref|label|input|includegraphics|begin|end|url|homepage|email|graphicspath|bibliography|"
                r"todo|texttt|newcommand|renewcommand|theoremstyle|newtheorem|documentclass|usepackage|hypersetup)"
                r"\*?(\[[^\]]*\])?\{[^{}]*\}", " ", s)
     s = re.sub(r"(Supp\.\\?\s*)?(Figs?|Secs?|Tables?|Eqs?|Thm|Cor)\.?~?\s*S?\d+", " ", s)
